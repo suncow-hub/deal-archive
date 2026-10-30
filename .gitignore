@@ -1,0 +1,19 @@
+# --- 비밀값: 절대 커밋하지 않음 ---
+# API 키는 코드나 파일에 두지 않고 GitHub Secrets에만 저장한다.
+.env
+.env.*
+*.env
+secrets/
+*.key
+*.pem
+credentials*.json
+
+# --- 파이썬 ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- 기타 ---
+.DS_Store
+Thumbs.db
