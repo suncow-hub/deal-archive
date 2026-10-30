@@ -46,7 +46,7 @@ prn_size_signals: [billion, "$1", "$2", "$3", "$4", "$5", "$6", "$7", "$8", "$9"
 dart:
   report_keywords: [타법인주식및출자증권취득결정, 타법인주식및출자증권처분결정, 회사합병결정,
                     회사분할합병결정, 회사분할결정, 영업양수결정, 영업양도결정,
-                    주식교환ㆍ이전결정, 유형자산양수결정, 유형자산양도결정]
+                    주식교환ㆍ이전결정]
   # 거래소공시(I) 중
   exchange_keywords: [최대주주변경, 최대주주 변경]
   corp_classes: [Y, K]   # Y=유가증권, K=코스닥
@@ -54,3 +54,6 @@ dart:
 limits:
   max_candidates_deal: 40    # Claude에게 넘기는 딜 후보 상한
   max_candidates_macro: 12
+  # 제미나이 채점이 성공한 날만 적용: 이 점수 미만은 Claude에게 넘기지 않음
+  min_score_deal: 5
+  min_score_macro: 5

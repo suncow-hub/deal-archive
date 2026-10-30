@@ -172,6 +172,11 @@ def fetch_dart(cfg: dict, since: datetime, now: datetime, stats: dict) -> list[d
             if page >= int(data.get("total_page", 1)):
                 break
             page += 1
+    # 정정 공시는 같은 회사·같은 공시의 원본이 이미 있으면 뺀다
+    def base(title: str) -> str:
+        return re.sub(r"\[[^\]]*\]", "", title).replace(" ", "")
+    originals = {base(it["title"]) for it in out if "정정" not in it["title"]}
+    out = [it for it in out if "정정" not in it["title"] or base(it["title"]) not in originals]
     stats["OpenDART"] = f"{len(out)}건"
     log(f"[OpenDART] 딜 관련 공시 {len(out)}건")
     return out
@@ -181,7 +186,8 @@ def fetch_dart(cfg: dict, since: datetime, now: datetime, stats: dict) -> list[d
 
 def previous_links(days: int = 5) -> set[str]:
     links = set()
-    files = sorted((ROOT / "candidates").glob("*.json"))[-days:]
+    today = f"{datetime.now(KST):%Y-%m-%d}.json"
+    files = [f for f in sorted((ROOT / "candidates").glob("*.json")) if f.name != today][-days:]
     for f in files:
         try:
             for it in json.loads(f.read_text(encoding="utf-8")).get("items", []):
@@ -296,14 +302,19 @@ def main() -> int:
         it["score_by"] = "keyword"
         it["reason"] = ""
 
+    scored = False
     if items:
-        gemini_score(items, meta)
+        scored = gemini_score(items, meta)
     else:
         meta["gemini"] = "후보 없음"
 
     lim = cfg["limits"]
-    deals = sorted([i for i in items if i["kind"] == "deal"], key=lambda x: -x["score"])[: lim["max_candidates_deal"]]
-    macros = sorted([i for i in items if i["kind"] == "macro"], key=lambda x: -x["score"])[: lim["max_candidates_macro"]]
+    min_deal = lim["min_score_deal"] if scored else 0
+    min_macro = lim["min_score_macro"] if scored else 0
+    deals = sorted([i for i in items if i["kind"] == "deal" and i["score"] >= min_deal],
+                   key=lambda x: -x["score"])[: lim["max_candidates_deal"]]
+    macros = sorted([i for i in items if i["kind"] == "macro" and i["score"] >= min_macro],
+                    key=lambda x: -x["score"])[: lim["max_candidates_macro"]]
     meta["counts"] = {"deal": len(deals), "macro": len(macros),
                       "dropped": len(items) - len(deals) - len(macros)}
 
