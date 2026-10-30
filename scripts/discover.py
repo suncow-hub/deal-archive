@@ -43,8 +43,8 @@ def load_config() -> dict:
 
 
 def window_start(now: datetime) -> datetime:
-    # 월요일엔 금요일 아침 이후 것까지, 그 외엔 하루 + 여유
-    hours = 78 if now.weekday() == 0 else 30
+    # 화요일 새벽 실행은 주말까지 포함, 그 외엔 하루 + 여유
+    hours = 78 if now.weekday() == 1 else 30
     return now - timedelta(hours=hours)
 
 
