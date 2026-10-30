@@ -34,7 +34,7 @@ def render(md_text: str, aliases: dict) -> str:
     # 딜 노트 링크(../deals/2026/x.md, ../2026/x.md)를 사이트 안 링크로
     out = re.sub(r'href="(?:\.\./)*(?:deals/)?\d{4}/([^"/]+)\.md"', r'href="#/deal/\1"', out)
     # 외부 링크는 새 탭
-    out = re.sub(r'<a href="(https?://[^"]+)"', r'<a href="\1" target="_blank" rel="noopener">', out)
+    out = re.sub(r'<a href="(https?://[^"]+)"', r'<a href="\1" target="_blank" rel="noopener"', out)
     return out
 
 
@@ -59,7 +59,7 @@ def main() -> None:
             "confidence": m.get("신뢰도"),
             "announced": m.get("발표일"),
             "updated": m.get("최종 업데이트"),
-            "is_updated": len(hist_lines) > 1 or (m.get("최종 업데이트") or "") > (m.get("발표일") or ""),
+            "is_updated": len(hist_lines) > 1,  # 진행 이력이 2줄 이상 = 처음 등록 후 새 소식이 있었음
             "regions": m.get("지역", []),
             "crossborder": len(m.get("지역", [])) >= 2,
             "size": m.get("규모 구간"),

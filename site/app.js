@@ -96,8 +96,11 @@
     html += `<div class="kicker"><span>딜 아카이브</span><span class="aside">전체 ${DATA.deals.length}건 · 최근 업데이트순</span></div>`;
     html += `<div class="filters">
       <input class="search" id="q" type="search" placeholder="회사, PE, 자문사, 키워드 검색" value="${esc(q)}" aria-label="검색">
-      ${Object.keys(AXIS_FIELD).map((axis) => axisRow(axis, f, q)).join("")}
-      <div class="hint">같은 줄에서 여러 개를 고르면 '또는', 다른 줄끼리는 '그리고'로 찾습니다.</div>
+      <details class="axes"${hasFilter || window.innerWidth > 720 ? " open" : ""}>
+        <summary>태그로 찾기${activeCount(f) ? ` · ${activeCount(f)}개 선택` : ""}</summary>
+        ${Object.keys(AXIS_FIELD).map((axis) => axisRow(axis, f, q)).join("")}
+        <div class="hint">같은 줄에서 여러 개를 고르면 '또는', 다른 줄끼리는 '그리고'로 찾습니다.</div>
+      </details>
     </div>
     <div class="filter-bar"><span>${shown.length}건</span>${hasFilter ? `<button class="linkbtn" id="reset">필터 초기화</button>` : ""}</div>
     ${dealTable(shown)}`;
@@ -117,6 +120,8 @@
     const r = document.getElementById("reset");
     if (r) r.addEventListener("click", () => (location.hash = "#/"));
   }
+
+  function activeCount(f) { return Object.values(f).reduce((n, s) => n + s.size, 0); }
 
   function rerenderList(f, q) {
     const shown = DATA.deals.filter((d) => matches(d, f, q));
