@@ -44,5 +44,6 @@ jobs:
             echo "변경 없음"
           else
             git commit -m "candidates: $(TZ=Asia/Seoul date +%F)"
+            git pull --rebase -q origin main
             git push
           fi
