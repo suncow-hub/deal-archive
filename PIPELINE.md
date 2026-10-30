@@ -56,6 +56,8 @@ git commit -m "daily: $DATE"   # 커밋 메시지 끝에 세션이 안내하는 
 git fetch -q origin main && git rebase -q origin/main && git push -q origin HEAD:main
 ```
 
+rebase 중 `docs/` 에서 충돌이 나면 `python3 scripts/build_site.py && git add docs && GIT_EDITOR=true git rebase --continue` 로 다시 만들어 넣고 푸시한다. 다른 파일에서 충돌이 나면 원격 쪽 변경을 보존하는 방향으로 합친다.
+
 ## 7. 인박스 정리
 
 처리한 인박스 이슈마다 딜 노트 경로(또는 넣지 않은 이유)를 댓글로 남기고 닫는다.
