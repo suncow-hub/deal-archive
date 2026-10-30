@@ -1,0 +1,44 @@
+---
+제목: "Monte dei Paschi 주주, Intesa 인수 제안에 맞선 방어안 부결"
+상태: "검토·협상"
+신뢰도: "보도 기준"
+발표일: 2026-10-29
+최종 업데이트: 2026-10-30
+지역: ["유럽"]
+규모 구간: "20조 이상"
+규모(원화): "약 49조 원 (대략값)"
+규모(원 통화): "EUR 약 33B (교환 공개매수, Intesa 주가에 따라 변동. 2026-10-29 환율 약 1,488.6원 기준 역산 대략값)"
+유형: ["경영권 인수"]
+업종: ["금융 (은행·보험·증권·운용)"]
+테마: []
+인수자: ["Intesa Sanpaolo"]
+대상: ["Monte dei Paschi di Siena"]
+매도자: []
+재무 자문: []
+법률 자문: []
+출처: ["https://live.euronext.com/en/financial-news/mps-investors-sink-ceos-defence-plan-against-intesa-bid", "https://group.intesasanpaolo.com/en/newsroom/all-news/news/2026/intesa-sanpaolo-tender-offer-on-mps", "https://www.wsj.com/finance/investing/monte-dei-paschi-investors-reject-defense-plan-against-intesas-bid-0800184a"]
+---
+## 한 줄 요약
+[[Monte dei Paschi di Siena]] 주주총회(2026-10-29)가 경영진의 방어안과 [[Mediobanca]] 합병안을 모두 부결해, [[Intesa Sanpaolo]]의 교환 공개매수(약 330억 유로 보도 기준)가 걸림돌 하나를 덜었다.
+
+## 딜 구조
+<!-- 인수 지분, 인수 방식, 자금 조달 방법 -->
+Intesa는 MPS 전량을 대상으로 MPS 1주당 Intesa 신주 1.6주와 현금 1.25유로를 제안했다(현금은 10월 초 0.25유로 상향됐으며 방어안 부결이 조건, 보도 기준). 부결된 방어안은 [[Banco BPM]]·[[Banca Generali]]를 전액 주식으로 인수하는 안(합계 약 340억 유로)과 Mediobanca 완전합병안이다. 최소 수락 66.67%(Intesa가 면제 가능)이며 최대주주 [[Delfin]](약 17.6%)이 응모를 약정했고, ECB 승인은 끝났으며 이탈리아 반독점 판단은 11월로 예정돼 있다.
+
+## 밸류에이션
+<!-- EV/EBITDA, P/E 등. 공개되지 않았으면 "비공개" 한 줄 -->
+비공개. 총액 약 330억 유로는 Intesa 주가에 따라 달라지는 보도 기준 추정이며(10월 초 보도는 약 350억 유로), 원화 환산도 환율을 역산한 대략값이다.
+
+## 왜 중요한가
+<!-- 1~2줄 -->
+약 49조 원 규모 유럽 최대급 은행 적대적 인수에서 방어안이 부결돼 성사 쪽으로 기울었다. 이탈리아 은행권 재편의 분기점이며, 반독점 대응으로 MPS 지점 약 절반을 [[Unipol]]에 매각할 계획이 보도됐고 11월 반독점 판단이 남은 변수다.
+
+## 면접 포인트
+<!-- 이 딜로 할 수 있는 말 1~2개 -->
+① 현금 없이 주식 교환 위주라 Intesa 주가 변동이 총액과 응모 유인을 함께 흔든다는 점을 짚을 수 있다. ② 방어안이 같은 업권 M&A(Banco BPM·Banca Generali 인수)였다는 점에서, 적대적 인수에 대한 방어 전략과 이탈리아 은행 재편 흐름을 논할 수 있다.
+
+## 진행 이력
+<!-- 업데이트될 때마다 맨 아래에 한 줄씩 추가. 기존 줄은 수정하지 않음 -->
+- 2026-10-29: MPS 주주총회에서 경영진 방어안과 Mediobanca 완전합병안이 모두 부결됐다. Intesa 공개매수는 진행 중(미확정)이다.
+
+## 관련 딜·뉴스
