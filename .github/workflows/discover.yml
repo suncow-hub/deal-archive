@@ -1,0 +1,48 @@
+name: discover
+
+# 평일 오전 6시 17분(KST) 자동 실행 + 수동 실행 버튼
+# (UTC 기준 일~목 21:17 = 한국 월~금 06:17)
+on:
+  schedule:
+    - cron: "17 21 * * 0-4"
+  workflow_dispatch:
+
+# 리포 내용 쓰기 외에는 아무 권한도 주지 않음
+permissions:
+  contents: write
+
+concurrency:
+  group: discover
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      # 외부 실행 도구는 커밋 해시로 고정 (태그가 바뀌어도 영향 없음)
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Discover
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: python scripts/discover.py
+
+      - name: Commit candidates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add candidates
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "candidates: $(TZ=Asia/Seoul date +%F)"
+            git push
+          fi

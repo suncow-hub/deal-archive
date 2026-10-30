@@ -1,0 +1,56 @@
+# 발견 단계 설정
+# 키워드는 대소문자 구분 없이 제목(+요약)에서 찾는다.
+
+feeds:
+  - name: WSJ Markets
+    url: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+    kind: deal
+  - name: WSJ U.S. Business
+    url: https://feeds.content.dowjones.io/public/rss/WSJcomUSBusiness
+    kind: deal
+  - name: PR Newswire M&A
+    url: https://www.prnewswire.com/rss/financial-services-latest-news/acquisitions-mergers-and-takeovers-list.rss
+    kind: deal
+  - name: 한경 증권
+    url: https://www.hankyung.com/feed/finance
+    kind: deal
+  - name: WSJ World News
+    url: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+    kind: macro
+  - name: WSJ Economy
+    url: https://feeds.content.dowjones.io/public/rss/socialeconomyfeed
+    kind: macro
+  - name: 한경 경제
+    url: https://www.hankyung.com/feed/economy
+    kind: macro
+  - name: 한경 국제
+    url: https://www.hankyung.com/feed/international
+    kind: macro
+
+deal_keywords:
+  en: [acquire, acquires, acquisition, merger, merge, takeover, buyout, "private equity",
+       "take private", "to buy", "agrees to buy", "in talks", stake, divest, divestiture,
+       "sell unit", "spin off", spinoff, IPO, "initial public offering", "bid for", deal]
+  ko: [인수, 매각, 합병, 지분, 경영권, 사모펀드, PEF, 바이아웃, 엑시트, 블록딜, 유상증자,
+       IPO, 상장, 우선협상대상자, 예비입찰, 본입찰, 인수금융, 투자유치, 마켓인사이트]
+
+macro_keywords:
+  en: [Fed, "interest rate", inflation, tariff, sanctions, election, war, ceasefire,
+       "central bank", recession, GDP, yields, Treasury, OPEC, China, trade]
+  ko: [금리, 기준금리, 한국은행, 환율, 물가, 관세, 연준, 경기, 수출, 무역, 재정, 국채]
+
+# PR Newswire는 소규모 딜이 많아, 제목에 규모나 대형 기업 신호가 없으면 점수에서 감점
+prn_size_signals: [billion, "$1", "$2", "$3", "$4", "$5", "$6", "$7", "$8", "$9", NYSE, NASDAQ]
+
+# OpenDART: 주요사항보고서(B) 중 딜 관련 공시명
+dart:
+  report_keywords: [타법인주식및출자증권취득결정, 타법인주식및출자증권처분결정, 회사합병결정,
+                    회사분할합병결정, 회사분할결정, 영업양수결정, 영업양도결정,
+                    주식교환ㆍ이전결정, 유형자산양수결정, 유형자산양도결정]
+  # 거래소공시(I) 중
+  exchange_keywords: [최대주주변경, 최대주주 변경]
+  corp_classes: [Y, K]   # Y=유가증권, K=코스닥
+
+limits:
+  max_candidates_deal: 40    # Claude에게 넘기는 딜 후보 상한
+  max_candidates_macro: 12

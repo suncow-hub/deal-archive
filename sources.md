@@ -16,7 +16,7 @@
 | 한경 경제·국제 | RSS `www.hankyung.com/feed/economy`, `/international` | 딜 외 뉴스 |
 | OpenDART | API (Secrets: `DART_API_KEY`) | 한국 딜 1차 자료 (합병·인수·영업양수도 공시) |
 | PR Newswire M&A | RSS (Acquisitions, Mergers and Takeovers) | 해외 딜 1차 자료, 소규모 딜 필터 필수 |
-| Reuters | 시험 예정 (공식 RSS 없음) | 해외 딜 |
+| Reuters | 제외 (공식 RSS 없음, 우회 경로인 구글 뉴스 RSS도 자동 수집 불허) | — |
 
 ## 검증용
 
