@@ -1,0 +1,97 @@
+"""딜 노트·브리핑·사전 파일 검사. 문제가 있으면 목록을 출력하고 종료 코드 1."""
+
+import re
+import sys
+
+import yaml
+
+from lib import (NAME_FIELDS, REQUIRED_FIELDS, ROOT, SECTIONS, body_names, briefing_files,
+                 deal_files, load_deal, load_entities, load_tags, split_front)
+
+DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+ENTITY_TYPES = {"기업", "PE·VC", "재무 자문사", "법률 자문사", "정부·기관"}
+
+
+def main() -> int:
+    errors: list[str] = []
+    tags = load_tags()
+    regions = set(tags["지역"])
+    sizes = set(tags["규모"])
+    types = set(tags["유형"])
+    statuses = set(tags["상태"])
+    sectors = set(tags["업종"])
+    themes = set(tags["테마"])
+
+    try:
+        entities = load_entities()
+    except yaml.YAMLError as e:
+        print(f"entities.yml: YAML 오류 {e}")
+        return 1
+    for name, info in entities.items():
+        info = info or {}
+        if info.get("type") not in ENTITY_TYPES:
+            errors.append(f"entities.yml: {name} type '{info.get('type')}' 은(는) {sorted(ENTITY_TYPES)} 중 하나여야 함")
+        if info.get("country") and info["country"] not in regions:
+            errors.append(f"entities.yml: {name} country '{info['country']}' 이(가) tags.yml 지역에 없음")
+
+    for p in deal_files():
+        rel = p.relative_to(ROOT)
+        if not re.match(r"^\d{4}-\d{2}-\d{2}-[a-z0-9-]+\.md$", p.name):
+            errors.append(f"{rel}: 파일 이름은 YYYY-MM-DD-영문-slug.md")
+        try:
+            m, body = load_deal(p)
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"{rel}: {e}")
+            continue
+        for f in REQUIRED_FIELDS:
+            if f not in m:
+                errors.append(f"{rel}: 머리말에 '{f}' 없음")
+        if not m.get("제목"):
+            errors.append(f"{rel}: 제목 비어 있음")
+        for f in ("발표일", "최종 업데이트"):
+            if not DATE.match(str(m.get(f) or "")):
+                errors.append(f"{rel}: {f} 형식은 YYYY-MM-DD")
+        checks = [("상태", statuses, False), ("규모 구간", sizes, False), ("지역", regions, True),
+                  ("유형", types, True), ("업종", sectors, True), ("테마", themes, True)]
+        for field, allowed, many in checks:
+            vals = m.get(field) if many else [m.get(field)]
+            for v in vals:
+                if str(v) not in allowed:
+                    errors.append(f"{rel}: {field} '{v}' 은(는) tags.yml에 없는 값")
+        if not m.get("지역"):
+            errors.append(f"{rel}: 지역이 비어 있음")
+        if m.get("신뢰도") not in ("공시 확정", "보도 기준"):
+            errors.append(f"{rel}: 신뢰도는 '공시 확정' 또는 '보도 기준'")
+        names = [n for f in NAME_FIELDS for n in m.get(f, [])] + body_names(body)
+        for n in sorted(set(names)):
+            if n not in entities:
+                errors.append(f"{rel}: 이름 '{n}' 이(가) entities.yml에 없음 (대표 이름으로 쓰거나 등록)")
+        heads = re.findall(r"^## (.+?)\s*$", body, re.M)
+        if heads != SECTIONS:
+            errors.append(f"{rel}: 섹션 구성이 템플릿과 다름 → {heads}")
+        hist = body.split("## 진행 이력", 1)[-1].split("## ", 1)[0]
+        if not re.search(r"^- \d{4}-\d{2}-\d{2}: \S", hist, re.M):
+            errors.append(f"{rel}: 진행 이력에 날짜 줄이 없음")
+
+    for p in briefing_files():
+        rel = p.relative_to(ROOT)
+        try:
+            m, _ = split_front(p.read_text(encoding="utf-8"))
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"{rel}: {e}")
+            continue
+        if str(m.get("날짜")) != p.stem:
+            errors.append(f"{rel}: 날짜가 파일 이름과 다름")
+        if not m.get("알림") or len(str(m["알림"])) > 60:
+            errors.append(f"{rel}: 알림은 1~60자")
+
+    if errors:
+        print(f"검사 실패 {len(errors)}건")
+        print("\n".join(f"- {e}" for e in errors))
+        return 1
+    print(f"검사 통과: 딜 {len(deal_files())}건, 브리핑 {len(briefing_files())}건, 이름 {len(entities)}개")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

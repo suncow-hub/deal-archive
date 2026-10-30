@@ -17,3 +17,6 @@ venv/
 # --- 기타 ---
 .DS_Store
 Thumbs.db
+
+# --- Claude 단계 작업 파일 ---
+work/

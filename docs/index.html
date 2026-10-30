@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deal Archive</title>
+<meta name="description" content="M&A·자본시장 딜 아카이브와 매일 아침 브리핑">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="mast">
+  <div class="mast-top">
+    <span class="mast-date" id="today"></span>
+    <span class="mast-built" id="built"></span>
+  </div>
+  <a class="mast-title" href="#/">Deal Archive</a>
+  <nav class="mast-nav">
+    <a href="#/" data-nav="home">브리핑 · 딜</a>
+    <a href="#/entities" data-nav="entities">회사 · 기관</a>
+    <a href="#/briefings" data-nav="briefings">지난 브리핑</a>
+  </nav>
+</header>
+<main id="app" aria-live="polite"><p class="muted pad">불러오는 중…</p></main>
+<footer class="foot">
+  기사 원문은 각 출처에 있으며, 이 사이트는 정리 노트와 링크만 담습니다.
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

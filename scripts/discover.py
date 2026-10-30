@@ -168,6 +168,9 @@ def fetch_dart(cfg: dict, since: datetime, now: datetime, stats: dict) -> list[d
                     "published": datetime.strptime(row.get("rcept_dt"), "%Y%m%d").replace(tzinfo=KST).isoformat(),
                     "keywords": hits,
                     "_snippet": f"공시 제출인: {row.get('flr_nm')}",
+                    "_corp_code": row.get("corp_code"),
+                    "_rcept_no": rcept,
+                    "_rcept_dt": row.get("rcept_dt"),
                 })
             if page >= int(data.get("total_page", 1)):
                 break
@@ -177,9 +180,52 @@ def fetch_dart(cfg: dict, since: datetime, now: datetime, stats: dict) -> list[d
         return re.sub(r"\[[^\]]*\]", "", title).replace(" ", "")
     originals = {base(it["title"]) for it in out if "정정" not in it["title"]}
     out = [it for it in out if "정정" not in it["title"] or base(it["title"]) not in originals]
+    enrich_dart(out, key, stats)
     stats["OpenDART"] = f"{len(out)}건"
     log(f"[OpenDART] 딜 관련 공시 {len(out)}건")
     return out
+
+
+# 주요사항보고서 공시명 → OpenDART 주요정보 API (공시 원문의 핵심 수치를 구조화된 데이터로 받음)
+DART_DETAIL_API = {
+    "회사합병결정": "cmpMgDecsn",
+    "회사분할합병결정": "cmpDvmgDecsn",
+    "회사분할결정": "cmpDvDecsn",
+    "주식교환ㆍ이전결정": "stkExtrDecsn",
+    "타법인주식및출자증권취득결정": "otcprStkInvscrInhDecsn",
+    "타법인주식및출자증권처분결정": "otcprStkInvscrTrfDecsn",
+    "영업양수결정": "bsnInhDecsn",
+    "영업양도결정": "bsnTrfDecsn",
+}
+
+
+def enrich_dart(items: list[dict], key: str, stats: dict) -> None:
+    """공시별 핵심 수치(상대방, 금액, 비율, 일정 등)를 붙인다. 실패해도 수집은 계속."""
+    ok = fail = 0
+    for it in items:
+        api = next((v for k, v in DART_DETAIL_API.items() if k in it["title"].replace(" ", "")), None)
+        if not api or not it.get("_corp_code"):
+            continue
+        try:
+            r = requests.get(f"https://opendart.fss.or.kr/api/{api}.json", timeout=20,
+                             headers={"User-Agent": USER_AGENT},
+                             params={"crtfc_key": key, "corp_code": it["_corp_code"],
+                                     "bgn_de": it["_rcept_dt"], "end_de": it["_rcept_dt"]})
+            data = r.json()
+            rows = [x for x in data.get("list", []) if x.get("rcept_no") == it["_rcept_no"]] or data.get("list", [])[:1]
+            if data.get("status") != "000" or not rows:
+                fail += 1
+                it["dart_details_status"] = f"{data.get('status')} {data.get('message', '')}".strip()
+                continue
+            details = {k: v for k, v in rows[0].items()
+                       if v not in (None, "", "-") and k not in ("rcept_no", "corp_cls", "corp_code")}
+            it["dart_details"] = details
+            ok += 1
+        except Exception as e:  # noqa: BLE001
+            fail += 1
+            it["dart_details_status"] = f"실패: {type(e).__name__}"
+    stats["OpenDART 상세"] = f"{ok}건 성공, {fail}건 실패"
+    log(f"[OpenDART 상세] {ok}건 성공, {fail}건 실패")
 
 
 # ---------------------------------------------------------------- 중복 제거
@@ -320,8 +366,8 @@ def main() -> int:
 
     kept = []
     for it in deals + macros:
-        it.pop("_snippet", None)
-        it.pop("small", None)
+        for k in [k for k in it if k.startswith("_")] + ["small"]:
+            it.pop(k, None)
         kept.append(it)
 
     out_dir = ROOT / "candidates"
