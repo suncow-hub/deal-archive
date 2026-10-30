@@ -49,6 +49,8 @@ dart:
                     주식교환ㆍ이전결정]
   # 거래소공시(I) 중
   exchange_keywords: [최대주주변경, 최대주주 변경]
+  # 딜이 아닌 공시 (주식 담보 제공 등)
+  exclude: [주식담보제공계약]
   corp_classes: [Y, K]   # Y=유가증권, K=코스닥
 
 limits:

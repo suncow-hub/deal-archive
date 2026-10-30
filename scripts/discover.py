@@ -12,6 +12,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -157,7 +158,7 @@ def fetch_dart(cfg: dict, since: datetime, now: datetime, stats: dict) -> list[d
                     continue
                 name = row.get("report_nm", "")
                 hits = [w for w in words if w in name.replace(" ", "") or w in name]
-                if not hits:
+                if not hits or any(x in name.replace(" ", "") for x in dcfg.get("exclude", [])):
                     continue
                 rcept = row.get("rcept_no", "")
                 out.append({
@@ -292,7 +293,9 @@ def pick_model(client) -> str:
     if not names:
         raise RuntimeError("사용 가능한 flash 모델을 찾지 못함")
     names.sort(key=lambda n: (("preview" in n), [-int(x) if x.isdigit() else 0 for x in re.findall(r"\d+", n)]))
-    return names[0]
+    # 'latest' 별칭을 먼저, 그다음 버전 높은 순. 혼잡할 때 다음 모델로 넘어가기 위해 목록으로 돌려줌
+    names.sort(key=lambda n: 0 if "latest" in n else 1)
+    return names
 
 
 def gemini_score(items: list[dict], meta: dict) -> bool:
@@ -305,15 +308,32 @@ def gemini_score(items: list[dict], meta: dict) -> bool:
         from google.genai import types
 
         client = genai.Client(api_key=key)
-        model = pick_model(client)
-        meta["gemini_model"] = model
+        models = pick_model(client) if not os.environ.get("GEMINI_MODEL") else [os.environ["GEMINI_MODEL"]]
         lines = [f'{i}. [{it["source"]}] {it["title"]} | {it["_snippet"][:200]}' for i, it in enumerate(items)]
-        resp = client.models.generate_content(
-            model=model,
-            contents=GEMINI_PROMPT + "\n".join(lines),
-            config=types.GenerateContentConfig(response_mime_type="application/json", temperature=0.2),
-        )
-        results = json.loads(resp.text)
+        results, last_err, model = None, None, None
+        # 혼잡(503)·한도(429) 오류는 잠시 쉬었다 재시도하고, 그래도 안 되면 다음 모델로
+        for model in models[:3]:
+            for attempt in range(3):
+                try:
+                    resp = client.models.generate_content(
+                        model=model,
+                        contents=GEMINI_PROMPT + "\n".join(lines),
+                        config=types.GenerateContentConfig(response_mime_type="application/json", temperature=0.2),
+                    )
+                    results = json.loads(resp.text)
+                    break
+                except Exception as e:  # noqa: BLE001
+                    last_err = e
+                    retryable = any(c in str(e) for c in ("503", "429", "UNAVAILABLE", "RESOURCE_EXHAUSTED"))
+                    log(f"[Gemini] {model} 시도 {attempt + 1} 실패: {type(e).__name__}")
+                    if not retryable:
+                        break
+                    time.sleep(20 * (attempt + 1))
+            if results is not None:
+                break
+        if results is None:
+            raise last_err or RuntimeError("채점 실패")
+        meta["gemini_model"] = model
         by_id = {int(r["id"]): r for r in results if "id" in r}
         for i, it in enumerate(items):
             r = by_id.get(i)
