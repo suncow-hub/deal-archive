@@ -1,9 +1,9 @@
 {
   "meta": {
-    "run_at": "2026-10-30T17:11:27.997579+09:00",
-    "window_start": "2026-10-29T11:11:27.997579+09:00",
+    "run_at": "2026-10-30T17:14:06.832624+09:00",
+    "window_start": "2026-10-29T11:14:06.832624+09:00",
     "sources": {
-      "OpenDART": "25건",
+      "OpenDART": "19건",
       "WSJ Markets": "4/61",
       "WSJ U.S. Business": "7/85",
       "PR Newswire M&A": "14/20",
@@ -14,28 +14,14 @@
       "한경 국제": "5/50"
     },
     "gemini_model": "gemini-flash-latest",
-    "gemini": "성공 (74/74건 채점)",
+    "gemini": "성공 (68/68건 채점)",
     "counts": {
-      "deal": 40,
+      "deal": 18,
       "macro": 12,
-      "dropped": 22
+      "dropped": 38
     }
   },
   "items": [
-    {
-      "source": "WSJ U.S. Business",
-      "kind": "deal",
-      "title": "DoorDash to Buy Instacart for $17 Billion",
-      "link": "https://www.wsj.com/business/deals/doordash-to-buy-instacart-for-17-billion-7d6a6f3f?mod=pls_whats_news_us_business_f",
-      "published": "2026-10-29T20:51:00+09:00",
-      "keywords": [
-        "to buy",
-        "deal"
-      ],
-      "score": 10.0,
-      "score_by": "gemini",
-      "reason": "170억 달러 규모 초대형 플랫폼 딜이다."
-    },
     {
       "source": "WSJ U.S. Business",
       "kind": "deal",
@@ -47,20 +33,34 @@
       ],
       "score": 9.0,
       "score_by": "gemini",
-      "reason": "76억 달러 규모 대형 바이아웃이다."
+      "reason": "Thrive Capital의 ADT 76억 달러 대형 M&A."
     },
     {
-      "source": "WSJ Markets",
+      "source": "WSJ U.S. Business",
       "kind": "deal",
-      "title": "Alphabet Stumbles, U.S. Economy Surges",
-      "link": "https://www.wsj.com/finance/stocks/alphabet-stumbles-u-s-economy-surges-7f47a441?mod=rss_markets_main",
-      "published": "2026-10-30T05:32:00+09:00",
+      "title": "DoorDash to Buy Instacart for $17 Billion",
+      "link": "https://www.wsj.com/business/deals/doordash-to-buy-instacart-for-17-billion-7d6a6f3f?mod=pls_whats_news_us_business_f",
+      "published": "2026-10-29T20:51:00+09:00",
       "keywords": [
-        "to buy"
+        "to buy",
+        "deal"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "도어대시의 인스타카트 170억 달러 메가 빅딜 인수."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(SK) 주요사항보고서(주식교환ㆍ이전결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000607",
+      "published": "2026-10-29T00:00:00+09:00",
+      "keywords": [
+        "주식교환ㆍ이전결정"
       ],
       "score": 8.0,
       "score_by": "gemini",
-      "reason": "도어대시의 대형 M&A 소식이다."
+      "reason": "SK그룹 지배구조 개편 목적 주식교환 결정 공시."
     },
     {
       "source": "WSJ Markets",
@@ -73,7 +73,21 @@
       ],
       "score": 8.0,
       "score_by": "gemini",
-      "reason": "유럽 대형 은행 간 적대적 인수전이다."
+      "reason": "유럽 대형 은행 간 400억 달러 규모 적대적 M&A 방어."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Asian Private-Equity Firm to Buy Beleaguered China Evergrande’s Property-Management Arm",
+      "link": "https://www.wsj.com/business/deals/asian-private-equity-firm-to-buy-beleaguered-china-evergrandes-property-management-arm-0d0d5259?mod=pls_whats_news_us_business_f",
+      "published": "2026-10-30T11:54:00+09:00",
+      "keywords": [
+        "to buy",
+        "stake"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "PAG의 헝다 부동산관리 자회사 경영권 인수 딜."
     },
     {
       "source": "OpenDART",
@@ -86,7 +100,7 @@
       ],
       "score": 7.0,
       "score_by": "gemini",
-      "reason": "지주사와의 포괄적 주식교환 건이다."
+      "reason": "한국철강과 KISCO홀딩스 간 포괄적 주식교환 건."
     },
     {
       "source": "OpenDART",
@@ -99,34 +113,20 @@
       ],
       "score": 7.0,
       "score_by": "gemini",
-      "reason": "자회사 완전자회사화 주식교환이다."
+      "reason": "KISCO홀딩스의 한국철강 완전자회사화 주식교환 공시."
     },
     {
-      "source": "OpenDART",
+      "source": "PR Newswire M&A",
       "kind": "deal",
-      "title": "(SK) 주요사항보고서(주식교환ㆍ이전결정)",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000607",
-      "published": "2026-10-29T00:00:00+09:00",
+      "title": "Perrigo Announces Agreement to Divest Infant Formula Business to MeridianMade",
+      "link": "https://www.prnewswire.com/news-releases/perrigo-announces-agreement-to-divest-infant-formula-business-to-meridianmade-302923597.html",
+      "published": "2026-10-29T22:00:00+09:00",
       "keywords": [
-        "주식교환ㆍ이전결정"
+        "divest"
       ],
       "score": 7.0,
       "score_by": "gemini",
-      "reason": "대기업 지배구조 개편 주식교환이다."
-    },
-    {
-      "source": "WSJ U.S. Business",
-      "kind": "deal",
-      "title": "Asian Private-Equity Firm to Buy Beleaguered China Evergrande’s Property-Management Arm",
-      "link": "https://www.wsj.com/business/deals/asian-private-equity-firm-to-buy-beleaguered-china-evergrandes-property-management-arm-0d0d5259?mod=pls_whats_news_us_business_f",
-      "published": "2026-10-30T11:54:00+09:00",
-      "keywords": [
-        "to buy",
-        "stake"
-      ],
-      "score": 7.0,
-      "score_by": "gemini",
-      "reason": "글로벌 PEF의 헝다 자산 인수이다."
+      "reason": "페리고의 분유 사업부 카브아웃 매각 거래."
     },
     {
       "source": "PR Newswire M&A",
@@ -141,7 +141,7 @@
       ],
       "score": 7.0,
       "score_by": "gemini",
-      "reason": "PEF 간 인프라 기업 세컨더리 딜이다."
+      "reason": "오크힐의 칼라일 보유 인프라 통신사 경영권 인수."
     },
     {
       "source": "OpenDART",
@@ -154,7 +154,7 @@
       ],
       "score": 6.0,
       "score_by": "gemini",
-      "reason": "샘표 계열사 간 합병 공시이다."
+      "reason": "샘표 그룹 지배구조 개편 관련 계열사 합병 결정 공시."
     },
     {
       "source": "OpenDART",
@@ -167,20 +167,20 @@
       ],
       "score": 6.0,
       "score_by": "gemini",
-      "reason": "샘표 그룹 지배구조 개편 합병 건이다."
+      "reason": "샘표 지주사 합병 공시로 그룹 재편 관련 건."
     },
     {
       "source": "OpenDART",
       "kind": "deal",
-      "title": "(SK) [첨부정정]주요사항보고서(주식교환ㆍ이전결정)",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000166",
+      "title": "(롯데렌탈) 최대주주등소유주식변동신고서(최대주주변경시)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030800718",
       "published": "2026-10-30T00:00:00+09:00",
       "keywords": [
-        "주식교환ㆍ이전결정"
+        "최대주주변경"
       ],
       "score": 6.0,
       "score_by": "gemini",
-      "reason": "SK 지배구조 관련 주식교환 정정이다."
+      "reason": "롯데렌탈 최대주주 지분 변동 신고 공시."
     },
     {
       "source": "OpenDART",
@@ -193,59 +193,7 @@
       ],
       "score": 6.0,
       "score_by": "gemini",
-      "reason": "대기업 계열사 최대주주 변경 건이다."
-    },
-    {
-      "source": "PR Newswire M&A",
-      "kind": "deal",
-      "title": "Perrigo Announces Agreement to Divest Infant Formula Business to MeridianMade",
-      "link": "https://www.prnewswire.com/news-releases/perrigo-announces-agreement-to-divest-infant-formula-business-to-meridianmade-302923597.html",
-      "published": "2026-10-29T22:00:00+09:00",
-      "keywords": [
-        "divest"
-      ],
-      "score": 6.0,
-      "score_by": "gemini",
-      "reason": "제약사의 분유 사업부 카브아웃 매각이다."
-    },
-    {
-      "source": "OpenDART",
-      "kind": "deal",
-      "title": "(한화플러스제5호스팩) [기재정정]주요사항보고서(회사합병결정)",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000346",
-      "published": "2026-10-30T00:00:00+09:00",
-      "keywords": [
-        "회사합병결정"
-      ],
-      "score": 5.0,
-      "score_by": "gemini",
-      "reason": "스팩 합병 상장 정정 공시이다."
-    },
-    {
-      "source": "OpenDART",
-      "kind": "deal",
-      "title": "(SCL사이언스) 주요사항보고서(회사합병결정)",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000639",
-      "published": "2026-10-29T00:00:00+09:00",
-      "keywords": [
-        "회사합병결정"
-      ],
-      "score": 5.0,
-      "score_by": "gemini",
-      "reason": "코스닥 상장사의 계열 합병 건이다."
-    },
-    {
-      "source": "OpenDART",
-      "kind": "deal",
-      "title": "(롯데렌탈) 최대주주등소유주식변동신고서(최대주주변경시)",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030800718",
-      "published": "2026-10-30T00:00:00+09:00",
-      "keywords": [
-        "최대주주변경"
-      ],
-      "score": 5.0,
-      "score_by": "gemini",
-      "reason": "롯데렌탈 최대주주 지분 변동이다."
+      "reason": "롯데렌탈 최대주주 변경 완료 공시."
     },
     {
       "source": "WSJ Markets",
@@ -257,127 +205,9 @@
         "IPO",
         "IPO"
       ],
-      "score": 5.0,
+      "score": 6.0,
       "score_by": "gemini",
-      "reason": "AI 유니콘 기업의 IPO 전망이다."
-    },
-    {
-      "source": "OpenDART",
-      "kind": "deal",
-      "title": "(콜마비앤에이치) [첨부정정]주요사항보고서(회사합병결정)",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000586",
-      "published": "2026-10-29T00:00:00+09:00",
-      "keywords": [
-        "회사합병결정"
-      ],
-      "score": 4.0,
-      "score_by": "gemini",
-      "reason": "콜마 계열사 흡수합병 정정이다."
-    },
-    {
-      "source": "OpenDART",
-      "kind": "deal",
-      "title": "(에스트래픽) [기재정정]주요사항보고서(영업양수결정)",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000326",
-      "published": "2026-10-29T00:00:00+09:00",
-      "keywords": [
-        "영업양수결정"
-      ],
-      "score": 4.0,
-      "score_by": "gemini",
-      "reason": "에스트래픽의 영업양수도 정정이다."
-    },
-    {
-      "source": "OpenDART",
-      "kind": "deal",
-      "title": "(아이엘) 주요사항보고서(회사합병결정)",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000027",
-      "published": "2026-10-29T00:00:00+09:00",
-      "keywords": [
-        "회사합병결정"
-      ],
-      "score": 4.0,
-      "score_by": "gemini",
-      "reason": "코스닥 상장사의 비상장사 합병이다."
-    },
-    {
-      "source": "OpenDART",
-      "kind": "deal",
-      "title": "(금호에이치티) [기재정정]최대주주변경",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029800490",
-      "published": "2026-10-29T00:00:00+09:00",
-      "keywords": [
-        "최대주주변경"
-      ],
-      "score": 4.0,
-      "score_by": "gemini",
-      "reason": "지배구조 변경 관련 정정 공시이다."
-    },
-    {
-      "source": "OpenDART",
-      "kind": "deal",
-      "title": "(이엠앤아이) [기재정정]최대주주변경을수반하는주식양수도계약체결",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029900365",
-      "published": "2026-10-29T00:00:00+09:00",
-      "keywords": [
-        "최대주주변경"
-      ],
-      "score": 4.0,
-      "score_by": "gemini",
-      "reason": "경영권 주식양수도 계약 정정이다."
-    },
-    {
-      "source": "WSJ U.S. Business",
-      "kind": "deal",
-      "title": "NatWest Earnings Boosted by Higher Net Interest Income",
-      "link": "https://www.wsj.com/business/earnings/natwest-earnings-boosted-by-higher-net-interest-income-20ebc371?mod=pls_whats_news_us_business_f",
-      "published": "2026-10-30T16:46:00+09:00",
-      "keywords": [
-        "acquisition"
-      ],
-      "score": 4.0,
-      "score_by": "gemini",
-      "reason": "은행 실적과 과거 M&A 효과 보도이다."
-    },
-    {
-      "source": "PR Newswire M&A",
-      "kind": "deal",
-      "title": "TEXAS COMMUNITY BANCSHARES, INC. AND THE BANC OF SAN JACINTO COUNTY BANCSHARES, INC., THE PARENT OF THE BANK OF SAN JACINTO COUNTY, COLDSPRING, TEXAS, ANNOUNCE MERGER AGREEMENT",
-      "link": "https://www.prnewswire.com/news-releases/texas-community-bancshares-inc-and-the-banc-of-san-jacinto-county-bancshares-inc-the-parent-of-the-bank-of-san-jacinto-county-coldspring-texas-announce-merger-agreement-302924337.html",
-      "published": "2026-10-30T07:39:00+09:00",
-      "keywords": [
-        "merger"
-      ],
-      "score": 4.0,
-      "score_by": "gemini",
-      "reason": "미국 중소 지역은행 간 합병이다."
-    },
-    {
-      "source": "PR Newswire M&A",
-      "kind": "deal",
-      "title": "Vusion Completes Acquisition of In-Store Media, Opening a New Chapter for Digital Retail Media in Physical Stores",
-      "link": "https://www.prnewswire.com/news-releases/vusion-completes-acquisition-of-in-store-media-opening-a-new-chapter-for-digital-retail-media-in-physical-stores-302924244.html",
-      "published": "2026-10-30T05:22:00+09:00",
-      "keywords": [
-        "acquisition"
-      ],
-      "score": 4.0,
-      "score_by": "gemini",
-      "reason": "유럽 상장사의 리테일 미디어 인수이다."
-    },
-    {
-      "source": "PR Newswire M&A",
-      "kind": "deal",
-      "title": "Coveo Acquires Anglera to Make Product Data a Competitive Advantage in AI-Powered eCommerce",
-      "link": "https://www.prnewswire.com/news-releases/coveo-acquires-anglera-to-make-product-data-a-competitive-advantage-in-ai-powered-ecommerce-302924144.html",
-      "published": "2026-10-30T05:01:00+09:00",
-      "keywords": [
-        "acquires",
-        "acquisition"
-      ],
-      "score": 4.0,
-      "score_by": "gemini",
-      "reason": "AI 커머스 데이터 기업 볼트온이다."
+      "reason": "앤스로픽 IPO와 지정학적 공급망에 관한 오피니언."
     },
     {
       "source": "PR Newswire M&A",
@@ -389,166 +219,49 @@
         "acquires",
         "stake"
       ],
-      "score": 4.0,
+      "score": 6.0,
       "score_by": "gemini",
-      "reason": "중국 의료기기 기업 PE 바이아웃이다."
-    },
-    {
-      "source": "한경 증권",
-      "kind": "deal",
-      "title": "급락장서 '따블' 넘은 인텔리빅스…상장 첫날 공모가 3.4배",
-      "link": "https://www.hankyung.com/article/202610306562i",
-      "published": "2026-10-30T16:37:40+09:00",
-      "keywords": [
-        "상장"
-      ],
-      "score": 4.0,
-      "score_by": "gemini",
-      "reason": "신규 상장 기업의 첫날 공모 성과이다."
-    },
-    {
-      "source": "한경 증권",
-      "kind": "deal",
-      "title": "크리에이츠, 코스닥 상장 첫날 28% 급락",
-      "link": "https://www.hankyung.com/article/2026103052816",
-      "published": "2026-10-30T09:29:01+09:00",
-      "keywords": [
-        "상장"
-      ],
-      "score": 4.0,
-      "score_by": "gemini",
-      "reason": "코스닥 신규 상장주 주가 흐름이다."
-    },
-    {
-      "source": "OpenDART",
-      "kind": "deal",
-      "title": "(젬백스) [기재정정]주요사항보고서(유형자산양수결정)",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000481",
-      "published": "2026-10-30T00:00:00+09:00",
-      "keywords": [
-        "유형자산양수결정"
-      ],
-      "score": 3.0,
-      "score_by": "gemini",
-      "reason": "단순 유형자산 취득 정정 공시이다."
-    },
-    {
-      "source": "OpenDART",
-      "kind": "deal",
-      "title": "(제닉스로보틱스) 주요사항보고서(유형자산양수결정)",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000339",
-      "published": "2026-10-30T00:00:00+09:00",
-      "keywords": [
-        "유형자산양수결정"
-      ],
-      "score": 3.0,
-      "score_by": "gemini",
-      "reason": "기업의 소규모 유형자산 취득 건이다."
-    },
-    {
-      "source": "OpenDART",
-      "kind": "deal",
-      "title": "(대구백화점) [기재정정]주요사항보고서(유형자산양도결정)",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000668",
-      "published": "2026-10-30T00:00:00+09:00",
-      "keywords": [
-        "유형자산양도결정"
-      ],
-      "score": 3.0,
-      "score_by": "gemini",
-      "reason": "자산 유동화를 위한 부동산 양도이다."
+      "reason": "HSG의 중국 의료기기사 PeierTech 80% 지분 인수."
     },
     {
       "source": "PR Newswire M&A",
       "kind": "deal",
-      "title": "Static Media Revs Up Presence in Auto Vertical with Acquisition of CarScoops",
-      "link": "https://www.prnewswire.com/news-releases/static-media-revs-up-presence-in-auto-vertical-with-acquisition-of-carscoops-302924019.html",
-      "published": "2026-10-30T02:15:00+09:00",
+      "title": "TEXAS COMMUNITY BANCSHARES, INC. AND THE BANC OF SAN JACINTO COUNTY BANCSHARES, INC., THE PARENT OF THE BANK OF SAN JACINTO COUNTY, COLDSPRING, TEXAS, ANNOUNCE MERGER AGREEMENT",
+      "link": "https://www.prnewswire.com/news-releases/texas-community-bancshares-inc-and-the-banc-of-san-jacinto-county-bancshares-inc-the-parent-of-the-bank-of-san-jacinto-county-coldspring-texas-announce-merger-agreement-302924337.html",
+      "published": "2026-10-30T07:39:00+09:00",
+      "keywords": [
+        "merger"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "미국 소형 지역은행 간 합병 인수 발표."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Vusion Completes Acquisition of In-Store Media, Opening a New Chapter for Digital Retail Media in Physical Stores",
+      "link": "https://www.prnewswire.com/news-releases/vusion-completes-acquisition-of-in-store-media-opening-a-new-chapter-for-digital-retail-media-in-physical-stores-302924244.html",
+      "published": "2026-10-30T05:22:00+09:00",
       "keywords": [
         "acquisition"
       ],
-      "score": 3.0,
+      "score": 5.0,
       "score_by": "gemini",
-      "reason": "디지털 미디어 사이트 소규모 인수이다."
+      "reason": "프랑스 리테일 테크 기업의 인스토어 미디어 인수."
     },
     {
       "source": "PR Newswire M&A",
       "kind": "deal",
-      "title": "NIIT Learning Systems Limited Acquires Bluewater Learning to Power AI-Driven Learning and Talent Transformation",
-      "link": "https://www.prnewswire.com/news-releases/niit-learning-systems-limited-acquires-bluewater-learning-to-power-ai-driven-learning-and-talent-transformation-302923820.html",
-      "published": "2026-10-30T01:00:00+09:00",
-      "keywords": [
-        "acquires"
-      ],
-      "score": 3.0,
-      "score_by": "gemini",
-      "reason": "인도 IT 기업의 미국 업체 인수이다."
-    },
-    {
-      "source": "PR Newswire M&A",
-      "kind": "deal",
-      "title": "SPEYSIDE COMPLETES ACQUISITION OF THE TAPCO TUBE COMPANY",
-      "link": "https://www.prnewswire.com/news-releases/speyside-completes-acquisition-of-the-tapco-tube-company-302922824.html",
-      "published": "2026-10-29T23:00:00+09:00",
-      "keywords": [
-        "acquisition"
-      ],
-      "score": 3.0,
-      "score_by": "gemini",
-      "reason": "PE의 중소 철강 튜브 제조사 인수이다."
-    },
-    {
-      "source": "PR Newswire M&A",
-      "kind": "deal",
-      "title": "JDM Technology Group Strengthens Construction Software Portfolio with Acquisition of Dreeven",
-      "link": "https://www.prnewswire.com/news-releases/jdm-technology-group-strengthens-construction-software-portfolio-with-acquisition-of-dreeven-302923241.html",
-      "published": "2026-10-29T21:51:00+09:00",
-      "keywords": [
-        "acquisition"
-      ],
-      "score": 3.0,
-      "score_by": "gemini",
-      "reason": "건설용 소프트웨어 기업 볼트온 인수이다."
-    },
-    {
-      "source": "PR Newswire M&A",
-      "kind": "deal",
-      "title": "DCN Dx Acquires Human Biospecimen Provider BioSouthTech to Broaden Access to Diverse Patient Populations",
-      "link": "https://www.prnewswire.com/news-releases/dcn-dx-acquires-human-biospecimen-provider-biosouthtech-to-broaden-access-to-diverse-patient-populations-302923660.html",
-      "published": "2026-10-29T21:13:00+09:00",
+      "title": "Coveo Acquires Anglera to Make Product Data a Competitive Advantage in AI-Powered eCommerce",
+      "link": "https://www.prnewswire.com/news-releases/coveo-acquires-anglera-to-make-product-data-a-competitive-advantage-in-ai-powered-ecommerce-302924144.html",
+      "published": "2026-10-30T05:01:00+09:00",
       "keywords": [
         "acquires",
         "acquisition"
       ],
-      "score": 3.0,
+      "score": 5.0,
       "score_by": "gemini",
-      "reason": "진단기업의 검체 공급사 소규모 인수이다."
-    },
-    {
-      "source": "한경 증권",
-      "kind": "deal",
-      "title": "인텔리빅스, 코스닥 상장 첫날 120%대 급등",
-      "link": "https://www.hankyung.com/article/2026103052286",
-      "published": "2026-10-30T09:17:32+09:00",
-      "keywords": [
-        "상장"
-      ],
-      "score": 3.0,
-      "score_by": "gemini",
-      "reason": "IPO 상장 첫날 주가 변동 중복이다."
-    },
-    {
-      "source": "OpenDART",
-      "kind": "deal",
-      "title": "(진양폴리우레탄) [기재정정]주요사항보고서(유형자산양수결정)",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000295",
-      "published": "2026-10-30T00:00:00+09:00",
-      "keywords": [
-        "유형자산양수결정"
-      ],
-      "score": 2.0,
-      "score_by": "gemini",
-      "reason": "소규모 유형자산 양수 정정 건이다."
+      "reason": "캐나다 코베오의 AI 이커머스 스타트업 볼트온 인수."
     },
     {
       "source": "WSJ Economy",
@@ -559,9 +272,9 @@
       "keywords": [
         "inflation"
       ],
-      "score": 7.0,
+      "score": 8.0,
       "score_by": "gemini",
-      "reason": "BOJ의 추가 금리 인상 기반 마련이다."
+      "reason": "일본은행(BOJ) 물가 선언 및 금리 인상 경로 거시 뉴스."
     },
     {
       "source": "WSJ Economy",
@@ -573,9 +286,22 @@
         "interest rate",
         "central bank"
       ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "ECB 금리 동결 및 라가르드 조기 사임 거시 충격."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "macro",
+      "title": "Trump Administration Promised Tariff Relief in Talks to Secure U.S. Audi Factory",
+      "link": "https://www.wsj.com/business/autos/trump-administration-promised-tariff-relief-in-talks-to-secure-u-s-audi-factory-da037c3f?mod=pls_whats_news_us_business_f",
+      "published": "2026-10-29T22:36:00+09:00",
+      "keywords": [
+        "in talks"
+      ],
       "score": 7.0,
       "score_by": "gemini",
-      "reason": "ECB 금리 동결 및 총재 사임 소식이다."
+      "reason": "미국 정부의 완성차 관세 인하 협상 및 투자 조건."
     },
     {
       "source": "WSJ Economy",
@@ -589,20 +315,7 @@
       ],
       "score": 7.0,
       "score_by": "gemini",
-      "reason": "연준 금리 결정 핵심인 PCE 지표이다."
-    },
-    {
-      "source": "WSJ U.S. Business",
-      "kind": "macro",
-      "title": "Trump Administration Promised Tariff Relief in Talks to Secure U.S. Audi Factory",
-      "link": "https://www.wsj.com/business/autos/trump-administration-promised-tariff-relief-in-talks-to-secure-u-s-audi-factory-da037c3f?mod=pls_whats_news_us_business_f",
-      "published": "2026-10-29T22:36:00+09:00",
-      "keywords": [
-        "in talks"
-      ],
-      "score": 6.0,
-      "score_by": "gemini",
-      "reason": "미국 정부 관세 정책과 공장 유치이다."
+      "reason": "연준 기준 지표인 미국 PCE 인플레이션 반등."
     },
     {
       "source": "한경 경제",
@@ -614,9 +327,9 @@
         "금리",
         "기준금리"
       ],
-      "score": 6.0,
+      "score": 7.0,
       "score_by": "gemini",
-      "reason": "일본은행 기준금리 동결 속보이다."
+      "reason": "일본은행 기준금리 1.25% 동결 결정 속보."
     },
     {
       "source": "한경 국제",
@@ -627,35 +340,9 @@
       "keywords": [
         "금리"
       ],
-      "score": 6.0,
+      "score": 7.0,
       "score_by": "gemini",
-      "reason": "미국 연준 내부 금리 인상론 대두이다."
-    },
-    {
-      "source": "WSJ Markets",
-      "kind": "macro",
-      "title": "Oil Settles Lower As U.S. Seeks to Engage Iran in Talks",
-      "link": "https://www.wsj.com/finance/commodities-futures/oil-falls-as-traders-weigh-middle-east-risks-f814aedd?mod=rss_markets_main",
-      "published": "2026-10-30T05:34:00+09:00",
-      "keywords": [
-        "in talks"
-      ],
-      "score": 5.0,
-      "score_by": "gemini",
-      "reason": "중동 협상과 유가 변동 뉴스이다."
-    },
-    {
-      "source": "WSJ World News",
-      "kind": "macro",
-      "title": "Oil Prices Rise After Hormuz Tanker Attack, Houthi Claims Stoke Supply Fears",
-      "link": "https://www.wsj.com/world/middle-east/oil-prices-rise-after-hormuz-tanker-attack-houthi-claims-stoke-supply-fears-de48df37?mod=rss_worldnews",
-      "published": "2026-10-30T16:55:00+09:00",
-      "keywords": [
-        "trade"
-      ],
-      "score": 5.0,
-      "score_by": "gemini",
-      "reason": "호르무즈 해협 공격에 따른 유가 급등이다."
+      "reason": "연준 FOMC 내부 금리 인상 소수의견 대두."
     },
     {
       "source": "WSJ Economy",
@@ -666,9 +353,9 @@
       "keywords": [
         "interest rate"
       ],
-      "score": 5.0,
+      "score": 6.0,
       "score_by": "gemini",
-      "reason": "호주 중앙은행의 추가 금리 인상 전망이다."
+      "reason": "호주 중앙은행의 연속 금리 인상 전망 거시 뉴스."
     },
     {
       "source": "한경 국제",
@@ -681,9 +368,9 @@
         "기준금리",
         "물가"
       ],
-      "score": 5.0,
+      "score": 6.0,
       "score_by": "gemini",
-      "reason": "일본은행 통화정책 동결 결정 보도이다."
+      "reason": "BOJ 물가 목표 도달 및 금리 동결 중복 뉴스."
     },
     {
       "source": "한경 국제",
@@ -695,22 +382,48 @@
         "금리",
         "물가"
       ],
-      "score": 5.0,
+      "score": 6.0,
       "score_by": "gemini",
-      "reason": "연준 인사 발언과 금리 전망이다."
+      "reason": "미 연준 인사들의 12월 금리 추가 인상 시사 발언."
     },
     {
-      "source": "WSJ Economy",
+      "source": "WSJ Markets",
       "kind": "macro",
-      "title": "A pre-midterms pause at the Fed was wise. Read more in today’s WSJ Economics newsletter:",
-      "link": "https://www.wsj.com/economy/central-banking/kevin-warshs-judicious-pre-election-pause-2049700e?mod=rss_socialeconomyfeed",
-      "published": "2026-10-29T18:47:00+09:00",
+      "title": "Oil Settles Lower As U.S. Seeks to Engage Iran in Talks",
+      "link": "https://www.wsj.com/finance/commodities-futures/oil-falls-as-traders-weigh-middle-east-risks-f814aedd?mod=rss_markets_main",
+      "published": "2026-10-30T05:34:00+09:00",
       "keywords": [
-        "Fed"
+        "in talks"
       ],
-      "score": 4.0,
+      "score": 5.0,
       "score_by": "gemini",
-      "reason": "미국 연준 통화정책 코멘터리이다."
+      "reason": "중동 외교 및 유가 변동에 따른 거시 환경 뉴스."
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Oil Prices Rise After Hormuz Tanker Attack, Houthi Claims Stoke Supply Fears",
+      "link": "https://www.wsj.com/world/middle-east/oil-prices-rise-after-hormuz-tanker-attack-houthi-claims-stoke-supply-fears-de48df37?mod=rss_worldnews",
+      "published": "2026-10-30T16:55:00+09:00",
+      "keywords": [
+        "trade"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "호르무즈 해협 유조선 피격 및 유가 상승 거시 뉴스."
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "美 고금리 역설…집 못 사는 사람 늘자 월세 다시 뛴다",
+      "link": "https://www.hankyung.com/article/202610306208i",
+      "published": "2026-10-30T14:48:57+09:00",
+      "keywords": [
+        "금리"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "미국 고금리 지속에 따른 주택 임대시장 여파."
     }
   ]
 }
