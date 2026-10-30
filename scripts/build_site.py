@@ -95,7 +95,8 @@ def main() -> None:
                       "aliases": info.get("aliases", []) or []}
 
     data = {
-        "built_at": datetime.now(KST).strftime("%Y-%m-%d %H:%M"),
+        # 같은 내용이면 같은 결과가 나오도록 실행 시각 대신 데이터 기준 날짜를 쓴다
+        "built_at": max([d["updated"] or "" for d in deals] + [b["date"] for b in briefings] + [""]),
         "axes": {
             "지역": list(tags["지역"].keys()),
             "규모 구간": tags["규모"],
