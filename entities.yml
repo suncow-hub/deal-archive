@@ -159,3 +159,51 @@ KISCO홀딩스:
   type: 기업
   country: 한국
   aliases: [Korea Steel]
+BASF:
+  type: 기업
+  country: 유럽
+  aliases: [BASF SE, 바스프]
+Evonik:
+  type: 기업
+  country: 유럽
+  aliases: [Evonik Industries, 에보닉]
+Vistra:
+  type: 기업
+  country: 미국
+  aliases: [Vistra Corp., 비스트라]
+Cogentrix Energy:
+  type: 기업
+  country: 미국
+  aliases: [Cogentrix]
+Quantum Capital Group:
+  type: PE·VC
+  country: 미국
+  aliases: [Quantum]
+Sidley Austin:
+  type: 법률 자문사
+  country: 미국
+  aliases: [Sidley]
+Cleary Gottlieb Steen & Hamilton:
+  type: 법률 자문사
+  country: 미국
+  aliases: [Cleary Gottlieb]
+King & Spalding:
+  type: 법률 자문사
+  country: 미국
+  aliases: []
+Viatris:
+  type: 기업
+  country: 미국
+  aliases: [Viatris Inc., 비아트리스]
+Pacira BioSciences:
+  type: 기업
+  country: 미국
+  aliases: [Pacira]
+Morgan Stanley:
+  type: 재무 자문사
+  country: 미국
+  aliases: [모건스탠리]
+Ashurst Perkins Coie:
+  type: 법률 자문사
+  country: 미국
+  aliases: [Perkins Coie]

@@ -42,3 +42,4 @@ VC 계열 영구자본 지주사가 지분가치 약 10.2조 원(EV 약 20.5조 
 - 2026-10-29: Thrive Holdings의 ADT 인수 계약이 발표됐다. go-shop은 2026-11-28까지다.
 
 ## 관련 딜·뉴스
+- [Vistra, Quantum Capital로부터 Cogentrix Energy 인수 완료 (순매입가 약 40억 달러)](../2026/2026-01-05-vistra-cogentrix-energy.md) — Goldman Sachs·Evercore가 자문사로 함께 등장

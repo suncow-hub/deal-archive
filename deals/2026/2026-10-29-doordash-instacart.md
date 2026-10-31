@@ -42,3 +42,4 @@ Instacart 주주는 현금 65.00달러, DoorDash 주식 0.3372주, 현금 48.75�
 - 2026-10-29: DoorDash가 Instacart 인수 계약을 체결·발표했다.
 
 ## 관련 딜·뉴스
+- [Viatris, Pacira BioSciences를 주당 36.5달러(지분가치 약 16.5억 달러)에 인수, 공개매수 개시](../2026/2026-10-08-viatris-pacira-biosciences.md) — Centerview Partners·Goldman Sachs·Cravath가 함께 자문한 같은 시기 미국 상장사 인수

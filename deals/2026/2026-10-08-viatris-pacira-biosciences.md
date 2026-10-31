@@ -1,0 +1,46 @@
+---
+제목: "Viatris, Pacira BioSciences를 주당 36.5달러(지분가치 약 16.5억 달러)에 인수, 공개매수 개시"
+상태: "계약 체결"
+신뢰도: "공시 확정"
+발표일: 2026-10-08
+최종 업데이트: 2026-10-31
+지역: ["미국"]
+규모 구간: "1조~5조"
+규모(원화): "약 2.2조 원 (대략값)"
+규모(원 통화): "USD 약 1.65B 지분가치 (2026-10-30 환율 1,334.3원 적용 대략값, 발표일 환율 미확인)"
+유형: ["경영권 인수"]
+업종: ["바이오·헬스케어"]
+테마: []
+인수자: ["Viatris"]
+대상: ["Pacira BioSciences"]
+매도자: []
+재무 자문: ["Morgan Stanley", "Centerview Partners", "Goldman Sachs"]
+법률 자문: ["Cravath, Swaine & Moore", "Ashurst Perkins Coie"]
+출처: ["https://www.sec.gov/Archives/edgar/data/0001792044/000114036126039024/ef20083514_ex99-1.htm", "https://www.prnewswire.com/news-releases/viatris-announces-commencement-of-tender-offer-to-acquire-pacira-biosciences-inc-302924916.html"]
+---
+## 한 줄 요약
+[[Viatris]]가 비마약성 진통제 업체 [[Pacira BioSciences]]를 주당 현금 36.5달러, 지분가치 약 16.5억 달러에 인수하기로 하고 공개매수에 들어갔다.
+
+## 딜 구조
+<!-- 인수 지분, 인수 방식, 자금 조달 방법 -->
+현금 공개매수 후 같은 가격의 2단계 합병으로 지분 100%를 확보한다. 과반 응모와 독점규제 대기기간 만료가 조건이며, 자금은 보유 현금과 단기 차입으로 마련한다. 양사 이사회가 만장일치로 승인했다.
+
+## 밸류에이션
+<!-- EV/EBITDA, P/E 등. 공개되지 않았으면 "비공개" 한 줄 -->
+비공개.
+
+## 왜 중요한가
+<!-- 1~2줄 -->
+제네릭 비중이 큰 Viatris가 브랜드 진통제 자산을 사들여 포트폴리오를 바꾸려는 딜이다. 2026년 말 종결을 목표로 한다.
+
+## 면접 포인트
+<!-- 이 딜로 할 수 있는 말 1~2개 -->
+① 미국 상장사 인수에서 공개매수+2단계 합병 구조가 일반 합병 투표보다 종결을 앞당기는 이유를 말할 수 있다. ② 인수 측에 [[Morgan Stanley]]와 [[Centerview Partners]], 대상 측에 [[Goldman Sachs]]가 붙은 자문 구도를 짚을 수 있다.
+
+## 진행 이력
+<!-- 업데이트될 때마다 맨 아래에 한 줄씩 추가. 기존 줄은 수정하지 않음 -->
+- 2026-10-08: Viatris가 Pacira BioSciences 인수 계약을 발표했다.
+- 2026-10-30: Viatris가 공개매수를 개시했다.
+
+## 관련 딜·뉴스
+- [DoorDash, Instacart를 지분가치 170억 달러에 인수](../2026/2026-10-29-doordash-instacart.md) — Centerview Partners·Goldman Sachs·Cravath가 함께 자문한 같은 시기 미국 상장사 인수
