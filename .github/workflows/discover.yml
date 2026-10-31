@@ -1,10 +1,8 @@
 name: discover
 
-# 화~토 새벽 1시 31분(KST) 자동 실행 + 수동 실행 버튼
-# (UTC 기준 월~금 16:31 = 한국 화~토 01:31). Claude 단계가 02:00에 이어받음
+# 새벽 2시 Claude 단계가 시작하면서 이 워크플로를 직접 실행시킨다 (PIPELINE.md 0단계).
+# GitHub 예약 실행(schedule)은 몇 시간씩 늦어질 수 있어 쓰지 않는다.
 on:
-  schedule:
-    - cron: "31 16 * * 1-5"
   workflow_dispatch:
 
 # 리포 내용 쓰기 외에는 아무 권한도 주지 않음

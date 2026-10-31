@@ -21,7 +21,20 @@ mkdir -p work
 python3 scripts/deal_index.py > work/index.txt
 ```
 
-- `candidates/$DATE.json`이 없으면 발견 단계가 실패한 것이다. 인박스만 처리하고, 브리핑에 "발견 단계 결과 없음"을 적는다.
+- **발견 단계 실행**: 오늘 후보 파일을 새로 만든다. GitHub 예약 실행은 늦어질 수 있어 여기서 직접 실행시킨다.
+
+```bash
+gh api -X POST repos/suncow-hub/deal-archive/actions/workflows/discover.yml/dispatches -f ref=main
+# 끝날 때까지 30초 간격으로 확인 (최대 20분)
+for i in $(seq 1 40); do
+  timeout 30 tail -f /dev/null
+  s=$(gh api 'repos/suncow-hub/deal-archive/actions/workflows/discover.yml/runs?per_page=1' --jq '.workflow_runs[0] | "\(.status) \(.conclusion)"')
+  case "$s" in completed*) echo "$s"; break;; esac
+done
+git pull -q origin main
+```
+
+- 그래도 `candidates/$DATE.json`이 없거나 실행이 실패했으면 한 번 더 실행해 본다. 두 번 다 안 되면 인박스만 처리하고, 브리핑 `처리 메모`에 "발견 단계 실패"와 워크플로 결과를 적는다.
 - 인박스: `gh api 'repos/suncow-hub/deal-archive/issues?state=open&per_page=50'` 결과 중 pull request가 아닌 것을 `work/inbox.json`에 저장한다 (번호, 제목, 본문, 링크).
 - 후보와 인박스가 둘 다 비어 있으면 브리핑에 "오늘은 새 소식 없음"만 남기고 7번으로 간다.
 
