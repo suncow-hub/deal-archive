@@ -1,10 +1,12 @@
 {
   "meta": {
-    "run_at": "2026-10-31T11:59:51.154710+09:00",
-    "window_start": "2026-10-30T05:59:51.154710+09:00",
+    "run_at": "2026-10-31T12:11:43.027330+09:00",
+    "window_start": "2026-10-30T06:11:43.027330+09:00",
     "sources": {
-      "OpenDART 상세": "5건 성공, 2건 실패",
-      "OpenDART": "11건",
+      "OpenDART-B": "실패: ConnectTimeout",
+      "OpenDART-I": "실패: ConnectTimeout",
+      "OpenDART 상세": "0건 성공, 0건 실패",
+      "OpenDART": "0건",
       "WSJ Markets": "1/60",
       "WSJ U.S. Business": "4/85",
       "PR Newswire M&A": "10/20",
@@ -14,12 +16,12 @@
       "한경 경제": "3/50",
       "한경 국제": "4/50"
     },
-    "gemini_model": "gemini-flash-latest",
-    "gemini": "성공 (40/40건 채점)",
+    "gemini_model": "gemini-3.8-flash",
+    "gemini": "성공 (36/36건 채점)",
     "counts": {
-      "deal": 6,
-      "macro": 4,
-      "dropped": 30
+      "deal": 5,
+      "macro": 6,
+      "dropped": 25
     }
   },
   "items": [
@@ -35,7 +37,7 @@
       ],
       "score": 8.0,
       "score_by": "gemini",
-      "reason": "125억달러 규모 글로벌 메가딜 인수전"
+      "reason": "125억 달러 규모 글로벌 화학 대형 M&A 추진 뉴스"
     },
     {
       "source": "PR Newswire M&A",
@@ -46,9 +48,9 @@
       "keywords": [
         "acquisition"
       ],
-      "score": 7.0,
+      "score": 6.0,
       "score_by": "gemini",
-      "reason": "미국 대형 발전사 Vistra의 M&A 완료"
+      "reason": "비스트라의 대형 발전 자산 인수 완료 공시"
     },
     {
       "source": "PR Newswire M&A",
@@ -59,49 +61,35 @@
       "keywords": [
         "acquire"
       ],
-      "score": 7.0,
-      "score_by": "gemini",
-      "reason": "글로벌 제약사 Viatris의 바이오텍 공개매수"
-    },
-    {
-      "source": "OpenDART",
-      "kind": "deal",
-      "title": "(SK) [첨부정정]주요사항보고서(주식교환ㆍ이전결정)",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000166",
-      "published": "2026-10-30T00:00:00+09:00",
-      "keywords": [
-        "주식교환ㆍ이전결정"
-      ],
-      "dart_details_status": "013 조회된 데이타가 없습니다.",
       "score": 6.0,
       "score_by": "gemini",
-      "reason": "대기업 SK의 주식교환 관련 공시"
+      "reason": "비아트리스의 파시라 바이오사이언스 공개매수 개시"
     },
     {
-      "source": "OpenDART",
+      "source": "한경 증권",
       "kind": "deal",
-      "title": "(아티스트스튜디오) 최대주주변경",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030901430",
-      "published": "2026-10-30T00:00:00+09:00",
+      "title": "크리에이츠, 코스닥 상장 첫날 28% 급락",
+      "link": "https://www.hankyung.com/article/2026103052816",
+      "published": "2026-10-30T09:29:01+09:00",
       "keywords": [
-        "최대주주변경"
+        "상장"
       ],
       "score": 5.0,
       "score_by": "gemini",
-      "reason": "코스닥 상장사 최대주주 변경 공시"
+      "reason": "국내 신규 상장 기업의 첫날 IPO 주가 변동"
     },
     {
-      "source": "OpenDART",
+      "source": "한경 증권",
       "kind": "deal",
-      "title": "(블루엠텍) [기재정정]최대주주변경을수반하는주식양수도계약체결",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030901313",
-      "published": "2026-10-30T00:00:00+09:00",
+      "title": "인텔리빅스, 코스닥 상장 첫날 120%대 급등",
+      "link": "https://www.hankyung.com/article/2026103052286",
+      "published": "2026-10-30T09:17:32+09:00",
       "keywords": [
-        "최대주주변경"
+        "상장"
       ],
       "score": 5.0,
       "score_by": "gemini",
-      "reason": "경영권 수반 주식양수도 계약 정정"
+      "reason": "국내 기업의 코스닥 신규 상장 첫날 주가 추이"
     },
     {
       "source": "WSJ Economy",
@@ -112,9 +100,9 @@
       "keywords": [
         "Fed"
       ],
-      "score": 7.0,
+      "score": 8.0,
       "score_by": "gemini",
-      "reason": "연준 위원의 추가 금리 인상 매파 발언"
+      "reason": "연준 위원의 추가 금리 인상 발언으로 긴축 전망"
     },
     {
       "source": "WSJ World News",
@@ -127,7 +115,7 @@
       ],
       "score": 6.0,
       "score_by": "gemini",
-      "reason": "중국 10월 경기 둔화 거시 지표"
+      "reason": "중국 거시경제 지표 둔화 및 경기 흐름 분석"
     },
     {
       "source": "WSJ Economy",
@@ -140,7 +128,7 @@
       ],
       "score": 6.0,
       "score_by": "gemini",
-      "reason": "미국 국가부채 GDP 100% 도달 영향"
+      "reason": "미국 국가 부채 GDP 100% 도달 및 재정 우려"
     },
     {
       "source": "WSJ Economy",
@@ -153,7 +141,33 @@
       ],
       "score": 6.0,
       "score_by": "gemini",
-      "reason": "주요국 중앙은행 금리 결정 및 고용 전망"
+      "reason": "주요국 중앙은행 금리 결정 및 글로벌 환율 전망"
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "반도체가 떠받친 경기…양극화는 더 짙어졌다",
+      "link": "https://www.hankyung.com/article/2026103069201",
+      "published": "2026-10-30T18:02:18+09:00",
+      "keywords": [
+        "경기"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "반도체 중심 국내 경기 양극화 및 거시 현황"
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "美 고금리 역설…집 못 사는 사람 늘자 월세 다시 뛴다",
+      "link": "https://www.hankyung.com/article/202610306208i",
+      "published": "2026-10-30T14:48:57+09:00",
+      "keywords": [
+        "금리"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "미국 고금리 장기화가 주택·임대차 시장에 미친 영향"
     }
   ]
 }
