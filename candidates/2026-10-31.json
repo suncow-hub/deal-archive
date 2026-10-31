@@ -1,25 +1,25 @@
 {
   "meta": {
-    "run_at": "2026-10-31T05:59:41.604688+09:00",
-    "window_start": "2026-10-29T23:59:41.604688+09:00",
+    "run_at": "2026-10-31T11:59:51.154710+09:00",
+    "window_start": "2026-10-30T05:59:51.154710+09:00",
     "sources": {
-      "OpenDART 상세": "8건 성공, 4건 실패",
-      "OpenDART": "18건",
-      "WSJ Markets": "5/61",
-      "WSJ U.S. Business": "5/85",
-      "PR Newswire M&A": "11/20",
+      "OpenDART 상세": "5건 성공, 2건 실패",
+      "OpenDART": "11건",
+      "WSJ Markets": "1/60",
+      "WSJ U.S. Business": "4/85",
+      "PR Newswire M&A": "10/20",
       "한경 증권": "6/50",
-      "WSJ World News": "9/72",
-      "WSJ Economy": "5/36",
-      "한경 경제": "4/50",
+      "WSJ World News": "11/70",
+      "WSJ Economy": "7/36",
+      "한경 경제": "3/50",
       "한경 국제": "4/50"
     },
     "gemini_model": "gemini-flash-latest",
-    "gemini": "성공 (43/43건 채점)",
+    "gemini": "성공 (40/40건 채점)",
     "counts": {
-      "deal": 13,
-      "macro": 3,
-      "dropped": 27
+      "deal": 6,
+      "macro": 4,
+      "dropped": 30
     }
   },
   "items": [
@@ -33,22 +33,9 @@
         "takeover",
         "bid for"
       ],
-      "score": 9.0,
-      "score_by": "gemini",
-      "reason": "바스프의 125억 달러 에보닉 인수 제안"
-    },
-    {
-      "source": "PR Newswire M&A",
-      "kind": "deal",
-      "title": "Viatris Announces Commencement of Tender Offer to Acquire Pacira BioSciences, Inc.",
-      "link": "https://www.prnewswire.com/news-releases/viatris-announces-commencement-of-tender-offer-to-acquire-pacira-biosciences-inc-302924916.html",
-      "published": "2026-10-30T21:40:00+09:00",
-      "keywords": [
-        "acquire"
-      ],
       "score": 8.0,
       "score_by": "gemini",
-      "reason": "비아트리스의 파시라 바이오 공개매수 인수"
+      "reason": "125억달러 규모 글로벌 메가딜 인수전"
     },
     {
       "source": "PR Newswire M&A",
@@ -61,62 +48,34 @@
       ],
       "score": 7.0,
       "score_by": "gemini",
-      "reason": "비스트라의 대형 발전사 코젠트릭스 인수"
+      "reason": "미국 대형 발전사 Vistra의 M&A 완료"
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Viatris Announces Commencement of Tender Offer to Acquire Pacira BioSciences, Inc.",
+      "link": "https://www.prnewswire.com/news-releases/viatris-announces-commencement-of-tender-offer-to-acquire-pacira-biosciences-inc-302924916.html",
+      "published": "2026-10-30T21:40:00+09:00",
+      "keywords": [
+        "acquire"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "글로벌 제약사 Viatris의 바이오텍 공개매수"
     },
     {
       "source": "OpenDART",
       "kind": "deal",
-      "title": "(콜마비앤에이치) [첨부정정]주요사항보고서(회사합병결정)",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000586",
-      "published": "2026-10-29T00:00:00+09:00",
+      "title": "(SK) [첨부정정]주요사항보고서(주식교환ㆍ이전결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000166",
+      "published": "2026-10-30T00:00:00+09:00",
       "keywords": [
-        "회사합병결정"
+        "주식교환ㆍ이전결정"
       ],
       "dart_details_status": "013 조회된 데이타가 없습니다.",
       "score": 6.0,
       "score_by": "gemini",
-      "reason": "콜마비앤에이치의 흡수합병 공시"
-    },
-    {
-      "source": "OpenDART",
-      "kind": "deal",
-      "title": "(블루엠텍) [기재정정]최대주주변경을수반하는주식양수도계약체결",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030901313",
-      "published": "2026-10-30T00:00:00+09:00",
-      "keywords": [
-        "최대주주변경"
-      ],
-      "score": 6.0,
-      "score_by": "gemini",
-      "reason": "경영권 지분 매각 계약 체결 정정"
-    },
-    {
-      "source": "OpenDART",
-      "kind": "deal",
-      "title": "(한화플러스제5호스팩) [기재정정]주요사항보고서(회사합병결정)",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000346",
-      "published": "2026-10-30T00:00:00+09:00",
-      "keywords": [
-        "회사합병결정"
-      ],
-      "dart_details_status": "013 조회된 데이타가 없습니다.",
-      "score": 5.0,
-      "score_by": "gemini",
-      "reason": "스팩 합병 결정 정정공시"
-    },
-    {
-      "source": "OpenDART",
-      "kind": "deal",
-      "title": "(에스트래픽) [기재정정]주요사항보고서(영업양수결정)",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029000326",
-      "published": "2026-10-29T00:00:00+09:00",
-      "keywords": [
-        "영업양수결정"
-      ],
-      "dart_details_status": "013 조회된 데이타가 없습니다.",
-      "score": 5.0,
-      "score_by": "gemini",
-      "reason": "상장사의 영업양수 결정 정정공시"
+      "reason": "대기업 SK의 주식교환 관련 공시"
     },
     {
       "source": "OpenDART",
@@ -129,72 +88,20 @@
       ],
       "score": 5.0,
       "score_by": "gemini",
-      "reason": "상장사 최대주주 변경 공시"
+      "reason": "코스닥 상장사 최대주주 변경 공시"
     },
     {
       "source": "OpenDART",
       "kind": "deal",
-      "title": "(이엠앤아이) [기재정정]최대주주변경을수반하는주식양수도계약체결",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029900365",
-      "published": "2026-10-29T00:00:00+09:00",
+      "title": "(블루엠텍) [기재정정]최대주주변경을수반하는주식양수도계약체결",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030901313",
+      "published": "2026-10-30T00:00:00+09:00",
       "keywords": [
         "최대주주변경"
       ],
       "score": 5.0,
       "score_by": "gemini",
-      "reason": "경영권 양수도 계약 체결 정정공시"
-    },
-    {
-      "source": "PR Newswire M&A",
-      "kind": "deal",
-      "title": "TEXAS COMMUNITY BANCSHARES, INC. AND THE BANC OF SAN JACINTO COUNTY BANCSHARES, INC., THE PARENT OF THE BANK OF SAN JACINTO COUNTY, COLDSPRING, TEXAS, ANNOUNCE MERGER AGREEMENT",
-      "link": "https://www.prnewswire.com/news-releases/texas-community-bancshares-inc-and-the-banc-of-san-jacinto-county-bancshares-inc-the-parent-of-the-bank-of-san-jacinto-county-coldspring-texas-announce-merger-agreement-302924337.html",
-      "published": "2026-10-30T07:39:00+09:00",
-      "keywords": [
-        "merger"
-      ],
-      "score": 5.0,
-      "score_by": "gemini",
-      "reason": "미국 텍사스 지역 은행 간 합병 계약"
-    },
-    {
-      "source": "PR Newswire M&A",
-      "kind": "deal",
-      "title": "Vusion Completes Acquisition of In-Store Media, Opening a New Chapter for Digital Retail Media in Physical Stores",
-      "link": "https://www.prnewswire.com/news-releases/vusion-completes-acquisition-of-in-store-media-opening-a-new-chapter-for-digital-retail-media-in-physical-stores-302924244.html",
-      "published": "2026-10-30T05:22:00+09:00",
-      "keywords": [
-        "acquisition"
-      ],
-      "score": 5.0,
-      "score_by": "gemini",
-      "reason": "뷔지옹의 인스토어미디어 인수 완료"
-    },
-    {
-      "source": "한경 증권",
-      "kind": "deal",
-      "title": "크리에이츠, 코스닥 상장 첫날 28% 급락",
-      "link": "https://www.hankyung.com/article/2026103052816",
-      "published": "2026-10-30T09:29:01+09:00",
-      "keywords": [
-        "상장"
-      ],
-      "score": 5.0,
-      "score_by": "gemini",
-      "reason": "신규 IPO 상장 종목 첫날 주가 추이"
-    },
-    {
-      "source": "한경 증권",
-      "kind": "deal",
-      "title": "인텔리빅스, 코스닥 상장 첫날 120%대 급등",
-      "link": "https://www.hankyung.com/article/2026103052286",
-      "published": "2026-10-30T09:17:32+09:00",
-      "keywords": [
-        "상장"
-      ],
-      "score": 5.0,
-      "score_by": "gemini",
-      "reason": "신규 상장 종목의 첫날 공모가 상회"
+      "reason": "경영권 수반 주식양수도 계약 정정"
     },
     {
       "source": "WSJ Economy",
@@ -207,7 +114,33 @@
       ],
       "score": 7.0,
       "score_by": "gemini",
-      "reason": "미 연준 위원의 추가 금리 인상 시사"
+      "reason": "연준 위원의 추가 금리 인상 매파 발언"
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "China Economic Activity Loses Steam Sharply in October",
+      "link": "https://www.wsj.com/world/asia/china-economic-activity-loses-steam-sharply-in-october-5990ffe0?mod=rss_worldnews",
+      "published": "2026-10-31T10:50:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "중국 10월 경기 둔화 거시 지표"
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "U.S. national debt reached 100% of GDP this week, and Washington yawned. Now what?",
+      "link": "https://www.wsj.com/economy/fiscal-hawks-national-debt-midterms-gdp-8b7a950d?mod=rss_socialeconomyfeed",
+      "published": "2026-10-31T09:00:00+09:00",
+      "keywords": [
+        "GDP"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "미국 국가부채 GDP 100% 도달 영향"
     },
     {
       "source": "WSJ Economy",
@@ -220,20 +153,7 @@
       ],
       "score": 6.0,
       "score_by": "gemini",
-      "reason": "글로벌 주요국 기준금리 결정 일정 분석"
-    },
-    {
-      "source": "WSJ Markets",
-      "kind": "macro",
-      "title": "Sterling Jumps Ahead of BOE Decision as Rate-Rise Looks Done Deal",
-      "link": "https://www.wsj.com/finance/currencies/singapore-dollar-strengthens-amid-falling-u-s-treasury-yields-b806c8af?mod=rss_markets_main",
-      "published": "2026-10-30T21:05:00+09:00",
-      "keywords": [
-        "deal"
-      ],
-      "score": 5.0,
-      "score_by": "gemini",
-      "reason": "영란은행 기준금리 인상 전망과 파운드화"
+      "reason": "주요국 중앙은행 금리 결정 및 고용 전망"
     }
   ]
 }
