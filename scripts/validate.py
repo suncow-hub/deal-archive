@@ -5,8 +5,8 @@ import sys
 
 import yaml
 
-from lib import (NAME_FIELDS, REQUIRED_FIELDS, ROOT, SECTIONS, body_names, briefing_files,
-                 deal_files, load_deal, load_entities, load_tags, split_front)
+from lib import (NAME_FIELDS, REQUIRED_FIELDS, ROOT, RUMOR_CRED, RUMOR_STATUSES, SECTIONS, body_names,
+                 briefing_files, deal_files, load_deal, load_entities, load_rumors, load_tags, split_front)
 
 DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 ENTITY_TYPES = {"기업", "PE·VC", "재무 자문사", "법률 자문사", "정부·기관"}
@@ -85,11 +85,47 @@ def main() -> int:
         if not m.get("알림") or len(str(m["알림"])) > 60:
             errors.append(f"{rel}: 알림은 1~60자")
 
+    try:
+        rumors = load_rumors()
+    except Exception as e:  # noqa: BLE001
+        rumors = []
+        errors.append(f"rumors.yml: {e}")
+    deal_ids = {p.stem for p in deal_files()}
+    seen_ids = set()
+    for i, r in enumerate(rumors):
+        tag = f"rumors.yml[{i}]"
+        if not isinstance(r, dict):
+            errors.append(f"{tag}: 항목 형식 오류")
+            continue
+        rid = str(r.get("id") or "")
+        tag = f"rumors.yml:{rid or i}"
+        if not re.match(r"^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$", rid):
+            errors.append(f"{tag}: id는 YYYY-MM-DD-영문-slug")
+        if rid in seen_ids:
+            errors.append(f"{tag}: id 중복")
+        seen_ids.add(rid)
+        for f in ("first_seen", "last_seen"):
+            if not DATE.match(str(r.get(f) or "")):
+                errors.append(f"{tag}: {f} 형식은 YYYY-MM-DD")
+        for f in ("title", "claim"):
+            if not r.get(f):
+                errors.append(f"{tag}: {f} 비어 있음")
+        if r.get("status") not in RUMOR_STATUSES:
+            errors.append(f"{tag}: status는 {RUMOR_STATUSES} 중 하나")
+        if r.get("status") == "사실로 확인" and r.get("deal") not in deal_ids:
+            errors.append(f"{tag}: 사실로 확인이면 deal에 있는 딜 노트 id를 적어야 함")
+        srcs = r.get("sources") or []
+        if not srcs:
+            errors.append(f"{tag}: sources 비어 있음")
+        for s in srcs:
+            if not isinstance(s, dict) or not s.get("name") or s.get("credibility") not in RUMOR_CRED:
+                errors.append(f"{tag}: sources 항목은 name과 credibility({'/'.join(RUMOR_CRED)}) 필요")
+
     if errors:
         print(f"검사 실패 {len(errors)}건")
         print("\n".join(f"- {e}" for e in errors))
         return 1
-    print(f"검사 통과: 딜 {len(deal_files())}건, 브리핑 {len(briefing_files())}건, 이름 {len(entities)}개")
+    print(f"검사 통과: 딜 {len(deal_files())}건, 브리핑 {len(briefing_files())}건, 이름 {len(entities)}개, 소문 {len(rumors)}건")
     return 0
 
 

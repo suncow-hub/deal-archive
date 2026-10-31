@@ -45,8 +45,8 @@ git pull -q origin main
 | 순서 | 지침 | 모델 | 결과물 |
 |---|---|---|---|
 | 1 검증 | `agents/verify.md` | opus | `work/verified.json` |
-| 2 정리 | `agents/write.md` | sonnet | `deals/` 아래 딜 노트, `work/written.json` |
-| 3 관계 | `agents/link.md` | sonnet | `entities.yml`, 관련 딜 링크, `tag-proposals.md` |
+| 2 정리 | `agents/write.md` | sonnet | `deals/` 아래 딜 노트, `rumors.yml`, `work/written.json` |
+| 3 관계 | `agents/link.md` | sonnet | `entities.yml`, 관련 딜 링크, 소문 상태, `tag-proposals.md` |
 | 4 브리핑 | `agents/brief.md` | opus | `briefings/$DATE.md` |
 
 에이전트에게 주는 프롬프트 예:
@@ -64,7 +64,7 @@ python3 scripts/build_site.py        # 사이트 데이터가 정상적으로 �
 ## 6. 저장
 
 ```bash
-git add deals briefings entities.yml tag-proposals.md docs
+git add deals briefings entities.yml rumors.yml tag-proposals.md docs
 git commit -m "daily: $DATE"   # 커밋 메시지 끝에 세션이 안내하는 Co-Authored-By 줄을 붙인다
 git fetch -q origin main && git rebase -q origin/main && git push -q origin HEAD:main
 ```

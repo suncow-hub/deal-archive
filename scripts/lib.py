@@ -70,3 +70,17 @@ def load_deal(path: Path) -> tuple[dict, str]:
 
 def body_names(body: str) -> list[str]:
     return re.findall(r"\[\[([^\]]+)\]\]", body)
+
+
+RUMOR_STATUSES = ["미확인", "사실로 확인", "부인", "소멸"]
+RUMOR_CRED = ["낮음", "중간"]
+
+
+def load_rumors() -> list:
+    path = ROOT / "rumors.yml"
+    if not path.exists():
+        return []
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or []
+    if not isinstance(data, list):
+        raise ValueError("rumors.yml 은 목록(- 로 시작)이어야 함")
+    return data

@@ -36,6 +36,7 @@
     if (parts[0] === "deal" && parts[1]) return viewDeal(parts.slice(1).join("/"));
     if (parts[0] === "entity" && parts[1]) return viewEntity(parts.slice(1).join("/"));
     if (parts[0] === "entities") return viewEntities();
+    if (parts[0] === "rumors") return viewRumors(params);
     if (parts[0] === "briefings") return viewBriefings();
     if (parts[0] === "briefing" && parts[1]) return viewBriefing(parts[1]);
     return viewHome(params);
@@ -234,6 +235,45 @@
         <ul>${items.map((x) => `<li><a href="#/entity/${enc(x.name)}">${esc(x.name)}</a><span>${x.n}건</span></li>`).join("")}</ul></div>`;
     }).join("");
     $app.innerHTML = html ? `<div class="ent-groups">${html}</div>` : `<p class="pad muted">아직 등록된 이름이 없습니다.</p>`;
+  }
+
+  // ---------------------------------------------------------------- 소문
+  const RUMOR_CLS = { "미확인": "r-open", "사실로 확인": "r-true", "부인": "r-denied", "소멸": "r-faded" };
+
+  function viewRumors(params) {
+    setNav("rumors");
+    document.title = "시장 소문 · Deal Archive";
+    const all = DATA.rumors || [];
+    const want = params.get("status") || "미확인";
+    const list = want === "전체" ? all : all.filter((r) => r.status === want);
+    const count = (s) => all.filter((r) => r.status === s).length;
+    const closed = count("사실로 확인") + count("부인") + count("소멸");
+    const hit = closed ? Math.round((count("사실로 확인") / closed) * 100) : null;
+    const tabs = ["미확인", "사실로 확인", "부인", "소멸", "전체"].map((s) =>
+      `<a class="chip${s === want ? " on" : ""}" href="#/rumors?status=${enc(s)}">${esc(s)}<span class="n">${s === "전체" ? all.length : count(s)}</span></a>`).join("");
+
+    const cards = list.map((r) => {
+      const deal = r.deal && DATA.deals.find((d) => d.id === r.deal);
+      const comps = r.companies.map((c) => (DATA.entities[c] ? entLink(c) : esc(c))).join(", ");
+      const srcs = r.sources.map((s) => `<li>${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>` : esc(s.name)}
+        <span class="cred cred-${s.credibility === "중간" ? "mid" : "low"}">공신력 ${esc(s.credibility)}</span></li>`).join("");
+      return `<article class="rumor">
+        <div class="rumor-top"><span class="rstatus ${RUMOR_CLS[r.status] || ""}">${esc(r.status)}</span>
+          <span class="muted">처음 ${esc(r.first_seen)}${r.last_seen !== r.first_seen ? ` · 최근 ${esc(r.last_seen)}` : ""}</span></div>
+        <h2>${esc(r.title)}</h2>
+        <p class="rumor-claim">${esc(r.claim)}</p>
+        ${r.why_watch ? `<p class="rumor-why"><b>사실이라면</b> ${esc(r.why_watch)}</p>` : ""}
+        ${comps ? `<p class="rumor-meta">관련: ${comps}</p>` : ""}
+        ${deal ? `<p class="rumor-meta">확인된 딜: <a href="#/deal/${enc(deal.id)}">${esc(deal.title)}</a></p>` : ""}
+        ${r.status_note ? `<p class="rumor-meta">${esc(r.status_note)}</p>` : ""}
+        <ul class="rumor-src">${srcs}</ul>
+      </article>`;
+    }).join("");
+
+    $app.innerHTML = `<div class="kicker"><span>시장 소문</span><span class="aside">${hit === null ? "결과가 나온 소문이 아직 없음" : `결과가 나온 ${closed}건 중 ${hit}%가 사실로 확인`}</span></div>
+      <div class="warn">검증되지 않은 정보입니다. 공신력이 낮은 출처나 익명 소식통의 보도를 '신호'로 모아둔 곳이며, 사실로 확인되면 딜 아카이브로 옮겨집니다.</div>
+      <div class="chips rumor-tabs">${tabs}</div>
+      ${cards || `<div class="empty">해당하는 소문이 없습니다.</div>`}`;
   }
 
   // ---------------------------------------------------------------- 브리핑

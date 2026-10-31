@@ -171,3 +171,24 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 16px 48px; }
 .blist li { padding: 12px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 110px 1fr; gap: 12px; }
 .blist .bd { font-weight: 700; }
 .blist .ba { font: 500 15px/1.5 var(--serif); color: var(--ink); }
+
+/* ---------- 소문 ---------- */
+.nav-sub { font-size: 10px; font-weight: 600; color: var(--warn); margin-left: 2px; }
+.warn { border-left: 3px solid var(--warn); background: var(--bg-soft); padding: 10px 12px; font-size: 13px;
+  color: var(--ink-2); margin-bottom: 12px; }
+.rumor-tabs { margin: 4px 0 8px; }
+.rumor-tabs .chip { text-decoration: none; }
+.rumor { border-bottom: 1px solid var(--rule); padding: 14px 0; }
+.rumor h2 { font: 700 18px/1.4 var(--serif); margin: 6px 0 4px; }
+.rumor-top { display: flex; gap: 10px; align-items: center; font-size: 12px; }
+.rumor-claim { margin: 4px 0; }
+.rumor-why, .rumor-meta { margin: 4px 0; font-size: 13.5px; color: var(--ink-2); }
+.rumor-src { list-style: none; padding: 0; margin: 8px 0 0; font-size: 13px; display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.rstatus { font: 700 11px/1 var(--sans); padding: 4px 6px; border-radius: 2px; border: 1px solid currentColor; }
+.r-open { color: var(--warn); }
+.r-true { color: var(--ok); }
+.r-denied { color: var(--ink-3); text-decoration: line-through; }
+.r-faded { color: var(--ink-3); }
+.cred { font-size: 11px; margin-left: 4px; }
+.cred-low { color: var(--warn); }
+.cred-mid { color: var(--ink-3); }

@@ -28,6 +28,30 @@
 3. `진행 이력` 맨 아래에 한 줄 추가. **기존 줄은 고치거나 지우지 않는다.**
 4. 다른 섹션은 새 정보가 있을 때만 다듬는다. 같은 내용을 다시 쓰지 않는다.
 
+## 시장 소문 (`rumors.yml`)
+
+`work/verified.json`의 `rumors`를 `rumors.yml`에 반영한다.
+
+- 새 소문은 목록 맨 앞에 추가한다:
+
+```yaml
+- id: 2026-10-31-oo-dd-acquisition       # 날짜-영문slug
+  first_seen: 2026-10-31
+  last_seen: 2026-10-31
+  title: "○○, △△ 인수 검토설"
+  claim: "한 문장. '~라는 소문이 있다', '~를 검토 중이라는 보도가 나왔다'처럼 소문임이 드러나게"
+  companies: ["○○", "△△"]
+  sources:
+    - {name: "매체명", url: "https://...", credibility: 낮음}
+  why_watch: "사실이라면 왜 중요한지"
+  status: 미확인
+  status_note: ""
+  deal: null
+```
+
+- `existing_rumor`가 있으면 그 항목의 `last_seen`을 오늘로 바꾸고, 새 출처가 있으면 `sources`에 추가만 한다.
+- 소문 문장을 사실처럼 쓰지 않는다. 기사 문장을 옮겨 적지 않는다.
+
 ## `work/written.json`
 
 ```json

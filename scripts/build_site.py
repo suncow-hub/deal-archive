@@ -14,7 +14,7 @@ from datetime import datetime, timedelta, timezone
 import markdown
 
 from lib import (NAME_FIELDS, ROOT, alias_map, briefing_files, deal_files, load_deal, load_entities,
-                 load_tags, split_front)
+                 load_rumors, load_tags, split_front)
 
 KST = timezone(timedelta(hours=9))
 OUT = ROOT / "docs"
@@ -88,6 +88,24 @@ def main() -> None:
         })
     briefings.sort(key=lambda b: b["date"], reverse=True)
 
+    rumors = []
+    for r in load_rumors():
+        rumors.append({
+            "id": str(r.get("id")),
+            "first_seen": str(r.get("first_seen")),
+            "last_seen": str(r.get("last_seen")),
+            "title": r.get("title"),
+            "claim": r.get("claim"),
+            "companies": [aliases.get(str(c).lower(), str(c)) for c in (r.get("companies") or [])],
+            "sources": [{"name": s.get("name"), "url": s.get("url"), "credibility": s.get("credibility")}
+                        for s in (r.get("sources") or [])],
+            "why_watch": r.get("why_watch"),
+            "status": r.get("status"),
+            "status_note": r.get("status_note"),
+            "deal": r.get("deal"),
+        })
+    rumors.sort(key=lambda r: r["last_seen"], reverse=True)
+
     ents = {}
     for name, info in entities.items():
         info = info or {}
@@ -96,7 +114,7 @@ def main() -> None:
 
     data = {
         # 같은 내용이면 같은 결과가 나오도록 실행 시각 대신 데이터 기준 날짜를 쓴다
-        "built_at": max([d["updated"] or "" for d in deals] + [b["date"] for b in briefings] + [""]),
+        "built_at": max([d["updated"] or "" for d in deals] + [b["date"] for b in briefings] + [r["last_seen"] for r in rumors] + [""]),
         "axes": {
             "지역": list(tags["지역"].keys()),
             "규모 구간": tags["규모"],
@@ -108,6 +126,7 @@ def main() -> None:
         "deals": deals,
         "briefings": briefings,
         "entities": ents,
+        "rumors": rumors,
     }
 
     if OUT.exists():
@@ -115,7 +134,7 @@ def main() -> None:
     shutil.copytree(ROOT / "site", OUT)
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
     (OUT / "data.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
-    print(f"사이트 생성: 딜 {len(deals)}건, 브리핑 {len(briefings)}건, 이름 {len(ents)}개 → docs/")
+    print(f"사이트 생성: 딜 {len(deals)}건, 브리핑 {len(briefings)}건, 이름 {len(ents)}개, 소문 {len(rumors)}건 → docs/")
 
 
 if __name__ == "__main__":

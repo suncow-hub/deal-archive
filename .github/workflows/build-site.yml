@@ -9,6 +9,7 @@ on:
       - "deals/**"
       - "briefings/**"
       - "entities.yml"
+      - "rumors.yml"
       - "tags.yml"
       - "site/**"
       - "scripts/build_site.py"
