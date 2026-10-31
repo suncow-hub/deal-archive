@@ -352,6 +352,51 @@ def gemini_score(items: list[dict], meta: dict) -> bool:
         return False
 
 
+# ---------------------------------------------------------------- 환율
+
+FX_CURRENCIES = ["USD", "EUR", "JPY", "CNY", "HKD", "GBP", "SGD"]
+
+
+def update_fx(stats: dict) -> None:
+    """유럽중앙은행(ECB) 기준환율을 받아 market/fx.json 에 '1단위당 원화'로 쌓는다. 키 필요 없음."""
+    path = ROOT / "market" / "fx.json"
+    path.parent.mkdir(exist_ok=True)
+    data = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {
+        "source": "ECB 기준환율 (frankfurter.dev). 1단위당 원화. JPY는 100엔당.",
+        "rates": {},
+    }
+    rates = data["rates"]
+    start = (max(rates) if rates else "2024-01-01")
+    symbols = ",".join(["KRW"] + [c for c in FX_CURRENCIES if c != "EUR"])
+    try:
+        r = requests.get(f"https://api.frankfurter.dev/v1/{start}..", params={"base": "EUR", "symbols": symbols},
+                         headers={"User-Agent": USER_AGENT}, timeout=30)
+        r.raise_for_status()
+        series = r.json().get("rates", {})
+    except Exception as e:  # noqa: BLE001
+        stats["환율"] = f"실패: {type(e).__name__}"
+        log(f"[환율] 실패: {e}")
+        return
+    added = 0
+    for day, row in series.items():
+        krw = row.get("KRW")
+        if not krw:
+            continue
+        out = {"EUR": round(krw, 2)}
+        for c in FX_CURRENCIES:
+            if c != "EUR" and row.get(c):
+                v = krw / row[c]
+                out[c] = round(v * 100, 2) if c == "JPY" else round(v, 2)
+        if day not in rates:
+            added += 1
+        rates[day] = out
+    data["rates"] = dict(sorted(rates.items()))
+    data["latest"] = max(rates) if rates else None
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=0), encoding="utf-8")
+    stats["환율"] = f"{added}일 추가 (최신 {data['latest']})"
+    log(f"[환율] {added}일 추가, 최신 {data['latest']}")
+
+
 # ---------------------------------------------------------------- 메인
 
 def main() -> int:
@@ -361,6 +406,7 @@ def main() -> int:
     stats: dict = {}
     meta: dict = {"run_at": now.isoformat(), "window_start": since.isoformat(), "sources": stats}
 
+    update_fx(stats)
     items = fetch_dart(cfg, since, now, stats) + fetch_feeds(cfg, since, stats)
     items = dedupe(items)
     for it in items:
