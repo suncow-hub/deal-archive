@@ -1,0 +1,37 @@
+{
+ "home": {
+  "errors": [],
+  "canvas": 0,
+  "iframes": 1
+ },
+ "chart-kr": {
+  "errors": [],
+  "canvas": 7,
+  "iframes": 0
+ },
+ "chart-kospi": {
+  "errors": [],
+  "canvas": 7,
+  "iframes": 0
+ },
+ "chart-global": {
+  "errors": [],
+  "canvas": 0,
+  "iframes": 1
+ },
+ "mobile-home": {
+  "errors": [],
+  "canvas": 0,
+  "iframes": 1
+ },
+ "mobile-chart": {
+  "errors": [],
+  "canvas": 7,
+  "iframes": 0
+ },
+ "mobile-settings": {
+  "errors": [],
+  "canvas": 0,
+  "iframes": 0
+ }
+}
