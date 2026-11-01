@@ -1,0 +1,19 @@
+{
+ "run_at": "2026-11-01T22:39:45+09:00",
+ "items": {
+  "KOSPI": "243일 추가",
+  "KOSDAQ": "243일 추가",
+  "005930": "삼성전자 243일 추가",
+  "000660": "SK하이닉스 243일 추가",
+  "089860": "롯데렌탈 243일 추가",
+  "034730": "SK 243일 추가",
+  "260870": "SK시그넷 243일 추가",
+  "001940": "KISCO홀딩스 243일 추가",
+  "104700": "한국철강 243일 추가"
+ },
+ "errors": [],
+ "endpoints": {
+  "index": "GetMarketIndexInfoService_V2/getStockMarketIndex_V2",
+  "stock": "GetStockSecuritiesInfoService_V2/getStockPriceInfo_V2"
+ }
+}
