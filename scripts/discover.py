@@ -39,6 +39,21 @@ def log(msg: str) -> None:
     print(scrub(msg), flush=True)
 
 
+def get_retry(url: str, tries: int = 4, **kw):
+    """연결 시간 초과 등 일시적 오류는 잠시 쉬었다 다시 시도한다 (OpenDART가 가끔 응답이 느림)."""
+    kw.setdefault("timeout", 40)
+    for i in range(tries):
+        try:
+            r = requests.get(url, **kw)
+            if r.status_code >= 500:
+                raise requests.HTTPError(f"HTTP {r.status_code}")
+            return r
+        except (requests.ConnectionError, requests.Timeout, requests.HTTPError):
+            if i == tries - 1:
+                raise
+            time.sleep(15 * (i + 1))
+
+
 def load_config() -> dict:
     return yaml.safe_load((ROOT / "config" / "discover.yml").read_text(encoding="utf-8"))
 
@@ -139,7 +154,7 @@ def fetch_dart(cfg: dict, since: datetime, now: datetime, stats: dict) -> list[d
                 "page_count": 100,
             }
             try:
-                r = requests.get("https://opendart.fss.or.kr/api/list.json", params=params,
+                r = get_retry("https://opendart.fss.or.kr/api/list.json", params=params,
                                  headers={"User-Agent": USER_AGENT}, timeout=20)
                 data = r.json()
             except Exception as e:  # noqa: BLE001
@@ -208,7 +223,7 @@ def enrich_dart(items: list[dict], key: str, stats: dict) -> None:
         if not api or not it.get("_corp_code"):
             continue
         try:
-            r = requests.get(f"https://opendart.fss.or.kr/api/{api}.json", timeout=20,
+            r = get_retry(f"https://opendart.fss.or.kr/api/{api}.json",
                              headers={"User-Agent": USER_AGENT},
                              params={"crtfc_key": key, "corp_code": it["_corp_code"],
                                      "bgn_de": it["_rcept_dt"], "end_de": it["_rcept_dt"]})
