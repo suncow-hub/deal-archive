@@ -160,6 +160,22 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 16px 48px; }
 
 /* ---------- 회사·기관 ---------- */
 .ent-head h1 { font: 900 32px/1.2 var(--serif); margin: 14px 0 4px; }
+.eprof { margin: 18px 0 6px; padding: 16px 0 4px; border-top: 1px solid var(--rule); }
+.ep-about { font: 500 19px/1.55 var(--serif); margin: 0 0 12px; }
+.ep-grid { margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; }
+.ep-grid > div { display: grid; grid-template-columns: 76px 1fr; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--rule); font-size: 14.5px; }
+.ep-grid dt { color: var(--ink-3); font-size: 12.5px; font-weight: 700; padding-top: 2px; }
+.ep-grid dd { margin: 0; }
+.ep-points { margin: 14px 0 0; padding: 10px 14px; background: var(--bg-soft); border-left: 3px solid var(--accent); }
+.ep-h { font-size: 12px; font-weight: 700; letter-spacing: .06em; color: var(--ink-2); margin-bottom: 4px; }
+.ep-points ul { margin: 0; padding-left: 18px; font-size: 14.5px; }
+.ep-points li { margin: 4px 0; }
+.ep-note { font-size: 11.5px; color: var(--ink-3); margin: 10px 0 0; }
+@media (max-width: 720px) {
+  .ep-grid { grid-template-columns: 1fr; }
+  .ep-about { font-size: 18px; }
+  .ep-grid > div { grid-template-columns: 70px 1fr; font-size: 15px; }
+}
 .ent-groups { columns: 3 260px; column-gap: 32px; }
 .ent-group { break-inside: avoid; margin-bottom: 18px; }
 .ent-group ul { list-style: none; margin: 0; padding: 0; }

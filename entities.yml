@@ -4,230 +4,612 @@
 # - country: tags.yml 지역 값
 # - aliases: 다른 표기 (기사에 이렇게 나와도 대표 이름으로 통일)
 # - krx: 한국 상장사 6자리 종목코드 (시세 자동 추적), ticker: 해외 상장사 TradingView 심볼 (예: NASDAQ:DASH)
+# - profile: 회사 페이지 위쪽에 보이는 핵심 정보 (as_of 기준일)
+#     about 무슨 회사인지 한 문장 / business 사업 분야 / edge 강점·핵심 역량
+#     owner 누가 소유하고 있는지 / points 딜 관련해 알아둘 점 (최대 3개, 없으면 생략)
+#   자주 바뀌는 숫자(주가·시가총액·직원 수)는 넣지 않는다. 확인 안 된 내용은 쓰지 않는다.
 DoorDash:
   type: 기업
   country: 미국
   aliases: [도어대시, DoorDash Inc.]
   ticker: "NASDAQ:DASH"
+  profile:
+    about: "미국 1위 음식 배달 플랫폼."
+    business: "음식·식료품·생활용품 배달 중개, 광고, 구독 멤버십(DashPass)"
+    edge: "미국 음식 배달 1위의 주문·배달원 네트워크, Wolt 인수로 넓힌 유럽 사업"
+    owner: "나스닥 상장사. 지분은 분산돼 있고 창업자들이 의결권이 많은 주식을 가짐"
+    points:
+      - "Wolt 인수(2022)처럼 큰 인수로 성장해 왔고, Instacart 인수(2026)로 식료품 배달까지 넓히려 함"
+    as_of: "2026-11-02"
 Instacart:
   type: 기업
   country: 미국
   aliases: [인스타카트, Maplebear]
   ticker: "NASDAQ:CART"
+  profile:
+    about: "북미 최대 온라인 장보기·식료품 배달 플랫폼 (법인명 Maplebear)."
+    business: "식료품 배달 중개, 소매업체용 온라인몰 솔루션, 리테일 광고"
+    edge: "대형 슈퍼마켓 체인과의 제휴망과 장보기 데이터를 활용한 광고 사업"
+    owner: "나스닥 상장사 (지분 분산). DoorDash가 인수 계약을 맺은 상태"
+    points:
+      - "배달 플랫폼 경쟁사끼리의 결합이라 반독점 심사가 성사의 핵심 변수"
+    as_of: "2026-11-02"
 Centerview Partners:
   type: 재무 자문사
   country: 미국
   aliases: []
+  profile:
+    about: "뉴욕 기반 독립계 투자은행(부티크)."
+    business: "M&A 자문, 구조조정 자문"
+    edge: "초대형 M&A에서 이사회·CEO를 직접 자문하는 소수정예 조직"
+    owner: "파트너들이 소유한 비상장 회사"
+    points:
+      - "대형 상장사 매각에서 매도 측 이사회 자문으로 자주 등장"
+    as_of: "2026-11-02"
 J.P. Morgan:
   type: 재무 자문사
   country: 미국
   aliases: [JPMorgan Chase Bank, JPMorgan Chase, JPMorgan, JP모건]
   ticker: "NYSE:JPM"
+  profile:
+    about: "미국 최대 은행 JPMorgan Chase의 투자은행 부문."
+    business: "M&A 자문, 주식·채권 발행 주관, 인수금융, 트레이딩"
+    edge: "거대한 자기자본으로 대형 인수금융(브리지론)을 직접 확약할 수 있음"
+    owner: "모회사 JPMorgan Chase는 뉴욕증권거래소 상장사 (지분 분산)"
+    points:
+      - "대형 인수에서 자문과 인수금융(브리지론)을 함께 맡는 경우가 많음 (예: DoorDash의 Instacart 인수)"
+    as_of: "2026-11-02"
 Goldman Sachs:
   type: 재무 자문사
   country: 미국
   aliases: [골드만삭스, Goldman Sachs Group]
   ticker: "NYSE:GS"
+  profile:
+    about: "미국 대표 투자은행."
+    business: "M&A 자문, 주식·채권 발행 주관, 트레이딩, 자산운용·자산관리"
+    edge: "글로벌 M&A 자문 순위 최상위권의 거래 네트워크"
+    owner: "뉴욕증권거래소 상장사 (지분 분산)"
+    as_of: "2026-11-02"
 Citi:
   type: 재무 자문사
   country: 미국
   aliases: [Citigroup, 씨티, 씨티그룹]
   ticker: "NYSE:C"
+  profile:
+    about: "미국 대형 은행 Citigroup의 투자은행 부문."
+    business: "M&A 자문, 자본시장, 기업 자금관리·거래은행 서비스"
+    edge: "전 세계 지점망을 바탕으로 한 크로스보더 거래"
+    owner: "모회사 Citigroup은 뉴욕증권거래소 상장사 (지분 분산)"
+    as_of: "2026-11-02"
 Evercore:
   type: 재무 자문사
   country: 미국
   aliases: []
   ticker: "NYSE:EVR"
+  profile:
+    about: "뉴욕 기반 독립계 투자은행 (상장 부티크)."
+    business: "M&A·구조조정 자문, 주주행동주의 대응 자문, 리서치"
+    edge: "대출을 하지 않아 이해상충이 적은 순수 자문 모델"
+    owner: "뉴욕증권거래소 상장사 (지분 분산)"
+    as_of: "2026-11-02"
 UBS:
   type: 재무 자문사
   country: 유럽
   aliases: [UBS Group]
   ticker: "NYSE:UBS"
+  profile:
+    about: "스위스 최대 은행 (2023년 Credit Suisse 인수)."
+    business: "글로벌 자산관리, 투자은행, 자산운용"
+    edge: "세계 최대급 자산관리 고객 기반과 아시아 IB 네트워크"
+    owner: "스위스·뉴욕 상장사 (지분 분산)"
+    as_of: "2026-11-02"
 CITIC Securities:
   type: 재무 자문사
   country: 중국
   aliases: [중신증권, 中信证券]
+  profile:
+    about: "중국 최대 증권사 (CITIC 그룹 계열)."
+    business: "중개, IPO·채권 발행 주관, M&A 자문, 자산운용"
+    edge: "중국 본토 발행 주관 상위권과 국유기업 고객망"
+    owner: "중국 국유 CITIC 그룹이 최대주주. 상하이·홍콩 상장"
+    points:
+      - "중국 국유기업·부실기업 자산 매각 자문에 자주 참여 (예: 헝다물업 매각)"
+    as_of: "2026-11-02"
 Altus Capital:
   type: 재무 자문사
   country: 중국
   aliases: [Altus Capital Limited]
+  profile:
+    about: "홍콩 증권선물위원회(SFC) 인가 기업금융 자문사 (홍콩 상장 Altus Holdings 계열)."
+    business: "상장사 독립 재무자문(IFA), 상장 주관, 기업금융 자문"
+    edge: "홍콩 상장사 거래에서 독립이사회 자문을 자주 맡는 부티크"
+    owner: "홍콩 GEM 상장사 Altus Holdings의 자회사"
+    as_of: "2026-11-02"
 Latham & Watkins:
   type: 법률 자문사
   country: 미국
   aliases: []
+  profile:
+    about: "매출 기준 세계 최대급 미국 로펌."
+    business: "M&A, 자본시장, 사모펀드, 금융, 소송"
+    edge: "PE·자본시장 거래 자문 실적과 전 세계 사무소망"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-02"
 Cravath, Swaine & Moore:
   type: 법률 자문사
   country: 미국
   aliases: [Cravath]
+  profile:
+    about: "뉴욕 기반 전통 명문 로펌."
+    business: "M&A, 증권, 소송"
+    edge: "대형 상장사 M&A와 증권 소송 자문의 최상위권"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-02"
 Cooley:
   type: 법률 자문사
   country: 미국
   aliases: [Cooley LLP]
+  profile:
+    about: "실리콘밸리 기반 로펌."
+    business: "벤처·기술·생명과학 기업 자문, M&A, IPO"
+    edge: "테크·바이오 기업을 창업 단계부터 상장 뒤까지 맡는 고객 기반"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-02"
 Kirkland & Ellis:
   type: 법률 자문사
   country: 미국
   aliases: [Kirkland]
+  profile:
+    about: "매출 기준 세계 최대 로펌."
+    business: "사모펀드 거래, M&A, 구조조정, 소송"
+    edge: "PE 거래 자문 건수 최상위권"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-02"
 Thrive Holdings:
   type: PE·VC
   country: 미국
   aliases: []
+  profile:
+    about: "벤처캐피털 Thrive Capital(조시 쿠슈너)이 세운 지주회사."
+    business: "회계·IT 서비스 등 기존 서비스 기업을 인수해 AI로 운영을 바꾸는 투자"
+    edge: "Thrive Capital의 AI 기업 네트워크와 대규모 외부 자금 조달력"
+    owner: "Thrive Capital과 SoftBank 등 외부 투자자가 출자한 비상장 회사"
+    points:
+      - "벤처캐피털 계열이 대형 상장사를 비상장화하는 이례적 구조이며, ADT 인수금융은 Apollo가 단독 확약"
+    as_of: "2026-11-02"
 ADT:
   type: 기업
   country: 미국
   aliases: [ADT Inc.]
   ticker: "NYSE:ADT"
+  profile:
+    about: "미국 최대 주택 보안 서비스 회사."
+    business: "주택·소규모 사업장 보안 경보, 원격 모니터링, 스마트홈"
+    edge: "장기 구독 고객 기반과 전국 설치·출동 인력"
+    owner: "뉴욕증권거래소 상장사. 옛 대주주 Apollo가 2026년 지분을 모두 매각해 분산됨"
+    points:
+      - "Apollo가 2016년 인수해 2018년 재상장시킨 회사로, Thrive Holdings 인수로 다시 비상장화 예정"
+    as_of: "2026-11-02"
 Apollo Global Management:
   type: PE·VC
   country: 미국
   aliases: [Apollo, 아폴로]
   ticker: "NYSE:APO"
+  profile:
+    about: "미국 대형 대체투자 운용사."
+    business: "사모펀드, 사모 크레딧, 보험(Athene)"
+    edge: "보험 자회사 Athene의 자금을 바탕으로 한 대규모 대출 공급력"
+    owner: "뉴욕증권거래소 상장사 (지분 분산)"
+    points:
+      - "ADT의 옛 대주주이자, Thrive Holdings의 ADT 인수금융을 단독 확약"
+    as_of: "2026-11-02"
 Intesa Sanpaolo:
   type: 기업
   country: 유럽
   aliases: [Intesa]
   ticker: "MIL:ISP"
+  profile:
+    about: "이탈리아 최대 은행."
+    business: "소매·기업 금융, 자산관리, 보험"
+    edge: "이탈리아 최대 지점망과 자산관리 기반"
+    owner: "밀라노 상장사. 은행 재단(Compagnia di San Paolo 등)이 주요 주주"
+    points:
+      - "MPS 교환 공개매수로 이탈리아 은행권 재편의 중심에 섬"
+    as_of: "2026-11-02"
 Monte dei Paschi di Siena:
   type: 기업
   country: 유럽
   aliases: [MPS, Banca Monte dei Paschi di Siena]
   ticker: "MIL:BMPS"
+  profile:
+    about: "1472년 설립된 세계에서 가장 오래된 은행 (이탈리아 시에나)."
+    business: "소매·기업 금융"
+    edge: "2017년 정부 구제금융 뒤 정상화했고, 2025년 Mediobanca 경영권을 인수"
+    owner: "밀라노 상장사. Delfin(약 10%), 칼타지로네 그룹(약 9%), 이탈리아 재무부가 주요 주주 (보도 기준)"
+    points:
+      - "주요 주주인 Delfin·칼타지로네가 Intesa 제안에 우호적이라는 보도가 나옴"
+      - "2026-10 주총에서 경영진의 방어안이 부결됨"
+    as_of: "2026-11-02"
 Mediobanca:
   type: 기업
   country: 유럽
   aliases: []
+  profile:
+    about: "밀라노 기반 투자은행."
+    business: "기업금융·M&A 자문, 자산관리, 소비자금융"
+    edge: "보험사 Generali 지분을 가진 이탈리아 금융권의 핵심 연결고리"
+    owner: "2025년 공개매수 이후 MPS가 대부분을 보유한 자회사"
+    points:
+      - "MPS와의 완전합병안이 2026-10 MPS 주총에서 부결됨"
+    as_of: "2026-11-02"
 Banco BPM:
   type: 기업
   country: 유럽
   aliases: []
+  profile:
+    about: "이탈리아 3위권 은행."
+    business: "소매·기업 금융, 자산운용, 보험"
+    edge: "이탈리아 북부의 지점망"
+    owner: "밀라노 상장사. 프랑스 Crédit Agricole이 파생상품 포함 약 30%를 가진 최대주주 (보도 기준)"
+    points:
+      - "Crédit Agricole의 지분 확대로 경영권 향방이 걸린 회사이며, MPS 방어안의 인수 대상이었다가 무산"
+    as_of: "2026-11-02"
 Banca Generali:
   type: 기업
   country: 유럽
   aliases: []
+  profile:
+    about: "이탈리아 프라이빗뱅킹 은행 (보험사 Generali 계열)."
+    business: "자산관리, 재무설계사 조직을 통한 투자상품 판매"
+    edge: "재무설계사 네트워크 기반의 고액자산가 영업"
+    owner: "밀라노 상장사. 보험사 Generali가 최대주주"
+    points:
+      - "MPS가 방어안으로 인수를 추진했다가 2026-10 주총에서 부결"
+    as_of: "2026-11-02"
 Delfin:
   type: 기업
   country: 유럽
   aliases: []
+  profile:
+    about: "고(故) 레오나르도 델 베키오 가문의 룩셈부르크 지주회사."
+    business: "EssilorLuxottica 최대주주, 이탈리아 금융사 지분 투자"
+    edge: "이탈리아 금융권 재편에서 결정권을 갖는 대주주"
+    owner: "델 베키오 가문 상속인들이 나눠 가진 비상장 지주회사"
+    points:
+      - "MPS·Mediobanca·Generali에 걸친 지분으로 이탈리아 금융 재편의 결정권을 가짐"
+    as_of: "2026-11-02"
 Unipol:
   type: 기업
   country: 유럽
   aliases: [Unipol Gruppo]
+  profile:
+    about: "이탈리아 대형 보험그룹."
+    business: "손해·생명보험, 은행 지분 투자"
+    edge: "이탈리아 손해보험 상위권"
+    owner: "밀라노 상장사. 이탈리아 협동조합 계열 주주들이 지배"
+    as_of: "2026-11-02"
 TPG:
   type: PE·VC
   country: 미국
   aliases: [TPG Inc., TPG Capital]
   ticker: "NASDAQ:TPG"
+  profile:
+    about: "미국 대형 사모펀드 운용사 (나스닥 상장)."
+    business: "바이아웃, 성장투자, 임팩트 투자, 부동산, 크레딧"
+    edge: "아시아 투자 조직(TPG Asia)과 헬스케어·소비재 투자 경험"
+    owner: "나스닥 상장사. 창업 파트너들이 의결권 다수를 보유"
+    points:
+      - "롯데렌탈 인수(2026)로 한국에서 1조 원대 바이아웃을 마무리"
+    as_of: "2026-11-02"
 롯데렌탈:
   type: 기업
   country: 한국
   aliases: [Lotte Rental]
   krx: "089860"
+  profile:
+    about: "국내 1위 렌터카 회사 (롯데렌터카)."
+    business: "단기·장기 렌터카, 중고차 경매, 카셰어링(그린카), 일반 렌탈"
+    edge: "국내 최대 차량 보유 규모와 차량 구매부터 처분까지 이어지는 사업 구조"
+    owner: "TPG가 61.17%를 보유한 최대주주 (2026-10 인수 완료). 유가증권시장 상장"
+    points:
+      - "롯데그룹 재무구조 개선 과정에서 매각됐고, Affinity와의 협상이 무산된 뒤 TPG로 넘어감"
+      - "남은 소액주주 지분 처리(추가 공개매수 여부)는 확인되지 않음"
+    as_of: "2026-11-02"
 호텔롯데:
   type: 기업
   country: 한국
   aliases: [Hotel Lotte]
+  profile:
+    about: "롯데호텔·롯데면세점·롯데월드를 운영하는 롯데그룹 핵심 계열사."
+    business: "호텔, 면세점, 테마파크"
+    edge: "일본 롯데와 한국 계열사를 잇는 그룹 지배구조상 위치"
+    owner: "일본 롯데홀딩스와 일본 롯데 계열사가 거의 전부를 보유한 비상장 회사"
+    points:
+      - "상장(IPO)이 롯데 지배구조 개선의 숙제로 남아 있고, 계열사 지분 매각으로 현금을 확보 중 (예: 롯데렌탈 매각)"
+    as_of: "2026-11-02"
 부산롯데호텔:
   type: 기업
   country: 한국
   aliases: [Busan Lotte Hotel]
+  profile:
+    about: "롯데호텔 부산을 운영하는 비상장 롯데 계열사."
+    business: "호텔 운영, 계열사 지분 보유"
+    edge: "롯데렌탈 등 그룹 계열사 지분을 가진 지배구조상 계열사"
+    owner: "일본 롯데홀딩스가 최대주주인 비상장 회사"
+    points:
+      - "보유하던 롯데렌탈 지분 23.04%를 TPG에 매각"
+    as_of: "2026-11-02"
 Affinity Equity Partners:
   type: PE·VC
   country: 중국
   aliases: [어피니티 에쿼티 파트너스, 어피니티]
+  profile:
+    about: "홍콩 기반 아시아 사모펀드 운용사."
+    business: "한국·호주 등 아시아 바이아웃"
+    edge: "하이마트, 오비맥주(KKR과 공동) 등 한국 대형 바이아웃 경험"
+    owner: "파트너들이 운영하는 독립 운용사"
+    points:
+      - "2026년 롯데렌탈 인수를 협상했으나 5월 무산됨"
+    as_of: "2026-11-02"
 SK:
   type: 기업
   country: 한국
   aliases: [SK㈜, SK Inc.]
   krx: "034730"
+  profile:
+    about: "SK그룹 지주회사 SK㈜."
+    business: "SK이노베이션·SK텔레콤·SK스퀘어 등 계열사 지분 관리, IT서비스, 투자"
+    edge: "그룹 사업 재편(리밸런싱)을 이끄는 주체"
+    owner: "유가증권시장 상장사. 최태원 회장과 특수관계인이 최대주주"
+    points:
+      - "그룹 사업 재편으로 계열사 매각·통합이 잦음 (예: SK시그넷을 완전자회사화한 뒤 SK일렉링크에 매각)"
+    as_of: "2026-11-02"
 SK시그넷:
   type: 기업
   country: 한국
   aliases: [SK Signet]
   krx: "260870"
+  profile:
+    about: "전기차 급속충전기 제조사 (코넥스 상장, SK㈜ 자회사)."
+    business: "전기차 급속·초급속 충전기 생산"
+    edge: "초급속 충전기 기술과 미국 시장 납품 경험"
+    owner: "SK㈜가 공개매수로 지분 97.6%까지 확보. 코넥스 상장 (상장폐지 예정)"
+    points:
+      - "SK㈜가 2021년 인수한 회사로, 완전자회사화 뒤 SK일렉링크에 넘어갈 예정"
+    as_of: "2026-11-02"
 SK일렉링크:
   type: 기업
   country: 한국
   aliases: [SK Electlink]
+  profile:
+    about: "전기차 충전 서비스 회사."
+    business: "전기차 급속충전소 구축·운영"
+    edge: "SK 브랜드의 전국 충전망, 앵커에쿼티파트너스가 최대주주"
+    owner: "앵커에쿼티파트너스가 최대주주인 비상장 회사 (2026년 SK네트웍스에서 최대주주 변경)"
+    points:
+      - "충전기 제조사 SK시그넷 인수로 충전기 생산과 충전소 운영을 한 회사로 묶으려 함"
+    as_of: "2026-11-02"
 앵커에쿼티파트너스:
   type: PE·VC
   country: 한국
   aliases: [앵커PE, Anchor Equity Partners]
+  profile:
+    about: "한국 투자 비중이 큰 아시아 사모펀드 운용사 (홍콩·서울)."
+    business: "한국 소비재·IT·플랫폼 기업 지분 투자"
+    edge: "대기업 계열사와 손잡는 소수·경영권 투자 경험"
+    owner: "파트너들이 운영하는 독립 운용사"
+    points:
+      - "SK일렉링크 최대주주로 전기차 충전 사업 확장을 주도"
+    as_of: "2026-11-02"
 PAG:
   type: PE·VC
   country: 중국
   aliases: [PAG Asia]
+  profile:
+    about: "홍콩 기반 아시아 대체투자 운용사."
+    business: "사모펀드, 부동산, 크레딧"
+    edge: "아시아 최대급 독립 운용사로 중국·일본 특수상황 투자 경험"
+    owner: "파트너들이 운영하는 독립 운용사"
+    points:
+      - "헝다물업 51% 인수로 중국 부동산 부실기업 자산을 싸게 사들임 (PAG Asia IV 펀드)"
+    as_of: "2026-11-02"
 Evergrande Property Services:
   type: 기업
   country: 중국
   aliases: [헝다물업, 恒大物业]
+  profile:
+    about: "중국 헝다그룹 계열 부동산 관리(물업) 회사, 홍콩 상장."
+    business: "아파트·상업시설 관리, 입주민 대상 부가 서비스"
+    edge: "중국 전역 관리 계약에서 나오는 꾸준한 현금흐름"
+    owner: "홍콩 상장사. 청산 중인 헝다그룹 계열이 약 51%를 보유 → PAG에 매각 계약"
+    points:
+      - "모회사 청산 때문에 경영권 지분이 시장가보다 싸게 팔리는 디스트레스드 거래"
+    as_of: "2026-11-02"
 China Evergrande:
   type: 기업
   country: 중국
   aliases: [헝다, 헝다그룹, China Evergrande Group, 중국 헝다]
+  profile:
+    about: "2021년 채무불이행에 빠진 중국 부동산 개발사."
+    business: "주택 개발 (현재 청산 절차)"
+    edge: "2024년 홍콩 법원 청산 명령 뒤 청산인이 자산을 매각 중"
+    owner: "법원이 선임한 청산인이 관리 (2024년 청산 명령, 2025년 홍콩 상장폐지)"
+    points:
+      - "청산인이 핵심 자산(헝다물업 등)을 팔아 채권자 회수를 진행 중"
+    as_of: "2026-11-02"
 CEG Holdings:
   type: 기업
   country: 중국
   aliases: []
+  profile:
+    about: "China Evergrande가 지분 보유용으로 둔 자회사 (영국령 버진아일랜드 법인)."
+    business: "헝다물업 지분 보유"
+    edge: "2025년 청산인이 선임돼 보유 지분 매각 주체가 됨"
+    owner: "China Evergrande의 100% 자회사, 2025년 청산인 선임"
+    points:
+      - "헝다물업 지분 49.7%를 PAG에 넘기는 매도인"
+    as_of: "2026-11-02"
 KISCO홀딩스:
   type: 기업
   country: 한국
   aliases: [KISCO Holdings]
   krx: "001940"
+  profile:
+    about: "한국철강을 중심으로 한 KISCO 그룹의 지주회사."
+    business: "철강 계열사 지분 관리"
+    edge: "오너 일가가 지배하는 철강 계열사 지배구조의 정점"
+    owner: "유가증권시장 상장사. 장세홍 등 오너 일가가 최대주주"
+    points:
+      - "한국철강을 완전자회사로 만들어 지주회사와 자회사가 함께 상장된 구조를 정리하는 중"
+    as_of: "2026-11-02"
 한국철강:
   type: 기업
   country: 한국
   aliases: [Korea Steel]
   krx: "104700"
+  profile:
+    about: "경남 창원의 전기로 제강사."
+    business: "철근 등 건설용 강재 생산"
+    edge: "고철을 녹여 철근을 만드는 전기로 설비"
+    owner: "KISCO홀딩스가 약 76%를 보유. 유가증권시장 상장 (상장폐지 예정)"
+    points:
+      - "공개매수 뒤 주식교환으로 2027년 상장폐지 예정"
+    as_of: "2026-11-02"
 BASF:
   type: 기업
   country: 유럽
   aliases: [BASF SE, 바스프]
   ticker: "XETR:BAS"
+  profile:
+    about: "독일 루트비히스하펜 기반 세계 최대 화학회사."
+    business: "기초화학, 소재, 산업 솔루션, 영양·케어, 농업 솔루션"
+    edge: "공정을 한곳에 묶어 원가를 낮추는 통합 생산단지(Verbund)"
+    owner: "프랑크푸르트 상장사 (지분 분산)"
+    points:
+      - "2026년 Evonik에 두 차례 인수를 제안했으나 거절당함"
+    as_of: "2026-11-02"
 Evonik:
   type: 기업
   country: 유럽
   aliases: [Evonik Industries, 에보닉]
   ticker: "XETR:EVK"
+  profile:
+    about: "독일 에센 기반 스페셜티(고부가) 화학회사."
+    business: "특수 첨가제, 고기능 소재, 의약·영양 소재"
+    edge: "고객 맞춤형 고부가 화학소재 포트폴리오"
+    owner: "프랑크푸르트 상장사. 독일 석탄산업 정리 재단인 RAG-Stiftung이 최대주주"
+    points:
+      - "최대주주 RAG-Stiftung의 판단이 BASF 인수 제안 성사의 열쇠"
+    as_of: "2026-11-02"
 Vistra:
   type: 기업
   country: 미국
   aliases: [Vistra Corp., 비스트라]
   ticker: "NYSE:VST"
+  profile:
+    about: "미국 텍사스 기반 종합 전력회사."
+    business: "발전(가스·원자력·석탄·재생), 전력 소매"
+    edge: "미국 최대급 원전 보유와 발전·소매를 함께 하는 통합 모델"
+    owner: "뉴욕증권거래소 상장사 (지분 분산)"
+    points:
+      - "가스발전소를 사들여 데이터센터 등 늘어나는 전력 수요에 대응 (예: Cogentrix 인수)"
+    as_of: "2026-11-02"
 Cogentrix Energy:
   type: 기업
   country: 미국
   aliases: [Cogentrix]
+  profile:
+    about: "가스발전 중심의 미국 독립 발전사."
+    business: "가스 복합화력·단순가스터빈·열병합 발전소 운영"
+    edge: "PJM·ISO-NE·ERCOT 등 주요 전력시장의 가스발전 자산"
+    owner: "Vistra의 자회사 (2026-01 인수 완료, 이전엔 Quantum Capital Group 펀드 소유)"
+    as_of: "2026-11-02"
 Quantum Capital Group:
   type: PE·VC
   country: 미국
   aliases: [Quantum]
+  profile:
+    about: "미국 휴스턴 기반 에너지 전문 사모펀드."
+    business: "석유·가스, 전력, 에너지 전환 분야 투자"
+    edge: "에너지 산업 특화 운용 경험"
+    owner: "창업자 Wil VanLoh가 이끄는 독립 운용사"
+    points:
+      - "Cogentrix를 Vistra에 매각해 현금과 Vistra 주식으로 회수"
+    as_of: "2026-11-02"
 Sidley Austin:
   type: 법률 자문사
   country: 미국
   aliases: [Sidley]
+  profile:
+    about: "시카고 기반 대형 로펌."
+    business: "M&A, 자본시장, 규제, 소송"
+    edge: "금융·규제 분야 자문"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-02"
 Cleary Gottlieb Steen & Hamilton:
   type: 법률 자문사
   country: 미국
   aliases: [Cleary Gottlieb]
+  profile:
+    about: "뉴욕 기반 국제 로펌."
+    business: "M&A, 자본시장, 반독점, 국가 간 거래"
+    edge: "유럽·국제 반독점과 크로스보더 거래 자문"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-02"
 King & Spalding:
   type: 법률 자문사
   country: 미국
   aliases: []
+  profile:
+    about: "애틀랜타 기반 대형 로펌."
+    business: "소송·분쟁, 에너지, M&A, 헬스케어"
+    edge: "에너지·헬스케어 산업 전문성"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-02"
 Viatris:
   type: 기업
   country: 미국
   aliases: [Viatris Inc., 비아트리스]
   ticker: "NASDAQ:VTRS"
+  profile:
+    about: "제네릭(복제약) 중심 미국 제약사 (2020년 Mylan과 Pfizer Upjohn 합병)."
+    business: "제네릭·브랜드 의약품, 바이오시밀러"
+    edge: "전 세계 판매망과 대량 생산 역량"
+    owner: "나스닥 상장사 (지분 분산)"
+    points:
+      - "Pacira 인수로 비마약성 진통제 사업을 확보"
+    as_of: "2026-11-02"
 Pacira BioSciences:
   type: 기업
   country: 미국
   aliases: [Pacira]
   ticker: "NASDAQ:PCRX"
+  profile:
+    about: "비마약성 진통제 전문 미국 제약사."
+    business: "수술 후 통증 관리 의약품 (대표 제품 EXPAREL)"
+    edge: "마약성 진통제(오피오이드)를 대신하는 진통 분야의 대표 제품"
+    owner: "나스닥 상장사 (지분 분산). Viatris가 공개매수 중"
+    points:
+      - "공개매수 뒤 2단계 합병으로 상장폐지 예정"
+    as_of: "2026-11-02"
 Morgan Stanley:
   type: 재무 자문사
   country: 미국
   aliases: [모건스탠리]
   ticker: "NYSE:MS"
+  profile:
+    about: "미국 대표 투자은행."
+    business: "M&A 자문, 주식 발행·트레이딩, 자산관리"
+    edge: "IPO 등 주식 자본시장과 자산관리 부문의 강세"
+    owner: "뉴욕증권거래소 상장사 (지분 분산)"
+    as_of: "2026-11-02"
 Ashurst Perkins Coie:
   type: 법률 자문사
   country: 미국
   aliases: [Perkins Coie]
+  profile:
+    about: "영국 Ashurst와 미국 Perkins Coie가 합친 국제 로펌."
+    business: "M&A, 금융, 기술, 소송"
+    edge: "영국·아시아태평양(Ashurst)과 미국 테크 고객(Perkins Coie)을 합친 네트워크"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-02"

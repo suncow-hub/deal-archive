@@ -119,7 +119,9 @@ def main() -> None:
     for name, info in entities.items():
         info = info or {}
         ents[name] = {"type": info.get("type"), "country": info.get("country"),
-                      "aliases": info.get("aliases", []) or [], "krx": info.get("krx"), "ticker": info.get("ticker")}
+                      "aliases": info.get("aliases", []) or [], "krx": info.get("krx"), "ticker": info.get("ticker"),
+                      "profile": {k: ([str(x) for x in v] if isinstance(v, list) else str(v))
+                                  for k, v in (info.get("profile") or {}).items()} or None}
 
     data = {
         # 같은 내용이면 같은 결과가 나오도록 실행 시각 대신 데이터 기준 날짜를 쓴다

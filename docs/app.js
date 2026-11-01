@@ -245,7 +245,23 @@
       <header class="ent-head"><h1>${esc(name)}</h1>
         <div class="deal-sub">${meta}${e.aliases?.length ? ` <span class="muted">· 다른 표기: ${esc(e.aliases.join(", "))}</span>` : ""}
           ${e.krx || e.ticker ? `<a class="chartlink" href="#/chart?s=${enc(e.krx || e.ticker)}">차트 보기 →</a>` : ""}</div></header>
+      ${profileHtml(e.profile, e)}
       <div class="kicker"><span>관련 딜</span><span class="aside">${rows.length}건</span></div>${list}`;
+    $app.querySelectorAll(".eprof").forEach(annotate);
+  }
+
+  // 회사 핵심 정보: 무슨 회사인지, 사업, 강점, 소유 구조, 딜 관련 포인트
+  function profileHtml(p, e) {
+    if (!p) return "";
+    const q = e.krx && MKT.items.find((x) => x.code === e.krx);
+    const row = (k, v) => (v ? `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>` : "");
+    return `<section class="eprof">
+      <p class="ep-about">${esc(p.about)}</p>
+      <dl class="ep-grid">${row("사업 분야", p.business)}${row("강점", p.edge)}${row("소유 구조", p.owner)}
+        ${q ? `<div><dt>주가</dt><dd><b>${fmtNum(q.close)}원</b> ${chg(q.change_pct)} <span class="muted">${esc(fmtDate(q.date))} 종가</span></dd></div>` : ""}</dl>
+      ${(p.points || []).length ? `<div class="ep-points"><div class="ep-h">딜 관련 알아둘 점</div><ul>${p.points.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>` : ""}
+      <p class="ep-note">AI가 공개 자료로 정리한 개요 · ${esc(p.as_of || "")} 기준 · 오류가 있을 수 있음</p>
+    </section>`;
   }
 
   function viewEntities() {

@@ -160,6 +160,25 @@ def main() -> int:
     except (ValueError, yaml.YAMLError) as e:
         errors.append(f"market/settings.yml: {e}")
     for name, info in entities.items():
+        prof = (info or {}).get("profile")
+        if prof is not None:
+            if not isinstance(prof, dict):
+                errors.append(f"entities.yml: {name} profile 은 about/business/edge/owner/points/as_of 항목이어야 함")
+            else:
+                for f in ("about", "business", "edge", "as_of"):
+                    if not str(prof.get(f) or "").strip():
+                        errors.append(f"entities.yml: {name} profile.{f} 비어 있음")
+                for f in ("about", "business", "edge", "owner"):
+                    if len(str(prof.get(f) or "")) > 120:
+                        errors.append(f"entities.yml: {name} profile.{f} 는 120자 이내")
+                pts = prof.get("points") or []
+                if not isinstance(pts, list) or len(pts) > 3 or any(len(str(x)) > 120 for x in pts):
+                    errors.append(f"entities.yml: {name} profile.points 는 최대 3개, 각 120자 이내 목록")
+                if prof.get("as_of") and not DATE.match(str(prof["as_of"])):
+                    errors.append(f"entities.yml: {name} profile.as_of 는 \"YYYY-MM-DD\" (따옴표로 감싸기)")
+                extra = set(prof) - {"about", "business", "edge", "owner", "points", "as_of"}
+                if extra:
+                    errors.append(f"entities.yml: {name} profile 에 모르는 항목 {sorted(extra)}")
         k = str((info or {}).get("krx") or "")
         if k and not re.fullmatch(r"[0-9A-Z]{6}", k):
             errors.append(f"entities.yml: {name} krx '{k}' 는 6자리 문자열")
