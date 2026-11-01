@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "run_at": "2026-11-02T00:43:54.959086+09:00",
+    "window_start": "2026-10-31T18:43:54.959086+09:00",
+    "sources": {
+      "환율": "725일 추가 (최신 2026-10-30)",
+      "OpenDART 상세": "0건 성공, 0건 실패",
+      "OpenDART": "0건",
+      "WSJ Markets": "0/60",
+      "WSJ U.S. Business": "0/85",
+      "PR Newswire M&A": "0/20",
+      "한경 증권": "1/50",
+      "인베스트조선": "2/50",
+      "연합뉴스 마켓+": "3/120",
+      "매일경제 증권": "7/50",
+      "조선비즈": "2/100",
+      "FT M&A": "0/25",
+      "CNBC Business": "0/30",
+      "WSJ World News": "4/70",
+      "WSJ Economy": "0/36",
+      "한경 경제": "9/50",
+      "한경 국제": "0/50"
+    },
+    "gemini_model": "gemini-flash-latest",
+    "gemini": "성공 (28/28건 채점)",
+    "counts": {
+      "deal": 7,
+      "macro": 7,
+      "dropped": 14
+    }
+  },
+  "items": [
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "‘몸값 1조’ 맘스터치 ‘매각 3수’ 롯데카드…연말 M&A 대어로 [M&A복덕방]",
+      "link": "https://www.mk.co.kr/news/stock/12192568",
+      "published": "2026-11-01T09:24:36+09:00",
+      "keywords": [
+        "인수",
+        "매각"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "맘스터치·롯데카드 등 1조원대 M&A 매물"
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "LG화학 ATM 된 LG엔솔…\"이 맛에 중복상장 한다\" 비아냥까지",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/10/30/2026103080165.html",
+      "published": "2026-11-01T07:00:00+09:00",
+      "keywords": [
+        "IPO",
+        "지분",
+        "IPO",
+        "상장"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "LG엔솔 2.5조 지분 유동화 및 모회사 할인"
+    },
+    {
+      "source": "조선비즈",
+      "kind": "deal",
+      "title": "[MM] 카카오모빌리티 美ADR 상장 불발에… 카카오·TPG 국제 분쟁",
+      "link": "https://biz.chosun.com/moneymove/minvestment/2026/11/01/AQXWWMUVQNBO7DGI3P7QU6EVPU/",
+      "published": "2026-11-01T18:29:30+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "카카오모빌리티 상장 무산에 따른 PE 분쟁"
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "IPO 구주매출이 사라졌다…멈춰선 PE·VC 회수 사이클",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/10/30/2026103080108.html",
+      "published": "2026-11-01T07:00:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "IPO 구주매출 위축과 PE 회수 환경 변화"
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "‘몸값 2700조’ 앤트로픽 상장에 기대감 높은데…국내서 투자되나 보니",
+      "link": "https://www.mk.co.kr/news/stock/12192529",
+      "published": "2026-11-01T07:37:14+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "생성형 AI 대표 주자 앤트로픽의 상장 추진"
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "올해 자사주 취득도 삼전닉스 효과…전년보다 5.7배 급증",
+      "link": "https://www.yna.co.kr/view/AKR20261031025400008",
+      "published": "2026-11-01T06:05:02+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "상장사 자사주 취득 급증 및 주주환원 흐름"
+    },
+    {
+      "source": "한경 경제",
+      "kind": "deal",
+      "title": "中 바이오, 기술수출 넘어 'Co-Co 모델'로 진화",
+      "link": "https://www.hankyung.com/article/2026110185131",
+      "published": "2026-11-01T18:10:52+09:00",
+      "keywords": [
+        "수출"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "바이오 업계 공동개발 라이선스 계약 모델"
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "macro",
+      "title": "李, SNS에 의견구한 의무공개매수…금융위는 “국회 합의안 존중”",
+      "link": "https://www.mk.co.kr/news/stock/12192649",
+      "published": "2026-11-01T14:16:09+09:00",
+      "keywords": [
+        "인수",
+        "매각",
+        "경영권",
+        "상장"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "M&A 거래 구조 바꿀 의무공개매수 규제 논의"
+    },
+    {
+      "source": "한경 증권",
+      "kind": "macro",
+      "title": "거래소, 저PBR 상장사 151곳 첫 공표…현대제철·이마트 등 포함",
+      "link": "https://www.hankyung.com/article/2026103177206",
+      "published": "2026-11-01T12:01:02+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "저PBR 명단 공표에 따른 밸류업 정책 이슈"
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "macro",
+      "title": "“삼전닉스 월요일에도 흘러내리나요”…줄줄이 돈줄 막히는 AI업계",
+      "link": "https://www.mk.co.kr/news/stock/12192997",
+      "published": "2026-11-01T20:13:09+09:00",
+      "keywords": [
+        "투자유치"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "글로벌 빅테크 및 AI 기업 자금조달 경색"
+    },
+    {
+      "source": "조선비즈",
+      "kind": "macro",
+      "title": "공공기관 자산 매각 때 총리 사전 재가 안 받아도 된다",
+      "link": "https://biz.chosun.com/policy/policy_sub/2026/11/01/WSID7T2XANEZPG5D6TGZ2FI4ZU/",
+      "published": "2026-11-01T19:42:38+09:00",
+      "keywords": [
+        "매각"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "공공기관 자산 매각 관련 행정 규제 완화"
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "macro",
+      "title": "저PBR 명단 첫 공표, 기업가치 제고할까…증권가 \"계획이행 중요\"",
+      "link": "https://www.yna.co.kr/view/AKR20261031020000008",
+      "published": "2026-11-01T12:01:02+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "저PBR 발표에 따른 시장 평가 및 이행 과제"
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "macro",
+      "title": "151개 기업에 ‘저PBR’ 꼬리표 붙는다 … 이마트·현대제철 등 시총 1조 넘는 5곳 포함",
+      "link": "https://www.mk.co.kr/news/stock/12192947",
+      "published": "2026-11-01T17:38:05+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "거래소 저PBR 151개사 명단 공식 공표"
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "macro",
+      "title": "명단 공개만으론 '만년 저평가'…이사회 책임강화가 관건",
+      "link": "https://www.mk.co.kr/news/stock/12192887",
+      "published": "2026-11-01T17:27:54+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "밸류업 정책과 상장사 지배구조 개선 과제"
+    }
+  ]
+}
