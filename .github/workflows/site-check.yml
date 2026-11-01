@@ -25,7 +25,7 @@ jobs:
           B = "https://suncow-hub.github.io/deal-archive/"
           PAGES = [("home", "#/", 1200), ("chart-kr", "#/chart?s=005930", 1200), ("chart-kospi", "#/chart?s=KOSPI", 1200),
                    ("chart-global", "#/chart?s=NASDAQ:DASH", 1200), ("mobile-home", "#/", 390),
-                   ("mobile-chart", "#/chart?s=KOSPI200", 390), ("mobile-settings", "#/settings?edit=1", 390)]
+                   ("mobile-chart", "#/chart?s=KOSPI200", 390), ("mobile-settings", "#/settings?edit=1", 390), ("entities", "#/entities", 1280)]
           async def main():
               log = {}
               async with async_playwright() as p:
