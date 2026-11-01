@@ -5,7 +5,7 @@
 # exclude: 자동 추적 종목 중 빼고 싶은 종목코드
 # tape: 첫 화면 해외 시세 흐름띠 (TradingView 기호)
 strip: ["KOSPI", "KOSDAQ", "USDKRW"]
-indices: ["KOSPI", "KOSDAQ"]
+indices: ["KOSPI", "KOSDAQ", "KOSPI200", "KOSDAQ150", "KRX300"]
 stocks:
   - {code: "005930", name: "삼성전자"}
   - {code: "000660", name: "SK하이닉스"}
