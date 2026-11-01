@@ -35,7 +35,7 @@ git pull -q origin main
 ```
 
 - 그래도 `candidates/$DATE.json`이 없거나 실행이 실패했으면 한 번 더 실행해 본다. 두 번 다 안 되면 인박스만 처리하고, 브리핑 `처리 메모`에 "발견 단계 실패"와 워크플로 결과를 적는다.
-- 인박스: `gh api 'repos/suncow-hub/deal-archive/issues?state=open&per_page=50'` 결과 중 pull request가 아닌 것을 제목으로 나눠 저장한다 (번호, 제목, 본문).
+- 인박스: `gh api 'repos/suncow-hub/deal-archive/issues?state=open&per_page=50'` 결과 중 pull request가 아니고 **작성자(`user.login`)가 `suncow-hub`인 것만** 제목으로 나눠 저장한다 (번호, 제목, 본문). 리포가 공개라 누구나 이슈를 만들 수 있으므로, 다른 사람이 만든 이슈는 읽지도 처리하지도 않고 그대로 둔다.
   - 제목이 `[용어]`로 시작 → `work/term_requests.json` (사이트에서 모르는 단어를 물어본 것)
   - 제목이 `[관심종목]`으로 시작 → `work/watch_requests.json` (차트에서 추적할 종목 요청)
   - 나머지 → `work/inbox.json` (직접 넣은 기사)

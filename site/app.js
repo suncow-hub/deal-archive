@@ -17,6 +17,7 @@
 
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const enc = encodeURIComponent;
+  const safeUrl = (u) => (/^https?:\/\//i.test(String(u || "")) ? String(u) : "#");
   const todayKST = () => new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
   const fmtDate = (s) => (s ? s.slice(5).replace("-", ".") : "");
 
@@ -185,7 +186,7 @@
     ].join("");
     const fact = (k, v) => (v ? `<div><dt>${k}</dt><dd>${v}</dd></div>` : "");
     const names = (r) => (d.names[r] || []).map(entLink).join(", ");
-    const sources = d.sources.length ? `<div class="sources"><div class="kicker"><span>출처</span></div><ol>${d.sources.map((s) => `<li><a href="${esc(s)}" target="_blank" rel="noopener">${esc(s.replace(/^https?:\/\//, "").slice(0, 80))}</a></li>`).join("")}</ol></div>` : "";
+    const sources = d.sources.length ? `<div class="sources"><div class="kicker"><span>출처</span></div><ol>${d.sources.map((s) => `<li><a href="${esc(safeUrl(s))}" target="_blank" rel="noopener">${esc(s.replace(/^https?:\/\//, "").slice(0, 80))}</a></li>`).join("")}</ol></div>` : "";
 
     $app.innerHTML = `<div class="crumb"><a href="#/">← 딜 아카이브</a></div>
       <header class="deal-head">
@@ -266,7 +267,7 @@
     const cards = list.map((r) => {
       const deal = r.deal && DATA.deals.find((d) => d.id === r.deal);
       const comps = r.companies.map((c) => (DATA.entities[c] ? entLink(c) : esc(c))).join(", ");
-      const srcs = r.sources.map((s) => `<li>${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>` : esc(s.name)}
+      const srcs = r.sources.map((s) => `<li>${s.url ? `<a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener">${esc(s.name)}</a>` : esc(s.name)}
         <span class="cred cred-${s.credibility === "중간" ? "mid" : "low"}">공신력 ${esc(s.credibility)}</span></li>`).join("");
       return `<article class="rumor">
         <div class="rumor-top"><span class="rstatus ${RUMOR_CLS[r.status] || ""}">${esc(r.status)}</span>

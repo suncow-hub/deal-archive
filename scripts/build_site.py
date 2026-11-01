@@ -33,6 +33,8 @@ def render(md_text: str, aliases: dict) -> str:
     out = markdown.markdown(text, extensions=["extra", "sane_lists"])
     # 딜 노트 링크(../deals/2026/x.md, ../2026/x.md)를 사이트 안 링크로
     out = re.sub(r'href="(?:\.\./)*(?:deals/)?\d{4}/([^"/]+)\.md"', r'href="#/deal/\1"', out)
+    # 안전하지 않은 링크(javascript: 등)는 링크를 없애고 글자만 남긴다
+    out = re.sub(r'<a href="(?!https?://|#|\.\./|[\w./-]+\.md")[^"]*"[^>]*>(.*?)</a>', r"\1", out, flags=re.S)
     # 외부 링크는 새 탭
     out = re.sub(r'<a href="(https?://[^"]+)"', r'<a href="\1" target="_blank" rel="noopener"', out)
     return out
