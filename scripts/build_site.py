@@ -14,7 +14,7 @@ from datetime import datetime, timedelta, timezone
 import markdown
 
 from lib import (NAME_FIELDS, ROOT, alias_map, briefing_files, deal_files, load_deal, load_entities,
-                 load_rumors, load_tags, split_front)
+                 load_glossary, load_rumors, load_tags, split_front)
 
 KST = timezone(timedelta(hours=9))
 OUT = ROOT / "docs"
@@ -106,11 +106,18 @@ def main() -> None:
         })
     rumors.sort(key=lambda r: r["last_seen"], reverse=True)
 
+    glossary = []
+    for g in load_glossary():
+        glossary.append({k: g.get(k) for k in ("id", "term", "en", "category", "short", "more", "example",
+                                                "deal", "related", "memo")}
+                        | {"match": [str(x) for x in g.get("match") or []],
+                           "aliases": [str(x) for x in g.get("aliases") or []]})
+
     ents = {}
     for name, info in entities.items():
         info = info or {}
         ents[name] = {"type": info.get("type"), "country": info.get("country"),
-                      "aliases": info.get("aliases", []) or []}
+                      "aliases": info.get("aliases", []) or [], "krx": info.get("krx"), "ticker": info.get("ticker")}
 
     data = {
         # 같은 내용이면 같은 결과가 나오도록 실행 시각 대신 데이터 기준 날짜를 쓴다
@@ -127,14 +134,20 @@ def main() -> None:
         "briefings": briefings,
         "entities": ents,
         "rumors": rumors,
+        "glossary": glossary,
     }
 
     if OUT.exists():
         shutil.rmtree(OUT)
     shutil.copytree(ROOT / "site", OUT)
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
+    mk = ROOT / "market"
+    if (mk / "kr").exists():
+        shutil.copytree(mk / "kr", OUT / "market" / "kr")
+    if (mk / "summary.json").exists():
+        shutil.copy(mk / "summary.json", OUT / "market" / "summary.json")
     (OUT / "data.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
-    print(f"사이트 생성: 딜 {len(deals)}건, 브리핑 {len(briefings)}건, 이름 {len(ents)}개, 소문 {len(rumors)}건 → docs/")
+    print(f"사이트 생성: 딜 {len(deals)}건, 브리핑 {len(briefings)}건, 이름 {len(ents)}개, 소문 {len(rumors)}건, 용어 {len(glossary)}개 → docs/")
 
 
 if __name__ == "__main__":

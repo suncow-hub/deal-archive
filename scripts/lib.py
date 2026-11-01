@@ -84,3 +84,16 @@ def load_rumors() -> list:
     if not isinstance(data, list):
         raise ValueError("rumors.yml 은 목록(- 로 시작)이어야 함")
     return data
+
+
+GLOSSARY_CATEGORIES = ["밸류에이션", "딜 구조", "자금 조달", "참여자·전략", "공시·규제", "거시경제"]
+
+
+def load_glossary() -> list:
+    path = ROOT / "glossary.yml"
+    if not path.exists():
+        return []
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or []
+    if not isinstance(data, list):
+        raise ValueError("glossary.yml 은 목록(- 로 시작)이어야 함")
+    return data

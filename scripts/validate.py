@@ -5,8 +5,9 @@ import sys
 
 import yaml
 
-from lib import (NAME_FIELDS, REQUIRED_FIELDS, ROOT, RUMOR_CRED, RUMOR_STATUSES, SECTIONS, body_names,
-                 briefing_files, deal_files, load_deal, load_entities, load_rumors, load_tags, split_front)
+from lib import (GLOSSARY_CATEGORIES, NAME_FIELDS, REQUIRED_FIELDS, ROOT, RUMOR_CRED, RUMOR_STATUSES, SECTIONS,
+                 body_names, briefing_files, deal_files, load_deal, load_entities, load_glossary, load_rumors,
+                 load_tags, split_front)
 
 DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 ENTITY_TYPES = {"기업", "PE·VC", "재무 자문사", "법률 자문사", "정부·기관"}
@@ -121,11 +122,57 @@ def main() -> int:
             if not isinstance(s, dict) or not s.get("name") or s.get("credibility") not in RUMOR_CRED:
                 errors.append(f"{tag}: sources 항목은 name과 credibility({'/'.join(RUMOR_CRED)}) 필요")
 
+    try:
+        glossary = load_glossary()
+    except Exception as e:  # noqa: BLE001
+        glossary = []
+        errors.append(f"glossary.yml: {e}")
+    terms = {str(g.get("term")) for g in glossary if isinstance(g, dict)}
+    gids = set()
+    for i, g in enumerate(glossary):
+        if not isinstance(g, dict):
+            errors.append(f"glossary.yml[{i}]: 항목 형식 오류")
+            continue
+        tag = f"glossary.yml:{g.get('id') or i}"
+        gid = str(g.get("id") or "")
+        if not re.match(r"^[a-z0-9-]+$", gid):
+            errors.append(f"{tag}: id는 영문 소문자·숫자·하이픈")
+        if gid in gids:
+            errors.append(f"{tag}: id 중복")
+        gids.add(gid)
+        for f in ("term", "short", "category"):
+            if not g.get(f):
+                errors.append(f"{tag}: {f} 비어 있음")
+        if g.get("category") and g["category"] not in GLOSSARY_CATEGORIES:
+            errors.append(f"{tag}: category는 {GLOSSARY_CATEGORIES} 중 하나")
+        for f in ("match", "aliases", "related"):
+            if g.get(f) is not None and not isinstance(g.get(f), list):
+                errors.append(f"{tag}: {f}는 목록 [..] 이어야 함")
+        if g.get("deal") and g["deal"] not in deal_ids:
+            errors.append(f"{tag}: deal '{g['deal']}' 딜 노트가 없음")
+        for r in g.get("related") or []:
+            if r not in terms:
+                errors.append(f"{tag}: related '{r}' 이(가) 용어집 term에 없음")
+
+    wl = ROOT / "market" / "watchlist.yml"
+    if wl.exists():
+        try:
+            rows = yaml.safe_load(wl.read_text(encoding="utf-8")) or []
+            for row in rows:
+                if not re.fullmatch(r"[0-9A-Z]{6}", str((row or {}).get("code", ""))):
+                    errors.append(f"market/watchlist.yml: 코드 '{(row or {}).get('code')}' 는 6자리 문자열이어야 함 (따옴표로 감싸기)")
+        except yaml.YAMLError as e:
+            errors.append(f"market/watchlist.yml: YAML 오류 {e}")
+    for name, info in entities.items():
+        k = str((info or {}).get("krx") or "")
+        if k and not re.fullmatch(r"[0-9A-Z]{6}", k):
+            errors.append(f"entities.yml: {name} krx '{k}' 는 6자리 문자열")
+
     if errors:
         print(f"검사 실패 {len(errors)}건")
         print("\n".join(f"- {e}" for e in errors))
         return 1
-    print(f"검사 통과: 딜 {len(deal_files())}건, 브리핑 {len(briefing_files())}건, 이름 {len(entities)}개, 소문 {len(rumors)}건")
+    print(f"검사 통과: 딜 {len(deal_files())}건, 브리핑 {len(briefing_files())}건, 이름 {len(entities)}개, 소문 {len(rumors)}건, 용어 {len(glossary)}개")
     return 0
 
 
