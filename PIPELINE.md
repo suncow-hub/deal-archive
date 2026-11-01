@@ -22,6 +22,7 @@ python3 scripts/deal_index.py > work/index.txt
 ```
 
 - **발견 단계 실행**: 오늘 후보 파일을 새로 만든다. GitHub 예약 실행은 늦어질 수 있어 여기서 직접 실행시킨다.
+  단, `candidates/$DATE.json`이 이미 있고 그 안의 `meta.run_at`이 1시간 이내면 다시 실행하지 않고 그 파일을 쓴다 (같은 날 재실행 시 중복 방지).
 
 ```bash
 gh api -X POST repos/suncow-hub/deal-archive/actions/workflows/discover.yml/dispatches -f ref=main
