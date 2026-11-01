@@ -1,0 +1,32 @@
+name: source-probe
+
+# 새 소스 후보를 시험한다 (수동 실행). robots.txt 허용 여부, 피드가 실제로 오는지, 딜 기사가 걸리는지,
+# Gemini 검색(grounding)이 무료 키로 되는지 확인해 site-check 브랜치에 결과만 올린다.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Probe
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/source_probe.py > probe.json
+      - name: Push result
+        run: |
+          mkdir out && cp probe.json out/ && cd out
+          git init -q -b site-check
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add . && git commit -q -m "source probe $(date -u +%FT%TZ)"
+          git push -f -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" site-check
