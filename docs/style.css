@@ -176,9 +176,10 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 16px 48px; }
   .ep-about { font-size: 18px; }
   .ep-grid > div { grid-template-columns: 70px 1fr; font-size: 15px; }
 }
-.ent-groups { columns: 3 260px; column-gap: 32px; }
-.ent-group { break-inside: avoid; padding-top: 20px; margin-bottom: 0; }
+.ent-groups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 32px; align-items: start; padding-top: 24px; }
+.ent-group { margin-bottom: 28px; }
 .ent-group .kicker { margin-top: 0; }
+@media (max-width: 860px) { .ent-groups { grid-template-columns: 1fr; } }
 .ent-group ul { list-style: none; margin: 0; padding: 0; }
 .ent-group li { display: flex; justify-content: space-between; padding: 5px 0; border-bottom: 1px solid var(--rule); font-size: 14px; }
 .ent-group li span { color: var(--ink-3); font-size: 12px; }

@@ -273,12 +273,25 @@
       (groups[e.type || "기타"] ||= []).push({ name, n });
     }
     const order = ["PE·VC", "재무 자문사", "법률 자문사", "기업", "정부·기관", "기타"];
-    const html = order.filter((t) => groups[t]).map((t) => {
+    // 세 칸을 직접 나눠 담는다 (CSS columns는 브라우저마다 칸 맨 위 여백 처리가 달라 선 높이가 어긋났음)
+    // 큰 묶음부터 가장 짧은 칸에 넣고, 칸 안과 칸 순서는 원래 순서(PE → 자문사 → 기업)대로
+    const types = order.filter((t) => groups[t]);
+    const cols = [[], [], []], load = [0, 0, 0];
+    types.slice().sort((a, b) => groups[b].length - groups[a].length).forEach((t) => {
+      const i = load.indexOf(Math.min(...load));
+      load[i] += groups[t].length + 3;
+      cols[i].push(t);
+    });
+    const groupHtml = (t) => {
       const items = groups[t].sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, "ko"));
       return `<div class="ent-group"><div class="kicker"><span>${esc(t)}</span><span class="aside">${items.length}</span></div>
         <ul>${items.map((x) => `<li><a href="#/entity/${enc(x.name)}">${esc(x.name)}</a><span>${x.n}건</span></li>`).join("")}</ul></div>`;
-    }).join("");
-    $app.innerHTML = html ? `<div class="ent-groups">${html}</div>` : `<p class="pad muted">아직 등록된 이름이 없습니다.</p>`;
+    };
+    const ordered = cols.filter((c) => c.length).map((c) => c.sort((a, b) => types.indexOf(a) - types.indexOf(b)))
+      .sort((a, b) => types.indexOf(a[0]) - types.indexOf(b[0]));
+    $app.innerHTML = types.length
+      ? `<div class="ent-groups">${ordered.map((c) => `<div class="ent-col">${c.map(groupHtml).join("")}</div>`).join("")}</div>`
+      : `<p class="pad muted">아직 등록된 이름이 없습니다.</p>`;
   }
 
   // ---------------------------------------------------------------- 소문

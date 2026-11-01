@@ -5,6 +5,7 @@ docs/data.json 에 모든 데이터를 담고, site/ 의 html·css·js 를 복�
 
 from __future__ import annotations
 
+import hashlib
 import html
 import json
 import re
@@ -145,6 +146,12 @@ def main() -> None:
         shutil.rmtree(OUT)
     shutil.copytree(ROOT / "site", OUT)
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
+    # 브라우저가 예전 style.css·app.js를 붙잡고 있지 않도록 내용이 바뀌면 주소도 바뀌게 한다
+    idx = (OUT / "index.html").read_text(encoding="utf-8")
+    for asset in ("style.css", "app.js"):
+        v = hashlib.sha1((OUT / asset).read_bytes()).hexdigest()[:10]
+        idx = idx.replace(f'"{asset}"', f'"{asset}?v={v}"')
+    (OUT / "index.html").write_text(idx, encoding="utf-8")
     mk = ROOT / "market"
     if (mk / "kr").exists():
         shutil.copytree(mk / "kr", OUT / "market" / "kr")
