@@ -155,7 +155,7 @@ def fetch_dart(cfg: dict, since: datetime, now: datetime, stats: dict) -> list[d
             }
             try:
                 r = get_retry("https://opendart.fss.or.kr/api/list.json", params=params,
-                                 headers={"User-Agent": USER_AGENT}, timeout=20)
+                                 headers={"User-Agent": USER_AGENT}, timeout=40)
                 data = r.json()
             except Exception as e:  # noqa: BLE001
                 stats[f"OpenDART-{ty}"] = f"실패: {type(e).__name__}"
