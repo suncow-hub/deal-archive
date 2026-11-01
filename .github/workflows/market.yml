@@ -1,0 +1,49 @@
+name: market
+
+# 한국 시세 수집. 공공데이터는 기준일 다음 영업일 오후 1시 이후에 나와서 오후 2시 40분(KST)쯤 돈다.
+# (GitHub 예약 실행은 늦어질 수 있지만, 시세는 몇 시간 늦어도 괜찮다)
+# 관심 종목 목록이나 회사 사전이 바뀌면 바로 한 번 더 돌아 새 종목 1년치를 채운다.
+on:
+  schedule:
+    - cron: "41 5 * * 1-5"
+  push:
+    branches: [main]
+    paths:
+      - "market/watchlist.yml"
+      - "entities.yml"
+      - "scripts/market.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: market
+  cancel-in-progress: false
+
+jobs:
+  market:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+      - run: pip install requests pyyaml
+      - name: Fetch
+        env:
+          DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+        run: python scripts/market.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add market
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "market: $(TZ=Asia/Seoul date +%F)"
+            git pull --rebase -q origin main
+            git push
+          fi

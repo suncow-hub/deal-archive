@@ -3,14 +3,17 @@
 # - type: 기업 / PE·VC / 재무 자문사 / 법률 자문사 / 정부·기관
 # - country: tags.yml 지역 값
 # - aliases: 다른 표기 (기사에 이렇게 나와도 대표 이름으로 통일)
+# - krx: 한국 상장사 6자리 종목코드 (시세 자동 추적), ticker: 해외 상장사 TradingView 심볼 (예: NASDAQ:DASH)
 DoorDash:
   type: 기업
   country: 미국
   aliases: [도어대시, DoorDash Inc.]
+  ticker: "NASDAQ:DASH"
 Instacart:
   type: 기업
   country: 미국
   aliases: [인스타카트, Maplebear]
+  ticker: "NASDAQ:CART"
 Centerview Partners:
   type: 재무 자문사
   country: 미국
@@ -19,22 +22,27 @@ J.P. Morgan:
   type: 재무 자문사
   country: 미국
   aliases: [JPMorgan Chase Bank, JPMorgan Chase, JPMorgan, JP모건]
+  ticker: "NYSE:JPM"
 Goldman Sachs:
   type: 재무 자문사
   country: 미국
   aliases: [골드만삭스, Goldman Sachs Group]
+  ticker: "NYSE:GS"
 Citi:
   type: 재무 자문사
   country: 미국
   aliases: [Citigroup, 씨티, 씨티그룹]
+  ticker: "NYSE:C"
 Evercore:
   type: 재무 자문사
   country: 미국
   aliases: []
+  ticker: "NYSE:EVR"
 UBS:
   type: 재무 자문사
   country: 유럽
   aliases: [UBS Group]
+  ticker: "NYSE:UBS"
 CITIC Securities:
   type: 재무 자문사
   country: 중국
@@ -67,18 +75,22 @@ ADT:
   type: 기업
   country: 미국
   aliases: [ADT Inc.]
+  ticker: "NYSE:ADT"
 Apollo Global Management:
   type: PE·VC
   country: 미국
   aliases: [Apollo, 아폴로]
+  ticker: "NYSE:APO"
 Intesa Sanpaolo:
   type: 기업
   country: 유럽
   aliases: [Intesa]
+  ticker: "MIL:ISP"
 Monte dei Paschi di Siena:
   type: 기업
   country: 유럽
   aliases: [MPS, Banca Monte dei Paschi di Siena]
+  ticker: "MIL:BMPS"
 Mediobanca:
   type: 기업
   country: 유럽
@@ -103,10 +115,12 @@ TPG:
   type: PE·VC
   country: 미국
   aliases: [TPG Inc., TPG Capital]
+  ticker: "NASDAQ:TPG"
 롯데렌탈:
   type: 기업
   country: 한국
   aliases: [Lotte Rental]
+  krx: "089860"
 호텔롯데:
   type: 기업
   country: 한국
@@ -123,10 +137,12 @@ SK:
   type: 기업
   country: 한국
   aliases: [SK㈜, SK Inc.]
+  krx: "034730"
 SK시그넷:
   type: 기업
   country: 한국
   aliases: [SK Signet]
+  krx: "260870"
 SK일렉링크:
   type: 기업
   country: 한국
@@ -155,22 +171,27 @@ KISCO홀딩스:
   type: 기업
   country: 한국
   aliases: [KISCO Holdings]
+  krx: "001940"
 한국철강:
   type: 기업
   country: 한국
   aliases: [Korea Steel]
+  krx: "104700"
 BASF:
   type: 기업
   country: 유럽
   aliases: [BASF SE, 바스프]
+  ticker: "XETR:BAS"
 Evonik:
   type: 기업
   country: 유럽
   aliases: [Evonik Industries, 에보닉]
+  ticker: "XETR:EVK"
 Vistra:
   type: 기업
   country: 미국
   aliases: [Vistra Corp., 비스트라]
+  ticker: "NYSE:VST"
 Cogentrix Energy:
   type: 기업
   country: 미국
@@ -195,14 +216,17 @@ Viatris:
   type: 기업
   country: 미국
   aliases: [Viatris Inc., 비아트리스]
+  ticker: "NASDAQ:VTRS"
 Pacira BioSciences:
   type: 기업
   country: 미국
   aliases: [Pacira]
+  ticker: "NASDAQ:PCRX"
 Morgan Stanley:
   type: 재무 자문사
   country: 미국
   aliases: [모건스탠리]
+  ticker: "NYSE:MS"
 Ashurst Perkins Coie:
   type: 법률 자문사
   country: 미국
