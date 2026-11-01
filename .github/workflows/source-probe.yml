@@ -4,6 +4,10 @@ name: source-probe
 # Gemini 검색(grounding)이 무료 키로 되는지 확인해 site-check 브랜치에 결과만 올린다.
 on:
   workflow_dispatch:
+    inputs:
+      only_grounding:
+        description: "Gemini 검색만 시험 (1)"
+        default: "0"
 
 permissions:
   contents: write
@@ -21,6 +25,7 @@ jobs:
       - name: Probe
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ONLY_GROUNDING: ${{ inputs.only_grounding }}
         run: python scripts/source_probe.py > probe.json
       - name: Push result
         run: |

@@ -81,11 +81,16 @@ def probe_grounding() -> dict:
 
     client = genai.Client(api_key=key)
     res = {}
+    try:
+        plain = client.models.generate_content(model="gemini-flash-latest", contents="1+1=?")
+        res["plain_call"] = "ok: " + (plain.text or "")[:20]
+    except Exception as e:  # noqa: BLE001
+        res["plain_call"] = f"{type(e).__name__}: {str(e)[:160]}".replace(key, "***")
     qs = {
         "kr": "지난 24시간 동안 한국에서 보도된 M&A·사모펀드·인수 관련 주요 소식(예비입찰, 우선협상대상자 선정, 매각 추진 등)을 매체 이름과 함께 5개 이내로 나열해줘.",
         "asia": "List up to 5 notable M&A or private equity deals in Asia (excluding Korea) reported in the last 24 hours, with the outlet name for each.",
     }
-    for model in ("gemini-flash-latest", "gemini-3-flash-preview", "gemini-2.5-flash"):
+    for model in ("gemini-3.8-flash", "gemini-flash-latest"):
         try:
             for k, q in qs.items():
                 resp = client.models.generate_content(
@@ -112,6 +117,7 @@ def probe_grounding() -> dict:
 
 
 if __name__ == "__main__":
-    out = {"run_at": datetime.now(timezone.utc).isoformat(), "feeds": [probe_feed(n, u) for n, u in FEEDS],
+    only_g = os.environ.get("ONLY_GROUNDING") == "1"
+    out = {"run_at": datetime.now(timezone.utc).isoformat(), "feeds": [] if only_g else [probe_feed(n, u) for n, u in FEEDS],
            "grounding": probe_grounding()}
     print(json.dumps(out, ensure_ascii=False, indent=1))
