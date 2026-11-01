@@ -341,12 +341,12 @@
 
   const GLOBAL_PICKS = [
     ["FOREXCOM:SPXUSD", "S&P 500"], ["FOREXCOM:NSXUSD", "나스닥 100"], ["FOREXCOM:DJI", "다우"],
-    ["FX_IDC:USDKRW", "원/달러"], ["TVC:US10Y", "미 10년물"], ["TVC:USOIL", "WTI"], ["TVC:GOLD", "금"],
+    ["FX_IDC:USDKRW", "원/달러"], ["FRED:DGS10", "미 10년물"], ["TVC:USOIL", "WTI"], ["TVC:GOLD", "금"],
   ];
 
   function tickerTape(el) {
     tvEmbed(el, "embed-widget-ticker-tape.js", {
-      symbols: GLOBAL_PICKS.filter(([s]) => s !== "FX_IDC:USDKRW").map(([proName, title]) => ({ proName, title })),
+      symbols: GLOBAL_PICKS.map(([proName, title]) => ({ proName, title })),
       showSymbolLogo: false, isTransparent: true, displayMode: "compact",
       colorTheme: isDark() ? "dark" : "light", locale: "kr",
     });
