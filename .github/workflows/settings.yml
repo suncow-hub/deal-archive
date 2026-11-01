@@ -40,7 +40,16 @@ jobs:
       - name: Fetch market data (새 종목·지수 1년치)
         env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
-        run: python scripts/market.py > /dev/null
+        run: |
+          python scripts/market.py > /dev/null
+          # 새로 받다가 문제가 생긴 항목이 있으면 이슈 댓글에 함께 남긴다
+          python - "$RUNNER_TEMP/result.md" <<'PY'
+          import json, sys
+          st = json.load(open("market/status.json", encoding="utf-8"))
+          bad = [f"{k}: {v}" for k, v in st.get("items", {}).items() if "데이터 없음" in v or "이름 다름" in v] + st.get("errors", [])
+          if bad:
+              open(sys.argv[1], "a", encoding="utf-8").write("\n\n시세 수집에서 확인이 필요한 항목:\n" + "\n".join(f"- {b}" for b in bad[:10]))
+          PY
       - run: python scripts/validate.py
       - run: python scripts/build_site.py
       - name: Commit

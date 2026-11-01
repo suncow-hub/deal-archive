@@ -134,8 +134,12 @@ def fetch_index(code: str, name: str, status: dict) -> None:
     base = {"beginBasDt": begin, "endBasDt": end, "numOfRows": 1000, "pageNo": 1, "_kind": "index"}
     items = [it for it in call(INDEX_URLS, {"idxNm": name, **base}, status) if norm(it.get("idxNm")) == norm(name)]
     if not items:
-        items = [it for it in call(INDEX_URLS, {"likeIdxNm": name.split()[0], **base, "numOfRows": 3000}, status)
-                 if norm(it.get("idxNm")) == norm(name)]
+        # 이름 표기가 다를 때: 최근 열흘치를 '비슷한 이름'으로 찾아 정확한 지수명을 알아낸 뒤 다시 받는다
+        recent = (datetime.now(KST) - timedelta(days=10)).strftime("%Y%m%d")
+        cands = call(INDEX_URLS, {**base, "likeIdxNm": name.split()[0], "beginBasDt": recent, "numOfRows": 1000}, status)
+        exact = next((it.get("idxNm") for it in cands if norm(it.get("idxNm")) == norm(name)), None)
+        if exact and exact != name:
+            items = [it for it in call(INDEX_URLS, {"idxNm": exact, **base}, status) if it.get("idxNm") == exact]
     if not items and not load_series(path):
         status["items"][code] = f"데이터 없음 (지수명 '{name}' 확인 필요)"
         return
