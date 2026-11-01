@@ -6,8 +6,8 @@
 최종 업데이트: 2026-10-31
 지역: ["미국"]
 규모 구간: "5조~20조"
-규모(원화): "약 5.3조 원 (순매입가 기준, 대략값)"
-규모(원 통화): "USD 약 4.0B 순매입가 (2026-10-30 환율 1,334.3원 적용 대략값, 발표일 환율 미확인)"
+규모(원화): "약 5.8조 원 (순매입가 기준)"
+규모(원 통화): "USD 약 4.0B 순매입가 (2026-01-05 ECB 환율 1,449.28원 기준)"
 유형: ["경영권 인수", "엑시트·매각"]
 업종: ["화학·정유·에너지"]
 테마: []
@@ -17,6 +17,10 @@
 재무 자문: ["Goldman Sachs", "Evercore"]
 법률 자문: ["Latham & Watkins", "Sidley Austin", "Cleary Gottlieb Steen & Hamilton", "King & Spalding"]
 출처: ["https://investor.vistracorp.com/2026-01-05-Vistra-Adds-to-its-Industry-Leading-Generation-Portfolio-with-Acquisition-of-Cogentrix", "https://www.prnewswire.com/news-releases/vistra-completes-acquisition-of-cogentrix-energy-expanding-diverse-generation-fleet-302925088.html"]
+비교: {"기업가치(억원)": 57971, "EV/EBITDA": 7.25, 대가 구성: "현금+주식", 인수자 성격: "전략적", 메모: "기업가치는 순매입가(세금 혜택 현재가치 차감) 기준, EBITDA는 2027년 예상 기여분"}
+일정: []
+정정: 
+  - {날짜: "2026-11-02", 항목: "규모(원화)", 이전: "약 5.3조 원 (2026-10-30 환율을 쓴 대략값)", 수정: "약 5.8조 원 (발표일 2026-01-05 환율)", 근거: "계산 검사: 발표일 ECB 기준환율 1 USD = 1,449.28원"}
 ---
 ## 한 줄 요약
 [[Vistra]]가 [[Quantum Capital Group]] 펀드가 보유한 [[Cogentrix Energy]](가스발전소 10곳, 약 5,500MW)를 순매입가 약 40억 달러에 인수 완료했다.

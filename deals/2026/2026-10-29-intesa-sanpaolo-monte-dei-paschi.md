@@ -17,6 +17,10 @@
 재무 자문: []
 법률 자문: []
 출처: ["https://live.euronext.com/en/financial-news/mps-investors-sink-ceos-defence-plan-against-intesa-bid", "https://group.intesasanpaolo.com/en/newsroom/all-news/news/2026/intesa-sanpaolo-tender-offer-on-mps", "https://www.wsj.com/finance/investing/monte-dei-paschi-investors-reject-defense-plan-against-intesas-bid-0800184a"]
+비교: {"지분가치(억원)": 491172, 대가 구성: "현금+주식", 인수자 성격: "전략적", 메모: "약 330억 유로는 보도 기준 추정이며 Intesa 주가에 따라 변동"}
+일정: 
+  - {날짜: "2026-11", 내용: "이탈리아 반독점 당국 판단 예정"}
+정정: []
 ---
 ## 한 줄 요약
 [[Monte dei Paschi di Siena]] 주주총회(2026-10-29)가 경영진의 방어안과 [[Mediobanca]] 합병안을 모두 부결해, [[Intesa Sanpaolo]]의 교환 공개매수(약 330억 유로 보도 기준)가 걸림돌 하나를 덜었다.

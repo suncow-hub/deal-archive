@@ -55,6 +55,9 @@
     if (parts[0] === "deal" && parts[1]) return viewDeal(parts.slice(1).join("/"));
     if (parts[0] === "entity" && parts[1]) return viewEntity(parts.slice(1).join("/"));
     if (parts[0] === "entities") return viewEntities();
+    if (parts[0] === "calendar") return viewCalendar(params);
+    if (parts[0] === "compare") return viewCompare(params);
+    if (parts[0] === "interview") return viewInterview(params);
     if (parts[0] === "rumors") return viewRumors(params);
     if (parts[0] === "chart") return viewChart(params);
     if (parts[0] === "settings") return viewSettings(params);
@@ -84,7 +87,9 @@
   function textOf(d) {
     const names = ROLES.flatMap((r) => d.names[r] || []);
     const aliases = names.flatMap((n) => (DATA.entities[n]?.aliases || []));
-    return [d.title, d.summary, ...names, ...aliases].join(" ").toLowerCase();
+    // 본문까지 찾는다 (브리지론, go-shop처럼 본문에만 나오는 말도 걸리게)
+    d._body ??= d.html.replace(/<[^>]+>/g, " ").replace(/&[a-z#0-9]+;/g, " ");
+    return [d.title, d.summary, ...names, ...aliases, d._body].join(" ").toLowerCase();
   }
 
   // 같은 축 안에서는 OR, 축끼리는 AND
@@ -174,7 +179,7 @@
     if (!list.length) return `<div class="empty">${DATA.deals.length ? "조건에 맞는 딜이 없습니다." : "아직 쌓인 딜이 없습니다."}</div>`;
     const rows = list.map((d) => `<tr>
       <td class="d-date">${fmtDate(d.is_updated ? d.updated : d.announced)}</td>
-      <td class="d-title"><a href="#/deal/${enc(d.id)}">${esc(d.title)}</a>${d.is_updated ? `<span class="badge up">업데이트</span>` : ""}
+      <td class="d-title"><a href="#/deal/${enc(d.id)}">${esc(d.title)}</a>${d.is_updated ? `<span class="badge up">업데이트</span>` : ""}${(d.corrections || []).length ? `<span class="badge fix">정정</span>` : ""}
         ${d.summary ? `<div class="d-sum">${esc(d.summary)}</div>` : ""}</td>
       <td class="d-size">${esc(d.size_krw && d.size_krw !== "비공개" ? d.size_krw : d.size)}</td>
       <td class="d-meta">${esc(d.regions.join("·"))}</td>
@@ -202,6 +207,26 @@
     ].join("");
     const fact = (k, v) => (v ? `<div><dt>${k}</dt><dd>${v}</dd></div>` : "");
     const names = (r) => (d.names[r] || []).map(entLink).join(", ");
+    const cmp = d.compare || {};
+    const num = (k, fmt) => (cmp[k] != null ? fmt(cmp[k]) : "");
+    const compareRows = [
+      fact("기업가치", num("기업가치(억원)", fmtEok)), fact("지분가치", num("지분가치(억원)", fmtEok)),
+      fact("EV/EBITDA", num("EV/EBITDA", fmtX)), fact("EV/매출", num("EV/매출", fmtX)), fact("P/E", num("P/E", fmtX)),
+      fact("프리미엄", cmp["프리미엄(%)"] != null ? `${fmtPct(cmp["프리미엄(%)"])}${cmp["프리미엄 기준"] ? `<div class="muted">${esc(cmp["프리미엄 기준"])} 대비</div>` : ""}` : ""),
+      fact("대가", esc(cmp["대가 구성"] || "")), fact("인수자 성격", esc(cmp["인수자 성격"] || "")),
+    ].join("");
+    const compareBox = compareRows ? `<div class="kicker"><span>비교 숫자</span><span class="aside"><a href="#/compare">비교표 →</a></span></div>
+      <dl>${compareRows}</dl>${cmp["메모"] ? `<p class="fact-note">${esc(cmp["메모"])}</p>` : ""}` : "";
+    const today = todayKST();
+    const sched = (d.schedule || []).slice().sort((a, b) => a.date.localeCompare(b.date));
+    const schedBox = sched.length ? `<div class="kicker"><span>일정</span><span class="aside"><a href="#/calendar">캘린더 →</a></span></div>
+      <ul class="dsched">${sched.map((e) => `<li class="${evDate(e.date) < today ? "past" : ""}"><b>${esc(fmtEvDate(e.date))}</b> ${esc(e.text)}</li>`).join("")}</ul>` : "";
+    const corr = d.corrections || [];
+    const corrBox = corr.length ? `<section class="corr" id="corrections"><div class="kicker"><span>정정 기록</span>
+        <span class="aside"><a href="${REPO}/commits/main/${esc(d.path)}" target="_blank" rel="noopener">고치기 전후 전체 비교 (GitHub) →</a></span></div>
+      <ul>${corr.map((c) => `<li><span class="corr-d">${esc(c["날짜"])}</span> <b>${esc(c["항목"])}</b>: <s>${esc(c["이전"])}</s> → ${esc(c["수정"])}
+        <div class="muted">근거: ${esc(c["근거"])}</div></li>`).join("")}</ul></section>` : "";
+    const recheck = isOwner() ? `<a class="editbtn" href="${recheckUrl(d)}" target="_blank" rel="noopener" title="다음 새벽 작업이 원문과 다시 대조합니다">이 딜 다시 확인</a>` : "";
     const sources = d.sources.length ? `<div class="sources"><div class="kicker"><span>출처</span></div><ol>${d.sources.map((s) => `<li><a href="${esc(safeUrl(s))}" target="_blank" rel="noopener">${esc(s.replace(/^https?:\/\//, "").slice(0, 80))}</a></li>`).join("")}</ol></div>` : "";
 
     $app.innerHTML = `<div class="crumb"><a href="#/">← 딜 아카이브</a></div>
@@ -209,17 +234,192 @@
         <h1>${esc(d.title)}</h1>
         <div class="deal-sub"><span class="status ${statusCls(d.status)}">${esc(d.status)}</span>
           <span>${esc(d.confidence)}</span><span>발표 ${esc(d.announced)}</span>
-          ${d.is_updated ? `<span>업데이트 ${esc(d.updated)}<span class="badge up">업데이트</span></span>` : ""}</div>
+          ${d.is_updated ? `<span>업데이트 ${esc(d.updated)}<span class="badge up">업데이트</span></span>` : ""}
+          ${corr.length ? `<a class="badge fix" href="#/deal/${enc(d.id)}" data-jump="corrections">정정 ${corr.length}</a>` : ""}${recheck}</div>
         <div class="taglist">${tags}</div>
       </header>
       <div class="layout">
-        <article class="prose">${d.html}</article>
+        <div><article class="prose">${d.html}</article>${corrBox}</div>
         <aside class="facts"><dl>
           ${fact("규모", `<span class="big">${esc(d.size_krw || d.size)}</span>${d.size_orig ? `<div class="muted">${esc(d.size_orig)}</div>` : ""}`)}
           ${ROLES.map((r) => fact(r, names(r))).join("")}
-        </dl>${sources}</aside>
+        </dl>${compareBox}${schedBox}${sources}</aside>
       </div>`;
     annotate($app.querySelector("article.prose"));
+    const jump = $app.querySelector("[data-jump]");
+    if (jump) jump.addEventListener("click", (e) => { e.preventDefault(); document.getElementById("corrections")?.scrollIntoView({ behavior: "smooth" }); });
+  }
+
+
+  // ---------------------------------------------------------------- 숫자·날짜 표기
+  const fmtEok = (v) => (v >= 10000 ? `${(v / 10000).toLocaleString("ko-KR", { maximumFractionDigits: 1 })}조 원` : `${Math.round(v).toLocaleString("ko-KR")}억 원`);
+  const fmtX = (v) => `${Number(v).toLocaleString("ko-KR", { maximumFractionDigits: 2 })}배`;
+  const fmtPct = (v) => `${v > 0 ? "+" : ""}${Number(v).toLocaleString("ko-KR", { maximumFractionDigits: 1 })}%`;
+  // "2026-11" 처럼 월만 아는 일정은 그 달 마지막 날로 정렬하고 "11월 중"으로 보여준다
+  const evDate = (s) => (s.length === 7 ? `${s}-31` : s);
+  const WD = "일월화수목금토";
+  function fmtEvDate(s) {
+    if (s.length === 7) return `${+s.slice(0, 4) !== +todayKST().slice(0, 4) ? s.slice(0, 4) + "년 " : ""}${+s.slice(5)}월 중`;
+    const dt = new Date(s + "T00:00:00Z");
+    return `${+s.slice(5, 7)}.${+s.slice(8)} (${WD[dt.getUTCDay()]})`;
+  }
+  function dday(s) {
+    if (s.length === 7) return "";
+    const diff = Math.round((Date.parse(s + "T00:00:00Z") - Date.parse(todayKST() + "T00:00:00Z")) / 864e5);
+    return diff === 0 ? "오늘" : diff > 0 ? `D-${diff}` : `${-diff}일 전`;
+  }
+  const recheckUrl = (d) => `${REPO}/issues/new?title=${enc("[재확인] " + d.id)}&body=${enc(`딜: ${d.title}\n\n이 딜 노트의 숫자·당사자·일정을 원문과 다시 대조해 주세요. 다음 새벽 작업이 처리하고 결과를 댓글로 남깁니다.`)}`;
+
+  // ---------------------------------------------------------------- 캘린더
+  function allEvents() {
+    return DATA.deals.flatMap((d) => (d.schedule || []).map((e) => ({ ...e, key: evDate(e.date), deal: d })))
+      .sort((a, b) => a.key.localeCompare(b.key) || a.deal.title.localeCompare(b.deal.title));
+  }
+
+  function viewCalendar(params) {
+    setNav("calendar");
+    document.title = "캘린더 · Deal Archive";
+    const today = todayKST();
+    const showPast = params.get("past") === "1";
+    const evs = allEvents();
+    const upcoming = evs.filter((e) => e.key >= today);
+    const past = evs.filter((e) => e.key < today).reverse().slice(0, 60);
+    const week = new Date(Date.parse(today + "T00:00:00Z") + 7 * 864e5).toISOString().slice(0, 10);
+    const soon = upcoming.filter((e) => e.date.length === 10 && e.date <= week).length;
+    const row = (e) => `<li class="ev${e.key < today ? " past" : ""}">
+        <div class="ev-date"><b>${esc(fmtEvDate(e.date))}</b><span class="dday${e.date === today ? " now" : ""}">${esc(dday(e.date))}</span></div>
+        <div class="ev-body"><div class="ev-text">${esc(e.text)}</div>
+          <a class="ev-deal" href="#/deal/${enc(e.deal.id)}">${esc(e.deal.title)}</a> <span class="status ${statusCls(e.deal.status)}">${esc(e.deal.status)}</span></div></li>`;
+    const byMonth = (list) => {
+      const g = {};
+      list.forEach((e) => (g[e.key.slice(0, 7)] ||= []).push(e));
+      return Object.entries(g).map(([m, l]) => `<div class="kicker"><span>${+m.slice(0, 4)}년 ${+m.slice(5)}월</span><span class="aside">${l.length}건</span></div><ul class="evlist">${l.map(row).join("")}</ul>`).join("");
+    };
+    $app.innerHTML = `<div class="kicker"><span>딜 캘린더</span><span class="aside">앞으로 ${upcoming.length}건 · 7일 안 ${soon}건</span></div>
+      <p class="hint">딜 노트에 적힌 공개매수 기간, 주총, 종결 예정일, 승인 기한 등을 날짜순으로 모았습니다. 월만 알려진 일정은 "○월 중"으로 그 달 끝에 보입니다.</p>
+      <div class="cal-actions"><button class="chip" id="ics">휴대폰 캘린더에 넣기 (.ics)</button>
+        <a class="chip${showPast ? " on" : ""}" href="#/calendar${showPast ? "" : "?past=1"}">지난 일정 ${showPast ? "숨기기" : "보기"}</a></div>
+      ${upcoming.length ? byMonth(upcoming) : `<div class="empty">앞으로 예정된 일정이 없습니다.</div>`}
+      ${showPast ? `<div class="kicker"><span>지난 일정</span><span class="aside">최근 ${past.length}건</span></div><ul class="evlist">${past.map(row).join("") || `<li class="muted">없음</li>`}</ul>` : ""}`;
+    document.getElementById("ics").addEventListener("click", () => downloadIcs(upcoming));
+  }
+
+  function downloadIcs(evs) {
+    const icsEsc = (t) => String(t).replace(/[\\,;]/g, (c) => "\\" + c).replace(/\n/g, " ");
+    const stamp = new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z";
+    const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Deal Archive//KO", "CALSCALE:GREGORIAN", "X-WR-CALNAME:Deal Archive"];
+    evs.filter((e) => e.date.length === 10).forEach((e, i) => {
+      const d0 = e.date.replace(/-/g, "");
+      const d1 = new Date(Date.parse(e.date + "T00:00:00Z") + 864e5).toISOString().slice(0, 10).replace(/-/g, "");
+      lines.push("BEGIN:VEVENT", `UID:${d0}-${i}-${e.deal.id}@deal-archive`, `DTSTAMP:${stamp}`, `DTSTART;VALUE=DATE:${d0}`, `DTEND;VALUE=DATE:${d1}`,
+        `SUMMARY:${icsEsc(e.text)}`, `DESCRIPTION:${icsEsc(e.deal.title)}`, `URL:${location.origin}${location.pathname}#/deal/${e.deal.id}`, "END:VEVENT");
+    });
+    lines.push("END:VCALENDAR");
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([lines.join("\r\n")], { type: "text/calendar" }));
+    a.download = "deal-archive.ics";
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  }
+
+  // ---------------------------------------------------------------- 비교표 (유사 거래 비교)
+  const CMP_COLS = [
+    ["기업가치(억원)", "기업가치", fmtEok], ["지분가치(억원)", "지분가치(100%)", fmtEok], ["EV/EBITDA", "EV/EBITDA", fmtX],
+    ["EV/매출", "EV/매출", fmtX], ["P/E", "P/E", fmtX], ["프리미엄(%)", "프리미엄", fmtPct],
+  ];
+  const median = (a) => { if (!a.length) return null; const s = a.slice().sort((x, y) => x - y), m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };
+
+  function viewCompare(params) {
+    setNav("compare");
+    document.title = "비교표 · Deal Archive";
+    const pick = { 업종: params.get("업종") || "", 지역: params.get("지역") || "", 성격: params.get("성격") || "" };
+    const sort = params.get("sort") || "announced", dir = params.get("dir") === "asc" ? 1 : -1;
+    const base = DATA.deals.filter((d) => Object.keys(d.compare || {}).some((k) => CMP_COLS.some(([c]) => c === k)));
+    const rows = base.filter((d) => (!pick.업종 || d.sectors.includes(pick.업종)) && (!pick.지역 || d.regions.includes(pick.지역))
+      && (!pick.성격 || (d.compare || {})["인수자 성격"] === pick.성격));
+    const val = (d, k) => (k === "announced" ? d.announced : (d.compare || {})[k]);
+    rows.sort((a, b) => {
+      const x = val(a, sort), y = val(b, sort);
+      if (x == null && y == null) return 0; if (x == null) return 1; if (y == null) return -1;
+      return (x > y ? 1 : x < y ? -1 : 0) * dir;
+    });
+    const q = (o) => { const p = new URLSearchParams(); const all = { ...pick, sort, dir: dir === 1 ? "asc" : "desc", ...o };
+      Object.entries(all).forEach(([k, v]) => v && p.set(k, v)); return "#/compare?" + p.toString(); };
+    const chipRow = (label, key, values) => `<div class="axis"><div class="axis-name">${label}</div><div class="chips">
+      <a class="chip${!pick[key] ? " on" : ""}" href="${q({ [key]: "" })}">전체</a>${values.map((v) => `<a class="chip${pick[key] === v ? " on" : ""}" href="${q({ [key]: v })}">${esc(v)}</a>`).join("")}</div></div>`;
+    const uniq = (f) => [...new Set(base.flatMap(f))].sort((a, b) => a.localeCompare(b, "ko"));
+    const th = (k, label) => `<th><a href="${q({ sort: k, dir: sort === k && dir === -1 ? "asc" : "desc" })}">${label}${sort === k ? (dir === -1 ? " ▾" : " ▴") : ""}</a></th>`;
+    const cell = (d, k, f) => { const v = (d.compare || {})[k]; return `<td class="num${k === "프리미엄(%)" && v < 0 ? " neg" : ""}">${v == null ? `<span class="muted">–</span>` : esc(f(v))}</td>`; };
+    const meds = CMP_COLS.map(([k, , f]) => { const a = rows.map((d) => (d.compare || {})[k]).filter((v) => typeof v === "number"); return a.length ? `${esc(f(median(a)))}<small>${a.length}건</small>` : `<span class="muted">–</span>`; });
+    $app.innerHTML = `<div class="kicker"><span>유사 거래 비교표</span><span class="aside">숫자가 하나라도 공개된 딜 ${base.length}건</span></div>
+      <p class="hint">IB가 밸류에이션에 쓰는 '유사 거래 비교(precedent transactions)' 방식입니다. 공개된 숫자만 넣고, 빈칸(–)은 비공개이거나 확인되지 않은 값입니다. 금액은 발표일 환율로 원화 환산, 지분가치는 100% 기준입니다. 표 머리를 누르면 정렬됩니다.</p>
+      <div class="filters">${chipRow("업종", "업종", uniq((d) => d.sectors))}${chipRow("지역", "지역", uniq((d) => d.regions))}${chipRow("인수자", "성격", ["전략적", "재무적"])}</div>
+      <div class="tscroll"><table class="cmp"><thead><tr>${th("announced", "발표")}<th>딜</th>${CMP_COLS.map(([k, l]) => th(k, l)).join("")}<th>대가</th><th>인수자</th></tr></thead>
+      <tbody>${rows.map((d) => `<tr><td class="d-date">${esc(fmtDate(d.announced))}<div class="muted">${esc(d.announced.slice(0, 4))}</div></td>
+        <td class="cmp-deal"><a href="#/deal/${enc(d.id)}">${esc((d.names["인수자"] || []).join("·") || "?")} → ${esc((d.names["대상"] || []).join("·") || "?")}</a>
+          <div class="muted">${esc(d.sectors.join(", "))} · ${esc(d.status)}</div>${(d.compare || {})["메모"] ? `<div class="cmp-memo">${esc(d.compare["메모"])}</div>` : ""}</td>
+        ${CMP_COLS.map(([k, , f]) => cell(d, k, f)).join("")}<td>${esc((d.compare || {})["대가 구성"] || "")}</td><td>${esc((d.compare || {})["인수자 성격"] || "")}</td></tr>`).join("")
+        || `<tr><td colspan="10" class="muted">조건에 맞는 딜이 없습니다.</td></tr>`}</tbody>
+      <tfoot><tr><td></td><td><b>중앙값</b><div class="muted">${rows.length}건 중 값이 있는 딜만</div></td>${meds.map((m) => `<td class="num">${m}</td>`).join("")}<td></td><td></td></tr></tfoot></table></div>
+      <p class="hint">딜이 쌓일수록 쓸모가 커집니다. 예: 같은 업종 거래의 EV/EBITDA 중앙값, 미국 상장사 현금 인수의 평균적인 프리미엄.</p>`;
+  }
+
+  // ---------------------------------------------------------------- 면접 준비
+  function viewInterview(params) {
+    setNav("interview");
+    document.title = "면접 준비 · Deal Archive";
+    const mode = params.get("mode") === "cards" ? "cards" : "list";
+    const sector = params.get("업종") || "";
+    const list = DATA.deals.filter((d) => d.points && (!sector || d.sectors.includes(sector)));
+    const w = (DATA.weekly || [])[0];
+    const sectors = [...new Set(DATA.deals.filter((d) => d.points).flatMap((d) => d.sectors))].sort((a, b) => a.localeCompare(b, "ko"));
+    const href = (o) => { const p = new URLSearchParams({ mode, ...(sector ? { 업종: sector } : {}), ...o }); [...p].forEach(([k, v]) => !v && p.delete(k)); return "#/interview?" + p; };
+    const facts = (d) => {
+      const c = d.compare || {};
+      return [d.size_krw && d.size_krw !== "비공개" ? d.size_krw : d.size, c["EV/EBITDA"] != null ? `EV/EBITDA ${fmtX(c["EV/EBITDA"])}` : "",
+        c["프리미엄(%)"] != null ? `프리미엄 ${fmtPct(c["프리미엄(%)"])}` : "", c["대가 구성"] ? `${c["대가 구성"]} 대가` : "", d.status].filter(Boolean).map(esc).join(" · ");
+    };
+    const head = `<div class="kicker"><span>면접 준비</span><span class="aside">면접 포인트가 있는 딜 ${list.length}건</span></div>
+      ${w ? `<section class="weekly"><div class="ep-h">이번 주 말할 수 있는 딜 · ${esc(w.week)} (${esc(w.period)})</div><div class="prose">${w.html}</div>
+        ${(DATA.weekly || []).length > 1 ? `<details><summary>지난 주간 요약</summary>${DATA.weekly.slice(1).map((x) => `<div class="prose wk-old"><b>${esc(x.week)}</b> (${esc(x.period)})${x.html}</div>`).join("")}</details>` : ""}</section>`
+        : `<p class="hint">주간 요약("이번 주 말할 수 있는 딜 3개")은 매주 토요일 아침에 생깁니다.</p>`}
+      <div class="cal-actions"><a class="chip${mode === "list" ? " on" : ""}" href="${href({ mode: "list" })}">목록</a><a class="chip${mode === "cards" ? " on" : ""}" href="${href({ mode: "cards" })}">카드로 연습</a></div>
+      <div class="filters"><div class="axis"><div class="axis-name">업종</div><div class="chips"><a class="chip${!sector ? " on" : ""}" href="${href({ 업종: "" })}">전체</a>${sectors.map((s) => `<a class="chip${sector === s ? " on" : ""}" href="${href({ 업종: s })}">${esc(s)}</a>`).join("")}</div></div></div>`;
+    if (mode === "list") {
+      $app.innerHTML = head + list.map((d) => `<article class="iv">
+        <h2><a href="#/deal/${enc(d.id)}">${esc(d.title)}</a></h2><div class="iv-facts">${facts(d)}</div>
+        <p><b>한 줄</b> ${esc(d.summary)}</p>${d.why ? `<p><b>왜 중요한가</b> ${esc(d.why)}</p>` : ""}
+        <div class="iv-points"><b>면접 포인트</b> ${esc(d.points)}</div>
+        ${isOwner() ? `<a class="editbtn" href="${recheckUrl(d)}" target="_blank" rel="noopener">면접 전에 다시 확인</a>` : ""}</article>`).join("");
+      $app.querySelectorAll(".iv").forEach(annotate);
+      return;
+    }
+    // 카드 연습: 제목만 보고 30초 설명 → 답 보기
+    let order = list.map((_, i) => i), i = 0, open = false;
+    const draw = () => {
+      const d = list[order[i]];
+      $app.innerHTML = head + (d ? `<div class="flash">
+        <div class="flash-n">${i + 1} / ${list.length}</div>
+        <div class="flash-q">이 딜을 30초 안에 설명해 보세요</div>
+        <h2>${esc((d.names["인수자"] || []).join("·"))} → ${esc((d.names["대상"] || []).join("·"))}</h2>
+        <div class="muted">${esc(d.sectors.join(", "))} · ${esc(d.regions.join(", "))}</div>
+        ${open ? `<div class="flash-a"><div class="iv-facts">${facts(d)}</div><p>${esc(d.summary)}</p>${d.structure ? `<p><b>구조</b> ${esc(d.structure)}</p>` : ""}
+          <div class="iv-points"><b>면접 포인트</b> ${esc(d.points)}</div><a href="#/deal/${enc(d.id)}">노트 전체 보기 →</a></div>`
+          : `<button class="savebtn" data-f="open">답 보기</button>`}
+        <div class="flash-nav"><button class="chip" data-f="prev"${i === 0 ? " disabled" : ""}>← 이전</button><button class="chip" data-f="shuffle">섞기</button>
+          <button class="chip" data-f="next"${i >= list.length - 1 ? " disabled" : ""}>다음 →</button></div></div>` : `<div class="empty">연습할 딜이 없습니다.</div>`);
+      $app.querySelectorAll(".flash-a").forEach(annotate);
+    };
+    $app.onclick = (e) => {
+      const b = e.target.closest("[data-f]"); if (!b || b.disabled) return;
+      const f = b.dataset.f;
+      if (f === "open") open = true;
+      if (f === "next") { i++; open = false; }
+      if (f === "prev") { i--; open = false; }
+      if (f === "shuffle") { order = order.map((x) => [Math.random(), x]).sort((a, c) => a[0] - c[0]).map((x) => x[1]); i = 0; open = false; }
+      draw();
+    };
+    draw();
   }
 
   // ---------------------------------------------------------------- 회사·기관

@@ -17,6 +17,10 @@
 재무 자문: ["Goldman Sachs", "UBS", "CITIC Securities", "Altus Capital"]
 법률 자문: []
 출처: ["https://www.mingtiandi.com/real-estate/finance/pag-to-buy-control-of-evergrande-property-management-arm-for-514m/", "https://www.malaymail.com/news/money/2026/10/30/evergrande-liquidators-agree-to-us514m-sale-of-property-management-arm/241303", "https://www.wsj.com/business/deals/asian-private-equity-firm-to-buy-beleaguered-china-evergrandes-property-management-arm-0d0d5259"]
+비교: {"지분가치(억원)": 15317, "P/E": 7.7, "프리미엄(%)": -29.5, 프리미엄 기준: "직전 종가 1.185홍콩달러 (할인 인수)", 대가 구성: "현금", 인수자 성격: "재무적", 메모: "지분가치는 51% 거래가로 본 100% 기준 약 90억 홍콩달러, P/E는 2025년 이익 기준"}
+일정: 
+  - {날짜: "2027-02-12", 내용: "중국 SAMR(시장감독총국) 승인 기한"}
+정정: []
 ---
 ## 한 줄 요약
 [[PAG]]가 [[Evergrande Property Services]] 지분 51%를 약 40.3억 홍콩달러(약 5억 1,370만 달러)에 인수하기로 계약했다(보도 기준).

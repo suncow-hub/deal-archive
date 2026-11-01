@@ -5,7 +5,7 @@ import sys
 
 import yaml
 
-from lib import (GLOSSARY_CATEGORIES, NAME_FIELDS, REQUIRED_FIELDS, ROOT, RUMOR_CRED, RUMOR_STATUSES, SECTIONS,
+from lib import (ACQUIRER_KIND, COMPARE_NUM_FIELDS, COMPARE_TEXT_FIELDS, CONSIDERATION, GLOSSARY_CATEGORIES, NAME_FIELDS, REQUIRED_FIELDS, ROOT, RUMOR_CRED, RUMOR_STATUSES, SECTIONS,
                  body_names, briefing_files, deal_files, load_deal, load_entities, load_glossary, load_rumors,
                  load_settings, load_tags, settings_errors, split_front)
 
@@ -73,6 +73,29 @@ def main() -> int:
         hist = body.split("## 진행 이력", 1)[-1].split("## ", 1)[0]
         if not re.search(r"^- \d{4}-\d{2}-\d{2}: \S", hist, re.M):
             errors.append(f"{rel}: 진행 이력에 날짜 줄이 없음")
+        # 비교 숫자 (없어도 되지만, 있으면 형식을 지킨다)
+        comp = m.get("비교")
+        if comp is not None:
+            if not isinstance(comp, dict):
+                errors.append(f"{rel}: 비교 는 {{항목: 값}} 형식")
+            else:
+                for k, v in comp.items():
+                    if k in COMPARE_NUM_FIELDS:
+                        if v is not None and not isinstance(v, (int, float)):
+                            errors.append(f"{rel}: 비교.{k} 는 숫자만 (따옴표·단위 없이)")
+                    elif k not in COMPARE_TEXT_FIELDS:
+                        errors.append(f"{rel}: 비교 에 모르는 항목 '{k}' (가능: {COMPARE_NUM_FIELDS + COMPARE_TEXT_FIELDS})")
+                if comp.get("대가 구성") and comp["대가 구성"] not in CONSIDERATION:
+                    errors.append(f"{rel}: 비교.대가 구성 은 {CONSIDERATION} 중 하나")
+                if comp.get("인수자 성격") and comp["인수자 성격"] not in ACQUIRER_KIND:
+                    errors.append(f"{rel}: 비교.인수자 성격 은 {ACQUIRER_KIND} 중 하나")
+        for i, ev in enumerate(m.get("일정") or []):
+            if not isinstance(ev, dict) or not re.match(r"^\d{4}-\d{2}(-\d{2})?$", str(ev.get("날짜") or "")) or not ev.get("내용"):
+                errors.append(f"{rel}: 일정[{i}] 은 {{날짜: \"YYYY-MM-DD\" 또는 \"YYYY-MM\", 내용: \"...\"}}")
+        for i, fx in enumerate(m.get("정정") or []):
+            need = ("날짜", "항목", "이전", "수정", "근거")
+            if not isinstance(fx, dict) or any(not fx.get(k) for k in need) or not DATE.match(str(fx.get("날짜"))):
+                errors.append(f"{rel}: 정정[{i}] 은 {{날짜, 항목, 이전, 수정, 근거}} 를 모두 채운다")
 
     for p in briefing_files():
         rel = p.relative_to(ROOT)
@@ -182,6 +205,18 @@ def main() -> int:
         k = str((info or {}).get("krx") or "")
         if k and not re.fullmatch(r"[0-9A-Z]{6}", k):
             errors.append(f"entities.yml: {name} krx '{k}' 는 6자리 문자열")
+
+    for wp in sorted((ROOT / "weekly").glob("*.md")) if (ROOT / "weekly").exists() else []:
+        try:
+            wm, _ = split_front(wp.read_text(encoding="utf-8"))
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"weekly/{wp.name}: {e}")
+            continue
+        if not re.match(r"^\d{4}-W\d{2}$", str(wm.get("주차") or "")) or wp.stem != str(wm.get("주차")):
+            errors.append(f"weekly/{wp.name}: 주차는 YYYY-Www 이고 파일 이름과 같아야 함")
+        for d in wm.get("딜") or []:
+            if str(d) not in deal_ids:
+                errors.append(f"weekly/{wp.name}: 딜 '{d}' 노트가 없음")
 
     if errors:
         print(f"검사 실패 {len(errors)}건")

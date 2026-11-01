@@ -54,6 +54,8 @@ def main() -> None:
         names = {f: [aliases.get(n.lower(), n) for n in m.get(f, [])] for f in NAME_FIELDS}
         summary = body.split("## 한 줄 요약", 1)[-1].split("## ", 1)[0]
         summary = re.sub(r"<!--.*?-->|\[\[|\]\]", "", summary, flags=re.S).strip()
+        sect = lambda h: re.sub(r"<!--.*?-->|\[\[|\]\]", "", body.split(f"## {h}", 1)[-1].split("\n## ", 1)[0], flags=re.S).strip()  # noqa: E731
+        comp = {k: v for k, v in (m.get("비교") or {}).items() if v not in (None, "")}
         deals.append({
             "id": p.stem,
             "path": str(p.relative_to(ROOT)),
@@ -75,6 +77,12 @@ def main() -> None:
             "sources": m.get("출처", []),
             "summary": summary,
             "history": [{"date": d, "text": t} for d, t in hist_lines],
+            "compare": comp,
+            "schedule": [{"date": str(e.get("날짜")), "text": str(e.get("내용"))} for e in (m.get("일정") or [])],
+            "corrections": [{k: str(v) for k, v in c.items()} for c in (m.get("정정") or [])],
+            "why": sect("왜 중요한가"),
+            "points": sect("면접 포인트"),
+            "structure": sect("딜 구조"),
             "html": render(body, aliases),
         })
     deals.sort(key=lambda d: (d["updated"] or "", d["announced"] or ""), reverse=True)
@@ -90,6 +98,13 @@ def main() -> None:
             "html": render(body, aliases),
         })
     briefings.sort(key=lambda b: b["date"], reverse=True)
+
+    weekly = []
+    for p in sorted((ROOT / "weekly").glob("*.md")) if (ROOT / "weekly").exists() else []:
+        m, body = split_front(p.read_text(encoding="utf-8"))
+        weekly.append({"week": str(m.get("주차")), "period": str(m.get("기간")), "deals": [str(x) for x in m.get("딜") or []],
+                       "html": render(body, aliases)})
+    weekly.sort(key=lambda w: w["week"], reverse=True)
 
     rumors = []
     for r in load_rumors():
@@ -140,6 +155,7 @@ def main() -> None:
         "entities": ents,
         "rumors": rumors,
         "glossary": glossary,
+        "weekly": weekly,
     }
 
     if OUT.exists():

@@ -17,6 +17,9 @@
 재무 자문: []
 법률 자문: []
 출처: ["https://live.euronext.com/en/financial-news/evonik-rejects-basf-bid-despite-sweetened-125-billion-terms", "https://www.bloomberg.com/news/articles/2026-10-30/evonik-turns-down-offer-to-enter-takeover-talks-with-suitor-basf", "https://www.wsj.com/business/deals/basfs-12-5-billion-takeover-bid-for-evonik-rebuffed-5fe08975"]
+비교: {"지분가치(억원)": 166779, 대가 구성: "비공개", 인수자 성격: "전략적", 메모: "제안가(주당 24유로) 기준, Evonik이 거절"}
+일정: []
+정정: []
 ---
 ## 한 줄 요약
 [[Evonik]] 이사회가 [[BASF]]의 주당 24유로(총 약 111.8억 유로) 상향 인수 제안에도 정식 협상에 들어가지 않겠다는 입장을 냈다.

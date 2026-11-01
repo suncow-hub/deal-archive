@@ -225,3 +225,23 @@ def fx_summary() -> dict:
     cur = rates[days[-1]]["USD"]
     prev = rates[days[-2]]["USD"] if len(days) > 1 else None
     return {"date": days[-1], "USD": cur, "USD_change_pct": round((cur / prev - 1) * 100, 2) if prev else None}
+
+
+def fx_rate(day: str, cur: str) -> tuple[float, str] | None:
+    """그 날짜(휴일이면 직전 영업일)의 ECB 기준 원화 환율. JPY는 100엔당. (환율, 실제 날짜)"""
+    p = ROOT / "market" / "fx.json"
+    if not p.exists():
+        return None
+    rates = json.loads(p.read_text(encoding="utf-8")).get("rates", {})
+    days = [d for d in rates if d <= day and cur in rates[d]]
+    if not days:
+        return None
+    d = max(days)
+    return rates[d][cur], d
+
+
+# ---------------------------------------------------------------- 딜 비교 숫자·일정·정정 (딜 노트 머리말)
+COMPARE_NUM_FIELDS = ["기업가치(억원)", "지분가치(억원)", "EV/EBITDA", "EV/매출", "P/E", "프리미엄(%)"]
+COMPARE_TEXT_FIELDS = ["프리미엄 기준", "대가 구성", "인수자 성격", "메모"]
+CONSIDERATION = ["현금", "주식", "현금+주식", "비공개"]
+ACQUIRER_KIND = ["전략적", "재무적"]

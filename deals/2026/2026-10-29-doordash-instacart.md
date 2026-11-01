@@ -17,6 +17,10 @@
 재무 자문: ["Centerview Partners", "J.P. Morgan", "Goldman Sachs"]
 법률 자문: ["Latham & Watkins", "Cravath, Swaine & Moore", "Cooley"]
 출처: ["https://ir.doordash.com/news/news-details/2026/DoorDash-to-Acquire-Instacart-to-Help-Local-Stores-Win/default.aspx", "https://www.wsj.com/business/deals/doordash-to-buy-instacart-for-17-billion-7d6a6f3f"]
+비교: {"지분가치(억원)": 227339, "프리미엄(%)": 26, 프리미엄 기준: "2026-10-22 종가 (보도 전 마지막 거래일)", 대가 구성: "현금+주식", 인수자 성격: "전략적"}
+일정: 
+  - {날짜: "2027-12", 내용: "거래 종결 예상 (2027년 말~2028년 상반기, 반독점 심사 필요)"}
+정정: []
 ---
 ## 한 줄 요약
 [[DoorDash]]가 [[Instacart]] 지분 100%를 주당 65달러, 지분가치 약 170억 달러에 인수하기로 계약했다.

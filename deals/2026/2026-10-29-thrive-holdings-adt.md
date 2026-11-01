@@ -17,6 +17,10 @@
 재무 자문: ["Citi", "Goldman Sachs", "Evercore"]
 법률 자문: ["Cravath, Swaine & Moore", "Kirkland & Ellis"]
 출처: ["https://www.globenewswire.com/news-release/2026/10/29/3391374/0/en/adt-to-be-acquired-by-thrive-holdings-in-15-3-billion-transaction.html", "https://www.wsj.com/business/deals/josh-kushners-thrive-to-buy-adt-for-7-6-billion-55403c7a"]
+비교: {"기업가치(억원)": 204605, "지분가치(억원)": 101634, "프리미엄(%)": 45.6, 프리미엄 기준: "비영향 종가 (2026-10-27)", 대가 구성: "현금", 인수자 성격: "재무적"}
+일정: 
+  - {날짜: "2026-11-28", 내용: "go-shop 마감 (더 좋은 인수 제안을 받을 수 있는 기간, 일부 10일 연장 가능)"}
+정정: []
 ---
 ## 한 줄 요약
 [[Thrive Holdings]]가 [[ADT]] 지분 100%를 주당 현금 10달러, 지분가치 약 76억 달러(EV 약 153억 달러)에 인수해 상장폐지한다.
