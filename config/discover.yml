@@ -14,6 +14,25 @@ feeds:
   - name: 한경 증권
     url: https://www.hankyung.com/feed/finance
     kind: deal
+  # --- 2026-11-02 추가 (source-probe로 robots 허용·피드 동작 확인) ---
+  - name: 인베스트조선
+    url: https://www.investchosun.com/rss/
+    kind: deal
+  - name: 연합뉴스 마켓+
+    url: https://www.yna.co.kr/rss/market.xml
+    kind: deal
+  - name: 매일경제 증권
+    url: https://www.mk.co.kr/rss/50200011/
+    kind: deal
+  - name: 조선비즈
+    url: https://biz.chosun.com/arc/outboundfeeds/rss/?outputType=xml
+    kind: deal
+  - name: FT M&A
+    url: https://www.ft.com/mergers-acquisitions?format=rss
+    kind: deal
+  - name: CNBC Business
+    url: https://www.cnbc.com/id/10001147/device/rss/rss.html
+    kind: deal
   - name: WSJ World News
     url: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
     kind: macro
