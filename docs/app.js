@@ -416,6 +416,8 @@
       cres.hidden = false;
     };
     cq.addEventListener("input", render);
+    cq.addEventListener("search", render);
+    document.addEventListener("click", (e) => { if (!e.target.closest(".chart-search")) cres.hidden = true; });
     cq.addEventListener("keydown", (e) => {
       if (e.key !== "Enter") return;
       const first = cres.querySelector("a");
