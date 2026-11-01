@@ -248,3 +248,7 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 16px 48px; }
 .g-short { font-weight: 500; }
 .g-ex, .g-rel { color: var(--ink-2); font-size: 13.5px !important; }
 .g-memo { margin-top: 6px; padding: 8px 10px; background: var(--bg-soft); border-left: 3px solid var(--link); font-size: 13.5px; }
+
+.warn-strong { border-left-color: #c2410c; }
+.warn-strong b { color: var(--ink); display: block; margin-bottom: 4px; }
+.warn-strong p { margin: 4px 0 0; }
