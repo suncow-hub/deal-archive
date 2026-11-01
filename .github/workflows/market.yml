@@ -2,14 +2,15 @@ name: market
 
 # 한국 시세 수집. 공공데이터는 기준일 다음 영업일 오후 1시 이후에 나와서 오후 2시 40분(KST)쯤 돈다.
 # (GitHub 예약 실행은 늦어질 수 있지만, 시세는 몇 시간 늦어도 괜찮다)
-# 관심 종목 목록이나 회사 사전이 바뀌면 바로 한 번 더 돌아 새 종목 1년치를 채운다.
+# 시세 설정이나 회사 사전이 바뀌면 바로 한 번 더 돌아 새 종목 1년치를 채운다.
+# 로봇(GITHUB_TOKEN)이 올린 변경은 build-site 를 깨우지 못하므로 여기서 사이트도 직접 다시 만든다.
 on:
   schedule:
     - cron: "41 5 * * 1-5"
   push:
     branches: [main]
     paths:
-      - "market/watchlist.yml"
+      - "market/settings.yml"
       - "entities.yml"
       - "scripts/market.py"
   workflow_dispatch:
@@ -30,20 +31,21 @@ jobs:
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: "3.12"
-      - run: pip install requests pyyaml
+      - run: pip install requests pyyaml markdown
       - name: Fetch
         env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
         run: python scripts/market.py
+      - run: python scripts/build_site.py
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add market
+          git add market docs
           if git diff --cached --quiet; then
             echo "변경 없음"
           else
             git commit -m "market: $(TZ=Asia/Seoul date +%F)"
-            git pull --rebase -q origin main
+            git pull --rebase -q origin main || { python scripts/build_site.py && git add docs && GIT_EDITOR=true git rebase --continue; }
             git push
           fi

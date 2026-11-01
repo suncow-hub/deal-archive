@@ -13,7 +13,7 @@ from datetime import datetime, timedelta, timezone
 
 import markdown
 
-from lib import (NAME_FIELDS, ROOT, alias_map, briefing_files, deal_files, load_deal, load_entities,
+from lib import (FX_CODES, INDEX_CATALOG, fx_summary, load_settings, tracked_codes, NAME_FIELDS, ROOT, alias_map, briefing_files, deal_files, load_deal, load_entities,
                  load_glossary, load_rumors, load_tags, split_front)
 
 KST = timezone(timedelta(hours=9))
@@ -146,8 +146,16 @@ def main() -> None:
     mk = ROOT / "market"
     if (mk / "kr").exists():
         shutil.copytree(mk / "kr", OUT / "market" / "kr")
-    if (mk / "summary.json").exists():
-        shutil.copy(mk / "summary.json", OUT / "market" / "summary.json")
+    (OUT / "market").mkdir(parents=True, exist_ok=True)
+    summ = json.loads((mk / "summary.json").read_text(encoding="utf-8")) if (mk / "summary.json").exists() else {"items": []}
+    summ["fx"] = fx_summary() or summ.get("fx", {})   # 환율은 새벽 발견 단계가 갱신하므로 여기서 최신으로
+    (OUT / "market" / "summary.json").write_text(json.dumps(summ, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    settings = load_settings()
+    settings["auto"] = {c: n for c, n in tracked_codes({**settings, "stocks": [], "exclude": []}, ents).items()}
+    settings["catalog"] = {"indices": INDEX_CATALOG, "fx": FX_CODES}
+    (OUT / "market" / "settings.json").write_text(json.dumps(settings, ensure_ascii=False), encoding="utf-8")
+    if (mk / "krx_list.json").exists():
+        shutil.copy(mk / "krx_list.json", OUT / "market" / "krx_list.json")
     (OUT / "data.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
     print(f"사이트 생성: 딜 {len(deals)}건, 브리핑 {len(briefings)}건, 이름 {len(ents)}개, 소문 {len(rumors)}건, 용어 {len(glossary)}개 → docs/")
 

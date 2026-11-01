@@ -7,7 +7,7 @@ import yaml
 
 from lib import (GLOSSARY_CATEGORIES, NAME_FIELDS, REQUIRED_FIELDS, ROOT, RUMOR_CRED, RUMOR_STATUSES, SECTIONS,
                  body_names, briefing_files, deal_files, load_deal, load_entities, load_glossary, load_rumors,
-                 load_tags, split_front)
+                 load_settings, load_tags, settings_errors, split_front)
 
 DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 ENTITY_TYPES = {"기업", "PE·VC", "재무 자문사", "법률 자문사", "정부·기관"}
@@ -154,15 +154,11 @@ def main() -> int:
             if r not in terms:
                 errors.append(f"{tag}: related '{r}' 이(가) 용어집 term에 없음")
 
-    wl = ROOT / "market" / "watchlist.yml"
-    if wl.exists():
-        try:
-            rows = yaml.safe_load(wl.read_text(encoding="utf-8")) or []
-            for row in rows:
-                if not re.fullmatch(r"[0-9A-Z]{6}", str((row or {}).get("code", ""))):
-                    errors.append(f"market/watchlist.yml: 코드 '{(row or {}).get('code')}' 는 6자리 문자열이어야 함 (따옴표로 감싸기)")
-        except yaml.YAMLError as e:
-            errors.append(f"market/watchlist.yml: YAML 오류 {e}")
+    try:
+        for e in settings_errors(load_settings()):
+            errors.append(f"market/settings.yml: {e}")
+    except (ValueError, yaml.YAMLError) as e:
+        errors.append(f"market/settings.yml: {e}")
     for name, info in entities.items():
         k = str((info or {}).get("krx") or "")
         if k and not re.fullmatch(r"[0-9A-Z]{6}", k):

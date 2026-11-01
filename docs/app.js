@@ -13,6 +13,18 @@
   const ROLES = ["인수자", "대상", "매도자", "재무 자문", "법률 자문"];
   let DATA = null;
   let MKT = { items: [], fx: {} };
+  // 시세 설정 (market/settings.yml → docs/market/settings.json). 못 불러오면 이 기본값
+  let CFG = {
+    strip: ["KOSPI", "KOSDAQ", "USDKRW"], indices: ["KOSPI", "KOSDAQ"], stocks: [], exclude: [], auto: {},
+    tape: [["FOREXCOM:SPXUSD", "S&P 500"], ["FOREXCOM:NSXUSD", "나스닥 100"], ["FOREXCOM:DJI", "다우"], ["FX_IDC:USDKRW", "원/달러"],
+      ["FRED:DGS10", "미 10년물"], ["TVC:USOIL", "WTI"], ["TVC:GOLD", "금"]].map(([symbol, title]) => ({ symbol, title })),
+    catalog: { indices: { KOSPI: "코스피", KOSDAQ: "코스닥" }, fx: { USDKRW: "원/달러" } },
+  };
+  // 편집 버튼은 주인 표시(이 브라우저에 한 번 #/?edit=1 로 켬)가 있을 때만 보인다.
+  // 진짜 잠금은 GitHub 쪽: 설정 이슈는 리포 주인이 올린 것만 적용된다.
+  const OWNER_KEY = "da_owner";
+  const isOwner = () => { try { return localStorage.getItem(OWNER_KEY) === "1"; } catch { return false; } };
+  const setOwner = (on) => { try { on ? localStorage.setItem(OWNER_KEY, "1") : localStorage.removeItem(OWNER_KEY); } catch { /* 저장 불가 */ } };
   const REPO = "https://github.com/suncow-hub/deal-archive";
 
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -37,11 +49,15 @@
     const { parts, params } = parseHash();
     window.scrollTo(0, 0);
     hideTip();
+    $app.onclick = null; $app.oninput = null; $app.onchange = null;
+    if (params.get("edit") === "1") setOwner(true);
+    if (params.get("edit") === "0") setOwner(false);
     if (parts[0] === "deal" && parts[1]) return viewDeal(parts.slice(1).join("/"));
     if (parts[0] === "entity" && parts[1]) return viewEntity(parts.slice(1).join("/"));
     if (parts[0] === "entities") return viewEntities();
     if (parts[0] === "rumors") return viewRumors(params);
     if (parts[0] === "chart") return viewChart(params);
+    if (parts[0] === "settings") return viewSettings(params);
     if (parts[0] === "glossary") return viewGlossary(params);
     if (parts[0] === "briefings") return viewBriefings();
     if (parts[0] === "briefing" && parts[1]) return viewBriefing(parts[1]);
@@ -319,14 +335,20 @@
   // 한국식: 상승 빨강, 하락 파랑
   const chg = (p) => (p == null ? "" : `<span class="${p > 0 ? "up" : p < 0 ? "dn" : ""}">${p > 0 ? "▲" : p < 0 ? "▼" : ""}${Math.abs(p).toFixed(2)}%</span>`);
 
+  function stripItem(code) {
+    if (code === "USDKRW") return MKT.fx.USD ? { code, name: "원/달러", close: MKT.fx.USD, change_pct: MKT.fx.USD_change_pct, idx: true, href: "FX_IDC:USDKRW" } : null;
+    const x = MKT.items.find((i) => i.code === code);
+    return x ? { code, name: x.name, close: x.close, change_pct: x.change_pct, idx: x.kind === "index", href: x.code, date: x.date } : null;
+  }
+
   function marketStrip() {
-    const idx = MKT.items.filter((x) => x.kind === "index");
-    if (!idx.length && !MKT.fx.USD) return `<div id="tt" class="tt"></div>`;
-    const date = idx[0]?.date;
-    const chips = idx.sort((a, b) => (a.code === "KOSPI" ? -1 : 1)).map((x) =>
-      `<a class="mq" href="#/chart?s=${enc(x.code)}"><span class="mq-n">${esc(x.name)}</span><b>${fmtNum(x.close, true)}</b>${chg(x.change_pct)}</a>`).join("");
-    const fx = MKT.fx.USD ? `<a class="mq" href="#/chart?s=${enc("FX_IDC:USDKRW")}"><span class="mq-n">원/달러</span><b>${fmtNum(MKT.fx.USD, true)}</b>${chg(MKT.fx.USD_change_pct)}</a>` : "";
-    return `<div class="mstrip">${chips}${fx}<span class="mdate">${date ? `국내 ${fmtDate(date)} 종가` : ""}${MKT.fx.date ? ` · 환율 ECB ${fmtDate(MKT.fx.date)}` : ""}</span></div>
+    const items = CFG.strip.map(stripItem).filter(Boolean);
+    const edit = isOwner() ? `<a class="mq-edit" href="#/settings" aria-label="위쪽 띠 편집">편집</a>` : "";
+    if (!items.length) return `${edit ? `<div class="mstrip">${edit}</div>` : ""}<div id="tt" class="tt"></div>`;
+    const date = items.find((x) => x.date)?.date;
+    const chips = items.map((x) => `<a class="mq" href="#/chart?s=${enc(x.href)}"><span class="mq-n">${esc(x.name)}</span><b>${fmtNum(x.close, x.idx)}</b>${chg(x.change_pct)}</a>`).join("");
+    const usesFx = items.some((x) => x.code === "USDKRW");
+    return `<div class="mstrip"><div class="mq-row">${chips}</div><span class="mdate">${date ? `국내 ${fmtDate(date)} 종가` : ""}${usesFx && MKT.fx.date ? ` · 환율 ECB ${fmtDate(MKT.fx.date)}` : ""}${edit}</span></div>
       <div id="tt" class="tt"></div>`;
   }
 
@@ -345,14 +367,11 @@
     el.appendChild(wrap);
   }
 
-  const GLOBAL_PICKS = [
-    ["FOREXCOM:SPXUSD", "S&P 500"], ["FOREXCOM:NSXUSD", "나스닥 100"], ["FOREXCOM:DJI", "다우"],
-    ["FX_IDC:USDKRW", "원/달러"], ["FRED:DGS10", "미 10년물"], ["TVC:USOIL", "WTI"], ["TVC:GOLD", "금"],
-  ];
+  const globalPicks = () => CFG.tape.map((t) => [t.symbol, t.title]);
 
   function tickerTape(el) {
     tvEmbed(el, "embed-widget-ticker-tape.js", {
-      symbols: GLOBAL_PICKS.map(([proName, title]) => ({ proName, title })),
+      symbols: CFG.tape.map((t) => ({ proName: t.symbol, title: t.title })),
       showSymbolLogo: false, isTransparent: true, displayMode: "compact",
       colorTheme: isDark() ? "dark" : "light", locale: "kr",
     });
@@ -381,7 +400,7 @@
     const global = Object.entries(DATA.entities).filter(([n, e]) => e.ticker &&
       (n.toLowerCase().includes(s) || e.ticker.toLowerCase().includes(s) || (e.aliases || []).some((a) => a.toLowerCase().includes(s))))
       .map(([n, e]) => ({ name: n, ticker: e.ticker }));
-    GLOBAL_PICKS.forEach(([sym, title]) => { if (title.toLowerCase().includes(s) || sym.toLowerCase().includes(s)) global.push({ name: title, ticker: sym }); });
+    globalPicks().forEach(([sym, title]) => { if (title.toLowerCase().includes(s) || sym.toLowerCase().includes(s)) global.push({ name: title, ticker: sym }); });
     return { kr, global };
   }
 
@@ -390,7 +409,7 @@
     document.title = "차트 · Deal Archive";
     const sym = (params.get("s") || "KOSPI").trim();
     const krItem = MKT.items.find((x) => x.code === sym || x.code === sym.toUpperCase());
-    const issueUrl = `${REPO}/issues/new?title=${enc("[관심종목] 회사명 종목코드")}&body=${enc("예: [관심종목] 삼성전자 005930\n\n제목만 고쳐서 제출하면 다음 새벽 작업이 관심 종목에 추가합니다. 추가되면 그날 오후 시세 수집 때 1년치가 함께 들어옵니다.")}`;
+    const editLink = isOwner() ? `<a class="editbtn" href="#/settings">편집</a>` : "";
 
     $app.innerHTML = `<div class="kicker"><span>차트</span><span class="aside">국내는 일별 종가(공공데이터), 해외는 TradingView 지연 시세</span></div>
       <div class="chart-search">
@@ -400,11 +419,11 @@
       <div class="chart-head" id="chead"></div>
       <div id="cbox" class="cbox"></div>
       <div class="chart-foot">
-        <div class="kicker"><span>추적 중인 국내 종목</span><span class="aside"><a href="${issueUrl}" target="_blank" rel="noopener">+ 관심 종목 추가</a></span></div>
+        <div class="kicker"><span>추적 중인 국내 종목</span><span class="aside">${editLink}</span></div>
         <div class="klist">${krList().map((x) => `<a class="kitem${x.code === (krItem && krItem.code) ? " on" : ""}" href="#/chart?s=${enc(x.code)}">
           <span>${esc(x.name)}<small>${esc(x.kind === "index" ? "지수" : x.code)}</small></span><span><b>${fmtNum(x.close, x.kind === "index")}</b> ${chg(x.change_pct)}</span></a>`).join("") || `<p class="muted">아직 수집된 국내 시세가 없습니다.</p>`}</div>
         <div class="kicker"><span>해외 바로가기</span></div>
-        <div class="chips">${GLOBAL_PICKS.map(([s, n]) => `<a class="chip${s === sym ? " on" : ""}" href="#/chart?s=${enc(s)}">${esc(n)}</a>`).join("")}</div>
+        <div class="chips">${globalPicks().map(([s, n]) => `<a class="chip${s === sym ? " on" : ""}" href="#/chart?s=${enc(s)}">${esc(n)}</a>`).join("")}</div>
       </div>`;
 
     const cq = document.getElementById("cq"), cres = document.getElementById("cres");
@@ -417,11 +436,14 @@
         ...kr.slice(0, 8).map((x) => `<a href="#/chart?s=${enc(x.code)}">${esc(x.name)} <small>${esc(x.kind === "index" ? "지수" : x.code)} · 국내</small></a>`),
         ...global.slice(0, 6).map((x) => `<a href="#/chart?s=${enc(x.ticker)}">${esc(x.name)} <small>${esc(x.ticker)} · 해외</small></a>`),
         /^[A-Z0-9.:_!-]{1,20}$/.test(up) && !/^\d{6}$/.test(up) ? `<a href="#/chart?s=${enc(up)}">"${esc(up)}" 해외 티커로 보기 <small>TradingView</small></a>` : "",
-        /^\d{6}$/.test(up) && !kr.length ? `<span class="muted">${esc(up)}는 아직 추적하지 않는 종목입니다. 아래 '관심 종목 추가'로 요청하세요.</span>` : "",
+        ...untracked(q, kr).map(([c, n]) => isOwner()
+          ? `<a href="#/settings?add=${enc(c)}">${esc(n)} <small>${esc(c)} · 추적 안 함 — 눌러서 추가</small></a>`
+          : `<span class="muted">${esc(n)} <small>${esc(c)} · 추적하지 않는 종목</small></span>`),
       ].filter(Boolean).join("") || `<span class="muted">결과 없음</span>`;
       cres.hidden = false;
     };
     cq.addEventListener("input", render);
+    cq.addEventListener("focus", () => loadKrx().then(() => cq.value && render()), { once: true });
     cq.addEventListener("search", render);
     document.addEventListener("click", (e) => { if (!e.target.closest(".chart-search")) cres.hidden = true; });
     cq.addEventListener("keydown", (e) => {
@@ -486,6 +508,204 @@
         }));
       })
       .catch(() => { box.innerHTML = `<p class="pad muted">차트를 불러오지 못했습니다.</p>`; });
+  }
+
+  // ---------------------------------------------------------------- 상장 종목 목록 (검색용, 필요할 때만 받음)
+  let KRX = null, krxLoading = null;
+  function loadKrx() {
+    if (KRX) return Promise.resolve(KRX);
+    if (!krxLoading) krxLoading = fetch("market/krx_list.json", { cache: "no-cache" })
+      .then((r) => (r.ok ? r.json() : { items: [] })).then((d) => (KRX = d.items || [])).catch(() => (KRX = []));
+    return krxLoading;
+  }
+  const norm = (x) => String(x || "").toLowerCase().replace(/\s+/g, "");
+  function krxSearch(q, limit = 10) {
+    const s = norm(q);
+    if (!s || !KRX) return [];
+    const hit = KRX.filter(([c, n]) => c.startsWith(s.toUpperCase()) || norm(n).includes(s));
+    hit.sort((a, b) => (norm(a[1]).startsWith(s) ? 0 : 1) - (norm(b[1]).startsWith(s) ? 0 : 1) || a[1].length - b[1].length);
+    return hit.slice(0, limit);
+  }
+  function untracked(q, kr) {
+    const have = new Set(kr.map((x) => x.code).concat(MKT.items.map((x) => x.code)));
+    return krxSearch(q, 6).filter(([c]) => !have.has(c));
+  }
+
+  // ---------------------------------------------------------------- 시세 설정 (주인만)
+  const LIM = { strip: 8, stocks: 60, tape: 12 };
+  const TV_RE = /^[A-Z0-9_]{1,20}:[A-Z0-9._!-]{1,30}$/;
+
+  function viewSettings(params) {
+    setNav("chart");
+    document.title = "시세 설정 · Deal Archive";
+    if (!isOwner()) {
+      $app.innerHTML = `<div class="kicker"><span>시세 설정</span></div><p class="muted">이 화면은 사이트 주인만 사용합니다. <a href="#/chart">차트로 돌아가기</a></p>`;
+      return;
+    }
+    const pick = (o) => JSON.parse(JSON.stringify({ strip: o.strip, indices: o.indices, stocks: o.stocks, exclude: o.exclude, tape: o.tape }));
+    const orig = pick(CFG);
+    const draft = pick(CFG);
+    let found = [], msg = "";
+
+    const nameOf = (code) => code === "USDKRW" ? "원/달러" : CFG.catalog.indices[code]
+      || (draft.stocks.find((r) => r.code === code) || {}).name || CFG.auto[code]
+      || (MKT.items.find((x) => x.code === code) || {}).name || code;
+    const tracked = () => {
+      const out = new Map(draft.stocks.map((r) => [r.code, r.name]));
+      for (const [c, n] of Object.entries(CFG.auto)) if (!out.has(c) && !draft.exclude.includes(c)) out.set(c, n);
+      return out;
+    };
+    const stripOptions = () => [...draft.indices, "USDKRW", ...tracked().keys()].filter((c) => !draft.strip.includes(c));
+    const changes = () => Object.keys(orig).filter((k) => JSON.stringify(orig[k]) !== JSON.stringify(draft[k])).length;
+    const cleanStrip = () => { const ok = new Set([...draft.indices, "USDKRW", ...tracked().keys()]); draft.strip = draft.strip.filter((c) => ok.has(c)); };
+    const btns = (list, i) => `<span class="rowbtns">
+      <button data-act="up" data-list="${list}" data-i="${i}" aria-label="위로"${i === 0 ? " disabled" : ""}>↑</button>
+      <button data-act="down" data-list="${list}" data-i="${i}" aria-label="아래로"${i === draft[list].length - 1 ? " disabled" : ""}>↓</button>
+      <button data-act="del" data-list="${list}" data-i="${i}" aria-label="빼기">×</button></span>`;
+
+    const draw = () => {
+      const n = changes();
+      const tickers = Object.entries(DATA.entities).filter(([, e]) => e.ticker && !draft.tape.some((t) => t.symbol === e.ticker)).slice(0, 12);
+      $app.innerHTML = `<div class="crumb"><a href="#/chart">← 차트</a></div>
+      <div class="kicker"><span>시세 설정</span><span class="aside">주인 전용</span></div>
+      <p class="set-note">여기서 고친 뒤 <b>저장</b>을 누르면 GitHub 이슈 작성 화면이 열립니다. 내용은 채워져 있으니 <b>Create</b>만 누르면 1~2분 뒤 사이트에 반영돼요.
+        suncow-hub 계정으로 로그인돼 있어야 적용되고, 다른 사람이 올린 설정 이슈는 자동으로 무시됩니다.</p>
+
+      <section class="set">
+        <h2>첫 화면 위쪽 띠 <small>${draft.strip.length}/${LIM.strip} · 순서대로 보임</small></h2>
+        <ol class="slist">${draft.strip.map((c, i) => `<li><span>${esc(nameOf(c))}<small>${esc(c === "USDKRW" ? "환율" : CFG.catalog.indices[c] ? "지수" : c)}</small></span>${btns("strip", i)}</li>`).join("") || `<li class="muted">비어 있음</li>`}</ol>
+        <div class="set-add">${draft.strip.length < LIM.strip && stripOptions().length
+          ? `<select id="strip-add" aria-label="띠에 넣을 항목">${stripOptions().map((c) => `<option value="${esc(c)}">${esc(nameOf(c))} (${esc(c)})</option>`).join("")}</select><button class="chip" data-act="strip-add">추가</button>`
+          : `<span class="muted">${draft.strip.length >= LIM.strip ? "최대 개수입니다." : "더 넣을 항목이 없습니다. 아래에서 지수나 종목을 먼저 추가하세요."}</span>`}</div>
+      </section>
+
+      <section class="set">
+        <h2>수집할 국내 지수</h2>
+        <div class="chips">${Object.entries(CFG.catalog.indices).map(([c, nm]) => `<button class="chip${draft.indices.includes(c) ? " on" : ""}" data-act="idx" data-c="${esc(c)}" aria-pressed="${draft.indices.includes(c)}">${esc(nm)}</button>`).join("")}</div>
+        <p class="hint">새로 켠 지수는 저장 직후 1년치를 받아 옵니다.</p>
+      </section>
+
+      <section class="set">
+        <h2>관심 종목 <small>직접 추가 ${draft.stocks.length}/${LIM.stocks}</small></h2>
+        <div class="chart-search"><input class="search" id="sq" type="search" placeholder="종목명이나 종목코드 (예: 네이버, 035420)" aria-label="종목 검색" autocomplete="off">
+          <div id="sres" class="cres" hidden></div></div>
+        <ul class="slist">${draft.stocks.map((r, i) => `<li><span>${esc(r.name)}<small>${esc(r.code)}</small></span><span class="rowbtns"><button data-act="del" data-list="stocks" data-i="${i}" aria-label="빼기">×</button></span></li>`).join("") || `<li class="muted">직접 추가한 종목이 없습니다.</li>`}</ul>
+      </section>
+
+      <section class="set">
+        <h2>자동 추적 <small>딜 아카이브에 나온 상장사</small></h2>
+        <ul class="slist">${Object.entries(CFG.auto).map(([c, nm]) => { const off = draft.exclude.includes(c); return `<li class="${off ? "off" : ""}"><span>${esc(nm)}<small>${esc(c)}</small></span>
+          <button class="chip${off ? "" : " on"}" data-act="auto" data-c="${esc(c)}" aria-pressed="${!off}">${off ? "제외됨" : "추적 중"}</button></li>`; }).join("") || `<li class="muted">아직 없습니다.</li>`}</ul>
+      </section>
+
+      <section class="set">
+        <h2>해외 시세 흐름띠 <small>${draft.tape.length}/${LIM.tape} · TradingView</small></h2>
+        <ol class="slist">${draft.tape.map((t, i) => `<li><span>${esc(t.title)}<small>${esc(t.symbol)}</small></span>${btns("tape", i)}</li>`).join("") || `<li class="muted">비어 있음</li>`}</ol>
+        ${draft.tape.length < LIM.tape ? `<div class="set-add tape-add">
+          <input class="search" id="tsym" placeholder="거래소:티커 (예: NASDAQ:AAPL)" aria-label="TradingView 기호" autocapitalize="characters" autocomplete="off">
+          <input class="search" id="tname" placeholder="보일 이름 (예: 애플)" aria-label="보일 이름" maxlength="20" autocomplete="off">
+          <button class="chip" data-act="tape-add">추가</button></div>` : ""}
+        ${tickers.length ? `<div class="chips sugg">${tickers.map(([nm, e]) => `<button class="chip" data-act="tape-sugg" data-c="${esc(e.ticker)}" data-n="${esc(nm)}">+ ${esc(nm)}</button>`).join("")}</div>` : ""}
+        <p class="hint">한국·일본·홍콩 종목은 TradingView 무료 위젯에서 보이지 않습니다. 기호는 TradingView 검색창에 나오는 '거래소:티커' 그대로 쓰면 됩니다.</p>
+      </section>
+
+      <div class="savebar">
+        <span>${n ? `바뀐 항목 ${n}개` : "바뀐 것 없음"}</span>
+        <span><button class="linkbtn" data-act="reset"${n ? "" : " disabled"}>되돌리기</button>
+        <button class="savebtn" data-act="save"${n ? "" : " disabled"}>저장</button></span>
+      </div>`;
+    };
+    const results = () => {
+      const el = document.getElementById("sres");
+      if (!el) return;
+      el.innerHTML = found.map(([c, nm, mk]) => `<button data-act="stock-add" data-c="${esc(c)}" data-n="${esc(nm)}">${esc(nm)} <small>${esc(c)}${mk ? " · " + esc(mk) : ""}${tracked().has(c) ? " · 이미 추적 중" : ""}</small></button>`).join("")
+        + (msg ? `<span class="muted">${esc(msg)}</span>` : "");
+      el.hidden = !found.length && !msg;
+    };
+
+    let lastQ = "";
+    const redrawKeep = () => {
+      const y = window.scrollY;
+      const tsym = document.getElementById("tsym")?.value || "", tname = document.getElementById("tname")?.value || "";
+      draw();
+      window.scrollTo(0, y);
+      const a = document.getElementById("tsym"), b = document.getElementById("tname");
+      if (a) a.value = tsym; if (b) b.value = tname;
+    };
+
+    $app.oninput = (e) => {
+      if (e.target.id !== "sq") return;
+      lastQ = e.target.value;
+      loadKrx().then(() => {
+        found = krxSearch(lastQ, 8);
+        msg = lastQ.trim() && !found.length ? (KRX.length ? "결과 없음" : "종목 목록이 아직 없습니다 (다음 시세 수집 뒤 생김). 6자리 코드를 그대로 넣으면 추가할 수 있어요.") : "";
+        if (!found.length && /^\d{6}$/.test(lastQ.trim()) && !KRX.length) found = [[lastQ.trim(), lastQ.trim(), ""]];
+        results();   // 입력칸은 그대로 두고 결과만 바꾼다 (한글 입력이 끊기지 않게)
+      });
+    };
+
+    $app.onclick = (e) => {
+      const b = e.target.closest("[data-act]");
+      if (!b || b.disabled) return;
+      const act = b.dataset.act, list = b.dataset.list, i = +b.dataset.i, c = b.dataset.c;
+      if (act === "up" && i > 0) [draft[list][i - 1], draft[list][i]] = [draft[list][i], draft[list][i - 1]];
+      if (act === "down" && i < draft[list].length - 1) [draft[list][i + 1], draft[list][i]] = [draft[list][i], draft[list][i + 1]];
+      if (act === "del") { draft[list].splice(i, 1); cleanStrip(); }
+      if (act === "strip-add") { const v = document.getElementById("strip-add").value; if (v && draft.strip.length < LIM.strip) draft.strip.push(v); }
+      if (act === "idx") { draft.indices = draft.indices.includes(c) ? draft.indices.filter((x) => x !== c) : Object.keys(CFG.catalog.indices).filter((x) => x === c || draft.indices.includes(x)); cleanStrip(); }
+      if (act === "auto") { draft.exclude = draft.exclude.includes(c) ? draft.exclude.filter((x) => x !== c) : draft.exclude.concat(c); cleanStrip(); }
+      if (act === "stock-add") {
+        if (CFG.auto[c] && draft.exclude.includes(c)) draft.exclude = draft.exclude.filter((x) => x !== c);
+        else if (!tracked().has(c) && draft.stocks.length < LIM.stocks) draft.stocks.push({ code: c, name: b.dataset.n });
+        found = []; msg = ""; lastQ = "";
+      }
+      if (act !== "stock-add" && e.target.closest(".chart-search")) return;
+      if (act === "tape-add" || act === "tape-sugg") {
+        const sym = (act === "tape-sugg" ? c : document.getElementById("tsym").value).trim().toUpperCase();
+        const title = (act === "tape-sugg" ? b.dataset.n : document.getElementById("tname").value.trim() || sym.split(":")[1] || "").slice(0, 20);
+        if (!TV_RE.test(sym)) { alertInline("'거래소:티커' 형식으로 적어 주세요. 예: NASDAQ:AAPL"); return; }
+        if (draft.tape.some((t) => t.symbol === sym)) { alertInline("이미 들어 있습니다."); return; }
+        if (draft.tape.length < LIM.tape) draft.tape.push({ symbol: sym, title });
+        if (act === "tape-add") { document.getElementById("tsym").value = ""; document.getElementById("tname").value = ""; }
+      }
+      if (act === "reset") Object.assign(draft, pick(orig));
+      if (act === "save") return save();
+      redrawKeep();
+    };
+
+    const alertInline = (t) => {
+      let el = document.getElementById("set-msg");
+      if (!el) { el = document.createElement("p"); el.id = "set-msg"; el.className = "set-msg"; document.querySelector(".tape-add")?.after(el); }
+      el.textContent = t;
+    };
+
+    const save = () => {
+      const q = (v) => JSON.stringify(String(v));
+      const yaml = [
+        `strip: [${draft.strip.map(q).join(", ")}]`,
+        `indices: [${draft.indices.map(q).join(", ")}]`,
+        "stocks:" + (draft.stocks.length ? "" : " []"),
+        ...draft.stocks.map((r) => `  - {code: ${q(r.code)}, name: ${q(r.name)}}`),
+        `exclude: [${draft.exclude.map(q).join(", ")}]`,
+        "tape:" + (draft.tape.length ? "" : " []"),
+        ...draft.tape.map((t) => `  - {symbol: ${q(t.symbol)}, title: ${q(t.title)}}`),
+      ].join("\n");
+      const body = "사이트 편집 화면에서 만든 시세 설정입니다. 이대로 제출하면 자동으로 적용돼요.\n\n```yaml\n" + yaml + "\n```\n";
+      window.open(`${REPO}/issues/new?title=${enc("[설정] 시세 설정 변경")}&body=${enc(body)}`, "_blank", "noopener");
+      const bar = document.querySelector(".savebar span");
+      if (bar) bar.textContent = "GitHub 창에서 Create를 누르면 적용돼요.";
+    };
+
+    const add = params.get("add");
+    if (add && /^[0-9A-Z]{6}$/.test(add)) {
+      loadKrx().then(() => {
+        const hit = (KRX || []).find(([c2]) => c2 === add);
+        if (hit && !tracked().has(add)) draft.stocks.push({ code: add, name: hit[1] });
+        history.replaceState(null, "", "#/settings");
+        draw();
+      });
+    } else draw();
+    loadKrx();
   }
 
   // ---------------------------------------------------------------- 용어집
@@ -660,10 +880,12 @@
   Promise.all([
     fetch("data.json", { cache: "no-cache" }).then((r) => r.json()),
     fetch("market/summary.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+    fetch("market/settings.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null),
   ])
-    .then(([data, mkt]) => {
+    .then(([data, mkt, cfg]) => {
       DATA = data;
       if (mkt) MKT = mkt;
+      if (cfg) CFG = { ...CFG, ...cfg, catalog: { ...CFG.catalog, ...(cfg.catalog || {}) } };
       prepGlossary();
       document.getElementById("built").textContent = `업데이트 ${data.built_at}`;
       route();

@@ -1,0 +1,20 @@
+# 시세 설정 — 사이트 차트 탭의 '편집'에서 바꾸면 자동으로 고쳐진다 (리포 주인만 적용됨)
+# strip: 첫 화면 위쪽 띠에 보일 항목 (지수 코드, USDKRW, 종목코드)
+# indices: 수집할 국내 지수 (KOSPI=코스피, KOSDAQ=코스닥, KOSPI200=코스피 200, KOSDAQ150=코스닥 150, KRX300=KRX 300)
+# stocks: 직접 추가한 관심 종목. 딜 아카이브에 나온 상장사(entities.yml의 krx)는 자동으로 추적된다
+# exclude: 자동 추적 종목 중 빼고 싶은 종목코드
+# tape: 첫 화면 해외 시세 흐름띠 (TradingView 기호)
+strip: ["KOSPI", "KOSDAQ", "USDKRW"]
+indices: ["KOSPI", "KOSDAQ"]
+stocks:
+  - {code: "005930", name: "삼성전자"}
+  - {code: "000660", name: "SK하이닉스"}
+exclude: []
+tape:
+  - {symbol: "FOREXCOM:SPXUSD", title: "S&P 500"}
+  - {symbol: "FOREXCOM:NSXUSD", title: "나스닥 100"}
+  - {symbol: "FOREXCOM:DJI", title: "다우"}
+  - {symbol: "FX_IDC:USDKRW", title: "원/달러"}
+  - {symbol: "FRED:DGS10", title: "미 10년물"}
+  - {symbol: "TVC:USOIL", title: "WTI"}
+  - {symbol: "TVC:GOLD", title: "금"}

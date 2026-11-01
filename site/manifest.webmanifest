@@ -1,0 +1,16 @@
+{
+  "name": "Deal Archive",
+  "short_name": "Deal Archive",
+  "description": "M&A·자본시장 딜 아카이브와 매일 아침 브리핑",
+  "lang": "ko",
+  "start_url": "./#/",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#121212",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
