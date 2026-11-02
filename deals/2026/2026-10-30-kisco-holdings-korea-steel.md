@@ -3,7 +3,7 @@
 상태: "계약 체결"
 신뢰도: "공시 확정"
 발표일: 2026-10-30
-최종 업데이트: 2026-10-30
+최종 업데이트: 2026-11-03
 지역: ["한국"]
 규모 구간: "1천억~5천억"
 규모(원화): "약 1,117억 원 (공개매수 대상 전량 응모 가정, 계산값)"
@@ -16,7 +16,7 @@
 매도자: []
 재무 자문: []
 법률 자문: []
-출처: ["https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000319", "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000322", "https://www.bloter.net/news/articleView.html?idxno=677326", "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=711419"]
+출처: ["https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000319", "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261030000322", "https://www.bloter.net/news/articleView.html?idxno=677326", "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=711419", "https://www.hankyung.com/article/2026110293736"]
 비교: {대가 구성: "현금+주식", 인수자 성격: "전략적", 메모: "공개매수가 13,000원은 주식교환 교환가액(9,951원)보다 약 30.6% 높음 (시장가 대비 프리미엄 아님)"}
 일정: 
   - {날짜: "2026-11-02", 내용: "한국철강 공개매수 시작"}
@@ -48,6 +48,8 @@
 ## 진행 이력
 <!-- 업데이트될 때마다 맨 아래에 한 줄씩 추가. 기존 줄은 수정하지 않음 -->
 - 2026-10-30: KISCO홀딩스와 한국철강이 포괄적 주식교환 계약을 체결·공시했다. 공개매수는 11월 2일 시작 예정이다.
+- 2026-11-02: 예정대로 공개매수가 시작됐고, 한국철강 주가는 장 초반 20%대 급등했다.
 
 ## 관련 딜·뉴스
 - [SK㈜, SK시그넷 완전자회사화 후 지분 100%를 SK일렉링크에 최대 2천억 원에 매각](../2026/2026-10-29-sk-electlink-sk-signet.md) — 공개매수 후 포괄적 주식교환으로 완전자회사화하는 같은 구조의 한국 거래
+- [샘표식품, 지주사 샘표 흡수합병 결정…중복상장 해소](../2026/2026-10-30-sampyo-foods-sampyo.md) — 같은 날 발표된 중복상장 해소 사례 (합병 방식)

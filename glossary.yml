@@ -256,6 +256,32 @@
   related: [반독점 심사]
   memo: ""
 
+- id: exchange-ratio
+  term: 교환비율 (합병비율)
+  en: Exchange Ratio
+  category: 딜 구조
+  match: [교환비율, 합병비율, Exchange Ratio, exchange ratio]
+  aliases: []
+  short: 주식으로 대가를 줄 때, 상대 회사 주식 1주를 우리 회사 주식 몇 주로 바꿔 주는지 정한 비율.
+  more: 비율을 고정하면 계약 뒤 인수자 주가가 떨어질 때 매도 측 주주가 받는 가치도 함께 줄어든다. 그래서 주식 거래에서는 프리미엄과 함께 인수자 주가 흐름을 같이 봐야 한다.
+  example: Marvell은 Lumentum 1주당 Marvell 4.5주를 주기로 했다.
+  deal: 2026-11-02-marvell-technology-lumentum
+  related: [합병, 포괄적 주식교환, 인수 프리미엄]
+  memo: ""
+
+- id: appraisal-right
+  term: 주식매수청구권
+  en: Appraisal Right
+  category: 딜 구조
+  match: [주식매수청구권, 주식매수청구, 매수청구]
+  aliases: [Appraisal Right]
+  short: 합병 같은 큰 결정에 반대하는 주주가 회사에 "내 주식을 정해진 값에 사 달라"고 요구할 수 있는 권리.
+  more: 반대 주주가 많아 회사가 사 줘야 할 금액이 커지면 부담이 되므로, 합병 계약에 "청구 금액이 일정액을 넘으면 계약을 해제할 수 있다"는 조건을 넣는 경우가 많다.
+  example: 샘표식품–샘표 합병은 주식매수청구 대금이 600억 원을 넘으면 계약을 해제할 수 있다.
+  deal: 2026-10-30-sampyo-foods-sampyo
+  related: [합병, 포괄적 주식교환]
+  memo: ""
+
 # ---------------- 자금 조달
 - id: acquisition-finance
   term: 인수금융
@@ -329,6 +355,19 @@
   aliases: []
   short: 회사를 인수할 목적만 가지고 먼저 상장해 둔 빈 회사. 비상장사와 합병하면 그 회사가 대신 상장하는 효과가 난다.
   related: [IPO (기업공개), 합병]
+  memo: ""
+
+- id: commitment
+  term: 확약 (금융 확약)
+  en: Commitment
+  category: 자금 조달
+  match: [확약, Commitment Letter, commitment letter]
+  aliases: [Financing Commitment, 커밋먼트]
+  short: 은행이나 투자자가 "이 조건이면 돈을 대겠다"고 미리 약속하는 것. 인수 계약 때 인수자가 돈을 마련할 수 있다는 증거가 된다.
+  more: 인수 계약을 맺을 때 매도자는 인수자가 실제로 대금을 낼 수 있는지 확인하고 싶어 한다. 그래서 대출을 해 줄 금융회사가 확약서를 써 주고, 확약이 확실할수록 거래가 무산될 위험이 줄어든다.
+  example: Thrive Holdings의 ADT 인수에서는 Apollo 계열 펀드가 인수금융을 단독 확약했다.
+  deal: 2026-10-29-thrive-holdings-adt
+  related: [인수금융, 브리지론, 사모신용]
   memo: ""
 
 # ---------------- 참여자·전략

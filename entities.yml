@@ -613,3 +613,177 @@ Ashurst Perkins Coie:
     edge: "영국·아시아태평양(Ashurst)과 미국 테크 고객(Perkins Coie)을 합친 네트워크"
     owner: "파트너십 (로펌)"
     as_of: "2026-11-02"
+Marvell Technology:
+  type: 기업
+  country: 미국
+  aliases: [Marvell, 마벨, 마벨테크놀로지]
+  ticker: "NASDAQ:MRVL"
+  profile:
+    about: "데이터센터·네트워크용 반도체를 설계하는 미국 팹리스 회사."
+    business: "데이터센터 연결 칩, 맞춤형 AI 칩, 네트워크·스토리지 반도체"
+    edge: "AI 서버 간 데이터 전송용 칩과 고객 맞춤형 칩 설계 역량"
+    owner: "나스닥 상장사 (지분 분산)"
+    points:
+      - "2026-11 Lumentum을 기업가치 1,150억 달러에 전액 주식으로 인수하기로 계약"
+    as_of: "2026-11-03"
+Lumentum:
+  type: 기업
+  country: 미국
+  aliases: [Lumentum Holdings, 루멘텀]
+  ticker: "NASDAQ:LITE"
+  profile:
+    about: "광통신·레이저 부품을 만드는 미국 회사."
+    business: "데이터센터·통신망용 광트랜시버와 레이저, 산업용 레이저"
+    edge: "AI 데이터센터 광연결에 쓰이는 레이저·광부품 기술"
+    owner: "나스닥 상장사 (지분 분산). Marvell이 인수 계약을 맺은 상태"
+    points:
+      - "Marvell 인수 시 1주당 Marvell 4.5주를 받고, 기존 주주가 합병법인 약 33%를 보유"
+    as_of: "2026-11-03"
+Qatalyst Partners:
+  type: 재무 자문사
+  country: 미국
+  aliases: [Qatalyst]
+  profile:
+    about: "샌프란시스코 기반 기술 업종 전문 M&A 자문 부티크."
+    business: "기술 기업 M&A 자문"
+    edge: "대형 테크 인수합병에서 매각·인수 자문을 자주 맡는 부티크"
+    owner: "파트너들이 운영하는 독립 자문사"
+    as_of: "2026-11-03"
+Wilson Sonsini Goodrich & Rosati:
+  type: 법률 자문사
+  country: 미국
+  aliases: [Wilson Sonsini, WSGR]
+  profile:
+    about: "실리콘밸리 기반 기술 업종 중심 로펌."
+    business: "기술 기업 M&A, 증권, 지식재산"
+    edge: "실리콘밸리 테크 기업 고객 기반"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-03"
+Davis Polk & Wardwell:
+  type: 법률 자문사
+  country: 미국
+  aliases: [Davis Polk]
+  profile:
+    about: "뉴욕 기반 대형 로펌."
+    business: "M&A, 자본시장, 금융, 소송"
+    edge: "대형 상장사 M&A와 자본시장 거래 자문"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-03"
+Kimberly-Clark:
+  type: 기업
+  country: 미국
+  aliases: [킴벌리클라크, Kimberly-Clark Corporation]
+  profile:
+    about: "기저귀·화장지 등 위생용품을 만드는 미국 생활용품 회사."
+    business: "기저귀(하기스), 화장지(크리넥스) 등 개인위생·생활용품"
+    edge: "세계적으로 알려진 위생용품 브랜드와 유통망"
+    owner: "미국 상장사 (지분 분산)"
+    points:
+      - "2026-11 Kenvue 인수를 마쳐 소비자 헬스케어 브랜드를 더함"
+    as_of: "2026-11-03"
+Kenvue:
+  type: 기업
+  country: 미국
+  aliases: [켄뷰, Kenvue Inc.]
+  profile:
+    about: "타이레놀·리스테린 등을 가진 소비자 헬스케어 회사. Johnson & Johnson에서 분사했다."
+    business: "일반의약품, 구강·피부 관리 제품"
+    edge: "타이레놀·리스테린·뉴트로지나 같은 장수 브랜드"
+    owner: "Kimberly-Clark의 100% 자회사 (2026-11 인수 완료)"
+    as_of: "2026-11-03"
+Blackstone:
+  type: PE·VC
+  country: 미국
+  aliases: [블랙스톤, Blackstone Inc.]
+  ticker: "NYSE:BX"
+  profile:
+    about: "세계 최대급 대체투자 운용사."
+    business: "사모펀드, 부동산, 인프라, 크레딧"
+    edge: "대형 바이아웃과 인프라·부동산 투자를 함께 하는 자금력"
+    owner: "뉴욕증권거래소 상장사"
+    points:
+      - "2026-11 미쓰비시의 LNG Canada 보유 자회사 지분 49.9%에 31억 달러 투자 컨소시엄을 주도"
+    as_of: "2026-11-03"
+Mitsubishi Corporation:
+  type: 기업
+  country: 일본
+  aliases: [미쓰비시상사, 三菱商事, Mitsubishi]
+  ticker: "TSE:8058"
+  profile:
+    about: "일본 최대급 종합상사."
+    business: "천연가스·자원, 산업재, 식품, 소비재 등 사업 투자"
+    edge: "LNG 등 에너지 자원 프로젝트 지분과 장기 계약 네트워크"
+    owner: "도쿄증권거래소 상장사"
+    points:
+      - "LNG Canada 지분 보유 자회사의 49.9%를 Blackstone 컨소시엄에 넘기고 경영권은 유지 (2026-11)"
+    as_of: "2026-11-03"
+LNG Canada:
+  type: 기업
+  country: 기타
+  aliases: [LNG 캐나다]
+  profile:
+    about: "캐나다 브리티시컬럼비아주 키티맷의 LNG 수출 프로젝트."
+    business: "천연가스 액화·수출"
+    edge: "캐나다 서부에서 아시아로 가는 짧은 해상 운송로"
+    owner: "Shell이 주도하는 합작사. Petronas, PetroChina, 미쓰비시, 한국가스공사가 참여"
+    as_of: "2026-11-03"
+Anthropic:
+  type: 기업
+  country: 미국
+  aliases: [앤트로픽, Anthropic PBC]
+  profile:
+    about: "AI 모델 Claude를 만드는 미국 AI 기업."
+    business: "대규모 AI 모델 개발, 기업·개인용 AI 서비스와 API"
+    edge: "대형 언어모델 연구 개발 역량과 기업 고객 기반"
+    owner: "비상장 공익법인(PBC). 미국 상장 절차 진행 중"
+    as_of: "2026-11-03"
+한진칼:
+  type: 기업
+  country: 한국
+  aliases: [Hanjin KAL]
+  krx: "180640"
+  profile:
+    about: "대한항공 등을 거느린 한진그룹의 지주회사."
+    business: "자회사 지분 관리 (항공·물류·관광)"
+    edge: "대한항공 최대주주로서 그룹 지배구조의 정점"
+    owner: "유가증권시장 상장사. 조원태 회장 측 지분 약 20.6% (보도 기준)"
+    points:
+      - "호반그룹이 지분을 늘리며 2026-10 기업결합 신고 (보도 기준)"
+      - "조원태 회장이 2026-11 32.5만 주를 370억 원에 추가 매입 계약"
+    as_of: "2026-11-03"
+호반그룹:
+  type: 기업
+  country: 한국
+  aliases: [호반, 호반건설]
+  profile:
+    about: "호반건설을 중심으로 한 국내 건설·레저·미디어 그룹."
+    business: "주택 건설, 레저, 미디어, 금융 투자"
+    edge: "주택 사업에서 쌓은 현금으로 여러 상장사 지분을 사들여 온 투자 여력"
+    owner: "비상장 그룹"
+    points:
+      - "한진칼 지분을 늘려 2026-10 공정위 기업결합 신고 (보도 기준)"
+    as_of: "2026-11-03"
+샘표식품:
+  type: 기업
+  country: 한국
+  aliases: [Sempio Foods, Sampyo Foods]
+  profile:
+    about: "간장 등 장류와 식품을 만드는 국내 식품회사."
+    business: "간장·된장 등 장류, 가공식품"
+    edge: "간장 시장의 대표 브랜드"
+    owner: "코스피 상장사. 지주사 샘표가 최대주주 (합병 전)"
+    points:
+      - "2026-10 지주사 샘표를 흡수합병하기로 결정 (합병기일 2027-02-01)"
+    as_of: "2026-11-03"
+샘표:
+  type: 기업
+  country: 한국
+  aliases: [Sempio, 샘표㈜]
+  profile:
+    about: "샘표식품의 상장 지주회사."
+    business: "자회사 지분 관리"
+    edge: "샘표식품 최대주주"
+    owner: "코스피 상장사"
+    points:
+      - "샘표식품에 흡수합병돼 소멸 예정 (샘표 1주당 샘표식품 2.0881235주)"
+    as_of: "2026-11-03"

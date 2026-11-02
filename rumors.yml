@@ -4,4 +4,39 @@
 # - status: 미확인 / 사실로 확인 / 부인 / 소멸
 #   (사실로 확인되면 deal 에 딜 노트 id, 30일간 새 소식이 없으면 소멸)
 # - credibility: 낮음 / 중간  (공신력 높은 출처로 확인되면 소문이 아니라 딜 노트로 간다)
-[]
+- id: 2026-11-03-cdr-global-payments-buyout
+  first_seen: 2026-11-03
+  last_seen: 2026-11-03
+  title: "CD&R, Global Payments 비상장화 인수 추진설"
+  claim: "CD&R이 카드결제 처리업체 Global Payments(약 400억 달러 규모)의 비상장화 인수를 추진하고 있다는 보도가 나왔다."
+  companies: ["CD&R", "Global Payments"]
+  sources:
+    - {name: "Financial Times", url: "https://www.ft.com/content/da16af06-4431-4ced-9c3e-a0753d8c45c9", credibility: 중간}
+  why_watch: "성사되면 올해 최대급 PE 바이아웃 중 하나가 된다."
+  status: 미확인
+  status_note: ""
+  deal: null
+- id: 2026-11-03-tpg-cgbio-acquisition
+  first_seen: 2026-11-03
+  last_seen: 2026-11-03
+  title: "TPG, 시지바이오 인수 재추진설"
+  claim: "TPG가 시지바이오 인수에 다시 나섰고 잔여 지분 풋옵션 조건이 쟁점이라는 보도가 나왔다."
+  companies: ["TPG", "시지바이오"]
+  sources:
+    - {name: "인베스트조선", url: "https://www.investchosun.com/site/data/html_dir/2026/10/30/2026103080132.html", credibility: 중간}
+  why_watch: "롯데렌탈 인수를 마친 TPG의 국내 후속 투자이자 의료기기 PE 딜이 될 수 있다."
+  status: 미확인
+  status_note: ""
+  deal: null
+- id: 2026-11-03-hoban-hanjin-kal-largest-shareholder
+  first_seen: 2026-11-03
+  last_seen: 2026-11-03
+  title: "호반그룹, 한진칼 최대주주 등극설"
+  claim: "호반그룹이 한진칼 지분을 늘려 조원태 회장 측을 넘어섰다는 보도가 나왔으나, 정확한 지분율과 변동 시점은 확인되지 않았다."
+  companies: ["호반그룹", "한진칼"]
+  sources:
+    - {name: "인베스트조선", url: "https://www.investchosun.com/site/data/html_dir/2026/11/02/2026110280113.html", credibility: 중간}
+  why_watch: "사실이면 한진칼 경영권 분쟁이 본격화된다."
+  status: 미확인
+  status_note: ""
+  deal: null
