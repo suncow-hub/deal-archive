@@ -1,0 +1,740 @@
+{
+  "meta": {
+    "run_at": "2026-11-04T02:12:32.196607+09:00",
+    "window_start": "2026-11-02T20:12:32.196607+09:00",
+    "sources": {
+      "환율": "1일 추가 (최신 2026-11-03)",
+      "OpenDART 상세": "0건 성공, 2건 실패",
+      "OpenDART": "6건",
+      "WSJ Markets": "6/61",
+      "WSJ U.S. Business": "10/85",
+      "PR Newswire M&A": "14/20",
+      "한경 증권": "6/50",
+      "인베스트조선": "7/50",
+      "연합뉴스 마켓+": "26/120",
+      "매일경제 증권": "13/50",
+      "조선비즈": "0/100",
+      "FT M&A": "3/25",
+      "CNBC Business": "0/30",
+      "WSJ World News": "6/72",
+      "WSJ Economy": "5/36",
+      "한경 경제": "3/50",
+      "한경 국제": "3/50"
+    },
+    "gemini": "실패: RemoteProtocolError: Server disconnected without sending a response.",
+    "counts": {
+      "deal": 40,
+      "macro": 12,
+      "dropped": 42
+    }
+  },
+  "items": [
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(키움제10호스팩) [기재정정]주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103000313",
+      "published": "2026-11-03T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(스모트로닉) [기재정정]최대주주변경을수반하는주식양수도계약체결",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103900673",
+      "published": "2026-11-03T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(써니전자) 최대주주등소유주식변동신고서(최대주주변경시)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103800443",
+      "published": "2026-11-03T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(써니전자) 최대주주변경",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103800424",
+      "published": "2026-11-03T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "Anthropic Investors Push for Cautious Valuation Closer to $1.5 Trillion",
+      "link": "https://www.wsj.com/finance/stocks/anthropic-investors-push-for-cautious-valuation-closer-to-1-5-trillion-2f2df9cf?mod=rss_markets_main",
+      "published": "2026-11-03T07:18:00+09:00",
+      "keywords": [
+        "to buy",
+        "IPO",
+        "IPO"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "앤트로픽도 자금 흡수하나…쏟아지는 미국 주식에 국장 수급 우려",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/02/2026110280074.html",
+      "published": "2026-11-03T07:00:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "고금리가 바꾼 M&A 공식…차입 대신 현금으로",
+      "link": "https://www.mk.co.kr/news/stock/12195065",
+      "published": "2026-11-03T17:34:51+09:00",
+      "keywords": [
+        "인수",
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "거버넌스포럼 “50%+1주 의무공개매수제 대주주만 프리미엄 독점”…전면 보완 촉구",
+      "link": "https://www.mk.co.kr/news/stock/12194561",
+      "published": "2026-11-03T11:33:54+09:00",
+      "keywords": [
+        "지분",
+        "경영권",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "Beijing Reins In IPO Rush After AI Concerns Hit Stock Market",
+      "link": "https://www.wsj.com/finance/stocks/beijing-reins-in-ipo-rush-after-ai-concerns-hit-stock-market-d6abe32b?mod=rss_markets_main",
+      "published": "2026-11-03T22:02:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Docusign Acquires Suplari to Accelerate AI-Powered Contract Management for Procurement",
+      "link": "https://www.prnewswire.com/news-releases/docusign-acquires-suplari-to-accelerate-ai-powered-contract-management-for-procurement-302927235.html",
+      "published": "2026-11-03T23:00:00+09:00",
+      "keywords": [
+        "acquires",
+        "acquisition"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "삼성생명, 에스원 지분 공개매수 참여…\"금산법 리스크 해소\"",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/03/2026110380188.html",
+      "published": "2026-11-03T17:47:39+09:00",
+      "keywords": [
+        "매각",
+        "지분"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "호반과 지분 경쟁 나선 조원태 회장…증권가, 주담대 넘어 거래 기회 '고심'",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/03/2026110380107.html",
+      "published": "2026-11-03T14:42:17+09:00",
+      "keywords": [
+        "지분",
+        "경영권"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "중소형사 틈 낀 '4조' 한화생명…'저PBR 낙인'에 상속세 뇌관",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/02/2026110280168.html",
+      "published": "2026-11-03T07:00:00+09:00",
+      "keywords": [
+        "경영권",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "비트맥스, 215억원 유상증자…한국첨단소재에 제3자배정",
+      "link": "https://www.yna.co.kr/view/AKR20261103159900008",
+      "published": "2026-11-03T17:06:01+09:00",
+      "keywords": [
+        "유상증자",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "장기 기관투자자 미리 확보한다…국내 IPO 공모주 '단타' 개선",
+      "link": "https://www.yna.co.kr/view/AKR20261103122100002",
+      "published": "2026-11-03T14:51:58+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "앤트로픽 투자자들 \"기업가치 1.5조달러로 낮춰라\"",
+      "link": "https://www.yna.co.kr/view/AKR20261103038300009",
+      "published": "2026-11-03T09:28:59+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "한울앤제주, 22억원 규모 유상증자 실시",
+      "link": "https://www.mk.co.kr/news/stock/12195165",
+      "published": "2026-11-03T17:56:24+09:00",
+      "keywords": [
+        "유상증자",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "비트맥스, 216억원 규모 유상증자 실시",
+      "link": "https://www.mk.co.kr/news/stock/12195166",
+      "published": "2026-11-03T17:56:24+09:00",
+      "keywords": [
+        "유상증자",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "휘닉스중앙 이르면 16일 본입찰",
+      "link": "https://www.mk.co.kr/news/stock/12194986",
+      "published": "2026-11-03T17:02:42+09:00",
+      "keywords": [
+        "인수",
+        "본입찰"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "JTBC 9일 매각 공고...인수전 흥행 청신호",
+      "link": "https://www.mk.co.kr/news/stock/12194974",
+      "published": "2026-11-03T16:54:50+09:00",
+      "keywords": [
+        "인수",
+        "매각"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "IPO 공모주 ‘단타’ 막는다…장투 기관에 물량 사전배정",
+      "link": "https://www.mk.co.kr/news/stock/12194964",
+      "published": "2026-11-03T16:45:56+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "Chinese retail giant JD.com cleared to buy Germany’s Ceconomy",
+      "link": "https://www.ft.com/content/9f71bc39-fef2-4af1-a2e4-b2ff17aa5641?syn-25a6b1a6=1",
+      "published": "2026-11-03T21:20:09+09:00",
+      "keywords": [
+        "to buy",
+        "deal"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "Menopause specialist sold in €2.6bn private equity deal",
+      "link": "https://www.ft.com/content/79867d48-6d4a-4e5e-ba62-105f7181f6b1?syn-25a6b1a6=1",
+      "published": "2026-11-03T18:45:05+09:00",
+      "keywords": [
+        "private equity",
+        "deal"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "Carl Icahn’s CVR Energy Strikes $4 Billion Deal for Two Marathon Refineries",
+      "link": "https://www.wsj.com/business/deals/carl-icahns-cvr-energy-near-over-4-billion-deal-for-marathon-refineries-e8487579?mod=rss_markets_main",
+      "published": "2026-11-03T23:33:00+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "Oil Tumbles, but Stocks Fail To Launch",
+      "link": "https://www.wsj.com/finance/investing/oil-tumbles-but-stocks-fail-to-launch-90972f94?mod=rss_markets_main",
+      "published": "2026-11-03T06:16:00+09:00",
+      "keywords": [
+        "acquisition"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Foodtastic Makes Hostile Bid for Rival MTY Food After Being Rejected",
+      "link": "https://www.wsj.com/business/foodtastic-makes-hostile-bid-for-rival-mty-food-after-being-rejected-1ff25f82?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-04T00:25:00+09:00",
+      "keywords": [
+        "bid for"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Trump Family-Linked Mining Venture Aims to Go Public in $2 Billion Deal",
+      "link": "https://www.wsj.com/finance/trump-family-linked-mining-venture-aims-to-go-public-in-2-billion-deal-38d85946?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-02T21:00:00+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Intesa Raises Profit Guidance as Monte Dei Paschi Bid Nears",
+      "link": "https://www.wsj.com/business/earnings/intesa-raises-profit-guidance-as-takeover-of-monte-dei-paschi-nears-dd194dcf?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-03T22:39:00+09:00",
+      "keywords": [
+        "to buy"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Opinion | Trump’s Merkel Strategy on Russia",
+      "link": "https://www.wsj.com/opinion/europe-russian-gas-lng-trump-administration-angela-merkel-nord-stream-79ddd89e?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-03T07:43:00+09:00",
+      "keywords": [
+        "to buy"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Opinion | Abigail Spanberger’s Power Play",
+      "link": "https://www.wsj.com/opinion/abigail-spanberger-dominion-nextera-energy-virginia-5f11925d?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-03T07:41:00+09:00",
+      "keywords": [
+        "merger"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "CFOs, Businesses Grapple with Midterm Uncertainty; Apple Beats Expectations",
+      "link": "https://www.wsj.com/cfo-journal/cfos-businesses-grapple-with-midterm-uncertainty-apple-beats-expectations-e1d80901?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-03T21:36:00+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Tech, Media & Telecom Roundup: Market Talk",
+      "link": "https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-49ef235d?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-03T07:21:00+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "\"너무 비싸게 샀나\"…마벨, 루멘텀 인수발표 후 급락",
+      "link": "https://www.hankyung.com/article/2026110336551",
+      "published": "2026-11-03T17:54:12+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "'AI 실탄 확보' 나선 메타·오라클, 지분 희석·이자부담에 주가 하락",
+      "link": "https://www.hankyung.com/article/2026110336541",
+      "published": "2026-11-03T17:53:37+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "한진칼, 경영권 분쟁 가능성에 상한가…남은 변수 3가지",
+      "link": "https://www.hankyung.com/article/2026110336731",
+      "published": "2026-11-03T17:48:14+09:00",
+      "keywords": [
+        "경영권"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "'경영권 분쟁'에 한진칼 단숨에 상한가…호반그룹의 속내는?",
+      "link": "https://www.hankyung.com/article/202611032791i",
+      "published": "2026-11-03T16:42:47+09:00",
+      "keywords": [
+        "경영권"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "중동으로 간 K방산·제조 ETF...한화운용, 아부다비 증시 상장",
+      "link": "https://www.hankyung.com/article/202611033051i",
+      "published": "2026-11-03T15:14:38+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "\"엔비디아도 극찬했는데\"…154조 '메가급 합병'에 주가 급락, 왜",
+      "link": "https://www.hankyung.com/article/202611032765i",
+      "published": "2026-11-03T14:58:34+09:00",
+      "keywords": [
+        "합병"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "균열 난 삼성 독주…KODEX·TIGER '1등 자존심' 싸움 재점화",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/02/2026110280076.html",
+      "published": "2026-11-03T07:00:00+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "엔비디아, 네이버 투자금 1조3천412억원 확정…지분율 4.13%",
+      "link": "https://www.yna.co.kr/view/AKR20261103176300017",
+      "published": "2026-11-03T18:42:14+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Australia Central Bank Raises Interest Rates to Highest Level in 18 Years",
+      "link": "https://www.wsj.com/economy/central-banking/australias-rba-raises-interest-rates-to-highest-level-in-18-years-5be0979a?mod=rss_socialeconomyfeed",
+      "published": "2026-11-03T14:25:00+09:00",
+      "keywords": [
+        "interest rate",
+        "inflation",
+        "central bank"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "China Stock Market’s Hidden Problem: Foreign Investors Get a Different Truth",
+      "link": "https://www.wsj.com/world/china/china-stock-markets-hidden-problem-foreign-investors-get-a-different-truth-a95ea686?mod=rss_worldnews",
+      "published": "2026-11-03T20:55:00+09:00",
+      "keywords": [
+        "GDP",
+        "China"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "The sleeper inflation issue in the midterms: health Insurance. Read more in today’s WSJ Economics newsletter:",
+      "link": "https://www.wsj.com/finance/investing/health-insurance-is-the-sleeper-inflation-issue-fea899df?mod=rss_socialeconomyfeed",
+      "published": "2026-11-03T20:00:00+09:00",
+      "keywords": [
+        "inflation",
+        "China"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "China’s Central Bank Tweaks Forex Reserve Rules to Steady Yuan",
+      "link": "https://www.wsj.com/economy/central-banking/chinas-central-bank-tweaks-forex-reserve-rules-to-steady-yuan-ad7ca0a2?mod=rss_socialeconomyfeed",
+      "published": "2026-11-03T10:38:00+09:00",
+      "keywords": [
+        "central bank",
+        "China"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "South Korea Inflation Remained Above Target in October",
+      "link": "https://www.wsj.com/economy/south-korea-inflation-eases-to-2-8-in-october-still-above-target-3d4069db?mod=rss_socialeconomyfeed",
+      "published": "2026-11-03T08:34:00+09:00",
+      "keywords": [
+        "inflation",
+        "central bank"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "호주 기준금리 4.85%로 인상…18년 만에 최고치",
+      "link": "https://www.hankyung.com/article/2026110339777",
+      "published": "2026-11-03T21:48:35+09:00",
+      "keywords": [
+        "금리",
+        "기준금리"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "The Little-Known Chinese Bank in the Middle of Iranian and Russian Money Flows",
+      "link": "https://www.wsj.com/world/the-little-known-chinese-bank-in-the-middle-of-iranian-and-russian-money-flows-9e76173b?mod=rss_worldnews",
+      "published": "2026-11-04T00:55:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "U.S. Strikes Iran’s Qeshm Island as Trump Talks Down War Risks",
+      "link": "https://www.wsj.com/world/middle-east/u-s-strikes-irans-qeshm-island-as-trump-talks-down-war-risks-79d73d3d?mod=rss_worldnews",
+      "published": "2026-11-03T11:38:00+09:00",
+      "keywords": [
+        "war"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Swiss Inflation Jumps to Highest Since 2023 as Energy Costs Climb",
+      "link": "https://www.wsj.com/economy/global/swiss-inflation-jumps-to-highest-since-2023-on-imported-energy-costs-5da88199?mod=rss_socialeconomyfeed",
+      "published": "2026-11-03T17:49:00+09:00",
+      "keywords": [
+        "inflation"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "'NIM'의 배신…금리 올라도 울상인 은행들",
+      "link": "https://www.hankyung.com/article/2026110336201",
+      "published": "2026-11-03T17:35:11+09:00",
+      "keywords": [
+        "금리"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "'중동 수출' 신차 올들어 25% 줄었다",
+      "link": "https://www.hankyung.com/article/2026110336681",
+      "published": "2026-11-03T17:33:58+09:00",
+      "keywords": [
+        "수출"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "같은 고유가, 다른 금리…호주·캐나다 올리고 美·유럽 멈췄다 [김주완의 글로벌머니 X파일]",
+      "link": "https://www.hankyung.com/article/202611033138i",
+      "published": "2026-11-03T17:00:05+09:00",
+      "keywords": [
+        "금리"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    }
+  ]
+}
