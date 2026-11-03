@@ -1,21 +1,21 @@
 {
- "run_at": "2026-11-03T02:39:36+09:00",
+ "run_at": "2026-11-03T22:00:26+09:00",
  "items": {
-  "KOSPI": "0일 추가",
-  "KOSDAQ": "0일 추가",
-  "KRX300": "0일 추가",
-  "005930": "삼성전자 0일 추가",
-  "000660": "SK하이닉스 0일 추가",
-  "089860": "롯데렌탈 0일 추가",
-  "260870": "SK시그넷 0일 추가",
-  "104700": "한국철강 0일 추가",
-  "180640": "한진칼 243일 추가"
+  "KOSPI": "1일 추가",
+  "KOSDAQ": "1일 추가",
+  "KOSDAQ150": "1일 추가",
+  "KRX300": "1일 추가",
+  "000660": "SK하이닉스 1일 추가",
+  "089860": "롯데렌탈 1일 추가",
+  "034730": "SK 1일 추가",
+  "260870": "SK시그넷 1일 추가",
+  "001940": "KISCO홀딩스 1일 추가",
+  "104700": "한국철강 1일 추가",
+  "180640": "한진칼 1일 추가"
  },
  "errors": [
   "KOSPI200: HTTP 403: {\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"retu",
-  "KOSDAQ150: HTTP 403: {\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"retu",
-  "034730 SK: HTTP 403: {\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"retu",
-  "001940 KISCO홀딩스: HTTP 403: {\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"retu"
+  "005930 삼성전자: HTTP 403: {\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"retu"
  ],
  "endpoints": {
   "index": "GetMarketIndexInfoService_V2/getStockMarketIndex_V2",
