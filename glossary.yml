@@ -327,6 +327,19 @@
   related: [블록딜]
   memo: ""
 
+- id: third-party-allotment
+  term: 제3자배정 유상증자
+  en: Third-Party Allotment
+  category: 자금 조달
+  match: [제3자배정 유상증자, 제3자배정]
+  aliases: [3자배정]
+  short: 기존 주주가 아니라 회사가 정한 특정 투자자에게만 새 주식을 파는 방식. 그 투자자가 새로 주주가 되고, 기존 주주의 지분율은 낮아진다.
+  more: 전략적 파트너를 주주로 들이거나 급히 자금을 구할 때 쓴다. 특정인에게만 주식을 주는 것이라 발행 가격이 공정한지가 자주 쟁점이 된다.
+  example: NVIDIA가 네이버의 제3자배정 유상증자로 1조 3412억 원을 넣고 지분 4.13%를 받게 됐다 (보도 기준).
+  deal: 2026-07-27-nvidia-naver
+  related: [유상증자]
+  memo: ""
+
 - id: block-deal
   term: 블록딜
   en: Block Deal
@@ -457,6 +470,19 @@
   aliases: [홀딩스]
   short: 다른 회사들의 지분을 갖고 그 회사들을 지배하는 것을 주된 일로 하는 회사. 국내 대기업 그룹 구조의 꼭대기에 있는 경우가 많다.
   related: [중복상장 디스카운트, 완전자회사(화)]
+  memo: ""
+
+- id: fabless
+  term: 팹리스
+  en: Fabless
+  category: 참여자·전략
+  match: [팹리스, Fabless, fabless]
+  aliases: [반도체 설계 전문 회사]
+  short: 반도체 공장(팹)을 갖지 않고 칩 설계만 하는 회사. 실제 생산은 TSMC 같은 위탁생산 회사에 맡긴다.
+  more: 공장을 짓는 데 드는 막대한 돈이 들지 않아 설계 실력에 집중할 수 있다. 반대로 생산은 다른 회사 일정과 가격에 기대야 한다. 칩을 맡아 만들어 주는 회사는 파운드리라고 부른다.
+  example: Marvell Technology는 데이터센터용 반도체를 설계하는 팹리스로, 광통신 부품업체 Lumentum 인수에 나섰다.
+  deal: 2026-11-02-marvell-technology-lumentum
+  related: []
   memo: ""
 
 # ---------------- 공시·규제

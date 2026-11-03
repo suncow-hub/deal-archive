@@ -48,3 +48,4 @@
 
 ## 관련 딜·뉴스
 - [Thrive Holdings, ADT를 지분가치 76억 달러(EV 153억 달러)에 인수해 비상장화](../2026/2026-10-29-thrive-holdings-adt.md) — Goldman Sachs·Evercore가 자문사로 함께 등장
+- [CVR Energy, Marathon Petroleum의 정유소 2곳과 판매사업을 약 42억 달러에 인수](../2026/2026-11-03-cvr-energy-marathon-refineries.md) — 비슷한 규모의 미국 에너지 자산 인수

@@ -45,3 +45,4 @@ LNG Canada 프로젝트 지분을 직접 사는 것이 아니라, 그 지분을 
 - 2026-11-02: Blackstone 주도 컨소시엄의 투자 계약이 발표됐다.
 
 ## 관련 딜·뉴스
+- [CVR Energy, Marathon Petroleum의 정유소 2곳과 판매사업을 약 42억 달러에 인수](../2026/2026-11-03-cvr-energy-marathon-refineries.md) — 같은 주에 나온 에너지 자산 매각

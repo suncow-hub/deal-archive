@@ -787,3 +787,141 @@ Anthropic:
     points:
       - "샘표식품에 흡수합병돼 소멸 예정 (샘표 1주당 샘표식품 2.0881235주)"
     as_of: "2026-11-03"
+NVIDIA:
+  type: 기업
+  country: 미국
+  aliases: [엔비디아, Nvidia]
+  ticker: "NASDAQ:NVDA"
+  profile:
+    about: "AI 학습·추론에 쓰이는 GPU를 설계하는 미국 반도체 회사."
+    business: "데이터센터용 GPU·네트워킹, 게임용 그래픽카드, AI 소프트웨어"
+    edge: "AI 연산용 GPU와 이를 쓰는 소프트웨어 생태계(CUDA)"
+    owner: "나스닥 상장사 (지분 분산)"
+    points:
+      - "2026-11 네이버 제3자배정 유상증자에 1조 3412억 원 투자 확정, 지분 4.13%(보도 기준)"
+    as_of: "2026-11-04"
+네이버:
+  type: 기업
+  country: 한국
+  aliases: [NAVER, Naver]
+  krx: "035420"
+  profile:
+    about: "국내 최대 검색 포털을 운영하는 인터넷 플랫폼 회사."
+    business: "검색·광고, 커머스, 핀테크, 웹툰 등 콘텐츠, 클라우드·AI"
+    edge: "국내 검색 점유율과 자체 AI 모델·데이터센터 역량"
+    owner: "유가증권시장 상장사. 국민연금이 최대주주(2026-08 기준, 보도)"
+    points:
+      - "NVIDIA가 제3자배정 유상증자로 지분 4.13%를 받아 3대 주주가 될 예정(보도 기준)"
+    as_of: "2026-11-04"
+CVR Energy:
+  type: 기업
+  country: 미국
+  aliases: [CVR]
+  ticker: "NYSE:CVI"
+  profile:
+    about: "미국 중부에서 정유소와 비료 사업을 하는 에너지 회사."
+    business: "석유 정제·판매, 질소 비료(자회사 CVR Partners)"
+    edge: "미국 내륙 원유를 가까이서 조달하는 중부 정유 거점"
+    owner: "뉴욕증권거래소 상장사. 칼 아이칸 측이 지배주주"
+    points:
+      - "2026-11 Marathon Petroleum 정유소 2곳을 약 42억 달러에 인수 계약, 처리량이 약 두 배로"
+    as_of: "2026-11-04"
+Marathon Petroleum:
+  type: 기업
+  country: 미국
+  aliases: [마라톤페트롤리엄, MPC]
+  ticker: "NYSE:MPC"
+  profile:
+    about: "미국 최대급 정유 회사."
+    business: "석유 정제, 연료 판매, 미드스트림(자회사 MPLX)"
+    edge: "미국 전역에 걸친 대형 정유소 네트워크"
+    owner: "뉴욕증권거래소 상장사 (지분 분산)"
+    points:
+      - "2026-11 St. Paul Park·Mandan 정유소와 중북부 판매사업을 CVR Energy에 약 42억 달러에 매각 계약"
+    as_of: "2026-11-04"
+St. Paul Park Refinery:
+  type: 기업
+  country: 미국
+  aliases: [St. Paul Park 정유소]
+  profile:
+    about: "미국 미네소타주에 있는 하루 10.5만 배럴 규모 정유소."
+    business: "석유 정제"
+    edge: "미국 중북부 연료 판매망에 공급하는 내륙 정유 거점"
+    owner: "Marathon Petroleum 소유. CVR Energy가 인수 계약(2026-11)"
+    as_of: "2026-11-04"
+Mandan Refinery:
+  type: 기업
+  country: 미국
+  aliases: [Mandan 정유소]
+  profile:
+    about: "미국 노스다코타주에 있는 하루 7.2만 배럴 규모 정유소."
+    business: "석유 정제"
+    edge: "미국 중북부 연료 판매망에 공급하는 내륙 정유 거점"
+    owner: "Marathon Petroleum 소유. CVR Energy가 인수 계약(2026-11)"
+    as_of: "2026-11-04"
+Trafigura:
+  type: 기업
+  country: 싱가포르
+  aliases: [트라피구라, Trafigura US Holdings]
+  profile:
+    about: "석유·금속 등 원자재를 사고파는 글로벌 트레이딩 회사."
+    business: "원유·석유제품·금속·광물 트레이딩, 물류"
+    edge: "전 세계 원자재 조달·운송망"
+    owner: "비상장. 임직원 소유 구조"
+    points:
+      - "CVR Energy의 Marathon 정유소 인수에 8억 달러 지분 투자"
+    as_of: "2026-11-04"
+Barclays:
+  type: 재무 자문사
+  country: 유럽
+  aliases: [바클레이즈]
+  profile:
+    about: "영국에 본사를 둔 대형 은행·투자은행."
+    business: "투자은행(M&A 자문, 인수금융), 소매·기업 금융"
+    edge: "에너지 업종 자문과 인수금융을 함께 제공"
+    owner: "런던증권거래소 상장사 (지분 분산)"
+    as_of: "2026-11-04"
+Vinson & Elkins:
+  type: 법률 자문사
+  country: 미국
+  aliases: [V&E]
+  profile:
+    about: "미국 휴스턴 기반 로펌."
+    business: "에너지·인프라 M&A, 자본시장, 소송"
+    edge: "에너지 업종 거래 경험"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-04"
+Proskauer Rose:
+  type: 법률 자문사
+  country: 미국
+  aliases: [Proskauer]
+  profile:
+    about: "미국 뉴욕 기반 로펌."
+    business: "M&A, 사모펀드, 금융, 소송"
+    edge: "사모펀드·자산운용 업계 고객 기반"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-04"
+JD.com:
+  type: 기업
+  country: 중국
+  aliases: [징둥, 京东, JD]
+  ticker: "NASDAQ:JD"
+  profile:
+    about: "자체 물류망을 갖춘 중국 대형 전자상거래 회사."
+    business: "온라인 직매입 유통, 물류, 헬스케어 등"
+    edge: "직접 운영하는 물류·배송 인프라"
+    owner: "나스닥·홍콩 상장사"
+    points:
+      - "Ceconomy 공개매수로 지분 59.8% 확보, 2026-11 EU 승인 보도"
+    as_of: "2026-11-04"
+Ceconomy:
+  type: 기업
+  country: 유럽
+  aliases: [세코노미, MediaMarktSaturn, CECONOMY AG]
+  ticker: "XETR:CEC"
+  profile:
+    about: "MediaMarkt·Saturn을 운영하는 독일 가전·전자제품 유통 회사."
+    business: "가전·전자제품 오프라인·온라인 판매"
+    edge: "유럽 여러 나라에 걸친 대형 가전 매장망"
+    owner: "프랑크푸르트 상장사. JD.com이 공개매수로 59.8% 확보(EU 승인 보도, 종결 여부 확인 안 됨)"
+    as_of: "2026-11-04"
