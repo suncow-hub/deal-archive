@@ -326,9 +326,16 @@ def gemini_score(items: list[dict], meta: dict) -> bool:
         models = pick_model(client) if not os.environ.get("GEMINI_MODEL") else [os.environ["GEMINI_MODEL"]]
         lines = [f'{i}. [{it["source"]}] {it["title"]} | {it["_snippet"][:200]}' for i, it in enumerate(items)]
         results, last_err, model = None, None, None
-        # 혼잡(503)·한도(429) 오류는 잠시 쉬었다 재시도하고, 그래도 안 되면 다음 모델로
-        for model in models[:3]:
-            for attempt in range(3):
+        # 혼잡(503)·한도(429) 오류는 서버 쪽 일시 문제인 경우가 많다. 새벽이라 시간 여유가 있으니
+        # 모델들을 한 바퀴씩 돌며 시도하고, 바퀴 사이에 1·2·4·8분씩 점점 길게 쉰다 (최대 약 15분 대기).
+        waits = [0, 60, 120, 240, 480]
+        tries = 0
+        for rnd, wait in enumerate(waits):
+            if wait:
+                log(f"[Gemini] 서버 혼잡 → {wait // 60}분 쉬고 다시 시도 ({rnd + 1}/{len(waits)}번째 바퀴)")
+                time.sleep(wait)
+            for model in models[:3]:
+                tries += 1
                 try:
                     resp = client.models.generate_content(
                         model=model,
@@ -339,13 +346,14 @@ def gemini_score(items: list[dict], meta: dict) -> bool:
                     break
                 except Exception as e:  # noqa: BLE001
                     last_err = e
-                    retryable = any(c in str(e) for c in ("503", "429", "UNAVAILABLE", "RESOURCE_EXHAUSTED"))
-                    log(f"[Gemini] {model} 시도 {attempt + 1} 실패: {type(e).__name__}")
-                    if not retryable:
-                        break
-                    time.sleep(20 * (attempt + 1))
+                    log(f"[Gemini] {model} 실패 ({rnd + 1}번째 바퀴): {type(e).__name__}")
+                    if isinstance(e, (json.JSONDecodeError, ValueError)):
+                        continue   # 응답 형식이 깨진 경우: 다음 모델로
+                    if not any(c in str(e) for c in ("503", "429", "UNAVAILABLE", "RESOURCE_EXHAUSTED", "500", "INTERNAL")):
+                        raise   # 키 오류 같은 건 기다려도 안 풀린다
             if results is not None:
                 break
+        meta["gemini_tries"] = tries
         if results is None:
             raise last_err or RuntimeError("채점 실패")
         meta["gemini_model"] = model

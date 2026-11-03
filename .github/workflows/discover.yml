@@ -16,7 +16,7 @@ concurrency:
 jobs:
   discover:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30   # Gemini 서버 혼잡 시 최대 약 15분 재시도
     steps:
       # 외부 실행 도구는 커밋 해시로 고정 (태그가 바뀌어도 영향 없음)
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1

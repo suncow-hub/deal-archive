@@ -39,8 +39,8 @@ python3 scripts/lookup.py term <용어들>        # 용어집에 있는지
 
 ```bash
 gh api -X POST repos/suncow-hub/deal-archive/actions/workflows/discover.yml/dispatches -f ref=main
-# 끝날 때까지 30초 간격으로 확인 (최대 20분)
-for i in $(seq 1 40); do
+# 끝날 때까지 30초 간격으로 확인 (최대 35분: Gemini 서버가 붐비면 수집 단계가 최대 약 15분 재시도한다)
+for i in $(seq 1 70); do
   timeout 30 tail -f /dev/null
   s=$(gh api 'repos/suncow-hub/deal-archive/actions/workflows/discover.yml/runs?per_page=1' --jq '.workflow_runs[0] | "\(.status) \(.conclusion)"')
   case "$s" in completed*) echo "$s"; break;; esac
