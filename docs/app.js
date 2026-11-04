@@ -52,6 +52,7 @@
     $app.onclick = null; $app.oninput = null; $app.onchange = null;
     if (params.get("edit") === "1") setOwner(true);
     if (params.get("edit") === "0") setOwner(false);
+    setTimeout(() => countView(parts), 0);   // 화면 제목이 정해진 뒤에 센다
     if (parts[0] === "deal" && parts[1]) return viewDeal(parts.slice(1).join("/"));
     if (parts[0] === "entity" && parts[1]) return viewEntity(parts.slice(1).join("/"));
     if (parts[0] === "entities") return viewEntities();
@@ -65,6 +66,23 @@
     if (parts[0] === "briefings") return viewBriefings();
     if (parts[0] === "briefing" && parts[1]) return viewBriefing(parts[1]);
     return viewHome(params);
+  }
+
+  // ---------------------------------------------------------------- 방문 통계
+  // 주소가 #/... 로만 바뀌는 사이트라 페이지를 옮길 때마다 직접 센다.
+  // 주인 표시가 있는 기기(편집 버튼이 보이는 기기)와 자동 점검 브라우저는 세지 않는다.
+  // 지원처별 링크(…/deal-archive/?ref=회사)는 GoatCounter가 주소의 ref 값을 함께 기록한다.
+  let lastCounted = "";
+  function countView(parts, tries = 0) {
+    if (isOwner() || navigator.webdriver) return;
+    const path = "/" + parts.map(encodeURIComponent).join("/");
+    if (path === lastCounted) return;
+    if (!window.goatcounter || !window.goatcounter.count) {
+      if (tries < 20) setTimeout(() => countView(parts, tries + 1), 500);   // 통계 스크립트가 아직 안 받아졌으면 잠시 기다림
+      return;
+    }
+    lastCounted = path;
+    try { window.goatcounter.count({ path, title: document.title }); } catch { /* 통계 실패는 무시 */ }
   }
 
   // ---------------------------------------------------------------- 필터
