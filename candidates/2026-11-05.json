@@ -1,0 +1,742 @@
+{
+  "meta": {
+    "run_at": "2026-11-05T02:12:57.851003+09:00",
+    "window_start": "2026-11-03T20:12:57.851003+09:00",
+    "sources": {
+      "환율": "1일 추가 (최신 2026-11-04)",
+      "OpenDART 상세": "0건 성공, 2건 실패",
+      "OpenDART": "8건",
+      "WSJ Markets": "3/61",
+      "WSJ U.S. Business": "5/85",
+      "PR Newswire M&A": "15/20",
+      "한경 증권": "5/50",
+      "인베스트조선": "17/50",
+      "연합뉴스 마켓+": "25/120",
+      "매일경제 증권": "8/50",
+      "조선비즈": "1/100",
+      "FT M&A": "3/25",
+      "CNBC Business": "2/30",
+      "WSJ World News": "10/72",
+      "WSJ Economy": "5/36",
+      "한경 경제": "2/50",
+      "한경 국제": "0/50"
+    },
+    "gemini": "실패: RemoteProtocolError: Server disconnected without sending a response.",
+    "counts": {
+      "deal": 40,
+      "macro": 12,
+      "dropped": 39
+    }
+  },
+  "items": [
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(아이엘) [첨부정정]주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104000217",
+      "published": "2026-11-04T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(한진칼) 최대주주변경",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104800730",
+      "published": "2026-11-04T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(한진칼) 최대주주등소유주식변동신고서(최대주주변경시)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104800732",
+      "published": "2026-11-04T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(스모트로닉) 최대주주변경",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104900424",
+      "published": "2026-11-04T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "다우·CJ컨소시엄, '5200억' 중앙일보 신주인수계약 체결",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/04/2026110480225.html",
+      "published": "2026-11-04T18:09:17+09:00",
+      "keywords": [
+        "인수",
+        "합병",
+        "지분",
+        "유상증자",
+        "우선협상대상자"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "DL케미칼, 글랜우드PE와 카리플렉스 매각 MOU 체결",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/04/2026110480221.html",
+      "published": "2026-11-04T17:55:06+09:00",
+      "keywords": [
+        "인수",
+        "매각",
+        "지분"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "SK㈜, SK에코플랜트 잔여 지분 전량 인수…1조4462억원 투입해 완전자회사 편입 추진",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/04/2026110480207.html",
+      "published": "2026-11-04T17:21:36+09:00",
+      "keywords": [
+        "인수",
+        "지분",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "입장문 공방만 몇 번째…골프존카운티 매각에서도 잡음 빚는 MBK",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/04/2026110480064.html",
+      "published": "2026-11-04T10:34:49+09:00",
+      "keywords": [
+        "인수",
+        "매각",
+        "경영권"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "DL케미칼, 의료용 고무 자회사 글랜우드PE에 매각",
+      "link": "https://www.mk.co.kr/news/stock/12196608",
+      "published": "2026-11-04T17:27:40+09:00",
+      "keywords": [
+        "매각",
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "CNBC Business",
+      "kind": "deal",
+      "title": "Kraft Heinz to divest its North American coffee business in $650 million deal",
+      "link": "https://www.cnbc.com/2026/11/04/kraft-heinz-coffee-business-one-rock-deal.html",
+      "published": "2026-11-05T00:35:23+09:00",
+      "keywords": [
+        "private equity",
+        "divest",
+        "deal"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "Mark Walter in Talks to Sell Cadillac F1 Stake to Red Sox, Liverpool Owners",
+      "link": "https://www.wsj.com/sports/cadillac-formula-one-mark-walter-john-henry-af86c109?mod=rss_markets_main",
+      "published": "2026-11-04T04:33:00+09:00",
+      "keywords": [
+        "in talks",
+        "stake"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "Andersons to Buy Harvestone Low Carbon Partners for $915 Million",
+      "link": "https://www.wsj.com/pro/private-equity/andersons-to-buy-harvestone-low-carbon-partners-for-915-million-4dc82e7b?mod=rss_markets_main",
+      "published": "2026-11-04T23:50:00+09:00",
+      "keywords": [
+        "to buy",
+        "deal"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "IPO·유증 이어 PRS까지…기업 \"신사업 무슨 돈으로\"",
+      "link": "https://www.hankyung.com/article/2026110463421",
+      "published": "2026-11-04T17:55:55+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "파이낸셜타임스 \"中, 자국 IB들에게 IPO 주관 중단시켜\"",
+      "link": "https://www.hankyung.com/article/202611045235i",
+      "published": "2026-11-04T12:18:43+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "김동선, 한화M&S 공개매수 목표 미달…김동관·김동원 지분 인수로 최대주주 등극",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/04/2026110480143.html",
+      "published": "2026-11-04T15:05:33+09:00",
+      "keywords": [
+        "인수",
+        "지분"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "전력망에 73조 쏟아야 하는 한전…'알짜 발전소' 팔아도 빚더미",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/03/2026110380098.html",
+      "published": "2026-11-04T07:00:00+09:00",
+      "keywords": [
+        "매각",
+        "지분"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "DL케미칼, 자회사 카리플렉스 글랜우드PE에 매각키로",
+      "link": "https://www.yna.co.kr/view/AKR20261104169400003",
+      "published": "2026-11-04T18:32:29+09:00",
+      "keywords": [
+        "매각",
+        "사모펀드"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "다우기술 \"중앙일보 주식 1천900억원어치 취득…지분율 34.4%\"",
+      "link": "https://www.yna.co.kr/view/AKR20261104162300008",
+      "published": "2026-11-04T17:47:01+09:00",
+      "keywords": [
+        "지분",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "프로티나, 73억원 제3자배정 유상증자",
+      "link": "https://www.yna.co.kr/view/AKR20261104158300008",
+      "published": "2026-11-04T17:23:32+09:00",
+      "keywords": [
+        "유상증자",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "CJ·신세계·다우키움 컨소시엄 … 5200억에 중앙일보 인수 계약",
+      "link": "https://www.mk.co.kr/news/stock/12196795",
+      "published": "2026-11-04T19:30:26+09:00",
+      "keywords": [
+        "인수",
+        "매각"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "JTBC매각도 흥행 기대감 고조…대형 원매자 줄이어",
+      "link": "https://www.mk.co.kr/news/stock/12196505",
+      "published": "2026-11-04T16:26:07+09:00",
+      "keywords": [
+        "인수",
+        "매각"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "CJ-다우키움, 중앙일보 5200억에 인수계약 체결",
+      "link": "https://www.mk.co.kr/news/stock/12196430",
+      "published": "2026-11-04T15:36:21+09:00",
+      "keywords": [
+        "인수",
+        "지분"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "조선비즈",
+      "kind": "deal",
+      "title": "‘머스크 합병’에 서학개미만 양도세 내는 이유는?",
+      "link": "https://biz.chosun.com/stock/stock_general/2026/11/05/G5SDCZTDGZQTOZJUGE2GGYRWME/",
+      "published": "2026-11-05T00:35:00+09:00",
+      "keywords": [
+        "인수",
+        "합병"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Empower Brands Makes Unsolicited Bid to Buy Helen of Troy for $1.6 Billion",
+      "link": "https://www.wsj.com/business/deals/empower-brands-makes-unsolicited-bid-to-buy-helen-of-troy-for-1-6-billion-04261692?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-04T22:48:00+09:00",
+      "keywords": [
+        "to buy"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Carl Icahn’s CVR Energy Strikes $4 Billion Deal for Two Marathon Refineries",
+      "link": "https://www.wsj.com/business/deals/carl-icahns-cvr-energy-near-over-4-billion-deal-for-marathon-refineries-e8487579?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-03T23:33:00+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "다우·CJ컨소시엄, 5200억에 중앙일보 신주인수계약",
+      "link": "https://www.hankyung.com/article/2026110465057",
+      "published": "2026-11-04T18:23:40+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "사람인, 중앙일보 주식 714억원어치 취득…지분율 12.9%",
+      "link": "https://www.hankyung.com/article/2026110464397",
+      "published": "2026-11-04T17:48:48+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "NH아문디 \"앤트로픽 상장, AI 산업 재평가 계기\"",
+      "link": "https://www.hankyung.com/article/2026110447726",
+      "published": "2026-11-04T10:04:09+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "중앙일보보다 난이도 높은 JTBC 매각…덩치는 큰데 이익창출은 부족",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/04/2026110480169.html",
+      "published": "2026-11-04T16:26:55+09:00",
+      "keywords": [
+        "매각"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "에스원 공개매수 끝났지만…삼성 금융계열사 지분 정리 셈법은",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/04/2026110480105.html",
+      "published": "2026-11-04T14:26:27+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "미리 사면 추적오차, 늦게 사면 고점…88조 ETF '리밸런싱 딜레마'",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/03/2026110380116.html",
+      "published": "2026-11-04T07:00:00+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "롯데 주력 계열사 줄줄이 '저PBR' 꼬리표…투자성과 부진이 발목",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/03/2026110380059.html",
+      "published": "2026-11-04T07:00:00+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "\"제2의 한진칼·KAI 될라\"…주주명부 샅샅이 살피는 상장사들",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/03/2026110380122.html",
+      "published": "2026-11-04T07:00:00+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "'대기업과 다르다'…자회사 상장 절실한 중견기업들, 내년 주총이 분수령",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/03/2026110380100.html",
+      "published": "2026-11-04T07:00:00+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "SK㈜, SK에코플랜트 주식 공개매수…상장 대신 완전자회사 편입",
+      "link": "https://www.yna.co.kr/view/AKR20261104151900003",
+      "published": "2026-11-04T17:13:41+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "이녹스첨단소재 3분기 영업익 73억원…작년 동기 대비 64.6%↓",
+      "link": "https://www.yna.co.kr/view/AKR20261104142700527",
+      "published": "2026-11-04T16:16:31+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "고려아연 3분기 영업이익 1천417억원…작년 동기 대비 48%↓",
+      "link": "https://www.yna.co.kr/view/AKR20261104142400527",
+      "published": "2026-11-04T16:16:14+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "테슬라·스페이스X 합병시 주식 안팔아도 양도소득세?…서학개미 비상",
+      "link": "https://www.yna.co.kr/view/AKR20261104138700008",
+      "published": "2026-11-04T16:12:23+09:00",
+      "keywords": [
+        "합병"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "세아제강지주 3분기 영업익 134%↑…북미 강관 판매 확대(종합)",
+      "link": "https://www.yna.co.kr/view/AKR20261104110951527",
+      "published": "2026-11-04T15:40:16+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "산일전기 3분기 영업이익 445억원…작년 동기 대비 4.6%↑",
+      "link": "https://www.yna.co.kr/view/AKR20261104131500527",
+      "published": "2026-11-04T15:28:58+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Sweden’s Central Bank Latest to Lift Rates in Response to War",
+      "link": "https://www.wsj.com/pro/central-banking/swedens-central-bank-latest-to-lift-rates-in-response-to-war-17ac133b?mod=rss_worldnews",
+      "published": "2026-11-04T18:46:00+09:00",
+      "keywords": [
+        "interest rate",
+        "war",
+        "central bank"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "New Zealand’s Jobless Rate Climbs Ahead Of Election",
+      "link": "https://www.wsj.com/economy/global/new-zealands-jobless-rate-climbs-ahead-of-election-4873a97a?mod=rss_socialeconomyfeed",
+      "published": "2026-11-04T07:48:00+09:00",
+      "keywords": [
+        "interest rate",
+        "election",
+        "central bank"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Eurozone Inflation Rises to 4%, Driven by Energy Costs",
+      "link": "https://www.wsj.com/economy/global/eurozone-inflation-climbs-again-driven-by-energy-costs-0adbaef3?mod=rss_socialeconomyfeed",
+      "published": "2026-11-04T21:22:00+09:00",
+      "keywords": [
+        "inflation",
+        "central bank"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "What a Democratic Congress Means for Trump’s Foreign-Policy Agenda",
+      "link": "https://www.wsj.com/world/what-a-democratic-congress-means-for-trumps-foreign-policy-agenda-19b05b61?mod=rss_worldnews",
+      "published": "2026-11-05T01:45:00+09:00",
+      "keywords": [
+        "trade"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Democrats Take Congress as Trump Says Iran War Is Partly to Blame for GOP Losses",
+      "link": "https://www.wsj.com/world/democrats-take-congress-as-trump-says-iran-war-is-partly-to-blame-for-gop-losses-b03d4784?mod=rss_worldnews",
+      "published": "2026-11-04T20:03:00+09:00",
+      "keywords": [
+        "war"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Latest U.S.-Canada Trade Talks Yield Progress Toward Pact, Carney Says",
+      "link": "https://www.wsj.com/world/americas/latest-u-s-canada-trade-talks-yield-progress-toward-pact-carney-says-6e43fa73?mod=rss_worldnews",
+      "published": "2026-11-04T07:54:00+09:00",
+      "keywords": [
+        "trade"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Britain Set to Apologize for Role in Trans-Atlantic Slave Trade",
+      "link": "https://www.wsj.com/world/uk/britain-set-to-apologize-for-role-in-trans-atlantic-slave-trade-a7afc8dc?mod=rss_worldnews",
+      "published": "2026-11-04T03:17:00+09:00",
+      "keywords": [
+        "trade"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Opinion | Trump’s New Run at Ukraine Peace",
+      "link": "https://www.wsj.com/opinion/trumps-new-run-at-ukraine-peace-2a03316a?mod=rss_worldnews",
+      "published": "2026-11-04T06:45:00+09:00",
+      "keywords": [
+        "ceasefire"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "‘Broken China’ Review: A Mirage of Growth",
+      "link": "https://www.wsj.com/world/china/broken-china-review-a-mirage-of-growth-67fe6d8e?mod=rss_worldnews",
+      "published": "2026-11-04T05:51:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Canada’s Trade Surplus Widens as Oil, Gold Drive Record Exports",
+      "link": "https://www.wsj.com/economy/trade/canada-trade-surplus-widens-with-rise-in-oil-gold-exports-7ffe4cf9?mod=rss_socialeconomyfeed",
+      "published": "2026-11-05T01:26:00+09:00",
+      "keywords": [
+        "trade"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "U.S. Trade Deficit Contracted in September",
+      "link": "https://www.wsj.com/economy/trade/u-s-trade-deficit-contracted-in-september-e9eeff46?mod=rss_socialeconomyfeed",
+      "published": "2026-11-04T23:12:00+09:00",
+      "keywords": [
+        "trade"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Bank of Canada Gov. Macklem Pledges to Proceed Carefully on Further Rate Increases",
+      "link": "https://www.wsj.com/economy/global/bank-of-canada-gov-macklem-pledges-to-proceed-carefully-on-further-rate-increases-a27c79ee?mod=rss_socialeconomyfeed",
+      "published": "2026-11-04T03:37:00+09:00",
+      "keywords": [
+        "interest rate"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    }
+  ]
+}
