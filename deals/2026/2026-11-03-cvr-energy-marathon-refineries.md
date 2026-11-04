@@ -48,3 +48,4 @@ CVR의 하루 원유 처리량이 약 20.7만 배럴에서 38.4만 배럴로 두
 ## 관련 딜·뉴스
 - [Vistra, Quantum Capital로부터 Cogentrix Energy 인수 완료 (순매입가 약 40억 달러)](../2026/2026-01-05-vistra-cogentrix-energy.md) — 비슷한 규모의 미국 에너지 자산 인수
 - [Blackstone 주도 컨소시엄, 미쓰비시의 LNG Canada 보유 자회사 지분 49.9%에 31억 달러 투자](../2026/2026-11-02-blackstone-mitsubishi-lng-canada.md) — 같은 주에 나온 에너지 자산 매각·지분 투자
+- [The Andersons, ECP로부터 에탄올 업체 Harvestone Low Carbon Partners를 9.15억 달러에 인수](../2026/2026-11-04-andersons-harvestone-low-carbon-partners.md) — 같은 미국 중부 연료 생산 설비 인수

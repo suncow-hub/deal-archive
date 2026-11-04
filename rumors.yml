@@ -4,6 +4,18 @@
 # - status: 미확인 / 사실로 확인 / 부인 / 소멸
 #   (사실로 확인되면 deal 에 딜 노트 id, 30일간 새 소식이 없으면 소멸)
 # - credibility: 낮음 / 중간  (공신력 높은 출처로 확인되면 소문이 아니라 딜 노트로 간다)
+- id: 2026-11-05-fenway-cadillac-f1-stake
+  first_seen: 2026-11-05
+  last_seen: 2026-11-05
+  title: "Mark Walter, Cadillac F1 지분 일부를 Fenway Sports Group 측에 매각 협상설"
+  claim: "Cadillac F1 팀 지분 일부를 Red Sox·Liverpool 소유주 측에 파는 협상이 진행 중이라는 보도가 나왔다."
+  companies: ["Cadillac F1", "Fenway Sports Group"]
+  sources:
+    - {name: "WSJ", url: "https://www.wsj.com/sports/cadillac-formula-one-mark-walter-john-henry-af86c109", credibility: 중간}
+  why_watch: "스포츠 구단 지분이 대체 투자 자산으로 거래되는 흐름의 사례가 될 수 있다."
+  status: 미확인
+  status_note: ""
+  deal: null
 - id: 2026-11-03-cdr-global-payments-buyout
   first_seen: 2026-11-03
   last_seen: 2026-11-03
@@ -37,6 +49,6 @@
   sources:
     - {name: "인베스트조선", url: "https://www.investchosun.com/site/data/html_dir/2026/11/02/2026110280113.html", credibility: 중간}
   why_watch: "사실이면 한진칼 경영권 분쟁이 본격화된다."
-  status: 미확인
-  status_note: ""
-  deal: null
+  status: 사실로 확인
+  status_note: "2026-11-05 확인: 11월 4일 한진칼 최대주주변경 공시로 호반건설 외 3인(20.69%)이 최대주주가 됐다."
+  deal: 2026-11-02-cho-won-tae-hanjin-kal

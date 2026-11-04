@@ -46,3 +46,4 @@ BASF는 9월 주당 22.15유로 제안이 거절된 뒤 주당 24유로로 값�
 
 ## 관련 딜·뉴스
 - [Monte dei Paschi 주주, Intesa 인수 제안에 맞선 방어안 부결](../2026/2026-10-29-intesa-sanpaolo-monte-dei-paschi.md) — 같은 주 유럽에서 진행 중인 비우호적 인수 제안
+- [Spectrum Brands·Oaktree 합작사 Empower Brands, Helen of Troy에 주당 37달러(EV 약 16억 달러) 인수 제안 공개](../2026/2026-11-04-empower-brands-helen-of-troy.md) — 거절된 인수 제안을 높여 다시 내미는 구도

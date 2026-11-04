@@ -925,3 +925,272 @@ Ceconomy:
     edge: "유럽 여러 나라에 걸친 대형 가전 매장망"
     owner: "프랑크푸르트 상장사. JD.com이 공개매수로 59.8% 확보(EU 승인 보도, 종결 여부 확인 안 됨)"
     as_of: "2026-11-04"
+SK에코플랜트:
+  type: 기업
+  country: 한국
+  aliases: [SK ecoplant, SK에코플랜트㈜]
+  profile:
+    about: "SK그룹의 건설·환경·에너지 인프라 계열사."
+    business: "플랜트·건축 시공, 반도체·AI 인프라 관련 사업"
+    edge: "그룹 반도체 공장 건설 등 계열 물량 기반의 인프라 수행 경험"
+    owner: "비상장사. SK㈜가 발행주식 기준 71.2% 보유 (보도 기준)"
+    points:
+      - "2026-11 SK㈜가 잔여 지분 약 25%를 공개매수해 상장 대신 완전자회사화 추진"
+    as_of: "2026-11-05"
+NH투자증권:
+  type: 재무 자문사
+  country: 한국
+  aliases: [NH Investment & Securities]
+  krx: "005940"
+  profile:
+    about: "농협금융그룹 계열의 국내 대형 증권사."
+    business: "IB(인수·주관), 브로커리지, 자산관리"
+    edge: "국내 회사채·주식 발행과 공개매수 주관 실적"
+    owner: "유가증권시장 상장사. NH농협금융지주가 최대주주"
+    as_of: "2026-11-05"
+다우기술:
+  type: 기업
+  country: 한국
+  aliases: [Daou Technology, 다우키움그룹]
+  krx: "023590"
+  profile:
+    about: "다우키움그룹의 IT 서비스 회사이자 키움증권의 지배회사."
+    business: "IT 서비스·솔루션, 전자결제 등 계열사 지배"
+    edge: "그룹 금융·IT 계열사를 거느린 사실상 지주 역할"
+    owner: "유가증권시장 상장사. 다우키움그룹 오너 측이 최대주주"
+    points:
+      - "2026-11 사람인과 함께 중앙일보 신주 약 2,610억 원어치 인수 (다우기술 약 1,898억 원)"
+    as_of: "2026-11-05"
+사람인:
+  type: 기업
+  country: 한국
+  aliases: [사람인에이치알, Saramin]
+  krx: "143240"
+  profile:
+    about: "다우키움그룹 계열 온라인 채용 플랫폼 회사."
+    business: "채용 정보 플랫폼, HR 서비스"
+    edge: "국내 주요 취업 포털 운영"
+    owner: "코스닥 상장사. 다우키움그룹 계열"
+    points:
+      - "2026-11 중앙일보 주식 약 714억 원어치 취득 결정 (보도 기준)"
+    as_of: "2026-11-05"
+CJ:
+  type: 기업
+  country: 한국
+  aliases: [CJ㈜, CJ그룹, CJ Corporation]
+  krx: "001040"
+  profile:
+    about: "CJ그룹의 지주회사."
+    business: "식품·바이오, 엔터테인먼트·미디어, 물류, 유통 계열사 지배"
+    edge: "CJ ENM 등 미디어·콘텐츠 계열사 보유"
+    owner: "유가증권시장 상장사. 이재현 회장 측이 최대주주"
+    points:
+      - "2026-11 신세계와 함께 중앙일보 신주 약 2,590억 원어치 인수, 다우키움 측과 공동경영"
+    as_of: "2026-11-05"
+신세계:
+  type: 기업
+  country: 한국
+  aliases: [㈜신세계, Shinsegae]
+  krx: "004170"
+  profile:
+    about: "백화점과 면세점을 운영하는 신세계그룹 유통 계열사."
+    business: "백화점, 면세점, 패션·화장품 계열사"
+    edge: "국내 대형 백화점 점포망"
+    owner: "유가증권시장 상장사. 정유경 회장 측이 최대주주"
+    points:
+      - "2026-11 중앙일보 신주 인수에 재무적투자자로 참여 (지분 14.1%, 보도 기준)"
+    as_of: "2026-11-05"
+중앙일보:
+  type: 기업
+  country: 한국
+  aliases: [JoongAng Ilbo, 중앙일보㈜]
+  profile:
+    about: "국내 주요 일간지를 발행하는 언론사."
+    business: "신문 발행, 디지털 뉴스"
+    edge: "전국 단위 종합일간지 브랜드"
+    owner: "비상장사. 중앙홀딩스·홍석현 회장 측이 최대주주였으나 신주 발행 후 4%대로 낮아질 예정 (보도 기준)"
+    points:
+      - "2026-06 회사채 기한이익상실 사유 발생, 7월 워크아웃 돌입 (보도 기준)"
+      - "2026-11 다우키움·CJ 컨소시엄과 5,200억 원 신주인수계약"
+    as_of: "2026-11-05"
+하나은행:
+  type: 기업
+  country: 한국
+  aliases: [KEB하나은행, Hana Bank]
+  profile:
+    about: "하나금융그룹의 시중은행."
+    business: "기업·가계 대출, 예금, 외환"
+    edge: "기업금융·외환 분야 영업망"
+    owner: "비상장사. 하나금융지주 100% 자회사"
+    points:
+      - "중앙일보 주채권은행으로 매각을 주도한 것으로 전해짐 (보도 기준)"
+    as_of: "2026-11-05"
+DL케미칼:
+  type: 기업
+  country: 한국
+  aliases: [DL Chemical]
+  profile:
+    about: "DL그룹의 석유화학 계열사."
+    business: "폴리에틸렌 등 석유화학 제품, 합성고무(자회사 Kraton·카리플렉스)"
+    edge: "해외 인수로 확보한 특수 고무·수지 사업"
+    owner: "비상장사. DL그룹 계열"
+    points:
+      - "2026-11 차입 부담을 줄이려 카리플렉스 매각 MOU를 글랜우드PE와 체결"
+    as_of: "2026-11-05"
+카리플렉스:
+  type: 기업
+  country: 한국
+  aliases: [Cariflex]
+  profile:
+    about: "수술용 장갑 등에 쓰이는 의료용 합성고무를 만드는 회사."
+    business: "의료용 합성고무(폴리이소프렌) 생산"
+    edge: "의료용 합성고무 세계 1위로 보도됨"
+    owner: "DL케미칼 자회사"
+    points:
+      - "2026-11 DL케미칼이 지분 100%를 글랜우드PE에 매각 추진, 1조 원 중후반대로 보도"
+    as_of: "2026-11-05"
+글랜우드PE:
+  type: PE·VC
+  country: 한국
+  aliases: [글랜우드프라이빗에쿼티, Glenwood Private Equity, Glenwood PE]
+  profile:
+    about: "대기업 사업부를 떼어 사는 카브아웃 투자를 주로 하는 국내 사모펀드 운용사."
+    business: "경영권 인수(바이아웃)"
+    edge: "대기업 비핵심 사업부 카브아웃 경험"
+    owner: "독립계 운용사"
+    points:
+      - "LG화학 수처리사업부(현 나노H2O) 인수 (보도 기준)"
+      - "2026-11 DL케미칼과 카리플렉스 인수 MOU 체결"
+    as_of: "2026-11-05"
+Empower Brands:
+  type: 기업
+  country: 미국
+  aliases: [Empower Brands Holdings Group]
+  profile:
+    about: "가정용품·개인 생활용품 브랜드를 가진 소비재 회사."
+    business: "가정용품, 개인 관리용품"
+    edge: "Spectrum Brands와 Oaktree의 사업·자금 결합"
+    owner: "비상장사. Spectrum Brands와 Oaktree 펀드가 공동 소유"
+    points:
+      - "2026-11 Helen of Troy에 주당 37달러 인수 제안 공개"
+    as_of: "2026-11-05"
+Spectrum Brands:
+  type: 기업
+  country: 미국
+  aliases: [Spectrum Brands Holdings]
+  ticker: "NYSE:SPB"
+  profile:
+    about: "반려동물용품·가정용품 등을 파는 미국 소비재 회사."
+    business: "반려동물용품, 가정·생활용품"
+    edge: "다수 생활용품 브랜드 포트폴리오"
+    owner: "뉴욕증권거래소 상장사"
+    as_of: "2026-11-05"
+Oaktree Capital Management:
+  type: PE·VC
+  country: 미국
+  aliases: [Oaktree, 오크트리]
+  profile:
+    about: "부실채권·크레딧 투자로 알려진 미국 대체투자 운용사."
+    business: "크레딧, 부실기업 투자, 사모펀드, 부동산"
+    edge: "부실·특수상황 투자 경험"
+    as_of: "2026-11-05"
+Helen of Troy:
+  type: 기업
+  country: 미국
+  aliases: [Helen of Troy Limited, HELE]
+  ticker: "NASDAQ:HELE"
+  profile:
+    about: "생활가전·미용·야외용품 브랜드를 파는 소비재 회사."
+    business: "주방·가정용품, 미용·헤어기기, 야외용품"
+    edge: "여러 중소 브랜드를 인수해 키운 포트폴리오"
+    owner: "나스닥 상장사"
+    points:
+      - "2026-08·10 Empower Brands 인수 제안(34달러·37달러)을 거절했고, 11월 제안이 공개됨"
+    as_of: "2026-11-05"
+The Andersons:
+  type: 기업
+  country: 미국
+  aliases: [Andersons, The Andersons Inc.]
+  ticker: "NASDAQ:ANDE"
+  profile:
+    about: "미국 오하이오에 본사를 둔 곡물 유통·에탄올 생산 기업."
+    business: "곡물 유통, 에탄올·재생연료, 비료"
+    edge: "곡물 조달망과 연결된 에탄올 생산"
+    owner: "나스닥 상장사"
+    points:
+      - "2026-11 Harvestone 인수로 에탄올 생산능력이 연 약 7.3억 갤런으로 늘어날 예정"
+    as_of: "2026-11-05"
+Harvestone Low Carbon Partners:
+  type: 기업
+  country: 미국
+  aliases: [Harvestone, HLCP]
+  profile:
+    about: "노스다코타·인디애나에서 에탄올 공장 3곳을 운영하는 회사."
+    business: "에탄올 생산, 탄소 포집·저장"
+    edge: "탄소 포집 설비로 저탄소 연료 세액공제 확보"
+    owner: "Energy Capital Partners 소유 (The Andersons에 매각 계약)"
+    as_of: "2026-11-05"
+Energy Capital Partners:
+  type: PE·VC
+  country: 미국
+  aliases: [ECP]
+  profile:
+    about: "에너지·전력·인프라에 투자하는 미국 사모펀드 운용사."
+    business: "발전, 재생에너지, 에너지 인프라 투자"
+    edge: "에너지 전환 인프라 투자 경험"
+    as_of: "2026-11-05"
+Polsinelli:
+  type: 법률 자문사
+  country: 미국
+  aliases: [Polsinelli PC]
+  profile:
+    about: "미국 로펌."
+    business: "기업 인수·금융·소송 자문"
+    edge: "중견 기업 M&A 자문"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-05"
+Kraft Heinz:
+  type: 기업
+  country: 미국
+  aliases: [The Kraft Heinz Company, 크래프트하인즈, KHC]
+  ticker: "NASDAQ:KHC"
+  profile:
+    about: "케첩·치즈·커피 등을 파는 미국 대형 식품회사."
+    business: "가공식품, 소스·조미료, 음료"
+    edge: "Heinz·Kraft 등 오래된 대형 식품 브랜드"
+    owner: "나스닥 상장사"
+    points:
+      - "회사를 둘로 나누는 분할 계획을 발표한 바 있음"
+      - "2026-11 북미 커피사업을 One Rock Capital에 약 6.5억 달러에 매각, 일부 지분 유지"
+    as_of: "2026-11-05"
+Kraft Heinz 북미 커피사업:
+  type: 기업
+  country: 미국
+  aliases: [Kraft Heinz North America Coffee]
+  profile:
+    about: "Maxwell House·Gevalia·Tassimo 등 Kraft Heinz의 북미 커피 브랜드 사업."
+    business: "커피 제조·판매 (잭슨빌·밴쿠버 공장)"
+    edge: "북미 대중 커피 브랜드"
+    owner: "One Rock Capital Partners에 매각 계약, Kraft Heinz가 일부 지분 유지"
+    as_of: "2026-11-05"
+One Rock Capital Partners:
+  type: PE·VC
+  country: 미국
+  aliases: [One Rock, One Rock Capital]
+  profile:
+    about: "제조·유통 기업 인수와 운영 개선에 집중하는 미국 사모펀드 운용사."
+    business: "경영권 인수(바이아웃), 카브아웃"
+    edge: "대기업 사업부 카브아웃 인수"
+    as_of: "2026-11-05"
+한화머시너리앤서비스홀딩스:
+  type: 기업
+  country: 한국
+  aliases: [한화M&S, 한화머시너리앤서비스]
+  profile:
+    about: "한화그룹 계열 기계·서비스 사업 지주회사."
+    business: "기계·장비 관련 계열사 지배"
+    edge: "한화그룹 오너 3세가 직접 최대주주인 계열사"
+    owner: "김동선 사장이 최대주주(32.99%, 특별관계자 포함 75.51%, 보도 기준)"
+    points:
+      - "2026-11 김동선 사장이 공개매수로 1,838억 원을 들여 최대주주에 오름"
+    as_of: "2026-11-05"
