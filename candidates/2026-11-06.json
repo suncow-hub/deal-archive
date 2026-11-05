@@ -1,0 +1,746 @@
+{
+  "meta": {
+    "run_at": "2026-11-06T02:13:03.637578+09:00",
+    "window_start": "2026-11-04T20:13:03.637578+09:00",
+    "sources": {
+      "환율": "1일 추가 (최신 2026-11-05)",
+      "OpenDART 상세": "1건 성공, 3건 실패",
+      "OpenDART": "10건",
+      "WSJ Markets": "0/61",
+      "WSJ U.S. Business": "7/85",
+      "PR Newswire M&A": "16/20",
+      "한경 증권": "5/50",
+      "인베스트조선": "16/50",
+      "연합뉴스 마켓+": "35/120",
+      "매일경제 증권": "12/50",
+      "조선비즈": "0/100",
+      "FT M&A": "1/25",
+      "CNBC Business": "4/30",
+      "WSJ World News": "5/74",
+      "WSJ Economy": "7/36",
+      "한경 경제": "5/50",
+      "한경 국제": "5/50"
+    },
+    "gemini_tries": 10,
+    "gemini_model": "gemini-flash-latest",
+    "gemini": "성공 (110/110건 채점)",
+    "counts": {
+      "deal": 40,
+      "macro": 12,
+      "dropped": 58
+    }
+  },
+  "items": [
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "China Blocks $5.4 Billion SoftBank Robot Deal, Flexing Control Over AI Tech",
+      "link": "https://www.wsj.com/business/deals/abb-confirms-china-blocked-softbank-deal-for-robotics-unit-cf1d44bf?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-05T20:50:00+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "중국 규제당국의 소프트뱅크 54억달러 로봇 인수 불허."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Shield to acquire Echodyne in a transaction valued at $5.3 billion and raise $2.5 billion at a $28.8 billion valuation",
+      "link": "https://www.prnewswire.com/news-releases/shield-to-acquire-echodyne-in-a-transaction-valued-at-5-3-billion-and-raise-2-5-billion-at-a-28-8-billion-valuation-302930012.html",
+      "published": "2026-11-06T01:30:00+09:00",
+      "keywords": [
+        "acquire",
+        "acquisition"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "방산 스타트업 실드의 53억달러 규모 레이더 기업 인수."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "폴리펩타이드 공개매수…삼성바이오 지분 98% 확보",
+      "link": "https://www.hankyung.com/article/2026110591341",
+      "published": "2026-11-05T18:00:33+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "삼성바이오의 해외 바이오텍 대규모 공개매수 성공."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "이음PE, 의료용 디스플레이 업체 디앤티 인수 본계약 체결",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/05/2026110580143.html",
+      "published": "2026-11-05T16:09:51+09:00",
+      "keywords": [
+        "인수",
+        "매각",
+        "우선협상대상자"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "이음PE의 5000억원 규모 의료 디스플레이 디앤티 인수."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "산은이 한진칼 지분 '경쟁입찰'로 일개 건설사를 도와줄 이유가 있나",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/05/2026110580030.html",
+      "published": "2026-11-05T10:01:04+09:00",
+      "keywords": [
+        "인수",
+        "매각",
+        "지분",
+        "유상증자"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "한진칼 경영권 분쟁과 산은 보유 지분의 캐스팅보트."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "카카오에 발 묶인 FI들…TPG는 중재·앵커PE는 만기 연장 '연명'",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/04/2026110480205.html",
+      "published": "2026-11-05T07:00:00+09:00",
+      "keywords": [
+        "인수",
+        "매각",
+        "지분",
+        "엑시트",
+        "상장"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "카카오 계열사 투자 PE들의 엑시트 지연 및 국제중재."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "중앙일보보다 난이도 높은 JTBC 매각…덩치는 큰데 이익창출은 부족",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/04/2026110480200.html",
+      "published": "2026-11-05T07:00:00+09:00",
+      "keywords": [
+        "인수",
+        "매각",
+        "지분"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "중앙일보에 이은 JTBC 경영권 매각 가시화 및 쟁점."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "FT \"中, 소뱅 7.4조원 규모 ABB 로봇부문 인수 불허\"",
+      "link": "https://www.yna.co.kr/view/AKR20261105121800009",
+      "published": "2026-11-05T15:06:42+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "중국 정부의 소프트뱅크 7.4조원 빅딜 불허 외신."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "[단독]IMM PE 에어퍼스트 컨티뉴펀드에 유럽 최대 사모펀드 EQT 그룹 투자 받는다",
+      "link": "https://www.mk.co.kr/news/stock/12198805",
+      "published": "2026-11-05T18:50:59+09:00",
+      "keywords": [
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "IMM PE 에어퍼스트 컨티뉴에이션 펀드에 EQT 5000억 출자."
+    },
+    {
+      "source": "CNBC Business",
+      "kind": "deal",
+      "title": "CVS to split off drugstore business in major breakup of healthcare giant; shares fall 10%",
+      "link": "https://www.cnbc.com/2026/11/04/cvs-to-split-off-drugstore-business.html",
+      "published": "2026-11-05T06:04:13+09:00",
+      "keywords": [
+        "acquisition"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "헬스케어 공룡 CVS의 드럭스토어 사업부 대규모 분할 결정."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Wendy’s Rejects Trian’s $1.4 Billion Takeover Offer",
+      "link": "https://www.wsj.com/business/deals/wendys-rejects-trians-1-4-billion-takeover-offer-984b1892?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-05T22:20:00+09:00",
+      "keywords": [
+        "takeover"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "행동주의 펀드 트라이언의 14억달러 인수 제안 거부."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "BP Sells 5% Stake in Aker BP for $1 Billion as Balance Sheet Repair Continues",
+      "link": "https://www.wsj.com/business/energy-oil/bp-sells-5-stake-in-aker-bp-for-1-billion-as-balance-sheet-repair-continues-ac5e1934?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-05T17:20:00+09:00",
+      "keywords": [
+        "stake"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "BP의 10억달러 규모 아커BP 지분 블록딜 매각."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "에스원 자사주 공개매수 목표치의 28.7% 그쳐…삼성 금융 4사 지분 매각",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/05/2026110580194.html",
+      "published": "2026-11-05T19:23:37+09:00",
+      "keywords": [
+        "매각",
+        "지분"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "에스원 자사주 매입과 삼성 금융사 지분정리 영향."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "'주가 부진' 카카오, 주주환원 앞당기고 인적분할은 한 달 연기",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/05/2026110580136.html",
+      "published": "2026-11-05T15:40:25+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "카카오 인적분할 일정 연기 및 자사주 소각 조기화."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "LG화학, 배터리 호조에도 석화 적자전환…\"엔솔 지분 활용해 주주환원\"",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/05/2026110580130.html",
+      "published": "2026-11-05T15:21:14+09:00",
+      "keywords": [
+        "매각",
+        "지분"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "LG화학의 엔솔 지분 매각 대금 활용 주주환원 검토."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "\"한화가 사면 가격 재협상\"…美해군 손실계약, 오스탈USA 인수전 변수로",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/05/2026110580109.html",
+      "published": "2026-11-05T14:30:06+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "한화의 호주 오스탈 인수전 내 미 해군 계약 변수 분석."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "LS글로벌, LS메탈 사업 인수…통합 'LS메탈플러스' 출범",
+      "link": "https://www.yna.co.kr/view/AKR20261105144500003",
+      "published": "2026-11-05T16:17:29+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "LS그룹 계열사 간 사업 양수도를 통한 통합법인 출범."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "오픈AI 사장 \"내년 상장 가능…매출 과반은 기업 매출\"",
+      "link": "https://www.yna.co.kr/view/AKR20261105119500009",
+      "published": "2026-11-05T14:51:10+09:00",
+      "keywords": [
+        "IPO",
+        "IPO",
+        "상장"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "오픈AI 사장의 내년 IPO 가능성 공식 언급."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "JTBC 1월 본입찰…공고 앞두고 타임테이블 구체화",
+      "link": "https://www.mk.co.kr/news/stock/12198765",
+      "published": "2026-11-05T17:46:17+09:00",
+      "keywords": [
+        "인수",
+        "본입찰"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "JTBC 매각 본입찰 타임라인 구체화."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "日로 눈돌린 PEF… 딥테크·소부장에 베팅",
+      "link": "https://www.mk.co.kr/news/stock/12198677",
+      "published": "2026-11-05T17:28:19+09:00",
+      "keywords": [
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "국내 PEF들의 일본 딥테크·소부장 크로스보더 투자 트렌드."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "日딥테크에 베팅하는 토종 PEF… H&Q, 큐룩스 투자",
+      "link": "https://www.mk.co.kr/news/stock/12198394",
+      "published": "2026-11-05T17:25:00+09:00",
+      "keywords": [
+        "경영권",
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "H&Q·IMM 등 토종 사모펀드의 일본 기술기업 투자 사례."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "‘피터 틸’ 설립 크레센도EP, 1조3000억 목표 4호 블라인드펀드 1차 클로징",
+      "link": "https://www.mk.co.kr/news/stock/12198172",
+      "published": "2026-11-05T11:17:07+09:00",
+      "keywords": [
+        "바이아웃"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "크레센도EP의 1.3조원 규모 바이아웃 펀드 1차 클로징."
+    },
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "German government close to buying half of tank maker KNDS",
+      "link": "https://www.ft.com/content/198d3d9d-b7d4-4c3a-884e-ad7b4e359dfa?syn-25a6b1a6=1",
+      "published": "2026-11-06T02:04:41+09:00",
+      "keywords": [
+        "to buy"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "독일 정부의 프랑코-독일 방산기업 KNDS 지분 50% 인수."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(카카오) [기재정정]주요사항보고서(회사분할결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000098",
+      "published": "2026-11-05T00:00:00+09:00",
+      "keywords": [
+        "회사분할결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "카카오의 사업구조 개편 및 인적분할 정정 공시."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Nvidia-Backed Cohere Says IPO Timing Uncertain Despite Surging Revenue",
+      "link": "https://www.wsj.com/pro/venture-capital/nvidia-backed-cohere-says-ipo-timing-uncertain-despite-surging-revenue-3310476f?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-06T00:53:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "엔비디아가 투자한 AI 유니콘의 IPO 동향."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Andersons to Buy Harvestone Low Carbon Partners for $915 Million",
+      "link": "https://www.wsj.com/pro/private-equity/andersons-to-buy-harvestone-low-carbon-partners-for-915-million-4dc82e7b?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-04T23:50:00+09:00",
+      "keywords": [
+        "to buy",
+        "deal"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "앤더슨스의 9.15억달러 바이오에너지 기업 인수."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "팔로알토캐피탈, 美 1호 휴머노이드 상장사 '어질리티 로보틱스' 지분투자",
+      "link": "https://www.hankyung.com/article/202611069557i",
+      "published": "2026-11-06T01:22:31+09:00",
+      "keywords": [
+        "지분",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "국내 운용사의 미국 대표 휴머노이드 상장사 지분투자."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "삼성바이오, 폴리펩타이드 공개매수 97.98% 응모…인수 눈앞",
+      "link": "https://www.hankyung.com/article/202611058395i",
+      "published": "2026-11-05T15:18:24+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "삼성바이오로직스 공개매수 결과 발표 중복."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "'입찰제한 처분' LIG D&A, 5300억 유상증자 한번 더 미룬다",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/05/2026110580089.html",
+      "published": "2026-11-05T12:53:30+09:00",
+      "keywords": [
+        "유상증자"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "LIG D&A의 5300억원 규모 유상증자 재연기."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "에스원 공개매수 끝났지만…삼성 금융계열사 지분 정리 셈법은",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/04/2026110480121.html",
+      "published": "2026-11-05T07:00:00+09:00",
+      "keywords": [
+        "매각",
+        "지분"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "금산법 규제 대응을 위한 삼성 금융계열사 지분 정리 셈법."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "한화M&S, 최대주주 김동선 사장으로 변경…지분율 32.99%",
+      "link": "https://www.yna.co.kr/view/AKR20261105139000030",
+      "published": "2026-11-05T16:10:43+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "한화 오너 3세 승계 관련 계열사 최대주주 변경."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "카카오, 인적분할 한달 연기…내년 2월1일 분할 예정",
+      "link": "https://www.yna.co.kr/view/AKR20261105122900017",
+      "published": "2026-11-05T15:03:22+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "카카오 인적분할 기일 연기 일정 보도."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "피노, 1830억원 규모 유상증자 실시",
+      "link": "https://www.mk.co.kr/news/stock/12198773",
+      "published": "2026-11-05T18:03:19+09:00",
+      "keywords": [
+        "유상증자",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "피노의 1830억원 규모 3자배정 유상증자 결의."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "터톤캐피탈, 골프존홀딩스 이사회에 “골프존카운티 매각 수용하라”",
+      "link": "https://www.mk.co.kr/news/stock/12198343",
+      "published": "2026-11-05T14:35:10+09:00",
+      "keywords": [
+        "매각"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "행동주의 펀드의 골프존카운티 매각 수용 및 배당 요구."
+    },
+    {
+      "source": "CNBC Business",
+      "kind": "deal",
+      "title": "Marc Lore's Wonder confidentially files for IPO",
+      "link": "https://www.cnbc.com/2026/11/05/wonder-confidential-ipo-filing.html",
+      "published": "2026-11-06T01:27:10+09:00",
+      "keywords": [
+        "IPO",
+        "initial public offering",
+        "IPO"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "마크 로어의 푸드테크 유니콘 원더 비밀 IPO 신청."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(카카오) [기재정정]주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000084",
+      "published": "2026-11-05T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "카카오 계열사 흡수합병 정정 공시."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(한화머시너리앤서비스홀딩스) 최대주주등소유주식변동신고서(최대주주변경시)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800559",
+      "published": "2026-11-05T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "한화그룹 3남 승계 관련 지분 변동 공시."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(한화머시너리앤서비스홀딩스) 최대주주변경",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800429",
+      "published": "2026-11-05T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "한화 계열 지주사 최대주주 변경 공시."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Wendy’s Rejects $1.4 Billion Buyout Offer from Nelson Peltz’s Trian",
+      "link": "https://www.wsj.com/business/earnings/wendys-rejects-1-4-billion-buyout-offer-from-nelson-peltzs-trian-c97c7b0d?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-05T22:24:00+09:00",
+      "keywords": [
+        "buyout",
+        "to buy"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "웬디스의 트라이언 사모펀드 인수 제안 거절 중복."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "엔비디아 '강력 매수' 유지…루멘텀 인수 경쟁 가능성 부각[월가 업&다운]",
+      "link": "https://www.hankyung.com/article/202611059539i",
+      "published": "2026-11-05T23:52:33+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "광통신 부품사 루멘텀 인수전 부각 보고서."
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "[단독] 韓, 美국채 큰손 대열 합류…통상압박 방어하고 외환보유 늘린다",
+      "link": "https://www.hankyung.com/article/2026110591421",
+      "published": "2026-11-05T17:54:25+09:00",
+      "keywords": [
+        "국채"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "한국 정부의 통상 방어용 대규모 미국채 매입 계획."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "macro",
+      "title": "상장사, 중복상장·유증 시 투자자 보호조치 공시해야",
+      "link": "https://www.hankyung.com/article/202611058812i",
+      "published": "2026-11-05T16:34:06+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "중복상장 및 유상증자 시 주주보호 공시 의무화 규제."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "macro",
+      "title": "지난달 삼전닉스 44조 배당 결정…37개사 기업가치 제고 첫 공시",
+      "link": "https://www.yna.co.kr/view/AKR20261105086200008",
+      "published": "2026-11-05T12:05:57+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "국내 주요 대기업의 대규모 자사주 소각 및 밸류업 동향."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "macro",
+      "title": "기업지배구조보고서 가이드라인 개정…주주환원 정책 공시 강화",
+      "link": "https://www.yna.co.kr/view/AKR20261105090400002",
+      "published": "2026-11-05T12:00:00+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "상장사 지배구조보고서 주주환원 공시 강화 가이드라인."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "macro",
+      "title": "상장 예심 빨라졌지만…금감원 문턱서 줄줄이 증권신고서 정정",
+      "link": "https://www.yna.co.kr/view/AKR20261105068700008",
+      "published": "2026-11-05T10:39:45+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "금감원의 IPO 증권신고서 정정 요구 기조와 상장 문턱."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "macro",
+      "title": "집중투표제 '꼼수 회피' 막는다 … 이사 수·임기 바꿀땐 의무공시",
+      "link": "https://www.mk.co.kr/news/stock/12198642",
+      "published": "2026-11-05T17:16:19+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "집중투표제 우회 방지를 위한 이사 임기 변경 공시 의무화."
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Bank of England Raises Rates for First Time Since Start of Iran War",
+      "link": "https://www.wsj.com/economy/central-banking/bank-of-england-raises-rates-for-first-time-since-start-of-iran-war-f6353d96?mod=rss_worldnews",
+      "published": "2026-11-05T22:26:00+09:00",
+      "keywords": [
+        "war"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "영국 중앙은행의 전쟁 인플레 대응 기준금리 인상."
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "英 물가 치솟자…기준금리 연 4%로 인상",
+      "link": "https://www.hankyung.com/article/2026110594621",
+      "published": "2026-11-05T23:06:46+09:00",
+      "keywords": [
+        "금리",
+        "기준금리",
+        "물가"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "영란은행의 물가 급등에 따른 4% 금리 인상 단행."
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "[단독] 韓이 백기사로…美국채 대량 매입한다",
+      "link": "https://www.hankyung.com/article/2026110591621",
+      "published": "2026-11-05T17:52:41+09:00",
+      "keywords": [
+        "국채"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "한국 정부의 미국채 대량 매입 관련 중복 보도."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "\"제2의 한진칼·KAI 될라\"…주주명부 샅샅이 살피는 상장사들",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/04/2026110480201.html",
+      "published": "2026-11-05T07:00:00+09:00",
+      "keywords": [
+        "지분",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "지분 매집을 통한 적대적 M&A 경계 상장사 동향."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "The Bank of England raised its key interest rate Thursday for the first time since the war U.S.-Iran sent oil prices soaring",
+      "link": "https://www.wsj.com/economy/central-banking/bank-of-england-raises-rates-for-first-time-since-start-of-iran-war-f6353d96?mod=rss_socialeconomyfeed",
+      "published": "2026-11-05T22:26:00+09:00",
+      "keywords": [
+        "interest rate",
+        "war"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "영란은행 기준금리 인상 WSJ 중복 기사."
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "美가 수출막은 블랙웰칩…中문샷AI,유럽서 웃돈주고 빌리려했다",
+      "link": "https://www.hankyung.com/article/202611059543i",
+      "published": "2026-11-06T00:04:03+09:00",
+      "keywords": [
+        "수출"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "미국의 AI 칩 수출 통제와 중국 AI 기업의 우회 시도."
+    }
+  ]
+}
