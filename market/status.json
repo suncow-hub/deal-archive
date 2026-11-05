@@ -1,27 +1,27 @@
 {
- "run_at": "2026-11-05T02:39:05+09:00",
+ "run_at": "2026-11-05T22:30:05+09:00",
  "items": {
-  "KOSPI": "0일 추가",
-  "KRX300": "0일 추가",
-  "005930": "삼성전자 0일 추가",
-  "000660": "SK하이닉스 0일 추가",
-  "089860": "롯데렌탈 0일 추가",
-  "034730": "SK 0일 추가",
-  "260870": "SK시그넷 0일 추가",
-  "001940": "KISCO홀딩스 0일 추가",
-  "104700": "한국철강 0일 추가",
-  "180640": "한진칼 0일 추가",
-  "035420": "네이버 0일 추가",
-  "005940": "NH투자증권 244일 추가",
-  "023590": "다우기술 244일 추가",
-  "001040": "CJ 244일 추가"
+  "KRX300": "1일 추가",
+  "005930": "삼성전자 1일 추가",
+  "000660": "SK하이닉스 1일 추가",
+  "089860": "롯데렌탈 1일 추가",
+  "260870": "SK시그넷 1일 추가",
+  "001940": "KISCO홀딩스 1일 추가",
+  "104700": "한국철강 1일 추가",
+  "180640": "한진칼 1일 추가",
+  "035420": "NAVER 1일 추가 (이름 다름: 목록 '네이버' / 실제 'NAVER')",
+  "005940": "NH투자증권 1일 추가",
+  "023590": "다우기술 1일 추가",
+  "143240": "사람인 245일 추가",
+  "001040": "CJ 1일 추가",
+  "004170": "신세계 245일 추가"
  },
  "errors": [
-  "KOSDAQ: HTTP 403: {\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"retu",
-  "KOSPI200: HTTP 403: {\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"retu",
+  "KOSPI: ConnectTimeout: HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1160100/service/GetMarketIndexInfoService/getStockMarketIndex?serviceKey=***&resultType=json&idxNm=%EC%BD%94%EC%8A%A4%ED%94%BC&beginBasDt=20261104&endBasDt=20261105&numOfRows=1000&pageNo=1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='apis.data.go.kr', port=443) at 0x7f546f2da030>, 'Connection to apis.data.go.kr timed out. (connect timeout=30)'))",
+  "KOSDAQ: ConnectTimeout: HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1160100/service/GetMarketIndexInfoService/getStockMarketIndex?serviceKey=***&resultType=json&idxNm=%EC%BD%94%EC%8A%A4%EB%8B%A5&beginBasDt=20261104&endBasDt=20261105&numOfRows=1000&pageNo=1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='apis.data.go.kr', port=443) at 0x7f5470573b30>, 'Connection to apis.data.go.kr timed out. (connect timeout=30)'))",
+  "KOSPI200: ConnectTimeout: HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1160100/service/GetMarketIndexInfoService/getStockMarketIndex?serviceKey=***&resultType=json&idxNm=%EC%BD%94%EC%8A%A4%ED%94%BC+200&beginBasDt=20261104&endBasDt=20261105&numOfRows=1000&pageNo=1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='apis.data.go.kr', port=443) at 0x7f546f2d9b20>, 'Connection to apis.data.go.kr timed out. (connect timeout=30)'))",
   "KOSDAQ150: HTTP 403: {\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"retu",
-  "143240 사람인: HTTP 403: {\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"retu",
-  "004170 신세계: HTTP 403: {\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"retu"
+  "034730 SK: HTTP 403: {\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"retu"
  ],
  "endpoints": {
   "index": "GetMarketIndexInfoService_V2/getStockMarketIndex_V2",
