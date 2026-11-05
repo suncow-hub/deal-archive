@@ -4,6 +4,19 @@
 # - status: 미확인 / 사실로 확인 / 부인 / 소멸
 #   (사실로 확인되면 deal 에 딜 노트 id, 30일간 새 소식이 없으면 소멸)
 # - credibility: 낮음 / 중간  (공신력 높은 출처로 확인되면 소문이 아니라 딜 노트로 간다)
+- id: 2026-11-06-germany-knds-stake
+  first_seen: 2026-11-06
+  last_seen: 2026-11-06
+  title: "독일 정부, 전차업체 KNDS 지분 50% 인수 합의 임박설"
+  claim: "독일 정부가 KNDS 대주주 가문들과 지분 절반을 넘겨받는 데 합의했거나 합의에 가깝다는 보도가 나왔으나, 공식 발표는 확인되지 않았다."
+  companies: ["KNDS"]
+  sources:
+    - {name: "Financial Times", url: "https://www.ft.com/content/198d3d9d-b7d4-4c3a-884e-ad7b4e359dfa", credibility: 중간}
+    - {name: "Handelsblatt (Reuters 인용)", url: "https://malaysia.news.yahoo.com/germany-agrees-knds-owner-families-100721219.html", credibility: 중간}
+  why_watch: "사실이면 독·프 정부가 유럽 최대 지상무기 업체를 같은 비율로 지배하게 돼 유럽 방산 재편의 신호가 된다."
+  status: 미확인
+  status_note: ""
+  deal: null
 - id: 2026-11-05-fenway-cadillac-f1-stake
   first_seen: 2026-11-05
   last_seen: 2026-11-05

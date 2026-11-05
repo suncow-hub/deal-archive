@@ -409,6 +409,19 @@
   related: []
   memo: ""
 
+- id: acceleration-of-debt
+  term: 기한이익상실
+  en: Event of Default / Acceleration
+  category: 자금 조달
+  match: [기한이익상실, 기한이익 상실]
+  aliases: [EOD]
+  short: 빌린 돈을 약속한 날까지 나눠 갚아도 되는 권리를 잃는 것. 이자를 못 내는 등 약속을 어기면 채권자가 남은 빚 전부를 당장 갚으라고 요구할 수 있다.
+  more: 대출·회사채 계약에는 "이런 일이 생기면 만기 전이라도 바로 갚아야 한다"는 조건이 들어 있다. 한 곳에서 이 일이 생기면 다른 계약도 함께 터지는 경우가 많아(교차부도), 회사가 워크아웃이나 회생절차로 가는 계기가 된다.
+  example: 중앙일보는 회사채 기한이익상실을 계기로 7월 워크아웃에 들어갔다.
+  deal: 2026-11-04-daou-tech-cj-joongang-ilbo
+  related: [워크아웃]
+  memo: ""
+
 # ---------------- 참여자·전략
 - id: private-equity
   term: PE (사모펀드)
@@ -453,6 +466,32 @@
   aliases: [Secondary]
   short: 사모펀드가 가진 회사를 다른 사모펀드에 파는 거래.
   related: [PE (사모펀드), 엑시트]
+  memo: ""
+
+- id: continuation-fund
+  term: 컨티뉴에이션 펀드
+  en: Continuation Fund
+  category: 참여자·전략
+  match: [컨티뉴에이션 펀드, 컨티뉴이에션 펀드, 컨티뉴펀드, Continuation Fund]
+  aliases: [CV 펀드, GP 주도 세컨더리]
+  short: 사모펀드 운용사가 만기가 다가온 옛 펀드의 회사를 자기가 새로 만든 펀드로 옮겨 계속 보유하는 방식. 옛 펀드 투자자는 이때 돈을 돌려받거나 새 펀드에 다시 투자할 수 있다.
+  more: 좋은 회사를 서둘러 팔지 않고 더 키울 시간을 버는 수단이다. 운용사가 파는 쪽과 사는 쪽을 모두 맡아 가격을 유리하게 정할 위험이 있어, 외부 투자자가 가격을 함께 정하는 것이 보통이다.
+  example: IMM PE는 에어퍼스트 지분을 옛 펀드에서 새 컨티뉴에이션 펀드로 옮기는 작업을 진행 중이다.
+  deal: 2026-11-04-imm-pe-airfirst-continuation-fund
+  related: [세컨더리 딜, PE (사모펀드), 엑시트]
+  memo: ""
+
+- id: poison-pill
+  term: 포이즌 필
+  en: Poison Pill (Shareholder Rights Plan)
+  category: 참여자·전략
+  match: [포이즌 필, 포이즌필, Poison Pill, poison pill]
+  aliases: [주주권리계획]
+  short: 누군가 회사 주식을 정해진 비율 이상 사 모으면, 나머지 주주들이 싼 값에 새 주식을 살 수 있게 해 사 모은 쪽의 지분을 크게 줄여 버리는 방어 장치.
+  more: 이사회 동의 없는 인수를 막거나 인수자를 협상 테이블로 끌어내려는 목적으로 쓴다. 미국에서는 흔하지만 한국에는 아직 제도로 도입되지 않았다.
+  example: Wendy's는 Trian 컨소시엄의 인수 제안을 거절하면서 15% 기준의 포이즌 필을 도입했다.
+  deal: 2026-11-05-trian-wendys
+  related: [적대적 인수]
   memo: ""
 
 - id: distressed

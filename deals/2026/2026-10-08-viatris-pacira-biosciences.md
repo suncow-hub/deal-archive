@@ -49,3 +49,4 @@
 
 ## 관련 딜·뉴스
 - [DoorDash, Instacart를 지분가치 170억 달러에 인수](../2026/2026-10-29-doordash-instacart.md) — Centerview Partners·Goldman Sachs·Cravath가 함께 자문한 같은 시기 미국 상장사 인수
+- [삼성바이오로직스, 스위스 펩타이드 CDMO PolyPeptide 공개매수에 97.98% 응모…인수 확정 단계](../2026/2026-08-31-samsung-biologics-polypeptide.md) — 같은 시기 바이오 기업 공개매수 인수

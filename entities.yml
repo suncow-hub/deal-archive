@@ -1194,3 +1194,233 @@ One Rock Capital Partners:
     points:
       - "2026-11 김동선 사장이 공개매수로 1,838억 원을 들여 최대주주에 오름"
     as_of: "2026-11-05"
+SoftBank Group:
+  type: 기업
+  country: 일본
+  aliases: [소프트뱅크, 소프트뱅크그룹, SoftBank, 软银]
+  ticker: "TSE:9984"
+  profile:
+    about: "일본의 기술 투자 지주회사."
+    business: "통신·기술 기업 지분 보유, 비전펀드를 통한 기술 스타트업 투자, Arm 지배"
+    edge: "대규모 자금으로 AI·반도체·로봇 분야 기업에 투자하는 능력"
+    owner: "도쿄증권거래소 상장사. 창업자 손정의 회장이 최대주주"
+    points:
+      - "2025-10 ABB 로봇사업부 인수에 합의했으나 2026-11 중국이 중국 사업 이전을 불허"
+    as_of: "2026-11-06"
+ABB:
+  type: 기업
+  country: 유럽
+  aliases: [ABB Ltd]
+  ticker: "SIX:ABBN"
+  profile:
+    about: "스위스의 전력·자동화 설비 기업."
+    business: "전력 기기, 산업 자동화, 모터·구동장치, 로봇(매각 추진)"
+    edge: "전력망·공장 자동화 분야의 넓은 제품군과 세계 영업망"
+    owner: "스위스 증시 상장사 (지분 분산)"
+    points:
+      - "로봇사업부를 SoftBank에 매각하기로 했으나 중국 사업 부분이 중국 심사에서 막힘"
+    as_of: "2026-11-06"
+ABB Robotics:
+  type: 기업
+  country: 유럽
+  aliases: [ABB 로봇사업부]
+  profile:
+    about: "ABB의 산업용 로봇 사업부."
+    business: "공장용 산업 로봇, 협동 로봇, 자율이동 로봇"
+    edge: "자동차·전자 공장용 산업 로봇 분야의 주요 업체"
+    owner: "ABB 100% (SoftBank Group에 매각 계약)"
+    as_of: "2026-11-06"
+CVS Health:
+  type: 기업
+  country: 미국
+  aliases: [CVS, CVS헬스]
+  ticker: "NYSE:CVS"
+  profile:
+    about: "미국의 약국·건강보험·약제비관리(PBM) 복합 헬스케어 기업."
+    business: "약국 소매(CVS Pharmacy), 건강보험(Aetna), PBM(CVS Caremark), 진료 서비스"
+    edge: "약국·보험·약제비관리를 한 회사가 함께 하는 수직계열화 구조"
+    owner: "뉴욕증권거래소 상장사 (지분 분산)"
+    points:
+      - "2026-11 약국 소매사업을 별도 상장사 'CVS Pharmacy'로 분리하기로 함 (2028년 상반기 목표)"
+    as_of: "2026-11-06"
+삼성바이오로직스:
+  type: 기업
+  country: 한국
+  aliases: [삼성바이오, Samsung Biologics]
+  krx: "207940"
+  profile:
+    about: "삼성그룹의 바이오의약품 위탁개발생산(CDMO) 기업."
+    business: "항체 등 바이오의약품 위탁생산·위탁개발"
+    edge: "세계 최대급 바이오의약품 생산설비"
+    owner: "코스피 상장사. 삼성물산이 최대주주"
+    points:
+      - "2026년 스위스 펩타이드 CDMO PolyPeptide를 공개매수로 인수 (응모율 97.98%)"
+    as_of: "2026-11-06"
+PolyPeptide Group:
+  type: 기업
+  country: 유럽
+  aliases: [폴리펩타이드, PolyPeptide, 폴리펩타이드그룹]
+  ticker: "SIX:PPGN"
+  profile:
+    about: "스위스의 펩타이드 의약품 원료 위탁개발생산(CDMO) 기업."
+    business: "펩타이드 원료의약품 개발·생산 대행"
+    edge: "비만·당뇨 치료제 원료로 쓰이는 펩타이드 생산 경험"
+    owner: "스위스 증시 상장사. 삼성바이오로직스가 공개매수로 97.98% 확보 (보도 기준)"
+    as_of: "2026-11-06"
+Draupnir Holding:
+  type: 기업
+  country: 유럽
+  aliases: []
+  profile:
+    about: "PolyPeptide Group의 최대주주였던 투자회사."
+    business: "지분 투자"
+    edge: "PolyPeptide 지분 약 55.65% 보유 (보도 기준)"
+    owner: "확인되지 않음"
+    as_of: "2026-11-06"
+Shield AI:
+  type: 기업
+  country: 미국
+  aliases: [Shield, 실드AI, 실드]
+  profile:
+    about: "미국의 방산 AI·자율비행 드론 스타트업."
+    business: "군용 드론, 항공기 자율비행 AI 소프트웨어"
+    edge: "사람 조종 없이 비행하는 AI 조종 소프트웨어"
+    owner: "비상장 (벤처 투자자 등 보유)"
+    points:
+      - "2026-11 레이더 업체 Echodyne을 최대 53억 달러에 인수하기로 함"
+    as_of: "2026-11-06"
+Echodyne:
+  type: 기업
+  country: 미국
+  aliases: [에코다인]
+  profile:
+    about: "미국의 소형 레이더 제조업체."
+    business: "대드론·보안 시스템용 소형 레이더"
+    edge: "작고 가벼운 전자식 레이더, 40여 개국 공급"
+    owner: "비상장. Shield AI가 인수 계약"
+    as_of: "2026-11-06"
+이음프라이빗에쿼티:
+  type: PE·VC
+  country: 한국
+  aliases: [이음PE, 이음 PE]
+  profile:
+    about: "국내 사모펀드 운용사."
+    business: "중견기업 바이아웃·성장 투자"
+    edge: "미드마켓 기업 경영권 인수"
+    owner: "확인되지 않음"
+    points:
+      - "2026-11 의료용 디스플레이 업체 디앤티를 약 5천억 원에 인수 계약"
+    as_of: "2026-11-06"
+하일랜드에쿼티파트너스:
+  type: PE·VC
+  country: 한국
+  aliases: [하일랜드EP, 하일랜드]
+  profile:
+    about: "국내 사모펀드 운용사."
+    business: "중견기업 바이아웃 투자"
+    edge: "중견 제조업체 경영권 인수 후 매각"
+    owner: "확인되지 않음"
+    points:
+      - "2024-07 디앤티를 약 1,727억 원에 인수해 2026-11 약 5천억 원에 매각 계약 (보도 기준)"
+    as_of: "2026-11-06"
+디앤티:
+  type: 기업
+  country: 한국
+  aliases: [D&T]
+  profile:
+    about: "대전의 의료용 디스플레이 제조업체."
+    business: "수술·진단·초음파 장비용 의료 디스플레이"
+    edge: "의료 영상장비용 디스플레이 전문 생산"
+    owner: "하일랜드EP (이음PE에 매각 계약, 보도 기준)"
+    as_of: "2026-11-06"
+동아에스티:
+  type: 기업
+  country: 한국
+  aliases: [동아ST]
+  krx: "170900"
+  profile:
+    about: "동아쏘시오그룹의 전문의약품 제약사."
+    business: "전문의약품, 바이오의약품 개발"
+    edge: "전문의약품 영업망과 신약 개발"
+    owner: "코스피 상장사. 동아쏘시오홀딩스가 최대주주"
+    as_of: "2026-11-06"
+IMM프라이빗에쿼티:
+  type: PE·VC
+  country: 한국
+  aliases: [IMM PE, IMM PE(아이엠엠프라이빗에쿼티), IMM프라이빗에쿼티(IMM PE)]
+  profile:
+    about: "국내 대형 사모펀드 운용사."
+    business: "대형 바이아웃, 구조조정·성장 투자"
+    edge: "국내 조 단위 경영권 인수 경험"
+    owner: "파트너십 (운용사)"
+    points:
+      - "에어퍼스트를 새 컨티뉴에이션 펀드로 옮겨 계속 보유하는 작업 진행 (2026-11)"
+    as_of: "2026-11-06"
+에어퍼스트:
+  type: 기업
+  country: 한국
+  aliases: [Air First, 에어퍼스트(옛 에어프로덕츠코리아)]
+  profile:
+    about: "국내 산업용 가스 공급업체."
+    business: "반도체 공장 등에 산소·질소 등 산업용 가스 공급"
+    edge: "반도체 공장 옆에 설비를 두고 장기 계약으로 가스를 공급하는 사업 구조"
+    owner: "IMM PE 펀드 약 66%, BlackRock 약 30% (보도 기준)"
+    as_of: "2026-11-06"
+EQT:
+  type: PE·VC
+  country: 유럽
+  aliases: [EQT그룹, EQT AB, EQT Partners]
+  ticker: "OMXSTO:EQT"
+  profile:
+    about: "스웨덴의 대형 사모펀드 운용사."
+    business: "바이아웃, 인프라, 부동산, 세컨더리 투자"
+    edge: "유럽 최대급 운용사로 BPEA 인수 후 아시아 사업 확대"
+    owner: "스톡홀름 증시 상장사"
+    as_of: "2026-11-06"
+Wendy's:
+  type: 기업
+  country: 미국
+  aliases: [웬디스, The Wendy's Company]
+  ticker: "NASDAQ:WEN"
+  profile:
+    about: "미국 햄버거 프랜차이즈 체인."
+    business: "패스트푸드 매장 운영·가맹사업"
+    edge: "미국 내 높은 브랜드 인지도와 가맹점망"
+    owner: "나스닥 상장사. Trian 측이 약 16.3% 보유 (보도 기준)"
+    points:
+      - "2026-11 Trian 컨소시엄의 주당 7.35달러 비상장화 제안을 거절하고 포이즌 필 도입"
+    as_of: "2026-11-06"
+Trian Partners:
+  type: PE·VC
+  country: 미국
+  aliases: [Trian, 트라이언, Trian Fund Management]
+  profile:
+    about: "Nelson Peltz가 세운 미국 행동주의 투자회사."
+    business: "상장사 지분 투자 후 경영 개선 요구"
+    edge: "소비재 기업 지배구조 개입 경험"
+    owner: "파트너십 (Nelson Peltz 공동 창업)"
+    as_of: "2026-11-06"
+BP:
+  type: 기업
+  country: 유럽
+  aliases: [BP plc, 브리티시페트롤리엄]
+  ticker: "NYSE:BP"
+  profile:
+    about: "영국의 석유·가스 메이저."
+    business: "석유·가스 탐사·생산, 정유, 연료 판매, 저탄소 에너지"
+    edge: "세계 주요 유전·가스전 자산과 판매망"
+    owner: "런던·뉴욕 상장사 (지분 분산)"
+    points:
+      - "부채 축소를 위해 비핵심 자산·지분 매각 중 (2026-11 Aker BP 지분 5% 블록딜)"
+    as_of: "2026-11-06"
+Aker BP:
+  type: 기업
+  country: 유럽
+  aliases: [아커BP]
+  ticker: "OSL:AKRBP"
+  profile:
+    about: "노르웨이 대륙붕의 석유·가스 생산업체."
+    business: "북해 석유·가스 탐사·생산"
+    edge: "노르웨이 대륙붕의 대형 생산 자산"
+    owner: "오슬로 증시 상장사. Aker 그룹과 BP가 주요 주주"
+    as_of: "2026-11-06"
