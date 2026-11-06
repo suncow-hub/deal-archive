@@ -1,0 +1,768 @@
+{
+  "meta": {
+    "run_at": "2026-11-07T02:13:57.673649+09:00",
+    "window_start": "2026-11-05T20:13:57.673649+09:00",
+    "sources": {
+      "환율": "1일 추가 (최신 2026-11-06)",
+      "OpenDART 상세": "1건 성공, 3건 실패",
+      "OpenDART": "10건",
+      "WSJ Markets": "3/61",
+      "WSJ U.S. Business": "6/85",
+      "PR Newswire M&A": "15/20",
+      "한경 증권": "0/50",
+      "인베스트조선": "10/50",
+      "연합뉴스 마켓+": "30/120",
+      "매일경제 증권": "5/50",
+      "조선비즈": "0/100",
+      "FT M&A": "3/25",
+      "CNBC Business": "2/30",
+      "WSJ World News": "4/74",
+      "WSJ Economy": "5/36",
+      "한경 경제": "1/50",
+      "한경 국제": "5/50"
+    },
+    "gemini": "실패: RemoteProtocolError: Server disconnected without sending a response.",
+    "counts": {
+      "deal": 40,
+      "macro": 12,
+      "dropped": 29
+    }
+  },
+  "items": [
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(IBKS제24호스팩) [첨부정정]주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000338",
+      "published": "2026-11-06T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(삼부토건) 주요사항보고서(회사분할결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105000565",
+      "published": "2026-11-05T00:00:00+09:00",
+      "keywords": [
+        "회사분할결정"
+      ],
+      "dart_details": {
+        "corp_name": "삼부토건",
+        "bddd": "2026년 11월 05일",
+        "rs_sm_atn": "아니오",
+        "ex_sm_r": "'채무자 회생 및 파산에 관한 법률' 제277조 주식회사인 채무자 또는 신회사가 주식 또는 사채를 발행하는 때에는 '자본시장과 금융투자업에 관한 법률' 제119조(모집 또는 매출의 신고)의 규정을 적용하지 아니한다",
+        "popt_ctr_atn": "아니오",
+        "ffdtl_tast": "7,297,312,926",
+        "ffdtl_teqt": "7,297,312,926",
+        "ffdtl_cpt": "100,000,000",
+        "ffdtl_std": "2026년 06월 30일",
+        "dv_mth": "가. 채무자 회생 및 파산에 관한 법률 제212조에 의하여 부인권 소송 등과 관련된 자산, 부채 및 계약 일체 등과 소송비용 등의 지급을 위한 현금 일정액 등을 분할신설회사에 이전하고, 분할신설회사의 발행주식 전부를 분할존속회사가 인수함으로써 분할신설회사를 설립합니다.나. 분할기준일은 채무자 회사의 본 회생계획 변경결정일 다음날로 합니다.다. 분할등기일은 분할신설회사 설립 허가일로부터 14일 이내로 합니다.",
+        "dv_impef": "본 건 분할은 채무자회생및파산에관한법률 제212조 및 214조의 규정이 정하는 바에 따라 물적분할방식으로 진행됩니다. 이에 따라 본건 분할 전ㆍ후 분할되는 회사의 최대주주 소유주식 및 지분율의 변동은 없습니다.또한, 본건 분할은 물적분할방식으로 진행되므로 분할 자체로는 연결재무제표상에 미치는 영향이 없습니다.",
+        "dv_rt": "본 건 분할은 분할 후 존속회사가 분할 설립회사의 발행주식의 총수를 취득하는 단순. 물적분할이기 때문에 분할비율은 산정하지 않았습니다.",
+        "dv_trfbsnprt_cn": "이전 대상 재산, 계약 및 소송목록은 16. 기타 투자판단에 참고할 사항.\n제 2 절 3. 분할로 인하여 이전하는 재산, 계약 및 소송에서 확인가능합니다.",
+        "atdv_excmp_cmpnm": "삼부토건 주식회사",
+        "atdvfdtl_tast": "204,784,916,781",
+        "atdvfdtl_tdbt": "138,725,439,036",
+        "atdvfdtl_teqt": "66,059,477,745",
+        "atdvfdtl_cpt": "229,681,824,000",
+        "atdvfdtl_std": "2026년 06월 30일",
+        "atdv_excmp_exbsn_rsl": "110,992,936,772",
+        "atdv_excmp_mbsn": "토목건축공사업, 부동산 시행업 등",
+        "atdv_excmp_atdv_lstmn_atn": "예",
+        "dvfcmp_cmpnm": "에스비자산관리 주식회사",
+        "dvfcmp_mbsn": "토목건축공사업, 부동산 시행업 등",
+        "dvfcmp_rlst_atn": "아니오",
+        "dvdt": "2026년 11월 06일",
+        "dvrgsprd": "2026년 11월 20일"
+      },
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(씨씨에스) 최대주주변경",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106901024",
+      "published": "2026-11-06T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(씨씨에스) 최대주주변경을수반하는주식양수도계약해제ㆍ취소등",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106901023",
+      "published": "2026-11-06T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(폴라리스AI) [기재정정]최대주주변경을수반하는주식양수도계약체결",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900890",
+      "published": "2026-11-06T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(씨싸이트) 최대주주변경",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900901",
+      "published": "2026-11-05T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "DRAGONPASS ACQUIRES ICOUPON THE LEADING GLOBAL VOUCHER REDEMPTION NETWORK TO BUILD INTERNATIONAL LOYALTY-AS-A-SERVICE PLATFORM",
+      "link": "https://www.prnewswire.com/news-releases/dragonpass-acquires-icoupon-the-leading-global-voucher-redemption-network-to-build-international-loyalty-as-a-service-platform-302932143.html",
+      "published": "2026-11-07T00:13:00+09:00",
+      "keywords": [
+        "acquires",
+        "acquisition",
+        "deal"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "삼성바이오, 2.7조 폴리펩타이드 인수 사실상 확정…공개매수로 지분 98% 확보",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/06/2026110680108.html",
+      "published": "2026-11-06T12:00:06+09:00",
+      "keywords": [
+        "인수",
+        "지분",
+        "유상증자"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "TPG, 롯데렌탈 잔여지분 전량 공매매수 후 상폐 추진…총 8300억원 투입",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/06/2026110680100.html",
+      "published": "2026-11-06T11:26:00+09:00",
+      "keywords": [
+        "인수",
+        "지분",
+        "경영권",
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "TPG, 롯데렌탈 잔여 지분 38.83% 공개매수…\"상장폐지 추진\"",
+      "link": "https://www.yna.co.kr/view/AKR20261106051000030",
+      "published": "2026-11-06T09:40:17+09:00",
+      "keywords": [
+        "지분",
+        "사모펀드",
+        "PEF",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "\"잠재적 투자자들, 앤트로픽 상장 일정에 의구심\"",
+      "link": "https://www.yna.co.kr/view/AKR20261106043400009",
+      "published": "2026-11-06T09:34:37+09:00",
+      "keywords": [
+        "IPO",
+        "IPO",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "TPG, 8300억 들여 롯데렌탈 잔여지분 공개매수…상장폐지 추진",
+      "link": "https://www.mk.co.kr/news/stock/12199335",
+      "published": "2026-11-06T06:00:00+09:00",
+      "keywords": [
+        "매각",
+        "지분",
+        "경영권",
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "Monzo explores fundraising at £7.5bn valuation as private equity talks stall",
+      "link": "https://www.ft.com/content/6553ec40-00a8-4832-8ca5-c528b9da224a?syn-25a6b1a6=1",
+      "published": "2026-11-06T16:44:30+09:00",
+      "keywords": [
+        "takeover",
+        "buyout",
+        "private equity"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "Major Investors Are Skeptical Anthropic IPO Can Achieve $1.5 Trillion Valuation",
+      "link": "https://www.wsj.com/finance/major-investors-are-skeptical-anthropic-ipo-can-achieve-1-5-trillion-valuation-ca965d8b?mod=rss_markets_main",
+      "published": "2026-11-06T13:36:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Faith Leaders Urge SCC to Reject Dominion-NextEra Merger",
+      "link": "https://www.prnewswire.com/news-releases/faith-leaders-urge-scc-to-reject-dominionnextera-merger-302931427.html",
+      "published": "2026-11-06T07:58:00+09:00",
+      "keywords": [
+        "acquisition",
+        "merger"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "피노 \"종속회사 주식 510억원어치 추가취득…지분율 100%\"",
+      "link": "https://www.yna.co.kr/view/AKR20261106157200008",
+      "published": "2026-11-06T17:11:01+09:00",
+      "keywords": [
+        "지분",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "티씨머티리얼즈, 100억원 유상증자…바이오스마트 등에 3자 배정",
+      "link": "https://www.yna.co.kr/view/AKR20261106111600008",
+      "published": "2026-11-06T14:25:43+09:00",
+      "keywords": [
+        "유상증자",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "티씨머티리얼즈, 100억원 규모 유상증자 실시",
+      "link": "https://www.mk.co.kr/news/stock/12200740",
+      "published": "2026-11-06T17:56:14+09:00",
+      "keywords": [
+        "유상증자",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "AI Panic Grips Stocks",
+      "link": "https://www.wsj.com/finance/investing/ai-panic-grips-stocks-60a59518?mod=rss_markets_main",
+      "published": "2026-11-06T06:17:00+09:00",
+      "keywords": [
+        "divestiture"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Zipline Valuation Soars as Drone Startup Raises Funds, Expands Walmart Deal",
+      "link": "https://www.wsj.com/logistics-report/zipline-valuation-soars-as-drone-startup-raises-funds-expands-walmart-deal-48676792?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-06T20:51:00+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Sunrise Realty Trust, Inc. and Southern Realty Trust Inc., Tannenbaum Capital Group Affiliates, Complete Merger",
+      "link": "https://www.prnewswire.com/news-releases/sunrise-realty-trust-inc-and-southern-realty-trust-inc-tannenbaum-capital-group-affiliates-complete-merger-302931227.html",
+      "published": "2026-11-06T06:05:00+09:00",
+      "keywords": [
+        "merger"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "SK이노, 리밸런싱 넘어 에너지 통합…마지막 퍼즐은 'SK온 합병'",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/06/2026110680034.html",
+      "published": "2026-11-06T13:05:04+09:00",
+      "keywords": [
+        "합병"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "삼전 배당 2.3조 안은 삼성생명…1.5조 국채 직행, 주주환원 '안갯속'",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/06/2026110680004.html",
+      "published": "2026-11-06T07:00:00+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "잘 나가던 ETF에 금감원 '경고장'…사고 잇따른 운용업계 긴장",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/06/2026110680002.html",
+      "published": "2026-11-06T07:00:00+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "연봉 7억인데 일 안하는 은행연합회장, 차라리 정치인에게?",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/06/2026110680001.html",
+      "published": "2026-11-06T07:00:00+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "BTS 돈 잘 버는데 주가는 공모가 수준…하이브에 커지는 주주환원 압박",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/05/2026110580129.html",
+      "published": "2026-11-06T07:00:00+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "\"한화가 사면 가격 재협상\"…美해군 손실계약, 오스탈USA 인수전 변수로",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/05/2026110580110.html",
+      "published": "2026-11-06T07:00:00+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "'반도체 부품 제조' 동원파츠 코스닥 신규상장…10일부터 거래",
+      "link": "https://www.yna.co.kr/view/AKR20261106175700008",
+      "published": "2026-11-06T18:52:59+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "효성화학 \"오로라동반성장프로젝트펀드제3호에 196억 출자\"",
+      "link": "https://www.yna.co.kr/view/AKR20261106151900008",
+      "published": "2026-11-06T16:53:06+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "'현대차 로봇 밸류체인 투자' 등 ETF 6종, 10일 신규 상장",
+      "link": "https://www.yna.co.kr/view/AKR20261106143100008",
+      "published": "2026-11-06T16:32:42+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "롯데케미칼 3분기 영업손실 2천814억원…적자 확대",
+      "link": "https://www.yna.co.kr/view/AKR20261106131300527",
+      "published": "2026-11-06T16:03:30+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "웹젠, 신작 부재에 3분기 영업이익 54억원…29.3%↓(종합)",
+      "link": "https://www.yna.co.kr/view/AKR20261106131951527",
+      "published": "2026-11-06T15:59:12+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "엔비디아, 네이버에 1조3천412억원 납입 완료…지분 4.13% 확보",
+      "link": "https://www.yna.co.kr/view/AKR20261106136800017",
+      "published": "2026-11-06T15:57:30+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "코스메카코리아 3분기 영업이익 272억원…작년 동기 대비 0.1%↑",
+      "link": "https://www.yna.co.kr/view/AKR20261106136000527",
+      "published": "2026-11-06T15:56:46+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "씨젠, 애프터마켓서 10%대 급락",
+      "link": "https://www.yna.co.kr/view/AKR20261106136100008",
+      "published": "2026-11-06T15:56:10+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "웹젠 3분기 영업이익 54억원…29.3%↓",
+      "link": "https://www.yna.co.kr/view/AKR20261106131900527",
+      "published": "2026-11-06T15:42:59+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "씨젠 3분기 영업이익 116억원…21.2%↑",
+      "link": "https://www.yna.co.kr/view/AKR20261106131700527",
+      "published": "2026-11-06T15:41:36+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "삼양식품 3분기 영업익 1천962억원…작년 동기 대비 49.9% 증가",
+      "link": "https://www.yna.co.kr/view/AKR20261106131800527",
+      "published": "2026-11-06T15:40:00+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "강원랜드 3분기 영업이익 597억원…작년 동기 대비 17.9%↓",
+      "link": "https://www.yna.co.kr/view/AKR20261106131400527",
+      "published": "2026-11-06T15:38:27+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "LIG디펜스앤에어로스페이스 3분기 영업이익 676억원…25%↓",
+      "link": "https://www.yna.co.kr/view/AKR20261106128000527",
+      "published": "2026-11-06T15:31:38+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Norway’s Central Bank Holds Key Interest Rate, Signals Readiness to Tighten",
+      "link": "https://www.wsj.com/economy/central-banking/norges-bank-holds-key-interest-rate-but-signals-readiness-to-tighten-dedee6ad?mod=rss_socialeconomyfeed",
+      "published": "2026-11-05T21:25:00+09:00",
+      "keywords": [
+        "interest rate",
+        "inflation",
+        "central bank"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "The solid October jobs report leaves inflation data and developments in financial markets to determine whether the Fed will deliver a widely expected rate in December",
+      "link": "https://www.wsj.com/economy/central-banking/solid-jobs-report-leaves-inflation-markets-to-settle-feds-december-call-7738799e?mod=rss_socialeconomyfeed",
+      "published": "2026-11-07T00:22:00+09:00",
+      "keywords": [
+        "Fed",
+        "inflation"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Thailand’s Inflation Accelerates Past Central Bank’s Target",
+      "link": "https://www.wsj.com/economy/central-banking/thailands-inflation-accelerates-past-central-banks-target-cb096249?mod=rss_socialeconomyfeed",
+      "published": "2026-11-06T12:22:00+09:00",
+      "keywords": [
+        "inflation",
+        "central bank"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "[속보] 영국, 3년여만에 기준금리 인상…연 4%로 0.25%p↑",
+      "link": "https://www.hankyung.com/article/2026110593997",
+      "published": "2026-11-05T21:02:20+09:00",
+      "keywords": [
+        "금리",
+        "기준금리"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "A Soldier Cut Off His Own Foot to Survive. Then Came a Daring Drone Rescue.",
+      "link": "https://www.wsj.com/world/europe/ukraine-war-drone-rescue-c2e59cd6?mod=rss_worldnews",
+      "published": "2026-11-06T11:00:00+09:00",
+      "keywords": [
+        "war"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "China Blocks $5.4 Billion SoftBank Robot Deal, Flexing Control Over AI Tech",
+      "link": "https://www.wsj.com/business/deals/abb-confirms-china-blocked-softbank-deal-for-robotics-unit-cf1d44bf?mod=rss_worldnews",
+      "published": "2026-11-05T20:50:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Week Ahead for FX, Bonds: U.S. Inflation Data Could Give Clues on Rate-Hike Prospects",
+      "link": "https://www.wsj.com/economy/week-ahead-for-fx-bonds-u-s-inflation-data-could-give-clues-on-rate-hike-prospects-53a07d17?mod=rss_socialeconomyfeed",
+      "published": "2026-11-07T01:52:00+09:00",
+      "keywords": [
+        "inflation"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "소주 주춤, 맥주 수출 23% 급증…뜻밖의 변수는 '버드와이저'",
+      "link": "https://www.hankyung.com/article/202611058457i",
+      "published": "2026-11-06T14:00:01+09:00",
+      "keywords": [
+        "수출"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "관세 없애려면 공화당 협조 필수…트럼프 거부권도 난관",
+      "link": "https://www.hankyung.com/article/2026110615691",
+      "published": "2026-11-06T18:02:31+09:00",
+      "keywords": [
+        "관세"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "\"美에 공장 안 지으면 300%\" 위협…트럼프, 다시 '관세 폭주'",
+      "link": "https://www.hankyung.com/article/2026110615781",
+      "published": "2026-11-06T17:49:42+09:00",
+      "keywords": [
+        "관세"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "\"트럼프 관세와 한판\" 예고했지만…민주당 가로막는 것은 [워싱턴나우+]",
+      "link": "https://www.hankyung.com/article/202611061481i",
+      "published": "2026-11-06T17:30:47+09:00",
+      "keywords": [
+        "관세"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "공화당 참패했는데 더 세졌다…트럼프 '관세 300%' 경고",
+      "link": "https://www.hankyung.com/article/2026110696907",
+      "published": "2026-11-06T07:47:48+09:00",
+      "keywords": [
+        "관세"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    }
+  ]
+}
