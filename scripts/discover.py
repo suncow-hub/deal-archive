@@ -333,8 +333,8 @@ def gemini_score(items: list[dict], meta: dict) -> int:
     except Exception as e:  # noqa: BLE001
         meta["gemini"] = f"실패: {scrub(type(e).__name__)}"
         return 0
-    try:   # 응답이 5분 넘게 없으면 끊고 재시도 (무한정 매달리지 않게)
-        client = genai.Client(api_key=key, http_options=types.HttpOptions(timeout=300_000))
+    try:   # 정상 응답은 1~2분 안에 온다. 3분 넘게 없으면 서버가 멈춘 것으로 보고 끊는다 (11/9 시험: 2건짜리 요청도 5분씩 멈춤)
+        client = genai.Client(api_key=key, http_options=types.HttpOptions(timeout=180_000))
     except Exception:  # noqa: BLE001
         client = genai.Client(api_key=key)
     try:
@@ -374,6 +374,9 @@ def gemini_score(items: list[dict], meta: dict) -> int:
                     break
                 except Exception as e:  # noqa: BLE001
                     errors.append(f"{type(e).__name__}")
+                    if any(t in str(e) for t in ("504", "DEADLINE", "imeout", "timed out")) and len(models) > 1:
+                        models.remove(model)
+                        models.append(model)             # 멈춘 모델은 이번 실행 동안 맨 뒤로 (다음 묶음은 다른 모델부터)
                     log(f"[Gemini] 묶음 {bi + 1}/{len(batches)} {model} 실패: {type(e).__name__}: {scrub(str(e))[:120]}")
                     if use_think and ("400" in str(e) or "INVALID_ARGUMENT" in str(e)):
                         use_think = False                # 생각 줄이기 옵션을 안 받는 모델 → 옵션 빼고 계속
