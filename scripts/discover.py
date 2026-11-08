@@ -313,66 +313,91 @@ def pick_model(client) -> str:
     return names
 
 
-def gemini_score(items: list[dict], meta: dict) -> bool:
+GEMINI_BATCH = 30            # 한 번에 보내는 후보 수 (110건을 한 번에 보내면 응답이 길어져 서버가 연결을 끊는 일이 잦았음)
+GEMINI_WAIT_BUDGET = 15 * 60 # 재시도 대기에 쓸 수 있는 전체 시간 (초). 새벽이라 기다려도 괜찮다
+# 기다리면 풀릴 수 있는 일시 오류: 서버 혼잡(503)·한도(429)·내부 오류(500)·연결 끊김·시간 초과
+TRANSIENT = ("503", "429", "500", "UNAVAILABLE", "RESOURCE_EXHAUSTED", "INTERNAL", "disconnect", "Disconnect",
+             "timed out", "Timeout", "timeout", "Connection", "connection", "RemoteProtocolError", "ReadError")
+
+
+def gemini_score(items: list[dict], meta: dict) -> int:
+    """후보를 30건씩 나눠 채점한다. 묶음마다 따로 재시도하므로 일부만 실패해도 나머지 점수는 쓴다.
+    반환값: Gemini로 채점된 후보 수 (0이면 전부 키워드 점수)"""
     key = os.environ.get("GEMINI_API_KEY")
     if not key:
         meta["gemini"] = "키 없음"
-        return False
+        return 0
     try:
         from google import genai
         from google.genai import types
-
+    except Exception as e:  # noqa: BLE001
+        meta["gemini"] = f"실패: {scrub(type(e).__name__)}"
+        return 0
+    try:   # 응답이 2분 넘게 없으면 끊고 재시도 (무한정 매달리지 않게)
+        client = genai.Client(api_key=key, http_options=types.HttpOptions(timeout=120_000))
+    except Exception:  # noqa: BLE001
         client = genai.Client(api_key=key)
+    try:
         models = pick_model(client) if not os.environ.get("GEMINI_MODEL") else [os.environ["GEMINI_MODEL"]]
-        lines = [f'{i}. [{it["source"]}] {it["title"]} | {it["_snippet"][:200]}' for i, it in enumerate(items)]
-        results, last_err, model = None, None, None
-        # 혼잡(503)·한도(429) 오류는 서버 쪽 일시 문제인 경우가 많다. 새벽이라 시간 여유가 있으니
-        # 모델들을 한 바퀴씩 돌며 시도하고, 바퀴 사이에 1·2·4·8분씩 점점 길게 쉰다 (최대 약 15분 대기).
-        waits = [0, 60, 120, 240, 480]
-        tries = 0
-        for rnd, wait in enumerate(waits):
-            if wait:
-                log(f"[Gemini] 서버 혼잡 → {wait // 60}분 쉬고 다시 시도 ({rnd + 1}/{len(waits)}번째 바퀴)")
-                time.sleep(wait)
+    except Exception as e:  # noqa: BLE001
+        meta["gemini"] = f"실패: 모델 목록 {scrub(type(e).__name__)}"
+        return 0
+    waited, tries, done, used, errors = 0, 0, 0, set(), []
+    batches = [list(range(i, min(i + GEMINI_BATCH, len(items)))) for i in range(0, len(items), GEMINI_BATCH)]
+    for bi, idx in enumerate(batches):
+        lines = [f'{n}. [{items[i]["source"]}] {items[i]["title"]} | {items[i]["_snippet"][:200]}' for n, i in enumerate(idx)]
+        results, wait = None, 0
+        while results is None:
             for model in models[:3]:
                 tries += 1
                 try:
                     resp = client.models.generate_content(
-                        model=model,
-                        contents=GEMINI_PROMPT + "\n".join(lines),
-                        config=types.GenerateContentConfig(response_mime_type="application/json", temperature=0.2),
-                    )
+                        model=model, contents=GEMINI_PROMPT + "\n".join(lines),
+                        config=types.GenerateContentConfig(response_mime_type="application/json", temperature=0.2))
                     results = json.loads(resp.text)
+                    used.add(model)
                     break
                 except Exception as e:  # noqa: BLE001
-                    last_err = e
-                    log(f"[Gemini] {model} 실패 ({rnd + 1}번째 바퀴): {type(e).__name__}")
-                    if isinstance(e, (json.JSONDecodeError, ValueError)):
-                        continue   # 응답 형식이 깨진 경우: 다음 모델로
-                    if not any(c in str(e) for c in ("503", "429", "UNAVAILABLE", "RESOURCE_EXHAUSTED", "500", "INTERNAL")):
-                        raise   # 키 오류 같은 건 기다려도 안 풀린다
+                    errors.append(f"{type(e).__name__}")
+                    log(f"[Gemini] 묶음 {bi + 1}/{len(batches)} {model} 실패: {type(e).__name__}: {scrub(str(e))[:120]}")
+                    if isinstance(e, ValueError):        # 응답 JSON이 깨짐 → 다음 모델
+                        continue
+                    if not any(t in f"{type(e).__name__} {e}" for t in TRANSIENT):
+                        meta["gemini"] = f"실패: {scrub(type(e).__name__)}: {scrub(str(e))[:200]}"   # 키 오류 등: 기다려도 안 됨
+                        meta["gemini_tries"] = tries
+                        return done
             if results is not None:
                 break
-        meta["gemini_tries"] = tries
+            wait = min(max(60, wait * 2), 480)           # 1·2·4·8분으로 늘려 가며 쉼
+            if waited + wait > GEMINI_WAIT_BUDGET:
+                log(f"[Gemini] 묶음 {bi + 1} 포기 (대기 시간 소진) → 이 묶음은 키워드 점수")
+                break
+            log(f"[Gemini] {wait // 60}분 쉬고 다시 시도")
+            time.sleep(wait)
+            waited += wait
         if results is None:
-            raise last_err or RuntimeError("채점 실패")
-        meta["gemini_model"] = model
-        by_id = {int(r["id"]): r for r in results if "id" in r}
-        for i, it in enumerate(items):
-            r = by_id.get(i)
+            continue
+        by_id = {int(r["id"]): r for r in results if isinstance(r, dict) and "id" in r}
+        for n, i in enumerate(idx):
+            r = by_id.get(n)
             if r:
+                it = items[i]
                 it["score"] = float(r.get("score", 0))
                 it["reason"] = str(r.get("reason", ""))[:60]
                 if r.get("kind") in ("deal", "macro", "drop"):
                     it["kind"] = r["kind"]
                 it["score_by"] = "gemini"
-        meta["gemini"] = f"성공 ({len(by_id)}/{len(items)}건 채점)"
-        log(f"[Gemini] {model}로 {len(by_id)}/{len(items)}건 채점")
-        return True
-    except Exception as e:  # noqa: BLE001
-        meta["gemini"] = f"실패: {scrub(type(e).__name__)}: {scrub(str(e))[:200]}"
-        log(f"[Gemini] 실패 → 키워드 점수로 진행: {e}")
-        return False
+                done += 1
+    meta["gemini_tries"] = tries
+    meta["gemini_model"] = ", ".join(sorted(used))
+    if done == len(items):
+        meta["gemini"] = f"성공 ({done}/{len(items)}건 채점)"
+    elif done:
+        meta["gemini"] = f"일부 성공 ({done}/{len(items)}건 채점, 나머지는 키워드 점수). 오류: {', '.join(sorted(set(errors)))}"
+    else:
+        meta["gemini"] = f"실패 (재시도 {tries}번, 대기 {waited // 60}분). 오류: {', '.join(sorted(set(errors)))}"
+    log(f"[Gemini] {meta['gemini']}")
+    return done
 
 
 # ---------------------------------------------------------------- 환율
@@ -437,19 +462,18 @@ def main() -> int:
         it["score_by"] = "keyword"
         it["reason"] = ""
 
-    scored = False
     if items:
-        scored = gemini_score(items, meta)
+        gemini_score(items, meta)
     else:
         meta["gemini"] = "후보 없음"
 
     lim = cfg["limits"]
-    min_deal = lim["min_score_deal"] if scored else 0
-    min_macro = lim["min_score_macro"] if scored else 0
-    deals = sorted([i for i in items if i["kind"] == "deal" and i["score"] >= min_deal],
-                   key=lambda x: -x["score"])[: lim["max_candidates_deal"]]
-    macros = sorted([i for i in items if i["kind"] == "macro" and i["score"] >= min_macro],
-                    key=lambda x: -x["score"])[: lim["max_candidates_macro"]]
+    # 최소 점수는 Gemini가 채점한 후보에만 적용한다 (채점 못 한 묶음은 키워드 점수로 모두 넘김)
+    ok = lambda i, m: i["score_by"] != "gemini" or i["score"] >= m  # noqa: E731
+    deals = sorted([i for i in items if i["kind"] == "deal" and ok(i, lim["min_score_deal"])],
+                   key=lambda x: (x["score_by"] != "gemini", -x["score"]))[: lim["max_candidates_deal"]]
+    macros = sorted([i for i in items if i["kind"] == "macro" and ok(i, lim["min_score_macro"])],
+                    key=lambda x: (x["score_by"] != "gemini", -x["score"]))[: lim["max_candidates_macro"]]
     meta["counts"] = {"deal": len(deals), "macro": len(macros),
                       "dropped": len(items) - len(deals) - len(macros)}
 
