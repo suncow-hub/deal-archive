@@ -1,0 +1,331 @@
+{
+  "meta": {
+    "run_at": "2026-11-09T02:19:10.986024+09:00",
+    "window_start": "2026-11-07T20:19:10.986024+09:00",
+    "sources": {
+      "환율": "0일 추가 (최신 2026-11-06)",
+      "OpenDART 상세": "0건 성공, 0건 실패",
+      "OpenDART": "0건",
+      "WSJ Markets": "1/60",
+      "WSJ U.S. Business": "1/85",
+      "PR Newswire M&A": "0/20",
+      "한경 증권": "1/50",
+      "인베스트조선": "0/50",
+      "연합뉴스 마켓+": "6/120",
+      "매일경제 증권": "5/50",
+      "조선비즈": "2/100",
+      "FT M&A": "1/25",
+      "CNBC Business": "0/30",
+      "WSJ World News": "1/71",
+      "WSJ Economy": "2/36",
+      "한경 경제": "3/50",
+      "한경 국제": "0/50"
+    },
+    "gemini": "실패: ServerError: 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}",
+    "gemini_tries": 1,
+    "counts": {
+      "deal": 16,
+      "macro": 6,
+      "dropped": 0
+    }
+  },
+  "items": [
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "증시 급락에 PEF 투자기업도 주가도 '뚝'…지분 가치 하락 부담",
+      "link": "https://www.yna.co.kr/view/AKR20261106190400008",
+      "published": "2026-11-08T06:30:01+09:00",
+      "keywords": [
+        "지분",
+        "사모펀드",
+        "PEF",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "‘우협 줄다리기’에 위기 맞은 KDB생명…‘인수자 북적’ 기대 품은 JTBC [M&A복덕방]",
+      "link": "https://www.mk.co.kr/news/stock/12201625",
+      "published": "2026-11-08T11:31:06+09:00",
+      "keywords": [
+        "인수",
+        "매각",
+        "합병",
+        "우선협상대상자"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "DoorDash Shareholders Aren’t Convinced the Company Can Take On Amazon",
+      "link": "https://www.wsj.com/business/retail/doordash-shareholders-arent-convinced-the-company-can-take-on-amazon-bdb22c70?mod=rss_markets_main",
+      "published": "2026-11-08T19:30:00+09:00",
+      "keywords": [
+        "acquisition",
+        "deal"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "SK에코 상장 접자 … SK디스커버리 4200억 차익",
+      "link": "https://www.mk.co.kr/news/stock/12201812",
+      "published": "2026-11-08T17:26:27+09:00",
+      "keywords": [
+        "지분",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "고려아연 주식 94만원에 산 MBK, 콜옵션 행사하면 77만원…지분 추가 확보할까",
+      "link": "https://www.hankyung.com/article/202611082723g",
+      "published": "2026-11-08T10:14:42+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "엇갈린 업황·복잡해진 투자 셈법…낸드업계 상장 잇단 제동",
+      "link": "https://www.yna.co.kr/view/AKR20261106167400003",
+      "published": "2026-11-08T06:45:01+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "급락장에 줄줄이 추락…지난주 상장사 3개중 1개는 연중 최저가",
+      "link": "https://www.yna.co.kr/view/AKR20261106189100008",
+      "published": "2026-11-08T06:25:01+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "외국인 ETF도 결국 팔았다…지난달 마지막주 12주만에 순매도 전환",
+      "link": "https://www.yna.co.kr/view/AKR20261107026600008",
+      "published": "2026-11-08T06:20:00+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "글로벌 증시 급락에 상장지수펀드 순자산 400조원 깨졌다",
+      "link": "https://www.yna.co.kr/view/AKR20261107028500008",
+      "published": "2026-11-08T06:05:01+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "디지털자산법 이달 발표…대주주 지분규제 이행기간 부여 가닥",
+      "link": "https://www.yna.co.kr/view/AKR20261107033100002",
+      "published": "2026-11-08T05:53:00+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "증시 급락에 ETF 시총 반년만에 400조 아래로",
+      "link": "https://www.mk.co.kr/news/stock/12201811",
+      "published": "2026-11-08T17:26:26+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "한미 증시 하락에…ETF 시가총액 400조원 붕괴",
+      "link": "https://www.mk.co.kr/news/stock/12201692",
+      "published": "2026-11-08T15:00:17+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "이 정도면 도박보다 심하네…하루만에 40% 급락한 속슬, 서학개미 어쩌나",
+      "link": "https://www.mk.co.kr/news/stock/12201537",
+      "published": "2026-11-07T21:32:04+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "조선비즈",
+      "kind": "deal",
+      "title": "증시 급락에… 상장사 3분의 1, 주가 연중 최저",
+      "link": "https://biz.chosun.com/stock/stock_general/2026/11/09/GIYDQZJWHFQTSYTBMRTGINZWHE/",
+      "published": "2026-11-09T00:32:00+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "조선비즈",
+      "kind": "deal",
+      "title": "'미용사 변신' 이지현, 경사 났다...K-컬처 어워즈 '뷰티' 부분 수상",
+      "link": "https://biz.chosun.com/entertainment/enter_general/2026/11/08/GMZWEZTBMI2WIOLEGM2DAOJVHA/",
+      "published": "2026-11-08T20:42:00+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "Private equity firm seeks to take control of LIV Golf from Saudi wealth fund",
+      "link": "https://www.ft.com/content/cbab2db2-3180-40c5-8fa6-af51adc74768?syn-25a6b1a6=1",
+      "published": "2026-11-08T23:32:40+09:00",
+      "keywords": [
+        "private equity"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "New Zealand’s ruling conservatives led by a slim margin in an election Saturday, despite facing a backlash from voters over the cost of living, rising interest rates and a patchy economic recovery",
+      "link": "https://www.wsj.com/world/oceania/new-zealands-conservatives-narrowly-lead-in-election-4a4fddd2?mod=rss_socialeconomyfeed",
+      "published": "2026-11-07T20:40:00+09:00",
+      "keywords": [
+        "interest rate",
+        "election"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "급락한 美 증시, 내년 운명은 AI 산업·국채금리에 달렸다",
+      "link": "https://www.hankyung.com/article/202611046456i",
+      "published": "2026-11-08T15:29:02+09:00",
+      "keywords": [
+        "금리",
+        "국채"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "AI 거품 공포에 흔들리는 美 증시…中, 물가·수출 성적표에 촉각",
+      "link": "https://www.hankyung.com/article/202611082964i",
+      "published": "2026-11-08T14:03:59+09:00",
+      "keywords": [
+        "물가",
+        "수출"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "New Zealand’s Conservatives Narrowly Lead in Election",
+      "link": "https://www.wsj.com/world/oceania/new-zealands-conservatives-narrowly-lead-in-election-4a4fddd2?mod=rss_worldnews",
+      "published": "2026-11-07T20:40:00+09:00",
+      "keywords": [
+        "election"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "A Democratic Senate majority would be the broadest check yet on the president’s efforts to control the central bank",
+      "link": "https://www.wsj.com/economy/central-banking/the-democratic-surge-will-cap-trumps-reach-at-the-fed-6b706e11?mod=rss_socialeconomyfeed",
+      "published": "2026-11-08T19:30:00+09:00",
+      "keywords": [
+        "central bank"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "경제지표와 체감경기 괴리 '사상 최대'",
+      "link": "https://www.hankyung.com/article/2026110833121",
+      "published": "2026-11-08T17:46:50+09:00",
+      "keywords": [
+        "경기"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    }
+  ]
+}
