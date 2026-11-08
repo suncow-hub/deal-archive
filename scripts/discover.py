@@ -313,10 +313,10 @@ def pick_model(client) -> str:
     return names
 
 
-GEMINI_BATCH = 30            # 한 번에 보내는 후보 수 (110건을 한 번에 보내면 응답이 길어져 서버가 연결을 끊는 일이 잦았음)
+GEMINI_BATCH = 20            # 한 번에 보내는 후보 수 (110건을 한 번에 보내면 응답이 길어져 서버가 연결을 끊는 일이 잦았음)
 GEMINI_WAIT_BUDGET = 15 * 60 # 재시도 대기에 쓸 수 있는 전체 시간 (초). 새벽이라 기다려도 괜찮다
 # 기다리면 풀릴 수 있는 일시 오류: 서버 혼잡(503)·한도(429)·내부 오류(500)·연결 끊김·시간 초과
-TRANSIENT = ("503", "429", "500", "UNAVAILABLE", "RESOURCE_EXHAUSTED", "INTERNAL", "disconnect", "Disconnect",
+TRANSIENT = ("503", "504", "429", "500", "UNAVAILABLE", "DEADLINE", "RESOURCE_EXHAUSTED", "INTERNAL", "disconnect", "Disconnect",
              "timed out", "Timeout", "timeout", "Connection", "connection", "RemoteProtocolError", "ReadError")
 
 
@@ -333,8 +333,8 @@ def gemini_score(items: list[dict], meta: dict) -> int:
     except Exception as e:  # noqa: BLE001
         meta["gemini"] = f"실패: {scrub(type(e).__name__)}"
         return 0
-    try:   # 응답이 2분 넘게 없으면 끊고 재시도 (무한정 매달리지 않게)
-        client = genai.Client(api_key=key, http_options=types.HttpOptions(timeout=120_000))
+    try:   # 응답이 5분 넘게 없으면 끊고 재시도 (무한정 매달리지 않게)
+        client = genai.Client(api_key=key, http_options=types.HttpOptions(timeout=300_000))
     except Exception:  # noqa: BLE001
         client = genai.Client(api_key=key)
     try:
@@ -342,6 +342,23 @@ def gemini_score(items: list[dict], meta: dict) -> int:
     except Exception as e:  # noqa: BLE001
         meta["gemini"] = f"실패: 모델 목록 {scrub(type(e).__name__)}"
         return 0
+    # 점수 매기기는 깊게 생각할 일이 아니다. 최신 flash 모델은 기본으로 오래 '생각'해서 응답이 늦고(504·연결 끊김의 원인),
+    # 생각을 줄이도록 요청한다. 모델이 그 옵션을 받지 않으면(400) 옵션 없이 다시 보낸다.
+    think = None
+    for kw in ({"thinking_level": "low"}, {"thinking_budget": 0}):
+        try:
+            think = types.ThinkingConfig(**kw)
+            break
+        except Exception:  # noqa: BLE001
+            continue
+    use_think = think is not None
+
+    def config():
+        kw = {"response_mime_type": "application/json", "temperature": 0.2}
+        if use_think:
+            kw["thinking_config"] = think
+        return types.GenerateContentConfig(**kw)
+
     waited, tries, done, used, errors = 0, 0, 0, set(), []
     batches = [list(range(i, min(i + GEMINI_BATCH, len(items)))) for i in range(0, len(items), GEMINI_BATCH)]
     for bi, idx in enumerate(batches):
@@ -351,15 +368,17 @@ def gemini_score(items: list[dict], meta: dict) -> int:
             for model in models[:3]:
                 tries += 1
                 try:
-                    resp = client.models.generate_content(
-                        model=model, contents=GEMINI_PROMPT + "\n".join(lines),
-                        config=types.GenerateContentConfig(response_mime_type="application/json", temperature=0.2))
+                    resp = client.models.generate_content(model=model, contents=GEMINI_PROMPT + "\n".join(lines), config=config())
                     results = json.loads(resp.text)
                     used.add(model)
                     break
                 except Exception as e:  # noqa: BLE001
                     errors.append(f"{type(e).__name__}")
                     log(f"[Gemini] 묶음 {bi + 1}/{len(batches)} {model} 실패: {type(e).__name__}: {scrub(str(e))[:120]}")
+                    if use_think and ("400" in str(e) or "INVALID_ARGUMENT" in str(e)):
+                        use_think = False                # 생각 줄이기 옵션을 안 받는 모델 → 옵션 빼고 계속
+                        log("[Gemini] 생각 줄이기 옵션 거절됨 → 옵션 없이 다시 시도")
+                        continue
                     if isinstance(e, ValueError):        # 응답 JSON이 깨짐 → 다음 모델
                         continue
                     if not any(t in f"{type(e).__name__} {e}" for t in TRANSIENT):
