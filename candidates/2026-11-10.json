@@ -1,0 +1,734 @@
+{
+  "meta": {
+    "run_at": "2026-11-10T02:14:17.226213+09:00",
+    "window_start": "2026-11-06T20:14:17.226213+09:00",
+    "sources": {
+      "환율": "1일 추가 (최신 2026-11-09)",
+      "OpenDART 상세": "0건 성공, 1건 실패",
+      "OpenDART": "5건",
+      "WSJ Markets": "3/61",
+      "WSJ U.S. Business": "8/85",
+      "PR Newswire M&A": "14/20",
+      "한경 증권": "2/50",
+      "인베스트조선": "6/50",
+      "연합뉴스 마켓+": "28/120",
+      "매일경제 증권": "4/50",
+      "조선비즈": "2/100",
+      "FT M&A": "3/25",
+      "CNBC Business": "0/30",
+      "WSJ World News": "11/70",
+      "WSJ Economy": "5/36",
+      "한경 경제": "3/50",
+      "한경 국제": "2/50"
+    },
+    "gemini": "실패: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest feature",
+    "gemini_tries": 7,
+    "counts": {
+      "deal": 40,
+      "macro": 12,
+      "dropped": 31
+    }
+  },
+  "items": [
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Mitsui Chemicals to Acquire JSR With Development Bank of Japan for $8.8 Billion",
+      "link": "https://www.wsj.com/business/deals/mitsui-chemicals-to-acquire-jsr-with-development-bank-of-japan-for-8-8-billion-578ccd86?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-09T12:32:00+09:00",
+      "keywords": [
+        "acquire"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "88억 달러 규모 글로벌 반도체 소재사 대형 인수 건."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Intesa Gets Green Light From Italian Markets Regulator for Monte Dei Paschi Bid",
+      "link": "https://www.wsj.com/business/deals/intesa-gets-green-light-from-italian-markets-regulator-for-monte-dei-paschi-bid-054726f9?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-09T16:16:00+09:00",
+      "keywords": [
+        "takeover"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "390억 달러 규모의 이탈리아 대형 은행 인수 승인."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "UniCredit Signals It Is Ready to Bring Forward Merger With Commerzbank",
+      "link": "https://www.wsj.com/business/earnings/unicredit-raises-profit-guidance-as-control-of-commerzbank-nears-ce8ccdc8?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-09T21:23:00+09:00",
+      "keywords": [
+        "merger"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "유럽 주요 은행 간 대형 인수합병 가속화 뉴스."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Crédit Agricole Proposes Merger of Italian Business With Banco BPM",
+      "link": "https://www.wsj.com/business/deals/credit-agricole-proposes-merger-of-italian-business-with-banco-bpm-d77044a4?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-09T22:49:00+09:00",
+      "keywords": [
+        "merger"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "프랑스-이탈리아 대형 은행 간 합병 제안건."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "PSP Investments to acquire 50% of Enercare, one of Canada's leading home infrastructure platforms, for approximately $1.6 billion",
+      "link": "https://www.prnewswire.com/news-releases/psp-investments-to-acquire-50-of-enercare-one-of-canadas-leading-home-infrastructure-platforms-for-approximately-1-6-billion-302933417.html",
+      "published": "2026-11-10T00:00:00+09:00",
+      "keywords": [
+        "acquire"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "16억 달러 규모 인프라 기업 지분 인수 거래."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "LS Power to Acquire Six Natural Gas Power Generation Assets from NRG Energy",
+      "link": "https://www.prnewswire.com/news-releases/ls-power-to-acquire-six-natural-gas-power-generation-assets-from-nrg-energy-302933303.html",
+      "published": "2026-11-09T21:09:00+09:00",
+      "keywords": [
+        "acquire"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "4.9GW 규모 대형 가스발전 자산 인수 거래."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Royal Bank of Canada announces agreement to acquire Yarra Capital Management",
+      "link": "https://www.prnewswire.com/news-releases/royal-bank-of-canada-announces-agreement-to-acquire-yarra-capital-management-864253761.html",
+      "published": "2026-11-09T22:00:00+09:00",
+      "keywords": [
+        "acquire",
+        "acquisition"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "캐나다 왕립은행의 호주 자산운용사 인수 발표."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "MTN Group Posts Revenue Growth, Higher Profitability",
+      "link": "https://www.wsj.com/business/earnings/mtn-group-posts-revenue-growth-higher-profitability-7240166f?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-09T16:12:00+09:00",
+      "keywords": [
+        "acquisition"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "통신사의 기존 피인수 거래 진행 상황 언급 뉴스."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "SK㈜, 반년새 에코 매수가 18% 올려…디스커버리 PRS 차익도 1000억 더",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/09/2026110980084.html",
+      "published": "2026-11-09T11:34:07+09:00",
+      "keywords": [
+        "IPO",
+        "인수",
+        "지분",
+        "IPO"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "JTBC 새 주인 찾기 돌입…내년 1월 윤곽",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/09/2026110980055.html",
+      "published": "2026-11-09T10:31:25+09:00",
+      "keywords": [
+        "인수",
+        "매각",
+        "합병",
+        "지분",
+        "유상증자"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "점점 비싸지는 공개매수, '81% 할증'까지…의무화 땐 M&A 비용 '격변'",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/08/2026110880025.html",
+      "published": "2026-11-09T07:00:00+09:00",
+      "keywords": [
+        "인수",
+        "합병",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "증시 급락에 PEF 투자기업도 주가도 '뚝'…지분 가치 하락 부담",
+      "link": "https://www.yna.co.kr/view/AKR20261106190400008",
+      "published": "2026-11-08T06:30:01+09:00",
+      "keywords": [
+        "지분",
+        "사모펀드",
+        "PEF",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "'플랫폼' 몸값 받았던 카카오뱅크…'은행주' 한계에 결국 M&A 카드",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/06/2026110680107.html",
+      "published": "2026-11-09T07:00:00+09:00",
+      "keywords": [
+        "인수",
+        "합병"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "삼성화재, 英캐노피우스 지분 추가인수…해외사업 확대",
+      "link": "https://www.yna.co.kr/view/AKR20261109153600002",
+      "published": "2026-11-09T19:31:51+09:00",
+      "keywords": [
+        "인수",
+        "지분"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "카카오페이증권제1호스팩 등 총 3개사, 코스닥 상장예심 신청",
+      "link": "https://www.yna.co.kr/view/AKR20261109146200008",
+      "published": "2026-11-09T17:47:27+09:00",
+      "keywords": [
+        "인수",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "체시스, 60억원 제3자배정 유상증자",
+      "link": "https://www.yna.co.kr/view/AKR20261109136300008",
+      "published": "2026-11-09T16:58:02+09:00",
+      "keywords": [
+        "유상증자",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "스피어 \"싱가포르 종속회사 주식 95억에 추가취득…지분율 100%\"",
+      "link": "https://www.yna.co.kr/view/AKR20261109126100008",
+      "published": "2026-11-09T16:12:02+09:00",
+      "keywords": [
+        "지분",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "FT \"앤트로픽, 26일 이전 IPO 완료 방침\"",
+      "link": "https://www.yna.co.kr/view/AKR20261109017200009",
+      "published": "2026-11-09T08:24:01+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "고도파트너스, 유아용품 기업 엘리시아 인수한다",
+      "link": "https://www.mk.co.kr/news/stock/12202798",
+      "published": "2026-11-09T17:59:46+09:00",
+      "keywords": [
+        "인수",
+        "엑시트"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "거대해진 '상장 이전 투자' 열풍, ETF는 어떻게 대응하나?",
+      "link": "https://www.hankyung.com/article/202611095149i",
+      "published": "2026-11-09T15:17:06+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "\"美기술주·단기채권 절반씩\"…'KODEX 미국나스닥100미국채혼합50' 상장",
+      "link": "https://www.hankyung.com/article/202611095101i",
+      "published": "2026-11-09T14:41:35+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "SK이노, 리밸런싱 넘어 에너지 통합…마지막 퍼즐은 'SK온 합병'",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/06/2026110680112.html",
+      "published": "2026-11-09T07:00:00+09:00",
+      "keywords": [
+        "합병"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "비엠 숨통 텄지만…에코프로, 조달 활로 좁아진 '2.3조 차환' 셈법은",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/06/2026110680088.html",
+      "published": "2026-11-09T07:00:00+09:00",
+      "keywords": [
+        "유상증자"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "한샘 3분기 영업이익 76.5% 감소…\"사업 재편으로 수익성 둔화\"(종합)",
+      "link": "https://www.yna.co.kr/view/AKR20261109139151527",
+      "published": "2026-11-09T17:37:09+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "'약국 플랫폼 기업' 바로팜, 코스닥 신규상장…11일부터 거래",
+      "link": "https://www.yna.co.kr/view/AKR20261109141400008",
+      "published": "2026-11-09T17:21:10+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "한샘 3분기 영업이익 16억원…작년 동기 대비 76.5% 감소",
+      "link": "https://www.yna.co.kr/view/AKR20261109139100527",
+      "published": "2026-11-09T17:10:24+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "메가스터디교육 3분기 영업이익 537억원…작년 동기 대비 0.9%↑",
+      "link": "https://www.yna.co.kr/view/AKR20261109132300527",
+      "published": "2026-11-09T16:47:46+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "펌텍코리아 3분기 영업이익 251억원…작년 동기 대비 64%↑",
+      "link": "https://www.yna.co.kr/view/AKR20261109122800527",
+      "published": "2026-11-09T15:57:59+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "씨앤씨인터내셔널 3분기 영업손실 4억4천만원…적자 전환",
+      "link": "https://www.yna.co.kr/view/AKR20261109122700527",
+      "published": "2026-11-09T15:56:58+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "SK케미칼 3분기 영업이익 336억원…작년 동기 대비 116%↑",
+      "link": "https://www.yna.co.kr/view/AKR20261109119700527",
+      "published": "2026-11-09T15:47:26+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "원익IPS 3분기 영업이익 667억원…작년 동기 대비 142%↑",
+      "link": "https://www.yna.co.kr/view/AKR20261109117600527",
+      "published": "2026-11-09T15:39:55+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "두산 3분기 영업이익 4천594억원…작년 동기 대비 98%↑",
+      "link": "https://www.yna.co.kr/view/AKR20261109116900527",
+      "published": "2026-11-09T15:38:37+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "미래운용, TIGER 200커버드콜액티브 ETF 상장…\"분배금 비과세\"",
+      "link": "https://www.yna.co.kr/view/AKR20261109104200008",
+      "published": "2026-11-09T15:04:28+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "엘앤씨바이오 3분기 영업이익 98억원…작년 동기 대비 239.7%↑",
+      "link": "https://www.yna.co.kr/view/AKR20261109102600527",
+      "published": "2026-11-09T14:43:19+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "[IPO챗] 엠비디 \"환자 맞춤형 항암제 검사 확대…글로벌 시장 공략\"",
+      "link": "https://www.yna.co.kr/view/AKR20261109097000008",
+      "published": "2026-11-09T14:14:34+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "롯데칠성 3분기 영업익 570억원…작년 동기 대비 37.9% 감소",
+      "link": "https://www.yna.co.kr/view/AKR20261109088100527",
+      "published": "2026-11-09T13:52:22+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "한국앤컴퍼니 3분기 영업이익 665억원…작년 동기 대비 51.5%↓",
+      "link": "https://www.yna.co.kr/view/AKR20261109081800527",
+      "published": "2026-11-09T13:41:26+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "YG엔터테인먼트 3분기 영업이익 135억원…작년 대비 56.8%↓",
+      "link": "https://www.yna.co.kr/view/AKR20261109086500527",
+      "published": "2026-11-09T13:32:55+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "[게시판] 핀다, 저축은행 인수 후 첫 공채…19개 직무 모집",
+      "link": "https://www.yna.co.kr/view/AKR20261109043200002",
+      "published": "2026-11-09T10:06:44+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "삼성증권, 금·은·구리 선물 ETN 6종 신규 상장",
+      "link": "https://www.yna.co.kr/view/AKR20261109032600008",
+      "published": "2026-11-09T09:17:41+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "美中, 무역 휴전 2개월 연장…관세·희토류 수출통제 유예",
+      "link": "https://www.hankyung.com/article/2026110959897",
+      "published": "2026-11-09T19:44:12+09:00",
+      "keywords": [
+        "관세",
+        "수출",
+        "무역"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "China Producer Inflation Accelerates to Over Four-Year High",
+      "link": "https://www.wsj.com/economy/china-producer-inflation-accelerates-to-over-four-year-high-a31d4985?mod=rss_socialeconomyfeed",
+      "published": "2026-11-09T12:59:00+09:00",
+      "keywords": [
+        "inflation",
+        "China"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "中, 희토류 수출통제 면제 2개월 연장…美·中 무역휴전 이어가",
+      "link": "https://www.hankyung.com/article/202611095990i",
+      "published": "2026-11-09T19:56:45+09:00",
+      "keywords": [
+        "수출",
+        "무역"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "China’s Push for Influence in the South Pacific Is Running Into Resistance",
+      "link": "https://www.wsj.com/world/chinas-push-for-influence-in-the-south-pacific-is-running-into-resistance-2f51f7e5?mod=rss_worldnews",
+      "published": "2026-11-09T12:00:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "The New Political Era: Less Party Loyalty, Big Election Swings",
+      "link": "https://www.wsj.com/world/europe/the-new-political-era-less-party-loyalty-big-election-swings-4cfa0ba1?mod=rss_worldnews",
+      "published": "2026-11-09T11:00:00+09:00",
+      "keywords": [
+        "election"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Trump’s Clashing Advisers Press Him to Make Iran War Decision",
+      "link": "https://www.wsj.com/world/middle-east/trumps-clashing-advisers-press-him-to-make-iran-war-decision-758c1e55?mod=rss_worldnews",
+      "published": "2026-11-07T09:00:00+09:00",
+      "keywords": [
+        "war"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Israel’s Economy Defied Three Years of War. Now the Bill Is Coming Due.",
+      "link": "https://www.wsj.com/world/middle-east/israels-economy-defied-three-years-of-war-now-the-bill-is-coming-due-49d171e1?mod=rss_worldnews",
+      "published": "2026-11-07T03:15:00+09:00",
+      "keywords": [
+        "war"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Opinion | Israel Can Achieve a Unity Government",
+      "link": "https://www.wsj.com/opinion/israel-can-achieve-a-unity-government-89bc778a?mod=rss_worldnews",
+      "published": "2026-11-09T03:47:00+09:00",
+      "keywords": [
+        "election"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Opinion | Why the Lights Go Dark in Cuba",
+      "link": "https://www.wsj.com/opinion/why-the-lights-go-dark-in-cuba-bee46dce?mod=rss_worldnews",
+      "published": "2026-11-09T03:35:00+09:00",
+      "keywords": [
+        "sanctions"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Opinion | It Was the Economy, Not the War",
+      "link": "https://www.wsj.com/opinion/it-was-the-economy-not-the-war-a4029e99?mod=rss_worldnews",
+      "published": "2026-11-09T02:23:00+09:00",
+      "keywords": [
+        "war"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Ten Months of War to Gain 46 Square Miles: How Russia Is Failing on the Battlefield",
+      "link": "https://www.wsj.com/world/russia/ten-months-of-war-to-gain-46-square-miles-how-russia-is-failing-on-the-battlefield-3184ae10?mod=rss_worldnews",
+      "published": "2026-11-07T13:00:00+09:00",
+      "keywords": [
+        "war"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "New Zealand’s Conservatives Narrowly Lead in Election",
+      "link": "https://www.wsj.com/world/oceania/new-zealands-conservatives-narrowly-lead-in-election-4a4fddd2?mod=rss_worldnews",
+      "published": "2026-11-07T20:40:00+09:00",
+      "keywords": [
+        "election"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    }
+  ]
+}
