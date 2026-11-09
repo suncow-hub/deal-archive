@@ -3,7 +3,7 @@
 상태: "검토·협상"
 신뢰도: "보도 기준"
 발표일: 2026-11-02
-최종 업데이트: 2026-11-04
+최종 업데이트: 2026-11-10
 지역: ["미국", "일본"]
 규모 구간: "비공개"
 규모(원화): "비공개 (전체 공모 규모 확인되지 않음. 일본 배정분 상한 약 4.7조 원)"
@@ -16,9 +16,10 @@
 매도자: []
 재무 자문: []
 법률 자문: []
-출처: ["https://www.anthropic.com/news/s1-sec", "https://www.investing.com/news/stock-market-news/anthropic-plans-to-sell-35-billion-of-shares-to-japan-investors-in-ipo-filing-shows-4989963", "https://www.yna.co.kr/view/AKR20261102171900073", "https://www.wsj.com/finance/stocks/anthropic-investors-push-for-cautious-valuation-closer-to-1-5-trillion-2f2df9cf", "https://www.yna.co.kr/view/AKR20261103038300009"]
+출처: ["https://www.anthropic.com/news/s1-sec", "https://www.investing.com/news/stock-market-news/anthropic-plans-to-sell-35-billion-of-shares-to-japan-investors-in-ipo-filing-shows-4989963", "https://www.yna.co.kr/view/AKR20261102171900073", "https://www.wsj.com/finance/stocks/anthropic-investors-push-for-cautious-valuation-closer-to-1-5-trillion-2f2df9cf", "https://www.yna.co.kr/view/AKR20261103038300009", "https://www.yna.co.kr/view/AKR20261109017200009", "https://news.bgov.com/banking-law/anthropic-said-to-target-mega-ipo-before-thanksgiving-holiday"]
 비교: {대가 구성: "", 인수자 성격: "", 메모: "전체 공모 규모·공모가·기업가치는 확인되지 않음"}
-일정: []
+일정:
+  - {날짜: "2026-11-26", 내용: "이 날(추수감사절) 이전 상장 완료 목표 (보도 기준)"}
 정정: []
 ---
 ## 한 줄 요약
@@ -44,6 +45,7 @@
 <!-- 업데이트될 때마다 맨 아래에 한 줄씩 추가. 기존 줄은 수정하지 않음 -->
 - 2026-11-02: 일본 투자자 대상 최대 35억 달러 매각 계획이 신고서 기준으로 보도됐다.
 - 2026-11-03: 기존 투자자들이 상장 기업가치를 1.5조 달러 안팎으로 보수적으로 잡자고 요구하고 있다는 보도가 나왔다 (WSJ 보도, 확정 공모가 아님).
+- 2026-11-09: 11월 26일(추수감사절) 이전 상장을 마치는 것을 목표로 한다는 보도가 나왔다 (FT·Bloomberg 보도 기준, 공모가·상장일 미확정).
 
 ## 관련 딜·뉴스
 - [Marvell, Lumentum을 기업가치 1,150억 달러에 전액 주식으로 인수](../2026/2026-11-02-marvell-technology-lumentum.md) — 같은 날 나온 AI 데이터센터 관련 대형 거래

@@ -1,9 +1,9 @@
 ---
-제목: "Monte dei Paschi 주주, Intesa 인수 제안에 맞선 방어안 부결"
+제목: "Intesa의 Monte dei Paschi 교환 공개매수, Consob 승인…11월 24일 응모 시작"
 상태: "검토·협상"
-신뢰도: "보도 기준"
+신뢰도: "공시 확정"
 발표일: 2026-10-29
-최종 업데이트: 2026-10-30
+최종 업데이트: 2026-11-10
 지역: ["유럽"]
 규모 구간: "20조 이상"
 규모(원화): "약 49조 원 (대략값)"
@@ -16,10 +16,12 @@
 매도자: []
 재무 자문: []
 법률 자문: []
-출처: ["https://live.euronext.com/en/financial-news/mps-investors-sink-ceos-defence-plan-against-intesa-bid", "https://group.intesasanpaolo.com/en/newsroom/all-news/news/2026/intesa-sanpaolo-tender-offer-on-mps", "https://www.wsj.com/finance/investing/monte-dei-paschi-investors-reject-defense-plan-against-intesas-bid-0800184a"]
+출처: ["https://live.euronext.com/en/financial-news/mps-investors-sink-ceos-defence-plan-against-intesa-bid", "https://group.intesasanpaolo.com/en/newsroom/all-news/news/2026/intesa-sanpaolo-tender-offer-on-mps", "https://www.wsj.com/finance/investing/monte-dei-paschi-investors-reject-defense-plan-against-intesas-bid-0800184a", "https://group.intesasanpaolo.com/en/investor-relations/bancamps/press-releases", "https://www.wsj.com/business/deals/intesa-gets-green-light-from-italian-markets-regulator-for-monte-dei-paschi-bid-054726f9"]
 비교: {"지분가치(억원)": 491172, 대가 구성: "현금+주식", 인수자 성격: "전략적", 메모: "약 330억 유로는 보도 기준 추정이며 Intesa 주가에 따라 변동"}
 일정: 
   - {날짜: "2026-11", 내용: "이탈리아 반독점 당국 판단 예정"}
+  - {날짜: "2026-11-24", 내용: "공개매수 응모 시작"}
+  - {날짜: "2027-01-22", 내용: "공개매수 응모 마감 (연장 가능)"}
 정정: []
 ---
 ## 한 줄 요약
@@ -44,6 +46,9 @@ Intesa는 MPS 전량을 대상으로 MPS 1주당 Intesa 신주 1.6주와 현금 
 ## 진행 이력
 <!-- 업데이트될 때마다 맨 아래에 한 줄씩 추가. 기존 줄은 수정하지 않음 -->
 - 2026-10-29: MPS 주주총회에서 경영진 방어안과 Mediobanca 완전합병안이 모두 부결됐다. Intesa 공개매수는 진행 중(미확정)이다.
+- 2026-11-09: 이탈리아 금융시장 감독당국 Consob가 공개매수 신고서를 승인했다. 응모 기간은 2026-11-24~2027-01-22이며, 상향된 대가와 교환비율 조정 세부는 확인되지 않음.
 
 ## 관련 딜·뉴스
 - [Evonik, BASF의 상향 인수 제안(주당 24유로, 111.8억 유로)도 거절](../2026/2026-10-30-basf-evonik.md) — 같은 주 유럽에서 진행 중인 비우호적 인수 제안
+- [Crédit Agricole, 이탈리아 자회사와 Banco BPM 합병 제안…20% 프리미엄·특별배당 10억 유로](../2026/2026-11-09-credit-agricole-banco-bpm.md) — MPS 방어안의 인수 대상이던 Banco BPM이 별도 합병 제안을 받음
+- [UniCredit, Commerzbank 교환 공개매수 정산 후 지분 약 50%로 지배권 확보 예정…HVB 통합 앞당길 수도](../2026/2026-11-09-unicredit-commerzbank.md) — 같은 시기 진행 중인 유럽 은행 교환 공개매수

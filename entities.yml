@@ -250,10 +250,11 @@ Banco BPM:
     about: "이탈리아 3위권 은행."
     business: "소매·기업 금융, 자산운용, 보험"
     edge: "이탈리아 북부의 지점망"
-    owner: "밀라노 상장사. 프랑스 Crédit Agricole이 파생상품 포함 약 30%를 가진 최대주주 (보도 기준)"
+    owner: "밀라노 상장사. 프랑스 Crédit Agricole이 29.6%를 가진 최대주주 (2026-11 회사 발표)"
     points:
       - "Crédit Agricole의 지분 확대로 경영권 향방이 걸린 회사이며, MPS 방어안의 인수 대상이었다가 무산"
-    as_of: "2026-11-02"
+      - "2026-11 Crédit Agricole가 이탈리아 자회사와의 합병을 제안 (합병 후 CA 지분 약 45%)"
+    as_of: "2026-11-10"
 Banca Generali:
   type: 기업
   country: 유럽
@@ -1424,3 +1425,277 @@ Aker BP:
     edge: "노르웨이 대륙붕의 대형 생산 자산"
     owner: "오슬로 증시 상장사. Aker 그룹과 BP가 주요 주주"
     as_of: "2026-11-06"
+Mitsui Chemicals:
+  type: 기업
+  country: 일본
+  aliases: [미쓰이화학, 三井化学, Mitsui Chemicals Inc.]
+  ticker: "TSE:4183"
+  profile:
+    about: "일본 대형 종합화학 회사."
+    business: "기능성 소재, 의료·생활 소재, 석유화학 기초 소재"
+    edge: "자동차·반도체·헬스케어용 고기능 화학 소재"
+    owner: "도쿄증권거래소 상장사"
+    points:
+      - "2026-11 DBJ와 함께 JIC로부터 JSR 인수 합의 (부채 포함 약 1.84조 엔, 보도 기준)"
+    as_of: "2026-11-10"
+JSR:
+  type: 기업
+  country: 일본
+  aliases: [JSR Corporation, JSR Corp.]
+  profile:
+    about: "반도체 회로를 새기는 데 쓰는 감광재(포토레지스트) 세계 주요 생산업체."
+    business: "반도체 소재(포토레지스트 등), 생명과학 소재"
+    edge: "첨단 반도체 공정용 포토레지스트 기술"
+    owner: "비상장사. 정부계 펀드 JIC가 2024년 공개매수로 비상장화해 보유"
+    points:
+      - "2026-11 JIC가 Mitsui Chemicals·DBJ에 매각 합의 (보도 기준)"
+    as_of: "2026-11-10"
+Development Bank of Japan:
+  type: 정부·기관
+  country: 일본
+  aliases: [DBJ, 일본정책투자은행, 日本政策投資銀行]
+  profile:
+    about: "일본 정부가 지분을 가진 정책금융기관."
+    business: "기업 대출, 지분 투자, 구조조정·성장 자금 공급"
+    edge: "정부 신용을 바탕으로 한 장기 정책자금 공급"
+    owner: "일본 정부 소유"
+    as_of: "2026-11-10"
+Japan Investment Corporation:
+  type: 정부·기관
+  country: 일본
+  aliases: [JIC, 산업혁신투자기구, 産業革新投資機構]
+  profile:
+    about: "일본 정부가 주도해 만든 민관 투자 펀드."
+    business: "전략 산업 기업에 대한 지분 투자·바이아웃"
+    edge: "정부 주도 자금으로 산업 재편형 대형 투자를 할 수 있는 점"
+    owner: "일본 정부 주도 (민관 출자)"
+    points:
+      - "2024년 JSR을 비상장화했고 2026-11 Mitsui Chemicals 측에 매각 합의 (보도 기준)"
+    as_of: "2026-11-10"
+UniCredit:
+  type: 기업
+  country: 유럽
+  aliases: [유니크레디트, UniCredit S.p.A.]
+  ticker: "MIL:UCG"
+  profile:
+    about: "이탈리아 2위권 대형 은행 그룹."
+    business: "소매·기업 금융, 자산관리 (이탈리아·독일·중동부 유럽)"
+    edge: "독일 HVB 등 유럽 여러 나라에 걸친 은행망"
+    owner: "밀라노 상장사"
+    points:
+      - "Commerzbank 교환 공개매수 정산 후 지분 약 50%로 지배권 확보 예정 (2026-11 회사 발표)"
+    as_of: "2026-11-10"
+Commerzbank:
+  type: 기업
+  country: 유럽
+  aliases: [코메르츠방크, Commerzbank AG]
+  ticker: "XETR:CBK"
+  profile:
+    about: "독일 2위권 상업은행."
+    business: "독일 중소기업 금융, 소매 금융"
+    edge: "독일 중견·중소기업(미텔슈탄트) 고객 기반"
+    owner: "프랑크푸르트 상장사. UniCredit가 최대주주이며 독일 정부도 지분 보유"
+    points:
+      - "UniCredit 교환 공개매수 정산 후 지배권이 넘어갈 예정 (2026-11 기준)"
+    as_of: "2026-11-10"
+HypoVereinsbank:
+  type: 기업
+  country: 유럽
+  aliases: [HVB, UniCredit Bank GmbH]
+  profile:
+    about: "UniCredit의 독일 자회사 은행."
+    business: "독일 기업·소매 금융"
+    edge: "독일 남부(바이에른) 중심의 기업 금융 기반"
+    owner: "UniCredit 자회사"
+    as_of: "2026-11-10"
+Crédit Agricole:
+  type: 기업
+  country: 유럽
+  aliases: [Credit Agricole, 크레디아그리콜, Crédit Agricole S.A.]
+  ticker: "EURONEXT:ACA"
+  profile:
+    about: "프랑스 대형 협동조합계 은행 그룹."
+    business: "소매 금융, 자산운용, 보험, 기업·투자금융"
+    edge: "프랑스 지역은행망과 대형 자산운용·보험 계열사"
+    owner: "파리 상장사. 지역 협동조합 은행들이 지배"
+    points:
+      - "Banco BPM 지분 29.6% 보유, 2026-11 이탈리아 자회사와의 합병 제안"
+    as_of: "2026-11-10"
+Crédit Agricole Italia:
+  type: 기업
+  country: 유럽
+  aliases: [Credit Agricole Italia]
+  profile:
+    about: "Crédit Agricole의 이탈리아 은행 자회사."
+    business: "이탈리아 소매·기업 금융 (지점 약 1,000곳)"
+    edge: "이탈리아 북부 중심의 지점망"
+    owner: "Crédit Agricole 자회사"
+    as_of: "2026-11-10"
+NRG Energy:
+  type: 기업
+  country: 미국
+  aliases: [NRG]
+  ticker: "NYSE:NRG"
+  profile:
+    about: "미국 대형 전력 생산·판매 회사."
+    business: "발전, 전력·가스 소매 판매, 주택 서비스"
+    edge: "미국 텍사스 등에서의 발전 설비와 소매 전력 고객 기반"
+    owner: "뉴욕증권거래소 상장사"
+    points:
+      - "2026-11 가스발전소 6곳(4.9GW)을 LS Power에 40억 달러에 매각 계약"
+    as_of: "2026-11-10"
+NRG Energy 가스발전소 6곳:
+  type: 기업
+  country: 미국
+  aliases: []
+  profile:
+    about: "NRG Energy가 보유한 천연가스 발전소 6곳 (합계 4.9GW)."
+    business: "가스 화력 발전"
+    edge: "수요에 맞춰 출력을 조절할 수 있는 가스 발전 설비"
+    owner: "NRG Energy 소유, LS Power 계열사에 매각 계약 (2026-11)"
+    as_of: "2026-11-10"
+LS Power:
+  type: PE·VC
+  country: 미국
+  aliases: []
+  profile:
+    about: "미국 전력·에너지 인프라 개발·투자 회사."
+    business: "발전소·송전망 개발과 투자, 에너지 인프라 펀드 운용"
+    edge: "발전·송전 자산 개발과 인수 경험"
+    owner: "비상장사"
+    as_of: "2026-11-10"
+PSP Investments:
+  type: PE·VC
+  country: 기타
+  aliases: [Public Sector Pension Investment Board, PSP]
+  profile:
+    about: "캐나다 연방 공무원 연금을 운용하는 기관."
+    business: "인프라·사모·부동산·상장자산 투자"
+    edge: "장기 투자가 가능한 대형 연기금 자금"
+    owner: "캐나다 정부가 설립한 공적 연금 운용기관"
+    as_of: "2026-11-10"
+Enercare:
+  type: 기업
+  country: 기타
+  aliases: [Enercare Inc.]
+  profile:
+    about: "캐나다 주택용 냉난방·온수기 설비 서비스 업체."
+    business: "온수기·냉난방 설비 렌털, 설치, 정비"
+    edge: "주택 설비 렌털 계약에서 나오는 반복 매출"
+    owner: "비상장사. Brookfield 측 소유, PSP Investments가 50% 인수 계약 (2026-11)"
+    as_of: "2026-11-10"
+Brookfield:
+  type: PE·VC
+  country: 기타
+  aliases: [Brookfield Asset Management, 브룩필드]
+  profile:
+    about: "캐나다계 대형 대체투자 운용사."
+    business: "인프라·부동산·신재생·사모투자 펀드 운용"
+    edge: "인프라·부동산 실물자산 운용 경험"
+    owner: "상장 운용사 그룹"
+    as_of: "2026-11-10"
+BMO Capital Markets:
+  type: 재무 자문사
+  country: 기타
+  aliases: [BMO]
+  profile:
+    about: "캐나다 BMO 금융그룹의 투자은행 부문."
+    business: "M&A 자문, 증권 발행 주관"
+    edge: "캐나다 시장의 M&A·자본시장 거래 네트워크"
+    owner: "BMO Financial Group 소속"
+    as_of: "2026-11-10"
+TD Securities:
+  type: 재무 자문사
+  country: 기타
+  aliases: []
+  profile:
+    about: "캐나다 TD 은행그룹의 투자은행 부문."
+    business: "M&A 자문, 증권 발행 주관"
+    edge: "캐나다 시장의 M&A·자본시장 거래 네트워크"
+    owner: "TD Bank Group 소속"
+    as_of: "2026-11-10"
+CIBC Capital Markets:
+  type: 재무 자문사
+  country: 기타
+  aliases: [CIBC]
+  profile:
+    about: "캐나다 CIBC 은행의 투자은행 부문."
+    business: "M&A 자문, 증권 발행 주관"
+    edge: "캐나다 시장의 M&A·자본시장 거래 네트워크"
+    owner: "CIBC 소속"
+    as_of: "2026-11-10"
+Scotiabank:
+  type: 재무 자문사
+  country: 기타
+  aliases: [Bank of Nova Scotia]
+  profile:
+    about: "캐나다 대형 은행."
+    business: "소매·기업 금융, 투자은행"
+    edge: "캐나다와 중남미에 걸친 은행망"
+    owner: "상장 은행"
+    as_of: "2026-11-10"
+Blake, Cassels & Graydon:
+  type: 법률 자문사
+  country: 기타
+  aliases: [Blakes, "Blake, Cassels & Graydon LLP"]
+  profile:
+    about: "캐나다 대형 로펌."
+    business: "M&A, 자본시장, 금융"
+    edge: "캐나다 M&A·자본시장 거래 자문 실적"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-10"
+McCarthy Tétrault:
+  type: 법률 자문사
+  country: 기타
+  aliases: [McCarthy Tetrault, "McCarthy Tétrault LLP"]
+  profile:
+    about: "캐나다 대형 로펌."
+    business: "M&A, 자본시장, 금융"
+    edge: "캐나다 M&A·자본시장 거래 자문 실적"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-10"
+삼성화재:
+  type: 기업
+  country: 한국
+  aliases: [삼성화재해상보험, Samsung Fire & Marine Insurance]
+  krx: "000810"
+  profile:
+    about: "국내 1위권 손해보험사."
+    business: "자동차·장기·일반 손해보험"
+    edge: "국내 손해보험 시장의 큰 고객 기반과 자본력"
+    owner: "유가증권시장 상장사. 삼성생명 등 삼성 계열이 주요 주주"
+    points:
+      - "2026-11 영국 Canopius 지분을 약 40%에서 80%로 늘리는 안 확정 (보도 기준)"
+    as_of: "2026-11-10"
+Canopius:
+  type: 기업
+  country: 유럽
+  aliases: [캐노피우스, Canopius Group]
+  profile:
+    about: "영국 특수보험사."
+    business: "기업 대상 특수 손해보험·재보험"
+    edge: "기업 대상 특수 위험 보험 인수 역량"
+    owner: "비상장사. 삼성화재가 약 40% 보유, 80%로 확대 추진 (보도 기준)"
+    as_of: "2026-11-10"
+JTBC:
+  type: 기업
+  country: 한국
+  aliases: [제이티비씨]
+  profile:
+    about: "중앙그룹 계열 종합편성채널 방송사."
+    business: "방송 채널 운영, 드라마·예능·뉴스 제작"
+    edge: "드라마·예능·뉴스 콘텐츠 제작 역량"
+    owner: "비상장사. 기업회생절차 중 (최대주주 현황은 확인 안 됨)"
+    points:
+      - "2026-11 제3자배정 유상증자 방식 공개 매각 공고, 2027-01 우선협상대상자 선정 계획"
+    as_of: "2026-11-10"
+EY한영:
+  type: 재무 자문사
+  country: 한국
+  aliases: [EY한영회계법인, 한영회계법인, EY Han Young]
+  profile:
+    about: "글로벌 회계법인 EY의 한국 회원사."
+    business: "회계감사, 세무, 재무 자문(M&A 매각 주관 등)"
+    edge: "국내 기업 매각 주관·실사 경험"
+    owner: "파트너십 (회계법인)"
+    as_of: "2026-11-10"

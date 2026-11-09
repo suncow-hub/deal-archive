@@ -422,6 +422,45 @@
   related: [워크아웃]
   memo: ""
 
+- id: revolving-credit
+  term: 리볼빙 (회전 한도 대출)
+  en: Revolving Credit Facility
+  category: 자금 조달
+  match: [리볼빙, 회전 한도, Revolving Credit Facility, Revolver]
+  aliases: [RCF]
+  short: 은행과 미리 정한 한도 안에서 필요할 때 빌리고 갚기를 반복할 수 있는 대출. 기업용 마이너스 통장에 가깝다.
+  more: 한 번에 다 빌리는 일반 대출과 달리 쓴 만큼만 이자를 내고, 갚으면 그만큼 다시 빌릴 수 있다. 인수 대금 일부를 이미 열어 둔 리볼빙 한도에서 꺼내 쓰는 경우가 많다.
+  example: The Andersons는 Harvestone 인수 자금 일부를 기존 리볼빙 한도(약 3억 달러)에서 마련했다.
+  deal: 2026-11-04-andersons-harvestone-low-carbon-partners
+  related: [인수금융, 확약 (금융 확약)]
+  memo: ""
+
+- id: equity-contribution
+  term: 지분 출자 (에쿼티 출자)
+  en: Equity Contribution
+  category: 자금 조달
+  match: [지분 출자, 에쿼티 출자, Equity Contribution]
+  aliases: [출자]
+  short: 빌린 돈이 아니라 주주가 자기 돈을 회사에 넣어 주식(지분)을 받는 방식으로 자금을 대는 것. 갚을 의무가 없는 대신 회사의 주인 몫이 된다.
+  more: 인수 자금은 보통 빚(대출·채권)과 지분 출자를 섞어 마련한다. 지분 출자 비중이 높을수록 회사가 지는 빚 부담이 줄어 대출을 받기도 쉬워진다.
+  example: CVR Energy는 Marathon 정유소 인수 자금 일부를 최대주주의 지분 출자 5억 달러로 마련했다.
+  deal: 2026-11-03-cvr-energy-marathon-refineries
+  related: [인수금융, 유상증자, 바이아웃 (LBO)]
+  memo: ""
+
+- id: hybrid-capital
+  term: 신종자본증권
+  en: Hybrid Capital Securities
+  category: 자금 조달
+  match: [신종자본증권, Hybrid Capital]
+  aliases: [영구채, 하이브리드 채권]
+  short: 채권처럼 이자를 주지만 만기가 매우 길거나 없어서 회계상 자본으로 인정받는 증권. 빚을 늘리지 않고 자본을 늘린 효과를 낸다.
+  more: 보험사·은행은 자본이 충분한지 감독당국의 비율 규제를 받는다. 큰 인수를 하면 이 비율이 떨어지기 쉬워서, 자본으로 인정되는 신종자본증권을 발행해 인수 자금을 마련하는 경우가 있다.
+  example: 삼성화재는 Canopius 지분 확대 자금으로 약 3조 원 규모 신종자본증권 발행을 계획한 것으로 보도됐다.
+  deal: 2026-11-09-samsung-fire-canopius
+  related: [인수금융, 유상증자]
+  memo: ""
+
 # ---------------- 참여자·전략
 - id: private-equity
   term: PE (사모펀드)
@@ -608,6 +647,19 @@
   example: TPG의 롯데렌탈 인수가 끝나면서 롯데렌탈의 최대주주변경 공시가 나왔다.
   deal: 2026-10-30-tpg-lotte-rental
   related: [경영권 인수]
+  memo: ""
+
+- id: whitewash
+  term: 화이트워시 (의무공개매수 면제)
+  en: Whitewash
+  category: 공시·규제
+  match: [화이트워시, Whitewash]
+  aliases: []
+  short: 지분이 일정 수준을 넘으면 원래 해야 하는 의무공개매수를, 다른 주주들의 동의(주총 결의)를 받아 면제받는 절차.
+  more: 유럽 등에서는 한 주주의 지분이 정해진 선(예를 들어 25~30%)을 넘으면 나머지 주주 주식도 사 주겠다는 공개매수를 해야 한다. 합병 등으로 지분이 늘 때 이해관계가 없는 주주 다수가 반대하지 않으면 이 의무를 면제해 준다.
+  example: Crédit Agricole의 Banco BPM 합병 제안은 화이트워시 주총 결의를 조건으로 걸었다.
+  deal: 2026-11-09-credit-agricole-banco-bpm
+  related: [공개매수, 합병]
   memo: ""
 
 # ---------------- 거시경제

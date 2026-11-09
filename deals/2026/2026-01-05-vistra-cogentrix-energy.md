@@ -50,3 +50,4 @@
 - [Thrive Holdings, ADT를 지분가치 76억 달러(EV 153억 달러)에 인수해 비상장화](../2026/2026-10-29-thrive-holdings-adt.md) — Goldman Sachs·Evercore가 자문사로 함께 등장
 - [CVR Energy, Marathon Petroleum의 정유소 2곳과 판매사업을 약 42억 달러에 인수](../2026/2026-11-03-cvr-energy-marathon-refineries.md) — 비슷한 규모의 미국 에너지 자산 인수
 - [The Andersons, ECP로부터 에탄올 업체 Harvestone Low Carbon Partners를 9.15억 달러에 인수](../2026/2026-11-04-andersons-harvestone-low-carbon-partners.md) — 에너지 PE가 전략적 투자자에게 자산을 파는 엑시트
+- [NRG Energy, 가스발전소 6곳(4.9GW)을 LS Power에 현금 40억 달러에 매각](../2026/2026-11-09-ls-power-nrg-gas-plants.md) — 미국 가스발전 자산 매각 거래
