@@ -1675,8 +1675,10 @@ Canopius:
     about: "영국 특수보험사."
     business: "기업 대상 특수 손해보험·재보험"
     edge: "기업 대상 특수 위험 보험 인수 역량"
-    owner: "비상장사. 삼성화재가 약 40% 보유, 80%로 확대 추진 (보도 기준)"
-    as_of: "2026-11-10"
+    owner: "비상장사. 삼성화재가 약 40% 보유, 80.6%로 확대 계약 (2026-11, 보도 기준). 계약 전 나머지 대부분은 Centerbridge Partners 측 보유"
+    points:
+      - "2026-11 삼성화재·KKR·한국투자공사가 Centerbridge 측 지분 60% 인수 계약 (보도 기준)"
+    as_of: "2026-11-11"
 JTBC:
   type: 기업
   country: 한국
@@ -1699,3 +1701,121 @@ EY한영:
     edge: "국내 기업 매각 주관·실사 경험"
     owner: "파트너십 (회계법인)"
     as_of: "2026-11-10"
+KKR:
+  type: PE·VC
+  country: 미국
+  aliases: [Kohlberg Kravis Roberts, 콜버그크래비스로버츠]
+  ticker: "NYSE:KKR"
+  profile:
+    about: "미국의 대형 글로벌 사모펀드 운용사."
+    business: "바이아웃, 인프라, 부동산, 크레딧 투자"
+    edge: "대형 바이아웃과 보험·인프라 자산 투자 경험"
+    owner: "뉴욕증권거래소 상장사"
+    points:
+      - "2026-11 삼성화재와 함께 Canopius 잔여 지분 일부(약 12.1%) 인수 (보도 기준)"
+    as_of: "2026-11-11"
+한국투자공사:
+  type: 정부·기관
+  country: 한국
+  aliases: [KIC, Korea Investment Corporation]
+  profile:
+    about: "한국 정부와 한국은행의 외화자산을 맡아 해외에 투자하는 국부펀드."
+    business: "해외 주식·채권·대체투자"
+    edge: "장기 해외 투자 자금"
+    owner: "정부 출자 공공기관"
+    points:
+      - "2026-11 삼성화재와 함께 Canopius 지분 약 7.3% 인수 (보도 기준)"
+    as_of: "2026-11-11"
+Centerbridge Partners:
+  type: PE·VC
+  country: 미국
+  aliases: [센터브릿지, 센터브리지파트너스, Fidentia Fortuna Holdings]
+  profile:
+    about: "미국 뉴욕에 본사를 둔 사모펀드 운용사."
+    business: "사모 바이아웃, 크레딧 투자"
+    edge: "금융·보험 분야 투자 경험"
+    owner: "비상장 운용사 (파트너십)"
+    points:
+      - "투자 회사 Fidentia Fortuna Holdings를 통해 보유한 Canopius 지분 60%를 2026-11 매각 계약 (보도 기준)"
+    as_of: "2026-11-11"
+에코프로비엠:
+  type: 기업
+  country: 한국
+  aliases: [EcoPro BM, 에코프로BM]
+  krx: "247540"
+  profile:
+    about: "2차전지 양극재를 만드는 에코프로그룹 계열사."
+    business: "하이니켈 양극재 제조"
+    edge: "하이니켈 양극재 양산 기술"
+    owner: "코스닥 상장사. 에코프로가 최대주주"
+    points:
+      - "2026-11 인도네시아 제련소 투자 자회사에 6,271억 원 출자 결정 (보도 기준)"
+    as_of: "2026-11-11"
+PT ECOPRO BNSI INVESTMENT:
+  type: 기업
+  country: 동남아
+  aliases: [에코프로 BNSI 인베스트먼트]
+  profile:
+    about: "에코프로비엠이 해외 제련소 지분 투자를 위해 둔 인도네시아 법인."
+    business: "제련소(PT BNSI) 지분 투자"
+    edge: "에코프로비엠의 원료 확보용 투자 창구"
+    owner: "에코프로비엠 종속회사. 출자 후 지분 99.9% (보도 기준)"
+    as_of: "2026-11-11"
+구다이글로벌:
+  type: 기업
+  country: 한국
+  aliases: [Goodai Global, 조선미녀]
+  profile:
+    about: "'조선미녀' 브랜드로 시작한 K뷰티 화장품 회사."
+    business: "화장품 브랜드 운영 (조선미녀, 티르티르, 라카코스메틱 등)"
+    edge: "해외 온라인 채널 중심의 브랜드 판매"
+    owner: "비상장사. 코스피 상장 추진 중"
+    points:
+      - "2025-08 전환사채로 8,000억 원 프리IPO 조달 (기업가치 약 4.4조 원, 보도 기준)"
+    as_of: "2026-11-11"
+미래에셋증권:
+  type: 재무 자문사
+  country: 한국
+  aliases: [Mirae Asset Securities, 미래에셋대우]
+  krx: "006800"
+  profile:
+    about: "미래에셋그룹 계열의 국내 대형 증권사."
+    business: "IB(상장 주관·인수), 브로커리지, 자산관리"
+    edge: "국내 IPO 주관 실적"
+    owner: "유가증권시장 상장사. 미래에셋그룹 계열"
+    as_of: "2026-11-11"
+산업은행:
+  type: 정부·기관
+  country: 한국
+  aliases: [KDB산업은행, 한국산업은행, KDB]
+  profile:
+    about: "정부가 소유한 국책 정책금융기관."
+    business: "기업 대출, 구조조정, 정책 투자"
+    edge: "부실기업 구조조정과 정책 자금 공급"
+    owner: "정부 소유 국책은행"
+    as_of: "2026-11-11"
+KDB생명:
+  type: 기업
+  country: 한국
+  aliases: [KDB생명보험, KDB Life]
+  profile:
+    about: "산업은행 측이 대주주인 국내 생명보험사."
+    business: "생명보험"
+    edge: "산업은행 계열 생명보험 영업망"
+    owner: "비상장사. 산업은행 측이 대주주"
+    points:
+      - "2026-08 한국투자금융지주가 매각 우선협상대상자로 선정됐으나 11월까지 본계약 미체결 (보도 기준)"
+    as_of: "2026-11-11"
+한국투자금융지주:
+  type: 기업
+  country: 한국
+  aliases: [한투지주, 한국금융지주, Korea Investment Holdings]
+  krx: "071050"
+  profile:
+    about: "한국투자증권을 중심으로 한 금융지주회사."
+    business: "증권, 자산운용, 저축은행 등"
+    edge: "증권·운용 중심의 투자은행 역량"
+    owner: "유가증권시장 상장사"
+    points:
+      - "KDB생명 인수 우선협상대상자 (2026-08 선정, 보도 기준)"
+    as_of: "2026-11-11"

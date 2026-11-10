@@ -461,6 +461,32 @@
   related: [인수금융, 유상증자]
   memo: ""
 
+- id: ipo-price-range
+  term: 공모 희망가 (밴드)
+  en: IPO Price Range
+  category: 자금 조달
+  match: [희망가, 희망 공모가, 공모 희망가]
+  aliases: [Price Range, 밴드]
+  short: 상장하려는 회사가 투자자 수요를 묻기 전에 미리 제시하는 주당 가격의 범위. 수요가 많으면 위쪽, 적으면 아래쪽에서 최종 공모가가 정해진다.
+  more: 기관 투자자 수요를 모은 뒤(수요예측·북빌딩) 범위 안에서, 혹은 범위를 벗어나 최종 가격을 정한다. 희망가 상단 × 공모 주식 수로 최대 조달액을 가늠한다.
+  example: Anthropic은 주당 70~78달러를 제시해 상단 기준 약 644억 달러 공모를 계획했다.
+  deal: 2026-11-02-anthropic-ipo
+  related: [IPO (기업공개)]
+  memo: ""
+
+- id: secondary-shares
+  term: 구주매출
+  en: Secondary Offering (Selling Shareholders)
+  category: 자금 조달
+  match: [구주매출, 구주]
+  aliases: [Secondary Shares]
+  short: 상장할 때 회사가 새 주식을 찍는 대신 기존 주주가 가진 주식을 공모 투자자에게 파는 것. 판 돈은 회사가 아니라 기존 주주에게 간다.
+  more: 새 주식을 발행하는 신주모집은 회사로 돈이 들어가고, 구주매출은 기존 투자자의 회수(엑시트) 수단이 된다. 구주 비중이 크면 시장은 기존 주주가 빠져나가려 한다고 보기도 한다.
+  example: Anthropic 공모 8.25억 주 가운데 약 0.24억 주가 기존 주주의 구주다.
+  deal: 2026-11-02-anthropic-ipo
+  related: [IPO (기업공개)]
+  memo: ""
+
 # ---------------- 참여자·전략
 - id: private-equity
   term: PE (사모펀드)
@@ -660,6 +686,19 @@
   example: Crédit Agricole의 Banco BPM 합병 제안은 화이트워시 주총 결의를 조건으로 걸었다.
   deal: 2026-11-09-credit-agricole-banco-bpm
   related: [공개매수, 합병]
+  memo: ""
+
+- id: listing-preliminary-review
+  term: 상장예비심사
+  en: Preliminary Listing Review
+  category: 공시·규제
+  match: [상장예비심사, 예비심사, 예심]
+  aliases: [예심청구]
+  short: 회사가 거래소에 상장해도 되는지 미리 심사받는 절차. 이 심사를 통과해야 공모 절차를 시작할 수 있다.
+  more: 국내에서는 한국거래소에 청구서를 내면 실적, 지배구조, 경영 투명성 등을 본다. 통과 뒤 증권신고서 제출 → 수요예측 → 공모가 확정 → 상장 순서로 간다.
+  example: 구다이글로벌은 이르면 2026-11-12 코스피 상장예비심사를 청구할 계획으로 보도됐다.
+  deal: 2026-11-10-goodai-global-ipo
+  related: [IPO (기업공개)]
   memo: ""
 
 # ---------------- 거시경제

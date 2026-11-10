@@ -1,13 +1,13 @@
 ---
-제목: "Anthropic, 미국 IPO 추진…일본 투자자에 최대 35억 달러 배정 계획"
+제목: "Anthropic, 나스닥 IPO 희망가 70~78달러 제시…상단 기준 최대 644억 달러 공모, 11월 19일 거래 목표"
 상태: "검토·협상"
 신뢰도: "보도 기준"
 발표일: 2026-11-02
-최종 업데이트: 2026-11-10
+최종 업데이트: 2026-11-11
 지역: ["미국", "일본"]
-규모 구간: "비공개"
-규모(원화): "비공개 (전체 공모 규모 확인되지 않음. 일본 배정분 상한 약 4.7조 원)"
-규모(원 통화): "USD 3.5B (일본 배정분 상한, 2026-11-02 ECB 기준환율 1,342.90원 기준)"
+규모 구간: "20조 이상"
+규모(원화): "약 86.23조 원 (희망가 상단·구주 포함 공모 기준, 초과배정 제외)"
+규모(원 통화): "USD 64.4B (희망가 상단 기준, 2026-11-10 ECB 기준환율 1,339.00원 기준)"
 유형: ["IPO"]
 업종: ["IT·소프트웨어·플랫폼"]
 테마: ["AI·데이터센터"]
@@ -16,9 +16,11 @@
 매도자: []
 재무 자문: []
 법률 자문: []
-출처: ["https://www.anthropic.com/news/s1-sec", "https://www.investing.com/news/stock-market-news/anthropic-plans-to-sell-35-billion-of-shares-to-japan-investors-in-ipo-filing-shows-4989963", "https://www.yna.co.kr/view/AKR20261102171900073", "https://www.wsj.com/finance/stocks/anthropic-investors-push-for-cautious-valuation-closer-to-1-5-trillion-2f2df9cf", "https://www.yna.co.kr/view/AKR20261103038300009", "https://www.yna.co.kr/view/AKR20261109017200009", "https://news.bgov.com/banking-law/anthropic-said-to-target-mega-ipo-before-thanksgiving-holiday"]
-비교: {대가 구성: "", 인수자 성격: "", 메모: "전체 공모 규모·공모가·기업가치는 확인되지 않음"}
+출처: ["https://www.anthropic.com/news/s1-sec", "https://www.investing.com/news/stock-market-news/anthropic-plans-to-sell-35-billion-of-shares-to-japan-investors-in-ipo-filing-shows-4989963", "https://www.yna.co.kr/view/AKR20261102171900073", "https://www.wsj.com/finance/stocks/anthropic-investors-push-for-cautious-valuation-closer-to-1-5-trillion-2f2df9cf", "https://www.yna.co.kr/view/AKR20261103038300009", "https://www.yna.co.kr/view/AKR20261109017200009", "https://news.bgov.com/banking-law/anthropic-said-to-target-mega-ipo-before-thanksgiving-holiday", "https://finance.yahoo.com/markets/stocks/articles/anthropic-sets-ipo-price-range-140602411.html", "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html", "https://www.upi.com/Top_News/US/2026/11/10/anthropic-ipo-stock-range-nasdaq/6651794326745", "https://biz.chosun.com/it-science/ict/2026/11/10/LHFSX4N4FJCYVGFDB4XIRVFBRY/"]
+비교: {지분가치(억원): 13671000, 대가 구성: "", 인수자 성격: "", 메모: "지분가치는 희망가 상단 78달러 × 상장 후 약 130.9억 주(약 1.02조 달러) 기준. 완전희석 기준은 최대 약 1.405조 달러(CNBC 보도). 확정 공모가 아님"}
 일정:
+  - {날짜: "2026-11-18", 내용: "공모가 확정 예정 (보도 기준)"}
+  - {날짜: "2026-11-19", 내용: "나스닥 거래 시작 예정, 티커 ANT (보도 기준)"}
   - {날짜: "2026-11-26", 내용: "이 날(추수감사절) 이전 상장 완료 목표 (보도 기준)"}
 정정: []
 ---
@@ -27,11 +29,11 @@
 
 ## 딜 구조
 <!-- 인수 지분, 인수 방식, 자금 조달 방법 -->
-미국 상장과 함께 물량 일부를 일본 투자자 대상으로 공모하는 구조다. 전체 공모 규모, 공모가, 상장일, 주관사는 확인되지 않았다.
+수정 증권신고서 기준으로 클래스A 보통주 8.25억 주(신주 약 8.01억 주, 기존 주주 구주 약 0.24억 주)를 주당 70~78달러에 공모하며, 상단 기준 조달액은 약 644억 달러다. 인수단에는 1.24억 주 초과배정 옵션이 있다. 별도로 Google·NVIDIA·AMD 등 컴퓨팅 공급사 7곳이 공모가로 무의결권 Class N 주식 260억 달러어치를 사기로 했다. 일부 물량은 일본 투자자에게 배정한다. 주관사 명단은 확인되지 않음.
 
 ## 밸류에이션
 <!-- EV/EBITDA, P/E 등. 공개되지 않았으면 "비공개" 한 줄 -->
-비공개 (확인되지 않음).
+희망가 기준 상장 후 지분가치는 약 9,160억~1.02조 달러(약 130.9억 주 기준)이며, 완전희석 기준으로는 최대 약 1.4조 달러라는 보도가 있다. 기존 투자자들이 거론하던 1.5조 달러보다 낮은 수준이다. 확정 공모가는 아직 나오지 않았다.
 
 ## 왜 중요한가
 <!-- 1~2줄 -->
@@ -39,14 +41,16 @@
 
 ## 면접 포인트
 <!-- 이 딜로 할 수 있는 말 1~2개 -->
-① 미국 상장 기업이 물량 일부를 해외 개인·기관에 따로 배정하는 이유(투자자 기반 확대, 수요 분산)를 설명할 수 있다. ② 초대형 IPO가 다른 기업의 공모·구주매출 일정에 주는 영향을 논할 수 있다.
+① 미국 상장 기업이 물량 일부를 해외 개인·기관에 따로 배정하는 이유(투자자 기반 확대, 수요 분산)를 설명할 수 있다. ② 초대형 IPO가 다른 기업의 공모·구주매출 일정에 주는 영향을 논할 수 있다. ③ 칩·클라우드 공급사가 공모와 동시에 주식을 사는 구조(공급 관계와 지분 투자가 얽힌 구조)가 수요 확보와 밸류에이션에 주는 의미를 짚을 수 있다.
 
 ## 진행 이력
 <!-- 업데이트될 때마다 맨 아래에 한 줄씩 추가. 기존 줄은 수정하지 않음 -->
 - 2026-11-02: 일본 투자자 대상 최대 35억 달러 매각 계획이 신고서 기준으로 보도됐다.
 - 2026-11-03: 기존 투자자들이 상장 기업가치를 1.5조 달러 안팎으로 보수적으로 잡자고 요구하고 있다는 보도가 나왔다 (WSJ 보도, 확정 공모가 아님).
 - 2026-11-09: 11월 26일(추수감사절) 이전 상장을 마치는 것을 목표로 한다는 보도가 나왔다 (FT·Bloomberg 보도 기준, 공모가·상장일 미확정).
+- 2026-11-10: 수정 신고서로 희망가 70~78달러, 8.25억 주 공모(상단 약 644억 달러)와 나스닥 티커 ANT를 제시했다. 11/18 가격 확정, 11/19 거래 시작 예정으로 보도됐다.
 
 ## 관련 딜·뉴스
 - [Marvell, Lumentum을 기업가치 1,150억 달러에 전액 주식으로 인수](../2026/2026-11-02-marvell-technology-lumentum.md) — 같은 날 나온 AI 데이터센터 관련 대형 거래
 - [NVIDIA, 네이버 제3자배정 유상증자에 1조 3412억 원 투자 확정…지분 4.13%로 3대 주주](../2026/2026-07-27-nvidia-naver.md) — 같은 시기 AI 분야로 대규모 자본이 몰리는 사례
+- ['조선미녀' 구다이글로벌, 이르면 11월 12일 코스피 상장예비심사 청구…기업가치 최대 10조 원 거론](../2026/2026-11-10-goodai-global-ipo.md) — 같은 주에 절차가 진행된 국내 대형 IPO
