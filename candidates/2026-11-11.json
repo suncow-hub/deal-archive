@@ -1,0 +1,705 @@
+{
+  "meta": {
+    "run_at": "2026-11-11T02:14:03.772522+09:00",
+    "window_start": "2026-11-09T20:14:03.772522+09:00",
+    "sources": {
+      "환율": "1일 추가 (최신 2026-11-10)",
+      "OpenDART 상세": "2건 성공, 1건 실패",
+      "OpenDART": "6건",
+      "WSJ Markets": "3/61",
+      "WSJ U.S. Business": "9/85",
+      "PR Newswire M&A": "17/20",
+      "한경 증권": "5/50",
+      "인베스트조선": "15/50",
+      "연합뉴스 마켓+": "28/120",
+      "매일경제 증권": "6/50",
+      "조선비즈": "2/100",
+      "FT M&A": "1/25",
+      "CNBC Business": "2/30",
+      "WSJ World News": "10/70",
+      "WSJ Economy": "5/36",
+      "한경 경제": "6/50",
+      "한경 국제": "4/50"
+    },
+    "gemini_tries": 33,
+    "gemini_model": "gemini-3.5-flash, gemini-3.6-flash",
+    "gemini": "성공 (111/111건 채점)",
+    "counts": {
+      "deal": 34,
+      "macro": 12,
+      "dropped": 65
+    }
+  },
+  "items": [
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "Anthropic to Seek $1.3 Trillion Valuation in IPO",
+      "link": "https://www.wsj.com/finance/stocks/anthropic-ipo-valuation-8337b669?mod=rss_markets_main",
+      "published": "2026-11-11T00:40:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "앤트로픽의 초대형 IPO 추진 보도"
+    },
+    {
+      "source": "조선비즈",
+      "kind": "deal",
+      "title": "앤트로픽, 내달 상장 앞두고 공모가 70~78달러 제시…몸값 최대 1500조원",
+      "link": "https://biz.chosun.com/it-science/ict/2026/11/10/LHFSX4N4FJCYVGFDB4XIRVFBRY/",
+      "published": "2026-11-10T22:43:35+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "앤트로픽 상장 및 대규모 몸값 산정 IPO 소식."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(SK) [기재정정]주요사항보고서(주식교환ㆍ이전결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000447",
+      "published": "2026-11-10T00:00:00+09:00",
+      "keywords": [
+        "주식교환ㆍ이전결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "SK그룹의 주식교환 결정 공시로 중요도가 높음"
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "Anthropic Prepares to Push Ahead With IPO Despite Market Jitters",
+      "link": "https://www.wsj.com/finance/stocks/anthropic-prepares-to-push-ahead-with-ipo-despite-market-jitters-843dd16c?mod=rss_markets_main",
+      "published": "2026-11-10T06:12:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "앤트로픽 IPO 추진 관련 중복 보도"
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "구다이글로벌, 이번주 코스피 예심청구…자회사 FI 엑시트는 숙제",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/10/2026111080165.html",
+      "published": "2026-11-10T16:49:21+09:00",
+      "keywords": [
+        "지분",
+        "엑시트",
+        "상장"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "몸값 10조 원대 대어의 코스피 상장 예심 청구 소식입니다."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "KDB생명 매각 막판까지 '치킨게임'…산은·한투, 누가 먼저 물러서나",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/10/2026111080125.html",
+      "published": "2026-11-10T14:23:00+09:00",
+      "keywords": [
+        "인수",
+        "매각",
+        "우선협상대상자"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "KDB생명 매각 협상 마감 직전 현황 보도입니다."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "M&A 갈증 푼 삼성화재…해외 투자 바통은 삼성생명으로",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/10/2026111080121.html",
+      "published": "2026-11-10T14:20:29+09:00",
+      "keywords": [
+        "인수",
+        "합병",
+        "지분",
+        "경영권"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "삼성화재의 해외 M&A 및 삼성생명 지부 인수 추진 보도."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "삼성화재, 英 캐노피우스 경영권 인수…지분 80.6% 확보",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/10/2026111080008.html",
+      "published": "2026-11-10T08:06:58+09:00",
+      "keywords": [
+        "인수",
+        "지분",
+        "경영권",
+        "사모펀드"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "삼성화재의 영국 캐노피우스 경영권 지분 인수 확정."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "화우디앤씨도 지분 기습 매집 … 모두투어 적대적 M&A 불붙나",
+      "link": "https://www.mk.co.kr/news/stock/12204158",
+      "published": "2026-11-10T17:28:11+09:00",
+      "keywords": [
+        "인수",
+        "합병",
+        "지분"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "국내 상장사 적대적 M&A 지분 매집 관련 주요 뉴스."
+    },
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "UniCredit set to seal Commerzbank takeover this month",
+      "link": "https://www.ft.com/content/0824f200-de58-4279-bd91-329c3f662ec8?syn-25a6b1a6=1",
+      "published": "2026-11-09T23:26:38+09:00",
+      "keywords": [
+        "takeover"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "글로벌 대형 은행 간 인수합병(M&A) 진전 기사."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Why Nvidia CEO Jensen Huang Is Unique",
+      "link": "https://www.wsj.com/cio-journal/why-nvidia-ceo-jensen-huang-is-unique-586439c8?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-10T23:28:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "엔비디아 CEO 및 앤트로픽 IPO 관련 보도"
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Banco BPM Says Board to Discuss Credit Agricole Merger Proposal",
+      "link": "https://www.wsj.com/finance/banco-bpm-says-board-to-discuss-credit-agricole-merger-proposal-c58b61e7?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-10T15:38:00+09:00",
+      "keywords": [
+        "merger"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "방코 BPM과 크레디 아그리콜의 합병 논의"
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Trump Media & Technology Group Swings to Profit Ahead of TAE Technologies Merger",
+      "link": "https://www.wsj.com/business/earnings/trump-media-technology-group-swings-to-profit-ahead-of-tae-technologies-merger-398ab40c?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-10T06:43:00+09:00",
+      "keywords": [
+        "merger"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "트럼프 미디어의 합병 전 실적 보도"
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Skydance Plans to Cut $6 Billion in Costs Following Warner Bros. Deal",
+      "link": "https://www.wsj.com/business/media/skydance-plans-to-cut-6-billion-in-costs-following-warner-bros-deal-86b3b6bf?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-10T06:14:00+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "스카이댄스의 워너 브라더스 딜 이후 구조조정"
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "총회연금재단, 크레센도·어펄마 등 4곳 위탁 운용사 선정",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/10/2026111080182.html",
+      "published": "2026-11-10T17:44:56+09:00",
+      "keywords": [
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "국내 연금재단의 PEF 대체투자 출자 사업 관련 뉴스입니다."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "다우기술, 중앙일보 인수 앞두고 회사채 최대 2000억 발행",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/10/2026111080102.html",
+      "published": "2026-11-10T13:26:44+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "중앙일보 인수를 위한 다우기술의 대규모 회사채 발행."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "WSJ \"앤트로픽 19일 또는 20일 상장…기업가치에 관심 집중\"(종합)",
+      "link": "https://www.yna.co.kr/view/AKR20261110021451009",
+      "published": "2026-11-10T15:15:10+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "글로벌 대형 AI 스타트업 상장 관련"
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(에스앤디) 최대주주변경",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110900737",
+      "published": "2026-11-10T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "에스앤디의 최대주주 변경 공시"
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(노을) 최대주주변경",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900803",
+      "published": "2026-11-09T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "노을의 최대주주 변경 공시"
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Stellantis Clinches Deal to Sell Canadian Factory to Defense Firm",
+      "link": "https://www.wsj.com/business/autos/stellantis-clinches-deal-to-sell-canadian-factory-to-defense-firm-4f6508c5?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-10T08:11:00+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "스텔란티스의 공장 매각 및 무역 여파"
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Southfield Capital Announces the Sale of TFS",
+      "link": "https://www.prnewswire.com/news-releases/southfield-capital-announces-the-sale-of-tfs-302934412.html",
+      "published": "2026-11-10T23:45:00+09:00",
+      "keywords": [
+        "private equity"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "사모펀드 Southfield Capital의 포트폴리오 매각"
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "몸값 반토막 앤트로픽, 예정대로 상장 진행할 듯",
+      "link": "https://www.hankyung.com/article/2026111083271",
+      "published": "2026-11-10T17:48:46+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "앤트로픽의 상장 추진 소식 보도입니다."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "\"앤트로픽 19일 또는 20일 상장…기업가치에 관심 집중\"",
+      "link": "https://www.hankyung.com/article/2026111078357",
+      "published": "2026-11-10T15:33:25+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "글로벌 AI 기업 앤트로픽의 상장 임박 보도입니다."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "최대주주는 호반, 경영권은 조원태…한진칼 지분전쟁 '장기전' 국면으로",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/10/2026111080043.html",
+      "published": "2026-11-10T10:22:26+09:00",
+      "keywords": [
+        "지분",
+        "경영권"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "한진칼의 경영권 분쟁 및 지불 싸움 장기화 분석."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "에코프로비엠 \"종속회사 PT 주식 6천271억원에 추가취득\"",
+      "link": "https://www.yna.co.kr/view/AKR20261110164600008",
+      "published": "2026-11-10T18:00:42+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "에코프로비엠의 종속회사 대규모 추가 지분 취득."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "日 생성형 AI 사카나, 2027년 가을 상장 추진",
+      "link": "https://www.yna.co.kr/view/AKR20261110083100073",
+      "published": "2026-11-10T11:32:20+09:00",
+      "keywords": [
+        "IPO",
+        "IPO",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "해외 주요 AI 스타트업의 IPO 추진"
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "오가닉티코스메틱, 1013억원 규모 유상증자 실시",
+      "link": "https://www.mk.co.kr/news/stock/12204251",
+      "published": "2026-11-10T17:54:12+09:00",
+      "keywords": [
+        "유상증자",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "1천억원 규모 대형 유상증자 결정"
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "서진시스템, 600억 원 규모 전환사채 발행",
+      "link": "https://www.mk.co.kr/news/stock/12204250",
+      "published": "2026-11-10T17:54:12+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "600억원 규모 전환사채(CB) 발행 메자닌 딜"
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(그리드위즈) 주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000178",
+      "published": "2026-11-10T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details": {
+        "corp_name": "그리드위즈",
+        "bddd": "2026년 11월 10일",
+        "od_a_at_t": "2",
+        "adt_a_atn": "참석",
+        "rs_sm_atn": "아니오",
+        "ex_sm_r": "본 합병은 합병신주를 발행하지 않는 무증자합병 방식으로 진행하므로, 본 합병 과정에서 증권신고서 제출이 필요한 증권의 모집이나 매출이 이루어지지 않습니다.",
+        "exevl_atn": "미해당",
+        "exevl_bs_rs": "「자본시장과 금융투자업에 관한 법률 시행령」 제176조의5 제8항 제2호 나목 단서는 다른 회사의 발행주식 총수를 소유하고 있는 회사가 그 다른 회사를 합병하면서 신주를 발행하지 않는 경우에는 합병가액의 적정성에 대한 외부평가기관의 평가를 요구하지 않는 것으로 규정하고 있는 바, 본 합병은 이에 해당하므로 위 규정에 따라 외부평가기관의 평가를 거치지 않았습니다.",
+        "bdlst_atn": "해당사항없음",
+        "otcpr_bdlst_sf_atn": "해당사항없음",
+        "popt_ctr_atn": "아니오",
+        "mg_mth": "주식회사 그리드위즈가 주식회사 아이디알서비스를 흡수합병\n- 존속회사 : 주식회사 그리드위즈\n- 소멸회사 : 주식회사 아이디알서비스",
+        "mg_stn": "소규모합병",
+        "mg_pp": "당사가 발행주식 100%를 보유한 완전자회사인 주식회사 아이디알서비스를 흡수합병하여 경영자원을 통합하고 경영 효율성을 제고하기 위함입니다.",
+        "mg_rt": "주식회사 그리드위즈 : 주식회사 아이디알서비스 = 1.0000000 : 0.0000000",
+        "mg_rt_bs": "존속회사인 주식회사 그리드위즈는 소멸회사인 주식회사 아이디알서비스의 발행주식 100%를 소유하고 있으며, 합병 시 소멸회사의 주식에 대하여 합병신주를 발행하지 않으므로 합병비율을 1.0000000 : 0.0000000으로 산출하였습니다.",
+        "mgptncmp_cmpnm": "주식회사 아이디알서비스",
+        "mgptncmp_mbsn": "전력수요관리",
+        "mgptncmp_rl_cmpn": "자회사",
+        "rbsnfdtl_tast": "29,144,571,880",
+        "rbsnfdtl_tdbt": "15,122,294,508",
+        "rbsnfdtl_teqt": "14,022,277,372",
+        "rbsnfdtl_cpt": "500,000,000",
+        "rbsnfdtl_sl": "64,546,850,351",
+        "rbsnfdtl_nic": "4,976,219,101",
+        "eadtat_intn": "삼일회계법인",
+        "eadtat_op": "적정",
+        "nmgcmp_rlst_atn": "해당사항없음",
+        "mgsc_mgctrd": "2026년 11월 11일",
+        "mgsc_shddstd": "2026년 11월 25일",
+        "mgsc_mgop_rcpd_bgd": "2026년 11월 25일",
+        "mgsc_mgop_rcpd_edd": "2026년 12월 09일",
+        "mgsc_cdobprpd_bgd": "2026년 11월 27일",
+        "mgsc_cdobprpd_edd": "2026년 12월 28일",
+        "mgsc_mgdt": "2027년 01월 01일",
+        "mgsc_ergmd": "2027년 01월 04일",
+        "mgsc_mgrgsprd": "2027년 01월 05일"
+      },
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "코스닥 상장사 그리드위즈의 합병 결정 공시"
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(씨씨에스) [기재정정]최대주주변경",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110900825",
+      "published": "2026-11-10T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "씨씨에스의 최대주주 변경 기재정정 공시"
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "앤트로픽, 상장 앞두고 몸값 반토막...삼전닉스에 미칠 영향은?",
+      "link": "https://www.hankyung.com/article/202611108020i",
+      "published": "2026-11-10T16:50:15+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "앤트로픽 상장과 국내 반도체 기업 영향 분석입니다."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "'항암 신약 개발' 넥스아이, 코스닥 신규상장…12일부터 거래 시작",
+      "link": "https://www.yna.co.kr/view/AKR20261110166800008",
+      "published": "2026-11-10T18:11:11+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "넥스아이의 코스닥 신규 상장 확정 소식."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "[특징주] 동원파츠, 코스닥 상장 첫날 10%대 상승(종합)",
+      "link": "https://www.yna.co.kr/view/AKR20261110038951008",
+      "published": "2026-11-10T15:37:36+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "코스닥 신규 상장 거래 결과 보도"
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "엔젠바이오 \"솔라에이엠홀딩스 주식 20억원에 취득\"",
+      "link": "https://www.yna.co.kr/view/AKR20261110128100008",
+      "published": "2026-11-10T15:26:50+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "상장사의 20억원 규모 지분 취득 건"
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "IPO 구주매출이 사라졌다…멈춰선 PE·VC 회수 사이클",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/09/2026110980169.html",
+      "published": "2026-11-10T07:00:00+09:00",
+      "keywords": [
+        "IPO",
+        "지분",
+        "사모펀드",
+        "IPO"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "IPO 시장의 구주매출 소멸과 PE·VC 회수 지연 영향."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "배민, 과징금 3300억보다 무거운 수익모델 제동…새 주인될 우버에도 부담",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/10/2026111080078.html",
+      "published": "2026-11-10T10:54:21+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "공정위 과징금에 따른 배민 수익모델 및 M&A 영향 분석."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "국민성장펀드 없는 게 낫다?…독자 펀딩 '착착' 성공하는 PEF들",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/09/2026110980168.html",
+      "published": "2026-11-10T07:00:00+09:00",
+      "keywords": [
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "PEF 시장의 펀드레이징 및 국민성장펀드 영향 분석."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "macro",
+      "title": "올해 홍콩증시 IPO 자금조달 69조원…6년 만에 최고",
+      "link": "https://www.yna.co.kr/view/AKR20261110120700009",
+      "published": "2026-11-10T15:41:32+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "홍콩 증시 IPO 시장의 전체적 자금조달 규모 성과."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "macro",
+      "title": "NYT \"치솟는 전기요금, 공룡 전력회사 탄생 좌초시킬 수도\"",
+      "link": "https://www.yna.co.kr/view/AKR20261110054000009",
+      "published": "2026-11-10T11:30:57+09:00",
+      "keywords": [
+        "합병"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "규제 및 요금 이슈로 인한 글로벌 빅딜 무산 가능성"
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Bank of England’s Lombardelli Signals Another Rate Rise Likely in Near Term",
+      "link": "https://www.wsj.com/economy/central-banking/bankof-englands-lombardelli-signals-another-rate-rise-likely-in-near-term-baac0950?mod=rss_worldnews",
+      "published": "2026-11-10T22:46:00+09:00",
+      "keywords": [
+        "interest rate",
+        "inflation",
+        "central bank"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "영국 중앙은행의 기준금리 인상 가능성 관련 통화정책 기사."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Prices rose by 0.4% in October from the previous month, the Labor Department said, higher than expected",
+      "link": "https://www.wsj.com/economy/cpi-inflation-report-october-2026-369f8032?mod=rss_socialeconomyfeed",
+      "published": "2026-11-11T01:49:00+09:00",
+      "keywords": [
+        "inflation"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "미국 소비자물가지수(CPI) 상승 관련 중요한 거시 지표."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Treasury Yields Turn Higher on Fed’s Waller Comments; Eurozone Bond Yields Fall",
+      "link": "https://www.wsj.com/economy/central-banking/treasury-yields-edge-up-ahead-of-u-s-inflation-data-7a55db79?mod=rss_socialeconomyfeed",
+      "published": "2026-11-10T19:30:00+09:00",
+      "keywords": [
+        "Fed",
+        "yields",
+        "Treasury"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "연준 인사 발언에 따른 국채 금리 및 통화정책 전망."
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "美 근원물가 0.3% 상승…Fed, 12월 추가 금리 인상 가능성",
+      "link": "https://www.hankyung.com/article/202611108658i",
+      "published": "2026-11-10T22:50:32+09:00",
+      "keywords": [
+        "Fed",
+        "금리",
+        "물가"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "미국 CPI 상승과 연준 금리 인상 가능성 보도."
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "[속보] 美 10월 소비자물가 전월비 0.4%↑…전망치 상회",
+      "link": "https://www.hankyung.com/article/2026111086537",
+      "published": "2026-11-10T22:36:10+09:00",
+      "keywords": [
+        "물가"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "미국 소비자물가지수 예상치 상회 속보."
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "China’s Trade Surplus Surged Past $1 Trillion in October",
+      "link": "https://www.wsj.com/world/china/chinas-trade-surplus-surged-past-1-trillion-in-october-967968c9?mod=rss_worldnews",
+      "published": "2026-11-10T13:04:00+09:00",
+      "keywords": [
+        "China",
+        "trade"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "중국의 대규모 무역수지 흑자 등 거시 경제 지표."
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "\"0.25%p 인상으로 안 끝날수도\"…예상넘은 물가에 시장 공포",
+      "link": "https://www.hankyung.com/article/202611108677i",
+      "published": "2026-11-10T23:37:14+09:00",
+      "keywords": [
+        "물가"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "물가 상승에 따른 금리 추가 인상 우려 반영."
+    }
+  ]
+}
