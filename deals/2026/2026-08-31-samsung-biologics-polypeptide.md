@@ -3,7 +3,7 @@
 상태: "계약 체결"
 신뢰도: "보도 기준"
 발표일: 2026-08-31
-최종 업데이트: 2026-11-06
+최종 업데이트: 2026-11-12
 지역: ["한국", "유럽"]
 규모 구간: "1조~5조"
 규모(원화): "약 2.7조 원 (보도 기준 환산)"
@@ -16,7 +16,7 @@
 매도자: ["Draupnir Holding"]
 재무 자문: []
 법률 자문: []
-출처: ["https://www.hankyung.com/article/2026110591341", "https://www.kedglobal.com/bio-pharma/newsView/ked202611020010", "https://en.sedaily.com/culture/2026/11/02/samsung-biologics-wins-98-percent-of-polypeptide-shares-in", "https://dealsite.co.kr/articles/168104"]
+출처: ["https://www.hankyung.com/article/2026110591341", "https://www.kedglobal.com/bio-pharma/newsView/ked202611020010", "https://en.sedaily.com/culture/2026/11/02/samsung-biologics-wins-98-percent-of-polypeptide-shares-in", "https://dealsite.co.kr/articles/168104", "https://www.yna.co.kr/view/AKR20261111086900017"]
 비교: {대가 구성: "현금", 인수자 성격: "전략적", 메모: "원화 규모는 국내 보도 환산값(약 2.7조 원). 프리미엄은 확인되지 않음"}
 일정: []
 정정: []
@@ -40,6 +40,7 @@
 ## 진행 이력
 - 2026-08-31: 삼성바이오로직스가 PolyPeptide Group 공개매수 계획을 발표했다 (보도 기준).
 - 2026-11-05: 공개매수 최종 응모율 97.98%가 발표됐다 (보도 기준).
+- 2026-11-11: 인수 자금 마련을 위한 주주배정 유상증자 청약률이 96.8%로 집계됐고, 남은 실권주 약 7만 주는 일반공모로 넘긴다 (연합뉴스 보도 기준, 증자 총액·발행가는 확인되지 않음).
 
 ## 관련 딜·뉴스
 - [Viatris, Pacira BioSciences를 주당 36.5달러(지분가치 약 16.5억 달러)에 인수, 공개매수 개시](../2026/2026-10-08-viatris-pacira-biosciences.md) — 같은 시기 바이오 기업 공개매수 인수

@@ -48,3 +48,4 @@ BASF는 9월 주당 22.15유로 제안이 거절된 뒤 주당 24유로로 값�
 - [Monte dei Paschi 주주, Intesa 인수 제안에 맞선 방어안 부결](../2026/2026-10-29-intesa-sanpaolo-monte-dei-paschi.md) — 같은 주 유럽에서 진행 중인 비우호적 인수 제안
 - [Spectrum Brands·Oaktree 합작사 Empower Brands, Helen of Troy에 주당 37달러(EV 약 16억 달러) 인수 제안 공개](../2026/2026-11-04-empower-brands-helen-of-troy.md) — 거절된 인수 제안을 높여 다시 내미는 구도
 - [Wendy's 이사회, Trian 주도 컨소시엄의 주당 7.35달러(약 14억 달러) 비상장화 제안 거절…포이즌 필 도입](../2026/2026-11-05-trian-wendys.md) — 대상 회사 이사회가 인수 제안을 거절한 사례
+- [AkzoNobel·Axalta 250억 달러 합병, 영국 CMA 1단계 심사서 자동차 보수용 도료 경쟁 우려 지적…회사는 2027년 초 종결 목표 유지](../2025/2025-11-18-akzonobel-axalta.md) — 같은 시기 유럽 화학 업계 대형 결합 시도

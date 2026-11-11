@@ -1819,3 +1819,107 @@ KDB생명:
     points:
       - "KDB생명 인수 우선협상대상자 (2026-08 선정, 보도 기준)"
     as_of: "2026-11-11"
+AkzoNobel:
+  type: 기업
+  country: 유럽
+  aliases: [Akzo Nobel, 아크조노벨, AkzoNobel N.V.]
+  ticker: "EURONEXT:AKZA"
+  profile:
+    about: "네덜란드에 본사를 둔 세계적인 페인트·코팅 업체."
+    business: "건축용 페인트(Dulux 등), 산업용·자동차 보수용 코팅"
+    edge: "유럽을 중심으로 한 장식용 페인트 브랜드와 산업 코팅 기술"
+    owner: "유로넥스트 암스테르담 상장사 (지분 분산)"
+    points:
+      - "Axalta와 주식 합병 추진 중. 영국·EU 경쟁 우려 해소를 위해 유럽 자동차 보수용 도료 사업 매각을 제시"
+    as_of: "2026-11-12"
+Axalta:
+  type: 기업
+  country: 미국
+  aliases: [Axalta Coating Systems, 액솔타]
+  ticker: "NYSE:AXTA"
+  profile:
+    about: "미국 필라델피아에 본사를 둔 자동차·산업용 코팅 전문 업체."
+    business: "자동차 보수용(리피니시) 도료, 완성차용 도료, 산업용 코팅"
+    edge: "자동차 보수용 도료 분야의 강한 시장 지위"
+    owner: "뉴욕증권거래소 상장사 (지분 분산)"
+    points:
+      - "AkzoNobel과 주식 합병 계약(2025-11), 2027년 초 종결 목표"
+    as_of: "2026-11-12"
+Western Union:
+  type: 기업
+  country: 미국
+  aliases: [웨스턴유니온, The Western Union Company]
+  ticker: "NYSE:WU"
+  profile:
+    about: "세계 최대급 국제 송금 업체."
+    business: "대리점·온라인을 통한 개인 해외송금, 기업 결제"
+    edge: "전 세계에 깔린 송금 대리점 네트워크"
+    owner: "뉴욕증권거래소 상장사 (지분 분산)"
+    points:
+      - "Intermex 인수를 추진했으나 캘리포니아 규제 조건을 이유로 2026-11 계약 해지"
+    as_of: "2026-11-12"
+International Money Express:
+  type: 기업
+  country: 미국
+  aliases: [Intermex, 인터멕스]
+  ticker: "NASDAQ:IMXI"
+  profile:
+    about: "미국에서 중남미로 보내는 송금에 강한 해외송금 업체."
+    business: "미국 내 대리점·디지털 채널을 통한 중남미 송금"
+    edge: "멕시코·과테말라 등 중남미 송금 경로의 대리점망"
+    owner: "나스닥 상장사"
+    points:
+      - "Western Union의 인수 계약이 2026-11 해지됨"
+    as_of: "2026-11-12"
+Oura:
+  type: 기업
+  country: 유럽
+  aliases: [Ōura, ŌURA, 오우라, Oura Health]
+  profile:
+    about: "수면·건강 상태를 재는 스마트 반지(Oura Ring)를 만드는 핀란드 회사."
+    business: "스마트 반지 판매와 건강 분석 구독 서비스"
+    edge: "착용형 기기로 모은 수면·심박 등 건강 데이터"
+    owner: "비상장사 (벤처 투자자 등이 보유)"
+    points:
+      - "건강 AI·의료 서비스 쪽 인수를 이어가고 있으며, Counsel Health 인수(2026-11)로 진료 서비스까지 넓힘"
+    as_of: "2026-11-12"
+Counsel Health:
+  type: 기업
+  country: 미국
+  aliases: [Counsel]
+  profile:
+    about: "AI와 의사를 결합해 온라인으로 1차 진료 상담을 제공하는 미국 스타트업."
+    business: "AI 기반 원격 1차 진료 서비스"
+    edge: "AI 상담과 의사 진료를 한 흐름으로 묶은 서비스 설계"
+    owner: "비상장사. Oura가 인수 계약(2026-11)"
+    as_of: "2026-11-12"
+Competition and Markets Authority:
+  type: 정부·기관
+  country: 유럽
+  aliases: [CMA, 영국 경쟁시장청, 영국 CMA]
+  profile:
+    about: "영국의 경쟁 당국. 합병 심사와 소비자 보호를 맡는다."
+    business: "기업결합 심사, 시장 조사, 소비자 보호 집행"
+    edge: "영국에 매출이 있는 해외 기업 간 합병도 따로 심사할 수 있는 권한"
+    owner: "영국 정부 기관"
+    as_of: "2026-11-12"
+European Commission:
+  type: 정부·기관
+  country: 유럽
+  aliases: [EU 집행위원회, 유럽연합 집행위원회, EC]
+  profile:
+    about: "유럽연합의 행정 기구. 일정 규모 이상 합병의 경쟁 심사를 맡는다."
+    business: "EU 정책 집행, 기업결합·반독점 심사"
+    edge: "EU 전체 시장에 걸친 합병 승인·조건 부과 권한"
+    owner: "유럽연합 기관"
+    as_of: "2026-11-12"
+California Department of Financial Protection and Innovation:
+  type: 정부·기관
+  country: 미국
+  aliases: [California DFPI, DFPI, 캘리포니아 금융보호혁신국]
+  profile:
+    about: "미국 캘리포니아주의 금융 규제기관. 송금업 등 금융 서비스 인허가를 맡는다."
+    business: "송금업·소비자금융 인허가와 감독"
+    edge: "주 안에서 영업하는 송금업체의 지배권 변경 승인 권한"
+    owner: "캘리포니아 주정부 기관"
+    as_of: "2026-11-12"

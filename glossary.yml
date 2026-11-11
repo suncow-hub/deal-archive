@@ -340,6 +340,19 @@
   related: [블록딜]
   memo: ""
 
+- id: unsubscribed-shares
+  term: 실권주
+  en: Unsubscribed Shares
+  category: 자금 조달
+  match: [실권주]
+  aliases: []
+  short: 유상증자에서 기존 주주가 받을 권리가 있었는데도 사지 않아 남은 새 주식.
+  more: 남은 실권주는 일반 투자자에게 다시 공모하거나, 주관 증권사가 대신 떠안는다. 청약률이 높을수록 실권주가 적다.
+  example: 삼성바이오로직스 유상증자는 청약률 96.8%로 실권주 약 7만 주가 일반공모로 넘어갔다 (보도 기준).
+  deal: 2026-08-31-samsung-biologics-polypeptide
+  related: [유상증자]
+  memo: ""
+
 - id: third-party-allotment
   term: 제3자배정 유상증자
   en: Third-Party Allotment
@@ -661,6 +674,19 @@
   example: DoorDash–Instacart는 미국 HSR 등 반독점 심사가 핵심 변수로 꼽힌다.
   deal: 2026-10-29-doordash-instacart
   related: [크로스보더 딜]
+  memo: ""
+
+- id: merger-remedy
+  term: 시정조치 (합병 심사)
+  en: Merger Remedies
+  category: 공시·규제
+  match: [시정조치, 시정안]
+  aliases: [Remedies, Undertakings]
+  short: 경쟁당국이 합병으로 경쟁이 줄어든다고 볼 때, 회사가 겹치는 사업 일부를 팔거나 약속을 지키는 조건으로 승인을 받는 방법.
+  more: 사업부를 떼어 파는 것은 구조적 시정조치, 가격·공급 약속처럼 행동을 제한하는 것은 행태적 시정조치라고 한다. 시정조치가 클수록 합병으로 얻으려던 효과는 줄어든다.
+  example: AkzoNobel과 Axalta는 유럽 자동차 보수용 도료 사업을 팔아 EU와 영국의 경쟁 우려를 풀겠다고 했다.
+  deal: 2025-11-18-akzonobel-axalta
+  related: [반독점 심사]
   memo: ""
 
 - id: change-of-control

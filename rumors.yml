@@ -4,6 +4,18 @@
 # - status: 미확인 / 사실로 확인 / 부인 / 소멸
 #   (사실로 확인되면 deal 에 딜 노트 id, 30일간 새 소식이 없으면 소멸)
 # - credibility: 낮음 / 중간  (공신력 높은 출처로 확인되면 소문이 아니라 딜 노트로 간다)
+- id: 2026-11-12-anthropic-ipo-range-raise
+  first_seen: 2026-11-12
+  last_seen: 2026-11-12
+  title: "Anthropic, IPO 공모가 희망 범위 상향 검토설"
+  claim: "수요가 강해 Anthropic이 공모가 희망 범위(70~78달러)를 올리는 방안을 검토 중이라는 FT 보도가 나왔고, 확정된 변경 신고는 확인되지 않았다."
+  companies: ["Anthropic"]
+  sources:
+    - {name: "연합뉴스 (FT 인용)", url: "https://www.yna.co.kr/view/AKR20261111059600009", credibility: 중간}
+  why_watch: "사실이면 공모 규모와 상장 기업가치가 희망가 상단 기준(약 1조 달러)보다 커진다."
+  status: 미확인
+  status_note: ""
+  deal: null
 - id: 2026-11-07-monzo-fundraising
   first_seen: 2026-11-07
   last_seen: 2026-11-07
