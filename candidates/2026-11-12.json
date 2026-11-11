@@ -1,0 +1,582 @@
+{
+  "meta": {
+    "run_at": "2026-11-12T02:12:57.183568+09:00",
+    "window_start": "2026-11-10T20:12:57.183568+09:00",
+    "sources": {
+      "환율": "1일 추가 (최신 2026-11-11)",
+      "OpenDART 상세": "3건 성공, 1건 실패",
+      "OpenDART": "8건",
+      "WSJ Markets": "3/61",
+      "WSJ U.S. Business": "6/85",
+      "PR Newswire M&A": "15/20",
+      "한경 증권": "2/50",
+      "인베스트조선": "3/50",
+      "연합뉴스 마켓+": "25/120",
+      "매일경제 증권": "3/50",
+      "조선비즈": "1/100",
+      "FT M&A": "3/25",
+      "CNBC Business": "2/30",
+      "WSJ World News": "9/70",
+      "WSJ Economy": "8/36",
+      "한경 경제": "0/50",
+      "한경 국제": "3/50"
+    },
+    "gemini_tries": 9,
+    "gemini_model": "gemini-3.6-flash, gemini-3.7-flash",
+    "gemini": "성공 (78/78건 채점)",
+    "counts": {
+      "deal": 25,
+      "macro": 10,
+      "dropped": 43
+    }
+  },
+  "items": [
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Anthropic to Seek $1.3 Trillion Valuation in IPO",
+      "link": "https://www.wsj.com/finance/stocks/anthropic-ipo-valuation-8337b669?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-11T03:41:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "앤스로픽의 초대형 IPO 추진 보도."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "최대주주는 호반, 경영권은 조원태…한진칼 지분전쟁 '장기전' 국면으로",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/10/2026111080054.html",
+      "published": "2026-11-11T07:00:00+09:00",
+      "keywords": [
+        "지분",
+        "경영권"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "호반과 조원태 회장의 한진칼 경영권 분쟁 국면."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "삼성바이오, 유상증자 청약률 96.8%…폴리펩타이드 인수 속도",
+      "link": "https://www.yna.co.kr/view/AKR20261111086900017",
+      "published": "2026-11-11T11:37:14+09:00",
+      "keywords": [
+        "인수",
+        "유상증자"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "삼성바이오의 해외 CDMO 기업 인수 및 유상증자 딜입니다."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "AkzoNobel-Axalta $25 Billion Merger Could Harm Competition, U.K. Regulator Warns",
+      "link": "https://www.wsj.com/business/deals/akzonobel-axaltas-25-billion-merger-could-harm-competition-u-k-regulator-warns-d3a59010?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-11T18:18:00+09:00",
+      "keywords": [
+        "merger"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "250억 달러 규모 글로벌 화학기업 합병 규제 이슈."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "삼성바이오로직스, 유증 청약률 96.8%…실권주 7만여주 일반공모",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/11/2026111180074.html",
+      "published": "2026-11-11T11:27:46+09:00",
+      "keywords": [
+        "유상증자"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "삼바의 대규모 유상증자 흥행 및 자본조달."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "FT \"앤트로픽, 공모가 상향 검토…강한 수요\"",
+      "link": "https://www.yna.co.kr/view/AKR20261111059600009",
+      "published": "2026-11-11T10:20:13+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "빅테크 기업 앤트로픽의 IPO 공모가 동향 뉴스입니다."
+    },
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "The financier taking on Carlos Slim in Mexican telecoms",
+      "link": "https://www.ft.com/content/814c0427-42fa-453b-8e1d-bce8c77689c7?syn-25a6b1a6=1",
+      "published": "2026-11-11T20:00:06+09:00",
+      "keywords": [
+        "acquisition"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "멕시코 통신 시장 내 합작법인을 통한 자산 인수 딜입니다."
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "Anthropic Founders’ Stakes Are Worth $18 Billion Apiece at IPO Price",
+      "link": "https://www.wsj.com/finance/anthropic-founders-stakes-are-worth-18-billion-apiece-at-ipo-price-2c746365?mod=rss_markets_main",
+      "published": "2026-11-11T02:54:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "앤스로픽 IPO 관련 창업자 지분 가치 보도."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Western Union Scraps $500 Million International Money Express Takeover",
+      "link": "https://www.wsj.com/business/deals/western-union-scraps-500-million-international-money-express-takeover-0cf7ae09?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-11T21:03:00+09:00",
+      "keywords": [
+        "takeover",
+        "to buy",
+        "deal"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "규제 당국 반대로 인한 5억 달러 M&A 무산."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Smart-Ring Maker Oura to Buy AI-Native Primary-Care Company for $625 Million",
+      "link": "https://www.wsj.com/business/deals/smart-ring-maker-oura-to-buy-ai-native-primary-care-company-for-625-million-1ac93543?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-11T03:04:00+09:00",
+      "keywords": [
+        "acquisition",
+        "to buy"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "오우라의 6.25억 달러 규모 AI 헬스케어 기업 인수."
+    },
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "Meet the Willy Wonka of failed US microcaps",
+      "link": "https://www.ft.com/content/d452f007-5f43-49d4-b293-0750011e99b3?syn-25a6b1a6=1",
+      "published": "2026-11-11T23:16:17+09:00",
+      "keywords": [
+        "acquisition"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "미국 마이크로캡 인수 목적 법인 관련 딜 뉴스입니다."
+    },
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "Italy’s penchant for bank meddling bites back",
+      "link": "https://www.ft.com/content/82e207f8-76ea-4627-bd6e-ffdf032a4de2?syn-25a6b1a6=1",
+      "published": "2026-11-11T14:00:22+09:00",
+      "keywords": [
+        "takeover"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "이탈리아 은행의 경영권 인수 가능성을 다룬 M&A 뉴스."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(에이플러스에셋) 주요사항보고서(주식교환ㆍ이전결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111000344",
+      "published": "2026-11-11T00:00:00+09:00",
+      "keywords": [
+        "주식교환ㆍ이전결정"
+      ],
+      "dart_details": {
+        "corp_name": "에이플러스에셋",
+        "bddd": "2026년 11월 11일",
+        "od_a_at_t": "3",
+        "od_a_at_b": "0",
+        "rs_sm_atn": "아니오",
+        "ex_sm_r": "(주)에이플러스에셋은 본 건 주식교환시 신주 발행에 갈음하여 현금을 교부하고 증권의 모집 또는 매출을 하지 않기 때문에 증권신고서 제출 대상이 아닙니다.",
+        "exevl_atn": "예",
+        "exevl_bs_rs": "자본시장과 금융투자업에 관한 법률 시행령 제176조의6 제4항에 따라, 주식의 포괄적 교환 시 주식의 포괄적 교환 비율의 적정성에 대하여 외부평가기관의 평가를 받아야 합니다.",
+        "exevl_intn": "우리회계법인",
+        "exevl_pd": "2026년 09월 23일 ~ 2026년 11월 10일",
+        "exevl_op": "적정",
+        "bdlst_atn": "아니오",
+        "otcpr_bdlst_sf_atn": "해당사항없음",
+        "popt_ctr_atn": "아니오",
+        "rbsnfdtl_tast": "44,029,965,354",
+        "rbsnfdtl_tdbt": "26,314,142,399",
+        "rbsnfdtl_teqt": "17,715,822,955",
+        "rbsnfdtl_cpt": "6,000,000,000",
+        "extr_sen": "주식교환",
+        "extr_stn": "소규모",
+        "extr_tgcmp_cmpnm": "에이플러스리얼티(주) (Aplus Realty Co.,Ltd.)",
+        "extr_tgcmp_rp": "김도연",
+        "extr_tgcmp_mbsn": "부동산 관련 서비스업",
+        "extr_tgcmp_rl_cmpn": "자회사",
+        "extr_tgcmp_tisstk_ostk": "12,000,000",
+        "extr_tgcmp_tisstk_cstk": "0",
+        "extr_rt": "(주)에이플러스에셋어드바이저 : 에이플러스리얼티(주) = 1: 0.1072862\n\n주식교환일 현재 (주)에이플러스에셋어드바이저(이하 \"(주)에이플러스에셋\")를 제외한 나머지 에이플러스리얼티(주) 주주가 소유한 에이플러스리얼티(주) 주식은 주식교환일에 (주)에이플러스에셋에 이전되고, (주)에이플러스에셋은 그 대가로1주당 현금 1,256원을 교부할 예정입니다.",
+        "extr_rt_bs": "1. 완전모회사가 되는 (주)에이플러스에셋의 교환가액\n\n1) (주)에이플러스에셋의 기준시가\n주권상장법인인 (주)에이플러스에셋의 기준시가는 자본시장과 금융투자업에 관한 법률 시행령 제176조의5 제1항 제2호 가목에 따라 주식교환을 위한 이사회결의일과 주식교환계약을 체결한 날 중 앞서는 날의 전일을 기산일로 최근 1개월간의 거래량 가중산술평균종가, 최근 1주일간의 거래량 가중산술평균종가, 최근일의 종가를 산술평균한 가액으로 산정하였으며 산출된 기준시가가 자산가치를 상회하므로 기준시가를 교환가액으로 적용하였습니다.한편, 자본시장과 금융투자업에 관한 법률 시행령 제176조의6 제2항 및 제176조의5 제1항 제2호에 따르면, 계열회사 간 주식교환의 경우 주권상장법인의 교환가액은 상술한 기준시가를 기준으로 100분의 10의 범위에서 할인 또는 할증한 가액을 적용할 수 있으나, 본 건 주식교환은 (주)에이플러스에셋과 에이플러스리얼티(주)가 각자의 이사회에서 검토하고 상호 협상하여 합의한 바에 따라 (주)에이플러스에셋의 경우 할증 또는 할인 없이 상술한 기준시가를 교환가액으로 적용하였습니다.- 최근 1개월 거래량 가중산술평균종가(2026.10.11 ~ 2026.11.10) : 11,998원\n- 최근 1주일 거래량 가중산술평균종가(2026.11.04 ~ 2026.11.10) : 11,482원\n- 최근일 종가(2026.11.10) : 11,640원\n- 기준시가(산술평균가액) : 11,707원\n2) (주)에이플러스에셋의 자산가치\n(주)에이플러스에셋의 1주당 자산가치는 증권의 발행 및 공시 등에 관한 규정 시행세칙 제5조에 의거하여, 주요사항보고서 제출일이 속하는 사업연도의 직전 사업연도말 현재의 별도재무제표상의 자본총계에서 일부 조정항목을 가감하여 산정한 순자산가액을 분석기준일 현재의 발행주식총수로 나누어 산정하였습니다. (주)에이플러스에셋의 1주당 자산가치 산정내역은 다음과 같습니다.- 최근 사업연도말 별도재무상태표 상 자본총계 : 166,988백만원\n- 조정항목 : 24,158백만원\n   ① 가산항목 : 30,941백만원\n   ② 차감항목 : 6,783백만원\n- 조정된 순자산가액 : 191,146백만원\n- 발행주식총수 : 22,607,693주\n- 주당 자산가치 : 8,455원2. 완전자회사가 되는 에이플러스리얼티(주)의 교환가액\n주권비상장법인인 에이플러스리얼티(주)의 교환가액은 자본시장과 금융투자업에 관한 법률 시행령 제176조의5 제1항 제2호 나목과 증권의 발행 및 공시 등에 관한 규정 제5-13조 및 동 규정 시행세칙 제4조에 따라, 자산가치와 수익가치를 각각 1과 1.5로 하여 가중산술평균한 가액(이하 \"본질가치\")으로 산정하였습니다.\n\n- 본질가치(교환가액) : 1,256원/주\n   ① 자산가치 : 1,621원/주\n   ② 수익가치 : 1,013원/주\n\n에이플러스리얼티(주)의 경우 증권의 발행 및 공시 등에 관한 규정 시행세칙 제7조에 따른 유사회사 요건을 충족하는 법인이 3개사 미만이므로, 비교 목적으로 공시되는 에이플러스리얼티(주)의 상대가치는 산정하지 아니하였습니다.\n\n3. 산출 결과\n상기 산출근거에 따라 본 건 주식교환의 교환비율은 (주)에이플러스에셋 : 에이플러스리얼티(주) = 1: 0.1072862로 산출되었으며, (주)에이플러스에셋은 신주발행에 갈음하여 (주)에이플러스에셋을 제외한 나머지 에이플러스리얼티(주) 주주에게 주당 현금 1,256원을 교부할 예정입니다.",
+        "extr_pp": "(주)에이플러스에셋은 본 건 주식교환을 통해 에이플러스리얼티(주)를 완전자회사로 편입함으로써 지배구조를 단순화하고 경영상 의사결정의 신속성과 그룹 내 자원 배분의 효율성을 제고하고자 합니다.",
+        "extrsc_extrctrd": "2026년 11월 18일",
+        "extrsc_shddstd": "2026년 11월 26일",
+        "extrsc_extrop_rcpd_bgd": "2026년 11월 26일",
+        "extrsc_extrop_rcpd_edd": "2026년 12월 11일",
+        "extrsc_gmtsck_prd": "2026년 12월 14일",
+        "extrsc_extrdt": "2027년 01월 15일",
+        "atextr_cpcmpnm": "주식회사 에이플러스에셋어드바이저(Aplus Asset Advisor Co. Ltd)"
+      },
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "국내 상장사의 주식교환·이전 결정 공시."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(청보) 주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000396",
+      "published": "2026-11-10T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details": {
+        "corp_name": "청보",
+        "bddd": "2026년 11월 10일",
+        "od_a_at_t": "1",
+        "od_a_at_b": "1",
+        "adt_a_atn": "불참",
+        "rs_sm_atn": "아니오",
+        "ex_sm_r": "본 합병은 합병신주를 발행하지 않는 무증자합병 방식으로 진행하므로, 본 합병의 과정에서는 증권신고서 제출이 필요한 증권의 모집이나 매출이 이루어지지 않습니다. ",
+        "exevl_atn": "미해당",
+        "exevl_bs_rs": "「 자본시장과 금융투자업에 관한 법률」제165조의4 및 동법 시행령 제176조의5 제7항 제2호 나목 단서에 의하여 다른 회사의 발행주식 총수를 소유하고 있는 회사가 그 다른 회사를 합병하면서 신주를 발행하지 않는 경우에는 합병가액의 적정성에 대한 외부평가기관의 평가를 요구하지 않는 것으로 규정하고 있는 바, 본 합병은 이에 해당하므로 위 규정에 따라 외부평가기관의 평가를 거치지 아니하였습니다.",
+        "bdlst_atn": "해당사항없음",
+        "otcpr_bdlst_sf_atn": "해당사항없음",
+        "popt_ctr_atn": "아니오",
+        "mg_mth": "청보(주)가 청보에너지(주)를 흡수합병\n- 존속회사 : 청보(주)\n- 소멸회사 : 청보에너지(주)",
+        "mg_stn": "소규모합병",
+        "mg_pp": "경영 효율성 제고 및 사업 경쟁력 강화",
+        "mg_rt": "청보(주) 보통주식 : 청보에너지(주) 보통주식 \n=  1.0000000 : 0.0000000",
+        "mg_rt_bs": "존속회사인 청보(주)는 소멸회사인 청보에너지(주)의 지분 100%를 소유하고 있으며, 합병시 존속회사는 소멸회사의 주식에 대해 신주를 발행하지않으므로 합병비율을 1.0000000 : 0.0000000으로 산출하였습니다.",
+        "mgptncmp_cmpnm": "청보에너지(주)",
+        "mgptncmp_mbsn": "전기상용차 외",
+        "mgptncmp_rl_cmpn": "자회사",
+        "rbsnfdtl_tast": "235,064,293",
+        "rbsnfdtl_tdbt": "330,412,227",
+        "rbsnfdtl_teqt": "-95,347,934",
+        "rbsnfdtl_cpt": "1,000,000,000",
+        "rbsnfdtl_sl": "0",
+        "rbsnfdtl_nic": "20,011,051",
+        "nmgcmp_rlst_atn": "해당사항없음",
+        "mgsc_mgctrd": "2026년 11월 13일",
+        "mgsc_shddstd": "2026년 11월 26일",
+        "mgsc_mgop_rcpd_bgd": "2026년 11월 27일",
+        "mgsc_mgop_rcpd_edd": "2026년 12월 11일",
+        "mgsc_cdobprpd_bgd": "2026년 12월 14일",
+        "mgsc_cdobprpd_edd": "2027년 01월 13일",
+        "mgsc_mgdt": "2027년 01월 14일",
+        "mgsc_ergmd": "2027년 01월 14일",
+        "mgsc_mgrgsprd": "2027년 01월 14일"
+      },
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "국내 기업의 회사합병결정 공시."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "제이앤티지·씨앤엠, 흥행 실패에 상장철회",
+      "link": "https://www.hankyung.com/article/2026111110541",
+      "published": "2026-11-11T17:59:19+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "국내 IPO 시장 침체 및 공모 철회 사례."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "삼양식품 \"베트남 법인에 1천311억원 출자\"",
+      "link": "https://www.yna.co.kr/view/AKR20261111141800008",
+      "published": "2026-11-11T16:01:55+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "삼양식품의 베트남 생산법인 대규모 출자 투자."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "연일 상한가…한진칼 등 '지분경쟁·경영권 이슈' 우선주 급등",
+      "link": "https://www.yna.co.kr/view/AKR20261111067900008",
+      "published": "2026-11-11T10:46:19+09:00",
+      "keywords": [
+        "지분",
+        "경영권",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "지분경쟁 및 경영권 이슈 관련 증시 동향 보도입니다."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(광진실업) [첨부추가]최대주주변경",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900906",
+      "published": "2026-11-11T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "국내 상장사의 최대주주 변경 공시."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(케이쓰리아이) [기재정정]최대주주변경을수반하는주식양수도계약체결",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900649",
+      "published": "2026-11-11T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "국내 상장사의 최대주주 변경 주식양수도 공시."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "OPROCESSOR Announces US$1 Billion Strategic Acquisition Target for Patented VCSEL Photonic Interposer Technology for Future Multi-Die GPUs Ahead of SPIE Photonics West 2027",
+      "link": "https://www.prnewswire.com/news-releases/oprocessor-announces-us1-billion-strategic-acquisition-target-for-patented-vcsel-photonic-interposer-technology-for-future-multi-die-gpus-ahead-of-spie-photonics-west-2027-302935866.html",
+      "published": "2026-11-11T22:00:00+09:00",
+      "keywords": [
+        "acquisition"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "한국·미국 관련 특허 포트폴리오 매각 추진."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Waud Capital Partners Completes Sale of PromptCare Infusion to AOM Infusion",
+      "link": "https://www.prnewswire.com/news-releases/waud-capital-partners-completes-sale-of-promptcare-infusion-to-aom-infusion-302935169.html",
+      "published": "2026-11-11T21:00:00+09:00",
+      "keywords": [
+        "private equity"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "미국 사모펀드의 헬스케어 포트폴리오 매각 거래."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "H.I.G. Capital Signs Definitive Agreement to Acquire Majority Stake in go asia",
+      "link": "https://www.prnewswire.com/news-releases/hig-capital-signs-definitive-agreement-to-acquire-majority-stake-in-go-asia-302935623.html",
+      "published": "2026-11-11T20:00:00+09:00",
+      "keywords": [
+        "acquire",
+        "stake"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "글로벌 PE의 독일 유통기업 경영권 인수 건."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Greenberg Traurig Advises TNL Mediagene in Management Buyout, Equity Transaction",
+      "link": "https://www.prnewswire.com/news-releases/greenberg-traurig-advises-tnl-mediagene-in-management-buyout-equity-transaction-302935657.html",
+      "published": "2026-11-11T08:50:00+09:00",
+      "keywords": [
+        "buyout"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "나스닥 상장 미디어사의 경영진 인수 거래."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "바로팜, 코스닥 상장 첫날 장 초반 26%대 급락",
+      "link": "https://www.hankyung.com/article/2026111191986",
+      "published": "2026-11-11T09:10:47+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "신규 상장사의 주가 급락 단순 시황."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "[특징주] 바로팜, 코스닥 시장 상장 첫날 10%이상 급락",
+      "link": "https://www.yna.co.kr/view/AKR20261111038000008",
+      "published": "2026-11-11T09:07:07+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "신규 상장 기업(IPO)의 상장 첫날 주가 동향입니다."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "PBR 더 낮은 삼양은 빠지고 HL은 포함?…'주가누르기' 상속세 역설",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/10/2026111080162.html",
+      "published": "2026-11-11T07:00:00+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "상속세 및 밸류업 규제 변경에 따른 지배구조 영향."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Dollar Rises to 19-Month High on Fed Rate-Hike Bets",
+      "link": "https://www.wsj.com/economy/central-banking/euro-falls-to-18-month-low-against-dollar-on-fed-rate-hike-bets-02d386c5?mod=rss_socialeconomyfeed",
+      "published": "2026-11-12T01:28:00+09:00",
+      "keywords": [
+        "Fed"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "미 연준 금리인상 기대에 따른 달러 환율 거시 변동."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Yen Slumps as Fed Rate-Hike Bets Boost Dollar",
+      "link": "https://www.wsj.com/economy/central-banking/yen-slumps-to-over-one-month-low-on-fed-hike-bets-fc05bf61?mod=rss_socialeconomyfeed",
+      "published": "2026-11-11T20:44:00+09:00",
+      "keywords": [
+        "Fed",
+        "inflation"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "미국 인플레이션 및 연준 금리 전망에 따른 엔화 급락."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Two Federal Reserve officials suggested the central bank may need to quicken the pace of its rate increases, as the Fed’s December meeting nears",
+      "link": "https://www.wsj.com/economy/central-banking/fed-forced-to-confront-case-for-bigger-and-faster-rate-rises-ac181706?mod=rss_socialeconomyfeed",
+      "published": "2026-11-11T10:00:00+09:00",
+      "keywords": [
+        "Fed",
+        "inflation",
+        "central bank"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "미 연준 인사들의 금리 인상 속도 조절 발언."
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "macro",
+      "title": "Poland’s Orlen Cancels Qatar LNG Supply Deal After Months of Force Majeure",
+      "link": "https://www.wsj.com/finance/commodities-futures/polands-orlen-cancels-qatar-lng-supply-deal-after-months-of-force-majeure-88f37e7b?mod=rss_markets_main",
+      "published": "2026-11-12T00:23:00+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "카타르 LNG 장기 공급 계약 해지 뉴스."
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "BOE Should Raise Key Rate to Around 5%, U.K. Economic Think Tank Says",
+      "link": "https://www.wsj.com/economy/global/boe-should-raise-key-rate-to-around-5-u-k-economic-think-tank-says-04090d09?mod=rss_worldnews",
+      "published": "2026-11-11T15:42:00+09:00",
+      "keywords": [
+        "inflation"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "영국 중앙은행 금리 인상 전망 등 통화정책 이슈."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Fed’s Paulson Urges Gradual Approach to Rate Hikes",
+      "link": "https://www.wsj.com/economy/central-banking/feds-paulson-urges-gradual-approach-to-rate-hikes-efe287f9?mod=rss_socialeconomyfeed",
+      "published": "2026-11-11T08:58:00+09:00",
+      "keywords": [
+        "Fed"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "미 연준 위원의 점진적 금리 인상 주장 통화정책 뉴스."
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "[속보] 美 반도체 지수 0.35% 하락…美 CPI 예상 상회·연준 0.5%p 인상 가능성",
+      "link": "https://www.hankyung.com/article/2026111187697",
+      "published": "2026-11-11T06:07:57+09:00",
+      "keywords": [
+        "연준"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "미국 CPI 상회에 따른 연준 빅스텝 가능성 및 주가 하락."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Bank of Canada Raised Rates to Mitigate Inflation Risk, Minutes Say",
+      "link": "https://www.wsj.com/economy/central-banking/bank-of-canada-raised-rates-to-mitigate-inflation-risk-minutes-say-1bece759?mod=rss_socialeconomyfeed",
+      "published": "2026-11-11T03:57:00+09:00",
+      "keywords": [
+        "inflation"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "캐나다 중앙은행의 기준금리 인상 회의록 공개."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Bank of England’s Lombardelli Signals Another Rate Rise Likely in Near Term",
+      "link": "https://www.wsj.com/economy/central-banking/bankof-englands-lombardelli-signals-another-rate-rise-likely-in-near-term-baac0950?mod=rss_socialeconomyfeed",
+      "published": "2026-11-10T22:46:00+09:00",
+      "keywords": [
+        "interest rate",
+        "inflation",
+        "central bank"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "영국 중앙은행 부총재의 단기 금리 인상 시그널."
+    }
+  ]
+}
