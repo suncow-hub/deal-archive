@@ -1923,3 +1923,61 @@ California Department of Financial Protection and Innovation:
     edge: "주 안에서 영업하는 송금업체의 지배권 변경 승인 권한"
     owner: "캘리포니아 주정부 기관"
     as_of: "2026-11-12"
+진에어:
+  type: 기업
+  country: 한국
+  aliases: [Jin Air, JIN AIR]
+  krx: "272450"
+  profile:
+    about: "한진그룹 계열 저비용항공사(LCC)."
+    business: "국내선·국제선 여객 및 화물 운송"
+    edge: "대형기와 소형기를 함께 운용하는 LCC, 에어부산·에어서울과의 합병으로 통합 LCC의 존속법인"
+    owner: "유가증권시장 상장사. 최대주주는 대한항공"
+    points:
+      - "2026-11-12 에어부산·에어서울 흡수합병 인가를 받아 2027년 3월 통합 LCC로 출범 예정 (보도 기준)"
+    as_of: "2026-11-13"
+에어부산:
+  type: 기업
+  country: 한국
+  aliases: [Air Busan]
+  krx: "298690"
+  profile:
+    about: "부산 김해공항을 거점으로 하는 저비용항공사(LCC)."
+    business: "국내선·단거리 국제선 여객 운송"
+    edge: "김해공항 기반 노선망"
+    owner: "유가증권시장 상장사. 최대주주는 아시아나항공"
+    points:
+      - "진에어에 흡수합병돼 소멸 예정. 합병비율 진에어 1 : 에어부산 0.2862684 (보도 기준)"
+    as_of: "2026-11-13"
+에어서울:
+  type: 기업
+  country: 한국
+  aliases: [Air Seoul]
+  profile:
+    about: "아시아나항공 계열 저비용항공사(LCC)."
+    business: "단거리 국제선 여객 운송"
+    edge: "인천공항 기반 단거리 노선"
+    owner: "비상장. 아시아나항공 자회사"
+    points:
+      - "진에어에 흡수합병돼 소멸 예정. 합병비율 진에어 1 : 에어서울 0.7501939 (보도 기준)"
+    as_of: "2026-11-13"
+국토교통부:
+  type: 정부·기관
+  country: 한국
+  aliases: [국토부, Ministry of Land, Infrastructure and Transport, MOLIT]
+  profile:
+    about: "한국의 국토·교통 정책을 맡는 중앙행정기관."
+    business: "교통·항공·건설·주택 정책과 인허가"
+    edge: "항공사업법에 따른 항공사 합병 인가 권한"
+    owner: "대한민국 정부 부처"
+    as_of: "2026-11-13"
+공정거래위원회:
+  type: 정부·기관
+  country: 한국
+  aliases: [공정위, Korea Fair Trade Commission, KFTC]
+  profile:
+    about: "한국의 경쟁 당국. 기업결합 심사와 불공정거래 규제를 맡는다."
+    business: "기업결합 신고 심사, 독과점·불공정거래 조사와 제재"
+    edge: "일정 규모 이상 합병·지분 취득의 승인·시정조치 권한"
+    owner: "국무총리 소속 중앙행정기관"
+    as_of: "2026-11-13"
