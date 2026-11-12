@@ -1,0 +1,540 @@
+{
+  "meta": {
+    "run_at": "2026-11-13T02:13:12.869854+09:00",
+    "window_start": "2026-11-11T20:13:12.869854+09:00",
+    "sources": {
+      "환율": "1일 추가 (최신 2026-11-12)",
+      "OpenDART 상세": "2건 성공, 4건 실패",
+      "OpenDART": "12건",
+      "WSJ Markets": "2/61",
+      "WSJ U.S. Business": "4/85",
+      "PR Newswire M&A": "12/20",
+      "한경 증권": "2/50",
+      "인베스트조선": "13/50",
+      "연합뉴스 마켓+": "27/120",
+      "매일경제 증권": "4/50",
+      "조선비즈": "0/100",
+      "FT M&A": "1/25",
+      "CNBC Business": "1/30",
+      "WSJ World News": "7/72",
+      "WSJ Economy": "5/36",
+      "한경 경제": "1/50",
+      "한경 국제": "6/50"
+    },
+    "gemini_tries": 18,
+    "gemini_model": "gemini-3.6-flash",
+    "gemini": "성공 (85/85건 채점)",
+    "counts": {
+      "deal": 22,
+      "macro": 11,
+      "dropped": 52
+    }
+  },
+  "items": [
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "“AI주 더 갈까, 꺾일까”…‘몸값 1.4조 달러’ 앤트로픽 상장에 투심 달렸다",
+      "link": "https://www.mk.co.kr/news/stock/12206044",
+      "published": "2026-11-12T09:38:32+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "앤트로픽 초대형 IPO 진행 뉴스."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "KT클라우드, 데이터센터 투자 위해 조 단위 투자유치 추진",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/12/2026111280204.html",
+      "published": "2026-11-12T16:56:26+09:00",
+      "keywords": [
+        "매각",
+        "투자유치"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "KT클라우드의 조 단위 대형 투자유치 추진"
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "정부, 진에어·에어서울·에어부산 합병 조건부 인가…내년 3월 통합",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/12/2026111280155.html",
+      "published": "2026-11-12T15:40:33+09:00",
+      "keywords": [
+        "합병"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "정부의 LCC 3사 대형 합병 승인 완료"
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "VIP운용 \"TPG의 롯데렌탈 공개매수 환영…일반주주 매각기회 보장\"",
+      "link": "https://www.yna.co.kr/view/AKR20261112075900008",
+      "published": "2026-11-12T10:52:39+09:00",
+      "keywords": [
+        "매각",
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "글로벌 PEF의 롯데렌탈 공개매수 관련 뉴스."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(씨씨에스) 최대주주변경을수반하는주식양수도계약체결",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112901182",
+      "published": "2026-11-12T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "씨씨에스의 경영권 양수도 계약 체결 공시임."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Peak 10 Energy Announces $500 Million Acquisition Finance Facility with U.S. Bank",
+      "link": "https://www.prnewswire.com/news-releases/peak-10-energy-announces-500-million-acquisition-finance-facility-with-us-bank-302937199.html",
+      "published": "2026-11-12T20:40:00+09:00",
+      "keywords": [
+        "acquisition"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "5억 달러 규모의 에너지 자산 인수 금융 조달건."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "넥스플렉스 매각, 인수금융 승인에도 자금조달 숙제 남아…MBK는 '최후통첩'",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/12/2026111280085.html",
+      "published": "2026-11-12T13:12:03+09:00",
+      "keywords": [
+        "인수",
+        "매각",
+        "상장",
+        "인수금융"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "넥스플렉스 매각 인수금융 및 자금조달 이슈"
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "미래證, 3분기 4000억대 순손실로 적자전환…1.4조 자사주 소각 추진",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/12/2026111280066.html",
+      "published": "2026-11-12T11:06:54+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "미래에셋증권 적자전환 및 대규모 자사주 소각"
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "도로 'SK에너지', 'SK건설'…국내선 합치고 줄이기만 하는 SK그룹",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/11/2026111180151.html",
+      "published": "2026-11-12T07:00:00+09:00",
+      "keywords": [
+        "IPO",
+        "인수",
+        "매각",
+        "IPO",
+        "상장"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "SK그룹의 대규모 사업 재편 및 구조조정"
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(케이디켐) 주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000698",
+      "published": "2026-11-12T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details": {
+        "corp_name": "케이디켐",
+        "bddd": "2026년 11월 12일",
+        "od_a_at_t": "3",
+        "od_a_at_b": "0",
+        "rs_sm_atn": "아니오",
+        "ex_sm_r": "본건 합병과 관련하여 신주 발행 대상이 50인 미만이며 합병신주 전량을 발행 즉시 한국예탁결제원에 1년간 예탁하는 전매제한 조치를 취할 예정이므로 증발공 제2-2조 제2항 제1호에 의거하여 증권신고서 제출 의무가 면제됩니다.",
+        "exevl_atn": "예",
+        "exevl_bs_rs": "자본시장법 제165조의4 및 동법 시행령 제176조의5에 의거하여 주권상장법인이 비상장법인과 합병하여 주권상장법인이 되는 경우이므로 합병가액의 적정성에 대하여 외부평가기관의 평가를 받았습니다.",
+        "exevl_intn": "대주회계법인",
+        "exevl_pd": "2026년 09월 16일 ~ 2026년 11월 11일",
+        "exevl_op": "대주회계법인(이하 \"본 평가인\")은 주권상장법인인 케이디켐 주식회사(이하 \"존속회사\")와 주권비상장법인인 제이케이머티리얼즈 주식회사(이하 \"소멸회사\", \"존속회사\"와 통칭하여 \"합병당사회사\") 간에 합병을 함에 있어 합병당사회사 간 합병비율의 적정성을 평가하였습니다.평가인이 평가대상회사의 상황이나 업종의 특성, 거래의 특성 등을 종합적으로 고려하고 이익기준 평가접근법, 자산기준/원가기준 평가접근법, 시장기준 평가접근법 중 하나 이상의 적합한 가치평가 방법을 적용하여 기업가치를 평가한 결과의 범위 내에 회사가 제시한 합병가액이 포함되는 경우, 그러한 합병가액은 '적정'하다고 평가합니다.본 평가인은 합병당사회사가 제시한 합병비율의 적정성을 평가하기 위하여, 존속회사의 2025년 12월 31일로 종료하는 회계연도의 한국채택국제회계기준(K-IFRS)에 따라 작성된 감사받은 별도재무상태표 및 주가자료와 소멸회사의 2025년 12월 31일로 종료하는 회계연도의 한국채택국제회계기준(K-IFRS)에 따라 작성된 감사받은 개별재무상태표, 2026년부터 2030년까지 5개년에 해당하는 추정재무제표, 소멸회사와 한국거래소 업종분류에 따른 소분류업종이 동일한 주권상장법인(이하 \"유사회사\")의 사업보고서 등을 검토하였습니다.본 평가인은 평가업무를 수행함에 있어 금융감독원이 제정한 \"외부평가업무 가이드라인(2009.6)\"과 한국공인회계사회가 제정한 \"자본시장법에 따른 외부평가업무 수행기준(2024.11)\"을 준수하였습니다. 또한, 본 평가인은 대주회계법인의 \"자본시장법에 따른 외부평가업무 품질관리규정\"을 준수하였으며, 공인회계사윤리기준의 공정 강령 요구사항을 포함한 관련 윤리적 요구사항을 준수하였습니다.본 평가인의 평가결과 존속회사가 소멸회사를 합병함에 있어서 합병비율의 기준이 되는 합병당사회사의 주당 평가액은 존속회사와 소멸회사가 각각 23,784원(주당 액면가액 500원)과 48,537~60,323원(주당 액면가액 5,000원)으로 산정되었습니다. 이에 따른 존속회사와 소멸회사 간 합병비율은 1 : 2.0407417~2.5362849로 평가되었습니다. 따라서 합병당사회사가 합의한 합병비율 1 : 2.3126051은 적정한 것으로 판단됩니다.본 평가인의 검토 결과 이러한 합병비율은 중요성의 관점에서 자본시장법 시행령 제176조의5, 증발공 제5-13조 및 동규정 시행세칙 제4조 내지 제8조에서 규정하고 있는 합병가액 산정방법에 위배되어 산정되었다는 점이 발견되지 아니하였습니다.",
+        "aprskh_plnprc": "9,153",
+        "aprskh_pym_plpd_mth": "(1) 주식매수대금의 지급시기주식매수청구권 행사에 따른 주식매수대금 지급 예정일은 다음과 같습니다.- 존속회사 : 2027년 02월 11일 상기 주식매수대금의 지급예정시기는 합병당사회사의 사정으로 인해 변동될 수 있습니다.\n(2) 주식매수대금의 지급방법- 특별계좌 보유자(기존 '명부주주') : 현금지급 또는 주주의 신고계좌로 이체할 예정입니다.- 주권을 증권회사에 위탁하고 있는 일반주주(기존 '실질주주') : 해당 거래 증권회사의 본인계좌로 이체할 예정입니다.",
+        "aprskh_ctref": "본건 합병과 관련하여 존속회사에게 주식매수청구권이 행사된 주식에 대한 주식매수가액의 합계액(본건 합병 관련 주요사항보고서에서 제시한 매수예정가격을 기준으로 산정함)이 주식매수청구권 행사기간 만료시점을 기준으로 금 5,000,000,000원을 초과하는 경우, 그러한 사유가 발생한 존속회사는 이사회 결의를 통하여 본건 합병의 진행 여부를 결정하고, 본건 합병의 진행을 중지하기로 한 경우 소멸회사에 대한 서면 통지로써 합병계약을 해제할 수 있습니다.",
+        "bdlst_atn": "아니오",
+        "otcpr_bdlst_sf_atn": "해당사항없음",
+        "popt_ctr_atn": "아니오",
+        "mg_mth": "케이디켐 주식회사(이하 \"당사\" 또는 \"존속회사\")가 제이케이머티리얼즈 주식회사(이하 \"소멸회사\")를 흡수합병합니다.\n- 존속회사: 케이디켐 주식회사 (코스닥시장 상장법인)- 소멸회사: 제이케이머티리얼즈 주식회사 (주권비상장법인)- 합병 후 존속회사의 상호: 케이디켐 주식회사 (변경 없음)",
+        "mg_stn": "해당사항없음",
+        "mg_pp": "당사는 주력인 PVC 안정제 시장이 성숙기에 접어들면서 새로운 성장동력이 필요합니다. 소멸회사는 구조조정과 사업재편을 거쳐, 알루미늄 증착·나일론·PET 등 여러 재질을 겹친 복합 포장재를 재활용이 쉬운 PE 단일소재로 대체할 수 있는 BOPE 필름 사업에 집중하고 있으며, 국내 대형 화학사와 소재를 공동개발하고 있습니다. 본건 합병은 소멸회사의 BOPE 필름 사업을 당사로 내재화하고, 당사의 해외 판매망을 필름 영업에 활용하여 판매 기반을 넓히는 한편, 소재 공동개발을 추진하여 기능성 소재 기업으로의 전환을 도모함으로써 중장기 성장동력을 확보하기 위함입니다. (상세는 「합병관련 주요사항 상세기재 - 1. (1) 나.」 참조)",
+        "mg_rt": "존속회사 보통주 : 소멸회사 보통주 = 1 : 2.3126051",
+        "mg_rt_bs": "본건 합병의 합병가액 평가는 자본시장과 금융투자업에 관한 법률(이하 \"자본시장법\") 제165조의4 및 동법 시행령 제176조의5 제1항 제2호, 증권의 발행 및 공시 등에 관한 규정(이하 \"증발공\") 제5-13조 및 동규정 시행세칙 제4조 내지 제8조에 따라 산정하였습니다.(1) 존속회사 보통주의 합병가액 산정주권상장법인의 합병가액은 원칙적으로 기준시가를 적용하되, 자본시장법 시행령 제176조의5 제1항 제2호 가목 단서에 따라 기준시가가 자산가치보다 낮은 경우에는 자산가치로 할 수 있도록 되어 있습니다. 이에 존속회사의 기준시가가 자산가치에 미달하는 상황에서, 합병당사회사는 자본시장법 시행령상 허용되는 산정방법 중 존속회사의 기업가치를 보다 공정하게 반영하고 일반주주 등 다양한 이해관계자의 이익에 부합하는 방법으로서 존속회사의 합병가액을 자산가치로 하는 것을 결정하였습니다.- 기준시가 : 9,079원- 자산가치 : 23,784원- 합병가액 : 23,784원[존속회사의 기준시가 산정]코스닥시장 주권상장법인인 존속회사의 보통주 기준시가는 자본시장법 시행령 제176조의5 제1항 제1호 및 제2호에 따라 합병을 위한 이사회결의일(2026년 11월 12일)과 합병계약을 체결한 날(2026년 11월 12일) 중 앞서는 날의 전일(2026년 11월 11일)을 기산일로 하여, 최근 1개월간의 거래량 가중산술평균종가, 최근 1주일간의 거래량 가중산술평균종가, 최근일의 종가를 산술평균한 가액으로 산정하였습니다.- 1개월 거래량 가중산술평균종가(2026년 10월 12일 ~ 2026년 11월 11일) : 9,185원- 1주일 거래량 가중산술평균종가(2026년 11월 05일 ~ 2026년 11월 11일) : 9,003원- 최근일 종가(2026년 11월 11일) : 9,050원- 기준시가(산술평균 주가) : 9,079원[존속회사의 자산가치 산정]- 자산가치 : 23,784원A. 최근 사업연도말 별도재무제표상 자본총계 : 95,343,413,068원B. 조정항목(가산항목-차감항목) : 618,365,357원C. 조정된 순자산가액(A+B) : 95,961,778,425원D. 보통주 발행주식총수 : 4,034,800주E. 보통주 1주당 순자산가치(C/D) : 23,784원존속회사의 합병가액에 대한 자세한 사항은 첨부서류 「외부평가기관의 평가의견서」를 참고하시기 바랍니다.(2) 소멸회사 보통주의 합병가액 산정비상장법인인 소멸회사는 자본시장법 시행령 제176조의5 제1항 제2호 나목에 의거하여 외부평가기관의 평가를 받아, 자산가치와 수익가치를 각각 1과 1.5의 비율로 가중산술평균한 가액(이하 \"본질가치\")을 합병가액으로 산정하였으며, 상대가치는 비교목적으로 분석하였으나, 3개 이상의 유사회사가 존재하지 아니하여 가치를 산정하지 아니하였습니다.- 본질가치 : 55,003원A. 자산가치 : 75,993원B. 수익가치 : 41,009원C. 본질가치[(A*1+B*1.5)/2.5] : 55,003원D. 상대가치 : 해당사항 없음E. 합병가액 : 55,003원소멸회사의 합병가액에 대한 자세한 사항은 첨부서류 「외부평가기관의 평가의견서」를 참고하시기 바랍니다.(3) 산출결과존속회사가 소멸회사를 합병함에 있어서 합병비율의 기준이 되는 양 합병당사회사의 보통주 주당 평가액은 존속회사와 소멸회사가 각각 23,784원(주당 액면가액 500원)과 55,003원(주당 액면가액 5,000원)으로 산출되었습니다. 이에 따라 합병비율은 보통주 존속회사 : 소멸회사 = 1 : 2.3126051로 결정되었습니다.",
+        "mgnstk_ostk_cnt": "825,609",
+        "mgptncmp_cmpnm": "제이케이머티리얼즈 주식회사",
+        "mgptncmp_mbsn": "플라스틱 필름(BOPP·BOPE) 제조·판매",
+        "mgptncmp_rl_cmpn": "계열회사",
+        "rbsnfdtl_tast": "69,344,909,589",
+        "rbsnfdtl_tdbt": "39,050,831,372",
+        "rbsnfdtl_teqt": "30,294,078,217",
+        "rbsnfdtl_cpt": "2,000,000,000",
+        "rbsnfdtl_sl": "40,414,339,303",
+        "rbsnfdtl_nic": "-8,219,124,236",
+        "eadtat_intn": "우리회계법인",
+        "eadtat_op": "적정",
+        "nmgcmp_rlst_atn": "해당사항없음",
+        "mgsc_mgctrd": "2026년 11월 12일",
+        "mgsc_shddstd": "2026년 11월 27일",
+        "mgsc_mgop_rcpd_bgd": "2026년 12월 04일",
+        "mgsc_mgop_rcpd_edd": "2026년 12월 20일",
+        "mgsc_gmtsck_prd": "2026년 12월 21일",
+        "mgsc_aprskh_expd_bgd": "2026년 12월 21일",
+        "mgsc_aprskh_expd_edd": "2027년 01월 11일",
+        "mgsc_cdobprpd_bgd": "2026년 12월 21일",
+        "mgsc_cdobprpd_edd": "2027년 01월 21일",
+        "mgsc_mgdt": "2027년 01월 22일",
+        "mgsc_ergmd": "2027년 01월 25일",
+        "mgsc_mgrgsprd": "2027년 01월 25일",
+        "mgsc_nstklstprd": "2027년 02월 10일"
+      },
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "케이디켐의 회사합병결정 공시로 M&A 거래 정보에 해당함."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(모아데이타) 최대주주변경",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112901187",
+      "published": "2026-11-12T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "모아데이타의 경영권 관련 최대주주 변경 공시임."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(모아라이프플러스) 최대주주변경",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112900875",
+      "published": "2026-11-12T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "모아라이프플러스의 최대주주 변경 공시임."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Auto & Transport Roundup: Market Talk",
+      "link": "https://www.wsj.com/business/auto-transport-roundup-market-talk-4e16c46c?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-12T07:01:00+09:00",
+      "keywords": [
+        "takeover"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "아폴로의 이지젯 인수 제안 등 해외 M&A 동향 포함."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "자회사 정리 꼬인 GS건설…기존 FI는 손사래, 본사 채권엔 디폴트 '불똥'",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/11/2026111180152.html",
+      "published": "2026-11-12T10:44:55+09:00",
+      "keywords": [
+        "인수",
+        "경영권"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "GS건설 자회사 정리 난항 및 EOD 우려"
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(알테오젠) [첨부정정]주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000227",
+      "published": "2026-11-12T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "알테오젠의 합병 관련 정정 공시로 참고 가치 있음."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "BlueMatrix Completes Acquisition of Aiera",
+      "link": "https://www.prnewswire.com/news-releases/bluematrix-completes-acquisition-of-aiera-302938033.html",
+      "published": "2026-11-13T00:15:00+09:00",
+      "keywords": [
+        "acquisition"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "BlueMatrix의 Aiera 인수 완료 건."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Branford Castle Acquires Floratine Products Group, Marking First Platform Investment in Fund III",
+      "link": "https://www.prnewswire.com/news-releases/branford-castle-acquires-floratine-products-group-marking-first-platform-investment-in-fund-iii-302937191.html",
+      "published": "2026-11-12T23:00:00+09:00",
+      "keywords": [
+        "acquires",
+        "private equity"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "Branford Castle 펀드의 바이아웃 투자 건."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "엠디에스코리아·범한메카텍, 코스닥 상장예심 통과",
+      "link": "https://www.yna.co.kr/view/AKR20261112176100008",
+      "published": "2026-11-12T19:34:55+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "엠디에스코리아 등 2개사 코스닥 상장예심 통과"
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "[특징주] 넥스아이, 코스닥 시장 상장 첫날 약 40% 하락(종합)",
+      "link": "https://www.yna.co.kr/view/AKR20261112038251008",
+      "published": "2026-11-12T15:36:10+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "신규 상장 당일 주가 흐름 보도."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "디앤디파마텍 \"美 Z-Alpha 주식 100억원어치 취득…지분율 4.8%\"",
+      "link": "https://www.yna.co.kr/view/AKR20261112079000008",
+      "published": "2026-11-12T10:56:50+09:00",
+      "keywords": [
+        "지분",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "국내 상장사의 미국 바이오 업체 지분 취득."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "아모데이 \"AI가 10년 내 암·알츠하이머 치료할 것\"",
+      "link": "https://www.yna.co.kr/view/AKR20261112058100009",
+      "published": "2026-11-12T10:20:27+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "IPO 예정 기업 CEO의 발언 및 동향."
+    },
+    {
+      "source": "CNBC Business",
+      "kind": "deal",
+      "title": "Disney's 'Star Wars' is coming to Cosm domes ahead of 50th anniversary as part of multiyear film deal",
+      "link": "https://www.cnbc.com/2026/11/12/star-wars-cosm-dome-screenings.html",
+      "published": "2026-11-13T00:36:02+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "디즈니와 코즘 간 다년 파트너십 계약."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Treasury Selloff Accelerates, European Bonds Follow Suit",
+      "link": "https://www.wsj.com/economy/central-banking/treasury-yields-rise-as-fed-rate-hike-expectations-remain-strong-401fed89?mod=rss_socialeconomyfeed",
+      "published": "2026-11-12T23:35:00+09:00",
+      "keywords": [
+        "Treasury"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "중동 정세에 따른 미·유럽 국채 금리 변동."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "China’s Central Bank Signals Easing Restraint as Growth Holds Up",
+      "link": "https://www.wsj.com/economy/central-banking/chinas-central-bank-signals-easing-restraint-as-growth-holds-up-15c19e61?mod=rss_socialeconomyfeed",
+      "published": "2026-11-12T13:19:00+09:00",
+      "keywords": [
+        "central bank",
+        "China"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "중국 중앙은행의 완화적 통화정책 기조."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Dovish BOJ Member Urges Caution in Raising Rates Further",
+      "link": "https://www.wsj.com/economy/central-banking/dovish-boj-member-urges-caution-in-raising-rates-further-a40524b3?mod=rss_socialeconomyfeed",
+      "published": "2026-11-12T11:37:00+09:00",
+      "keywords": [
+        "interest rate"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "일본은행 위원의 신중한 금리 인상 발언."
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "국채 맡겨 달러 빌린 신흥국…재정 부담 커지나",
+      "link": "https://www.hankyung.com/article/2026111235331",
+      "published": "2026-11-12T18:03:59+09:00",
+      "keywords": [
+        "재정",
+        "국채"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "신흥국 달러 차입 및 재정 부담 거시 이슈."
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "'반도체 수출통제' 목소리 거세진 美의회",
+      "link": "https://www.hankyung.com/article/2026111236691",
+      "published": "2026-11-12T17:56:44+09:00",
+      "keywords": [
+        "수출"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "미국 반도체 규제 강회 움직임으로 기술 산업 영향 주시."
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "[밤 사이 해외뉴스] 美 물가 다시 들썩…연준 12월 '빅스텝' 하나",
+      "link": "https://www.hankyung.com/article/202611121609i",
+      "published": "2026-11-12T08:13:27+09:00",
+      "keywords": [
+        "물가",
+        "연준"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "미국 물가 불안 및 연준 금리 정책 향방 영향."
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "macro",
+      "title": "Oil Picks Up As Trump Post Dampens Hopes for U.S.-Iran Deal",
+      "link": "https://www.wsj.com/finance/commodities-futures/oil-resumes-decline-as-risk-premium-fades-bcdc7fc5?mod=rss_markets_main",
+      "published": "2026-11-12T23:36:00+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "미-이란 지정학 이슈에 따른 유가 등 거시 경제 영향."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "'대기업과 다르다'…자회사 상장 절실한 중견기업들, 내년 주총이 분수령",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/11/2026111180176.html",
+      "published": "2026-11-12T07:00:00+09:00",
+      "keywords": [
+        "IPO",
+        "지분",
+        "IPO",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "중견기업 자회사 중복상장 규제와 주주 이슈"
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "'공정 가치' 내걸고 빗발치는 공개매수…대주주 만을 위한 거래로 전락 우려",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/11/2026111180148.html",
+      "published": "2026-11-12T07:00:00+09:00",
+      "keywords": [
+        "지분",
+        "경영권",
+        "사모펀드",
+        "PEF",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "최근 자본시장 공개매수 트렌드 분석"
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "This Shipping Lane Is Now the World’s Deadliest. It Isn’t Hormuz.",
+      "link": "https://www.wsj.com/world/this-shipping-lane-is-now-the-worlds-deadliest-it-isnt-hormuz-c3acdcaa?mod=rss_worldnews",
+      "published": "2026-11-12T12:00:00+09:00",
+      "keywords": [
+        "trade"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "흑해 무역로 위험 고조 및 공급망 영향을 다룸."
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "금리 2% 넘자 日 개인 국채 투자 사상 최대…7조달러 예금 이동하나",
+      "link": "https://www.hankyung.com/article/202611122085i",
+      "published": "2026-11-12T10:18:04+09:00",
+      "keywords": [
+        "금리",
+        "국채"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "일본 금리 상승에 따른 자금 이동 현상 보도."
+    }
+  ]
+}
