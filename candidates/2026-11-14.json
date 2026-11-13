@@ -1,0 +1,547 @@
+{
+  "meta": {
+    "run_at": "2026-11-14T02:13:26.147159+09:00",
+    "window_start": "2026-11-12T20:13:26.147159+09:00",
+    "sources": {
+      "환율": "1일 추가 (최신 2026-11-13)",
+      "OpenDART 상세": "1건 성공, 5건 실패",
+      "OpenDART": "11건",
+      "WSJ Markets": "3/61",
+      "WSJ U.S. Business": "2/85",
+      "PR Newswire M&A": "12/20",
+      "한경 증권": "3/50",
+      "인베스트조선": "12/50",
+      "연합뉴스 마켓+": "10/120",
+      "매일경제 증권": "8/50",
+      "조선비즈": "0/100",
+      "FT M&A": "2/25",
+      "CNBC Business": "1/30",
+      "WSJ World News": "4/72",
+      "WSJ Economy": "9/36",
+      "한경 경제": "1/50",
+      "한경 국제": "1/50"
+    },
+    "gemini_tries": 7,
+    "gemini_model": "gemini-3.6-flash",
+    "gemini": "성공 (67/67건 채점)",
+    "counts": {
+      "deal": 25,
+      "macro": 12,
+      "dropped": 30
+    }
+  },
+  "items": [
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "부산EP, 넥스플렉스 9000억원에 인수…MBK가 지분 17% 재투자",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/13/2026111380072.html",
+      "published": "2026-11-13T13:37:26+09:00",
+      "keywords": [
+        "인수",
+        "매각",
+        "지분",
+        "경영권",
+        "사모펀드"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "9000억원 규모 넥스플렉스 인수 및 PEF 재투자 딜임."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "부산EP, 넥스플렉스 9000억에 품는다",
+      "link": "https://www.mk.co.kr/news/stock/12207848",
+      "published": "2026-11-13T11:03:47+09:00",
+      "keywords": [
+        "지분",
+        "사모펀드"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "9000억원 규모의 PEF 주도 대형 M&A 딜이다."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(에어부산) [기재정정]주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113000342",
+      "published": "2026-11-13T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "LCC 재편 관련 주요 항공사 합병 정정 공시."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(진에어) [기재정정]주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113000316",
+      "published": "2026-11-13T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "항공업계 통합 이슈와 직결된 주요 합병 공시."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "AI 투자 여전히 뜨겁네…앤트로픽 IPO, 공모물량 6배 몰려",
+      "link": "https://www.hankyung.com/article/2026111358661",
+      "published": "2026-11-13T17:58:43+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "글로벌 빅테크 AI 기업 앤트로픽의 대형 IPO 동향임."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "'K뷰티 대어' 구다이글로벌, 코스피 상장예심 청구",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/13/2026111380150.html",
+      "published": "2026-11-13T17:45:28+09:00",
+      "keywords": [
+        "지분",
+        "상장"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "구다이글로벌의 코스피 상장예비심사 청구 구체적 내용임."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "\"삼성전자, 美 데이터센터 냉각시스템 업체 모딘 인수 추진\"",
+      "link": "https://www.yna.co.kr/view/AKR20261113121300009",
+      "published": "2026-11-13T15:23:18+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "삼성전자의 미국 데이터센터 업체 인수 추진 루머/보도임."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "'조선미녀' 구다이글로벌, 코스피 상장 도전장",
+      "link": "https://www.hankyung.com/article/2026111359051",
+      "published": "2026-11-13T18:32:13+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "K뷰티 대어로 꼽히는 구다이글로벌의 코스피 상장 추진 소식임."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "국내 PEF 이어 삼성화재까지…투자 보폭 넓히는 KIC, 인력·지방이전은 부담",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/12/2026111280168.html",
+      "published": "2026-11-13T07:00:00+09:00",
+      "keywords": [
+        "인수",
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "한국투자공사(KIC)의 삼성화재 인수건 공동투자 소식임."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "中징둥, 독일 대형 가전유통업체 인수…유럽시장 공략 본격화",
+      "link": "https://www.yna.co.kr/view/AKR20261113139900083",
+      "published": "2026-11-13T16:27:56+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "중국 징둥의 독일 유통업체 크로스보더 M&A건임."
+    },
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "Metro Bank’s sale process shows its dog days are over",
+      "link": "https://www.ft.com/content/b112d8e0-aa59-4771-bc97-c9dd999a98d2?syn-25a6b1a6=1",
+      "published": "2026-11-13T14:00:27+09:00",
+      "keywords": [
+        "private equity"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "해외 은행 매각 프로세스 및 PE 관련 딜 뉴스이다."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(알테오젠) [기재정정]주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000210",
+      "published": "2026-11-12T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "대형 바이오기업 알테오젠의 합병 관련 공시."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(에피소드컴퍼니) 최대주주변경",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113901991",
+      "published": "2026-11-13T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "국내 상장사 최대주주 변경 공시."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(디에스케이) [기재정정]최대주주변경을수반하는주식양수도계약체결",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112901040",
+      "published": "2026-11-12T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "최대주주 변경 수반 주식양수도계약 정정 공시."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "카모 상장 갈등, 국제중재도 수년 걸릴 판…카카오·TPG '승자 없는 싸움' 되나",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/12/2026111280176.html",
+      "published": "2026-11-13T07:00:00+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "카카오모빌리티 상장 갈등 및 분쟁 관련 뉴스임."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "조원태 우호펀드, 만기 없앴다…한진칼 경영권 분쟁 장기전 대비",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/12/2026111280158.html",
+      "published": "2026-11-13T07:00:00+09:00",
+      "keywords": [
+        "경영권"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "한진칼 경영권 지분 구조 변경 및 펀드 만기 연장임."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "구다이글로벌, 유가증권시장 상장 추진…예비심사 신청서 제출",
+      "link": "https://www.yna.co.kr/view/AKR20261113166800030",
+      "published": "2026-11-13T18:36:15+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "구다이글로벌 상장예비심사 신청 단순 속보임."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "'중수청 입주' 르네스퀘어 우선협상대상자에 다시 한국토지신탁",
+      "link": "https://www.yna.co.kr/view/AKR20261113136400008",
+      "published": "2026-11-13T16:04:48+09:00",
+      "keywords": [
+        "인수",
+        "우선협상대상자"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "을지로 오피스 르네스퀘어 인수 우선협상대상자 선정임."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "MBK, 한차례 무산됐던 '넥스플렉스 매각' 부산EP와 계약",
+      "link": "https://www.yna.co.kr/view/AKR20261113133300008",
+      "published": "2026-11-13T15:57:57+09:00",
+      "keywords": [
+        "매각",
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "MBK의 넥스플렉스 매각 계약 체결 중복 보도임."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "[IPO챗] 에스에프씨 \"OLED 블루 넘어 바이오·반도체 소재로 사업 확대\"",
+      "link": "https://www.yna.co.kr/view/AKR20261113109300008",
+      "published": "2026-11-13T14:33:38+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "코스피 상장(IPO) 관련 개별 기업 동향이다."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(휴비츠) [기재정정]주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000469",
+      "published": "2026-11-12T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "휴비츠의 회사합병 관련 기재정정 공시."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "TruGreen Announces Acquisition by Birch Hill Equity Partners",
+      "link": "https://www.prnewswire.com/news-releases/trugreen-announces-acquisition-by-birch-hill-equity-partners-302939072.html",
+      "published": "2026-11-14T00:45:00+09:00",
+      "keywords": [
+        "acquisition",
+        "private equity"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "사모펀드 Birch Hill의 TruGreen 인수 거래."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "H.I.G. Forms New Creator Economy Company Waveborn, Acquires JRE",
+      "link": "https://www.prnewswire.com/news-releases/hig-forms-new-creator-economy-company-waveborn-acquires-jre-302938533.html",
+      "published": "2026-11-13T23:00:00+09:00",
+      "keywords": [
+        "acquires"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "H.I.G.의 크리에이터 에코노미 기업 설립 및 인수."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Amyris, Inc. to acquire industry-leading sweet protein innovator Oobli, adding a proven protein technology platform to its biomanufacturing capabilities",
+      "link": "https://www.prnewswire.com/news-releases/amyris-inc-to-acquire-industry-leading-sweet-protein-innovator-oobli-adding-a-proven-protein-technology-platform-to-its-biomanufacturing-capabilities-302937988.html",
+      "published": "2026-11-13T03:00:00+09:00",
+      "keywords": [
+        "acquire",
+        "acquisition"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "Amyris의 단백질 기술 기업 Oobli 인수 소식."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "PAI Pharma Acquires Nexus Pharmaceuticals, Expanding Portfolio of Sterile Injectable Products",
+      "link": "https://www.prnewswire.com/news-releases/pai-pharma-acquires-nexus-pharmaceuticals-expanding-portfolio-of-sterile-injectable-products-302937821.html",
+      "published": "2026-11-13T03:00:00+09:00",
+      "keywords": [
+        "acquires",
+        "acquisition"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "PAI Pharma의 제약회사 Nexus 인수 소식."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "macro",
+      "title": "李 \"적대적M&A 막는 규제 전수 조사하라\"",
+      "link": "https://www.mk.co.kr/news/stock/12208282",
+      "published": "2026-11-13T17:42:50+09:00",
+      "keywords": [
+        "인수",
+        "합병"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "적대적 M&A 규제 완화 관련 정부 정책 발언이다."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "macro",
+      "title": "李 대통령 “욕 먹더라도 파이 키워야”…적대적 인수·합병 활성화 강조",
+      "link": "https://www.mk.co.kr/news/stock/12208043",
+      "published": "2026-11-13T15:07:26+09:00",
+      "keywords": [
+        "인수",
+        "합병"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "적대적 M&A 활성화 등 자본시장 정책 관련 내용이다."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "李대통령 'M&A 활성화' 강조…의무공개매수 입법 속도 붙을까",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/13/2026111380115.html",
+      "published": "2026-11-13T15:57:16+09:00",
+      "keywords": [
+        "인수",
+        "매각",
+        "합병",
+        "지분"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "M&A 시장에 큰 영향을 주는 의무공개매수제 관련 논의임."
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "세계 무역 성장의 80%가 AI 덕분…거품 꺼지면 글로벌 침체",
+      "link": "https://www.hankyung.com/article/202611134356i",
+      "published": "2026-11-13T09:21:38+09:00",
+      "keywords": [
+        "무역"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "AI 산업 버블 우려와 글로벌 무역 및 침체 위험 분석."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "李대통령 \"자본시장 개혁 전담기구 필요\"…M&A 활성화·부실기업 퇴출 강조",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/13/2026111380063.html",
+      "published": "2026-11-13T12:54:15+09:00",
+      "keywords": [
+        "인수",
+        "합병"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "자본시장 개혁 및 M&A 활성화 관련 정책 발언임."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "장기투자 부담에 기관도 시큰둥...코너스톤 도입 앞두고 실효성 의문",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/12/2026111280167.html",
+      "published": "2026-11-13T07:00:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "IPO 코너스톤투자자 제도 도입과 시장 반응 분석임."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Of all the ways Chairman Kevin Warsh wants to remake the Fed, the least flashy may be the most lasting: He is cutting the number of interest-rate decisions the central bank makes each year",
+      "link": "https://www.wsj.com/economy/central-banking/federal-reserve-calendar-changes-890c4390?mod=rss_socialeconomyfeed",
+      "published": "2026-11-14T00:02:00+09:00",
+      "keywords": [
+        "Fed",
+        "interest rate",
+        "central bank"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "미국 연준 금리 결정 정책 개편 관련 거시 뉴스이다."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Two-Year Treasury Stabilizes as Eurozone, U.S. Bond Yields Rise",
+      "link": "https://www.wsj.com/economy/central-banking/upward-pressure-remains-in-treasury-yields-even-as-two-year-yield-stabilizes-0c267082?mod=rss_socialeconomyfeed",
+      "published": "2026-11-13T19:05:00+09:00",
+      "keywords": [
+        "Fed",
+        "yields",
+        "Treasury"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "미국 및 유로존 국채 금리 상승과 인플레이션 우려 보도."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Fed’s Williams Says Still Work to Do to Get Monetary Policy to Right Place",
+      "link": "https://www.wsj.com/economy/central-banking/feds-williams-says-still-work-to-do-to-get-monetary-policy-to-right-place-cc3b5992?mod=rss_socialeconomyfeed",
+      "published": "2026-11-13T10:26:00+09:00",
+      "keywords": [
+        "Fed",
+        "inflation"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "미 연준 위원의 긴축 정책 유지 관련 발언 보도."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "macro",
+      "title": "Oil Prices Rebound as Trump Questions Need for Iran Deal",
+      "link": "https://www.wsj.com/business/energy-oil/oil-prices-fall-as-investors-weigh-u-s-iran-diplomacy-296e2847?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-13T06:01:00+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "미국-이글 지정학적 리스크 및 유가 변동 뉴스."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "macro",
+      "title": "李 대통령 \"IR 안하는 상장사, 자격 의문\"…거래소 \"코스닥 연 1회 의무화 추진\"",
+      "link": "https://www.hankyung.com/article/202611135520i",
+      "published": "2026-11-13T16:44:24+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "상장사 IR 의무화 등 거래소 규제 정책 변화 뉴스임."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "macro",
+      "title": "李 대통령 ‘IR 안 하는 상장사’ 지적에 “시장에 있을 자격 없는 것 아닌가”",
+      "link": "https://www.mk.co.kr/news/stock/12207947",
+      "published": "2026-11-13T13:23:24+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "상장사 IR 의무화 및 퇴출 기준 등 제도 관련 발언이다."
+    }
+  ]
+}
