@@ -3,7 +3,7 @@
 상태: "검토·협상"
 신뢰도: "보도 기준"
 발표일: 2026-11-02
-최종 업데이트: 2026-11-11
+최종 업데이트: 2026-11-14
 지역: ["미국", "일본"]
 규모 구간: "20조 이상"
 규모(원화): "약 86.23조 원 (희망가 상단·구주 포함 공모 기준, 초과배정 제외)"
@@ -16,7 +16,7 @@
 매도자: []
 재무 자문: []
 법률 자문: []
-출처: ["https://www.anthropic.com/news/s1-sec", "https://www.investing.com/news/stock-market-news/anthropic-plans-to-sell-35-billion-of-shares-to-japan-investors-in-ipo-filing-shows-4989963", "https://www.yna.co.kr/view/AKR20261102171900073", "https://www.wsj.com/finance/stocks/anthropic-investors-push-for-cautious-valuation-closer-to-1-5-trillion-2f2df9cf", "https://www.yna.co.kr/view/AKR20261103038300009", "https://www.yna.co.kr/view/AKR20261109017200009", "https://news.bgov.com/banking-law/anthropic-said-to-target-mega-ipo-before-thanksgiving-holiday", "https://finance.yahoo.com/markets/stocks/articles/anthropic-sets-ipo-price-range-140602411.html", "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html", "https://www.upi.com/Top_News/US/2026/11/10/anthropic-ipo-stock-range-nasdaq/6651794326745", "https://biz.chosun.com/it-science/ict/2026/11/10/LHFSX4N4FJCYVGFDB4XIRVFBRY/"]
+출처: ["https://www.anthropic.com/news/s1-sec", "https://www.investing.com/news/stock-market-news/anthropic-plans-to-sell-35-billion-of-shares-to-japan-investors-in-ipo-filing-shows-4989963", "https://www.yna.co.kr/view/AKR20261102171900073", "https://www.wsj.com/finance/stocks/anthropic-investors-push-for-cautious-valuation-closer-to-1-5-trillion-2f2df9cf", "https://www.yna.co.kr/view/AKR20261103038300009", "https://www.yna.co.kr/view/AKR20261109017200009", "https://news.bgov.com/banking-law/anthropic-said-to-target-mega-ipo-before-thanksgiving-holiday", "https://finance.yahoo.com/markets/stocks/articles/anthropic-sets-ipo-price-range-140602411.html", "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html", "https://www.upi.com/Top_News/US/2026/11/10/anthropic-ipo-stock-range-nasdaq/6651794326745", "https://biz.chosun.com/it-science/ict/2026/11/10/LHFSX4N4FJCYVGFDB4XIRVFBRY/", "https://www.hankyung.com/article/2026111358661", "https://biz.sbs.co.kr/article/20000346164"]
 비교: {지분가치(억원): 13671000, 대가 구성: "", 인수자 성격: "", 메모: "지분가치는 희망가 상단 78달러 × 상장 후 약 130.9억 주(약 1.02조 달러) 기준. 완전희석 기준은 최대 약 1.405조 달러(CNBC 보도). 확정 공모가 아님"}
 일정:
   - {날짜: "2026-11-18", 내용: "공모가 확정 예정 (보도 기준)"}
@@ -49,6 +49,7 @@
 - 2026-11-03: 기존 투자자들이 상장 기업가치를 1.5조 달러 안팎으로 보수적으로 잡자고 요구하고 있다는 보도가 나왔다 (WSJ 보도, 확정 공모가 아님).
 - 2026-11-09: 11월 26일(추수감사절) 이전 상장을 마치는 것을 목표로 한다는 보도가 나왔다 (FT·Bloomberg 보도 기준, 공모가·상장일 미확정).
 - 2026-11-10: 수정 신고서로 희망가 70~78달러, 8.25억 주 공모(상단 약 644억 달러)와 나스닥 티커 ANT를 제시했다. 11/18 가격 확정, 11/19 거래 시작 예정으로 보도됐다.
+- 2026-11-12: 공모 물량의 약 6배에 이르는 매수 주문이 들어왔다는 보도가 나왔다 (Bloomberg가 소식통을 인용, 회사 확인 아님).
 
 ## 관련 딜·뉴스
 - [Marvell, Lumentum을 기업가치 1,150억 달러에 전액 주식으로 인수](../2026/2026-11-02-marvell-technology-lumentum.md) — 같은 날 나온 AI 데이터센터 관련 대형 거래

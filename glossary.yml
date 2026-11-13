@@ -295,6 +295,19 @@
   related: [카브아웃 (사업부 매각)]
   memo: ""
 
+- id: rollover
+  term: 롤오버 (매도자 재투자)
+  en: Rollover Equity
+  category: 딜 구조
+  match: [롤오버, 지분 재투자]
+  aliases: [재투자, rollover]
+  short: 회사를 판 쪽이 받은 돈 일부를 다시 넣어 새 회사 지분을 조금 남겨 두는 것.
+  more: 사는 쪽은 당장 마련해야 할 돈이 줄고, 파는 쪽은 회사가 앞으로 더 커지면 그 이익을 일부 나눠 가질 수 있다. 사모펀드끼리 회사를 사고팔 때 자주 쓰인다.
+  example: 넥스플렉스 매각에서 MBK파트너스가 매각대금 일부를 다시 넣어 지분 17%를 남기기로 했다 (보도 기준).
+  deal: 2026-11-12-busan-ep-nexflex
+  related: [인수금융, 세컨더리 딜]
+  memo: ""
+
 # ---------------- 자금 조달
 - id: acquisition-finance
   term: 인수금융

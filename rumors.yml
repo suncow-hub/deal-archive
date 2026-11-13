@@ -4,6 +4,19 @@
 # - status: 미확인 / 사실로 확인 / 부인 / 소멸
 #   (사실로 확인되면 deal 에 딜 노트 id, 30일간 새 소식이 없으면 소멸)
 # - credibility: 낮음 / 중간  (공신력 높은 출처로 확인되면 소문이 아니라 딜 노트로 간다)
+- id: 2026-11-14-samsung-modine-acquisition
+  first_seen: 2026-11-14
+  last_seen: 2026-11-14
+  title: "삼성전자, 美 데이터센터 냉각업체 Modine 인수 협상설"
+  claim: "삼성전자가 미국 냉난방·데이터센터 냉각업체 Modine 인수를 협상 중이며 수 주 안에 계약이 나올 수 있다는 Bloomberg 보도가 나왔다. 삼성전자는 확인해 줄 수 없다는 입장이고 가격은 알려지지 않았다."
+  companies: ["삼성전자", "Modine"]
+  sources:
+    - {name: "한국경제 (Bloomberg 인용)", url: "https://www.hankyung.com/article/2026111358131", credibility: 중간}
+    - {name: "연합뉴스", url: "https://www.yna.co.kr/view/AKR20261113121300009", credibility: 중간}
+  why_watch: "사실이면 2025년 FläktGroup 인수에 이은 삼성전자의 데이터센터 공조 분야 두 번째 인수로, 시가총액(약 56억 달러) 기준 하만 이후 최대 규모가 될 수 있다."
+  status: 미확인
+  status_note: ""
+  deal: null
 - id: 2026-11-13-kt-cloud-fundraising
   first_seen: 2026-11-13
   last_seen: 2026-11-13
@@ -18,7 +31,7 @@
   deal: null
 - id: 2026-11-13-mbk-nexflex-sale-funding
   first_seen: 2026-11-13
-  last_seen: 2026-11-13
+  last_seen: 2026-11-14
   title: "MBK파트너스의 넥스플렉스 매각, 인수 측 자금조달 난항설"
   claim: "MBK파트너스가 추진 중인 넥스플렉스 매각에서 인수금융 승인은 났지만 인수 측 자금 마련이 끝나지 않아 MBK가 시한을 제시했다는 보도가 나왔다. 인수 후보와 가격은 공식 확인되지 않았다."
   companies: ["MBK파트너스", "넥스플렉스"]
@@ -26,9 +39,9 @@
     - {name: "인베스트조선", url: "https://www.investchosun.com/site/data/html_dir/2026/11/12/2026111280085.html", credibility: 중간}
     - {name: "비즈한국", url: "https://bizhankook.com/articles/mbk-nexper-flex-sale-uncertainty.html", credibility: 낮음}
   why_watch: "사실이면 PE 엑시트에서 인수 측 자금조달이 거래 성사를 좌우하는 사례가 된다 (거론 가격 약 8천억 원, 보도 기준)."
-  status: 미확인
-  status_note: ""
-  deal: null
+  status: 사실로 확인
+  status_note: "2026-11-14 확인: 부산에쿼티파트너스 컨소시엄이 2026-11-12 넥스플렉스 주식매매계약을 맺었다는 보도가 여러 매체에서 나옴 (자금조달 구조를 재편한 뒤 계약)"
+  deal: 2026-11-12-busan-ep-nexflex
 - id: 2026-11-12-anthropic-ipo-range-raise
   first_seen: 2026-11-12
   last_seen: 2026-11-12

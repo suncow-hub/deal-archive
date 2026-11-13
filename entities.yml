@@ -924,8 +924,8 @@ Ceconomy:
     about: "MediaMarkt·Saturn을 운영하는 독일 가전·전자제품 유통 회사."
     business: "가전·전자제품 오프라인·온라인 판매"
     edge: "유럽 여러 나라에 걸친 대형 가전 매장망"
-    owner: "프랑크푸르트 상장사. JD.com이 공개매수로 59.8% 확보(EU 승인 보도, 종결 여부 확인 안 됨)"
-    as_of: "2026-11-04"
+    owner: "프랑크푸르트 상장사. JD.com이 공개매수로 59.8%를 확보해 2026-11-12 자회사로 편입 (Convergenta와 합쳐 85.2%)"
+    as_of: "2026-11-14"
 SK에코플랜트:
   type: 기업
   country: 한국
@@ -1981,3 +1981,57 @@ California Department of Financial Protection and Innovation:
     edge: "일정 규모 이상 합병·지분 취득의 승인·시정조치 권한"
     owner: "국무총리 소속 중앙행정기관"
     as_of: "2026-11-13"
+넥스플렉스:
+  type: 기업
+  country: 한국
+  aliases: [NexFlex, 넥스플렉스㈜]
+  profile:
+    about: "스마트폰 등에 쓰이는 연성회로기판의 핵심 소재인 연성동박적층판(FCCL)을 만드는 국내 소재 회사."
+    business: "연성동박적층판(FCCL) 제조"
+    edge: "휘어지는 회로기판용 핵심 소재 생산 기술과 대형 전자업체 납품 실적"
+    owner: "비상장. MBK파트너스 보유 (2023년 스카이레이크로부터 인수), 부산에쿼티파트너스 컨소시엄으로 매각 계약 (보도 기준)"
+    points:
+      - "2026-11 매각 계약 뒤 MBK가 지분 17%를 다시 넣어 남는 구조 (보도 기준)"
+    as_of: "2026-11-14"
+부산에쿼티파트너스:
+  type: PE·VC
+  country: 한국
+  aliases: [부산EP, 부산에쿼티]
+  profile:
+    about: "국내 사모펀드(PEF) 운용사."
+    business: "기업 경영권 인수 등 사모펀드 투자"
+    edge: "컨소시엄과 인수금융을 엮어 대형 경영권 인수를 추진"
+    points:
+      - "2026-11 MBK파트너스로부터 넥스플렉스를 약 9천억 원에 인수하기로 계약 (보도 기준)"
+    as_of: "2026-11-14"
+MBK파트너스:
+  type: PE·VC
+  country: 한국
+  aliases: [MBK Partners, MBK]
+  profile:
+    about: "서울에 본사를 둔 동북아시아 중심의 대형 사모펀드 운용사."
+    business: "한국·중국·일본 기업 경영권 인수(바이아웃) 투자"
+    edge: "대형 경영권 인수와 회수 경험이 많은 국내 대표 바이아웃 운용사"
+    owner: "파트너십 (PE 운용사)"
+    as_of: "2026-11-14"
+Deutsche Bank:
+  type: 재무 자문사
+  country: 유럽
+  aliases: [도이치뱅크, 도이체방크, Deutsche Bank AG]
+  ticker: "XETR:DBK"
+  profile:
+    about: "독일 최대 은행으로, 투자은행 부문에서 M&A 자문을 한다."
+    business: "기업·투자은행, 자산관리, 리테일 금융"
+    edge: "글로벌 투자은행 네트워크"
+    owner: "프랑크푸르트 상장사"
+    as_of: "2026-11-14"
+신한투자증권:
+  type: 재무 자문사
+  country: 한국
+  aliases: [신한證, Shinhan Securities]
+  profile:
+    about: "신한금융그룹의 증권사."
+    business: "증권 중개, 기업금융(인수금융 주선 등), 자산관리"
+    edge: "금융지주 계열의 자금 조달 역량"
+    owner: "신한금융지주 자회사"
+    as_of: "2026-11-14"

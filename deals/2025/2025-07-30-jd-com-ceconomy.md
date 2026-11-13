@@ -1,9 +1,9 @@
 ---
-제목: "JD.com, 독일 가전유통사 Ceconomy 인수에 EU 승인 확보"
-상태: "계약 체결"
-신뢰도: "보도 기준"
+제목: "JD.com, 독일 가전유통사 Ceconomy 공개매수 완료…지분 59.8% 확보해 자회사 편입"
+상태: "거래 완료"
+신뢰도: "공시 확정"
 발표일: 2025-07-30
-최종 업데이트: 2026-11-04
+최종 업데이트: 2026-11-14
 지역: ["중국", "유럽"]
 규모 구간: "1조~5조"
 규모(원화): "약 3.51조 원 (보도 기준)"
@@ -16,17 +16,17 @@
 매도자: []
 재무 자문: []
 법률 자문: []
-출처: ["https://www.ft.com/content/9f71bc39-fef2-4af1-a2e4-b2ff17aa5641", "https://www.retail-insight-network.com/news/jd-com-eu-approval-ceconomy-deal/", "https://www.tradingview.com/news/eqs:2b7d77f70094b:0-jd-com-successfully-secures-59-8-of-ceconomy-as-final-result-after-end-of-additional-acceptance-period/", "https://www.caixinglobal.com/2025-08-01/jdcom-sets-sights-on-europe-as-it-moves-to-buy-ceconomy-in-24-billion-deal-102347446.html"]
-비교: {대가 구성: "현금", 인수자 성격: "전략적", 메모: "규모는 회사 전체 지분가치 보도치(달러 환산 24억~25억 달러 보도)"}
+출처: ["https://www.ft.com/content/9f71bc39-fef2-4af1-a2e4-b2ff17aa5641", "https://www.retail-insight-network.com/news/jd-com-eu-approval-ceconomy-deal/", "https://www.tradingview.com/news/eqs:2b7d77f70094b:0-jd-com-successfully-secures-59-8-of-ceconomy-as-final-result-after-end-of-additional-acceptance-period/", "https://www.caixinglobal.com/2025-08-01/jdcom-sets-sights-on-europe-as-it-moves-to-buy-ceconomy-in-24-billion-deal-102347446.html", "https://www.sec.gov/Archives/edgar/data/0001549802/000119312526456897/d114554dex991.htm"]
+비교: {대가 구성: "현금", 인수자 성격: "전략적", 메모: "규모는 회사 전체 지분가치 보도치(달러 환산 24억~25억 달러 보도). JD.com 발표 기준 공개매수 대금은 주당 4.60유로, 59.8%에 13.35억 유로(2026-11-12 ECB 기준환율 1 EUR = 1,478.32원 환산 약 1.97조 원)"}
 일정: []
 정정: []
 ---
 ## 한 줄 요약
-중국 전자상거래 기업 [[JD.com]]의 독일 가전유통사 [[Ceconomy]](MediaMarkt·Saturn 운영) 인수가 EU 승인을 받았다고 보도됐다.
+중국 전자상거래 기업 [[JD.com]]이 독일 가전유통사 [[Ceconomy]](MediaMarkt·Saturn 운영) 공개매수를 2026-11-12 마무리하고 자회사로 편입했다.
 
 ## 딜 구조
 <!-- 인수 지분, 인수 방식, 자금 조달 방법 -->
-자발적 공개매수로 지분을 사들였고, 추가 응모 기간 뒤 최종 확보 지분은 59.8%다(JD.com 발표). 남은 승인 절차와 종결 시점, 자문사는 확인되지 않음.
+자발적 공개매수로 주당 4.60유로 현금, 총 13.35억 유로를 들여 지분 59.8%를 확보했다(JD.com 발표). 기존 대주주 Convergenta(25.3%)와 합친 지분은 85.2%다. 자문사는 확인되지 않음.
 
 ## 밸류에이션
 <!-- EV/EBITDA, P/E 등. 공개되지 않았으면 "비공개" 한 줄 -->
@@ -45,6 +45,7 @@
 - 2025-07-30: JD.com이 Ceconomy 공개매수 계획을 발표했다 (보도 기준).
 - 2025-11: 추가 응모 기간 종료 후 최종 확보 지분이 59.8%로 집계됐다.
 - 2026-11-03: EU 승인을 받았다는 보도가 나왔다.
+- 2026-11-12: JD.com이 공개매수 완료를 발표하고 Ceconomy를 자회사로 연결 편입했다.
 
 ## 관련 딜·뉴스
 - [SoftBank의 ABB 로봇사업부 인수(EV 약 54억 달러), 중국 당국이 중국 사업 이전 불허](../2025/2025-10-08-softbank-abb-robotics.md) — 중국 기업이 낀 크로스보더 딜의 규제 승인 변수
