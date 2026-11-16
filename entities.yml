@@ -2035,3 +2035,238 @@ Deutsche Bank:
     edge: "금융지주 계열의 자금 조달 역량"
     owner: "신한금융지주 자회사"
     as_of: "2026-11-14"
+Quebecor:
+  type: 기업
+  country: 기타
+  aliases: [퀘벡코, 퀘벡코어, Quebecor Inc.]
+  ticker: "TSX:QBR.B"
+  profile:
+    about: "캐나다 퀘벡주 기반 통신·미디어 그룹."
+    business: "유무선 통신(Videotron, Freedom Mobile), 방송·미디어"
+    edge: "퀘벡 지역 통신망과 Freedom Mobile 인수로 넓힌 전국 무선 사업"
+    owner: "토론토증권거래소 상장사. 창업주 Péladeau 가문이 의결권 기준 지배"
+    points:
+      - "2026-11 Telus에 현금+주식 결합을 공개 제안 (보도 기준 약 310억 캐나다달러)"
+    as_of: "2026-11-17"
+Telus:
+  type: 기업
+  country: 기타
+  aliases: [텔러스, TELUS, Telus Corporation]
+  ticker: "TSX:T"
+  profile:
+    about: "캐나다 3대 통신사 중 하나."
+    business: "유무선 통신, 헬스케어 IT, 디지털 서비스"
+    edge: "캐나다 전국 유무선 통신망"
+    owner: "토론토·뉴욕 상장사 (지분 분산)"
+    points:
+      - "2026-11 Quebecor로부터 현금+주식 결합 제안을 받음 (이사회 반응 확인 안 됨)"
+    as_of: "2026-11-17"
+Diamondback Energy:
+  type: 기업
+  country: 미국
+  aliases: [다이아몬드백, Diamondback]
+  ticker: "NASDAQ:FANG"
+  profile:
+    about: "미국 텍사스 퍼미안 분지 중심의 셰일 원유·가스 생산사."
+    business: "원유·천연가스 탐사·생산"
+    edge: "퍼미안 미들랜드 분지 핵심 광구"
+    owner: "나스닥 상장사"
+    points:
+      - "2026-11 Double Eagle 자산을 현금 21.5억 달러+주식 약 1,556만 주에 인수 계약"
+    as_of: "2026-11-17"
+Double Eagle:
+  type: 기업
+  country: 미국
+  aliases: [Double Eagle Development, Double Eagle IV Midco, Double Eagle V Midco]
+  profile:
+    about: "미국 텍사스 퍼미안 분지 광구를 개발해 파는 석유·가스 회사."
+    business: "원유·가스 광구 확보·개발"
+    edge: "미들랜드 분지 광구 확보"
+    points:
+      - "2026-11 미들랜드 분지 자산(순면적 약 17.6만 에이커)을 Diamondback Energy에 매각 계약"
+    as_of: "2026-11-17"
+Jefferies:
+  type: 재무 자문사
+  country: 미국
+  aliases: [제프리스, Jefferies LLC]
+  ticker: "NYSE:JEF"
+  profile:
+    about: "미국 투자은행."
+    business: "M&A 자문, 주식·채권 인수, 트레이딩"
+    edge: "에너지·중견 기업 거래 자문"
+    owner: "뉴욕증권거래소 상장사"
+    as_of: "2026-11-17"
+Blackstone Digital Infrastructure Trust:
+  type: 기업
+  country: 미국
+  aliases: [BXDC, 블랙스톤 디지털 인프라 트러스트]
+  ticker: "NYSE:BXDC"
+  profile:
+    about: "Blackstone이 운용하는 데이터센터 투자 상장 리츠."
+    business: "데이터센터 부동산 투자·임대"
+    edge: "Blackstone의 데이터센터 투자 경험"
+    owner: "뉴욕증권거래소 상장사 (2026-05 상장), Blackstone이 운용"
+    points:
+      - "2026-11 AWS 데이터센터 포트폴리오 지분 75% 인수가 첫 대형 투자 (보도 기준)"
+    as_of: "2026-11-17"
+Amazon Web Services:
+  type: 기업
+  country: 미국
+  aliases: [AWS, 아마존웹서비스]
+  profile:
+    about: "Amazon의 클라우드 컴퓨팅 사업 부문."
+    business: "클라우드 인프라·플랫폼 서비스"
+    edge: "세계 최대 규모 클라우드 사업"
+    owner: "Amazon 자회사"
+    as_of: "2026-11-17"
+AWS 데이터센터 포트폴리오:
+  type: 기업
+  country: 미국
+  aliases: []
+  profile:
+    about: "AWS가 인디애나·미시시피에 새로 지은 데이터센터 건물 13곳 (IT 전력 647MW)."
+    business: "데이터센터 임대"
+    edge: "AWS가 최장 32년까지 전체를 임차하는 장기 계약"
+    owner: "BXDC 75%·AWS 25% 합작법인 2곳으로 넘어갈 예정 (2026-11 계약, 보도 기준)"
+    as_of: "2026-11-17"
+CBRE:
+  type: 재무 자문사
+  country: 미국
+  aliases: [CBRE Capital Markets, CBRE Group]
+  ticker: "NYSE:CBRE"
+  profile:
+    about: "미국의 상업용 부동산 서비스 회사."
+    business: "부동산 중개·매각 자문, 자산관리, 투자"
+    edge: "상업용 부동산 거래 중개망"
+    owner: "뉴욕증권거래소 상장사"
+    as_of: "2026-11-17"
+Wells Fargo:
+  type: 재무 자문사
+  country: 미국
+  aliases: [웰스파고, Wells Fargo Securities]
+  ticker: "NYSE:WFC"
+  profile:
+    about: "미국 대형 상업은행."
+    business: "소매·기업 금융, 투자은행"
+    edge: "미국 내 대형 은행망"
+    owner: "뉴욕증권거래소 상장사"
+    as_of: "2026-11-17"
+Johnson & Johnson:
+  type: 기업
+  country: 미국
+  aliases: [J&J, 존슨앤드존슨, 존슨앤존슨]
+  ticker: "NYSE:JNJ"
+  profile:
+    about: "미국 대형 제약·의료기기 회사."
+    business: "전문의약품, 의료기기"
+    edge: "면역·항암 등 신약 포트폴리오와 의료기기 사업"
+    owner: "뉴욕증권거래소 상장사 (지분 분산)"
+    points:
+      - "2026-11 안과 바이오텍 Ollin Biosciences를 최대 33억 달러에 인수 계약"
+    as_of: "2026-11-17"
+Ollin Biosciences:
+  type: 기업
+  country: 미국
+  aliases: [Ollin, 올린 바이오사이언스]
+  profile:
+    about: "안과 질환 신약을 개발하는 미국 비상장 바이오텍 (2025년 출범)."
+    business: "습성 황반변성·당뇨병성 황반부종·갑상선 눈병증 치료제 개발"
+    edge: "임상 3상 단계 VEGF·Ang2 이중 표적 항체 OLN324"
+    owner: "비상장. Arch Venture Partners 등 벤처캐피털 투자 → Johnson & Johnson에 매각 계약 (2026-11)"
+    as_of: "2026-11-17"
+Innovent Biologics:
+  type: 기업
+  country: 중국
+  aliases: [신다바이오, 信达生物, Innovent]
+  ticker: "HKEX:1801"
+  profile:
+    about: "중국 쑤저우 기반 바이오 제약사."
+    business: "항체 의약품 개발·생산"
+    edge: "자체 항체 신약 개발과 해외 라이선스 아웃"
+    owner: "홍콩 상장사"
+    as_of: "2026-11-17"
+Canadian Natural Resources:
+  type: 기업
+  country: 기타
+  aliases: [Canadian Natural, CNRL, CNQ]
+  ticker: "TSX:CNQ"
+  profile:
+    about: "캐나다 최대급 원유·천연가스 생산사."
+    business: "오일샌드, 원유·천연가스 탐사·생산"
+    edge: "앨버타 오일샌드 등 장기 생산 자산"
+    owner: "토론토·뉴욕 상장사 (지분 분산)"
+    points:
+      - "2026-11 Advantage Energy를 주당 13.55캐나다달러 현금에 인수 계약"
+    as_of: "2026-11-17"
+Advantage Energy:
+  type: 기업
+  country: 기타
+  aliases: [Advantage Energy Ltd., Advantage]
+  ticker: "TSX:AAV"
+  profile:
+    about: "캐나다 앨버타 기반 천연가스 생산사."
+    business: "천연가스·원유 생산, 가스 처리시설 운영"
+    edge: "Glacier 가스처리시설 등 자체 처리 설비"
+    owner: "토론토증권거래소 상장사 → Canadian Natural Resources에 매각 계약 (2026-11)"
+    as_of: "2026-11-17"
+Peters & Co.:
+  type: 재무 자문사
+  country: 기타
+  aliases: [Peters & Co. Limited]
+  profile:
+    about: "캐나다 캘거리 기반 에너지 전문 투자은행."
+    business: "에너지 기업 M&A 자문, 증권 인수·중개"
+    edge: "캐나다 에너지 업종 특화"
+    as_of: "2026-11-17"
+Bennett Jones:
+  type: 법률 자문사
+  country: 기타
+  aliases: [Bennett Jones LLP]
+  profile:
+    about: "캐나다 로펌."
+    business: "M&A, 에너지, 자본시장"
+    edge: "캐나다 에너지 업종 거래 경험"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-17"
+Burnet, Duckworth & Palmer:
+  type: 법률 자문사
+  country: 기타
+  aliases: [BD&P, Burnet Duckworth & Palmer LLP]
+  profile:
+    about: "캐나다 캘거리 기반 로펌."
+    business: "에너지 M&A, 기업법무"
+    edge: "캐나다 에너지 업종 거래 경험"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-17"
+NXC:
+  type: 기업
+  country: 한국
+  aliases: [엔엑스씨, 넥슨 지주사]
+  profile:
+    about: "게임사 넥슨 그룹의 비상장 지주회사."
+    business: "넥슨 등 계열사 지분 보유"
+    edge: "넥슨 지분 보유"
+    owner: "비상장. 유정현 이사 34.73%(매입 후, 보도 기준)로 최대주주, 재정경제부 25.68%"
+    points:
+      - "2026-11 총수 일가 지분 2.09%를 약 2,900억 원에 사들여 12월 소각 예정 (보도 기준)"
+    as_of: "2026-11-17"
+넥슨:
+  type: 기업
+  country: 일본
+  aliases: [Nexon, NEXON]
+  ticker: "TSE:3659"
+  profile:
+    about: "'메이플스토리'·'던전앤파이터' 등을 서비스하는 게임사."
+    business: "온라인·모바일 게임 개발·서비스"
+    edge: "장수 온라인 게임 IP"
+    owner: "도쿄증권거래소 상장사. 지주사 NXC가 최대주주"
+    as_of: "2026-11-17"
+와이즈키즈:
+  type: 기업
+  country: 한국
+  aliases: [Wisekids]
+  profile:
+    about: "NXC 총수 일가 관계사 (보도 기준)."
+    business: "확인되지 않음"
+    edge: "NXC 지분 일부 보유"
+    as_of: "2026-11-17"

@@ -43,3 +43,4 @@ PE가 지분 절반을 연기금에 넘겨 일부 회수하면서 공동 경영�
 
 ## 관련 딜·뉴스
 - [Blackstone 주도 컨소시엄, 미쓰비시의 LNG Canada 보유 자회사 지분 49.9%에 31억 달러 투자](../2026/2026-11-02-blackstone-mitsubishi-lng-canada.md) — 캐나다 인프라 자산 지분 일부를 장기 투자자가 사들인 비슷한 시기 거래
+- [Quebecor, Telus에 약 310억 캐나다달러 규모 결합 제안…Telus 1주당 현금 6.35달러+Quebecor B주 0.17주](../2026/2026-11-16-quebecor-telus.md) — 비슷한 시기 캐나다 대형 거래

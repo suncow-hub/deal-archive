@@ -46,3 +46,4 @@ LNG Canada 프로젝트 지분을 직접 사는 것이 아니라, 그 지분을 
 
 ## 관련 딜·뉴스
 - [CVR Energy, Marathon Petroleum의 정유소 2곳과 판매사업을 약 42억 달러에 인수](../2026/2026-11-03-cvr-energy-marathon-refineries.md) — 같은 주에 나온 에너지 자산 매각
+- [Blackstone 데이터센터 리츠 BXDC, AWS 데이터센터 13곳 포트폴리오(약 50억 달러) 지분 75% 인수…AWS가 장기 임차](../2026/2026-11-16-blackstone-digital-infrastructure-trust-aws-data-centers.md) — 같은 Blackstone 계열의 비슷한 시기 인프라 투자

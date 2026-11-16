@@ -1,9 +1,9 @@
 ---
-제목: "UniCredit, Commerzbank 교환 공개매수 정산 후 지분 약 50%로 지배권 확보 예정…HVB 통합 앞당길 수도"
+제목: "UniCredit의 Commerzbank 인수, EU 집행위 무조건 승인·미 연준 승인…남은 승인 11월 말 확보 예상"
 상태: "계약 체결"
 신뢰도: "공시 확정"
 발표일: 2026-11-09
-최종 업데이트: 2026-11-09
+최종 업데이트: 2026-11-17
 지역: ["유럽"]
 규모 구간: "비공개"
 규모(원화): "비공개"
@@ -16,10 +16,11 @@
 매도자: []
 재무 자문: []
 법률 자문: []
-출처: ["https://www.unicreditgroup.eu/content/dam/unicreditgroup-eu/documents/en/investors/group-results/2026/3Q26/3Q26_UniCredit_PR_ENG.pdf", "https://www.qatar-tribune.com/article/243483/business/unicredit-nears-majority-of-commerzbank-shares-in-takeover-bid", "https://www.marketscreener.com/news/unicredit-commerzbank-orcel-accelerates-but-berlin-hits-the-brakes-ce7f59dcdd8af521"]
+출처: ["https://www.unicreditgroup.eu/content/dam/unicreditgroup-eu/documents/en/investors/group-results/2026/3Q26/3Q26_UniCredit_PR_ENG.pdf", "https://www.qatar-tribune.com/article/243483/business/unicredit-nears-majority-of-commerzbank-shares-in-takeover-bid", "https://www.marketscreener.com/news/unicredit-commerzbank-orcel-accelerates-but-berlin-hits-the-brakes-ce7f59dcdd8af521", "https://finance.yahoo.com/economy/policy/articles/eu-approves-unicredits-takeover-commerzbank-143401420.html", "https://mlex.com/mlex/articles/2550281", "https://www.wsj.com/business/deals/unicredits-commerzbank-bid-gets-eu-approval-44a821a6"]
 비교: {대가 구성: "주식", 인수자 성격: "전략적", 메모: "교환 공개매수. 정산 후 지분 약 50% 가정(회사 자료). 대가·총액은 확인되지 않음"}
 일정:
   - {날짜: "2026-11", 내용: "남은 규제 승인 확보 예상 (11월 말)"}
+  - {날짜: "2026-12", 내용: "연내 거래 종결 예상 (Commerzbank CEO 발언, 보도 기준)"}
   - {날짜: "2027-03", 내용: "Commerzbank 임시주총 후 새 지배구조 출범 예상 (2027년 1분기)"}
 정정: []
 ---
@@ -41,6 +42,7 @@
 
 ## 진행 이력
 - 2026-11-09: 3분기 실적 발표에서 공개매수 정산 후 지분 약 50%로 지배권 확보, 2027년 1분기 새 지배구조 출범 계획을 밝혔다.
+- 2026-11-16: EU 집행위원회가 조건 없이 인수를 승인했고, UniCredit은 미국 연준 승인도 받았다고 밝혔다. 남은 일부 승인은 11월 말까지 받을 것으로 예상했다 (dpa 등 보도).
 
 ## 관련 딜·뉴스
 - [Intesa의 Monte dei Paschi 교환 공개매수, Consob 승인…11월 24일 응모 시작](../2026/2026-10-29-intesa-sanpaolo-monte-dei-paschi.md) — 같은 시기 진행 중인 이탈리아 은행의 교환 공개매수

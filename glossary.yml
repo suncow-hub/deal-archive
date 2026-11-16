@@ -105,6 +105,19 @@
   related: [완전자회사(화), 지주사]
   memo: ""
 
+- id: cap-rate
+  term: 캡레이트
+  en: Capitalization Rate (Cap Rate)
+  category: 밸류에이션
+  match: [캡레이트, Cap Rate, cap rate]
+  aliases: [자본환원율]
+  short: 부동산을 산 값 대비 1년 동안 들어오는 순임대수익의 비율. 7%면 100억에 산 건물이 1년에 7억을 번다는 뜻이다.
+  more: 같은 수익을 내는 건물이라도 비싸게 살수록 캡레이트는 낮아진다. 임차인이 믿을 만하고 계약이 길수록 위험이 작다고 보고 낮은 캡레이트(높은 가격)에 거래된다.
+  example: BXDC는 AWS가 장기 임차하는 데이터센터 포트폴리오를 초기 캡레이트 7%에 사들였다(보도 기준).
+  deal: 2026-11-16-blackstone-digital-infrastructure-trust-aws-data-centers
+  related: [EV/EBITDA (멀티플)]
+  memo: ""
+
 # ---------------- 딜 구조
 - id: control-acquisition
   term: 경영권 인수
@@ -306,6 +319,19 @@
   example: 넥스플렉스 매각에서 MBK파트너스가 매각대금 일부를 다시 넣어 지분 17%를 남기기로 했다 (보도 기준).
   deal: 2026-11-12-busan-ep-nexflex
   related: [인수금융, 세컨더리 딜]
+  memo: ""
+
+- id: milestone-payment
+  term: 마일스톤
+  en: Milestone Payment
+  category: 딜 구조
+  match: [마일스톤]
+  aliases: [Milestone]
+  short: 인수 뒤 정해 둔 목표(임상 성공, 허가 등)를 이루면 추가로 주는 돈. 처음에 주는 선급금과 나눠서 계약한다.
+  more: 바이오 인수에서 자주 쓴다. 신약이 실패하면 인수자는 마일스톤을 내지 않아도 돼, 위험을 매도자와 나눠 지는 효과가 있다. 기사에서 "최대 ○억 달러"라고 하면 마일스톤까지 다 받았을 때의 금액이다.
+  example: J&J는 Ollin Biosciences에 선급금 22억 달러를 주고, 조건을 채우면 마일스톤 11억 달러를 더 준다.
+  deal: 2026-11-16-johnson-johnson-ollin-biosciences
+  related: [언아웃]
   memo: ""
 
 # ---------------- 자금 조달
@@ -511,6 +537,19 @@
   example: Anthropic 공모 8.25억 주 가운데 약 0.24억 주가 기존 주주의 구주다.
   deal: 2026-11-02-anthropic-ipo
   related: [IPO (기업공개)]
+  memo: ""
+
+- id: sale-and-leaseback
+  term: 세일즈앤리스백
+  en: Sale and Leaseback
+  category: 자금 조달
+  match: [세일즈앤리스백, 매각 후 재임차]
+  aliases: [Sale and Leaseback, 매각후재임차]
+  short: 자기 건물이나 설비를 팔고, 산 사람에게서 다시 빌려 계속 쓰는 방식. 쓰던 자산은 그대로 쓰면서 묶여 있던 돈을 현금으로 돌려받는다.
+  more: 파는 쪽은 돈을 마련하면서 사업은 그대로 하고, 사는 쪽(리츠·인프라 펀드 등)은 오랫동안 안정적인 임대료를 받는다.
+  example: AWS는 새로 지은 데이터센터 지분 75%를 BXDC에 넘기고 전체를 최장 32년까지 빌려 쓰기로 했다.
+  deal: 2026-11-16-blackstone-digital-infrastructure-trust-aws-data-centers
+  related: [캡레이트]
   memo: ""
 
 # ---------------- 참여자·전략
