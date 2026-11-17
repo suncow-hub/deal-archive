@@ -1,0 +1,629 @@
+{
+  "meta": {
+    "run_at": "2026-11-18T02:12:50.488417+09:00",
+    "window_start": "2026-11-16T20:12:50.488417+09:00",
+    "sources": {
+      "환율": "1일 추가 (최신 2026-11-17)",
+      "OpenDART 상세": "1건 성공, 3건 실패",
+      "OpenDART": "9건",
+      "WSJ Markets": "2/61",
+      "WSJ U.S. Business": "6/85",
+      "PR Newswire M&A": "15/20",
+      "한경 증권": "1/50",
+      "인베스트조선": "17/50",
+      "연합뉴스 마켓+": "16/120",
+      "매일경제 증권": "5/50",
+      "조선비즈": "1/100",
+      "FT M&A": "7/25",
+      "CNBC Business": "1/30",
+      "WSJ World News": "9/72",
+      "WSJ Economy": "8/36",
+      "한경 경제": "2/50",
+      "한경 국제": "4/50"
+    },
+    "gemini": "실패: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest feature",
+    "gemini_tries": 18,
+    "counts": {
+      "deal": 31,
+      "macro": 12,
+      "dropped": 41
+    }
+  },
+  "items": [
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "Anthropic Plans to Raise IPO Price After Strong Demand",
+      "link": "https://www.wsj.com/finance/anthropic-plans-to-raise-ipo-price-after-strong-demand-1a6b0af1?mod=rss_markets_main",
+      "published": "2026-11-18T02:02:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "글로벌 AI 스타트업 앤스로픽의 IPO 관련 소식."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "하반기 유일한 코스피 상장 후보 SFC마저 공모 철회",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/17/2026111780177.html",
+      "published": "2026-11-17T17:11:38+09:00",
+      "keywords": [
+        "IPO",
+        "IPO",
+        "상장"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "코스피 상장 기대주의 공모 철회로 대형 IPO 시장 냉각을 보여줌."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "한화임팩트 지분 매각 불발된 한화솔루션, PRS 활용 검토",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/16/2026111680197.html",
+      "published": "2026-11-17T07:00:00+09:00",
+      "keywords": [
+        "매각",
+        "지분",
+        "유상증자"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "한화그룹의 자산 유동화를 위한 PRS 활용 구조를 설명함."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "골프장 '큰손' 더시에나, 1.8조 골프존 도전장…자금조달 능력엔 물음표",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/16/2026111680196.html",
+      "published": "2026-11-17T07:00:00+09:00",
+      "keywords": [
+        "인수",
+        "합병",
+        "지분",
+        "경영권"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "1.8조원 규모 골프존카운티 인수전과 자금 조달 이슈를 분석함."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "TPG, 카모 분쟁 국내 로펌 율촌 선임…홍콩중재센터서 카카오-태평양과 맞선다",
+      "link": "https://www.mk.co.kr/news/stock/12211213",
+      "published": "2026-11-17T15:10:08+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "카카오모빌리티 IPO 분쟁 관련 TPG의 율촌 선임 소식."
+    },
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "TPG nears take-private deal for payments group Bill Holdings",
+      "link": "https://www.ft.com/content/629eb12c-f200-486d-8c63-32e2ebf3d97e?syn-25a6b1a6=1",
+      "published": "2026-11-18T02:02:10+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "TPG의 핀테크 기업 Bill Holdings 인수 합의 임박."
+    },
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "Satellite group Iceye launches €2bn bid for Italian rocket maker Avio",
+      "link": "https://www.ft.com/content/9fed851a-d75f-4f7e-8afa-700f3786391d?syn-25a6b1a6=1",
+      "published": "2026-11-17T21:11:01+09:00",
+      "keywords": [
+        "bid for"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "핀란드 Iceye의 이탈리아 Avio 인수 제안 딜."
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "Berkshire Boosts Stake in Lennar, Doubling Down on Its U.S. Housing Bet",
+      "link": "https://www.wsj.com/finance/stocks/berkshire-boosts-stake-in-lennar-doubling-down-on-its-u-s-housing-bet-b1237ca5?mod=rss_markets_main",
+      "published": "2026-11-17T07:51:00+09:00",
+      "keywords": [
+        "stake"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "버크셔 해서웨이의 주택·금융·원자재 지분 변동."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Finnish Satellite Startup Iceye Launches $2.3 Billion Bid for Rocket Maker Avio",
+      "link": "https://www.wsj.com/business/deals/finnish-satellite-startup-iceye-launches-2-3-billion-bid-for-rocket-maker-avio-9546b85c?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-17T23:13:00+09:00",
+      "keywords": [
+        "bid for"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "핀란드 위성 기업의 23억 달러 규모 인수 제안."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "EQT to acquire Flatiron Energy, a leading developer and operator of battery energy storage in the Eastern U.S.",
+      "link": "https://www.prnewswire.com/news-releases/eqt-to-acquire-flatiron-energy-a-leading-developer-and-operator-of-battery-energy-storage-in-the-eastern-us-302942417.html",
+      "published": "2026-11-18T00:43:00+09:00",
+      "keywords": [
+        "acquire"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "글로벌 인프라 PEF EQT의 에너지 저장 기업 인수."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "AI 안경 관심에 젠틀몬스터 IPO 재점화?...룩소티카 지분 확대 '변수'",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/17/2026111780155.html",
+      "published": "2026-11-17T16:01:22+09:00",
+      "keywords": [
+        "IPO",
+        "매각",
+        "지분",
+        "IPO",
+        "상장"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "유명 브랜드 젠틀몬스터의 지분구조 변화 및 IPO 재추진 가능성 다룸."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "앤트로픽 지분 3.5조에 AIDC까지…SKT, 美 AI 사이클에 '이중 리스크'",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/17/2026111780124.html",
+      "published": "2026-11-17T15:10:36+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "SKT의 대규모 해외 AI 투자 및 리스크 분석을 다룸."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "앵커PE, 카카오엔터 인수금융 6개월 추가 연장",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/17/2026111780028.html",
+      "published": "2026-11-17T09:50:12+09:00",
+      "keywords": [
+        "인수",
+        "사모펀드",
+        "PEF",
+        "인수금융"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "대형 PEF의 카카오엔터 인수금융 리파이낸싱 난항 사례임."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "MBK파트너스, 2026 연차총회 개최…내년 해외투자 적극 확대",
+      "link": "https://www.yna.co.kr/view/AKR20261117056600008",
+      "published": "2026-11-17T10:08:55+09:00",
+      "keywords": [
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "MBK파트너스의 해외 투자 및 펀드 운용 방향 발표."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "MBK \"K뷰티 투자 확대\"",
+      "link": "https://www.mk.co.kr/news/stock/12211417",
+      "published": "2026-11-17T17:30:26+09:00",
+      "keywords": [
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "MBK파트너스의 K뷰티 및 해외 투자 확대 전략."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "[단독] 카모 상장 두고…TPG-율촌 vs 카카오-태평양 연합군 법정서 대결",
+      "link": "https://www.mk.co.kr/news/stock/12211194",
+      "published": "2026-11-17T14:48:38+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "카카오모빌리티 상장 관련 FI와의 법률 대리인 대결 중복 기사."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "이지스운용 매각 ‘입찰 방해’ 檢 불기소…흥국생명은 항고",
+      "link": "https://www.mk.co.kr/news/stock/12211008",
+      "published": "2026-11-17T11:12:59+09:00",
+      "keywords": [
+        "매각",
+        "경영권"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "이지스자산운용 경영권 매각 및 법적 분쟁 현황."
+    },
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "Chevron nears $5bn deal for Blackstone-backed oil producer in US Gulf",
+      "link": "https://www.ft.com/content/92e1c14a-f836-40b0-8d9e-0ed1c1d2fea9?syn-25a6b1a6=1",
+      "published": "2026-11-17T06:20:03+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "셰브론의 50억 달러 규모 에너지 기업 인수 건."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "현대투자파트너스, 승명실업 매각…무벡스 투자금 회수 포석",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/17/2026111780140.html",
+      "published": "2026-11-17T15:32:08+09:00",
+      "keywords": [
+        "인수",
+        "매각",
+        "지분",
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "국내 PE의 400억원 규모 중소기업 M&A 및 투자금 회수 사례임."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "이지스 매각 최대주주·모건스탠리 '입찰 방해' 무혐의…흥국생명은 항고",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/17/2026111780049.html",
+      "published": "2026-11-17T10:14:25+09:00",
+      "keywords": [
+        "매각",
+        "경영권"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "이지스자산운용 경영권 매각 관련 분쟁 상황을 다룸."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "금융당국 제도 방치에 SK하이닉스 본주-ADR 괴리율 더 커졌다",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/16/2026111680195.html",
+      "published": "2026-11-17T07:00:00+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "SK하이닉스 ADR 전환 무산 및 유통물량 관련 금융당국 규제 이슈임."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "SK브로드밴드 노조 \"사업 분사 반대…매각대금 재투자해야\"",
+      "link": "https://www.yna.co.kr/view/AKR20261117132500017",
+      "published": "2026-11-17T15:57:33+09:00",
+      "keywords": [
+        "매각"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "SK브로드밴드의 사업 분사 및 매각 관련 노사 갈등 뉴스."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "칼시, 뉴욕 증권사 인수해 두달 내 주식거래 개시",
+      "link": "https://www.yna.co.kr/view/AKR20261117023800009",
+      "published": "2026-11-17T08:17:44+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "미국 예측시장의 증권사 인수 및 사업 확장 소식."
+    },
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "CVC plans to back out of Italian deal with Advent, triggering potential legal clash",
+      "link": "https://www.ft.com/content/bd65d6e0-3ecb-498c-b684-c7e4c782a0ae?syn-25a6b1a6=1",
+      "published": "2026-11-17T08:08:52+09:00",
+      "keywords": [
+        "buyout",
+        "to buy",
+        "deal"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "글로벌 PEF 간 대형 거래 철회 및 법적 분쟁 건."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(네오오토) [첨부정정]주요사항보고서(주식교환ㆍ이전결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116000574",
+      "published": "2026-11-16T00:00:00+09:00",
+      "keywords": [
+        "주식교환ㆍ이전결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "국내 상장사의 주식교환·이전결정 공시."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "o15 Capital Partners Provides Unitranche Facility and Equity Co-Investment to Support Bluestone Equity Partners' Acquisition of 11th St. Workshop",
+      "link": "https://www.prnewswire.com/news-releases/o15-capital-partners-provides-unitranche-facility-and-equity-co-investment-to-support-bluestone-equity-partners-acquisition-of-11th-st-workshop-302942496.html",
+      "published": "2026-11-18T01:45:00+09:00",
+      "keywords": [
+        "acquisition"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "사모펀드의 기업 인수 지원을 위한 인수금융·지분투자."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Mercantile Bank Corporation Announces FDIC and Michigan DIFS Approval of Merger of Mercantile Bank and Eastern Michigan Bank",
+      "link": "https://www.prnewswire.com/news-releases/mercantile-bank-corporation-announces-fdic-and-michigan-difs-approval-of-merger-of-mercantile-bank-and-eastern-michigan-bank-302942315.html",
+      "published": "2026-11-18T00:00:00+09:00",
+      "keywords": [
+        "merger"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "미국 지역 은행 간 합병 승인 완료 뉴스."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Gemspring Capital Announces Sale of Amplix",
+      "link": "https://www.prnewswire.com/news-releases/gemspring-capital-announces-sale-of-amplix-302941120.html",
+      "published": "2026-11-18T00:00:00+09:00",
+      "keywords": [
+        "private equity"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "중소형 PEF 젬스프링의 포트폴리오 매각 완료."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "\"골프존홀딩스, 카운티 지분 현금화해야\"…美터톤, 추가 주주행동 검토",
+      "link": "https://www.hankyung.com/article/202611171504i",
+      "published": "2026-11-17T11:38:27+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "골프존홀딩스 대상 행동주의 펀드의 주주행동 관련 보도임."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "\"앤트로픽 직원들, 보유 주식 팔려면 60일 전 신고해야\"",
+      "link": "https://www.yna.co.kr/view/AKR20261117059500091",
+      "published": "2026-11-17T10:55:01+09:00",
+      "keywords": [
+        "매각",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "앤트로픽 상장을 앞둔 임직원 주식 매각 규정 소식."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "\"앤트로픽 지수 편입 늦지만 추종 자금 26조원 수요\"",
+      "link": "https://www.yna.co.kr/view/AKR20261117058300009",
+      "published": "2026-11-17T10:25:04+09:00",
+      "keywords": [
+        "IPO",
+        "IPO",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "앤트로픽 IPO 후 주요 지수 편입 및 자금 유입 예측."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "엔비디아 실적ㆍ앤트로픽 상장에 美中 정상회담까지…AI 돈줄 '빅 위크'",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/16/2026111680175.html",
+      "published": "2026-11-17T07:00:00+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "빅테크 실적, IPO, 미중관계 등 글로벌 AI 금융 시장 흐름을 다룸."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "macro",
+      "title": "엇갈리는 데이터센터 시장…위험 사업은 손절·빅테크 끼면 투자",
+      "link": "https://www.yna.co.kr/view/AKR20261117092000009",
+      "published": "2026-11-17T14:05:33+09:00",
+      "keywords": [
+        "매각"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "AI 데이터센터 자금시장의 자산별 투심 양극화 분석."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Fed’s Musalem Says Several Rate Hikes Likely Needed Before Spring 2027",
+      "link": "https://www.wsj.com/economy/central-banking/feds-musalem-says-several-rate-hikes-likely-needed-before-spring-2027-ffb3a9fc?mod=rss_socialeconomyfeed",
+      "published": "2026-11-17T22:14:00+09:00",
+      "keywords": [
+        "Fed",
+        "interest rate",
+        "inflation",
+        "central bank"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "미 연준 위원의 추가 금리 인상 가능성 발언."
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Bank of Canada Gov. Macklem to Leave in June, Kicking Off Search for New Leader",
+      "link": "https://www.wsj.com/economy/central-banking/bank-of-canada-gov-macklem-to-leave-in-june-kicking-off-search-for-new-leader-cbce9e69?mod=rss_worldnews",
+      "published": "2026-11-17T02:10:00+09:00",
+      "keywords": [
+        "central bank",
+        "trade"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "캐나다 중앙은행 총재 사임 및 통화정책 영향."
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Commerce Department Rule Aims to Further Limit Chip Shipments to China",
+      "link": "https://www.wsj.com/world/asia/commerce-department-rule-aims-to-further-limit-chip-shipments-to-china-c6244c33?mod=rss_worldnews",
+      "published": "2026-11-17T07:35:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "미국 상무부의 대중 반도체 수출 규제 강화."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "U.S. Treasury, Eurozone Bond Yields Edge Lower as Fresh Drivers Are Sought",
+      "link": "https://www.wsj.com/economy/central-banking/u-s-treasury-eurozone-bond-yields-edge-lower-as-fresh-drivers-are-sought-746b3b6d?mod=rss_socialeconomyfeed",
+      "published": "2026-11-17T18:04:00+09:00",
+      "keywords": [
+        "yields",
+        "Treasury"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "미국 및 유로존 국채 금리 하락 동향."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "U.K. Jobless Rate Edges Lower, Adding to Inflation Concerns",
+      "link": "https://www.wsj.com/economy/central-banking/u-k-jobless-rate-edges-lower-as-labor-market-shows-resilience-6adc464b?mod=rss_socialeconomyfeed",
+      "published": "2026-11-17T16:36:00+09:00",
+      "keywords": [
+        "inflation"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "영국 실업률 하락과 영란은행 인플레이션 우려."
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "워시 \"AI 생산성 기대 못미치면 고용 줄고 경기 둔화\"",
+      "link": "https://www.hankyung.com/article/2026111727751",
+      "published": "2026-11-17T17:56:48+09:00",
+      "keywords": [
+        "경기"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "AI 생산성 및 거시 경제 영향에 대한 전문가 견해."
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "EU, 철강 무역장벽 높인다…포스코 베트남도 16% 관세",
+      "link": "https://www.hankyung.com/article/2026111727801",
+      "published": "2026-11-17T17:54:38+09:00",
+      "keywords": [
+        "관세",
+        "무역"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "中 수출통제 '우회로', 동남아 3개국도 규제",
+      "link": "https://www.hankyung.com/article/2026111727081",
+      "published": "2026-11-17T17:26:07+09:00",
+      "keywords": [
+        "수출"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "반도체 수출통제 칼날 벼리는 美 의회..韓 기업도 '영향권'[워싱턴나우+]",
+      "link": "https://www.hankyung.com/article/202611170831i",
+      "published": "2026-11-17T08:40:56+09:00",
+      "keywords": [
+        "수출"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "\"AI로 일자리 잃는 시나리오 조사 중\"…워시 한마디에 '술렁' [Fed 워치]",
+      "link": "https://www.hankyung.com/article/202611170570i",
+      "published": "2026-11-17T03:54:43+09:00",
+      "keywords": [
+        "Fed"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    }
+  ]
+}
