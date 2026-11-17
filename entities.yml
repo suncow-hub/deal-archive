@@ -2270,3 +2270,187 @@ NXC:
     business: "확인되지 않음"
     edge: "NXC 지분 일부 보유"
     as_of: "2026-11-17"
+ICEYE:
+  type: 기업
+  country: 유럽
+  aliases: [Iceye, 아이스아이]
+  profile:
+    about: "핀란드의 소형 합성개구레이더(SAR) 위성 제조·운영사."
+    business: "레이더 위성 제작, 위성 영상·관측 데이터 제공"
+    edge: "구름·야간에도 지상을 촬영하는 소형 레이더 위성 군집"
+    owner: "비상장 스타트업"
+    points:
+      - "2026-11 이탈리아 로켓 제조사 Avio에 주당 41유로 현금 공개매수 제안"
+    as_of: "2026-11-18"
+Avio:
+  type: 기업
+  country: 유럽
+  aliases: [Avio S.p.A., 아비오]
+  ticker: "MIL:AVIO"
+  profile:
+    about: "이탈리아의 우주 발사체·고체 추진체 제조사."
+    business: "Vega 계열 소형 발사체, 로켓 추진 장치"
+    edge: "유럽 소형 발사체 제작 역량"
+    owner: "Euronext Milan 상장사"
+    points:
+      - "2026-11 ICEYE가 전 주식 공개매수(주당 41유로)와 상장폐지를 제안, 이사회 검토 중"
+    as_of: "2026-11-18"
+Flatiron Energy:
+  type: 기업
+  country: 미국
+  aliases: [Flatiron]
+  profile:
+    about: "미국 동부의 대규모 배터리 에너지저장장치(ESS) 개발·운영사 (2021년 설립)."
+    business: "전력망용 배터리 저장 설비 개발·건설·운영"
+    edge: "뉴잉글랜드·뉴욕·중부 대서양 시장의 약 24GWh 사업 파이프라인"
+    owner: "Hull Street Energy 소유 → EQT에 매각 계약 (2026-11)"
+    as_of: "2026-11-18"
+Hull Street Energy:
+  type: PE·VC
+  country: 미국
+  aliases: [HSE]
+  profile:
+    about: "미국 전력·에너지 전환 자산에 투자하는 회사."
+    business: "발전·저장 설비 투자·운영"
+    edge: "전력 인프라 투자"
+    as_of: "2026-11-18"
+Santander:
+  type: 재무 자문사
+  country: 유럽
+  aliases: [Banco Santander, 산탄데르]
+  ticker: "BME:SAN"
+  profile:
+    about: "스페인에 본사를 둔 대형 상업·투자은행 그룹."
+    business: "소매·기업금융, 투자은행 자문"
+    edge: "유럽·미주 인프라·에너지 금융"
+    owner: "스페인 증시 상장사"
+    as_of: "2026-11-18"
+Guggenheim Securities:
+  type: 재무 자문사
+  country: 미국
+  aliases: [Guggenheim, 구겐하임]
+  profile:
+    about: "미국 금융그룹 Guggenheim Partners의 투자은행 부문."
+    business: "M&A 자문, 자본시장 업무"
+    edge: "미국 중대형 M&A 자문"
+    owner: "비상장 (Guggenheim Partners 계열)"
+    as_of: "2026-11-18"
+Simpson Thacher & Bartlett:
+  type: 법률 자문사
+  country: 미국
+  aliases: [Simpson Thacher, STB]
+  profile:
+    about: "뉴욕에 본사를 둔 대형 로펌."
+    business: "M&A, 사모펀드, 자본시장"
+    edge: "사모펀드 거래 자문"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-18"
+Faegre Drinker Biddle & Reath:
+  type: 법률 자문사
+  country: 미국
+  aliases: [Faegre Drinker]
+  profile:
+    about: "미국 로펌."
+    business: "기업법무, M&A"
+    edge: "미국 중견 거래 자문"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-18"
+더시에나그룹:
+  type: 기업
+  country: 한국
+  aliases: [더시에나, The Ciena]
+  profile:
+    about: "국내 골프장 운영 그룹."
+    business: "골프장·리조트 운영"
+    edge: "골프장 운영 경험"
+    owner: "비상장"
+    points:
+      - "2026-10 씨엘자산운용과 컨소시엄으로 골프존카운티 지분 100% 매매계약 (보도 기준)"
+    as_of: "2026-11-18"
+씨엘자산운용:
+  type: PE·VC
+  country: 한국
+  aliases: [CL자산운용]
+  profile:
+    about: "국내 자산운용사."
+    business: "대체투자 펀드 운용"
+    edge: "실물자산 투자"
+    as_of: "2026-11-18"
+골프존카운티:
+  type: 기업
+  country: 한국
+  aliases: [Golfzon County]
+  profile:
+    about: "국내 대중제 골프장 22곳(2026년 8월 말)을 운영하는 회사."
+    business: "골프장 소유·임차 운영"
+    edge: "전국 골프장 네트워크"
+    owner: "비상장. MBK파트너스 68.4%(보통주 기준), 골프존홀딩스 31.6% (보도 기준)"
+    points:
+      - "2026-10 MBK가 동반매도청구권을 행사해 100%를 더시에나 컨소시엄에 매각 계약, 골프존홀딩스 반발"
+    as_of: "2026-11-18"
+골프존홀딩스:
+  type: 기업
+  country: 한국
+  aliases: [Golfzon Holdings]
+  profile:
+    about: "스크린골프 기업 골프존 그룹의 지주회사."
+    business: "골프존 등 계열사 지분 보유"
+    edge: "그룹 지배 지분"
+    owner: "코스닥 상장사"
+    points:
+      - "골프존카운티 2대 주주로 MBK의 동반매도 요구에 법적 대응 예고 (보도 기준)"
+    as_of: "2026-11-18"
+삼정KPMG:
+  type: 재무 자문사
+  country: 한국
+  aliases: [Samjong KPMG, KPMG]
+  profile:
+    about: "KPMG 네트워크의 한국 회계법인."
+    business: "회계감사, 세무, 재무 자문"
+    edge: "국내 M&A 실사·매각 자문"
+    owner: "파트너십 (회계법인)"
+    as_of: "2026-11-18"
+SFC:
+  type: 기업
+  country: 한국
+  aliases: [에스에프씨]
+  profile:
+    about: "OLED 디스플레이용 발광 소재를 만드는 회사."
+    business: "OLED 유기 재료 개발·생산"
+    edge: "청색 OLED 발광 소재"
+    owner: "비상장"
+    points:
+      - "2026-11 수요예측 뒤 코스피 공모 철회"
+    as_of: "2026-11-18"
+LG화학:
+  type: 기업
+  country: 한국
+  aliases: [LG Chem]
+  krx: "051910"
+  profile:
+    about: "석유화학·첨단소재·생명과학 사업을 하는 LG그룹 화학 회사."
+    business: "석유화학, 첨단소재, 생명과학"
+    edge: "국내 최대 화학 기업 중 하나"
+    owner: "유가증권시장 상장사. 지주사 LG가 최대주주"
+    as_of: "2026-11-18"
+삼성증권:
+  type: 재무 자문사
+  country: 한국
+  aliases: [Samsung Securities]
+  krx: "016360"
+  profile:
+    about: "삼성그룹 계열 증권사."
+    business: "위탁매매, 자산관리, 투자은행"
+    edge: "자산관리 고객 기반"
+    owner: "유가증권시장 상장사. 삼성생명이 최대주주"
+    as_of: "2026-11-18"
+한국투자증권:
+  type: 재무 자문사
+  country: 한국
+  aliases: [Korea Investment & Securities, 한투증권]
+  profile:
+    about: "한국투자금융지주 계열 증권사."
+    business: "위탁매매, 투자은행, 자산관리"
+    edge: "IPO 주관 실적 상위권"
+    owner: "비상장. 한국투자금융지주 100% 자회사"
+    as_of: "2026-11-18"

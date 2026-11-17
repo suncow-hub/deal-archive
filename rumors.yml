@@ -4,6 +4,31 @@
 # - status: 미확인 / 사실로 확인 / 부인 / 소멸
 #   (사실로 확인되면 deal 에 딜 노트 id, 30일간 새 소식이 없으면 소멸)
 # - credibility: 낮음 / 중간  (공신력 높은 출처로 확인되면 소문이 아니라 딜 노트로 간다)
+- id: 2026-11-18-tpg-bill-holdings-take-private
+  first_seen: 2026-11-18
+  last_seen: 2026-11-18
+  title: "TPG, 결제 소프트웨어 기업 Bill Holdings 비상장화 인수 합의 임박설"
+  claim: "TPG가 미국 중소기업용 결제·지출관리 소프트웨어 기업 Bill Holdings를 사들여 비상장화하는 거래에 합의를 앞두고 있다는 FT 보도가 나왔다. 회사 측 발표는 확인되지 않았다."
+  companies: ["TPG", "Bill Holdings"]
+  sources:
+    - {name: "Financial Times (제목 기준)", url: "https://www.ft.com/content/629eb12c-f200-486d-8c63-32e2ebf3d97e", credibility: 중간}
+  why_watch: "사실이면 상장 핀테크를 대형 PE가 비상장화하는 흐름이 이어지는 사례가 된다."
+  status: 미확인
+  status_note: ""
+  deal: null
+- id: 2026-11-18-chevron-beacon-offshore
+  first_seen: 2026-11-18
+  last_seen: 2026-11-18
+  title: "Chevron, Blackstone 투자 멕시코만 원유 생산사 약 50억 달러 인수 임박설"
+  claim: "Chevron이 Blackstone이 투자한 미국 멕시코만 원유 생산사(Beacon Offshore Energy로 거론)를 약 50억 달러에 사는 거래에 근접했다는 FT 보도가 나왔다. 회사 측 발표는 확인되지 않았다."
+  companies: ["Chevron", "Blackstone", "Beacon Offshore Energy"]
+  sources:
+    - {name: "Financial Times (제목 기준)", url: "https://www.ft.com/content/92e1c14a-f836-40b0-8d9e-0ed1c1d2fea9", credibility: 중간}
+    - {name: "GuruFocus", url: "https://www.gurufocus.com/news/9204408/chevron-cvx-nears-5-billion-acquisition-of-beacon-offshore-energy", credibility: 낮음}
+  why_watch: "사실이면 대형 석유사가 PE 보유 해상 생산 자산을 사들이는 거래로, 올해 Blackstone이 검토하던 매각이 성사되는 셈이다."
+  status: 미확인
+  status_note: ""
+  deal: null
 - id: 2026-11-17-brookfield-kkr-eyewa
   first_seen: 2026-11-17
   last_seen: 2026-11-17
@@ -56,12 +81,15 @@
   deal: 2026-11-12-busan-ep-nexflex
 - id: 2026-11-12-anthropic-ipo-range-raise
   first_seen: 2026-11-12
-  last_seen: 2026-11-12
+  last_seen: 2026-11-18
   title: "Anthropic, IPO 공모가 희망 범위 상향 검토설"
   claim: "수요가 강해 Anthropic이 공모가 희망 범위(70~78달러)를 올리는 방안을 검토 중이라는 FT 보도가 나왔고, 확정된 변경 신고는 확인되지 않았다."
   companies: ["Anthropic"]
   sources:
     - {name: "연합뉴스 (FT 인용)", url: "https://www.yna.co.kr/view/AKR20261111059600009", credibility: 중간}
+    - {name: "CNBC (소식통 인용)", url: "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html", credibility: 중간}
+    - {name: "Bloomberg (Yahoo Finance 영상, 소식통 인용)", url: "https://finance.yahoo.com/video/anthropic-said-guide-ipo-price-142915559.html", credibility: 중간}
+    - {name: "WSJ (제목 기준)", url: "https://www.wsj.com/finance/anthropic-plans-to-raise-ipo-price-after-strong-demand-1a6b0af1", credibility: 중간}
   why_watch: "사실이면 공모 규모와 상장 기업가치가 희망가 상단 기준(약 1조 달러)보다 커진다."
   status: 미확인
   status_note: ""

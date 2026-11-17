@@ -779,6 +779,45 @@
   related: [IPO (기업공개)]
   memo: ""
 
+- id: drag-along
+  term: 동반매도청구권 (드래그얼롱)
+  en: Drag-along Right
+  category: 딜 구조
+  match: [동반매도청구권, 드래그얼롱, Drag-along]
+  aliases: [drag-along]
+  short: 대주주가 회사를 팔 때 소수 주주에게도 같은 조건으로 지분을 함께 팔라고 요구할 수 있는 권리. 사는 쪽이 100%를 한 번에 가져갈 수 있게 해 준다.
+  more: 사모펀드가 투자할 때 주주 간 계약에 흔히 넣는다. 소수 주주가 반대해도 매각을 밀어붙일 수 있어 엑시트가 쉬워지지만, 가격이나 절차를 두고 분쟁이 생기기도 한다.
+  example: MBK파트너스는 2018년 주주 간 계약의 이 권리를 근거로 골프존홀딩스 지분까지 묶어 골프존카운티 100%를 더시에나 컨소시엄에 팔기로 했다.
+  deal: 2026-10-28-the-ciena-golfzon-county
+  related: [공개매수]
+  memo: ""
+
+- id: book-building
+  term: 수요예측
+  en: Book Building
+  category: 자금 조달
+  match: [수요예측, Book Building, 북빌딩]
+  aliases: []
+  short: 공모가를 정하기 전에 기관투자자들에게 어느 가격에 몇 주를 사고 싶은지 받아 보는 절차. 결과를 보고 최종 공모가를 정한다.
+  more: 수요가 많으면 희망 범위 위쪽이나 그 이상에서, 적으면 아래쪽에서 가격이 정해진다. 원하는 가격을 받기 어렵다고 보면 회사가 상장을 미루거나 철회하기도 한다.
+  example: SFC는 2026년 11월 수요예측을 마친 뒤 가치를 제대로 평가받기 어렵다며 코스피 공모를 철회했다.
+  deal: 2026-11-17-sfc-ipo
+  related: [IPO (기업공개)]
+  memo: ""
+
+- id: golden-power
+  term: 골든파워
+  en: Golden Power
+  category: 공시·규제
+  match: [골든파워, Golden Power]
+  aliases: [golden power]
+  short: 이탈리아 정부가 방산·통신·에너지 같은 전략산업 회사의 인수를 심사해 막거나 조건을 붙일 수 있는 권한.
+  more: 외국 기업이 이런 회사를 사려면 정부 승인을 받아야 한다. 그래서 인수자는 현지 투자나 고용 유지 같은 약속을 함께 내놓는 경우가 많다.
+  example: ICEYE가 Avio 공개매수를 내면서 이탈리아 투자 계획을 함께 밝혔고, 골든파워 심사가 변수로 거론됐다.
+  deal: 2026-11-17-iceye-avio
+  related: [공개매수]
+  memo: ""
+
 # ---------------- 거시경제
 - id: policy-rate
   term: 기준금리
