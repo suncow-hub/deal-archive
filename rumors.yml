@@ -4,6 +4,30 @@
 # - status: 미확인 / 사실로 확인 / 부인 / 소멸
 #   (사실로 확인되면 deal 에 딜 노트 id, 30일간 새 소식이 없으면 소멸)
 # - credibility: 낮음 / 중간  (공신력 높은 출처로 확인되면 소문이 아니라 딜 노트로 간다)
+- id: 2026-11-19-hybe-keyholder-acquisition
+  first_seen: 2026-11-19
+  last_seen: 2026-11-19
+  title: "하이브재팬, 일본 엔터사 키홀더 인수설"
+  claim: "하이브재팬이 노기자카46·SKE48 관련 IP를 가진 일본 엔터사 키홀더를 인수한다는 인베스트조선 보도가 나왔으나, 회사 발표나 다른 매체 확인은 찾지 못했고 금액과 지분율도 확인되지 않았다."
+  companies: ["하이브", "키홀더"]
+  sources:
+    - {name: "인베스트조선 (제목 기준)", url: "https://www.investchosun.com/site/data/html_dir/2026/11/18/2026111880183.html", credibility: 중간}
+  why_watch: "사실이면 한국 엔터 대기업이 일본 아이돌 IP를 인수로 확보하는 크로스보더 사례가 된다."
+  status: 미확인
+  status_note: ""
+  deal: null
+- id: 2026-11-19-shinhan-bank-cardif-life-stake
+  first_seen: 2026-11-19
+  last_seen: 2026-11-19
+  title: "신한은행, 카디프생명 지분 15% 한투에 매각 논의설"
+  claim: "신한은행이 카디프생명 지분 15%를 두고 한투와 매각을 논의하고 있다는 매일경제 단독 보도가 나왔다. 기사 제목 기준이며 가격과 협상 단계, 회사 입장은 확인되지 않았다."
+  companies: ["신한은행", "카디프생명", "한국투자금융지주"]
+  sources:
+    - {name: "매일경제 (제목 기준)", url: "https://www.mk.co.kr/news/economy/12212172", credibility: 중간}
+  why_watch: "사실이면 KDB생명 협상 결렬이 보도된 시점에 한투의 보험업 진출 경로가 다른 형태로 이어지는 셈이다."
+  status: 미확인
+  status_note: ""
+  deal: null
 - id: 2026-11-18-tpg-bill-holdings-take-private
   first_seen: 2026-11-18
   last_seen: 2026-11-18

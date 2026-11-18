@@ -2454,3 +2454,91 @@ LG화학:
     edge: "IPO 주관 실적 상위권"
     owner: "비상장. 한국투자금융지주 100% 자회사"
     as_of: "2026-11-18"
+AES:
+  type: 기업
+  country: 미국
+  aliases: [AES Corp, AES Corporation]
+  ticker: "NYSE:AES"
+  profile:
+    about: "미국의 전력·에너지 기업."
+    business: "발전, 전력 공급, 재생에너지 개발"
+    edge: "발전과 전력 공급, 재생에너지를 함께 운영"
+    owner: "뉴욕증권거래소 상장사. GIP·EQT 컨소시엄이 비상장화하는 인수가 종결 전 (2026-12-02 종결 예정 보도)"
+    points:
+      - "종결되면 상장 폐지 후 비상장사가 된다"
+    as_of: "2026-11-19"
+CalPERS:
+  type: PE·VC
+  country: 미국
+  aliases: [California Public Employees' Retirement System, 캘리포니아 공무원연금]
+  profile:
+    about: "미국 캘리포니아주 공무원의 연금을 운용하는 공적 연금기금."
+    business: "주식, 채권, 사모투자, 부동산, 인프라에 투자"
+    edge: "미국 최대급 공적 연금기금 중 하나"
+    owner: "캘리포니아주 공적 연금기금"
+    as_of: "2026-11-19"
+Global Infrastructure Partners:
+  type: PE·VC
+  country: 미국
+  aliases: [GIP]
+  profile:
+    about: "공항, 에너지, 수도 같은 인프라에 투자하는 운용사."
+    business: "인프라 자산 인수와 운용"
+    edge: "대형 인프라 자산 투자 경험"
+    owner: "BlackRock 계열 (2024년 인수)"
+    as_of: "2026-11-19"
+Qatar Investment Authority:
+  type: 정부·기관
+  country: 중동
+  aliases: [QIA, 카타르투자청]
+  profile:
+    about: "카타르 정부의 국부펀드."
+    business: "해외 주식, 부동산, 인프라, 사모투자 투자"
+    edge: "대규모 국부 자금으로 해외 자산에 직접 투자"
+    owner: "카타르 국가 (국부펀드)"
+    as_of: "2026-11-19"
+Skadden, Arps, Slate, Meagher & Flom:
+  type: 법률 자문사
+  country: 미국
+  aliases: [Skadden, 스카덴]
+  profile:
+    about: "미국 뉴욕에 본사를 둔 대형 국제 로펌."
+    business: "인수합병, 기업 소송, 규제 자문"
+    edge: "대형 인수합병 딜의 법률 자문 경험"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-19"
+LG생활건강:
+  type: 기업
+  country: 한국
+  aliases: [LG H&H, LG Household & Health Care]
+  krx: "051900"
+  profile:
+    about: "화장품, 생활용품, 음료를 만드는 한국 기업."
+    business: "화장품, 생활용품, 음료"
+    edge: "화장품 브랜드와 생활용품·음료 포트폴리오"
+    owner: "유가증권시장 상장사. LG그룹 계열"
+    points:
+      - "음료 자회사 해태htb 매각을 추진 중 (보도 기준)"
+    as_of: "2026-11-19"
+보라티알:
+  type: 기업
+  country: 한국
+  profile:
+    about: "메가커피 관계사로 보도된 기업."
+    business: "확인되지 않음"
+    edge: "확인되지 않음"
+    points:
+      - "해태htb 인수 우선협상대상자로 선정됐다는 보도 (2026-11-18, 본계약 전)"
+    as_of: "2026-11-19"
+해태htb:
+  type: 기업
+  country: 한국
+  aliases: [해태HTB, 해태음료]
+  profile:
+    about: "음료를 만드는 한국 기업."
+    business: "음료 제조·판매"
+    edge: "확인되지 않음"
+    owner: "LG생활건강 (보도 기준)"
+    points:
+      - "LG생활건강이 매각을 추진, 보라티알이 우선협상대상자로 선정됐다는 보도 (본계약 전)"
+    as_of: "2026-11-19"

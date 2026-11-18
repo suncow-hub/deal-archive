@@ -838,3 +838,16 @@
   short: 미국 사람들이 실제로 쓰는 돈을 기준으로 잰 물가 지표. 미국 연준이 금리를 정할 때 가장 중요하게 보는 물가다.
   related: [기준금리]
   memo: ""
+
+- id: shareholder-allotment-offering
+  term: 주주배정 유상증자
+  en: Rights Issue (Shareholder Allotment)
+  category: 자금 조달
+  match: [주주배정 유상증자, 주주배정]
+  aliases: []
+  short: 새 주식을 기존 주주들에게 보유 지분 비율대로 먼저 살 기회를 주는 유상증자. 주주가 사지 않으면 그만큼은 다른 곳에 팔리거나 발행되지 않는다.
+  more: 외부 투자자에게 새 주식을 파는 제3자배정과 달리 기존 주주 구성이 크게 바뀌지 않는다. 모회사가 100% 자회사에 하면 모회사가 신주를 전부 받는 형태다.
+  example: 한국투자증권이 6,500억 원 규모 주주배정 유상증자를 결정했고 모회사 한국투자금융지주가 신주를 취득한다는 보도가 나왔다.
+  deal: 2026-11-18-korea-investment-holdings-kis-rights-offering
+  related: [유상증자, 제3자배정 유상증자]
+  memo: ""
