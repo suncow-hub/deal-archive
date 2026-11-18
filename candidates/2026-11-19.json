@@ -1,0 +1,747 @@
+{
+  "meta": {
+    "run_at": "2026-11-19T02:12:20.318313+09:00",
+    "window_start": "2026-11-17T20:12:20.318313+09:00",
+    "sources": {
+      "환율": "1일 추가 (최신 2026-11-18)",
+      "OpenDART 상세": "0건 성공, 1건 실패",
+      "OpenDART": "6건",
+      "WSJ Markets": "2/61",
+      "WSJ U.S. Business": "3/85",
+      "PR Newswire M&A": "14/20",
+      "한경 증권": "3/50",
+      "인베스트조선": "16/50",
+      "연합뉴스 마켓+": "30/120",
+      "매일경제 증권": "16/50",
+      "조선비즈": "2/100",
+      "FT M&A": "3/25",
+      "CNBC Business": "0/30",
+      "WSJ World News": "12/71",
+      "WSJ Economy": "5/36",
+      "한경 경제": "5/50",
+      "한경 국제": "2/50"
+    },
+    "gemini_tries": 37,
+    "gemini_model": "gemini-3.5-flash, gemini-3.6-flash",
+    "gemini": "일부 성공 (64/104건 채점, 나머지는 키워드 점수). 오류: ClientError, ServerError",
+    "counts": {
+      "deal": 40,
+      "macro": 12,
+      "dropped": 52
+    }
+  },
+  "items": [
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "‘갈아만든 배’ 해태htb, 메가커피 오너가 품는다",
+      "link": "https://www.mk.co.kr/news/stock/12212377",
+      "published": "2026-11-18T14:22:28+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "해태htb 인수 우선협상대상자 선정 관련 주요 M&A 뉴스."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "[단독] 신한은행, 한투와 카디프생명 지분 15% 매각 논의",
+      "link": "https://www.mk.co.kr/news/economy/12212172",
+      "published": "2026-11-18T10:35:20+09:00",
+      "keywords": [
+        "인수",
+        "매각",
+        "지분"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "국내 금융지주 간 카디프생명 지분 매각 단독 M&A 기사."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "AES Receives Final Regulatory Approval for Acquisition by Consortium Led by Global Infrastructure Partners and EQT; Closing Expected December 2, 2026",
+      "link": "https://www.prnewswire.com/news-releases/aes-receives-final-regulatory-approval-for-acquisition-by-consortium-led-by-global-infrastructure-partners-and-eqt-closing-expected-december-2-2026-302942908.html",
+      "published": "2026-11-18T07:15:00+09:00",
+      "keywords": [
+        "acquisition"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "GIP와 EQT 컨소시엄의 AES 인수 승인."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "메가커피 관계사 보라티알, 해태htb 인수 우선협상대상자 선정",
+      "link": "https://www.yna.co.kr/view/AKR20261118136800030",
+      "published": "2026-11-18T16:14:01+09:00",
+      "keywords": [
+        "인수",
+        "우선협상대상자"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "해태htb 인수를 위한 우선협상대상자 선정"
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "샘표·샘표식품, 합병 앞두고 주주간담회…매수청구권 등 설명",
+      "link": "https://www.yna.co.kr/view/AKR20261118063700030",
+      "published": "2026-11-18T10:19:18+09:00",
+      "keywords": [
+        "합병"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "국내 상장사 간 합병 관련 주주 절차 보도로 주요 딜 흐름에 속함."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "아마존·구글, 앤트로픽 IPO 이후 지분율 28% 달해",
+      "link": "https://www.yna.co.kr/view/AKR20261118052100009",
+      "published": "2026-11-18T09:46:51+09:00",
+      "keywords": [
+        "IPO",
+        "지분",
+        "IPO"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "글로벌 빅테크의 대형 AI 스타트업 지분 보유 및 IPO 관련 딜."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "한국금융지주 \"한국투자증권 주식 6천500억원에 추가취득\"",
+      "link": "https://www.yna.co.kr/view/AKR20261118155600008",
+      "published": "2026-11-18T16:46:20+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "증권 자회사 대상 대규모 유상증자 출자"
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "‘떡픈런 찹살떡’ 한정선 투자유치 나서…기업가치 3000억 육박",
+      "link": "https://www.mk.co.kr/news/stock/12212824",
+      "published": "2026-11-18T17:56:32+09:00",
+      "keywords": [
+        "투자유치"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "유명 소비재 기업의 3000억 규모 투자 유치 추진 소식."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "상장 문턱 넘고도 울상…기업공개 기업들, 몸값 낮추거나 상장 포기",
+      "link": "https://www.mk.co.kr/news/stock/12212242",
+      "published": "2026-11-18T13:10:45+09:00",
+      "keywords": [
+        "IPO",
+        "IPO",
+        "상장"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "국내 IPO 시장의 철회 및 몸값 하향 조정 트렌드 보도."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(에이플러스에셋) [첨부정정]주요사항보고서(주식교환ㆍ이전결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118000079",
+      "published": "2026-11-18T00:00:00+09:00",
+      "keywords": [
+        "주식교환ㆍ이전결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "국내 상장사의 주식교환·이전 결정 공시."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Kress Takes Point on Nvidia Results as Chip Maker Beats Expectations",
+      "link": "https://www.wsj.com/cfo-journal/kress-takes-point-on-nvidia-results-as-chip-maker-beats-expectations-e5c4ed1c?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-18T21:29:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "엔비디아 실적 발표 및 앤스로픽 IPO 관련 뉴스."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "U.S. Battery Supply-Chain Shift Creates Opportunities for Non-China Suppliers; The GrowHub's Proposed EnChem Merger Positions TGHL for Growth",
+      "link": "https://www.prnewswire.com/news-releases/us-battery-supply-chain-shift-creates-opportunities-for-non-china-suppliers-the-growhubs-proposed-enchem-merger-positions-tghl-for-growth-302943957.html",
+      "published": "2026-11-18T23:40:00+09:00",
+      "keywords": [
+        "merger"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "미국 배터리 공급망 개편과 EnChem 합병 건."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "NOVOSENSE Plans AirTouch Acquisition to Round Out Its RF Portfolio and Expand in ADAS and Smart Terminals",
+      "link": "https://www.prnewswire.com/news-releases/novosense-plans-airtouch-acquisition-to-round-out-its-rf-portfolio-and-expand-in-adas-and-smart-terminals-302943492.html",
+      "published": "2026-11-18T17:00:00+09:00",
+      "keywords": [
+        "acquire",
+        "acquisition",
+        "stake"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "중국 반도체 기업 NOVOSENSE의 지분 인수."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Workday Announces Intent to Acquire Honeydew, a Semantic Layer for AI and Business Intelligence",
+      "link": "https://www.prnewswire.com/news-releases/workday-announces-intent-to-acquire-honeydew-a-semantic-layer-for-ai-and-business-intelligence-302943208.html",
+      "published": "2026-11-18T16:00:00+09:00",
+      "keywords": [
+        "acquire"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "Workday의 AI 및 데이터 분야 스타트업 인수."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "한국투자증권, 6천500억원 주주배정 유상증자 결정",
+      "link": "https://www.yna.co.kr/view/AKR20261118148500008",
+      "published": "2026-11-18T16:23:39+09:00",
+      "keywords": [
+        "유상증자",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "5번 기사와 중복되는 자회사 유상증자 뉴스"
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(벡트로보틱스) [기재정정]최대주주변경을수반하는주식양수도계약체결",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118900573",
+      "published": "2026-11-18T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "국내 상장사의 최대주주 변경 수반 주식양수도 공시."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(화일약품) [기재정정]최대주주변경을수반하는주식양수도계약체결",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118900309",
+      "published": "2026-11-18T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "국내 제약사 화일약품의 최대주주 변경 공시."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "썸에이지, 115억원 유상증자…예주산업 등에 제3자배정",
+      "link": "https://www.yna.co.kr/view/AKR20261118155100008",
+      "published": "2026-11-18T16:45:19+09:00",
+      "keywords": [
+        "유상증자",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "115억원 규모 제3자배정 유상증자"
+    },
+    {
+      "source": "한경 경제",
+      "kind": "deal",
+      "title": "코오롱모빌리티, 중고차 경매·수출 나서",
+      "link": "https://www.hankyung.com/article/2026111855551",
+      "published": "2026-11-18T18:23:45+09:00",
+      "keywords": [
+        "수출"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "코오롱모빌리티의 신사업 확장 관련 기업 동향임."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "하이브재팬, 日엔터사 키홀더 인수…노기자카46·SKE48 IP 확보",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/18/2026111880183.html",
+      "published": "2026-11-18T16:26:41+09:00",
+      "keywords": [
+        "인수",
+        "지분",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "'메가MGC커피' 보라티알, 해태htb 인수 우선협상대상자 선정",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/18/2026111880135.html",
+      "published": "2026-11-18T15:03:50+09:00",
+      "keywords": [
+        "인수",
+        "지분",
+        "사모펀드",
+        "PEF",
+        "우선협상대상자"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "26년 만에 상장 '단 1건'...코스피 IPO 이례적 한파",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/18/2026111880108.html",
+      "published": "2026-11-18T14:36:11+09:00",
+      "keywords": [
+        "IPO",
+        "IPO",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "산은-한투, KDB생명 매각 협상 끝내 결렬",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/18/2026111880011.html",
+      "published": "2026-11-18T08:51:32+09:00",
+      "keywords": [
+        "인수",
+        "매각",
+        "우선협상대상자"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "예심 두 달째 무신사…'10조 몸값'엔 여전한 의문부호",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/17/2026111780205.html",
+      "published": "2026-11-18T07:00:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "한투의 '무리수'로 끝난 KDB생명 인수전…후순위채 투자 요구에 '제동'",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/18/2026111880080.html",
+      "published": "2026-11-18T11:25:07+09:00",
+      "keywords": [
+        "인수",
+        "매각"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "IMM인베스트먼트, 정주용 전 한화 전략실 전무 영입",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/18/2026111880079.html",
+      "published": "2026-11-18T11:23:43+09:00",
+      "keywords": [
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "앤트로픽 지분 3.5조에 AIDC까지…SKT, 美 AI 사이클에 '이중 리스크'",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/17/2026111780130.html",
+      "published": "2026-11-18T07:00:00+09:00",
+      "keywords": [
+        "지분",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "소프트캠프 \"넥스트페이즈 주식 20억원어치 취득…지분율 100%\"",
+      "link": "https://www.yna.co.kr/view/AKR20261118170200008",
+      "published": "2026-11-18T18:20:16+09:00",
+      "keywords": [
+        "지분",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "조선비즈",
+      "kind": "deal",
+      "title": "젠슨 황·저커버그 운명 가른 ‘차등 의결권’",
+      "link": "https://biz.chosun.com/stock/stock_general/2026/11/19/HE2WGNZVHA2WMODBG5QTGY3FMM/",
+      "published": "2026-11-19T00:35:00+09:00",
+      "keywords": [
+        "합병",
+        "지분"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "반도체가 다했다…코스피 상장사 영업익 10% 증가",
+      "link": "https://www.hankyung.com/article/2026111855111",
+      "published": "2026-11-18T18:23:41+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "상장사 배당 빗장 풀린다…年4회 아닌 月배당도 가능",
+      "link": "https://www.hankyung.com/article/2026111855931",
+      "published": "2026-11-18T18:19:16+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "[단독] 상장사 분기배당 빗장 푼다…여야, '수시배당제' 도입 합의",
+      "link": "https://www.hankyung.com/article/202611184176i",
+      "published": "2026-11-18T14:19:38+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "한투지주, 유상증자로 한국투자증권에 6500억원 추가 수혈",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/18/2026111880198.html",
+      "published": "2026-11-18T17:05:17+09:00",
+      "keywords": [
+        "유상증자"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "'단종레' 불똥 튄 액티브 ETF…지수 따라도 상폐, 제도 개선도 제동",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/17/2026111780206.html",
+      "published": "2026-11-18T07:00:00+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "통신 라이벌 데이터센터 사업, 문전성시 SK vs. 투자매력 모호한 KT",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/17/2026111780203.html",
+      "published": "2026-11-18T07:00:00+09:00",
+      "keywords": [
+        "투자유치"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "전인장 삼양식품 前회장, 주식 470억 매각 추진…벌금 납부 목적",
+      "link": "https://www.yna.co.kr/view/AKR20261118176400030",
+      "published": "2026-11-18T18:48:57+09:00",
+      "keywords": [
+        "매각"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "하나에어로다이내믹스, 코스닥 신규 상장…오는 20일 거래 개시",
+      "link": "https://www.yna.co.kr/view/AKR20261118173400008",
+      "published": "2026-11-18T18:21:44+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "더핑크퐁컴퍼니, 애프터마켓서 10%대 급등",
+      "link": "https://www.yna.co.kr/view/AKR20261118163400008",
+      "published": "2026-11-18T17:19:26+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "롯데관광개발, 애프터마켓서 10%대 급등",
+      "link": "https://www.yna.co.kr/view/AKR20261118163000008",
+      "published": "2026-11-18T17:19:14+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "에이유브랜즈, 애프터마켓서 10%대 급등",
+      "link": "https://www.yna.co.kr/view/AKR20261118160900008",
+      "published": "2026-11-18T17:06:28+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "13조달러로 불어난 헤지펀드…AI 쏠림이 국채시장까지 흔드나 [김주완의 글로벌머니 X파일]",
+      "link": "https://www.hankyung.com/article/202611185022i",
+      "published": "2026-11-18T17:28:28+09:00",
+      "keywords": [
+        "국채"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "글로벌 헤지펀드 동향 및 국채시장 변동성 영향 분석임."
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "美 Fed, AI가 경제에 미칠 충격 분석 착수…고용·증시 영향 시나리오 검토",
+      "link": "https://www.hankyung.com/article/202611183961i",
+      "published": "2026-11-18T10:22:38+09:00",
+      "keywords": [
+        "Fed"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "미 연준의 AI 관련 경제 충격 분석 및 시나리오 검토임."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Indonesia Resumes Rate Hikes to Aid Rupiah",
+      "link": "https://www.wsj.com/economy/central-banking/indonesia-resumes-rate-increases-as-rupiah-hits-record-low-d6ef3d12?mod=rss_socialeconomyfeed",
+      "published": "2026-11-18T20:27:00+09:00",
+      "keywords": [
+        "interest rate",
+        "inflation",
+        "central bank"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Canada and China Draw Closer with Expanded Trade Pact",
+      "link": "https://www.wsj.com/world/canada-and-china-draw-closer-with-expanded-trade-pact-b4566a38?mod=rss_worldnews",
+      "published": "2026-11-18T06:08:00+09:00",
+      "keywords": [
+        "China",
+        "trade"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "BOE’s Bailey Sees Length of Iran War as Key to Rate Path",
+      "link": "https://www.wsj.com/pro/central-banking/boes-bailey-sees-length-of-iran-war-as-key-to-rate-path-09d96fce?mod=rss_worldnews",
+      "published": "2026-11-19T00:45:00+09:00",
+      "keywords": [
+        "interest rate",
+        "war"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "U.K. Inflation Rises as Energy Costs Keep Pressure on Bank of England",
+      "link": "https://www.wsj.com/economy/central-banking/u-k-inflation-rises-as-energy-costs-keep-pressure-on-bank-of-england-68f3edbb?mod=rss_worldnews",
+      "published": "2026-11-18T18:58:00+09:00",
+      "keywords": [
+        "inflation",
+        "war"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Cost Pressures Already in Pipeline to Fuel Higher Inflation",
+      "link": "https://www.wsj.com/economy/global/cost-pressures-already-in-pipeline-to-fuel-higher-inflation-d2062d65?mod=rss_socialeconomyfeed",
+      "published": "2026-11-18T19:43:00+09:00",
+      "keywords": [
+        "inflation",
+        "war"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "U.S. Enters Unprecedented Three-Way Nuclear Rivalry With China and Russia",
+      "link": "https://www.wsj.com/world/u-s-enters-unprecedented-three-way-nuclear-rivalry-with-china-and-russia-2f2385c3?mod=rss_worldnews",
+      "published": "2026-11-19T00:57:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "In Choosing Shenzhen for Trump-Putin Summit, Xi Shows Off His Tech Ambitions",
+      "link": "https://www.wsj.com/world/china/in-choosing-shenzhen-for-trump-putin-summit-xi-shows-off-his-tech-ambitions-8bafa9a7?mod=rss_worldnews",
+      "published": "2026-11-18T21:07:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Opinion | Chips, China and Trump",
+      "link": "https://www.wsj.com/opinion/chips-china-and-trump-652e30dc?mod=rss_worldnews",
+      "published": "2026-11-18T06:39:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Opinion | Europe Games Out a Post-Trump World",
+      "link": "https://www.wsj.com/opinion/europe-games-out-a-post-trump-world-0ae8bb5d?mod=rss_worldnews",
+      "published": "2026-11-18T06:37:00+09:00",
+      "keywords": [
+        "war"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Opinion | The Great AI Chip Heist Is Here",
+      "link": "https://www.wsj.com/opinion/the-great-ai-chip-heist-is-here-df70c466?mod=rss_worldnews",
+      "published": "2026-11-18T06:31:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    }
+  ]
+}
