@@ -851,3 +851,29 @@
   deal: 2026-11-18-korea-investment-holdings-kis-rights-offering
   related: [유상증자, 제3자배정 유상증자]
   memo: ""
+
+- id: capital-reduction-without-consideration
+  term: 무상감자
+  en: Capital Reduction without Consideration
+  category: 자금 조달
+  match: [무상감자]
+  aliases: [액면감액]
+  short: 주주에게 돈을 돌려주지 않고 회사의 자본금 숫자를 줄이는 것. 주식 수를 줄이거나 한 주의 액면가를 낮추는 방식이 있다.
+  more: 줄어든 자본금만큼 장부상 이익(감자차익)이 생겨 쌓인 손실을 메우거나 잉여금으로 돌릴 수 있다. 액면가만 낮추면 주주의 주식 수와 지분율은 그대로다.
+  example: 롯데손해보험이 신한금융 편입을 앞두고 액면가를 10분의 1로 낮추는 무상감자를 결의해 규제상 기본자본을 보강하려 한다.
+  deal: 2026-10-13-shinhan-financial-lotte-insurance
+  related: []
+  memo: ""
+
+- id: k-ics
+  term: K-ICS (지급여력비율)
+  en: Korean Insurance Capital Standard
+  category: 공시·규제
+  match: [K-ICS, 킥스, 지급여력비율]
+  aliases: []
+  short: 보험사가 앞으로 생길 수 있는 손실을 감당할 자본을 얼마나 갖췄는지 보여주는 한국 보험 건전성 기준. 비율이 낮으면 감독당국이 개선을 요구한다.
+  more: 가진 자본(가용자본)을 필요한 자본(요구자본)으로 나눠 구한다. 손실을 바로 메울 수 있는 질 좋은 자본만 따로 본 비율이 기본자본 비율이다.
+  example: 롯데손해보험은 기본자본 비율 규제 시행을 앞두고 무상감자로 기본자본 부족분을 메우려 한다.
+  deal: 2026-10-13-shinhan-financial-lotte-insurance
+  related: [무상감자]
+  memo: ""

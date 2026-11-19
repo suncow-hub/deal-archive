@@ -1,9 +1,9 @@
 ---
-제목: "UniCredit의 Commerzbank 인수, EU 집행위 무조건 승인·미 연준 승인…남은 승인 11월 말 확보 예상"
+제목: "UniCredit의 Commerzbank 인수, 독일 정부와 핵심 조건 합의…본사·상장 유지와 고용 약속"
 상태: "계약 체결"
 신뢰도: "공시 확정"
 발표일: 2026-11-09
-최종 업데이트: 2026-11-17
+최종 업데이트: 2026-11-20
 지역: ["유럽"]
 규모 구간: "비공개"
 규모(원화): "비공개"
@@ -16,7 +16,7 @@
 매도자: []
 재무 자문: []
 법률 자문: []
-출처: ["https://www.unicreditgroup.eu/content/dam/unicreditgroup-eu/documents/en/investors/group-results/2026/3Q26/3Q26_UniCredit_PR_ENG.pdf", "https://www.qatar-tribune.com/article/243483/business/unicredit-nears-majority-of-commerzbank-shares-in-takeover-bid", "https://www.marketscreener.com/news/unicredit-commerzbank-orcel-accelerates-but-berlin-hits-the-brakes-ce7f59dcdd8af521", "https://finance.yahoo.com/economy/policy/articles/eu-approves-unicredits-takeover-commerzbank-143401420.html", "https://mlex.com/mlex/articles/2550281", "https://www.wsj.com/business/deals/unicredits-commerzbank-bid-gets-eu-approval-44a821a6"]
+출처: ["https://www.unicreditgroup.eu/content/dam/unicreditgroup-eu/documents/en/investors/group-results/2026/3Q26/3Q26_UniCredit_PR_ENG.pdf", "https://www.qatar-tribune.com/article/243483/business/unicredit-nears-majority-of-commerzbank-shares-in-takeover-bid", "https://www.marketscreener.com/news/unicredit-commerzbank-orcel-accelerates-but-berlin-hits-the-brakes-ce7f59dcdd8af521", "https://finance.yahoo.com/economy/policy/articles/eu-approves-unicredits-takeover-commerzbank-143401420.html", "https://mlex.com/mlex/articles/2550281", "https://www.wsj.com/business/deals/unicredits-commerzbank-bid-gets-eu-approval-44a821a6", "https://www.handelsblatt.com/finanzen/banken-versicherungen/banken/banken-bund-und-unicredit-einigen-sich-bei-commerzbank-uebernahme/100271077.html", "https://www.ariva.de/news/roundup-3-bund-einigt-sich-mit-unicredit-bei-12213676", "https://www.ft.com/content/0c6bb979-bc3f-4368-86fc-a0306fd52d78"]
 비교: {대가 구성: "주식", 인수자 성격: "전략적", 메모: "교환 공개매수. 정산 후 지분 약 50% 가정(회사 자료). 대가·총액은 확인되지 않음"}
 일정:
   - {날짜: "2026-11", 내용: "남은 규제 승인 확보 예상 (11월 말)"}
@@ -35,7 +35,7 @@
 비공개. 회사는 연결 시점 CET1 비율 13% 이상을 예상했다.
 
 ## 왜 중요한가
-독일 정부가 적대적이라고 반대해 온 국경 간 대형 은행 인수가 지배권 확보 단계에 들어섰다. 유럽 은행권 통합의 시험대다.
+독일 정부가 적대적이라고 반대해 온 국경 간 대형 은행 인수가 지배권 확보 단계에 들어섰고, 2026-11-19 정부와 조건에 합의하면서 정치적 걸림돌도 크게 줄었다. 유럽 은행권 통합의 시험대다.
 
 ## 면접 포인트
 ① 50% 미만 지분으로도 응모와 파생상품을 더해 실질 지배권을 확보하는 단계적 인수 전략을 설명할 수 있다. ② 지배권 확보(연결)와 법적 합병(HVB 결합)이 왜 따로 진행되는지, 규제·정치 리스크와 함께 짚을 수 있다.
@@ -43,6 +43,7 @@
 ## 진행 이력
 - 2026-11-09: 3분기 실적 발표에서 공개매수 정산 후 지분 약 50%로 지배권 확보, 2027년 1분기 새 지배구조 출범 계획을 밝혔다.
 - 2026-11-16: EU 집행위원회가 조건 없이 인수를 승인했고, UniCredit은 미국 연준 승인도 받았다고 밝혔다. 남은 일부 승인은 11월 말까지 받을 것으로 예상했다 (dpa 등 보도).
+- 2026-11-19: 독일 재무장관과 UniCredit CEO가 핵심 조건에 합의했다. Commerzbank는 프랑크푸르트 본사의 상장사로 남고, UniCredit은 독일 내 입지·고용 관련 약속과 함께 독립 감독이사 2명을 추천하며, 정부는 이사 파견 요구를 거뒀다 (Handelsblatt·dpa 보도). 정부 보유 지분(약 13%) 처리는 확인되지 않음.
 
 ## 관련 딜·뉴스
 - [Intesa의 Monte dei Paschi 교환 공개매수, Consob 승인…11월 24일 응모 시작](../2026/2026-10-29-intesa-sanpaolo-monte-dei-paschi.md) — 같은 시기 진행 중인 이탈리아 은행의 교환 공개매수

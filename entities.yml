@@ -736,8 +736,10 @@ Anthropic:
     about: "AI 모델 Claude를 만드는 미국 AI 기업."
     business: "대규모 AI 모델 개발, 기업·개인용 AI 서비스와 API"
     edge: "대형 언어모델 연구 개발 역량과 기업 고객 기반"
-    owner: "비상장 공익법인(PBC). 미국 상장 절차 진행 중"
-    as_of: "2026-11-03"
+    owner: "나스닥 상장사(티커 ANT, 2026-11-19 상장). 공익법인(PBC) 형태"
+    points:
+      - "2026-11 IPO에서 공모가 83달러로 약 810억 달러 조달 (보도 기준)"
+    as_of: "2026-11-20"
 한진칼:
   type: 기업
   country: 한국
@@ -2542,3 +2544,129 @@ LG생활건강:
     points:
       - "LG생활건강이 매각을 추진, 보라티알이 우선협상대상자로 선정됐다는 보도 (본계약 전)"
     as_of: "2026-11-19"
+신한금융지주:
+  type: 기업
+  country: 한국
+  aliases: [신한금융, 신한지주, 신한금융그룹, Shinhan Financial Group]
+  krx: "055550"
+  profile:
+    about: "신한은행 등을 자회사로 둔 한국 금융지주회사."
+    business: "은행, 카드, 증권, 보험, 자산운용"
+    edge: "은행 중심의 넓은 고객 기반과 계열사 네트워크"
+    owner: "유가증권시장 상장사"
+    points:
+      - "2026-10 JKL파트너스와 롯데손해보험 지분 77.04% 인수 계약 (보도 기준)"
+    as_of: "2026-11-20"
+롯데손해보험:
+  type: 기업
+  country: 한국
+  aliases: [롯데손보, Lotte Non-Life Insurance]
+  krx: "000400"
+  profile:
+    about: "자동차·장기·일반보험을 파는 한국 손해보험사."
+    business: "손해보험 (장기보험, 자동차보험, 일반보험)"
+    edge: "확인되지 않음"
+    owner: "유가증권시장 상장사. 최대주주는 JKL파트너스 (신한금융지주에 매각 계약)"
+    points:
+      - "신한금융 편입 전 10대 1 무상감자 결의 (2026-11-19 이사회, 12월 31일 주총)"
+    as_of: "2026-11-20"
+JKL파트너스:
+  type: PE·VC
+  country: 한국
+  aliases: [JKL Partners, JKL]
+  profile:
+    about: "한국 사모펀드 운용사."
+    business: "기업 경영권 인수와 구조 개선 투자"
+    edge: "확인되지 않음"
+    owner: "비상장 운용사"
+    points:
+      - "롯데손해보험 지분 77.04%를 신한금융지주에 6,933억 원에 매각 계약 (보도 기준)"
+    as_of: "2026-11-20"
+신한EZ손해보험:
+  type: 기업
+  country: 한국
+  aliases: [신한EZ손보]
+  profile:
+    about: "신한금융지주 계열 디지털 손해보험사."
+    business: "손해보험"
+    edge: "확인되지 않음"
+    owner: "신한금융지주 자회사"
+    points:
+      - "롯데손해보험 편입 뒤 통합 추진 계획 (보도 기준)"
+    as_of: "2026-11-20"
+Palo Alto Networks:
+  type: 기업
+  country: 미국
+  aliases: [팔로알토 네트웍스, 팔로알토네트웍스, PANW]
+  ticker: "NASDAQ:PANW"
+  profile:
+    about: "미국 사이버보안 기업."
+    business: "네트워크·클라우드 보안, 보안 운영 플랫폼"
+    edge: "방화벽에서 출발한 넓은 보안 제품군과 기업 고객 기반"
+    owner: "나스닥 상장사"
+    points:
+      - "2026-11 Applied Compute를 45억 달러 전액 주식으로 인수 발표"
+    as_of: "2026-11-20"
+Applied Compute:
+  type: 기업
+  country: 미국
+  aliases: []
+  profile:
+    about: "오픈웨이트 AI 모델의 사후 학습·추론 플랫폼을 운영하는 미국 스타트업."
+    business: "기업용 오픈웨이트 AI 모델 사후 학습·추론"
+    edge: "확인되지 않음"
+    owner: "비상장사. Palo Alto Networks가 인수 계약 (종결 전)"
+    as_of: "2026-11-20"
+Partners Group:
+  type: PE·VC
+  country: 유럽
+  aliases: [파트너스그룹, Partners Group Holding]
+  ticker: "SIX:PGHN"
+  profile:
+    about: "스위스에 본사를 둔 글로벌 사모시장 투자회사."
+    business: "사모주식, 인프라, 부동산, 사모대출 투자"
+    edge: "여러 사모시장 자산군을 함께 운용하는 투자 플랫폼"
+    owner: "스위스 증권거래소 상장사"
+    as_of: "2026-11-20"
+Rawlings:
+  type: 기업
+  country: 미국
+  aliases: [Rawlings Sporting Goods, 롤링스]
+  profile:
+    about: "1887년 설립된 미국 야구·소프트볼 장비 업체."
+    business: "글러브, 배트, 공, 보호장비, 의류. 실내 훈련시설 프랜차이즈(D-BAT)"
+    edge: "MLB 공식 경기구·글러브·헬멧 공급 지위와 여러 장비 브랜드"
+    owner: "비상장사. Partners Group이 과반 지분 인수 계약, MLB·기존 주주 지분 유지"
+    as_of: "2026-11-20"
+Major League Baseball:
+  type: 정부·기관
+  country: 미국
+  aliases: [MLB, 메이저리그]
+  profile:
+    about: "미국·캐나다 프로야구 리그."
+    business: "프로야구 리그 운영, 중계권·라이선스"
+    edge: "북미 최상위 프로야구 리그"
+    owner: "소속 구단들이 운영하는 리그 조직"
+    points:
+      - "Rawlings 지분을 보유하며, Partners Group 인수 뒤에도 지분 유지 (회사 발표)"
+    as_of: "2026-11-20"
+O'Melveny & Myers:
+  type: 법률 자문사
+  country: 미국
+  aliases: [O'Melveny, 오멜버니]
+  profile:
+    about: "미국 로펌."
+    business: "M&A, 소송, 금융"
+    edge: "확인되지 않음"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-20"
+Paul, Weiss:
+  type: 법률 자문사
+  country: 미국
+  aliases: ["Paul, Weiss, Rifkind, Wharton & Garrison", Paul Weiss]
+  profile:
+    about: "뉴욕에 본사를 둔 미국 로펌."
+    business: "M&A, 사모펀드, 소송"
+    edge: "확인되지 않음"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-20"

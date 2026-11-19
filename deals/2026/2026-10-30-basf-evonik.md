@@ -1,9 +1,9 @@
 ---
-제목: "Evonik, BASF의 상향 인수 제안(주당 24유로, 111.8억 유로)도 거절"
-상태: "검토·협상"
-신뢰도: "보도 기준"
+제목: "BASF, Evonik 인수 추진 중단…주당 24유로 제안 두 차례 거절당한 뒤 철회"
+상태: "무산"
+신뢰도: "공시 확정"
 발표일: 2026-10-30
-최종 업데이트: 2026-10-31
+최종 업데이트: 2026-11-20
 지역: ["유럽"]
 규모 구간: "5조~20조"
 규모(원화): "약 16.6조 원 (제안가 기준)"
@@ -16,13 +16,13 @@
 매도자: []
 재무 자문: []
 법률 자문: []
-출처: ["https://live.euronext.com/en/financial-news/evonik-rejects-basf-bid-despite-sweetened-125-billion-terms", "https://www.bloomberg.com/news/articles/2026-10-30/evonik-turns-down-offer-to-enter-takeover-talks-with-suitor-basf", "https://www.wsj.com/business/deals/basfs-12-5-billion-takeover-bid-for-evonik-rebuffed-5fe08975"]
-비교: {"지분가치(억원)": 166779, 대가 구성: "비공개", 인수자 성격: "전략적", 메모: "제안가(주당 24유로) 기준, Evonik이 거절"}
+출처: ["https://live.euronext.com/en/financial-news/evonik-rejects-basf-bid-despite-sweetened-125-billion-terms", "https://www.bloomberg.com/news/articles/2026-10-30/evonik-turns-down-offer-to-enter-takeover-talks-with-suitor-basf", "https://www.wsj.com/business/deals/basfs-12-5-billion-takeover-bid-for-evonik-rebuffed-5fe08975", "https://www.boersen-zeitung.de/news/bz-all-rss/unternehmen-branchen/basf-und-evonik-trennen-sich-unverrichteter-dinge", "https://www.basf.com/global/de/media/news-releases/2026/11/p-26-202", "https://www.wsj.com/business/evonik-shares-tumble-after-basf-ends-takeover-efforts-7cae3722"]
+비교: {"지분가치(억원)": 166779, 대가 구성: "비공개", 인수자 성격: "전략적", 메모: "제안가(주당 24유로) 기준, Evonik이 거절. 2026-11-19 BASF가 인수 추진 중단"}
 일정: []
 정정: []
 ---
 ## 한 줄 요약
-[[Evonik]] 이사회가 [[BASF]]의 주당 24유로(총 약 111.8억 유로) 상향 인수 제안에도 정식 협상에 들어가지 않겠다는 입장을 냈다.
+[[BASF]]가 [[Evonik]] 이사회가 실질 협상을 거부하자 2026-11-19 인수 추진을 중단했다. 마지막 제안은 현금 주당 24유로(총 약 111.8억 유로)였다.
 
 ## 딜 구조
 <!-- 인수 지분, 인수 방식, 자금 조달 방법 -->
@@ -34,15 +34,17 @@ BASF는 9월 주당 22.15유로 제안이 거절된 뒤 주당 24유로로 값�
 
 ## 왜 중요한가
 <!-- 1~2줄 -->
-독일 대형 화학사끼리의 통합 시도로, 수요 부진과 원가 부담에 놓인 유럽 화학업계의 구조조정 압력을 보여준다. Evonik은 독립 유지를 원하고 BASF에 인수 논리 설명을 요구한 상태다.
+독일 대형 화학사끼리의 통합 시도로, 수요 부진과 원가 부담에 놓인 유럽 화학업계의 구조조정 압력을 보여준다. Evonik은 독립 유지를 고수했고, 결국 BASF가 가격을 더 올리지 않고 물러났다.
 
 ## 면접 포인트
 <!-- 이 딜로 할 수 있는 말 1~2개 -->
-① 비우호적 접근에서 대상 이사회가 가격뿐 아니라 산업적 논리를 문제 삼는 이유와, 인수자가 다음에 쓸 수 있는 카드(가격 재상향, 주주 직접 접촉)를 말할 수 있다. ② BASF가 고용·사업장 협약 유지를 약속한 점을 들어 독일 M&A에서 이해관계자 설득이 갖는 무게를 논할 수 있다.
+① 비우호적 접근에서 대상 이사회가 가격뿐 아니라 산업적 논리를 문제 삼는 이유와, 인수자가 다음에 쓸 수 있는 카드(가격 재상향, 주주 직접 접촉)를 말할 수 있다. ② BASF가 고용·사업장 협약 유지를 약속한 점을 들어 독일 M&A에서 이해관계자 설득이 갖는 무게를 논할 수 있다. ③ 인수자가 "더 비싸게 사는 것은 주주 이익에 맞지 않는다"며 물러나는 것도 자본 배분 규율의 신호라는 점(가격 상한의 의미)을 말할 수 있다.
 
 ## 진행 이력
 <!-- 업데이트될 때마다 맨 아래에 한 줄씩 추가. 기존 줄은 수정하지 않음 -->
 - 2026-10-30: Evonik이 BASF의 상향 제안(주당 24유로)으로도 정식 협상에 들어가지 않겠다고 밝혔다. 9월 첫 제안(주당 22.15유로)은 이미 거절됐다(2026-09-28 보도).
+- 2026-11-07: 양사 이사회가 자문사와 함께 면담했으나 후속 협의 없이 끝났다 (Börsen-Zeitung 보도).
+- 2026-11-19: BASF가 Evonik 이사회의 실질 협상 거부와 독자 사업 전망을 이유로 인수 추진 중단을 발표했다. 소폭 추가 인상 의향도 있었다고 밝혔다.
 
 ## 관련 딜·뉴스
 - [Monte dei Paschi 주주, Intesa 인수 제안에 맞선 방어안 부결](../2026/2026-10-29-intesa-sanpaolo-monte-dei-paschi.md) — 같은 주 유럽에서 진행 중인 비우호적 인수 제안
