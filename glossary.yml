@@ -46,6 +46,32 @@
   related: [지분가치 (Equity Value), 인수 프리미엄]
   memo: ""
 
+- id: fully-diluted
+  term: 완전희석 (기준)
+  en: Fully Diluted
+  category: 밸류에이션
+  match: [완전희석, fully diluted, Fully Diluted]
+  aliases: [완전 희석, 희석 기준]
+  short: 지금 있는 주식에 더해, 스톡옵션·전환사채처럼 나중에 주식으로 바뀔 수 있는 것까지 모두 주식이 됐다고 치고 세는 방식.
+  more: 주식 수가 늘어나는 만큼 1주의 몫은 줄어든다. 그래서 같은 주가라도 완전희석 기준 지분가치가 기본 주식 수 기준보다 크게 나오고, 지분율은 작게 나온다. 인수 가격이나 상장 기업가치를 비교할 때 어느 기준인지 꼭 확인해야 한다.
+  example: TPG·Corpay는 BILL을 완전희석 기준 지분가치 약 60억 달러에 사기로 했다. Anthropic 상장 때도 기본 주식 수 기준과 완전희석 기준 기업가치가 따로 보도됐다.
+  deal: 2026-11-19-tpg-bill-holdings
+  related: [지분가치 (Equity Value), 시가총액]
+  memo: ""
+
+- id: vwap
+  term: 거래량가중평균가 (VWAP)
+  en: Volume-Weighted Average Price
+  category: 밸류에이션
+  match: [거래량가중평균가, 거래량가중평균, VWAP]
+  aliases: [가중평균주가]
+  short: 일정 기간 동안 거래된 주식의 평균 가격을, 많이 거래된 날의 가격에 더 무게를 둬서 구한 값.
+  more: 하루 이틀의 급등락에 덜 흔들리기 때문에 인수 프리미엄을 계산하는 기준 주가로 자주 쓴다. 인수설이 보도돼 주가가 이미 오른 경우에는 보도 전 기간의 평균가를 기준으로 삼아 프리미엄을 밝히기도 한다.
+  example: BILL 인수가 63.25달러는 협상 보도 직전까지 60일 거래량가중평균가보다 31% 높다.
+  deal: 2026-11-19-tpg-bill-holdings
+  related: [인수 프리미엄, 시가총액]
+  memo: ""
+
 - id: net-debt
   term: 순부채
   en: Net Debt

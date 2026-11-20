@@ -1,9 +1,9 @@
 ---
-제목: "Anthropic, 공모가 83달러로 약 810억 달러 조달하며 나스닥 상장…첫 거래 111.5달러로 시작"
+제목: "Anthropic, 공모가 83달러로 약 810억 달러 조달하며 나스닥 상장…첫날 97.17달러로 마감(공모가 대비 약 17%↑)"
 상태: "거래 완료"
 신뢰도: "보도 기준"
 발표일: 2026-11-02
-최종 업데이트: 2026-11-20
+최종 업데이트: 2026-11-21
 지역: ["미국", "일본"]
 규모 구간: "20조 이상"
 규모(원화): "약 108.37조 원 (확정 공모가·구주 포함, 초과배정 제외)"
@@ -16,8 +16,8 @@
 매도자: []
 재무 자문: []
 법률 자문: []
-출처: ["https://www.anthropic.com/news/s1-sec", "https://www.investing.com/news/stock-market-news/anthropic-plans-to-sell-35-billion-of-shares-to-japan-investors-in-ipo-filing-shows-4989963", "https://www.yna.co.kr/view/AKR20261102171900073", "https://www.wsj.com/finance/stocks/anthropic-investors-push-for-cautious-valuation-closer-to-1-5-trillion-2f2df9cf", "https://www.yna.co.kr/view/AKR20261103038300009", "https://www.yna.co.kr/view/AKR20261109017200009", "https://news.bgov.com/banking-law/anthropic-said-to-target-mega-ipo-before-thanksgiving-holiday", "https://finance.yahoo.com/markets/stocks/articles/anthropic-sets-ipo-price-range-140602411.html", "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html", "https://www.upi.com/Top_News/US/2026/11/10/anthropic-ipo-stock-range-nasdaq/6651794326745", "https://biz.chosun.com/it-science/ict/2026/11/10/LHFSX4N4FJCYVGFDB4XIRVFBRY/", "https://www.hankyung.com/article/2026111358661", "https://biz.sbs.co.kr/article/20000346164", "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html", "https://finance.yahoo.com/video/anthropic-said-guide-ipo-price-142915559.html", "https://www.wsj.com/finance/anthropic-plans-to-raise-ipo-price-after-strong-demand-1a6b0af1", "https://www.bnnbloomberg.ca/business/company-news/2026/11/19/anthropic-set-to-begin-trading-as-a-us15-trillion-company-in-the-biggest-ipo-on-record/", "https://www.wsj.com/finance/stocks/anthropic-prices-ipo-at-83-a-share-0290494c", "https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html", "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-shares-pop-34-to-open-at-11150/", "https://www.yna.co.kr/view/AKR20261119010052091"]
-비교: {지분가치(억원): 19985000, 대가 구성: "", 인수자 성격: "", 메모: "지분가치는 공모가 83달러 기준 약 1.5조 달러(AP 보도, 기본·완전희석 구분 확인되지 않음)를 2026-11-18 환율로 환산. 첫 거래가 기준 시가총액은 2조 달러를 넘었다는 보도"}
+출처: ["https://www.anthropic.com/news/s1-sec", "https://www.investing.com/news/stock-market-news/anthropic-plans-to-sell-35-billion-of-shares-to-japan-investors-in-ipo-filing-shows-4989963", "https://www.yna.co.kr/view/AKR20261102171900073", "https://www.wsj.com/finance/stocks/anthropic-investors-push-for-cautious-valuation-closer-to-1-5-trillion-2f2df9cf", "https://www.yna.co.kr/view/AKR20261103038300009", "https://www.yna.co.kr/view/AKR20261109017200009", "https://news.bgov.com/banking-law/anthropic-said-to-target-mega-ipo-before-thanksgiving-holiday", "https://finance.yahoo.com/markets/stocks/articles/anthropic-sets-ipo-price-range-140602411.html", "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html", "https://www.upi.com/Top_News/US/2026/11/10/anthropic-ipo-stock-range-nasdaq/6651794326745", "https://biz.chosun.com/it-science/ict/2026/11/10/LHFSX4N4FJCYVGFDB4XIRVFBRY/", "https://www.hankyung.com/article/2026111358661", "https://biz.sbs.co.kr/article/20000346164", "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html", "https://finance.yahoo.com/video/anthropic-said-guide-ipo-price-142915559.html", "https://www.wsj.com/finance/anthropic-plans-to-raise-ipo-price-after-strong-demand-1a6b0af1", "https://www.bnnbloomberg.ca/business/company-news/2026/11/19/anthropic-set-to-begin-trading-as-a-us15-trillion-company-in-the-biggest-ipo-on-record/", "https://www.wsj.com/finance/stocks/anthropic-prices-ipo-at-83-a-share-0290494c", "https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html", "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-shares-pop-34-to-open-at-11150/", "https://www.yna.co.kr/view/AKR20261119010052091", "https://www.yna.co.kr/view/AKR20261120014100091", "https://www.yna.co.kr/view/AKR20261120014151091", "https://www.wsj.com/finance/stocks/anthropic-ipo-ai-markets-89e2476f", "https://www.mk.co.kr/news/stock/12214851"]
+비교: {지분가치(억원): 19985000, 대가 구성: "", 인수자 성격: "", 메모: "지분가치는 공모가 83달러 기준 약 1.5조 달러(AP 보도, 기본·완전희석 구분 확인되지 않음)를 2026-11-18 환율로 환산. 첫 거래가 기준 시가총액은 2조 달러를 넘었다는 보도. 첫날 종가 97.17달러는 공모가 대비 약 17% 높다(연합뉴스 보도)"}
 일정:
   - {날짜: "2026-11-18", 내용: "공모가 확정 예정 (보도 기준)"}
   - {날짜: "2026-11-19", 내용: "나스닥 거래 시작 예정, 티커 ANT (보도 기준)"}
@@ -34,7 +34,7 @@
 
 ## 밸류에이션
 <!-- EV/EBITDA, P/E 등. 공개되지 않았으면 "비공개" 한 줄 -->
-희망가 기준 상장 후 지분가치는 약 9,160억~1.02조 달러(약 130.9억 주 기준)이며, 완전희석 기준으로는 최대 약 1.4조 달러라는 보도가 있다. 기존 투자자들이 거론하던 1.5조 달러보다 낮은 수준이었다. 확정 공모가 83달러 기준 기업가치는 약 1.5조 달러로 보도됐고, 첫 거래가(공모가 대비 약 34% 높음) 기준 시가총액은 2조 달러를 넘었다는 보도가 나왔다.
+희망가 기준 상장 후 지분가치는 약 9,160억~1.02조 달러(약 130.9억 주 기준)이며, 완전희석 기준으로는 최대 약 1.4조 달러라는 보도가 있다. 기존 투자자들이 거론하던 1.5조 달러보다 낮은 수준이었다. 확정 공모가 83달러 기준 기업가치는 약 1.5조 달러로 보도됐고, 첫 거래가(공모가 대비 약 34% 높음) 기준 시가총액은 2조 달러를 넘었다는 보도가 나왔다. 첫날 종가는 97.17달러로 공모가보다 약 17% 높았고, 장중 한때 100달러 아래로 내려가기도 했다(연합뉴스 보도).
 
 ## 왜 중요한가
 <!-- 1~2줄 -->
@@ -54,6 +54,7 @@
 - 2026-11-17: 강한 수요로 공모가를 희망 범위 상단(78달러) 또는 그 이상에서 정할 것이라는 보도가 WSJ·Bloomberg·CNBC에서 잇따랐다 (소식통 인용, 수정 신고나 확정 공모가는 아직 확인되지 않음).
 - 2026-11-18: 공모가를 83달러로 확정하고 9.8억 주를 팔아 약 810억 달러를 조달했다 (AP·WSJ 보도).
 - 2026-11-19: 나스닥에서 111.5달러로 첫 거래를 시작했다 (CNBC·Forbes 등 보도). 첫날 종가는 확인되지 않음.
+- 2026-11-21: 첫 거래일(11-19) 종가가 97.17달러로 공모가 대비 약 17% 상승한 것으로 보도됐다 (연합뉴스 보도, 두 번째 매체 확인은 못함). 골드만삭스·모건스탠리가 주관 수수료로 각각 약 1,500억 원을 받았다는 보도도 나왔으나 주관사 명단·수수료는 회사 자료로 확인되지 않음 (매일경제 제목 기준).
 
 ## 관련 딜·뉴스
 - [Marvell, Lumentum을 기업가치 1,150억 달러에 전액 주식으로 인수](../2026/2026-11-02-marvell-technology-lumentum.md) — 같은 날 나온 AI 데이터센터 관련 대형 거래

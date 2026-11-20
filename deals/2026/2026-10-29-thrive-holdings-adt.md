@@ -48,3 +48,4 @@ VC 계열 영구자본 지주사가 지분가치 약 10.2조 원(EV 약 20.5조 
 ## 관련 딜·뉴스
 - [Vistra, Quantum Capital로부터 Cogentrix Energy 인수 완료 (순매입가 약 40억 달러)](../2026/2026-01-05-vistra-cogentrix-energy.md) — Goldman Sachs·Evercore가 자문사로 함께 등장
 - [GIP·EQT 컨소시엄의 AES 인수(EV 약 334억 달러), 규제 승인 마무리…12월 2일 종결 예정](../2026/2026-03-02-gip-eqt-aes.md) — 상장사를 비상장화하는 대형 거래, Goldman Sachs가 자문사로 함께 등장
+- [TPG·Corpay, BILL을 주당 63.25달러 현금(지분가치 약 60억 달러)에 인수해 비상장화](../2026/2026-11-19-tpg-bill-holdings.md) — 비슷한 시기, 비슷한 규모의 미국 상장사 비상장화

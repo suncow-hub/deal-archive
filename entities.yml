@@ -2670,3 +2670,81 @@ Paul, Weiss:
     edge: "확인되지 않음"
     owner: "파트너십 (로펌)"
     as_of: "2026-11-20"
+BILL Holdings:
+  type: 기업
+  country: 미국
+  aliases: [BILL, Bill.com, Bill Holdings, 빌홀딩스]
+  ticker: "NYSE:BILL"
+  profile:
+    about: "중소기업의 대금 지급·청구·지출관리를 온라인으로 처리해 주는 미국 소프트웨어 기업."
+    business: "중소기업용 매입·매출 결제, 법인 지출관리 소프트웨어"
+    edge: "중소기업과 회계사무소를 잇는 결제 네트워크"
+    owner: "뉴욕증권거래소 상장사. Starboard Value가 최대주주. TPG·Corpay에 매각 계약 (종결 전)"
+    points:
+      - "2026-11 TPG·Corpay가 주당 63.25달러 현금으로 인수해 비상장화하기로 계약"
+    as_of: "2026-11-21"
+Corpay:
+  type: 기업
+  country: 미국
+  aliases: [Corpay Inc., FleetCor, 코페이]
+  ticker: "NYSE:CPAY"
+  profile:
+    about: "기업용 결제 서비스를 제공하는 미국 회사 (옛 이름 FleetCor)."
+    business: "법인 결제·외환 송금, 차량 연료카드 등 기업 지출 결제"
+    edge: "기업 간(B2B) 결제 분야의 넓은 고객 기반"
+    owner: "뉴욕증권거래소 상장사 (지분 분산)"
+    points:
+      - "TPG와 손잡고 상장 B2B 결제 소프트웨어 기업(AvidXchange, BILL)에 소수 지분으로 참여"
+    as_of: "2026-11-21"
+Starboard Value:
+  type: PE·VC
+  country: 미국
+  aliases: [Starboard, 스타보드]
+  profile:
+    about: "상장사 지분을 사서 경영 개선을 요구하는 미국 행동주의 투자회사."
+    business: "행동주의 헤지펀드 운용"
+    edge: "이사회 교체 요구 등 주주 행동주의"
+    owner: "비상장 운용사"
+    points:
+      - "BILL 최대주주로 TPG·Corpay 인수안에 찬성 투표를 약속"
+    as_of: "2026-11-21"
+BofA Securities:
+  type: 재무 자문사
+  country: 미국
+  aliases: [BofA, Bank of America Securities, BofA Merrill Lynch, 뱅크오브아메리카]
+  profile:
+    about: "Bank of America의 투자은행·증권 부문."
+    business: "M&A 자문, 인수금융, 주식·채권 발행"
+    edge: "대형 상업은행을 낀 인수금융 능력"
+    owner: "Bank of America 소속 (뉴욕증권거래소 상장사)"
+    as_of: "2026-11-21"
+RBC Capital Markets:
+  type: 재무 자문사
+  country: 기타
+  aliases: [RBC, RBC Capital]
+  profile:
+    about: "캐나다 Royal Bank of Canada의 투자은행 부문."
+    business: "M&A 자문, 인수금융, 증권 발행"
+    edge: "북미 인수금융과 중견 딜 자문"
+    owner: "Royal Bank of Canada 소속"
+    as_of: "2026-11-21"
+Fenwick & West:
+  type: 법률 자문사
+  country: 미국
+  aliases: [Fenwick]
+  profile:
+    about: "실리콘밸리에 기반을 둔 미국 로펌."
+    business: "기술 기업 M&A, 증권, 지식재산권"
+    edge: "기술·스타트업 기업 자문"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-21"
+Sullivan & Cromwell:
+  type: 법률 자문사
+  country: 미국
+  aliases: [S&C, 설리번앤크롬웰]
+  profile:
+    about: "뉴욕에 본사를 둔 미국 로펌."
+    business: "M&A, 금융기관, 증권"
+    edge: "확인되지 않음"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-21"

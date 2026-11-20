@@ -4,6 +4,20 @@
 # - status: 미확인 / 사실로 확인 / 부인 / 소멸
 #   (사실로 확인되면 deal 에 딜 노트 id, 30일간 새 소식이 없으면 소멸)
 # - credibility: 낮음 / 중간  (공신력 높은 출처로 확인되면 소문이 아니라 딜 노트로 간다)
+- id: 2026-11-21-sk-hynix-kioxia-cb-conversion
+  first_seen: 2026-11-21
+  last_seen: 2026-11-21
+  title: "SK하이닉스, 키옥시아 투자용 전환사채 주식 전환설"
+  claim: "SK하이닉스가 키옥시아 투자 구조에 넣어 둔 전환사채를 주식으로 바꿔 지분 약 14%를 갖게 됐다는 보도와 전환을 검토 중이라는 보도가 엇갈려 나왔다. 회사 공시나 주요 통신사 확인은 찾지 못했다."
+  companies: ["SK하이닉스", "Kioxia"]
+  sources:
+    - {name: "인베스트조선 (제목 기준)", url: "https://www.investchosun.com/site/data/html_dir/2026/11/20/2026112080169.html", credibility: 중간}
+    - {name: "머니투데이 (제목 기준)", url: "https://www.mt.co.kr/index.php/industry/2026/11/20/2026112016350353841", credibility: 중간}
+    - {name: "아시아경제 (제목 기준, 전환 검토로 보도)", url: "https://view.asiae.co.kr/article/2026112011452073114", credibility: 중간}
+  why_watch: "사실이면 SK하이닉스가 일본 낸드 경쟁사 키옥시아의 직접 주주로 올라서는 셈이라 낸드 업계 재편 논의에 영향을 준다."
+  status: 미확인
+  status_note: ""
+  deal: null
 - id: 2026-11-19-hybe-keyholder-acquisition
   first_seen: 2026-11-19
   last_seen: 2026-11-20
@@ -38,9 +52,9 @@
   sources:
     - {name: "Financial Times (제목 기준)", url: "https://www.ft.com/content/629eb12c-f200-486d-8c63-32e2ebf3d97e", credibility: 중간}
   why_watch: "사실이면 상장 핀테크를 대형 PE가 비상장화하는 흐름이 이어지는 사례가 된다."
-  status: 미확인
-  status_note: ""
-  deal: null
+  status: 사실로 확인
+  status_note: "2026-11-21 확인: 2026-11-19 BILL이 TPG·Corpay에 주당 63.25달러 현금 매각 계약을 발표"
+  deal: 2026-11-19-tpg-bill-holdings
 - id: 2026-11-18-chevron-beacon-offshore
   first_seen: 2026-11-18
   last_seen: 2026-11-18
