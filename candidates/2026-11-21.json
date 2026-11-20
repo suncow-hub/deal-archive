@@ -1,0 +1,502 @@
+{
+  "meta": {
+    "run_at": "2026-11-21T02:13:19.897389+09:00",
+    "window_start": "2026-11-19T20:13:19.897389+09:00",
+    "sources": {
+      "환율": "1일 추가 (최신 2026-11-20)",
+      "OpenDART 상세": "3건 성공, 0건 실패",
+      "OpenDART": "7건",
+      "WSJ Markets": "8/61",
+      "WSJ U.S. Business": "6/85",
+      "PR Newswire M&A": "12/20",
+      "한경 증권": "4/50",
+      "인베스트조선": "10/50",
+      "연합뉴스 마켓+": "29/120",
+      "매일경제 증권": "9/50",
+      "조선비즈": "1/100",
+      "FT M&A": "0/25",
+      "CNBC Business": "0/30",
+      "WSJ World News": "7/73",
+      "WSJ Economy": "4/36",
+      "한경 경제": "1/50",
+      "한경 국제": "2/50"
+    },
+    "gemini_tries": 14,
+    "gemini_model": "gemini-3.6-flash",
+    "gemini": "성공 (86/86건 채점)",
+    "counts": {
+      "deal": 22,
+      "macro": 12,
+      "dropped": 52
+    }
+  },
+  "items": [
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "TPG, Corpay to Buy Finance Platform Bill for About $6 Billion",
+      "link": "https://www.wsj.com/business/deals/tpg-corpay-to-buy-finance-platform-bill-for-about-6-billion-9f8be10c?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-20T13:51:00+09:00",
+      "keywords": [
+        "to buy",
+        "stake",
+        "deal"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "TPG와 Corpay의 60억 달러 규모 Bill 인수 건이다."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "SK하이닉스, 키옥시아 투자용 CB 주식 전환…최대주주 지분 간접 확보",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/20/2026112080169.html",
+      "published": "2026-11-20T16:38:24+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "SK하이닉스의 키옥시아 CB 주식전환 및 지금 확보 건입니다."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "“골드만·모건스탠리 1500억씩 챙겼다”…앤트로픽 IPO에 월가 ‘잭팟’",
+      "link": "https://www.mk.co.kr/news/stock/12214851",
+      "published": "2026-11-20T17:34:34+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "앤트로픽 IPO 주관사(IB) 수수료 수임 트랙레코드."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Anthropic’s IPO Is a Win for Venture. Its Success Could Reshape the Industry.",
+      "link": "https://www.wsj.com/pro/venture-capital/anthropics-ipo-is-a-win-for-venture-its-success-could-reshape-the-industry-2bfdecc0?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-20T01:53:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "Anthropic IPO가 벤처캐피털 업계에 미치는 영향 분석이다."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "이젠 연례행사가 된 '현대차' 보스턴다이내믹스의 증자",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/19/2026111980136.html",
+      "published": "2026-11-20T07:00:00+09:00",
+      "keywords": [
+        "인수",
+        "지분",
+        "유상증자"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "현대차그룹 자회사 보스턴다이내믹스 증자 전망입니다."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "앤트로픽, 상장 첫날 공모가 대비 17% 올라…\"성공적 데뷔\"(종합)",
+      "link": "https://www.yna.co.kr/view/AKR20261120014151091",
+      "published": "2026-11-20T08:33:19+09:00",
+      "keywords": [
+        "IPO",
+        "IPO",
+        "상장"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "AI 기업 앤트로픽의 나스닥 상장 첫날 결과이다."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "“원료부터 전구체까지 자체 생산…인니 니켈 광산 등 경영권 확보”",
+      "link": "https://www.mk.co.kr/news/stock/12214266",
+      "published": "2026-11-20T08:32:47+09:00",
+      "keywords": [
+        "인수",
+        "경영권"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "국내 기업의 해외 니켈 광산 및 공장 경영권 인수 M&A."
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "deal",
+      "title": "U.S. Consortium Wins Bid to Prospect at $62 Billion Kenyan Rare-Earth Deposit",
+      "link": "https://www.wsj.com/world/africa/u-s-consortium-wins-bid-to-prospect-at-62-billion-kenyan-rare-earth-deposit-5700b009?mod=rss_worldnews",
+      "published": "2026-11-20T02:44:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "미국 컨소시엄의 케냐 희토류 광산 탐사 입찰 수주."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "\"앤트로픽까지\"…올해 나스닥 IPO 조달액 NYSE의 10배",
+      "link": "https://www.yna.co.kr/view/AKR20261120109700009",
+      "published": "2026-11-20T14:36:07+09:00",
+      "keywords": [
+        "IPO",
+        "IPO",
+        "상장"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "앤트로픽 IPO로 인한 나스닥과 NYSE 간 조달액 비교이다."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "유안타증권 \"SK텔레콤, 앤트로픽 상장 첫날 지분가치 5조\"",
+      "link": "https://www.yna.co.kr/view/AKR20261120028100008",
+      "published": "2026-11-20T08:34:18+09:00",
+      "keywords": [
+        "지분",
+        "상장"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "SK텔레콤이 보유한 앤트로픽 지분가치 분석이다."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "앤트로픽 상장 첫날 97.17달러로 마감…공모가 대비 17% 상승",
+      "link": "https://www.yna.co.kr/view/AKR20261120014100091",
+      "published": "2026-11-20T07:07:56+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "앤트로픽 나스닥 상장 첫날 주가 마감 결과 속보이다."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "앤트로픽, 111.5달러에 거래 시작…장중 100달러 밑으로(종합)",
+      "link": "https://www.yna.co.kr/view/AKR20261120003151091",
+      "published": "2026-11-20T05:02:38+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "빅테크 앤트로픽의 나스닥 상장 주가 흐름 보도."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(드림인사이트) 최대주주변경을수반하는주식양수도계약체결",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900959",
+      "published": "2026-11-20T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "국내 상장사의 경영권 양수도 계약 체결 공시이다."
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "Anthropic’s Mega IPO Lives Up to Wall Street Hype but Fails to Revive AI Trade",
+      "link": "https://www.wsj.com/finance/stocks/anthropic-ipo-ai-markets-89e2476f?mod=rss_markets_main",
+      "published": "2026-11-20T09:00:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "Anthropic IPO 결과와 시장 반응에 대한 보도이다."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Bill Zerella, Known for Taking Startups Public, on Why He Joined Stord as CFO",
+      "link": "https://www.wsj.com/cfo-journal/bill-zerella-known-for-taking-startups-public-on-why-he-joined-stord-as-cfo-816bc0e8?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-19T21:50:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "Stord CFO 취임 및 Anthropic의 초대형 IPO 언급이다."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "우리운용 \"미국 단기채 공모주 펀드, 앤트로픽 IPO 물량 배정\"",
+      "link": "https://www.hankyung.com/article/2026112002326",
+      "published": "2026-11-20T15:18:24+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "국내 펀드의 앤트로픽 IPO 공모주 배정 관련 보도입니다."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "우리운용 \"美단기채공모주 펀드, 앤트로픽 IPO 물량 받아\"",
+      "link": "https://www.yna.co.kr/view/AKR20261120131600008",
+      "published": "2026-11-20T15:51:38+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "우리운용 펀드의 앤트로픽 IPO 공모주 배정 소식이다."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "앤트로픽 더 들고 있을까요? 질문에…“매출에 비해 좀 과하네요” [오늘 나온 보고서]",
+      "link": "https://www.mk.co.kr/news/stock/12214311",
+      "published": "2026-11-20T09:07:31+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "앤트로픽 IPO 후 밸류에이션 및 락업 부담 분석."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Merchants Capital to Acquire Remaining Interest in VIUM Capital, Expanding Its Seniors Housing and Healthcare Lending Platform",
+      "link": "https://www.prnewswire.com/news-releases/merchants-capital-to-acquire-remaining-interest-in-vium-capital-expanding-its-seniors-housing-and-healthcare-lending-platform-302945905.html",
+      "published": "2026-11-20T06:05:00+09:00",
+      "keywords": [
+        "acquire"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "Merchants Capital의 VIUM Capital 잔여 지분 인수이다."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "ADP Acquires ZenBusiness",
+      "link": "https://www.prnewswire.com/news-releases/adp-acquires-zenbusiness-302946034.html",
+      "published": "2026-11-20T04:29:00+09:00",
+      "keywords": [
+        "acquires"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "ADP의 젠비즈니스 인수 소식입니다."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "메쎄이상 \"한산마케팅연구원 주식 74억원에 취득…지분율 100%\"",
+      "link": "https://www.yna.co.kr/view/AKR20261120129400008",
+      "published": "2026-11-20T15:41:21+09:00",
+      "keywords": [
+        "지분",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "메쎄이상의 한산마케팅연구원 74억원 인수 공시이다."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "뉴욕증시, 앤트로픽 나스닥 상장 앞두고 상승 출발",
+      "link": "https://www.yna.co.kr/view/AKR20261119186000009",
+      "published": "2026-11-19T23:54:14+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "앤트로픽 상장에 따른 증시 영향 중복 보도."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "\"적대적 M&A 활성화 취지 무색\"…'50%+1주' 절충안에 싸늘한 자본시장",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/19/2026111980195.html",
+      "published": "2026-11-20T07:00:00+09:00",
+      "keywords": [
+        "인수",
+        "합병",
+        "사모펀드"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "M&A 시장에 큰 영향을 미치는 의무공개매수제 정책 분석입니다."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "산은에 PEF 주도권 뺏긴 국민연금, 출자사업 재개해도 매칭 걱정",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/19/2026111980175.html",
+      "published": "2026-11-20T07:00:00+09:00",
+      "keywords": [
+        "PEF"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "PEF 출자 시장 내 기관투자자 주도권 변화 기사입니다."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "국민성장펀드 쏠림에…PEF 운용사들 \"은행 돈 받기가 하늘의 별 따기\"",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/19/2026111980123.html",
+      "published": "2026-11-20T07:00:00+09:00",
+      "keywords": [
+        "PEF"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "국민성장펀드로 인한 PEF 자금 조달 환경 변화입니다."
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "중국 반도체 막는다면서?…美, 엔비디아·AMD 칩 88만개 수출 승인",
+      "link": "https://www.hankyung.com/article/2026112088797",
+      "published": "2026-11-20T07:51:35+09:00",
+      "keywords": [
+        "수출"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "미·중 반도체 패권 전쟁 및 규제 관련 주요 이슈."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "앤트로픽은 잘나갔는데…'청약에 5조원 몰려도 상장일 약세' 국내 IPO 찬바람",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/20/2026112080121.html",
+      "published": "2026-11-20T14:19:43+09:00",
+      "keywords": [
+        "IPO",
+        "IPO",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "국내외 IPO 시장 냉각 현상 분석입니다."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "'SM 시세조종' 김범수 2심도 무죄…\"카카오, 과감한 변화 필요\"",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/20/2026112080075.html",
+      "published": "2026-11-20T11:22:24+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "카카오의 SM엔터 인수 시세조종 관련 재판 결과입니다."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "macro",
+      "title": "급락장에 IPO시장 '꽁꽁'…잇단 상장철회에 공모청약 미달도",
+      "link": "https://www.yna.co.kr/view/AKR20261120114800008",
+      "published": "2026-11-20T15:01:49+09:00",
+      "keywords": [
+        "IPO",
+        "IPO",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "증시 급락에 따른 국내 IPO 시장 냉각 현상 보도이다."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Week Ahead for FX, Bonds: Flash PMI Data to Provide Gauge on Economic Growth",
+      "link": "https://www.wsj.com/economy/week-ahead-for-fx-bonds-flash-pmi-data-to-provide-gauge-on-economic-growth-86c1a572?mod=rss_socialeconomyfeed",
+      "published": "2026-11-21T00:14:00+09:00",
+      "keywords": [
+        "interest rate",
+        "central bank"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "주요국 PMI 발표와 금리 방향성에 관한 거시 경제 뉴스."
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "macro",
+      "title": "Asian Equities Tumble as AI Stock Selloff Deepens",
+      "link": "https://www.wsj.com/finance/investing/asian-equities-fall-as-anthropics-ipo-fails-to-staunch-ai-stock-selloff-c47592b0?mod=rss_markets_main",
+      "published": "2026-11-20T14:40:00+09:00",
+      "keywords": [
+        "initial public offering"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "AI주 하락으로 인한 아시아 증시 하락 보도이다."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "macro",
+      "title": "앤트로픽 상장에도 꺼진 AI 기대…소프트뱅크 장중 16% 폭락",
+      "link": "https://www.hankyung.com/article/2026112001507",
+      "published": "2026-11-20T14:52:32+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "앤트로픽 상장 후 AI 시장 투자 심리 악화 분석입니다."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "macro",
+      "title": "코스피 추락 어디까지…앤트로픽 역대급 IPO에도 투심 회복 실패(종합)",
+      "link": "https://www.yna.co.kr/view/AKR20261120085151008",
+      "published": "2026-11-20T16:34:02+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "앤트로픽 IPO와 코스피 시황 및 투심을 다룬다."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "macro",
+      "title": "日소프트뱅크, 장중 16% 폭락…아시아 증시 매도세 주도",
+      "link": "https://www.yna.co.kr/view/AKR20261120109800009",
+      "published": "2026-11-20T14:36:47+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "소프트뱅크 주가 폭락 및 아시아 증시 매도세 보도이다."
+    }
+  ]
+}
