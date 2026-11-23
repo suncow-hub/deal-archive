@@ -1,0 +1,789 @@
+{
+  "meta": {
+    "run_at": "2026-11-24T02:12:44.258597+09:00",
+    "window_start": "2026-11-20T20:12:44.258597+09:00",
+    "sources": {
+      "환율": "1일 추가 (최신 2026-11-23)",
+      "OpenDART 상세": "2건 성공, 4건 실패",
+      "OpenDART": "8건",
+      "WSJ Markets": "6/61",
+      "WSJ U.S. Business": "16/85",
+      "PR Newswire M&A": "14/20",
+      "한경 증권": "2/50",
+      "인베스트조선": "9/50",
+      "연합뉴스 마켓+": "17/120",
+      "매일경제 증권": "5/50",
+      "조선비즈": "1/100",
+      "FT M&A": "5/25",
+      "CNBC Business": "1/30",
+      "WSJ World News": "6/71",
+      "WSJ Economy": "3/36",
+      "한경 경제": "4/50",
+      "한경 국제": "3/50"
+    },
+    "gemini_tries": 15,
+    "gemini_model": "gemini-3.6-flash",
+    "gemini": "성공 (90/90건 채점)",
+    "counts": {
+      "deal": 38,
+      "macro": 12,
+      "dropped": 40
+    }
+  },
+  "items": [
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "CrowdStrike to Buy Zscaler in $44 Billion Stock Swap",
+      "link": "https://www.wsj.com/business/deals/crowdstrike-to-buy-zscaler-in-43-9-billion-stock-swap-4c926031?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-23T23:45:00+09:00",
+      "keywords": [
+        "to buy"
+      ],
+      "score": 10.0,
+      "score_by": "gemini",
+      "reason": "440억 달러 규모의 초대형 보안 기업 간 주식교환 M&A입니다."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "MBK, '갤럭시 S펜 기술' 日와콤 1.2조원에 인수 추진…삼성전자도 재출자",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/22/2026112280045.html",
+      "published": "2026-11-22T20:02:32+09:00",
+      "keywords": [
+        "인수",
+        "사모펀드",
+        "PEF",
+        "상장"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "MBK의 1.2조원 규모 와콤 인수 및 삼성전자 재출자 Deal"
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "\"아마존, AI칩 스타트업 10조원 인수 임박\"",
+      "link": "https://www.yna.co.kr/view/AKR20261123012400009",
+      "published": "2026-11-23T07:32:14+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "아마존의 10조원 규모 글로벌 AI 스타트업 인수건"
+    },
+    {
+      "source": "조선비즈",
+      "kind": "deal",
+      "title": "크라우드스트라이크, 지스케일러 59조원에 인수… 보안업계 사상 최대 M&A",
+      "link": "https://biz.chosun.com/it-science/ict/2026/11/23/LRS23EFC5ZC5NNRWNJYVO757GI/",
+      "published": "2026-11-23T22:07:56+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "59조원 규모 글로벌 보안업계 사상 최대 M&A."
+    },
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "CrowdStrike to buy Zscaler in $44bn deal as cyber threats mount",
+      "link": "https://www.ft.com/content/762bd05d-8e20-4abf-9bc5-4e6f9bf628cb?syn-25a6b1a6=1",
+      "published": "2026-11-23T20:02:10+09:00",
+      "keywords": [
+        "acquisition",
+        "to buy",
+        "deal"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "440억 달러 규모 글로벌 대형 M&A 해외 보도."
+    },
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "Amazon closes in on $7.5bn deal to buy AI start-up Decart",
+      "link": "https://www.ft.com/content/dc7749dc-0f40-44a6-80bc-7f747d383616?syn-25a6b1a6=1",
+      "published": "2026-11-22T02:21:36+09:00",
+      "keywords": [
+        "acquisition",
+        "to buy",
+        "deal"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "아마존의 75억 달러 규모 AI 스타트업 인수 거래."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(SK이노베이션) [기재정정]주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000308",
+      "published": "2026-11-23T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "SK이노베이션 대형 사업구조 개편 합병 정정 공시입니다."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Texas Pacific Land to Buy EagleRock Land in $3 Billion All-Stock Deal",
+      "link": "https://www.wsj.com/business/energy-oil/texas-pacific-land-to-buy-eaglerock-land-in-3-billion-all-stock-deal-643be79c?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-23T20:54:00+09:00",
+      "keywords": [
+        "acquire",
+        "to buy",
+        "deal"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "30억 달러 규모의 미국 에너지/토지 자산 M&A입니다."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Monte dei Paschi’s Board Sends Mixed Signals Over Intesa’s $37 Billion Offer",
+      "link": "https://www.wsj.com/business/deals/monte-dei-paschis-board-sends-mixed-signals-over-intesas-37-billion-offer-e2e40d9a?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-23T16:50:00+09:00",
+      "keywords": [
+        "takeover"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "370억 달러 규모의 유럽 은행 간 적대적/경쟁적 인수합병 건입니다."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "ConocoPhillips to Sell Norwegian Business to Var Energi in $3.9 Billion Deal",
+      "link": "https://www.wsj.com/business/energy-oil/conocophillips-to-sell-norwegian-business-to-var-energi-in-3-9-billion-deal-49db3ea2?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-23T16:27:00+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "39억 달러 규모의 코노코필립스 노르웨이 자산 매각 딜입니다."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "한영기·정연박 전 VIG 부대표, 인듀어런스캐피탈파트너스서 PEF 사업 시동",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/23/2026112380158.html",
+      "published": "2026-11-23T17:26:50+09:00",
+      "keywords": [
+        "경영권",
+        "사모펀드",
+        "PEF",
+        "바이아웃"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "VIG 출신 인사의 신규 PEF 설립 및 바이아웃 추진."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "중앙일보 품는 다우키움…커진 존재감, 매서워진 시장 감시",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/22/2026112280036.html",
+      "published": "2026-11-23T07:00:00+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "다우키움의 중앙일보 인수 및 행동주의펀드 개입 이슈"
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "카카오, TPG와 1.5조원 국제중재 분쟁…모빌리티 美상장 갈등",
+      "link": "https://www.yna.co.kr/view/AKR20261123100000017",
+      "published": "2026-11-23T13:58:22+09:00",
+      "keywords": [
+        "사모펀드",
+        "상장"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "카카오와 FI(TPG) 간 모빌리티 상장 관련 1.5조원 분쟁"
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "네파·두나무, 공정위 이후엔…지분규제·대주주변경 '당국관문'",
+      "link": "https://www.yna.co.kr/view/AKR20261121045900002",
+      "published": "2026-11-23T05:51:00+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "국내 주요 빅테크·핀테크 기업결합 규제 관문 보도."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "[단독] 블랙록이 20% 투자한 리커런트에너지, 韓 태양광 개발사업 매각 추진",
+      "link": "https://www.mk.co.kr/news/stock/12216332",
+      "published": "2026-11-23T17:31:01+09:00",
+      "keywords": [
+        "매각"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "글로벌 운용사 투자 기업의 1천억대 국내 사업 매각."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(SK아이이테크놀로지) [기재정정]주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000288",
+      "published": "2026-11-23T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "SK아이이테크놀로지의 합병 관련 기재정정 공시입니다."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(한화솔루션) 주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000211",
+      "published": "2026-11-23T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details": {
+        "corp_name": "한화솔루션",
+        "bddd": "2026년 11월 23일",
+        "od_a_at_t": "4",
+        "od_a_at_b": "0",
+        "rs_sm_atn": "아니오",
+        "ex_sm_r": "본 합병은 합병신주를 발행하지 않는 무증자합병 방식으로 진행하므로, 본 합병의 과정에서는 증권신고서 제출이 필요한 증권의 모집이나 매출이 이뤄지지 않습니다.",
+        "exevl_atn": "미해당",
+        "exevl_bs_rs": "「자본시장과 금융투자업에 관한 법률 시행령」 제176조의5 제8항 제2호 나목 단서는 다른 회사의 발행주식총수를 소유하고 있는 회사가 그 다른 회사를 합병하면서 신주를 발행하지 않는 경우에는 합병가액의 적정성에 대한 외부평가기관의 평가를 요구하지 않는 것으로 규정하고 있는 바, 본 합병은 이에 해당하므로 위 규정에 따라 외부평가기관의 평가를 거치지 않았습니다.",
+        "bdlst_atn": "해당사항없음",
+        "otcpr_bdlst_sf_atn": "해당사항없음",
+        "popt_ctr_atn": "아니오",
+        "mg_mth": "한화솔루션(주)가 (주)한화도시개발을 흡수합병함- 존속회사(합병회사) : 한화솔루션(주)- 소멸회사(피합병회사) : (주)한화도시개발",
+        "mg_stn": "소규모합병",
+        "mg_pp": "흡수합병을 통한 잔여자산 및 관련 권리·의무의 관리체계 일원화 및 경영 효율성 제고",
+        "mg_rt": "한화솔루션(주) : (주)한화도시개발 = 1.0000000:0.0000000 (무증자합병)",
+        "mg_rt_bs": "합병회사는 피합병회사인 (주)한화도시개발의 주식을 100% 소유하고 있으며, 합병 시 피합병회사의 주식에 대해 신주를 발행하지 않으므로 합병비율을 1:0으로 산출하였습니다.",
+        "mgptncmp_cmpnm": "(주)한화도시개발",
+        "mgptncmp_mbsn": "부동산 개발 및 공급업",
+        "mgptncmp_rl_cmpn": "자회사",
+        "rbsnfdtl_tast": "154,798,958,673",
+        "rbsnfdtl_teqt": "154,798,958,673",
+        "rbsnfdtl_cpt": "18,488,335,000",
+        "rbsnfdtl_nic": "1,698,794,891",
+        "eadtat_intn": "이촌회계법인",
+        "eadtat_op": "적정",
+        "nmgcmp_rlst_atn": "해당사항없음",
+        "mgsc_mgctrd": "2026년 11월 24일",
+        "mgsc_shddstd": "2026년 12월 08일",
+        "mgsc_mgop_rcpd_bgd": "2026년 12월 08일",
+        "mgsc_mgop_rcpd_edd": "2026년 12월 22일",
+        "mgsc_cdobprpd_bgd": "2026년 12월 24일",
+        "mgsc_cdobprpd_edd": "2027년 01월 25일",
+        "mgsc_mgdt": "2027년 01월 31일",
+        "mgsc_ergmd": "2027년 02월 01일",
+        "mgsc_mgrgsprd": "2027년 02월 01일"
+      },
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "한화솔루션의 사업재편 관련 회사합병 공시입니다."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "ABB to Buy Germany’s Ziehl-Abegg for $2.22 Billion",
+      "link": "https://www.wsj.com/business/energy-oil/abb-to-buy-germanys-ziehl-abegg-for-2-22-billion-fad3bf35?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-23T15:28:00+09:00",
+      "keywords": [
+        "to buy",
+        "deal"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "ABB의 22.2억 달러 규모 독일 제조기업 인수 딜입니다."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "한전 발전5사 통합 자문 우협에 삼일PwC·광장 선정",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/23/2026112380114.html",
+      "published": "2026-11-23T14:33:54+09:00",
+      "keywords": [
+        "우선협상대상자"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "발전공기업 통합 PMI 자문사 선정 건으로 IB 실무에 중요함"
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "SK·포스코 등 대기업들, 매각예정자산 늘리고 처분도 '속속'",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/20/2026112080098.html",
+      "published": "2026-11-22T07:00:00+09:00",
+      "keywords": [
+        "매각"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "SK·포스코 등 주요 대기업의 구조조정 및 자산 매각 동향"
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "경쟁사와 일하지 말라…美IPO 대어들, 월가에 까다로운 요구",
+      "link": "https://www.yna.co.kr/view/AKR20261123003000075",
+      "published": "2026-11-23T04:35:30+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "미국 초대형 IPO 대어들의 IB 주관 조건 관련 뉴스."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(에이프로) 주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000392",
+      "published": "2026-11-23T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details": {
+        "corp_name": "에이프로",
+        "bddd": "2026년 11월 23일",
+        "od_a_at_t": "1",
+        "od_a_at_b": "0",
+        "adt_a_atn": "참석",
+        "rs_sm_atn": "아니오",
+        "ex_sm_r": "본 합병은 합병신주를 발행하지 않는 무증자합병 방식으로 진행하므로\n증권신고서 제출이 필요한 증권의 모집이나 매출이 이루어지지 않습니다.",
+        "exevl_atn": "미해당",
+        "exevl_bs_rs": "「자본시장과 금융투자업에 관한 법률」시행령 제176조의5 제8항제2호 나목 단서는 다른 회사의 발행주식총수를 소유하고 있는 회사가 그 다른 회사를 합병하면서 신주를 발행하지 않는 경우, 합병가액의 적정성에 대한 외부평가기관의 평가를 요구하지 않는 것으로 규정하고 있는바, 본 합병은 이에 해당하여 외부평가기관의 평가 절차를 거치지 아니하였습니다.",
+        "bdlst_atn": "해당사항없음",
+        "otcpr_bdlst_sf_atn": "해당사항없음",
+        "popt_ctr_atn": "아니오",
+        "mg_mth": "(주)에이프로가 (주)그린볼트피클1호를 흡수합병\n1) 존속회사 : (주)에이프로\n2) 소멸회사 : (주)그린볼트피클1호",
+        "mg_stn": "소규모합병",
+        "mg_pp": "합병을 통한 경영효율성 제고",
+        "mg_rt": "(주)에이프로 : (주)그린볼트피클1호 = 1.0000000 : 0.0000000",
+        "mg_rt_bs": "합병회사인 (주)에이프로는 피합병회사인 (주)그린볼트피클1호의 지분을 100% 소유하고 있으며, 합병 시 피합병회사의 주식에 대하여 신주를 발행하지 않으므로 합병비율을 1.0000000 : 0.0000000 으로 산출하였습니다.",
+        "mgptncmp_cmpnm": "(주)그린볼트피클1호",
+        "mgptncmp_mbsn": "전기장비 제조업",
+        "mgptncmp_rl_cmpn": "자회사",
+        "rbsnfdtl_tast": "97,528,187",
+        "rbsnfdtl_tdbt": "176,900",
+        "rbsnfdtl_teqt": "97,351,287",
+        "rbsnfdtl_cpt": "100,000,000",
+        "rbsnfdtl_sl": "0",
+        "rbsnfdtl_nic": "-2,648,713",
+        "nmgcmp_rlst_atn": "해당사항없음",
+        "mgsc_mgctrd": "2026년 11월 24일",
+        "mgsc_shddstd": "2026년 12월 08일",
+        "mgsc_mgop_rcpd_bgd": "2026년 12월 08일",
+        "mgsc_mgop_rcpd_edd": "2026년 12월 22일",
+        "mgsc_cdobprpd_bgd": "2026년 12월 23일",
+        "mgsc_cdobprpd_edd": "2027년 01월 25일",
+        "mgsc_mgdt": "2027년 01월 26일",
+        "mgsc_ergmd": "2027년 01월 27일",
+        "mgsc_mgrgsprd": "2027년 01월 28일"
+      },
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "에이프로의 소규모 합병 결정 공시입니다."
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "The Blame Game Has Begun Over Anthropic’s Turbulent Trading Debut",
+      "link": "https://www.wsj.com/finance/stocks/the-blame-game-has-begun-over-anthropics-turbulent-trading-debut-280a34b1?mod=rss_markets_main",
+      "published": "2026-11-21T11:16:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "앤스로픽 IPO 이후 주가 변동성 관련 보도입니다."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Activist Nelson Peltz Walked Away From the Investment He Loved Most. Now He’s Back.",
+      "link": "https://www.wsj.com/business/wendys-nelson-peltz-bid-activist-49d3a1ea?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-21T10:00:00+09:00",
+      "keywords": [
+        "to buy"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "행동주의 펀드의 웬디스 인수 재도도 관련 뉴스입니다."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Workday Completes Acquisition of C1.ai",
+      "link": "https://www.prnewswire.com/news-releases/workday-completes-acquisition-of-c1ai-302947290.html",
+      "published": "2026-11-23T23:15:00+09:00",
+      "keywords": [
+        "acquisition"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "워크데이의 AI 보안 기업 C1.ai 인수 완료."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Quantum Space Announces Completion of Business Combination with Inflection Point Acquisition Corp. VI",
+      "link": "https://www.prnewswire.com/news-releases/quantum-space-announces-completion-of-business-combination-with-inflection-point-acquisition-corp-vi-302948270.html",
+      "published": "2026-11-23T23:00:00+09:00",
+      "keywords": [
+        "acquisition"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "퀀텀스페이스의 스팩(SPAC) 합병 및 상장 완료."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "럭스코 \"임시주총서 IBKS제24호스팩과 합병 안건 가결\"",
+      "link": "https://www.hankyung.com/article/2026112340546",
+      "published": "2026-11-23T12:48:09+09:00",
+      "keywords": [
+        "합병"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "럭스코의 IBKS스팩 합병 안건 주총 통과."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "월가 불만 산 '별난' 앤트로픽 IPO…그 뿌리는 아모데이 남매",
+      "link": "https://www.yna.co.kr/view/AKR20261123091600009",
+      "published": "2026-11-23T13:14:21+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "글로벌 초대형 AI 기업 IPO 특이 구조 및 배경 보도"
+    },
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "CVC claims accounting manipulation in €3bn Advent pastry ingredients deal",
+      "link": "https://www.ft.com/content/06999b01-07f1-44a1-8eab-a5d5e7ecd70f?syn-25a6b1a6=1",
+      "published": "2026-11-21T14:00:26+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "글로벌 PEF 간 30억 유로 규모 거래 분쟁 뉴스."
+    },
+    {
+      "source": "CNBC Business",
+      "kind": "deal",
+      "title": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
+      "link": "https://www.cnbc.com/2026/11/22/foundation-future-industries-health-benefits-payroll-base-group.html",
+      "published": "2026-11-23T03:55:05+09:00",
+      "keywords": [
+        "in talks"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "국내 그룹사 투자건과 연관된 스타트업 자금조달."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(케이티스카이라이프) [기재정정]주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000383",
+      "published": "2026-11-23T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "KT스카이라이프의 자회사 합병 기재정정 공시입니다."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "A Former Pharmacist’s $875 Million Startup Deal Went Toxic Fast. Was It a ‘Buy-and-Kill’?",
+      "link": "https://www.wsj.com/business/a-former-pharmacists-875-million-startup-deal-went-toxic-fast-was-it-a-buy-and-kill-a65e5855?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-23T19:30:00+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "인수 후 소송전으로 번진 M&A 갈등 사례 뉴스입니다."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Madison Dearborn Partners to Acquire Peli BioThermal, a Trusted Cold Chain Solutions Provider, from Pelican Products and Platinum Equity",
+      "link": "https://www.prnewswire.com/news-releases/madison-dearborn-partners-to-acquire-peli-biothermal-a-trusted-cold-chain-solutions-provider-from-pelican-products-and-platinum-equity-302948222.html",
+      "published": "2026-11-24T02:00:00+09:00",
+      "keywords": [
+        "acquire"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "매디슨디어본의 콜드체인 기업 인수 거래."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Authentic Acquires O'Neill, Expanding Global Action and Outdoor Portfolio",
+      "link": "https://www.prnewswire.com/news-releases/authentic-acquires-oneill-expanding-global-action-and-outdoor-portfolio-302948389.html",
+      "published": "2026-11-24T01:00:00+09:00",
+      "keywords": [
+        "acquires"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "어센틱브랜즈그룹의 오닐 브랜드 인수 거래."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Research Solutions to Join KnowledgeWorks Global Ltd., a CJK Group Company in All-Cash Acquisition",
+      "link": "https://www.prnewswire.com/news-releases/research-solutions-to-join-knowledgeworks-global-ltd-a-cjk-group-company-in-all-cash-acquisition-302947935.html",
+      "published": "2026-11-23T22:00:00+09:00",
+      "keywords": [
+        "acquisition"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "리서치솔루션즈의 100% 현금 인수합병 합의."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Chord Energy Completes Divestiture of Non-Operated Marcellus Assets",
+      "link": "https://www.prnewswire.com/news-releases/chord-energy-completes-divestiture-of-non-operated-marcellus-assets-302947350.html",
+      "published": "2026-11-21T06:45:00+09:00",
+      "keywords": [
+        "divestiture"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "코드에너지의 비운용 자산 매각 완료."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "브리즈바이오·인스페이스, 코스닥 상장예심 신청",
+      "link": "https://www.yna.co.kr/view/AKR20261123153800008",
+      "published": "2026-11-23T17:21:53+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "코스닥 상장예비심사 신청 소식"
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "매출 80억 건기식 기업 매물로",
+      "link": "https://www.mk.co.kr/news/stock/12216372",
+      "published": "2026-11-23T17:40:13+09:00",
+      "keywords": [
+        "매각"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "소규모 비상장 기업 및 제조사 매각 검토 소식."
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "macro",
+      "title": "Anthropic’s IPO Turmoil Caps $4 Trillion AI Wipeout on Wall Street",
+      "link": "https://www.wsj.com/finance/stocks/anthropics-ipo-bust-punctuates-4-trillion-ai-wipeout-on-wall-street-f1f1ec90?mod=rss_markets_main",
+      "published": "2026-11-21T08:36:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "AI 기업 IPO 실패가 시장 전반에 미친 폭락 영향 보도입니다."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "macro",
+      "title": "금융위, 상장사 자사주 1일 취득한도 3개월간 확대한다",
+      "link": "https://www.hankyung.com/article/2026112344646",
+      "published": "2026-11-23T15:08:17+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "금융위의 상장사 자사주 취득 한도 확대 규제 변화."
+    },
+    {
+      "source": "FT M&A",
+      "kind": "macro",
+      "title": "Why private capital is betting big on mix-and-match deals",
+      "link": "https://www.ft.com/content/78b01bf4-3550-41cb-ac52-2f3426b58232?syn-25a6b1a6=1",
+      "published": "2026-11-23T14:00:04+09:00",
+      "keywords": [
+        "buyout"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "사모펀드 시장의 하이브리드 자본 거래 트렌드 분석."
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "美민주, 한국 3500억달러 대미투자 들여다본다…관세 청문회 추진",
+      "link": "https://www.hankyung.com/article/2026112329517",
+      "published": "2026-11-23T08:09:58+09:00",
+      "keywords": [
+        "관세"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "한국 기업의 대미 투자와 관세 이슈 관련 중요 거시 뉴스."
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "macro",
+      "title": "Anthropic Committed to Spend $900 Billion. Wall Street Expects Its Debt to Be Junk.",
+      "link": "https://www.wsj.com/finance/investing/anthropic-committed-to-spend-900-billion-wall-street-expects-its-debt-to-be-junk-5514d55d?mod=rss_markets_main",
+      "published": "2026-11-23T23:20:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "빅테크 부채 수준과 신용등급이 시장에 미치는 영향 분석입니다."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "8.9조 풀려도 회수 막힌 VC·IB…'기관 수급' 빠진 대통령 처방",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/22/2026112280038.html",
+      "published": "2026-11-23T07:00:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "VC·IB 투자 회수 환경과 자본시장 정책 동향을 다룸"
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "금투협, 회사채 '캡티브 영업' 막겠다는데…\"걸러낼 방법이 없다\"",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/20/2026112080095.html",
+      "published": "2026-11-23T07:00:00+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "회사채 발행 시장 규제 변화와 DCM 업계 관행을 다룸"
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "macro",
+      "title": "앤트로픽 IPO 성공에도 채권은 정크본드 등급 예상",
+      "link": "https://www.yna.co.kr/view/AKR20261123133200009",
+      "published": "2026-11-23T15:58:22+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "빅테크 기업 상장 후 신용등급 및 채권 발행 시장 전망"
+    },
+    {
+      "source": "FT M&A",
+      "kind": "macro",
+      "title": "Private equity backers flag fresh concerns about sell-to-yourself deals",
+      "link": "https://www.ft.com/content/d299785f-dc83-4850-95b8-e08b9a643f98?syn-25a6b1a6=1",
+      "published": "2026-11-22T14:00:06+09:00",
+      "keywords": [
+        "buyout",
+        "private equity"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "PEF의 컨티뉴에이션 펀드 거래 우려 및 트렌드."
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Asian Regulators Step Up Efforts to Calm AI-Driven Market Turmoil",
+      "link": "https://www.wsj.com/finance/stocks/asian-regulators-step-up-efforts-to-calm-ai-driven-market-turmoil-95ea6cf8?mod=rss_worldnews",
+      "published": "2026-11-23T13:55:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "아시아 금융당국의 증시 변동성 대응 거시 정책."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Fed governor Lisa Cook said the central bank’s decision to skip raising interest rates in October threatened to put the Fed behind the curve in its struggle to tame inflation",
+      "link": "https://www.wsj.com/economy/central-banking/lisa-cook-federal-reserve-comments-inflation-44eb3f41?mod=rss_socialeconomyfeed",
+      "published": "2026-11-21T03:23:00+09:00",
+      "keywords": [
+        "Fed",
+        "interest rate",
+        "inflation",
+        "central bank"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "미 연준 금리 정책 및 거시경제 정책 관련 뉴스."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "macro",
+      "title": "How Mercedes-Benz Nearly Became Collateral Damage in a Chinese Car Ban",
+      "link": "https://www.wsj.com/business/autos/how-mercedes-benz-nearly-became-collateral-damage-in-a-chinese-car-ban-4101cd7f?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-21T09:38:00+09:00",
+      "keywords": [
+        "stake"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "중국 지분 규제에 따른 메르세데스 벤츠의 지정학적 리스크 분석입니다."
+    }
+  ]
+}
