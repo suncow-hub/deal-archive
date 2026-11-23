@@ -43,3 +43,4 @@ Diamondback은 2025년 2월에도 Double Eagle 자산을 사들인 바 있어, �
 
 ## 관련 딜·뉴스
 - [Canadian Natural Resources, Advantage Energy를 주당 13.55캐나다달러 현금(EV 약 25.3억 캐나다달러)에 인수…프리미엄 25%](../2026/2026-11-16-canadian-natural-resources-advantage-energy.md) — 같은 날 발표된 북미 석유·가스 생산 자산 인수
+- [Texas Pacific Land, 퍼미안 토지·수자원 기업 EagleRock을 약 30억 달러 전액 주식으로 인수](../2026/2026-11-23-texas-pacific-land-eaglerock.md) — 같은 달 퍼미안 분지에서 나온 인수

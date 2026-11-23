@@ -42,3 +42,4 @@ BP가 부채를 줄이려 비핵심 지분을 현금화하는 자산 매각 흐�
 
 ## 관련 딜·뉴스
 - [CVR Energy, Marathon Petroleum의 정유소 2곳과 판매사업을 약 42억 달러에 인수](../2026/2026-11-03-cvr-energy-marathon-refineries.md) — 같은 주 석유 기업의 자산 정리
+- [Vår Energi, ConocoPhillips의 노르웨이 사업을 기업가치 약 44억 달러에 인수](../2026/2026-11-23-var-energi-conocophillips-norway.md) — 같은 달 대형 석유사가 노르웨이 자산을 정리한 거래

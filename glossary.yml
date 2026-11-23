@@ -308,6 +308,19 @@
   related: [합병, 포괄적 주식교환, 인수 프리미엄]
   memo: ""
 
+- id: economic-date
+  term: 경제적 기준일 (Economic Date)
+  en: Economic Effective Date
+  category: 딜 구조
+  match: [경제적 기준일, Economic Date, economic date]
+  aliases: [효력 기준일, effective date]
+  short: 거래 가격을 정할 때 '이날부터는 사는 쪽 회사로 본다'고 정한 날. 그 뒤 생긴 이익은 사는 쪽 몫으로 쳐서 실제 지급액에서 뺀다.
+  more: 계약과 종결 사이가 길어지는 자원·에너지 자산 거래에서 자주 쓴다. 그래서 발표한 거래 규모와 종결 때 실제로 주는 돈이 크게 다를 수 있다.
+  example: Vår Energi–ConocoPhillips 노르웨이 사업 거래는 기준일을 2026년 1월 1일로 잡아, 기업가치 약 44억 달러와 달리 종결 시 지급액은 약 25억 달러로 보도됐다.
+  deal: 2026-11-23-var-energi-conocophillips-norway
+  related: [EV (기업가치)]
+  memo: ""
+
 - id: appraisal-right
   term: 주식매수청구권
   en: Appraisal Right

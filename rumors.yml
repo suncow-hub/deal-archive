@@ -4,6 +4,31 @@
 # - status: 미확인 / 사실로 확인 / 부인 / 소멸
 #   (사실로 확인되면 deal 에 딜 노트 id, 30일간 새 소식이 없으면 소멸)
 # - credibility: 낮음 / 중간  (공신력 높은 출처로 확인되면 소문이 아니라 딜 노트로 간다)
+- id: 2026-11-24-amazon-decart-acquisition
+  first_seen: 2026-11-24
+  last_seen: 2026-11-24
+  title: "Amazon, AI 영상 생성 스타트업 Decart 인수 임박설"
+  claim: "Amazon이 AI 스타트업 Decart를 약 70억~75억 달러에 인수하는 거래를 마무리하는 단계라는 FT 보도가 나왔다. 회사 측 발표는 확인되지 않았다."
+  companies: ["Amazon", "Decart"]
+  sources:
+    - {name: "Financial Times (제목 기준)", url: "https://www.ft.com/content/dc7749dc-0f40-44a6-80bc-7f747d383616", credibility: 중간}
+    - {name: "연합뉴스 (제목 기준)", url: "https://www.yna.co.kr/view/AKR20261123012400009", credibility: 중간}
+  why_watch: "사실이면 빅테크가 AI 스타트업을 통째로 사들이는 10조 원 안팎의 대형 거래가 된다."
+  status: 미확인
+  status_note: ""
+  deal: null
+- id: 2026-11-24-mbk-wacom-acquisition
+  first_seen: 2026-11-24
+  last_seen: 2026-11-24
+  title: "MBK파트너스, 일본 Wacom 인수 추진설"
+  claim: "MBK파트너스가 갤럭시 S펜 기술을 공급하는 일본 Wacom을 약 1.2조 원에 인수하려 하고 삼성전자도 다시 출자한다는 인베스트조선 보도가 나왔다. 회사 발표나 다른 매체 확인은 찾지 못했다."
+  companies: ["MBK파트너스", "Wacom", "삼성전자"]
+  sources:
+    - {name: "인베스트조선 (제목 기준)", url: "https://www.investchosun.com/site/data/html_dir/2026/11/22/2026112280045.html", credibility: 중간}
+  why_watch: "사실이면 한국계 PE가 일본 상장 부품사를 인수하고 국내 대기업이 주요 고객 겸 주주로 남는 크로스보더 거래가 된다."
+  status: 미확인
+  status_note: ""
+  deal: null
 - id: 2026-11-21-sk-hynix-kioxia-cb-conversion
   first_seen: 2026-11-21
   last_seen: 2026-11-21

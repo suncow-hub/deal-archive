@@ -45,3 +45,4 @@
 - [Anthropic, 공모가 83달러로 약 810억 달러 조달하며 나스닥 상장](../2026/2026-11-02-anthropic-ipo.md) — 같은 날 나온 AI 대형 거래, AI 자산 가격이 높은 시점
 - [Marvell, Lumentum을 기업가치 1,150억 달러에 전액 주식으로 인수](../2026/2026-11-02-marvell-technology-lumentum.md) — 같은 달 나온 AI 관련 전액 주식 인수
 - [Oura, AI 기반 1차 진료 스타트업 Counsel Health를 6.25억 달러에 인수](../2026/2026-11-10-oura-counsel-health.md) — 기존 사업에 AI 스타트업을 붙이는 비슷한 시기 인수
+- [CrowdStrike, Zscaler를 약 439억 달러 전액 주식으로 인수](../2026/2026-11-23-crowdstrike-zscaler.md) — 며칠 뒤 나온 보안 업계 대형 전액 주식 인수

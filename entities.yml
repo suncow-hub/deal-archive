@@ -2748,3 +2748,100 @@ Sullivan & Cromwell:
     edge: "확인되지 않음"
     owner: "파트너십 (로펌)"
     as_of: "2026-11-21"
+CrowdStrike:
+  type: 기업
+  country: 미국
+  aliases: [크라우드스트라이크, CrowdStrike Holdings]
+  ticker: "NASDAQ:CRWD"
+  profile:
+    about: "PC·서버 같은 단말을 지키는 보안 소프트웨어로 알려진 미국 사이버보안 기업."
+    business: "클라우드 기반 단말 보안, 위협 탐지·대응, 보안 운영 플랫폼(Falcon)"
+    edge: "단말에 설치한 가벼운 프로그램과 클라우드 분석을 묶은 보안 플랫폼"
+    owner: "나스닥 상장사"
+    points:
+      - "2026-11 Zscaler를 전액 주식(1주당 1.135주)으로 인수하기로 함"
+    as_of: "2026-11-24"
+Zscaler:
+  type: 기업
+  country: 미국
+  aliases: [지스케일러, Zscaler Inc.]
+  ticker: "NASDAQ:ZS"
+  profile:
+    about: "회사 네트워크 대신 클라우드에서 접속을 검사하는 '제로트러스트' 보안 기업."
+    business: "클라우드 기반 인터넷·사내 앱 접속 보안"
+    edge: "인터넷과 사내 시스템 접속을 클라우드에서 한 번에 검사하는 방식"
+    owner: "나스닥 상장사"
+    points:
+      - "2026-11 CrowdStrike에 전액 주식 방식으로 인수되기로 함"
+    as_of: "2026-11-24"
+ConocoPhillips:
+  type: 기업
+  country: 미국
+  aliases: [코노코필립스]
+  ticker: "NYSE:COP"
+  profile:
+    about: "미국 대형 석유·가스 탐사·생산 기업."
+    business: "원유·천연가스 탐사와 생산"
+    edge: "미국 셰일과 해외 유전을 함께 가진 생산 포트폴리오"
+    owner: "뉴욕증시 상장사"
+    points:
+      - "2026-11 노르웨이 사업과 영국 Teesside 지분을 Vår Energi에 팔기로 함"
+    as_of: "2026-11-24"
+Vår Energi:
+  type: 기업
+  country: 유럽
+  aliases: [Var Energi, 바르에너지]
+  profile:
+    about: "노르웨이 대륙붕에서 원유·가스를 생산하는 기업."
+    business: "북해 원유·천연가스 탐사와 생산"
+    edge: "노르웨이 대륙붕에 집중된 생산 자산"
+    owner: "오슬로 증시 상장사. Eni가 최대주주 (보도 기준)"
+    points:
+      - "2026년 BlueNord 인수를 발표한 데 이어 2026-11 ConocoPhillips 노르웨이 사업 인수 계약"
+    as_of: "2026-11-24"
+ConocoPhillips 노르웨이 사업:
+  type: 기업
+  country: 유럽
+  aliases: [ConocoPhillips Norway]
+  profile:
+    about: "ConocoPhillips가 노르웨이 대륙붕에서 운영해 온 석유·가스 생산 사업."
+    business: "Greater Ekofisk 지역 등 13개 생산 유전, Norpipe 파이프라인, 영국 Teesside 시설 관련 지분"
+    edge: "Greater Ekofisk 지역 운영권과 북해 수송 인프라"
+    owner: "ConocoPhillips (2026-11 Vår Energi에 매각 계약)"
+    as_of: "2026-11-24"
+Texas Pacific Land:
+  type: 기업
+  country: 미국
+  aliases: [TPL, Texas Pacific Land Corp, 텍사스퍼시픽랜드]
+  ticker: "NYSE:TPL"
+  profile:
+    about: "미국 텍사스 퍼미안 분지에 넓은 땅을 가진 토지 관리 기업."
+    business: "석유·가스 로열티, 토지 사용료, 유전용 수자원 공급"
+    edge: "퍼미안 분지에 직접 소유한 대규모 토지"
+    owner: "뉴욕증시 상장사"
+    points:
+      - "2026-11 EagleRock을 전액 주식으로 인수하기로 함"
+    as_of: "2026-11-24"
+EagleRock:
+  type: 기업
+  country: 미국
+  aliases: [EagleRock Land, EagleRock Land LLC, 이글록]
+  profile:
+    about: "미국 퍼미안 분지의 토지·수자원 기업."
+    business: "토지 사용료, 로열티, 유전용 수자원 사업"
+    edge: "퍼미안 분지 델라웨어·미들랜드 지역의 토지·수자원 자산"
+    owner: "뉴욕증시 상장사 (2026년 상장)"
+    points:
+      - "2026-11 Texas Pacific Land에 전액 주식 방식으로 인수되기로 함"
+    as_of: "2026-11-24"
+Ziehl-Abegg:
+  type: 기업
+  country: 유럽
+  aliases: [Ziehl Abegg, 질아벡]
+  profile:
+    about: "독일의 환기팬·구동 모터 제조사."
+    business: "공조(HVAC)·산업 냉각용 팬과 일체형 모터"
+    edge: "팬과 모터를 함께 만드는 공조·냉각 부품 기술"
+    points:
+      - "2026-11 ABB가 기업가치 약 26.5억 달러에 인수하기로 함 (보도 기준)"
+    as_of: "2026-11-24"
