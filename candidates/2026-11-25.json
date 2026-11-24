@@ -1,0 +1,726 @@
+{
+  "meta": {
+    "run_at": "2026-11-25T02:12:41.471926+09:00",
+    "window_start": "2026-11-23T20:12:41.471926+09:00",
+    "sources": {
+      "환율": "1일 추가 (최신 2026-11-24)",
+      "OpenDART 상세": "2건 성공, 7건 실패",
+      "OpenDART": "10건",
+      "WSJ Markets": "2/61",
+      "WSJ U.S. Business": "8/85",
+      "PR Newswire M&A": "16/20",
+      "한경 증권": "6/50",
+      "인베스트조선": "4/50",
+      "연합뉴스 마켓+": "14/120",
+      "매일경제 증권": "12/50",
+      "조선비즈": "2/100",
+      "FT M&A": "3/25",
+      "CNBC Business": "1/30",
+      "WSJ World News": "6/72",
+      "WSJ Economy": "2/36",
+      "한경 경제": "1/50",
+      "한경 국제": "2/50"
+    },
+    "gemini_tries": 24,
+    "gemini_model": "gemini-3.6-flash",
+    "gemini": "일부 성공 (20/75건 채점, 나머지는 키워드 점수). 오류: ServerError",
+    "counts": {
+      "deal": 40,
+      "macro": 12,
+      "dropped": 23
+    }
+  },
+  "items": [
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Sanofi to Acquire Insmed in Strategic Step that Strengthens Long-Term Future",
+      "link": "https://www.prnewswire.com/news-releases/sanofi-to-acquire-insmed-in-strategic-step-that-strengthens-long-term-future-302949056.html",
+      "published": "2026-11-24T15:30:00+09:00",
+      "keywords": [
+        "acquire",
+        "acquisition"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "글로벌 제약사 사노피의 대형 인수합병 건임."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "[단독] 다올證 인수전, DB·유진·LF 참전하나",
+      "link": "https://www.hankyung.com/article/2026112476371",
+      "published": "2026-11-24T17:50:15+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "다올투자증권 인수전 인수 후보군 관련 속보임."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "[단독] 'IB 특화' 다올투자증권 경영권 판다",
+      "link": "https://www.hankyung.com/article/2026112477551",
+      "published": "2026-11-24T17:48:44+09:00",
+      "keywords": [
+        "경영권"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "국내 중견 증권사 경영권 매각 관련 보도임."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "[단독] 다올투자증권 M&A 매물로…이병철 회장 지분 매각 추진",
+      "link": "https://www.hankyung.com/article/202611247145i",
+      "published": "2026-11-24T15:10:19+09:00",
+      "keywords": [
+        "매각",
+        "지분"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "다올투자증권 대주주 지분 매각 M&A 추진 보도임."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "에코프로비엠 \"종속회사 에코프로글로벌 주식 6천222억원에 추가취득\"",
+      "link": "https://www.yna.co.kr/view/AKR20261124158000008",
+      "published": "2026-11-24T17:04:11+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "에코프로비엠의 종속회사 대규모 유상증자 참여 건임."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Platinum Equity Completes Acquisition of EDP",
+      "link": "https://www.prnewswire.com/news-releases/platinum-equity-completes-acquisition-of-edp-302948762.html",
+      "published": "2026-11-24T09:30:00+09:00",
+      "keywords": [
+        "acquisition"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "플래티넘 이쿼티의 EDP 인수 완료 건임."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "엑셀세라퓨틱스 40억 유상증자…대표 회사·서연씨엠씨 13억씩 인수",
+      "link": "https://www.hankyung.com/article/2026112468806",
+      "published": "2026-11-24T14:02:25+09:00",
+      "keywords": [
+        "인수",
+        "유상증자"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "국내 상장사의 소규모 유상증자 발행 건임."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "다올투자증권 \"계열사 다올저축은행 주식 222억원에 추가취득\"",
+      "link": "https://www.yna.co.kr/view/AKR20261124151500008",
+      "published": "2026-11-24T16:31:02+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "다올투자증권의 자회사 다올저축은행 지분 추가 취득임."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "[특징주] 엠비디, 코스닥 입성 첫날 39% 급락 마감(종합)",
+      "link": "https://www.yna.co.kr/view/AKR20261124049551008",
+      "published": "2026-11-24T16:08:56+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "엠비디의 코스닥 신규 상장 첫날 주가 동향임."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(SK이노베이션) [기재정정]주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000487",
+      "published": "2026-11-24T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(SK아이이테크놀로지) [기재정정]주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000508",
+      "published": "2026-11-24T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(미래에셋비전스팩7호) [기재정정]주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000455",
+      "published": "2026-11-24T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(아티스트컴퍼니) [기재정정]주요사항보고서(영업양도결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123000407",
+      "published": "2026-11-23T00:00:00+09:00",
+      "keywords": [
+        "영업양도결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(드림인사이트) [기재정정]최대주주변경을수반하는주식양수도계약체결",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261123900699",
+      "published": "2026-11-23T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "웅진그룹, 프리드라이프 지분 20% 판다",
+      "link": "https://www.mk.co.kr/news/stock/12217364",
+      "published": "2026-11-24T17:26:29+09:00",
+      "keywords": [
+        "인수",
+        "매각",
+        "지분"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "Stock Market Today: Nasdaq Resumes Selloff as Nvidia, Anthropic Shares Slump",
+      "link": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-24-2026?mod=rss_markets_main",
+      "published": "2026-11-24T18:53:51+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Sanofi Strikes $41 Billion Deal to Buy U.S. Drugmaker Insmed",
+      "link": "https://www.wsj.com/business/deals/sanofi-to-buy-insmed-for-41-0-billion-36d6b07d?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-24T18:39:00+09:00",
+      "keywords": [
+        "to buy",
+        "deal"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "엑셀세라퓨틱스, 40억원 유상증자…㈜나모홀딩스 등에 3자 배정",
+      "link": "https://www.yna.co.kr/view/AKR20261124102500008",
+      "published": "2026-11-24T13:33:59+09:00",
+      "keywords": [
+        "유상증자",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "다올투자證 경영권 매각설",
+      "link": "https://www.mk.co.kr/news/stock/12217373",
+      "published": "2026-11-24T17:30:19+09:00",
+      "keywords": [
+        "매각",
+        "경영권"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "꺼지지 않는 ‘AI 버블론’…글로벌 투자 구루들 “위기 속에 기회 있다” [기자24시]",
+      "link": "https://www.mk.co.kr/news/stock/12217030",
+      "published": "2026-11-24T13:48:26+09:00",
+      "keywords": [
+        "합병",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "The White House Push to Reinstate Jensen Huang",
+      "link": "https://www.wsj.com/articles/the-white-house-push-to-reinstate-jensen-huang-097e06dd?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-24T19:51:00+09:00",
+      "keywords": [
+        "in talks"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Pentagon in Talks With General Motors and Ford to Make Military Drones",
+      "link": "https://www.wsj.com/politics/national-security/ford-general-motors-military-drones-c082d202?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-24T19:30:00+09:00",
+      "keywords": [
+        "in talks"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "CrowdStrike’s $44 Billion Zscaler Deal Reflects a New Imperative in Cybersecurity",
+      "link": "https://www.wsj.com/pro/cybersecurity/crowdstrikes-44-billion-zscaler-deal-reflects-a-new-imperative-in-cybersecurity-5669e9db?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-24T00:43:00+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Labor Deal Fends Off Strike Threat at Ports of L.A., Long Beach",
+      "link": "https://www.wsj.com/logistics-report/labor-deal-fends-off-strike-threat-at-ports-of-l-a-long-beach-5d578a35?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-23T20:55:00+09:00",
+      "keywords": [
+        "deal"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Mosaic Announces Agreement with CF Industries for the Sale of its Faustina Ammonia Plant",
+      "link": "https://www.prnewswire.com/news-releases/mosaic-announces-agreement-with-cf-industries-for-the-sale-of-its-faustina-ammonia-plant-302948776.html",
+      "published": "2026-11-24T22:30:00+09:00",
+      "keywords": [
+        "acquire"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "코인거래소 대주주 지분 20% 제한…스테이블코인 은행 주도",
+      "link": "https://www.yna.co.kr/view/AKR20261124124400002",
+      "published": "2026-11-24T15:00:07+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "[IPO챗] 엔키화이트햇 \"AI 기반 오펜시브 보안플랫폼 글로벌 도약\"",
+      "link": "https://www.yna.co.kr/view/AKR20261124120900008",
+      "published": "2026-11-24T14:32:57+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "삼성·미래에셋운용, 운용 ETF에 앤트로픽 잇단 편입",
+      "link": "https://www.yna.co.kr/view/AKR20261124051200008",
+      "published": "2026-11-24T10:04:24+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "AI 해킹 공포 확산에 사이버 보안업계 대형 M&A",
+      "link": "https://www.yna.co.kr/view/AKR20261124054600009",
+      "published": "2026-11-24T09:55:47+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "[특징주] 엠비디, 코스닥 입성 첫날 장초반 15% 이상 급락",
+      "link": "https://www.yna.co.kr/view/AKR20261124049500008",
+      "published": "2026-11-24T09:39:28+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "한화운용, 글로벌 AI 병목 인프라 투자 ETF 신규 상장",
+      "link": "https://www.yna.co.kr/view/AKR20261124031800008",
+      "published": "2026-11-24T08:45:28+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "[코스피·코스닥 전 거래일(23일) 주요공시]",
+      "link": "https://www.yna.co.kr/view/AKR20261123163700008",
+      "published": "2026-11-24T06:05:01+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "국민연금 때문에 꼬인 증시 수급...“증안펀드 10조론 역부족” [최재원의 마켓워치]",
+      "link": "https://www.mk.co.kr/news/stock/12217441",
+      "published": "2026-11-24T18:13:39+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "장투하려고 샀는데 … ETF 17% 5년내 상폐",
+      "link": "https://www.mk.co.kr/news/stock/12217366",
+      "published": "2026-11-24T17:26:31+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "에이피알, 브랜드501 인수 협상…기업가치 조율이 관건",
+      "link": "https://www.mk.co.kr/news/stock/12217212",
+      "published": "2026-11-24T16:22:23+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "디지털자산거래소 대주주 지분, 최대 34%까지 허용",
+      "link": "https://www.mk.co.kr/news/stock/12217102",
+      "published": "2026-11-24T15:03:14+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "‘롤러코스피’에 버팀목 될까…오늘부터 자사주 하루 주문 한도 완화",
+      "link": "https://www.mk.co.kr/news/stock/12217089",
+      "published": "2026-11-24T14:49:10+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "“만원으로 美 대표지수 3종에 투자”…미래에셋, ‘4·4·2 ETF’ 내놓는다",
+      "link": "https://www.mk.co.kr/news/stock/12217049",
+      "published": "2026-11-24T14:13:26+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "공모가 27% 낮췄는데…엠비디, 코스닥 입성 첫날 21%대 하락",
+      "link": "https://www.mk.co.kr/news/stock/12216878",
+      "published": "2026-11-24T10:04:06+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "“앤트로픽 지분 가치 반영 안 돼”…하나증권, SK텔레콤 목표가 14만원 유지",
+      "link": "https://www.mk.co.kr/news/stock/12216744",
+      "published": "2026-11-24T08:17:06+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "산은에 PEF 주도권 뺏긴 국민연금, 출자사업 재개해도 매칭 걱정",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/23/2026112380131.html",
+      "published": "2026-11-24T07:00:00+09:00",
+      "keywords": [
+        "PEF"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "국민연금 PEF 출자사업 중단 등 PEF 시장 자금 동향임."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "macro",
+      "title": "업비트·빗썸 지배구조 바뀌나…대주주 지분 20% 제한 추진",
+      "link": "https://www.yna.co.kr/view/AKR20261124143900002",
+      "published": "2026-11-24T16:11:10+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "가상자산거래소 대주주 지분 제한 정책 규제 소식임."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "중복상장 규제에 번지는 법적 분쟁…카카오 이어 LS도 전운",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/24/2026112480118.html",
+      "published": "2026-11-24T15:23:26+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "중복상장 규제 이슈 및 주주 분쟁 관련 보도임."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "국민성장펀드 쏠림에…PEF 운용사들 \"은행 돈 받기가 하늘의 별 따기\"",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/23/2026112380130.html",
+      "published": "2026-11-24T07:00:00+09:00",
+      "keywords": [
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "국민성장펀드 자금 쏠림 및 PE 펀드레이징 시장 동향임."
+    },
+    {
+      "source": "한경 증권",
+      "kind": "macro",
+      "title": "\"한 달 차이로 수억원 날릴 판\"…자사주 매각 기업들 '초비상'",
+      "link": "https://www.hankyung.com/article/202611234652i",
+      "published": "2026-11-24T11:23:52+09:00",
+      "keywords": [
+        "매각"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "자사주 매각/소각 관련 제도 변화 영향 보도임."
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "China Takes Down Shanghai Party Boss Once Seen as Potential Leader",
+      "link": "https://www.wsj.com/world/china/china-takes-down-shanghai-party-boss-once-seen-as-potential-leader-5d6d06e0?mod=rss_worldnews",
+      "published": "2026-11-25T00:42:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "The Gap Between China’s Military Spectacle and Battlefield Reality",
+      "link": "https://www.wsj.com/world/china/the-gap-between-chinas-military-spectacle-and-battlefield-reality-3e32e7ed?mod=rss_worldnews",
+      "published": "2026-11-24T20:55:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "China to Suspend Some Critical-Material Export Curbs to U.S. Until January",
+      "link": "https://www.wsj.com/economy/trade/china-to-suspend-some-critical-material-export-curbs-to-u-s-until-january-35bc8dca?mod=rss_worldnews",
+      "published": "2026-11-24T20:13:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Inside the Ukrainian Attack That Sank Russian Warship Docked in Libya",
+      "link": "https://www.wsj.com/world/inside-the-ukrainian-attack-that-sank-russian-warship-docked-in-libya-2dbd658b?mod=rss_worldnews",
+      "published": "2026-11-24T06:45:00+09:00",
+      "keywords": [
+        "war"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Alice Huang Had Ties to China’s Intelligence Network. But Was She Really a Spy?",
+      "link": "https://www.wsj.com/world/china/alice-huang-us-intel-nvidia-china-34e2404a?mod=rss_worldnews",
+      "published": "2026-11-24T11:00:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Best High-Yield Savings Accounts of November 2026: Up to 5.00%",
+      "link": "https://www.wsj.com/buyside/personal-finance/banking/best-high-yield-savings-account?mod=rss_worldnews",
+      "published": "2026-11-24T23:01:00+09:00",
+      "keywords": [
+        "interest rate"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "U.S. prepares to raise tariffs on China and other countries",
+      "link": "https://www.wsj.com/economy/trade/u-s-prepares-to-raise-tariffs-on-china-and-other-countries-37981740?mod=rss_socialeconomyfeed",
+      "published": "2026-11-24T22:08:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    }
+  ]
+}
