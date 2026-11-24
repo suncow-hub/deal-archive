@@ -373,6 +373,32 @@
   related: [언아웃]
   memo: ""
 
+- id: offtake-agreement
+  term: 오프테이크 계약 (장기 구매계약)
+  en: Offtake Agreement
+  category: 딜 구조
+  match: [오프테이크 계약, 오프테이크, 장기 공급계약, Offtake Agreement]
+  aliases: [offtake]
+  short: 생산자가 만든 물건을 정해진 양만큼 오랫동안 사 주기로 미리 약속하는 계약.
+  more: 공장이나 광산 거래에서 자주 쓴다. 자산을 파는 쪽이 대금 일부를 현금 대신 "앞으로 싼값에 물건을 공급받을 권리"로 받기도 해서, 발표된 거래 금액과 실제 현금이 다를 수 있다.
+  example: Mosaic은 Faustina 암모니아 공장을 CF Industries에 넘기며 현금 약 3.6억 달러와 20년 암모니아 공급계약을 함께 받았다.
+  deal: 2026-11-24-cf-industries-mosaic-faustina
+  related: [카브아웃 (사업부 매각)]
+  memo: ""
+
+- id: unaffected-share-price
+  term: 비영향 주가
+  en: Unaffected Share Price
+  category: 딜 구조
+  match: [비영향 주가, 인수설 보도 전 주가, Unaffected Share Price]
+  aliases: [unaffected price]
+  short: 인수 소식이 알려지기 전의 주가. 인수 가격이 얼마나 비싼지(프리미엄)를 잴 때 기준으로 쓴다.
+  more: 인수설이 보도되면 주가가 미리 오르기 때문에, 보도 후 주가와 비교하면 프리미엄이 작아 보인다. 그래서 보통 첫 보도 전날 종가를 기준으로 삼는다.
+  example: Sanofi는 Insmed 인수가 주당 175달러가 인수설 보도 전날 종가보다 약 46% 높다고 밝혔다.
+  deal: 2026-11-24-sanofi-insmed
+  related: [인수 프리미엄]
+  memo: ""
+
 # ---------------- 자금 조달
 - id: acquisition-finance
   term: 인수금융

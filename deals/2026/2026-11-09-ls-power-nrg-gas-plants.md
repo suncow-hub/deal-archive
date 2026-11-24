@@ -43,3 +43,4 @@ NRG는 LS Power에서 대규모 발전 자산을 사들인 뒤 일부를 다시 
 ## 관련 딜·뉴스
 - [Vistra, Quantum Capital로부터 Cogentrix Energy 인수 완료 (순매입가 약 40억 달러)](../2026/2026-01-05-vistra-cogentrix-energy.md) — 미국 가스발전 자산 대형 거래
 - [EQT, 미국 동부 배터리 에너지저장장치(ESS) 개발사 Flatiron Energy를 Hull Street Energy로부터 인수](../2026/2026-11-17-eqt-flatiron-energy.md) — 같은 달 나온 미국 전력 설비(배터리 저장) 인수
+- [Mosaic, 루이지애나 Faustina 암모니아 공장을 CF Industries에 약 6억 달러에 매각](../2026/2026-11-24-cf-industries-mosaic-faustina.md) — 같은 달 미국 에너지·화학 설비 자산 매각

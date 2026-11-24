@@ -2845,3 +2845,95 @@ Ziehl-Abegg:
     points:
       - "2026-11 ABB가 기업가치 약 26.5억 달러에 인수하기로 함 (보도 기준)"
     as_of: "2026-11-24"
+Sanofi:
+  type: 기업
+  country: 유럽
+  aliases: [사노피, Sanofi SA]
+  ticker: "EURONEXT:SAN"
+  profile:
+    about: "프랑스 파리에 본사를 둔 글로벌 제약사."
+    business: "면역질환·희귀질환 치료제, 백신, 일반의약품"
+    edge: "면역질환 치료제 Dupixent와 세계적인 백신 사업"
+    owner: "유로넥스트 파리·나스닥 상장사 (지분 분산)"
+    points:
+      - "2026-11 Insmed를 지분가치 약 410억 달러 현금에 인수하기로 함"
+    as_of: "2026-11-25"
+Insmed:
+  type: 기업
+  country: 미국
+  aliases: [인스메드, Insmed Incorporated]
+  ticker: "NASDAQ:INSM"
+  profile:
+    about: "미국 뉴저지의 호흡기·희귀질환 바이오텍."
+    business: "만성 폐질환 치료제 개발·판매"
+    edge: "기관지확장증 치료제 Brinsupri 등 호흡기 신약"
+    owner: "나스닥 상장사"
+    points:
+      - "2026-11 Sanofi에 주당 175달러 현금으로 인수되기로 함 (2027년 상반기 종결 예정)"
+    as_of: "2026-11-25"
+Freshfields:
+  type: 법률 자문사
+  country: 유럽
+  aliases: [Freshfields LLP, Freshfields Bruckhaus Deringer, 프레시필즈]
+  profile:
+    about: "영국 런던에 뿌리를 둔 국제 로펌."
+    business: "M&A, 반독점, 금융, 분쟁 자문"
+    edge: "대형 크로스보더 M&A와 반독점 자문"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-25"
+Hunton Andrews Kurth:
+  type: 법률 자문사
+  country: 미국
+  aliases: [Hunton Andrews Kurth LLP]
+  profile:
+    about: "미국 버지니아주 리치먼드에 본사를 둔 로펌."
+    business: "M&A, 에너지, 금융, 규제 자문"
+    edge: "에너지·금융 규제 분야 자문"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-25"
+Mosaic:
+  type: 기업
+  country: 미국
+  aliases: [The Mosaic Company, 모자이크]
+  ticker: "NYSE:MOS"
+  profile:
+    about: "미국의 인산·칼륨 비료 생산 기업."
+    business: "인산 비료, 칼륨 비료, 비료 유통"
+    edge: "북미 인산·칼륨 광산과 대규모 생산 설비"
+    owner: "뉴욕증시 상장사"
+    points:
+      - "2026-11 루이지애나 Faustina 암모니아 공장을 CF Industries에 매각하기로 함"
+    as_of: "2026-11-25"
+CF Industries:
+  type: 기업
+  country: 미국
+  aliases: [CF Industries Holdings, CF인더스트리]
+  ticker: "NYSE:CF"
+  profile:
+    about: "미국의 암모니아·질소 비료 생산 기업."
+    business: "암모니아, 요소 등 질소 비료와 산업용 질소 제품"
+    edge: "북미 대규모 암모니아 생산 설비"
+    owner: "뉴욕증시 상장사"
+    points:
+      - "2026-11 Mosaic의 Faustina 암모니아 공장을 인수하기로 함"
+    as_of: "2026-11-25"
+Faustina 암모니아 공장:
+  type: 기업
+  country: 미국
+  aliases: [Faustina ammonia plant, Faustina]
+  profile:
+    about: "Mosaic이 미국 루이지애나주에서 운영해 온 암모니아 생산 공장."
+    business: "비료 원료인 암모니아 생산"
+    edge: "Mosaic 루이지애나 인산 비료 단지 옆에 있어 원료 공급에 쓰여 온 설비"
+    owner: "Mosaic (2026-11 CF Industries에 매각 계약)"
+    as_of: "2026-11-25"
+Kean Miller:
+  type: 법률 자문사
+  country: 미국
+  aliases: [Kean Miller LLP]
+  profile:
+    about: "미국 루이지애나주 기반 로펌."
+    business: "에너지·화학 산업, M&A, 규제 자문"
+    edge: "미국 걸프 연안 에너지·화학 산업 자문"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-25"

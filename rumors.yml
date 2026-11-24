@@ -4,6 +4,44 @@
 # - status: 미확인 / 사실로 확인 / 부인 / 소멸
 #   (사실로 확인되면 deal 에 딜 노트 id, 30일간 새 소식이 없으면 소멸)
 # - credibility: 낮음 / 중간  (공신력 높은 출처로 확인되면 소문이 아니라 딜 노트로 간다)
+- id: 2026-11-25-daol-investment-securities-sale
+  first_seen: 2026-11-25
+  last_seen: 2026-11-25
+  title: "다올투자증권 경영권 매각 추진설"
+  claim: "이병철 회장 측이 다올투자증권 보유 지분을 팔아 경영권 매각을 추진하고 있으며 DB·유진·LF 등이 후보로 거론된다는 단독 보도가 나왔다. 회사 측 공식 발표는 확인되지 않았다."
+  companies: ["다올투자증권"]
+  sources:
+    - {name: "한국경제 (제목 기준)", url: "https://www.hankyung.com/article/202611247145i", credibility: 중간}
+    - {name: "한국경제 (제목 기준)", url: "https://www.hankyung.com/article/2026112476371", credibility: 중간}
+    - {name: "매일경제 (제목 기준)", url: "https://www.mk.co.kr/news/stock/12217373", credibility: 중간}
+  why_watch: "사실이면 IB 특화 중견 증권사 경영권이 시장에 나오는 것으로, 증권업 재편의 단서가 된다."
+  status: 미확인
+  status_note: ""
+  deal: null
+- id: 2026-11-25-woongjin-preed-life-stake-sale
+  first_seen: 2026-11-25
+  last_seen: 2026-11-25
+  title: "웅진그룹, 프리드라이프 지분 20% 매각설"
+  claim: "웅진그룹이 지난해 인수한 상조업체 프리드라이프 지분 20%를 팔 계획이라는 보도가 나왔다. 다른 매체나 공시로는 확인되지 않았다."
+  companies: ["웅진", "프리드라이프"]
+  sources:
+    - {name: "매일경제 (제목 기준)", url: "https://www.mk.co.kr/news/stock/12217364", credibility: 중간}
+  why_watch: "사실이면 인수 뒤 재무 부담을 덜기 위한 일부 지분 매각 사례가 된다."
+  status: 미확인
+  status_note: ""
+  deal: null
+- id: 2026-11-25-apr-brand501-acquisition
+  first_seen: 2026-11-25
+  last_seen: 2026-11-25
+  title: "에이피알, 브랜드501 인수 협상설"
+  claim: "에이피알이 브랜드501 인수를 협상 중이며 기업가치 조율이 남았다는 보도가 나왔다. 회사 측 발표는 확인되지 않았다."
+  companies: ["에이피알", "브랜드501"]
+  sources:
+    - {name: "매일경제 (제목 기준)", url: "https://www.mk.co.kr/news/stock/12217212", credibility: 중간}
+  why_watch: "사실이면 K뷰티 상장사가 브랜드 인수로 외형을 넓히는 사례가 된다."
+  status: 미확인
+  status_note: ""
+  deal: null
 - id: 2026-11-24-amazon-decart-acquisition
   first_seen: 2026-11-24
   last_seen: 2026-11-24
