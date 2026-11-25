@@ -1,0 +1,770 @@
+{
+  "meta": {
+    "run_at": "2026-11-26T02:51:16.045583+09:00",
+    "window_start": "2026-11-24T20:51:16.045583+09:00",
+    "sources": {
+      "환율": "1일 추가 (최신 2026-11-25)",
+      "OpenDART 상세": "1건 성공, 7건 실패",
+      "OpenDART": "10건",
+      "WSJ Markets": "3/61",
+      "WSJ U.S. Business": "3/85",
+      "PR Newswire M&A": "13/20",
+      "한경 증권": "3/50",
+      "인베스트조선": "11/50",
+      "연합뉴스 마켓+": "18/120",
+      "매일경제 증권": "7/50",
+      "조선비즈": "0/100",
+      "FT M&A": "3/25",
+      "CNBC Business": "0/30",
+      "WSJ World News": "7/71",
+      "WSJ Economy": "4/36",
+      "한경 경제": "4/50",
+      "한경 국제": "7/50"
+    },
+    "gemini": "실패: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest feature",
+    "gemini_tries": 9,
+    "counts": {
+      "deal": 40,
+      "macro": 12,
+      "dropped": 31
+    }
+  },
+  "items": [
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(아티스트컴퍼니) [기재정정]주요사항보고서(영업양도결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125000790",
+      "published": "2026-11-26T00:00:00+09:00",
+      "keywords": [
+        "영업양도결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(SK아이이테크놀로지) [기재정정]주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125000740",
+      "published": "2026-11-25T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(대한광통신) 주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125000672",
+      "published": "2026-11-25T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details": {
+        "corp_name": "대한광통신",
+        "bddd": "2026년 11월 25일",
+        "od_a_at_t": "3",
+        "rs_sm_atn": "아니오",
+        "ex_sm_r": "본 합병은 합병신주를 발행하지 않는 무증자합병 방식으로 진행하므로, 본 합병의 과정에서는 증권신고서 제출이 필요한 증권의 모집이나 매출이 이루어지지 않습니다. ",
+        "exevl_atn": "미해당",
+        "exevl_bs_rs": "「자본시장과 금융투자업에 관한 법률 시행령」제176조의5 제8항 제2호 나목에서는 다른 회사의 발행주식총수를 소유하고 있는 회사가 그 다른 회사를 합병하면서 신주를 발행하지 않는 경우에는 합병가액의 적정성에 대한 외부평가기관의 평가를 요구하지 않는 것으로 규정하고 있습니다. 본건 합병은 이에 해당하므로 위 규정에 따라 외부평가기관의 평가를 거치지 아니하였습니다.",
+        "bdlst_atn": "해당사항없음",
+        "otcpr_bdlst_sf_atn": "해당사항없음",
+        "popt_ctr_atn": "아니오",
+        "mg_mth": "대한광통신(주)가 (주)티에프오네트웍스를 흡수합병\n- 존속회사 : 대한광통신(주)\n- 소멸회사 : (주)티에프오네트웍스",
+        "mg_stn": "소규모합병",
+        "mg_pp": "경영 효율성 제고 및 사업 경쟁력 강화",
+        "mg_rt": "대한광통신(주) : (주)티에프오네트웍스 = 1.0000000 : 0.0000000",
+        "mg_rt_bs": "합병회사인 대한광통신(주)는 피합병회사인 (주)티에프오네트웍스의 주식을 100% 소유하고 있으며, 합병회사는 피합병회사의 주식에 대해 신주를 발행하지 않으므로 합병비율을 1.0000000 : 0.0000000으로 산출하였습니다.",
+        "mgptncmp_cmpnm": "주식회사 티에프오네트웍스",
+        "mgptncmp_mbsn": "알루미늄 압연, 압출 및 연신제품 제조업",
+        "mgptncmp_rl_cmpn": "자회사",
+        "rbsnfdtl_tast": "26,542,950,789",
+        "rbsnfdtl_tdbt": "20,825,668,102",
+        "rbsnfdtl_teqt": "5,717,282,687",
+        "rbsnfdtl_cpt": "1,400,000,000",
+        "rbsnfdtl_sl": "53,954,945,705",
+        "rbsnfdtl_nic": "476,692,354",
+        "eadtat_intn": "태일회계법인",
+        "eadtat_op": "적정",
+        "nmgcmp_rlst_atn": "해당사항없음",
+        "mgsc_mgctrd": "2026년 11월 26일",
+        "mgsc_shddstd": "2026년 12월 10일",
+        "mgsc_mgop_rcpd_bgd": "2026년 12월 10일",
+        "mgsc_mgop_rcpd_edd": "2026년 12월 24일",
+        "mgsc_cdobprpd_bgd": "2026년 12월 29일",
+        "mgsc_cdobprpd_edd": "2027년 01월 29일",
+        "mgsc_mgdt": "2027년 02월 01일",
+        "mgsc_ergmd": "2027년 02월 02일",
+        "mgsc_mgrgsprd": "2027년 02월 12일"
+      },
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(SK이노베이션) [기재정정]주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125000599",
+      "published": "2026-11-25T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(에이프로) [첨부정정]주요사항보고서(회사합병결정)",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261124000502",
+      "published": "2026-11-24T00:00:00+09:00",
+      "keywords": [
+        "회사합병결정"
+      ],
+      "dart_details_status": "013 조회된 데이타가 없습니다.",
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(우진비앤지) 최대주주변경",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125900782",
+      "published": "2026-11-25T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(다보링크) [기재정정]최대주주변경을수반하는주식양수도계약체결",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261125900452",
+      "published": "2026-11-25T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 7.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "내홍은 진행형, 투자는 재시동…하이브 다시 글로벌 확장으로",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/24/2026112480157.html",
+      "published": "2026-11-25T07:00:00+09:00",
+      "keywords": [
+        "인수",
+        "합병",
+        "지분"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "중복상장 규제에 번지는 법적 분쟁…카카오 이어 LS도 전운",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/24/2026112480131.html",
+      "published": "2026-11-25T07:00:00+09:00",
+      "keywords": [
+        "사모펀드",
+        "PEF",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "다올증권, 경영권 매각 추진…회사측은 \"구체적 결정사항 없어\"",
+      "link": "https://www.yna.co.kr/view/AKR20261125151500008",
+      "published": "2026-11-25T17:08:18+09:00",
+      "keywords": [
+        "인수",
+        "매각",
+        "합병",
+        "경영권"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "금감원, 종투사 모험자본 인정범위 확대",
+      "link": "https://www.mk.co.kr/news/stock/12218411",
+      "published": "2026-11-25T17:30:14+09:00",
+      "keywords": [
+        "지분",
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 6.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "Anthropic Had the Biggest IPO Ever. The Trade Is Already Unraveling.",
+      "link": "https://www.wsj.com/finance/stocks/anthropic-had-the-biggest-ipo-ever-the-trade-is-already-unraveling-f971d7c5?mod=rss_markets_main",
+      "published": "2026-11-25T07:07:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "Nvidia’s Relief Rally Stalls",
+      "link": "https://www.wsj.com/finance/stocks/nvidias-relief-rally-stalls-a9455613?mod=rss_markets_main",
+      "published": "2026-11-25T06:23:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Cheche Group Signs Definitive Agreement to Acquire 20% Interest in Residential Solar-Plus-Storage Company Long Way Fortune, With Option to Increase Stake to 51%",
+      "link": "https://www.prnewswire.com/news-releases/cheche-group-signs-definitive-agreement-to-acquire-20-interest-in-residential-solar-plus-storage-company-long-way-fortune-with-option-to-increase-stake-to-51-302950548.html",
+      "published": "2026-11-25T23:00:00+09:00",
+      "keywords": [
+        "acquire",
+        "stake"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "IPO 철회 기업들, 잇따라 재도전 검토",
+      "link": "https://www.hankyung.com/article/2026112502801",
+      "published": "2026-11-25T17:50:13+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "삼성디스플레이, 3500억 규모 오스람 지분 투자…최대주주 등극",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/25/2026112580167.html",
+      "published": "2026-11-25T15:57:49+09:00",
+      "keywords": [
+        "인수",
+        "지분"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "[게시판] 스틱인베스트먼트, 서스틴베스트 ESG 평가 A등급 획득",
+      "link": "https://www.yna.co.kr/view/AKR20261125142300008",
+      "published": "2026-11-25T16:16:14+09:00",
+      "keywords": [
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "한국내화 \"미국 법인 주식 13억원어치 취득…지분율 100%\"",
+      "link": "https://www.yna.co.kr/view/AKR20261125138400008",
+      "published": "2026-11-25T15:56:05+09:00",
+      "keywords": [
+        "지분",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "다올투자증권, 인수합병 시장 등판 소식에 22%대 급등",
+      "link": "https://www.mk.co.kr/news/stock/12217809",
+      "published": "2026-11-25T10:08:45+09:00",
+      "keywords": [
+        "인수",
+        "합병"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "How Sanofi’s $41bn megadeal challenges pharma’s M&A curse",
+      "link": "https://www.ft.com/content/07a9463d-dcde-4ca2-a984-f197cc5d4d6b?syn-25a6b1a6=1",
+      "published": "2026-11-25T14:00:32+09:00",
+      "keywords": [
+        "acquisition",
+        "deal"
+      ],
+      "score": 5.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "FTC Imposes Strict Board Restrictions on Beretta’s 25% Stake in Rival Sturm Ruger",
+      "link": "https://www.wsj.com/business/ftc-imposes-strict-board-restrictions-on-berettas-25-stake-in-rival-sturm-ruger-2d0cc315?mod=rss_markets_main",
+      "published": "2026-11-26T02:22:00+09:00",
+      "keywords": [
+        "stake"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "U.K. Regulator Says McCormick Sale of Colman’s Could Address Unilever Foods Merger Concerns",
+      "link": "https://www.wsj.com/business/retail/u-k-regulator-says-mccormick-sale-of-colmans-could-address-unilever-foods-merger-concerns-f700a2ae?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-25T17:30:00+09:00",
+      "keywords": [
+        "merger"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Jensen Huang Apologized to Nvidia Staff in Company Meeting",
+      "link": "https://www.wsj.com/business/jensen-huang-apologized-to-nvidia-staff-in-company-meeting-c798dfba?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-25T07:32:00+09:00",
+      "keywords": [
+        "in talks"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "China and Other Countries Face Higher U.S. Tariffs Over Industrial Subsidies",
+      "link": "https://www.wsj.com/logistics-report/china-and-other-countries-face-higher-u-s-tariffs-over-industrial-subsidies-399e2747?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-25T20:56:00+09:00",
+      "keywords": [
+        "in talks"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Local Bounti Becomes Largest Leafy Greens CEA Grower in the U.S. with Completed Acquisition of Revol Greens' Certified-Organic Facilities",
+      "link": "https://www.prnewswire.com/news-releases/local-bounti-becomes-largest-leafy-greens-cea-grower-in-the-us-with-completed-acquisition-of-revol-greens-certified-organic-facilities-302949880.html",
+      "published": "2026-11-25T06:08:00+09:00",
+      "keywords": [
+        "acquisition"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "상장 4거래일 만에…앤트로픽, 공모가 붕괴",
+      "link": "https://www.hankyung.com/article/2026112502821",
+      "published": "2026-11-25T17:51:34+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 증권",
+      "kind": "deal",
+      "title": "거래소, 상장사 사내·사외이사 100여명 대상 밸류업 설명회",
+      "link": "https://www.hankyung.com/article/2026112500936",
+      "published": "2026-11-25T16:56:04+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "SK이노, SKIET 매수청구가 30% 올려…\"추가 비용 감수해도 합병 적기 종결\"",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/25/2026112580199.html",
+      "published": "2026-11-25T17:30:02+09:00",
+      "keywords": [
+        "합병"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "저축은행 FI·형사 문제에 떠밀린 다올證 매각, 이병철 회장은 제값을 받을 수 있을까",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/25/2026112580140.html",
+      "published": "2026-11-25T15:00:51+09:00",
+      "keywords": [
+        "매각"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "프리미어, 한국펀드파트너스 인수 SPA 체결",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/25/2026112580141.html",
+      "published": "2026-11-25T14:54:37+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "주총 넘은 현대모비스 램프 매각, 대형기관 1곳 주매청땐 '무산 가시권'",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/25/2026112580111.html",
+      "published": "2026-11-25T14:43:57+09:00",
+      "keywords": [
+        "매각"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "LB PE, '삼전닉스 협력사' 유정시스템 인수 추진",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/25/2026112580087.html",
+      "published": "2026-11-25T11:37:00+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "deal",
+      "title": "ETF 100조 증발에 '테마주 피로감'…채권 섞어 돌파구 찾는 운용사",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/24/2026112480160.html",
+      "published": "2026-11-25T07:00:00+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "한화오션 \"태국 해군 호위함 우선협상대상자 지위 상실\"",
+      "link": "https://www.yna.co.kr/view/AKR20261125179800003",
+      "published": "2026-11-25T21:15:47+09:00",
+      "keywords": [
+        "우선협상대상자"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "SK아이이테크놀로지, 애프터마켓서 10%대 급등",
+      "link": "https://www.yna.co.kr/view/AKR20261125153100008",
+      "published": "2026-11-25T17:01:32+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "반도체주 급락에 인버스 ETF 수익률 상위권 장악…화장품도 강세",
+      "link": "https://www.yna.co.kr/view/AKR20261125143100008",
+      "published": "2026-11-25T16:23:46+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "한국거래소, 상장사 이사회 대상 기업 밸류업 설명회 개최",
+      "link": "https://www.yna.co.kr/view/AKR20261125139300008",
+      "published": "2026-11-25T16:05:32+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "KT스카이라이프 노조 \"HCN 합병 중단\"…사측 \"고용 승계\"(종합)",
+      "link": "https://www.yna.co.kr/view/AKR20261125110551017",
+      "published": "2026-11-25T15:39:47+09:00",
+      "keywords": [
+        "합병"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "스카이라이프 노조 \"KT, HCN '졸속 합병' 중단해야\"",
+      "link": "https://www.yna.co.kr/view/AKR20261125110500017",
+      "published": "2026-11-25T14:55:13+09:00",
+      "keywords": [
+        "합병"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "액트로, 주당 1.0주 무상증자 결정",
+      "link": "https://www.yna.co.kr/view/AKR20261125081500008",
+      "published": "2026-11-25T11:11:59+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "China’s Military Ambitions in the Pacific Suffer Setback",
+      "link": "https://www.wsj.com/world/asia/chinas-military-ambitions-in-the-pacific-suffer-setback-ef5a2d30?mod=rss_worldnews",
+      "published": "2026-11-25T11:44:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "BOE’s Bailey Sees Lower Peak for Inflation if Energy Prices Stay Where They Are",
+      "link": "https://www.wsj.com/pro/central-banking/boes-bailey-sees-lower-peak-for-inflation-if-energy-prices-stay-where-they-are-8678fd4f?mod=rss_worldnews",
+      "published": "2026-11-26T00:24:00+09:00",
+      "keywords": [
+        "inflation"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Opinion | Why We Must Defeat China",
+      "link": "https://www.wsj.com/opinion/why-we-must-defeat-china-7c9fd0f4?mod=rss_worldnews",
+      "published": "2026-11-26T00:48:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "China’s Huawei Convicted of Fraud in U.S. Criminal Trial",
+      "link": "https://www.wsj.com/business/telecom/chinas-huawei-convicted-of-fraud-in-u-s-criminal-trial-20e17ac3?mod=rss_worldnews",
+      "published": "2026-11-25T07:41:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "World Trade Flows Surge as AI Boost Overwhelms Barriers",
+      "link": "https://www.wsj.com/economy/trade/world-trade-flows-surge-as-ai-boost-overwhelms-barriers-d0a18e21?mod=rss_socialeconomyfeed",
+      "published": "2026-11-25T23:20:00+09:00",
+      "keywords": [
+        "trade"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "The U.S. said it would propose new tariffs on China and dozens of other countries",
+      "link": "https://www.wsj.com/economy/trade/u-s-set-to-raise-tariffs-on-china-eu-and-others-e991efdb?mod=rss_socialeconomyfeed",
+      "published": "2026-11-25T22:36:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Bank of Canada Gov. Macklem Expects Inflation to Remain Persistent",
+      "link": "https://www.wsj.com/economy/central-banking/bank-of-canada-gov-macklem-expects-inflation-to-remain-persistent-1fbb15f1?mod=rss_socialeconomyfeed",
+      "published": "2026-11-25T03:41:00+09:00",
+      "keywords": [
+        "inflation"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "美 10월 PCE 3.8%↑…12월 금리인상 힘실려",
+      "link": "https://www.hankyung.com/article/2026112506871",
+      "published": "2026-11-26T01:51:52+09:00",
+      "keywords": [
+        "금리"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "美 새 관세 발표…한국·일본 15% 유지,중국은 최대 40%",
+      "link": "https://www.hankyung.com/article/202611250639i",
+      "published": "2026-11-25T23:20:55+09:00",
+      "keywords": [
+        "관세"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "美 '과잉생산 관세' 발표 예고…\"한국엔 15% 상한 유지\"",
+      "link": "https://www.hankyung.com/article/2026112506641",
+      "published": "2026-11-25T23:14:26+09:00",
+      "keywords": [
+        "관세"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 경제",
+      "kind": "macro",
+      "title": "10월 가계대출 금리 연 5% 돌파…주담대는 14년7개월 만에 최고",
+      "link": "https://www.hankyung.com/article/2026112502471",
+      "published": "2026-11-25T17:45:34+09:00",
+      "keywords": [
+        "금리"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    },
+    {
+      "source": "한경 국제",
+      "kind": "macro",
+      "title": "[속보] 美 3분기 GDP 성장률 잠정치 4.3%…속보치 3.4%서 상향",
+      "link": "https://www.hankyung.com/article/2026112506637",
+      "published": "2026-11-25T23:00:42+09:00",
+      "keywords": [
+        "GDP"
+      ],
+      "score": 4.0,
+      "score_by": "keyword",
+      "reason": ""
+    }
+  ]
+}
