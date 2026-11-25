@@ -45,3 +45,4 @@
 ## 관련 딜·뉴스
 - [Evonik, BASF의 상향 인수 제안(주당 24유로, 111.8억 유로)도 거절](../2026/2026-10-30-basf-evonik.md) — 같은 시기 유럽 화학 업계 대형 결합 시도
 - [Mitsui Chemicals·일본정책투자은행, JIC로부터 반도체 소재사 JSR 인수…부채 포함 약 1.84조 엔](../2026/2026-11-09-mitsui-chemicals-jsr.md) — 같은 시기 화학 업계 재편 거래
+- [McCormick, Unilever 식품사업과 결합…영국 CMA, Colman's 매각을 시정조치로 검토](../2026/2026-03-31-mccormick-unilever-foods.md) — 같은 날 영국 CMA 1단계 심사에서 시정안을 요구받은 대형 결합

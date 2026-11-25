@@ -399,6 +399,19 @@
   related: [인수 프리미엄]
   memo: ""
 
+- id: small-scale-merger
+  term: 소규모합병
+  en: Small-scale Merger
+  category: 딜 구조
+  match: [소규모합병]
+  aliases: []
+  short: 흡수하는 회사가 새로 내주는 주식이 아주 적을 때, 흡수하는 회사 쪽 주주총회를 이사회 결의로 대신할 수 있게 한 합병 방식.
+  more: 상법상 존속회사가 발행하는 신주가 발행주식총수의 10% 이하면 쓸 수 있다. 이때 존속회사 주주에게는 주식매수청구권이 없고, 일정 비율 이상 주주가 반대하면 일반 합병 절차로 바뀐다.
+  example: SK이노베이션은 SKIET를 흡수하며 발행주식의 약 2.6%만 신주로 내줘 소규모합병으로 진행하고, SKIET 쪽만 주총 특별결의를 거친다.
+  deal: 2026-08-25-sk-innovation-skiet
+  related: [합병, 주식매수청구권]
+  memo: ""
+
 # ---------------- 자금 조달
 - id: acquisition-finance
   term: 인수금융

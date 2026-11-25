@@ -4,9 +4,21 @@
 # - status: 미확인 / 사실로 확인 / 부인 / 소멸
 #   (사실로 확인되면 deal 에 딜 노트 id, 30일간 새 소식이 없으면 소멸)
 # - credibility: 낮음 / 중간  (공신력 높은 출처로 확인되면 소문이 아니라 딜 노트로 간다)
+- id: 2026-11-26-samsung-display-osram-stake
+  first_seen: 2026-11-26
+  last_seen: 2026-11-26
+  title: "삼성디스플레이, 오스람 지분 투자설"
+  claim: "삼성디스플레이가 약 3,500억 원을 들여 오스람 지분을 사들여 최대주주가 된다는 보도가 나왔으나, 공시나 다른 매체로는 확인되지 않았다."
+  companies: ["삼성디스플레이", "오스람"]
+  sources:
+    - {name: "인베스트조선 (제목 기준)", url: "https://www.investchosun.com/site/data/html_dir/2026/11/25/2026112580167.html", credibility: 중간}
+  why_watch: "사실이면 국내 디스플레이 기업이 해외 조명·광반도체 기업의 최대주주가 되는 크로스보더 투자다."
+  status: 미확인
+  status_note: ""
+  deal: null
 - id: 2026-11-25-daol-investment-securities-sale
   first_seen: 2026-11-25
-  last_seen: 2026-11-25
+  last_seen: 2026-11-26
   title: "다올투자증권 경영권 매각 추진설"
   claim: "이병철 회장 측이 다올투자증권 보유 지분을 팔아 경영권 매각을 추진하고 있으며 DB·유진·LF 등이 후보로 거론된다는 단독 보도가 나왔다. 회사 측 공식 발표는 확인되지 않았다."
   companies: ["다올투자증권"]
@@ -14,9 +26,11 @@
     - {name: "한국경제 (제목 기준)", url: "https://www.hankyung.com/article/202611247145i", credibility: 중간}
     - {name: "한국경제 (제목 기준)", url: "https://www.hankyung.com/article/2026112476371", credibility: 중간}
     - {name: "매일경제 (제목 기준)", url: "https://www.mk.co.kr/news/stock/12217373", credibility: 중간}
+    - {name: "연합뉴스 (제목 기준)", url: "https://www.yna.co.kr/view/AKR20261125151500008", credibility: 중간}
+    - {name: "인베스트조선 (제목 기준)", url: "https://www.investchosun.com/site/data/html_dir/2026/11/25/2026112580140.html", credibility: 중간}
   why_watch: "사실이면 IB 특화 중견 증권사 경영권이 시장에 나오는 것으로, 증권업 재편의 단서가 된다."
   status: 미확인
-  status_note: ""
+  status_note: "2026-11-26 회사 측이 구체적으로 결정된 사항은 없다고 밝혔다는 보도 (연합뉴스 제목 기준)"
   deal: null
 - id: 2026-11-25-woongjin-preed-life-stake-sale
   first_seen: 2026-11-25

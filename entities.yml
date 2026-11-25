@@ -2937,3 +2937,120 @@ Kean Miller:
     edge: "미국 걸프 연안 에너지·화학 산업 자문"
     owner: "파트너십 (로펌)"
     as_of: "2026-11-25"
+McCormick:
+  type: 기업
+  country: 미국
+  aliases: [McCormick & Company, 맥코믹]
+  ticker: "NYSE:MKC"
+  profile:
+    about: "미국의 향신료·조미료 회사."
+    business: "향신료, 시즈닝, 소스·조미료 소매 판매와 식품업체 대상 풍미 원료 공급"
+    edge: "Frank's RedHot·French's 등 조미료 브랜드와 글로벌 향신료 조달망"
+    owner: "뉴욕증권거래소 상장사"
+    points:
+      - "2026-03 Unilever 식품사업과 결합 발표, Unilever가 대가로 McCormick 주식을 받음"
+    as_of: "2026-11-26"
+Unilever:
+  type: 기업
+  country: 유럽
+  aliases: [Unilever PLC, 유니레버]
+  ticker: "LSE:ULVR"
+  profile:
+    about: "영국의 생활용품·식품 대기업."
+    business: "뷰티·퍼스널케어, 생활용품, 식품"
+    edge: "세계 곳곳의 소비재 브랜드와 유통망"
+    owner: "런던증권거래소 상장사"
+    points:
+      - "2026-03 식품사업을 McCormick과 결합하기로 하고 대가로 McCormick 주식을 받기로 함"
+    as_of: "2026-11-26"
+Unilever Foods:
+  type: 기업
+  country: 유럽
+  aliases: [Unilever 식품사업, 유니레버 식품사업]
+  profile:
+    about: "Knorr·Maille·Colman's 등 Unilever의 식품 브랜드 사업."
+    business: "수프·육수, 소스, 머스터드 등 식품"
+    edge: "Knorr 등 세계적인 조미 식품 브랜드"
+    owner: "Unilever 사업부. McCormick과 결합 계약(2026-03)"
+    as_of: "2026-11-26"
+SK이노베이션:
+  type: 기업
+  country: 한국
+  aliases: [SK Innovation, SK이노]
+  krx: "096770"
+  profile:
+    about: "SK그룹의 에너지·화학 중간지주사."
+    business: "정유, 석유화학, 배터리, 도시가스·발전(SK E&S 합병 이후)"
+    edge: "국내 최대 정유 설비와 배터리·소재 계열사"
+    owner: "유가증권시장 상장사. 최대주주 SK㈜"
+    points:
+      - "2026-08 상장 자회사 SKIET 흡수합병 결의, 합병기일 2027-01-01"
+    as_of: "2026-11-26"
+SK아이이테크놀로지:
+  type: 기업
+  country: 한국
+  aliases: [SKIET, SK IE Technology]
+  krx: "361610"
+  profile:
+    about: "배터리 분리막을 만드는 SK이노베이션 자회사."
+    business: "리튬이온 배터리 분리막"
+    edge: "전기차 배터리용 습식 분리막 생산 설비"
+    owner: "유가증권시장 상장사. 최대주주 SK이노베이션"
+    points:
+      - "2026-08 SK이노베이션에 흡수합병 결의, 합병비율 1:0.1174540"
+    as_of: "2026-11-26"
+김앤장법률사무소:
+  type: 법률 자문사
+  country: 한국
+  aliases: [김앤장, Kim & Chang]
+  profile:
+    about: "한국 최대 규모의 법률사무소."
+    business: "M&A·기업 자문, 송무, 규제 대응"
+    edge: "국내 대형 M&A 법률 자문 다수 수행"
+    owner: "파트너십 (로펌)"
+    as_of: "2026-11-26"
+삼일회계법인:
+  type: 재무 자문사
+  country: 한국
+  aliases: [삼일PwC, Samil PwC]
+  profile:
+    about: "PwC 네트워크에 속한 한국 회계법인."
+    business: "회계감사, 세무, 재무 자문(M&A 실사·가치평가)"
+    edge: "국내 최대 회계법인 중 하나로 실사·가치평가 인력이 많음"
+    owner: "파트너십 (회계법인)"
+    as_of: "2026-11-26"
+현대모비스:
+  type: 기업
+  country: 한국
+  aliases: [Hyundai Mobis]
+  krx: "012330"
+  profile:
+    about: "현대자동차그룹의 자동차 부품 회사."
+    business: "자동차 모듈·핵심 부품, 전장, 애프터서비스 부품"
+    edge: "현대차·기아에 대한 대규모 모듈 공급"
+    owner: "유가증권시장 상장사. 최대주주 기아"
+    points:
+      - "2026-09 램프사업을 물적분할해 OP Mobility에 매각하는 계약 체결"
+    as_of: "2026-11-26"
+현대모비스 램프사업부:
+  type: 기업
+  country: 한국
+  aliases: [현대모비스 램프사업]
+  profile:
+    about: "현대모비스의 자동차 조명(램프) 사업부."
+    business: "자동차 헤드램프·리어램프"
+    edge: "현대차·기아 차량용 램프 공급 경험"
+    owner: "현대모비스. 물적분할 후 OP Mobility에 매각 계약(2026-09)"
+    as_of: "2026-11-26"
+OP Mobility:
+  type: 기업
+  country: 유럽
+  aliases: [OP모빌리티, Plastic Omnium]
+  profile:
+    about: "프랑스의 자동차 부품 회사 (옛 Plastic Omnium)."
+    business: "외장 부품, 조명, 연료·수소 시스템"
+    edge: "유럽 완성차 업체와의 외장·조명 부품 거래 관계"
+    owner: "유로넥스트 파리 상장사"
+    points:
+      - "2026-09 현대모비스 램프사업 인수 계약"
+    as_of: "2026-11-26"
