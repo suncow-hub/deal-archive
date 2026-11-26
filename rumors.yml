@@ -4,6 +4,18 @@
 # - status: 미확인 / 사실로 확인 / 부인 / 소멸
 #   (사실로 확인되면 deal 에 딜 노트 id, 30일간 새 소식이 없으면 소멸)
 # - credibility: 낮음 / 중간  (공신력 높은 출처로 확인되면 소문이 아니라 딜 노트로 간다)
+- id: 2026-11-27-sk-pharmteco-minority-stake-sale
+  first_seen: 2026-11-27
+  last_seen: 2026-11-27
+  title: "SK팜테코 소수지분 매각 추진설"
+  claim: "기업가치 4조 원대로 거론되는 SK팜테코의 소수지분 매각 작업이 본격화됐다는 보도가 나왔다. 회사 측 공식 발표는 확인되지 않았다."
+  companies: ["SK팜테코", "SK"]
+  sources:
+    - {name: "매일경제 (제목 기준)", url: "https://www.mk.co.kr/news/stock/12219648", credibility: 중간}
+  why_watch: "사실이면 SK그룹 리밸런싱의 연장선에서 바이오 CDMO 자회사 지분으로 외부 자금을 끌어오는 거래가 된다."
+  status: 미확인
+  status_note: ""
+  deal: null
 - id: 2026-11-26-samsung-display-osram-stake
   first_seen: 2026-11-26
   last_seen: 2026-11-26
@@ -18,7 +30,7 @@
   deal: null
 - id: 2026-11-25-daol-investment-securities-sale
   first_seen: 2026-11-25
-  last_seen: 2026-11-26
+  last_seen: 2026-11-27
   title: "다올투자증권 경영권 매각 추진설"
   claim: "이병철 회장 측이 다올투자증권 보유 지분을 팔아 경영권 매각을 추진하고 있으며 DB·유진·LF 등이 후보로 거론된다는 단독 보도가 나왔다. 회사 측 공식 발표는 확인되지 않았다."
   companies: ["다올투자증권"]
@@ -28,6 +40,7 @@
     - {name: "매일경제 (제목 기준)", url: "https://www.mk.co.kr/news/stock/12217373", credibility: 중간}
     - {name: "연합뉴스 (제목 기준)", url: "https://www.yna.co.kr/view/AKR20261125151500008", credibility: 중간}
     - {name: "인베스트조선 (제목 기준)", url: "https://www.investchosun.com/site/data/html_dir/2026/11/25/2026112580140.html", credibility: 중간}
+    - {name: "인베스트조선 (제목 기준)", url: "https://www.investchosun.com/site/data/html_dir/2026/11/26/2026112680002.html", credibility: 중간}
   why_watch: "사실이면 IB 특화 중견 증권사 경영권이 시장에 나오는 것으로, 증권업 재편의 단서가 된다."
   status: 미확인
   status_note: "2026-11-26 회사 측이 구체적으로 결정된 사항은 없다고 밝혔다는 보도 (연합뉴스 제목 기준)"
@@ -46,16 +59,16 @@
   deal: null
 - id: 2026-11-25-apr-brand501-acquisition
   first_seen: 2026-11-25
-  last_seen: 2026-11-25
+  last_seen: 2026-11-26
   title: "에이피알, 브랜드501 인수 협상설"
   claim: "에이피알이 브랜드501 인수를 협상 중이며 기업가치 조율이 남았다는 보도가 나왔다. 회사 측 발표는 확인되지 않았다."
   companies: ["에이피알", "브랜드501"]
   sources:
     - {name: "매일경제 (제목 기준)", url: "https://www.mk.co.kr/news/stock/12217212", credibility: 중간}
   why_watch: "사실이면 K뷰티 상장사가 브랜드 인수로 외형을 넓히는 사례가 된다."
-  status: 미확인
-  status_note: ""
-  deal: null
+  status: 사실로 확인
+  status_note: "2026-11-26 에이피알이 브랜드501 지분 87.3% 취득을 공시하며 사실로 확인"
+  deal: 2026-11-26-apr-brand501
 - id: 2026-11-24-amazon-decart-acquisition
   first_seen: 2026-11-24
   last_seen: 2026-11-24

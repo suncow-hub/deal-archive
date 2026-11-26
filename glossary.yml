@@ -793,6 +793,19 @@
   related: [주요사항보고서]
   memo: ""
 
+- id: put-up-or-shut-up
+  term: PUSU (확정 제안 기한)
+  en: Put Up or Shut Up
+  category: 공시·규제
+  match: [put up or shut up, Put Up or Shut Up, 확정 제안 기한]
+  aliases: [PUSU]
+  short: 영국에서 인수 제안을 검토 중이라고 알려지면, 그때부터 28일 안에 정식 인수 제안을 내거나 포기를 밝혀야 하는 규칙.
+  more: 대상 회사가 소문 속에 오래 흔들리지 않게 하려는 장치다. 포기를 밝히면 원칙적으로 6개월 동안 다시 제안하기 어렵다. 대상 회사가 동의하면 기한을 늘릴 수 있다.
+  example: Altria가 2026-11-26 Imperial Brands 인수 제안 검토를 밝히면서 12월 24일까지 결정해야 하는 기한이 생겼다.
+  deal: 2026-11-26-altria-imperial-brands
+  related: [주요사항보고서]
+  memo: ""
+
 - id: antitrust
   term: 반독점 심사
   en: Antitrust Review

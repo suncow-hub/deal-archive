@@ -3054,3 +3054,103 @@ OP Mobility:
     points:
       - "2026-09 현대모비스 램프사업 인수 계약"
     as_of: "2026-11-26"
+에이피알:
+  type: 기업
+  country: 한국
+  aliases: [APR]
+  krx: "278470"
+  profile:
+    about: "화장품과 가정용 뷰티 기기를 만들어 파는 국내 뷰티 회사."
+    business: "스킨케어·메이크업 브랜드, 뷰티 디바이스"
+    edge: "자체 브랜드와 해외 온라인 유통망"
+    owner: "유가증권시장 상장사"
+    points:
+      - "2026-11 브랜드501(닥터멜락신) 지분 87.3% 인수 계약 (약 3,900억 원)"
+    as_of: "2026-11-27"
+브랜드501:
+  type: 기업
+  country: 한국
+  aliases: [Brand501]
+  profile:
+    about: "더마 스킨케어 브랜드 '닥터멜락신'을 운영하는 비상장 회사."
+    business: "스킨케어 화장품"
+    edge: "미국 틱톡샵을 통한 해외 판매 성장"
+    owner: "비상장사. 2026-12-31 에이피알이 지분 87.3% 취득 예정 (보도 기준)"
+    as_of: "2026-11-27"
+Altria:
+  type: 기업
+  country: 미국
+  aliases: [Altria Group, 알트리아]
+  ticker: "NYSE:MO"
+  profile:
+    about: "말보로 담배를 미국에서 파는 미국 최대 담배회사."
+    business: "궐련, 무연 담배 등 담배 제품"
+    edge: "미국 담배 시장 1위 브랜드 보유"
+    owner: "뉴욕증권거래소 상장사"
+    points:
+      - "2026-11 Imperial Brands 인수 제안 검토 공식 확인"
+    as_of: "2026-11-27"
+Imperial Brands:
+  type: 기업
+  country: 유럽
+  aliases: [임페리얼 브랜즈, Imperial Tobacco]
+  ticker: "LSE:IMB"
+  profile:
+    about: "영국에 본사를 둔 다국적 담배회사."
+    business: "궐련, 차세대 담배 제품"
+    edge: "여러 나라에 걸친 담배 브랜드 포트폴리오"
+    owner: "런던증권거래소 상장사"
+    points:
+      - "2026-11 Altria가 인수 제안 검토 공식화 (12-24까지 결정)"
+    as_of: "2026-11-27"
+Perella Weinberg Partners:
+  type: 재무 자문사
+  country: 미국
+  aliases: [Perella Weinberg, PWP]
+  profile:
+    about: "M&A 자문을 주로 하는 미국계 독립 투자은행(부티크)."
+    business: "M&A·구조조정 자문"
+    edge: "대형 IB에 속하지 않은 독립 자문"
+    owner: "나스닥 상장사"
+    as_of: "2026-11-27"
+Lukoil:
+  type: 기업
+  country: 기타
+  aliases: [루크오일, LUKOIL]
+  profile:
+    about: "러시아의 대형 민간 석유회사."
+    business: "원유 생산, 정유, 주유소"
+    edge: "여러 나라에 걸친 생산·정유 자산"
+    owner: "모스크바 거래소 상장사"
+    points:
+      - "2025-10 미국 제재 대상 지정"
+      - "2026-11 해외 자산을 Boehly 컨소시엄에 넘기는 계약 (OFAC 승인 필요, 보도 기준)"
+    as_of: "2026-11-27"
+Eldridge Industries:
+  type: PE·VC
+  country: 미국
+  aliases: [Eldridge, 엘드리지]
+  profile:
+    about: "Todd Boehly가 이끄는 미국 투자회사."
+    business: "보험, 자산운용, 스포츠·미디어 투자"
+    edge: "여러 업종에 걸친 투자 포트폴리오"
+    owner: "비상장사"
+    as_of: "2026-11-27"
+U.S. International Development Finance Corporation:
+  type: 정부·기관
+  country: 미국
+  aliases: [DFC, 미국 국제개발금융공사]
+  profile:
+    about: "해외 투자에 돈을 대는 미국 정부 기관."
+    business: "해외 개발 사업 대출·지분 투자"
+    edge: "정부 자금으로 민간 투자와 함께 들어가는 역할"
+    owner: "미국 정부"
+    as_of: "2026-11-27"
+Xtellus Partners:
+  type: PE·VC
+  country: 미국
+  aliases: [Xtellus]
+Catena Investment Holding:
+  type: PE·VC
+  country: 중동
+  aliases: [Catena]
