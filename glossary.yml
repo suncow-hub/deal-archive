@@ -412,6 +412,19 @@
   related: [합병, 주식매수청구권]
   memo: ""
 
+- id: exclusive-negotiations
+  term: 배타적 협상
+  en: Exclusive Negotiations
+  category: 딜 구조
+  match: [배타적 협상, exclusive negotiations]
+  aliases: [독점 협상]
+  short: 파는 쪽이 정해진 기간 동안 한 인수 후보하고만 협상하기로 약속하는 단계. 본계약 전 단계다.
+  more: 프랑스에서는 직원 대표 기구와 먼저 협의해야 하는 규정 때문에 본계약 대신 배타적 협상 단계를 공식 발표하는 경우가 많다. 국내의 우선협상대상자 선정과 비슷한 단계로 볼 수 있다.
+  example: Thales는 Lumibird 지분 51.6%를 사기 위한 배타적 협상에 들어갔다.
+  deal: 2026-11-27-thales-lumibird
+  related: [우선협상대상자]
+  memo: ""
+
 # ---------------- 자금 조달
 - id: acquisition-finance
   term: 인수금융
@@ -769,6 +782,32 @@
   example: Empower Brands는 두 번 거절된 Helen of Troy 인수 제안을 공개했다.
   deal: 2026-11-04-empower-brands-helen-of-troy
   related: [공개매수]
+  memo: ""
+
+- id: consortium
+  term: 컨소시엄
+  en: Consortium
+  category: 참여자·전략
+  match: [컨소시엄, Consortium, consortium]
+  aliases: [공동 인수단]
+  short: 한 회사가 혼자 하기 어려운 큰 인수를 위해 여러 투자자·회사가 한 팀을 이뤄 함께 사는 것. 돈과 위험을 나눠 진다.
+  more: 참여자마다 내는 돈과 나중에 갖는 지분이 다르고, 보통 한 곳이 앞장서 협상을 이끈다. 사모펀드끼리, 또는 사모펀드와 기업·정부 기관이 섞여 만들기도 한다.
+  example: Todd Boehly가 이끄는 미국 컨소시엄은 Eldridge Industries, 미국 정부 기관 DFC 등이 함께 참여해 Lukoil 해외 자산을 인수하기로 했다.
+  deal: 2026-11-25-boehly-consortium-lukoil-overseas-assets
+  related: [PE (사모펀드)]
+  memo: ""
+
+- id: odm
+  term: ODM (제조자개발생산)
+  en: Original Design Manufacturing
+  category: 참여자·전략
+  match: [ODM, 제조자개발생산]
+  aliases: [주문자개발생산]
+  short: 다른 회사 브랜드를 달고 팔 제품을 제조사가 직접 개발하고 만들어 주는 방식. 브랜드 회사는 판매와 마케팅에 집중한다.
+  more: 화장품처럼 브랜드가 빨리 생기고 사라지는 업종에서는 여러 브랜드에 제품을 대는 ODM 회사가 안정적인 매출을 낸다. 그래서 사모펀드가 ODM 회사를 사서 비슷한 회사를 붙여 키우는 경우가 많다.
+  example: 맥쿼리자산운용은 화장품 ODM 업체 화성코스메틱과 나우코스를 함께 인수했다.
+  deal: 2026-09-19-macquarie-hwaseong-cosmetic-nowcos
+  related: [PE (사모펀드)]
   memo: ""
 
 # ---------------- 공시·규제
