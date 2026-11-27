@@ -1,0 +1,425 @@
+{
+  "meta": {
+    "run_at": "2026-11-28T02:12:49.015451+09:00",
+    "window_start": "2026-11-26T20:12:49.015451+09:00",
+    "sources": {
+      "환율": "1일 추가 (최신 2026-11-27)",
+      "OpenDART 상세": "0건 성공, 4건 실패",
+      "OpenDART": "11건",
+      "WSJ Markets": "1/60",
+      "WSJ U.S. Business": "3/85",
+      "PR Newswire M&A": "6/20",
+      "한경 증권": "실패: HTTPError",
+      "인베스트조선": "4/50",
+      "연합뉴스 마켓+": "14/120",
+      "매일경제 증권": "6/50",
+      "조선비즈": "0/100",
+      "FT M&A": "3/25",
+      "CNBC Business": "0/30",
+      "WSJ World News": "10/72",
+      "WSJ Economy": "4/36",
+      "한경 경제": "실패: HTTPError",
+      "한경 국제": "실패: HTTPError"
+    },
+    "gemini_tries": 9,
+    "gemini_model": "gemini-3.6-flash",
+    "gemini": "성공 (49/49건 채점)",
+    "counts": {
+      "deal": 21,
+      "macro": 8,
+      "dropped": 20
+    }
+  },
+  "items": [
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "The Ellisons’ debt-fuelled takeover of Hollywood",
+      "link": "https://www.ft.com/content/627323de-7ad0-4600-97c6-daac931c7ee1?syn-25a6b1a6=1",
+      "published": "2026-11-27T14:00:31+09:00",
+      "keywords": [
+        "takeover"
+      ],
+      "score": 9.0,
+      "score_by": "gemini",
+      "reason": "대규모 인수금융을 활용한 초대형 해외 M&A 사례임."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "맥쿼리자산운용, '화장품 ODM' 화성코스메틱·나우코스 인수",
+      "link": "https://www.yna.co.kr/view/AKR20261127108500008",
+      "published": "2026-11-27T15:15:46+09:00",
+      "keywords": [
+        "인수",
+        "사모펀드",
+        "PEF"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "맥쿼리PE의 국내 화장품 ODM 업체 인수 거래."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "더시에나는 왜 골프존카운티를 인수하려 하나",
+      "link": "https://www.mk.co.kr/news/stock/12220033",
+      "published": "2026-11-27T11:19:09+09:00",
+      "keywords": [
+        "인수",
+        "지분"
+      ],
+      "score": 8.0,
+      "score_by": "gemini",
+      "reason": "더시에나의 골프존카운티 인수 추진 배경 분석."
+    },
+    {
+      "source": "WSJ U.S. Business",
+      "kind": "deal",
+      "title": "Lumibird Shares Surge After Thales Targets Majority Stake in $483 Million Laser Deal",
+      "link": "https://www.wsj.com/business/deals/lumibird-shares-surge-after-thales-targets-majority-stake-in-483-million-laser-deal-48d6e693?mod=pls_whats_news_us_business_f",
+      "published": "2026-11-27T17:52:00+09:00",
+      "keywords": [
+        "to buy",
+        "stake",
+        "deal"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "Thales의 프랑스 레이저 기업 과반 지분 인수 건입니다."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "EQT Healthcare Growth to acquire majority stake in specialty European pharmaceutical business, Kelso Pharma",
+      "link": "https://www.prnewswire.com/news-releases/eqt-healthcare-growth-to-acquire-majority-stake-in-specialty-european-pharmaceutical-business-kelso-pharma-302951594.html",
+      "published": "2026-11-27T16:20:00+09:00",
+      "keywords": [
+        "acquire",
+        "stake"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "PEF 운용사 EQT의 헬스케어 기업 경영권 인수 건입니다."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "브랜드501 인수한 에이피알…증권가 “인수가 3900억은 솔직히” [오늘 나온 보고서]",
+      "link": "https://www.mk.co.kr/news/stock/12219844",
+      "published": "2026-11-27T08:53:31+09:00",
+      "keywords": [
+        "인수",
+        "지분"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "에이피알의 3900억원 규모 닥터멜락신 인수 분석."
+    },
+    {
+      "source": "FT M&A",
+      "kind": "deal",
+      "title": "Trump media group splashes out to woo shareholders before merger vote",
+      "link": "https://www.ft.com/content/10a28fed-3825-4e07-804d-3c80c35229e5?syn-25a6b1a6=1",
+      "published": "2026-11-27T14:02:01+09:00",
+      "keywords": [
+        "merger"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "트럼프 미디어 그룹의 합병 표결 관련 비용 지출."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "MDA SPACE COMPLETES ACQUISITION OF BLUE CANYON TECHNOLOGIES",
+      "link": "https://www.prnewswire.com/news-releases/mda-space-completes-acquisition-of-blue-canyon-technologies-302951817.html",
+      "published": "2026-11-28T00:49:00+09:00",
+      "keywords": [
+        "acquisition"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "MDA Space의 우주항공 관련 기술기업 인수 완료 뉴스입니다."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "Julius Meinl Coffee Group completes largest acquisition in its history",
+      "link": "https://www.prnewswire.com/news-releases/julius-meinl-coffee-group-completes-largest-acquisition-in-its-history-302951331.html",
+      "published": "2026-11-27T03:46:00+09:00",
+      "keywords": [
+        "acquisition"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "Julius Meinl의 이탈리아 커피 기업 인수 완료 뉴스입니다."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "대동, 550억원 주주배정 유상증자 결정",
+      "link": "https://www.yna.co.kr/view/AKR20261127146900008",
+      "published": "2026-11-27T18:11:20+09:00",
+      "keywords": [
+        "유상증자",
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "상장사의 550억원 규모 주주배정 유상증자 결정 소식."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "한화갤러리아, 종로 보령빌딩 인수 추진…250억 조건부 투자확약",
+      "link": "https://www.yna.co.kr/view/AKR20261127139500030",
+      "published": "2026-11-27T17:03:58+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "한화갤러리아의 부동산(보령빌딩) 인수 추진건."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "美 세포배양 로봇社 셀트리오, 韓 상장 속도",
+      "link": "https://www.mk.co.kr/news/stock/12220397",
+      "published": "2026-11-27T17:33:34+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "미국 로봇기업의 국내 증시 상장 추진 소식."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "뿔난 카카오엔터 연예인 주주들…“카카오 분할 막아달라”",
+      "link": "https://www.mk.co.kr/news/stock/12220295",
+      "published": "2026-11-27T16:46:23+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "카카오엔터 지배구조/분할 이슈 및 연예인 주주 반발."
+    },
+    {
+      "source": "OpenDART",
+      "kind": "deal",
+      "title": "(케이쓰리아이) 최대주주변경을수반하는주식양수도계약해제ㆍ취소등",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261127900648",
+      "published": "2026-11-27T00:00:00+09:00",
+      "keywords": [
+        "최대주주변경"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "경영권 인수 계약 해제 건으로 거래 파기 정보입니다."
+    },
+    {
+      "source": "WSJ Markets",
+      "kind": "deal",
+      "title": "Swiss Bourse to Launch IPO Academy in Bid to Encourage European Listings",
+      "link": "https://www.wsj.com/finance/swiss-bourse-to-launch-ipo-academy-in-bid-to-encourage-european-listings-d98da166?mod=rss_markets_main",
+      "published": "2026-11-27T22:03:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "스위스 증권거래소의 기업 IPO 지원 프로그램 신설 소식입니다."
+    },
+    {
+      "source": "PR Newswire M&A",
+      "kind": "deal",
+      "title": "OceanaGold Announces Ausgold Shareholder Approval",
+      "link": "https://www.prnewswire.com/news-releases/oceanagold-announces-ausgold-shareholder-approval-804881601.html",
+      "published": "2026-11-27T21:00:00+09:00",
+      "keywords": [
+        "acquire"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "OceanaGold의 Ausgold 인수 주주승인 완료 소식입니다."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "피노, 188억5천만원 유상증자…이케이케이알파제이호사모투자합자회사에 제3자배정",
+      "link": "https://www.yna.co.kr/view/AKR20261127159500008",
+      "published": "2026-11-27T19:34:34+09:00",
+      "keywords": [
+        "유상증자",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "사모펀드 대상 188억원 규모 유상증자 발행 공시입니다."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "[IPO챗] AI활용 신약개발 이노보테라퓨틱스 \"글로벌 기술이전 기회 확대\"",
+      "link": "https://www.yna.co.kr/view/AKR20261127116400008",
+      "published": "2026-11-27T15:28:59+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "신약개발 기업의 IPO 준비 인터뷰."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "한투증권 \"에이피알 브랜드501 인수, 밸류에이션 회복에 긍정적\"",
+      "link": "https://www.yna.co.kr/view/AKR20261127020900008",
+      "published": "2026-11-27T08:12:04+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "에이피알의 M&A에 대한 증권사 분석 보고서."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "deal",
+      "title": "[코스피·코스닥 전 거래일(26일) 주요공시]",
+      "link": "https://www.yna.co.kr/view/AKR20261126186400008",
+      "published": "2026-11-27T06:05:00+09:00",
+      "keywords": [
+        "IPO",
+        "IPO",
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "IPO 한파로 인한 상장 철회 공시 모음."
+    },
+    {
+      "source": "매일경제 증권",
+      "kind": "deal",
+      "title": "에이피알, 틱톡숍서 맞붙던 경쟁사 품었다…목표가↑",
+      "link": "https://www.mk.co.kr/news/stock/12219832",
+      "published": "2026-11-27T08:25:17+09:00",
+      "keywords": [
+        "인수"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "에이피알 인수합병에 따른 증권사 리포트 소식."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "가상자산 거래소 지분 34% 예외룰 도입...희비 갈린 네이버ㆍ미래에셋",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/26/2026112680169.html",
+      "published": "2026-11-27T07:00:00+09:00",
+      "keywords": [
+        "매각",
+        "지분"
+      ],
+      "score": 7.0,
+      "score_by": "gemini",
+      "reason": "가상자산 거래소 지분 규제 완화 관련 대기업/금융사 영향입니다."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "'허준구家'가 20년 쥔 GS 회장직…4세 경영·지분 존재감 커진 '허정구家'",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/27/2026112780060.html",
+      "published": "2026-11-27T11:32:04+09:00",
+      "keywords": [
+        "지분"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "대기업 승계 및 승계 구도 변화에 따른 지분 이슈입니다."
+    },
+    {
+      "source": "인베스트조선",
+      "kind": "macro",
+      "title": "공정위원장 머리엔 '재벌 해체'밖에 없다",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/11/26/2026112680209.html",
+      "published": "2026-11-27T07:00:00+09:00",
+      "keywords": [
+        "경영권"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "공정위원장발 대기업 규제 및 지배구조 정책 관련 뉴스입니다."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "Week Ahead for FX, Bonds: Key Labor Data in Focus Ahead of Fed’s December Rate Decision",
+      "link": "https://www.wsj.com/finance/investing/week-ahead-for-fx-bonds-key-labor-data-in-focus-ahead-of-feds-december-rate-decision-52cad754?mod=rss_socialeconomyfeed",
+      "published": "2026-11-27T21:51:00+09:00",
+      "keywords": [
+        "Fed"
+      ],
+      "score": 6.0,
+      "score_by": "gemini",
+      "reason": "Fed 금리 결정을 앞둔 고용지표 전망 등 중요 매크로 이슈임."
+    },
+    {
+      "source": "연합뉴스 마켓+",
+      "kind": "macro",
+      "title": "멕시코, 미국 압박 속 \"관세회피 막자\" 아시아에 촉구",
+      "link": "https://www.yna.co.kr/view/AKR20261127033800009",
+      "published": "2026-11-27T09:56:03+09:00",
+      "keywords": [
+        "상장"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "미국 무역 규제에 따른 멕시코 통상정책 관련 뉴스."
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "France Slips Into Recession as Exports Sag",
+      "link": "https://www.wsj.com/world/europe/french-economy-slips-into-recession-as-exports-sag-47e934c5?mod=rss_worldnews",
+      "published": "2026-11-27T22:39:00+09:00",
+      "keywords": [
+        "recession"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "프랑스 경기후퇴 등 글로벌 거시경제 흐름 보도임."
+    },
+    {
+      "source": "WSJ World News",
+      "kind": "macro",
+      "title": "Inflation Slides in France, Spain on Declining Fuel Prices",
+      "link": "https://www.wsj.com/world/europe/french-inflation-slides-on-drop-in-fuel-prices-2bd7e78e?mod=rss_worldnews",
+      "published": "2026-11-27T20:16:00+09:00",
+      "keywords": [
+        "inflation"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "유로존 및 주요국 인플레이션/성장률 관련 거시 지표임."
+    },
+    {
+      "source": "WSJ Economy",
+      "kind": "macro",
+      "title": "China’s Industrial Profit Surged Despite Headwinds",
+      "link": "https://www.wsj.com/economy/chinas-industrial-profit-surged-despite-headwinds-0296ec7c?mod=rss_socialeconomyfeed",
+      "published": "2026-11-27T11:28:00+09:00",
+      "keywords": [
+        "China"
+      ],
+      "score": 5.0,
+      "score_by": "gemini",
+      "reason": "중국 공업이익 실적 및 수출 관련 거시 동향 지표임."
+    }
+  ]
+}
